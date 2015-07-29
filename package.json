@@ -1,0 +1,22 @@
+{
+  "name": "astro",
+  "version": "1.0.0",
+  "description": "astrostudios.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acidjazz/astro"
+  },
+  "author": "Kevin Olson <acidjazz@gmail.com> (http://ke.vin.so/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acidjazz/astro/issues"
+  },
+  "homepage": "https://github.com/acidjazz/astro",
+  "dependencies": {
+    "luja": "git://github.com/acidjazz/luja.git"
+  }
+}

@@ -1,0 +1,24 @@
+
+vendor-prefixes ?= webkit moz o ms official
+
+// needed
+@import vendor
+@import mixins
+@import variables
+
+@import fonts
+
+.clear
+  clearfix()
+
+body
+  margin 0
+  padding 0
+  background-color: c.grey2
+  color: c.black1
+  font f_copy
+
+.container
+  background-color: c.grey1
+
+@import project

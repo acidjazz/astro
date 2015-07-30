@@ -1,0 +1,123 @@
+@font-face {
+  font-family: aktivgrotesk bold;
+  src: url("fnt/aktivgrotesk/bold.eot") format('embedded-opentype');
+  src: url("fnt/aktivgrotesk/bold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: aktivgrotesk bolditalic;
+  src: url("fnt/aktivgrotesk/bolditalic.eot") format('embedded-opentype');
+  src: url("fnt/aktivgrotesk/bolditalic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: aktivgrotesk italic;
+  src: url("fnt/aktivgrotesk/italic.eot") format('embedded-opentype');
+  src: url("fnt/aktivgrotesk/italic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: aktivgrotesk light;
+  src: url("fnt/aktivgrotesk/light.eot") format('embedded-opentype');
+  src: url("fnt/aktivgrotesk/light.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: aktivgrotesk lightitalic;
+  src: url("fnt/aktivgrotesk/lightitalic.eot") format('embedded-opentype');
+  src: url("fnt/aktivgrotesk/lightitalic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: aktivgrotesk normal;
+  src: url("fnt/aktivgrotesk/normal.eot") format('embedded-opentype');
+  src: url("fnt/aktivgrotesk/normal.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: blender boldweb;
+  src: url("fnt/blender/boldweb.eot") format('embedded-opentype');
+  src: url("fnt/blender/boldweb.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: blender medimweb;
+  src: url("fnt/blender/medimweb.eot") format('embedded-opentype');
+  src: url("fnt/blender/medimweb.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: blender thinweb;
+  src: url("fnt/blender/thinweb.eot") format('embedded-opentype');
+  src: url("fnt/blender/thinweb.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: brooklyn book;
+  src: url("fnt/brooklyn/book.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: brooklyn light;
+  src: url("fnt/brooklyn/light.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: brooklyn stencil-book;
+  src: url("fnt/brooklyn/stencil-book.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.clear {
+  zoom: 1;
+}
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+}
+.clear:after {
+  clear: both;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: ;
+  color: #000;
+  font: 16px aktivgrotesk normal;
+}
+.container {
+  background-color: ;
+}
+.project {
+  min-height: 600px;
+  background-color: #ffc0cb;
+}
+.project > .header {
+  height: 600px;
+  background-color: #ffa500;
+  position: relative;
+}
+.project > .header > .name {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -48px;
+  width: 100%;
+  height: 96px;
+  font: 96px blender boldweb;
+  background-color: #f00;
+  color: #fff;
+  text-align: center;
+}

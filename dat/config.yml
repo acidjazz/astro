@@ -1,0 +1,7 @@
+---
+index: true
+meta: 
+  title: "Astro Studios"
+  description: "sample metadata description"
+sections: 
+  - "project"

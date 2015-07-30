@@ -1,4 +1,22 @@
 .project
-  .header
-    .name #{project.name}
-    .capshorts #{project.capabilities.join(' / ')}
+
+  .cover(style='background-image: url("../img/project/' + project.folder + '/cover.png");')
+    .copy
+      .name #{project.name}
+      .filters !{project.filters.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
+
+  .description(style='background-color: ' + data.colors[project.color] )
+    .copy #{project.description}
+
+
+  .filters
+    .inner
+      .title CAPABILITIES
+      .filtermenu
+        each filter, key in project.filters
+          if key == 0
+            .filter.active #{filter}
+          else
+            .filter #{filter}
+      .clear
+  .body

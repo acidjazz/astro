@@ -1,19 +1,55 @@
 .project
   min-height 600px
-  background-color pink
 
-  > .header
+  > .cover
     height 600px
-    background-color orange
     position relative
-    > .name
+    background-size cover
+    background-repeat no-repeat
+    background-position 50% 50%
+    > .copy
       position absolute
       left 0
       top 50%
-      margin-top -(f_size*6/2)
+      margin-top unit(-(120/2), px)
+      height 120px
       width 100%
-      height f_size*6
-      font f_h1
-      background-color red
+      > .name, > .filters
+        color: c.white1
+        text-align center
+      > .name
+        font f_h1
+      > .filters
+        color: c.white1
+        font f_filter
+        text-transform uppercase
+  > .description
+    background-color pink
+    padding 40px 20px
+    > .copy
+      font f_h2
       color: c.white1
-      text-align center
+      max-width 800px
+      margin auto
+
+  > .filters
+    background-color: c.black2
+    color white
+    text-transform uppercase
+    > .inner
+      max-width 1020px
+      margin auto
+      > .title
+        float left
+        padding 20px 0 20px 50px
+      > .filtermenu
+        float right
+        padding 0 50px 0 0
+        > .filter
+          float left
+          padding 20px
+          &.active
+            background-color: c.blue1
+  > .body
+    background-color pink
+    min-height 2000px

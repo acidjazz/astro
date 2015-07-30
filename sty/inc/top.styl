@@ -1,0 +1,35 @@
+
+.top
+  position fixed
+  top 0
+  left 0
+  height 0
+  width 100%
+  z-index 100
+  > .inner
+    position relative
+    > .a
+      position absolute
+      top 30px
+      left 30px
+      width 40px
+      height 40px
+      > svg
+        width inherit
+        height inherit
+        > g > path
+          fill: c.white1
+
+    > .burger
+      position absolute
+      top 30px
+      right 30px
+      width 40px
+      height 40px
+      > .lines
+        margin 10px 0 0 0
+        > .line
+          width 30px
+          height 5px
+          background-color: c.white1
+          margin 0 0 7px 5px

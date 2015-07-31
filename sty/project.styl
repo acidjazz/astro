@@ -23,8 +23,8 @@
         color: c.white1
         font f_filter
         text-transform uppercase
+        letter-spacing 2px
   > .description
-    background-color pink
     padding 40px 20px
     > .copy
       font f_h2
@@ -51,5 +51,52 @@
           &.active
             background-color: c.blue1
   > .body
-    background-color pink
     min-height 2000px
+    > .image
+      padding 50px 0
+      width 100%
+      > img
+        width inherit
+    > .copy
+      padding 50px
+      line-height 30px
+      max-width 600px
+      margin auto
+
+    > .imagecopy
+      padding 50px
+      max-width 1020px
+      margin auto
+      &.black
+        background-color: c.black1
+      &.nopadding
+        padding 0px
+      > .block.left
+        float left
+        width 50%
+        height 100%
+      > .block.right
+        float right
+        width 50%
+        height 100%
+      > .block
+        height inherit
+        > .image
+          width 100%
+          height inherit
+          text-align center
+          > img
+            height inherit
+        &.copy
+          display table
+          > .copy
+            line-height 30px
+            max-width 600px
+            padding 0 50px
+            display table-cell
+            vertical-align middle
+            margin auto
+            &.white
+              color: c.white1
+   
+

@@ -143,7 +143,7 @@ body {
   padding: 0;
   background-color: ;
   color: #000;
-  font: 16px aktivgrotesk normal;
+  font: 18px aktivgrotesk light;
 }
 .container {
   background-color: ;
@@ -174,15 +174,15 @@ body {
   text-align: center;
 }
 .project > .cover > .copy > .name {
-  font: 92px blenderpro boldweb;
+  font: 92px blenderpro medium;
 }
 .project > .cover > .copy > .filters {
   color: #fff;
   font: 18px aktivgrotesk normal;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .project > .description {
-  background-color: #ffc0cb;
   padding: 40px 20px;
 }
 .project > .description > .copy {
@@ -216,6 +216,64 @@ body {
   background-color: #0195ff;
 }
 .project > .body {
-  background-color: #ffc0cb;
   min-height: 2000px;
+}
+.project > .body > .image {
+  padding: 50px 0;
+  width: 100%;
+}
+.project > .body > .image > img {
+  width: inherit;
+}
+.project > .body > .copy {
+  padding: 50px;
+  line-height: 30px;
+  max-width: 600px;
+  margin: auto;
+}
+.project > .body > .imagecopy {
+  padding: 50px;
+  max-width: 1020px;
+  margin: auto;
+}
+.project > .body > .imagecopy.black {
+  background-color: #000;
+}
+.project > .body > .imagecopy.nopadding {
+  padding: 0px;
+}
+.project > .body > .imagecopy > .block.left {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.project > .body > .imagecopy > .block.right {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+.project > .body > .imagecopy > .block {
+  height: inherit;
+}
+.project > .body > .imagecopy > .block > .image {
+  width: 100%;
+  height: inherit;
+  text-align: center;
+}
+.project > .body > .imagecopy > .block > .image > img {
+  height: inherit;
+}
+.project > .body > .imagecopy > .block.copy {
+  display: table;
+}
+.project > .body > .imagecopy > .block.copy > .copy {
+  line-height: 30px;
+  max-width: 600px;
+  padding: 0 50px;
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+}
+.project > .body > .imagecopy > .block.copy > .copy.white {
+  color: #fff;
 }

@@ -37,8 +37,7 @@
     color white
     text-transform uppercase
     > .inner
-      max-width 1020px
-      margin auto
+      desktop()
       > .title
         float left
         padding 20px 0 20px 50px
@@ -65,8 +64,7 @@
 
     > .imagecopy
       padding 50px
-      max-width 1020px
-      margin auto
+      desktop()
       &.black
         background-color: c.black1
       &.nopadding
@@ -99,4 +97,22 @@
             &.white
               color: c.white1
    
+  > .credits
+    > .inner
+      desktop()
+      padding 50px
+      > .title
+        font f_h2
+      > .sections
+        > .section
+          float left
+          width 33.33%
+          > .title
+            font f_h3
+            color: c.blue1
+          > .item, > a.item
+            display block
+            margin 0 0 10px 0
+            text-decoration none
+            color: c.black1
 

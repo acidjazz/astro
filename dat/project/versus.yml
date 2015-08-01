@@ -1,10 +1,23 @@
 ---
-folder: versus
-name: Versus Headset
-description: ASTRO and Sense Labs created a tool for athletes to train their brain.  Smart move.
-color: blue1
-filters:
-  - holistic
-  - strategy
-  - brand
-  - product
+  folder: versus
+  name: Versus Headset
+  description: ASTRO and Sense Labs created a tool for athletes to train their brain.  Smart move.
+  color: blue1
+  filters:
+    - holistic
+    - strategy
+    - brand
+    - product
+
+  credits:
+    links:
+      - http://www.getersus.com
+      - http://www.senselabs.com
+    deliverables:
+      - Deliverable 1
+      - Deliverable 2
+      - Deliverable 3
+    press:
+      - IDEA Award for Excellence
+      - Featured in Fast Company Design
+      - I.D. Magazine Annual Review

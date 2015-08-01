@@ -1,0 +1,18 @@
+.credits
+  .inner
+    .title Credits
+    .sections
+      .section
+        .title Project Links
+        each link in project.credits.links
+          a.item(href=link,target='_new') #{link}
+      .section
+        .title Deliverables
+        each deliverable in project.credits.deliverables
+          .item #{deliverable}
+      .section
+        .title Awards & Press
+        each press in project.credits.press
+          .item #{press}
+      .clear
+

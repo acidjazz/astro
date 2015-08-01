@@ -1,0 +1,73 @@
+.footer
+  background-color: c.white3
+  .inner
+    padding 50px
+    desktop()
+    > .infos
+      float left
+      width 33
+      width 25%
+      font f_copys
+      > .a
+        width 40px
+        height 40px
+        > svg
+          width inherit
+          height inherit
+          color: c.black1
+      > .info
+        margin 10px 0
+        > p, > a.p
+          display block
+          color: c.black1
+          text-decoration none
+          margin 0
+    > .newsletter
+      float left
+      width 45%
+      > .title
+        margin 0 0 10px 0
+      > .input
+        float left
+        > input
+          width 260px
+          background-color: c.white1
+          border none
+          outline none
+          border-bottom: 3px solid c.blue1
+          font f_copy
+          padding 18px
+
+      > .button
+        font f_copyn
+        color: c.white1
+        float left
+        background-color: rgba(c.red1, 0.5) 
+        padding 20px
+        margin 0 0 0 20px
+        text-transform uppercase
+        cursor pointer
+        transition background-color 0.1s linear
+        &:hover
+          background-color: rgba(c.red1, 1) 
+    > .follow
+      float left
+      width 30%
+      > .title
+        margin 0 0 0 40px
+      > .icons
+        margin 20px 40px
+        > .icon
+          display block
+          float left
+          width 20px
+          height 20px
+          padding 10px
+          background-color: c.black2
+          margin 0 5px
+          border-radius 30px
+          > svg
+            width inherit
+            height inherit
+            > path, > g > path, > g > g > path
+              fill: c.white1

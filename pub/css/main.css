@@ -86,6 +86,106 @@
   font-weight: normal;
   font-style: normal;
 }
+.footer {
+  background-color: #f0f0f0;
+}
+.footer .inner {
+  padding: 50px;
+  max-width: 1020px;
+  margin: auto;
+}
+.footer .inner > .infos {
+  float: left;
+  width: 33;
+  width: 25%;
+  font: 14px aktivgrotesk light;
+}
+.footer .inner > .infos > .a {
+  width: 40px;
+  height: 40px;
+}
+.footer .inner > .infos > .a > svg {
+  width: inherit;
+  height: inherit;
+  color: #000;
+}
+.footer .inner > .infos > .info {
+  margin: 10px 0;
+}
+.footer .inner > .infos > .info > p,
+.footer .inner > .infos > .info > a.p {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  margin: 0;
+}
+.footer .inner > .newsletter {
+  float: left;
+  width: 45%;
+}
+.footer .inner > .newsletter > .title {
+  margin: 0 0 10px 0;
+}
+.footer .inner > .newsletter > .input {
+  float: left;
+}
+.footer .inner > .newsletter > .input > input {
+  width: 260px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #0195ff;
+  font: 18px aktivgrotesk light;
+  padding: 18px;
+}
+.footer .inner > .newsletter > .button {
+  font: 18px aktivgrotesk normal;
+  color: #fff;
+  float: left;
+  background-color: rgba(238,86,85,0.5);
+  padding: 20px;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  -ms-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+.footer .inner > .newsletter > .button:hover {
+  background-color: #ee5655;
+}
+.footer .inner > .follow {
+  float: left;
+  width: 30%;
+}
+.footer .inner > .follow > .title {
+  margin: 0 0 0 40px;
+}
+.footer .inner > .follow > .icons {
+  margin: 20px 40px;
+}
+.footer .inner > .follow > .icons > .icon {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  background-color: #22252b;
+  margin: 0 5px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+.footer .inner > .follow > .icons > .icon > svg {
+  width: inherit;
+  height: inherit;
+}
+.footer .inner > .follow > .icons > .icon > svg > path,
+.footer .inner > .follow > .icons > .icon > svg > g > path,
+.footer .inner > .follow > .icons > .icon > svg > g > g > path {
+  fill: #fff;
+}
 .top {
   position: fixed;
   top: 0;
@@ -186,7 +286,7 @@ body {
   padding: 40px 20px;
 }
 .project > .description > .copy {
-  font: 60px blenderpro medium;
+  font: 50px blenderpro medium;
   color: #fff;
   max-width: 800px;
   margin: auto;
@@ -276,4 +376,27 @@ body {
 }
 .project > .body > .imagecopy > .block.copy > .copy.white {
   color: #fff;
+}
+.project > .credits > .inner {
+  max-width: 1020px;
+  margin: auto;
+  padding: 50px;
+}
+.project > .credits > .inner > .title {
+  font: 50px blenderpro medium;
+}
+.project > .credits > .inner > .sections > .section {
+  float: left;
+  width: 33.33%;
+}
+.project > .credits > .inner > .sections > .section > .title {
+  font: 36px blenderpro medium;
+  color: #0195ff;
+}
+.project > .credits > .inner > .sections > .section > .item,
+.project > .credits > .inner > .sections > .section > a.item {
+  display: block;
+  margin: 0 0 10px 0;
+  text-decoration: none;
+  color: #000;
 }

@@ -6,7 +6,16 @@ block variables
 
 block content
   - var project = data.project.versus
+
   include ../inc/top
-  include versus
+
+  .project
+
+    include _header
+
+    .body
+      include versus
+    include _credits
+
   include ../inc/bottom
 

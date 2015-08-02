@@ -5,3 +5,4 @@ meta:
   description: "sample metadata description"
 sections: 
   - "project"
+  - "guide"

@@ -1,0 +1,66 @@
+
+f_copy = 18px aktivgrotesk light
+f_copys = 14px aktivgrotesk light
+f_copyn = 18px aktivgrotesk normal
+f_copyb = 18px aktivgrotesk bold
+f_copyl = 20px blenderpro medium
+
+f_h1 = 92px blenderpro medium
+f_h2 = 50px blenderpro medium
+f_h3 = 40px blenderpro medium
+f_h4 = 36px blenderpro medium
+f_h5 = 28px blenderpro medium
+
+// colors
+c = {}
+for key, value in data.colors
+  c[key] = convert(value)
+
+.guide
+  max-width 1200px
+  margin 50px auto 0 auto
+  background-color: c.white2
+
+  > .sections
+    padding 20px
+    > .section
+      width 33%
+      float left
+      > .title
+        font f_h3
+
+      > .color
+        padding 10px 20px
+        margin 5px
+        color: c.white1
+        for name, color in data.colors
+          &.color_{name}
+            background-color: convert(color)
+            if name == 'white1' || name == 'white2' || name == 'white3'
+              color: c.black1
+      > .font
+        padding 10px 20px
+        margin 5px
+        background-color: c.white1
+        white-space nowrap
+        overflow-x scroll
+        &.font_f_copy
+          font f_copy
+        &.font_f_copys
+          font f_copys
+        &.font_f_copyn
+          font f_copyn
+        &.font_f_copyb
+          font f_copyb
+        &.font_f_copyl
+          font f_copyl
+        &.font_f_h1
+          font f_h1
+        &.font_f_h2
+          font f_h2
+        &.font_f_h3
+          font f_h3
+        &.font_f_h4
+          font f_h5
+        &.font_f_h5
+          font f_h4

@@ -412,6 +412,12 @@ body {
 .project {
   min-height: 600px;
 }
+.project.on {
+  display: block;
+}
+.project.off {
+  display: none;
+}
 .project > .cover {
   height: 600px;
   position: relative;

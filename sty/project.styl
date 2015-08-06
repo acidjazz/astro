@@ -47,13 +47,24 @@
         > .filter
           float left
           padding 20px
-          &.active
-            background-color: c.blue1
+          for key, project in data.project
+            &.active_{project.name}
+              background-color: c[project.color]
   > .body
     min-height 2000px
+    > .youtube
+      width 800px
+      height 450px
+      margin auto
     > .image
       padding 50px 0
       width 100%
+      &.pad_both
+        padding 50px 0
+      &.pad_top
+        padding 50px 0 0 0
+      &.pad_bottom
+        padding  0 0 50px 0
       > img
         width inherit
     > .copy

@@ -5,17 +5,24 @@ block variables
   - var rootdir = '../'
 
 block content
-  - var project = data.project.versus
-
   include ../inc/top
 
+  - var project = data.project.threedr
+
   .project
-
     include _header
+    .body
+      include threedr
+    include _credits
 
+  - var project = data.project.versus
+
+  .project
+    include _header
     .body
       include versus
     include _credits
+
 
   include ../inc/bottom
 

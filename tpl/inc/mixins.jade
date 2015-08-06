@@ -1,0 +1,15 @@
+
+mixin pimg(folder, image, padding)
+  if padding == ''
+    padding = 'both'
+  .image(class='pad_' + padding)
+    img(src='../img/project/'+folder+'/'+image)
+
+mixin youtube(id)
+  .youtube
+    iframe(
+      width="800",
+      height="450",
+      src="https://www.youtube.com/embed/" + id,
+      frameborder="0",
+      allowfullscreen)

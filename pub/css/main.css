@@ -473,15 +473,32 @@ body {
   float: left;
   padding: 20px;
 }
-.project > .filters > .inner > .filtermenu > .filter.active {
+.project > .filters > .inner > .filtermenu > .filter.active_Solo {
+  background-color: #76d734;
+}
+.project > .filters > .inner > .filtermenu > .filter.active_Versus Headset {
   background-color: #0195ff;
 }
 .project > .body {
   min-height: 2000px;
 }
+.project > .body > .youtube {
+  width: 800px;
+  height: 450px;
+  margin: auto;
+}
 .project > .body > .image {
   padding: 50px 0;
   width: 100%;
+}
+.project > .body > .image.pad_both {
+  padding: 50px 0;
+}
+.project > .body > .image.pad_top {
+  padding: 50px 0 0 0;
+}
+.project > .body > .image.pad_bottom {
+  padding: 0 0 50px 0;
 }
 .project > .body > .image > img {
   width: inherit;

@@ -12,7 +12,7 @@
     .filtermenu
       each filter, key in project.filters
         if key == 0
-          .filter.active #{filter}
+          .filter.active(class='active_' + project.name) #{filter}
         else
           .filter #{filter}
     .clear

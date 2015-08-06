@@ -335,6 +335,12 @@
       </div>
     </div>
     <script type="text/javascript">
+      function loadercomplete() {
+        Loader.load('../jst/project.js', 'Project');
+        //Global.i()
+      }
+    </script>
+    <script type="text/javascript">
       Loader.scripts.jst_lib.push('jquery-2.1.4.min');
       Loader.scripts.jst.push('main');
       Loader.i( function(result) {

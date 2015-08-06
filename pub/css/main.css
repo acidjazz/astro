@@ -714,3 +714,7 @@ body {
 .guide > .sections > .section > .font.font_f_h5 {
   font: 36px blenderpro medium;
 }
+.placeholder {
+  text-align: center;
+  padding: 200px 0 0 0;
+}

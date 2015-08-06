@@ -26,3 +26,9 @@ block content
 
   include ../inc/bottom
 
+  script(type='text/javascript').
+    function loadercomplete() {
+      Loader.load('../jst/project.js', 'Project');
+      //Global.i()
+    }
+

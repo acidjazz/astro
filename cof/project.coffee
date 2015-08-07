@@ -17,6 +17,8 @@ Project =
     _.off '.project'
     _.on '.preloader'
 
+    console.log "loading project #{project}"
+
     NProgress.start()
     srcs = Project.srcs project
     Project.preload srcs,

@@ -17,6 +17,7 @@ Project = {
     var srcs;
     _.off('.project');
     _.on('.preloader');
+    console.log("loading project " + project);
     NProgress.start();
     srcs = Project.srcs(project);
     return Project.preload(srcs, function(progress) {

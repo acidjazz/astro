@@ -13,6 +13,11 @@
     </script>
   </head>
   <body>
+    <div class="preloader">
+      <div class="box">
+        <div class="inner"></div>
+      </div>
+    </div>
     <div class="top">
       <div class="inner">
         <div class="a"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -186,6 +191,7 @@
     </script>
     <script type="text/javascript">
       Loader.scripts.jst_lib.push('jquery-2.1.4.min');
+      Loader.scripts.jst_lib.push('nprogress');
       Loader.scripts.jst.push('main');
       Loader.i( function(result) {
         if (result) {

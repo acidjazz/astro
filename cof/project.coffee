@@ -1,18 +1,31 @@
 
 Project =
+  hash: false
 
   i: ->
+    NProgress.configure
+      showSpinner: false
 
-    
+    project = 'versus'
 
-    srcs = Project.srcs 'versus'
-    console.log srcs
+    if Object.keys(projects).indexOf(location.hash.replace('#','')) isnt -1
+      project = location.hash.replace '#', ''
+
+    Project.load project
+
+  load: (project) ->
+    _.off '.project'
+    _.on '.preloader'
+
+    NProgress.start()
+    srcs = Project.srcs project
     Project.preload srcs,
       (progress) ->
-        console.log 'progress', progress
+        NProgress.set progress
       , (complete) ->
-        console.log 'complete', complete
-        _.on '.project_versus'
+        NProgress.done()
+        _.off '.preloader'
+        _.on ".project_#{project}"
 
   preload: (srces, progress, complete) ->
 
@@ -25,17 +38,14 @@ Project =
       images[i].src = src
       images[i].onload = ->
         loaded++
-        perc = Math.round(loaded/total*10)/10
+        perc = Math.round(loaded/total*100)/100
         if loaded is total then complete(true) else progress(perc)
-
-    
 
   srcs: (project) ->
     cover = $(".project_#{project} > .cover").attr 'style'
     url = cover.match(/url\("(.*)"\)/)
     srcs = [url[1]]
     $(".project_#{project} img").each (i, v) ->
-      console.log $(v).attr 'src'
       srcs.push $(v).attr 'src'
 
     return srcs

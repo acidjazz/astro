@@ -1,15 +1,30 @@
 var Project;
 
 Project = {
+  hash: false,
   i: function() {
+    var project;
+    NProgress.configure({
+      showSpinner: false
+    });
+    project = 'versus';
+    if (Object.keys(projects).indexOf(location.hash.replace('#', '')) !== -1) {
+      project = location.hash.replace('#', '');
+    }
+    return Project.load(project);
+  },
+  load: function(project) {
     var srcs;
-    srcs = Project.srcs('versus');
-    console.log(srcs);
+    _.off('.project');
+    _.on('.preloader');
+    NProgress.start();
+    srcs = Project.srcs(project);
     return Project.preload(srcs, function(progress) {
-      return console.log('progress', progress);
+      return NProgress.set(progress);
     }, function(complete) {
-      console.log('complete', complete);
-      return _.on('.project_versus');
+      NProgress.done();
+      _.off('.preloader');
+      return _.on(".project_" + project);
     });
   },
   preload: function(srces, progress, complete) {
@@ -25,7 +40,7 @@ Project = {
       results.push(images[i].onload = function() {
         var perc;
         loaded++;
-        perc = Math.round(loaded / total * 10) / 10;
+        perc = Math.round(loaded / total * 100) / 100;
         if (loaded === total) {
           return complete(true);
         } else {
@@ -41,7 +56,6 @@ Project = {
     url = cover.match(/url\("(.*)"\)/);
     srcs = [url[1]];
     $(".project_" + project + " img").each(function(i, v) {
-      console.log($(v).attr('src'));
       return srcs.push($(v).attr('src'));
     });
     return srcs;

@@ -27,6 +27,10 @@
         background-size cover
         background-repeat no-repeat
         background-position 50% 50%
+        animation cellInY 0.2s 0s ease-in both
+        for num in 0..10
+          &:nth-child({num})
+            animation-delay unit(num*0.05, 's')
         for key, project in data.project
           &.thumb_{project.folder}:hover > .inner
             background-color: rgba(c[project.color], 0.5)

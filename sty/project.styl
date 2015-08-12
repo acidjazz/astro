@@ -47,8 +47,12 @@
     min-height 600px
     &.on
       display block
+      > .cover, > .body > .image > img
+        display block
     &.off
       display none
+      > .cover, > .body > .image > img
+        display none
 
     > .cover
       height 600px
@@ -116,6 +120,12 @@
           padding  0 0 50px 0
         > img
           width inherit
+        > .img
+          //height 600px
+          padding-top 40%
+          background-size cover
+          background-repeat no-repeat
+          background-position 50% 50%
       > .copy
         padding 50px
         line-height 30px

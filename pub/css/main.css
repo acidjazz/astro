@@ -874,7 +874,15 @@ body {
 .projects > .project.on {
   display: block;
 }
+.projects > .project.on > .cover,
+.projects > .project.on > .body > .image > img {
+  display: block;
+}
 .projects > .project.off {
+  display: none;
+}
+.projects > .project.off > .cover,
+.projects > .project.off > .body > .image > img {
   display: none;
 }
 .projects > .project > .cover {
@@ -979,6 +987,14 @@ body {
 }
 .projects > .project > .body > .image > img {
   width: inherit;
+}
+.projects > .project > .body > .image > .img {
+  padding-top: 40%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .projects > .project > .body > .copy {
   padding: 50px;

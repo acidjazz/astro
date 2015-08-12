@@ -21,6 +21,7 @@ Project = {
   },
   summaryHandler: function() {
     console.log('clicked the A');
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     return Project.summary();
   },
   projectHandler: function() {
@@ -28,6 +29,7 @@ Project = {
     console.log('clicked a thumb');
     project = $(this).data('project');
     location.hash = project;
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     return Project.load(project);
   },
   summary: function() {
@@ -91,8 +93,8 @@ Project = {
   srcs: function(project) {
     var srcs;
     srcs = [Project.srcFromStyle($(".project_" + project + " > .cover"))];
-    $(".project_" + project + " img").each(function(i, v) {
-      return srcs.push($(v).attr('src'));
+    $(".project_" + project + " .img").each(function(i, v) {
+      return srcs.push(Project.srcFromStyle($(v)));
     });
     console.log('srcs', srcs);
     return srcs;

@@ -14,7 +14,6 @@ Project =
 
     Project.handlers()
 
-
   handlers: ->
 
     $('.projects > .summary > .thumbs > .thumb').on 'click', Project.projectHandler
@@ -22,6 +21,7 @@ Project =
 
   summaryHandler: ->
     console.log 'clicked the A'
+    document.body.scrollTop = document.documentElement.scrollTop = 0
     Project.summary()
 
   projectHandler: ->
@@ -30,6 +30,7 @@ Project =
 
     project = $(this).data 'project'
     location.hash = project
+    document.body.scrollTop = document.documentElement.scrollTop = 0
     Project.load project
 
   summary: () ->
@@ -85,8 +86,8 @@ Project =
 
   srcs: (project) ->
     srcs = [Project.srcFromStyle($(".project_#{project} > .cover"))]
-    $(".project_#{project} img").each (i, v) ->
-      srcs.push $(v).attr 'src'
+    $(".project_#{project} .img").each (i, v) ->
+      srcs.push Project.srcFromStyle($(v))
 
     console.log 'srcs', srcs
     return srcs

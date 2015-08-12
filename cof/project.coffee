@@ -6,15 +6,53 @@ Project =
     NProgress.configure
       showSpinner: false
 
-    project = 'versus'
-
     if Object.keys(projects).indexOf(location.hash.replace('#','')) isnt -1
       project = location.hash.replace '#', ''
+      Project.load project
+    else
+      Project.summary()
 
+    Project.handlers()
+
+
+  handlers: ->
+
+    $('.projects > .summary > .thumbs > .thumb').on 'click', Project.projectHandler
+    $('.top > .inner > .a').on 'click', Project.summaryHandler
+
+  summaryHandler: ->
+    console.log 'clicked the A'
+    Project.summary()
+
+  projectHandler: ->
+
+    console.log 'clicked a thumb'
+
+    project = $(this).data 'project'
+    location.hash = project
     Project.load project
 
-  load: (project) ->
+  summary: () ->
     _.off '.project'
+    _.on '.preloader'
+    NProgress.start()
+
+    console.log "loading project summaries"
+    srcs = []
+
+    $('.summary > .thumbs > .thumb').each (i, el) ->
+      srcs.push(Project.srcFromStyle($(el)))
+
+    Project.preload srcs,
+      (progress) ->
+        NProgress.set progress
+      , (complete) ->
+        NProgress.done()
+        _.off '.preloader'
+        _.on '.summary'
+
+  load: (project) ->
+    _.off '.project, .summary'
     _.on '.preloader'
 
     console.log "loading project #{project}"
@@ -44,11 +82,14 @@ Project =
         if loaded is total then complete(true) else progress(perc)
 
   srcs: (project) ->
-    cover = $(".project_#{project} > .cover").attr 'style'
-    url = cover.match(/url\("(.*)"\)/)
-    srcs = [url[1]]
+    srcs = [Project.srcFromStyle($(".project_#{project} > .cover"))]
     $(".project_#{project} img").each (i, v) ->
       srcs.push $(v).attr 'src'
 
+    console.log 'srcs', srcs
     return srcs
 
+  srcFromStyle: (el) ->
+    style = el.attr 'style'
+    url = style.match(/url\("(.*)"\)/)
+    return url[1]

@@ -7,22 +7,71 @@ block variables
 block content
   include ../inc/top
 
-  - var project = data.project.threedr
+  .projects
 
-  .project.project_threedr.off
-    include _header
-    .body
-      include threedr
-    include _credits
+    // SUMMARY OF PROJECTS
+    .summary.off
+      .hero
+        .copy1 BRAND
+        .copy2 Aenean gravida tincidunt justo, quis varius justo. Nullam vitae ligula at dolor dictum tincidunt vitae quis justo. 
+      .thumbs
+        each project in data.project
+          .thumb(class='thumb_' + project.folder,data-project=project.folder,style='background-image: url("../img/project/' + project.folder + '/' + project.cover + '");')
+            .inner
+              .copy
+                .name #{project.name}
+                .filters !{project.filters.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
+      .clear
 
-  - var project = data.project.versus
+    // PROJECT PAGES
+    - var project = data.project.threedr
 
-  .project.project_versus.off
-    include _header
-    .body
-      include versus
-    include _credits
+    .project.project_threedr.off
+      include _header
+      .body
+        include threedr
+      include _credits
 
+    - var project = data.project.versus
+
+    .project.project_versus.off
+      include _header
+      .body
+        include versus
+      include _credits
+
+    - var project = data.project.aos
+
+    .project.project_aos.off
+      include _header
+      .body
+        include aos
+      include _credits
+
+    - var project = data.project.goggle
+
+    .project.project_goggle.off
+      include _header
+      .body
+        include goggle
+      include _credits
+
+
+    - var project = data.project.fuelband
+
+    .project.project_fuelband.off
+      include _header
+      .body
+        include fuelband
+      include _credits
+
+    - var project = data.project.neff
+
+    .project.project_neff.off
+      include _header
+      .body
+        include neff
+      include _credits
 
   include ../inc/bottom
 

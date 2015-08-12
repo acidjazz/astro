@@ -7,15 +7,50 @@ Project = {
     NProgress.configure({
       showSpinner: false
     });
-    project = 'versus';
     if (Object.keys(projects).indexOf(location.hash.replace('#', '')) !== -1) {
       project = location.hash.replace('#', '');
+      Project.load(project);
+    } else {
+      Project.summary();
     }
+    return Project.handlers();
+  },
+  handlers: function() {
+    $('.projects > .summary > .thumbs > .thumb').on('click', Project.projectHandler);
+    return $('.top > .inner > .a').on('click', Project.summaryHandler);
+  },
+  summaryHandler: function() {
+    console.log('clicked the A');
+    return Project.summary();
+  },
+  projectHandler: function() {
+    var project;
+    console.log('clicked a thumb');
+    project = $(this).data('project');
+    location.hash = project;
     return Project.load(project);
+  },
+  summary: function() {
+    var srcs;
+    _.off('.project');
+    _.on('.preloader');
+    NProgress.start();
+    console.log("loading project summaries");
+    srcs = [];
+    $('.summary > .thumbs > .thumb').each(function(i, el) {
+      return srcs.push(Project.srcFromStyle($(el)));
+    });
+    return Project.preload(srcs, function(progress) {
+      return NProgress.set(progress);
+    }, function(complete) {
+      NProgress.done();
+      _.off('.preloader');
+      return _.on('.summary');
+    });
   },
   load: function(project) {
     var srcs;
-    _.off('.project');
+    _.off('.project, .summary');
     _.on('.preloader');
     console.log("loading project " + project);
     NProgress.start();
@@ -52,13 +87,18 @@ Project = {
     return results;
   },
   srcs: function(project) {
-    var cover, srcs, url;
-    cover = $(".project_" + project + " > .cover").attr('style');
-    url = cover.match(/url\("(.*)"\)/);
-    srcs = [url[1]];
+    var srcs;
+    srcs = [Project.srcFromStyle($(".project_" + project + " > .cover"))];
     $(".project_" + project + " img").each(function(i, v) {
       return srcs.push($(v).attr('src'));
     });
+    console.log('srcs', srcs);
     return srcs;
+  },
+  srcFromStyle: function(el) {
+    var style, url;
+    style = el.attr('style');
+    url = style.match(/url\("(.*)"\)/);
+    return url[1];
   }
 };

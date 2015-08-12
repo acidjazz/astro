@@ -798,16 +798,86 @@ body {
   background-color: #ffc0cb;
   min-height: 800px;
 }
-.project {
-  min-height: 600px;
+.projects .summary {
+  background-color: #434965;
 }
-.project.on {
+.projects .summary.on {
   display: block;
 }
-.project.off {
+.projects .summary.off {
   display: none;
 }
-.project > .cover {
+.projects .summary > .hero {
+  color: #fff;
+  padding: 60px 20px;
+}
+.projects .summary > .hero > .copy1 {
+  max-width: 800px;
+  margin: auto;
+}
+.projects .summary > .hero > .copy2 {
+  font: 50px blenderpro medium;
+  max-width: 800px;
+  margin: auto;
+}
+.projects .summary > .thumbs > .thumb {
+  float: left;
+  width: 33.333%;
+  height: 300px;
+  cursor: pointer;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.projects .summary > .thumbs > .thumb.thumb_aos:hover > .inner {
+  background-color: rgba(67,73,101,0.5);
+}
+.projects .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner {
+  background-color: rgba(59,182,46,0.5);
+}
+.projects .summary > .thumbs > .thumb.thumb_goggle:hover > .inner {
+  background-color: rgba(68,68,68,0.5);
+}
+.projects .summary > .thumbs > .thumb.thumb_neff:hover > .inner {
+  background-color: rgba(244,103,178,0.5);
+}
+.projects .summary > .thumbs > .thumb.thumb_threedr:hover > .inner {
+  background-color: rgba(118,215,52,0.5);
+}
+.projects .summary > .thumbs > .thumb.thumb_versus:hover > .inner {
+  background-color: rgba(1,149,255,0.5);
+}
+.projects .summary > .thumbs > .thumb > .inner {
+  height: 100%;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  -ms-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+.projects .summary > .thumbs > .thumb > .inner > .copy {
+  color: #fff;
+  text-align: center;
+  padding: 110px 0 0 0;
+}
+.projects .summary > .thumbs > .thumb > .inner > .copy > .name {
+  font: 50px blenderpro medium;
+}
+.projects .summary > .thumbs > .thumb > .inner > .copy > .filters {
+  text-transform: uppercase;
+}
+.projects > .project {
+  min-height: 600px;
+}
+.projects > .project.on {
+  display: block;
+}
+.projects > .project.off {
+  display: none;
+}
+.projects > .project > .cover {
   height: 600px;
   position: relative;
   -webkit-background-size: cover;
@@ -816,7 +886,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.project > .cover > .copy {
+.projects > .project > .cover > .copy {
   position: absolute;
   left: 0;
   top: 50%;
@@ -824,122 +894,134 @@ body {
   height: 120px;
   width: 100%;
 }
-.project > .cover > .copy > .name,
-.project > .cover > .copy > .filters {
+.projects > .project > .cover > .copy > .name,
+.projects > .project > .cover > .copy > .filters {
   color: #fff;
   text-align: center;
 }
-.project > .cover > .copy > .name {
+.projects > .project > .cover > .copy > .name {
   font: 92px blenderpro medium;
 }
-.project > .cover > .copy > .filters {
+.projects > .project > .cover > .copy > .filters {
   color: #fff;
   text-transform: uppercase;
   font: 18px aktivgrotesk normal;
   letter-spacing: 2px;
 }
-.project > .description {
+.projects > .project > .description {
   padding: 40px 20px;
 }
-.project > .description > .copy {
+.projects > .project > .description > .copy {
   font: 50px blenderpro medium;
   color: #fff;
   max-width: 800px;
   margin: auto;
 }
-.project > .filters {
+.projects > .project > .filters {
   background-color: #22252b;
   color: #fff;
   text-transform: uppercase;
 }
-.project > .filters > .inner {
+.projects > .project > .filters > .inner {
   max-width: 1020px;
   margin: auto;
 }
-.project > .filters > .inner > .title {
+.projects > .project > .filters > .inner > .title {
   float: left;
   padding: 20px 0 20px 50px;
 }
-.project > .filters > .inner > .filtermenu {
+.projects > .project > .filters > .inner > .filtermenu {
   float: right;
   padding: 0 50px 0 0;
 }
-.project > .filters > .inner > .filtermenu > .filter {
+.projects > .project > .filters > .inner > .filtermenu > .filter {
   float: left;
   padding: 20px;
 }
-.project > .filters > .inner > .filtermenu > .filter.active_Solo {
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_aos {
+  background-color: #434965;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_fuelband {
+  background-color: #3bb62e;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_goggle {
+  background-color: #444;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_neff {
+  background-color: #f467b2;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_threedr {
   background-color: #76d734;
 }
-.project > .filters > .inner > .filtermenu > .filter.active_Versus Headset {
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_versus {
   background-color: #0195ff;
 }
-.project > .body {
+.projects > .project > .body {
   min-height: 2000px;
 }
-.project > .body > .youtube {
+.projects > .project > .body > .youtube {
   width: 800px;
   height: 450px;
   margin: auto;
 }
-.project > .body > .image {
+.projects > .project > .body > .image {
   padding: 50px 0;
   width: 100%;
 }
-.project > .body > .image.pad_both {
+.projects > .project > .body > .image.pad_both {
   padding: 50px 0;
 }
-.project > .body > .image.pad_top {
+.projects > .project > .body > .image.pad_top {
   padding: 50px 0 0 0;
 }
-.project > .body > .image.pad_bottom {
+.projects > .project > .body > .image.pad_bottom {
   padding: 0 0 50px 0;
 }
-.project > .body > .image > img {
+.projects > .project > .body > .image > img {
   width: inherit;
 }
-.project > .body > .copy {
+.projects > .project > .body > .copy {
   padding: 50px;
   line-height: 30px;
   max-width: 600px;
   margin: auto;
 }
-.project > .body > .imagecopy {
+.projects > .project > .body > .imagecopy {
   padding: 50px;
   max-width: 1020px;
   margin: auto;
 }
-.project > .body > .imagecopy.black {
+.projects > .project > .body > .imagecopy.black {
   background-color: #000;
 }
-.project > .body > .imagecopy.nopadding {
+.projects > .project > .body > .imagecopy.nopadding {
   padding: 0px;
 }
-.project > .body > .imagecopy > .block.left {
+.projects > .project > .body > .imagecopy > .block.left {
   float: left;
   width: 50%;
   height: 100%;
 }
-.project > .body > .imagecopy > .block.right {
+.projects > .project > .body > .imagecopy > .block.right {
   float: right;
   width: 50%;
   height: 100%;
 }
-.project > .body > .imagecopy > .block {
+.projects > .project > .body > .imagecopy > .block {
   height: inherit;
 }
-.project > .body > .imagecopy > .block > .image {
+.projects > .project > .body > .imagecopy > .block > .image {
   width: 100%;
   height: inherit;
   text-align: center;
 }
-.project > .body > .imagecopy > .block > .image > img {
+.projects > .project > .body > .imagecopy > .block > .image > img {
   height: inherit;
 }
-.project > .body > .imagecopy > .block.copy {
+.projects > .project > .body > .imagecopy > .block.copy {
   display: table;
 }
-.project > .body > .imagecopy > .block.copy > .copy {
+.projects > .project > .body > .imagecopy > .block.copy > .copy {
   line-height: 30px;
   max-width: 600px;
   padding: 0 50px;
@@ -947,28 +1029,46 @@ body {
   vertical-align: middle;
   margin: auto;
 }
-.project > .body > .imagecopy > .block.copy > .copy.white {
+.projects > .project > .body > .imagecopy > .block.copy > .copy.white {
   color: #fff;
 }
-.project > .credits > .inner {
+.projects > .project > .credits.credits_aos > .inner > .sections > .section > .title {
+  color: #434965;
+}
+.projects > .project > .credits.credits_fuelband > .inner > .sections > .section > .title {
+  color: #3bb62e;
+}
+.projects > .project > .credits.credits_goggle > .inner > .sections > .section > .title {
+  color: #444;
+}
+.projects > .project > .credits.credits_neff > .inner > .sections > .section > .title {
+  color: #f467b2;
+}
+.projects > .project > .credits.credits_threedr > .inner > .sections > .section > .title {
+  color: #76d734;
+}
+.projects > .project > .credits.credits_versus > .inner > .sections > .section > .title {
+  color: #0195ff;
+}
+.projects > .project > .credits > .inner {
   max-width: 1020px;
   margin: auto;
   padding: 50px;
 }
-.project > .credits > .inner > .title {
+.projects > .project > .credits > .inner > .title {
   font: 50px blenderpro medium;
 }
-.project > .credits > .inner > .sections > .section {
+.projects > .project > .credits > .inner > .sections > .section {
   float: left;
   width: 33.33%;
 }
-.project > .credits > .inner > .sections > .section > .title {
+.projects > .project > .credits > .inner > .sections > .section > .title {
   font: 40px blenderpro medium;
-  color: #0195ff;
+  color: #ffa500;
   margin: 0 0 10px 0;
 }
-.project > .credits > .inner > .sections > .section > .item,
-.project > .credits > .inner > .sections > .section > a.item {
+.projects > .project > .credits > .inner > .sections > .section > .item,
+.projects > .project > .credits > .inner > .sections > .section > a.item {
   display: block;
   margin: 0 0 10px 0;
   text-decoration: none;

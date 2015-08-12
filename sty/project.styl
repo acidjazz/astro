@@ -1,134 +1,182 @@
-.project
-  min-height 600px
-  &.on
-    display block
-  &.off
-    display none
+.projects
 
-  > .cover
-    height 600px
-    position relative
-    background-size cover
-    background-repeat no-repeat
-    background-position 50% 50%
-    > .copy
-      position absolute
-      left 0
-      top 50%
-      margin-top unit(-(120/2), px)
-      height 120px
-      width 100%
-      > .name, > .filters
-        color: c.white1
-        text-align center
-      > .name
-        font f_h1
-      > .filters
-        color: c.white1
-        text-transform uppercase
-        font f_copyn
-        letter-spacing 2px
-  > .description
-    padding 40px 20px
-    > .copy
-      font f_h2
+  .summary
+    background-color: c.blue3
+
+    &.on
+      display block
+    &.off
+      display none
+    > .hero
       color: c.white1
-      max-width 800px
-      margin auto
-
-  > .filters
-    background-color: c.black2
-    color white
-    text-transform uppercase
-    > .inner
-      desktop()
-      > .title
-        float left
-        padding 20px 0 20px 50px
-      > .filtermenu
-        float right
-        padding 0 50px 0 0
-        > .filter
-          float left
-          padding 20px
-          for key, project in data.project
-            &.active_{project.name}
-              background-color: c[project.color]
-  > .body
-    min-height 2000px
-    > .youtube
-      width 800px
-      height 450px
-      margin auto
-    > .image
-      padding 50px 0
-      width 100%
-      &.pad_both
-        padding 50px 0
-      &.pad_top
-        padding 50px 0 0 0
-      &.pad_bottom
-        padding  0 0 50px 0
-      > img
-        width inherit
-    > .copy
-      padding 50px
-      line-height 30px
-      max-width 600px
-      margin auto
-
-    > .imagecopy
-      padding 50px
-      desktop()
-      &.black
-        background-color: c.black1
-      &.nopadding
-        padding 0px
-      > .block.left
-        float left
-        width 50%
-        height 100%
-      > .block.right
-        float right
-        width 50%
-        height 100%
-      > .block
-        height inherit
-        > .image
-          width 100%
-          height inherit
-          text-align center
-          > img
-            height inherit
-        &.copy
-          display table
-          > .copy
-            line-height 30px
-            max-width 600px
-            padding 0 50px
-            display table-cell
-            vertical-align middle
-            margin auto
-            &.white
-              color: c.white1
-   
-  > .credits
-    > .inner
-      desktop()
-      padding 50px
-      > .title
+      padding 60px 20px
+      > .copy1
+        max-width 800px
+        margin auto
+      > .copy2
         font f_h2
-      > .sections
-        > .section
+        max-width 800px
+        margin auto
+
+    > .thumbs
+      > .thumb
+        float left
+        width 33.333%
+        height 300px
+        cursor pointer
+        background-size cover
+        background-repeat no-repeat
+        background-position 50% 50%
+        for key, project in data.project
+          &.thumb_{project.folder}:hover > .inner
+            background-color: rgba(c[project.color], 0.5)
+        > .inner
+          height 100%
+          transition background-color 0.1s linear
+          > .copy
+            color: c.white1
+            text-align center
+            // 80px high
+            // 150 - ( 80 / 2 )
+            padding 110px 0 0 0
+            > .name
+              font f_h2
+            > .filters
+              text-transform uppercase
+  > .project
+    min-height 600px
+    &.on
+      display block
+    &.off
+      display none
+
+    > .cover
+      height 600px
+      position relative
+      background-size cover
+      background-repeat no-repeat
+      background-position 50% 50%
+      > .copy
+        position absolute
+        left 0
+        top 50%
+        margin-top unit(-(120/2), px)
+        height 120px
+        width 100%
+        > .name, > .filters
+          color: c.white1
+          text-align center
+        > .name
+          font f_h1
+        > .filters
+          color: c.white1
+          text-transform uppercase
+          font f_copyn
+          letter-spacing 2px
+    > .description
+      padding 40px 20px
+      > .copy
+        font f_h2
+        color: c.white1
+        max-width 800px
+        margin auto
+
+    > .filters
+      background-color: c.black2
+      color white
+      text-transform uppercase
+      > .inner
+        desktop()
+        > .title
           float left
-          width 33.33%
-          > .title
-            font f_h3
-            color: c.blue1
-            margin 0 0 10px 0
-          > .item, > a.item
-            display block
-            margin 0 0 10px 0
-            text-decoration none
-            color: c.black1
+          padding 20px 0 20px 50px
+        > .filtermenu
+          float right
+          padding 0 50px 0 0
+          > .filter
+            float left
+            padding 20px
+            for key, project in data.project
+              &.active_{project.folder}
+                background-color: c[project.color]
+    > .body
+      min-height 2000px
+      > .youtube
+        width 800px
+        height 450px
+        margin auto
+      > .image
+        padding 50px 0
+        width 100%
+        &.pad_both
+          padding 50px 0
+        &.pad_top
+          padding 50px 0 0 0
+        &.pad_bottom
+          padding  0 0 50px 0
+        > img
+          width inherit
+      > .copy
+        padding 50px
+        line-height 30px
+        max-width 600px
+        margin auto
+
+      > .imagecopy
+        padding 50px
+        desktop()
+        &.black
+          background-color: c.black1
+        &.nopadding
+          padding 0px
+        > .block.left
+          float left
+          width 50%
+          height 100%
+        > .block.right
+          float right
+          width 50%
+          height 100%
+        > .block
+          height inherit
+          > .image
+            width 100%
+            height inherit
+            text-align center
+            > img
+              height inherit
+          &.copy
+            display table
+            > .copy
+              line-height 30px
+              max-width 600px
+              padding 0 50px
+              display table-cell
+              vertical-align middle
+              margin auto
+              &.white
+                color: c.white1
+     
+    > .credits
+      for key, project in data.project
+        &.credits_{project.folder} > .inner > .sections > .section > .title
+          color: c[project.color]
+      > .inner
+        desktop()
+        padding 50px
+        > .title
+          font f_h2
+        > .sections
+          > .section
+            float left
+            width 33.33%
+            > .title
+              font f_h3
+              color: orange
+              margin 0 0 10px 0
+            > .item, > a.item
+              display block
+              margin 0 0 10px 0
+              text-decoration none
+              color: c.black1
 

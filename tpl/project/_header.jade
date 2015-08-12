@@ -1,4 +1,4 @@
-.cover(style='background-image: url("../img/project/' + project.folder + '/cover.png");')
+.cover(style='background-image: url("../img/project/' + project.folder + '/' + project.cover + '");')
   .copy
     .name #{project.name}
     .filters !{project.filters.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
@@ -12,7 +12,7 @@
     .filtermenu
       each filter, key in project.filters
         if key == 0
-          .filter.active(class='active_' + project.name) #{filter}
+          .filter.active(class='active_' + project.folder) #{filter}
         else
           .filter #{filter}
     .clear

@@ -1,0 +1,24 @@
+
+---
+  folder: fuelband
+  cover: Fuelband_banner_edit.png
+  name: Nike+ Fuelband
+  description: Nike Digital Sport asked ASTRO to help develop a product that would change the way people think about fitness.  Thus was born the Nike+ Fuelband.  A revolutionary piece of wearable tech that does more than simply track activity, it lets wearers play the game of life against each other.
+  color: green3
+  filters:
+    - strategy
+    - digital
+    - product
+
+  credits:
+    links:
+      - http://www.getversus.com
+      - http://www.senselabs.com
+    deliverables:
+      - Deliverable 1
+      - Deliverable 2
+      - Deliverable 3
+    press:
+      - IDEA Award for Excellence
+      - Featured in Fast Company Design
+      - I.D. Magazine Annual Review

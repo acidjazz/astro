@@ -1,0 +1,21 @@
+---
+  folder: neff
+  cover: cover.jpg
+  name: Neff Watches
+  description: "We partnered with Neff to create a line of watches that embraces their motto: Forever Fun."
+  color: pink1
+  filters:
+    - product
+
+  credits:
+    links:
+      - http://www.getversus.com/
+      - http://www.esnselabs.com/
+    deliverables:
+      - Deliverable 1
+      - Deliverable 2
+      - Deliverable 3
+    press:
+      - IDEA Award for Excellence
+      - Featured in Fast Company Design
+      - I.D. Magazine Annual Review

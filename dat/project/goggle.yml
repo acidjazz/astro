@@ -1,0 +1,22 @@
+
+---
+  folder: goggle
+  cover: Lifestyle_Banner.jpg
+  name: Electric Goggle
+  description: Electric has been making sunglasses and snow goggles for years.  They know the category cold, but were looking to elevate their goggle line.  They asked us to push them aesthetically and mechanically into the future.
+  color: black3
+  filters:
+    - product
+
+  credits:
+    links:
+      - http://www.getversus.com
+      - http://www.senselabs.com
+    deliverables:
+      - Deliverable 1
+      - Deliverable 2
+      - Deliverable 3
+    press:
+      - IDEA Award for Excellence
+      - Featured in Fast Company Design
+      - I.D. Magazine Annual Review

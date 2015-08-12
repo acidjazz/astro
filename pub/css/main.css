@@ -1468,6 +1468,14 @@ body {
 .projects > .project > .body > .imagecopy > .block > .image > img {
   height: inherit;
 }
+.projects > .project > .body > .imagecopy > .block > .image > .img {
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 .projects > .project > .body > .imagecopy > .block.copy {
   display: table;
 }

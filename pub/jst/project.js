@@ -40,6 +40,7 @@ Project = {
     $('.summary > .thumbs > .thumb').each(function(i, el) {
       return srcs.push(Project.srcFromStyle($(el)));
     });
+    console.log(srcs);
     return Project.preload(srcs, function(progress) {
       return NProgress.set(progress);
     }, function(complete) {

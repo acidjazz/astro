@@ -43,6 +43,7 @@ Project =
     $('.summary > .thumbs > .thumb').each (i, el) ->
       srcs.push(Project.srcFromStyle($(el)))
 
+    console.log srcs
     Project.preload srcs,
       (progress) ->
         NProgress.set progress

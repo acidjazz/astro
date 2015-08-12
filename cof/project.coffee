@@ -77,6 +77,7 @@ Project =
     for src, i in srces
       images[i] = new Image()
       images[i].src = src
+      console.log 'Image()', src
       images[i].onload = ->
         loaded++
         perc = Math.round(loaded/total*100)/100

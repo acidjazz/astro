@@ -74,6 +74,7 @@ Project = {
       src = srces[i];
       images[i] = new Image();
       images[i].src = src;
+      console.log('Image()', src);
       results.push(images[i].onload = function() {
         var perc;
         loaded++;

@@ -122,7 +122,7 @@
   font: 92px blenderpro medium;
 }
 .guide > .sections > .section > .font.font_f_h2 {
-  font: 50px blenderpro medium;
+  font: 46px blenderpro medium;
 }
 .guide > .sections > .section > .font.font_f_h3 {
   font: 40px blenderpro medium;
@@ -1168,7 +1168,7 @@ body {
   margin: auto;
 }
 .projects .summary > .hero > .copy2 {
-  font: 50px blenderpro medium;
+  font: 46px blenderpro medium;
   max-width: 800px;
   margin: auto;
 }
@@ -1187,6 +1187,14 @@ body {
   -o-animation: cellInY 0.2s 0s ease-in both;
   -ms-animation: cellInY 0.2s 0s ease-in both;
   animation: cellInY 0.2s 0s ease-in both;
+  -webkit-transition: background-position 0.2s linear;
+  -moz-transition: background-position 0.2s linear;
+  -o-transition: background-position 0.2s linear;
+  -ms-transition: background-position 0.2s linear;
+  transition: background-position 0.2s linear;
+}
+.projects .summary > .thumbs > .thumb:hover {
+  background-position: 100% auto;
 }
 .projects .summary > .thumbs > .thumb:nth-child(0) {
   -webkit-animation-delay: 0s;
@@ -1303,7 +1311,7 @@ body {
   padding: 110px 0 0 0;
 }
 .projects .summary > .thumbs > .thumb > .inner > .copy > .name {
-  font: 50px blenderpro medium;
+  font: 46px blenderpro medium;
 }
 .projects .summary > .thumbs > .thumb > .inner > .copy > .filters {
   text-transform: uppercase;
@@ -1357,12 +1365,12 @@ body {
   letter-spacing: 2px;
 }
 .projects > .project > .description {
-  padding: 40px 20px;
+  padding: 40px 20px 60px 20px;
 }
 .projects > .project > .description > .copy {
-  font: 50px blenderpro medium;
+  font: 46px blenderpro medium;
   color: #fff;
-  max-width: 800px;
+  max-width: 1020px;
   margin: auto;
 }
 .projects > .project > .filters {
@@ -1376,7 +1384,7 @@ body {
 }
 .projects > .project > .filters > .inner > .title {
   float: left;
-  padding: 20px 0 20px 50px;
+  padding: 20px 0 20px 0px;
 }
 .projects > .project > .filters > .inner > .filtermenu {
   float: right;
@@ -1538,7 +1546,7 @@ body {
   padding: 50px;
 }
 .projects > .project > .credits > .inner > .title {
-  font: 50px blenderpro medium;
+  font: 46px blenderpro medium;
 }
 .projects > .project > .credits > .inner > .sections > .section {
   float: left;
@@ -1680,7 +1688,7 @@ body {
   font: 92px blenderpro medium;
 }
 .guide > .sections > .section > .font.font_f_h2 {
-  font: 50px blenderpro medium;
+  font: 46px blenderpro medium;
 }
 .guide > .sections > .section > .font.font_f_h3 {
   font: 40px blenderpro medium;

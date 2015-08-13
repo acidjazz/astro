@@ -36,7 +36,7 @@
             animation-delay unit(num*0.05, 's')
         for key, project in data.project
           &.thumb_{project.folder}:hover > .inner
-            background-color: rgba(c[project.color], 0.5)
+            background-color: rgba(c[project.color], 0.75)
         > .inner
           height 100%
           transition background-color 0.1s linear

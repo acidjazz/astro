@@ -57,6 +57,11 @@ Project =
 
   load: (project) ->
     _.off '.project, .summary'
+
+    for project, key of projects
+      $('.preloader').removeClass "project_#{key}"
+    $('.preloader').addClass "project_#{project}"
+
     _.on '.preloader'
 
     console.log "loading project #{project}"

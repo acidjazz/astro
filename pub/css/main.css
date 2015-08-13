@@ -80,6 +80,10 @@
   background-color: #ff2f2d;
   border: 1px solid #fff;
 }
+.guide > .sections > .section > .color.color_red3 {
+  background-color: #f1455b;
+  border: 1px solid #fff;
+}
 .guide > .sections > .section > .color.color_green1 {
   background-color: #76d734;
   border: 1px solid #fff;
@@ -876,6 +880,45 @@
   -ms-animation: preloader-inner 2s infinite ease-in;
   animation: preloader-inner 2s infinite ease-in;
 }
+.preloader.project_aos > .box > .inner {
+  background-color: #434965;
+}
+.preloader.project_fuelband > .box > .inner {
+  background-color: #3bb62e;
+}
+.preloader.project_goggle > .box > .inner {
+  background-color: #444;
+}
+.preloader.project_jinnitv > .box > .inner {
+  background-color: #2cbee6;
+}
+.preloader.project_mineralist > .box > .inner {
+  background-color: #ec8000;
+}
+.preloader.project_minus8 > .box > .inner {
+  background-color: #a9ded4;
+}
+.preloader.project_neff > .box > .inner {
+  background-color: #f467b2;
+}
+.preloader.project_owlet > .box > .inner {
+  background-color: #a9ded4;
+}
+.preloader.project_sol > .box > .inner {
+  background-color: #7582b1;
+}
+.preloader.project_tamar > .box > .inner {
+  background-color: #f4ab8b;
+}
+.preloader.project_threedr > .box > .inner {
+  background-color: #76d734;
+}
+.preloader.project_versus > .box > .inner {
+  background-color: #0195ff;
+}
+.preloader.project_xbox > .box > .inner {
+  background-color: #74bd44;
+}
 @-moz-keyframes preloader {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1118,20 +1161,64 @@
   fill: #fff;
 }
 .top > .inner > .burger {
+  cursor: pointer;
   position: absolute;
   top: 30px;
   right: 30px;
   width: 40px;
   height: 40px;
+  overflow: hidden;
 }
-.top > .inner > .burger > .lines {
+.top > .inner > .burger > .inner {
+  position: relative;
+}
+.top > .inner > .burger > .inner > .lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
   margin: 10px 0 0 0;
 }
-.top > .inner > .burger > .lines > .line {
-  width: 30px;
+.top > .inner > .burger > .inner > .lines > .line {
+  width: 40px;
   height: 5px;
   background-color: #fff;
   margin: 0 0 7px 5px;
+}
+.top > .inner > .burger > .inner > .lines.red > .line {
+  background-color: #ff2f2d;
+  -webkit-transform: translate(40px, 0);
+  -moz-transform: translate(40px, 0);
+  -o-transform: translate(40px, 0);
+  -ms-transform: translate(40px, 0);
+  transform: translate(40px, 0);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  -ms-transition: -ms-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.top > .inner > .burger > .inner > .lines.red > .line:nth-child(2) {
+  -webkit-transition-delay: 0.05s;
+  -moz-transition-delay: 0.05s;
+  -o-transition-delay: 0.05s;
+  -ms-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+.top > .inner > .burger > .inner > .lines.red > .line:nth-child(3) {
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.top > .inner > .burger:hover > .inner > .lines.red > .line {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 .clear {
   zoom: 1;
@@ -1697,6 +1784,10 @@ body {
 }
 .guide > .sections > .section > .color.color_red2 {
   background-color: #ff2f2d;
+  border: 1px solid #fff;
+}
+.guide > .sections > .section > .color.color_red3 {
+  background-color: #f1455b;
   border: 1px solid #fff;
 }
 .guide > .sections > .section > .color.color_green1 {

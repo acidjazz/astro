@@ -23,6 +23,10 @@
       background-color: c.white1
       animation preloader-inner 2s infinite ease-in
 
+  for key, project in data.project
+    &.project_{project.folder} > .box > .inner
+      background-color: c[project.color]
+
 @keyframes preloader
   0%
     transform rotate(0deg)

@@ -53,8 +53,13 @@ Project = {
     });
   },
   load: function(project) {
-    var srcs;
+    var key, srcs;
     _.off('.project, .summary');
+    for (project in projects) {
+      key = projects[project];
+      $('.preloader').removeClass("project_" + key);
+    }
+    $('.preloader').addClass("project_" + project);
     _.on('.preloader');
     console.log("loading project " + project);
     NProgress.start();

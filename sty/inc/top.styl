@@ -21,15 +21,36 @@
           fill: c.white1
 
     > .burger
+      cursor pointer
       position absolute
       top 30px
       right 30px
       width 40px
       height 40px
-      > .lines
-        margin 10px 0 0 0
-        > .line
-          width 30px
-          height 5px
-          background-color: c.white1
-          margin 0 0 7px 5px
+      overflow hidden
+      > .inner
+        position relative
+        > .lines
+          position absolute
+          top 0
+          left 0
+          width 40px
+          height 40px
+          margin 10px 0 0 0
+          > .line
+            width 40px
+            height 5px
+            background-color: c.white1
+            margin 0 0 7px 5px
+        > .lines.red
+          > .line
+            background-color: c.red2
+            transform translate(40px, 0)
+            transition transform 0.3s ease-out
+            &:nth-child(2)
+              transition-delay 0.05s
+            &:nth-child(3)
+              transition-delay 0.1s
+      &:hover
+        > .inner > .lines.red > .line
+          transform translate(0, 0)

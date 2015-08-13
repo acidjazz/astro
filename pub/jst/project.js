@@ -34,7 +34,11 @@ Project = {
     return Project.load(project);
   },
   summary: function() {
-    var srcs;
+    var key, oproject, srcs;
+    for (oproject in projects) {
+      key = projects[oproject];
+      $('.preloader').removeClass("preloader_" + key);
+    }
     _.off('.project');
     _.on('.preloader');
     NProgress.start();

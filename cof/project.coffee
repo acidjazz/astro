@@ -36,6 +36,8 @@ Project =
     Project.load project
 
   summary: () ->
+    for oproject, key of projects
+      $('.preloader').removeClass "preloader_#{key}"
     _.off '.project'
     _.on '.preloader'
     NProgress.start()

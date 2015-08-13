@@ -122,11 +122,13 @@
           padding 50px 0 0 0
         &.pad_bottom
           padding  0 0 50px 0
+        &.pad_none
+          padding  0 0 0 0
         > img
           width inherit
         > .img
           //height 600px
-          padding-top 40%
+          padding-top 60%
           background-size cover
           background-repeat no-repeat
           background-position 50% 50%
@@ -138,6 +140,8 @@
 
       > .imagecopy
         padding 50px
+        &.pad_bottom
+          padding 0 0 50px 0
         desktop()
         &.black
           background-color: c.black1
@@ -159,6 +163,11 @@
             text-align center
             > img
               height inherit
+            > .img
+              height 100%
+              background-size cover
+              background-repeat no-repeat
+              background-position 50% 50%
           &.copy
             display table
             > .copy

@@ -1274,6 +1274,9 @@ body {
 .projects .summary > .thumbs > .thumb.thumb_goggle:hover > .inner {
   background-color: rgba(68,68,68,0.5);
 }
+.projects .summary > .thumbs > .thumb.thumb_mineralist:hover > .inner {
+  background-color: rgba(236,128,0,0.5);
+}
 .projects .summary > .thumbs > .thumb.thumb_neff:hover > .inner {
   background-color: rgba(244,103,178,0.5);
 }
@@ -1282,6 +1285,9 @@ body {
 }
 .projects .summary > .thumbs > .thumb.thumb_versus:hover > .inner {
   background-color: rgba(1,149,255,0.5);
+}
+.projects .summary > .thumbs > .thumb.thumb_xbox:hover > .inner {
+  background-color: rgba(116,189,68,0.5);
 }
 .projects .summary > .thumbs > .thumb > .inner {
   height: 100%;
@@ -1389,6 +1395,9 @@ body {
 .projects > .project > .filters > .inner > .filtermenu > .filter.active_goggle {
   background-color: #444;
 }
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_mineralist {
+  background-color: #ec8000;
+}
 .projects > .project > .filters > .inner > .filtermenu > .filter.active_neff {
   background-color: #f467b2;
 }
@@ -1397,6 +1406,9 @@ body {
 }
 .projects > .project > .filters > .inner > .filtermenu > .filter.active_versus {
   background-color: #0195ff;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_xbox {
+  background-color: #74bd44;
 }
 .projects > .project > .body {
   min-height: 2000px;
@@ -1419,11 +1431,14 @@ body {
 .projects > .project > .body > .image.pad_bottom {
   padding: 0 0 50px 0;
 }
+.projects > .project > .body > .image.pad_none {
+  padding: 0 0 0 0;
+}
 .projects > .project > .body > .image > img {
   width: inherit;
 }
 .projects > .project > .body > .image > .img {
-  padding-top: 40%;
+  padding-top: 60%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1440,6 +1455,9 @@ body {
   padding: 50px;
   max-width: 1020px;
   margin: auto;
+}
+.projects > .project > .body > .imagecopy.pad_bottom {
+  padding: 0 0 50px 0;
 }
 .projects > .project > .body > .imagecopy.black {
   background-color: #000;
@@ -1468,6 +1486,14 @@ body {
 .projects > .project > .body > .imagecopy > .block > .image > img {
   height: inherit;
 }
+.projects > .project > .body > .imagecopy > .block > .image > .img {
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 .projects > .project > .body > .imagecopy > .block.copy {
   display: table;
 }
@@ -1491,6 +1517,9 @@ body {
 .projects > .project > .credits.credits_goggle > .inner > .sections > .section > .title {
   color: #444;
 }
+.projects > .project > .credits.credits_mineralist > .inner > .sections > .section > .title {
+  color: #ec8000;
+}
 .projects > .project > .credits.credits_neff > .inner > .sections > .section > .title {
   color: #f467b2;
 }
@@ -1499,6 +1528,9 @@ body {
 }
 .projects > .project > .credits.credits_versus > .inner > .sections > .section > .title {
   color: #0195ff;
+}
+.projects > .project > .credits.credits_xbox > .inner > .sections > .section > .title {
+  color: #74bd44;
 }
 .projects > .project > .credits > .inner {
   max-width: 1020px;

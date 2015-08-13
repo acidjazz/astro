@@ -73,6 +73,25 @@ block content
         include neff
       include _credits
 
+    - var project = data.project.mineralist
+
+    .project.project_mineralist.off
+      include _header
+      .body
+        include mineralist
+      include _credits
+
+
+    - var project = data.project.xbox
+
+    .project.project_xbox.off
+      include _header
+      .body
+        include xbox
+      include _credits
+
+
+
   include ../inc/bottom
 
   script(type='text/javascript').

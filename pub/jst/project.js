@@ -21,6 +21,7 @@ Project = {
   },
   summaryHandler: function() {
     console.log('clicked the A');
+    location.hash = false;
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     return Project.summary();
   },

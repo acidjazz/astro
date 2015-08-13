@@ -880,43 +880,43 @@
   -ms-animation: preloader-inner 2s infinite ease-in;
   animation: preloader-inner 2s infinite ease-in;
 }
-.preloader.project_aos > .box > .inner {
+.preloader.preloader_aos > .box > .inner {
   background-color: #434965;
 }
-.preloader.project_fuelband > .box > .inner {
+.preloader.preloader_fuelband > .box > .inner {
   background-color: #3bb62e;
 }
-.preloader.project_goggle > .box > .inner {
+.preloader.preloader_goggle > .box > .inner {
   background-color: #444;
 }
-.preloader.project_jinnitv > .box > .inner {
+.preloader.preloader_jinnitv > .box > .inner {
   background-color: #2cbee6;
 }
-.preloader.project_mineralist > .box > .inner {
+.preloader.preloader_mineralist > .box > .inner {
   background-color: #ec8000;
 }
-.preloader.project_minus8 > .box > .inner {
+.preloader.preloader_minus8 > .box > .inner {
   background-color: #a9ded4;
 }
-.preloader.project_neff > .box > .inner {
+.preloader.preloader_neff > .box > .inner {
   background-color: #f467b2;
 }
-.preloader.project_owlet > .box > .inner {
+.preloader.preloader_owlet > .box > .inner {
   background-color: #a9ded4;
 }
-.preloader.project_sol > .box > .inner {
+.preloader.preloader_sol > .box > .inner {
   background-color: #7582b1;
 }
-.preloader.project_tamar > .box > .inner {
+.preloader.preloader_tamar > .box > .inner {
   background-color: #f4ab8b;
 }
-.preloader.project_threedr > .box > .inner {
+.preloader.preloader_threedr > .box > .inner {
   background-color: #76d734;
 }
-.preloader.project_versus > .box > .inner {
+.preloader.preloader_versus > .box > .inner {
   background-color: #0195ff;
 }
-.preloader.project_xbox > .box > .inner {
+.preloader.preloader_xbox > .box > .inner {
   background-color: #74bd44;
 }
 @-moz-keyframes preloader {

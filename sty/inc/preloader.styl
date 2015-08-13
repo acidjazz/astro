@@ -24,7 +24,7 @@
       animation preloader-inner 2s infinite ease-in
 
   for key, project in data.project
-    &.project_{project.folder} > .box > .inner
+    &.preloader_{project.folder} > .box > .inner
       background-color: c[project.color]
 
 @keyframes preloader

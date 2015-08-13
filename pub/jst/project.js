@@ -57,9 +57,9 @@ Project = {
     _.off('.project, .summary');
     for (project in projects) {
       key = projects[project];
-      $('.preloader').removeClass("project_" + key);
+      $('.preloader').removeClass("preloader_" + key);
     }
-    $('.preloader').addClass("project_" + project);
+    $('.preloader').addClass("preloader_" + project);
     _.on('.preloader');
     console.log("loading project " + project);
     NProgress.start();
@@ -68,6 +68,7 @@ Project = {
       return NProgress.set(progress);
     }, function(complete) {
       NProgress.done();
+      console.log('DONE LOADING');
       _.off('.preloader');
       return _.on(".project_" + project);
     });

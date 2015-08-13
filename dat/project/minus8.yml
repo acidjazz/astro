@@ -1,0 +1,26 @@
+
+---
+  folder: minus8
+  cover: banner.png
+  name: Minus-8
+  description: "Minus-8 is a watch brand created by ASTRO designed to express the things that make the West Coast so special: Free thought, pure form, and always living on the leading edge of America."
+  color: blue5
+  filters:
+    - holistic
+    - strategy
+    - brand
+    - product
+
+  credits:
+    links:
+      - http://www.getversus.com
+      - http://www.senselabs.com
+    deliverables:
+      - Deliverable 1
+      - Deliverable 2
+      - Deliverable 3
+    press:
+      - IDEA Award for Excellence
+      - Featured in Fast Company Design
+      - I.D. Magazine Annual Review
+

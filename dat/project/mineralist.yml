@@ -1,0 +1,22 @@
+---
+  folder: mineralist
+  name: Mineralist
+  cover: banner.jpg
+  description: ASTRO revamped the Mineralist brand to bring it up to speed with their progressive model.
+  color: orange2
+  filters:
+    - strategy
+    - brand
+    - digital
+
+  credits:
+    links:
+      - http://www.theroyalstudio.com/
+    deliverables:
+      - Deliverable 1
+      - Deliverable 2
+      - Deliverable 3
+    press:
+      - IDEA Award for Excellence
+      - Featured in Fast Company Design
+      - I.D. Magazine Annual Review

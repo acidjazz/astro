@@ -1,0 +1,21 @@
+---
+  folder: xbox
+  cover: xbox.png
+  name: XBox
+  description: A worldwide phenomenon and American pop culture classic.  Microsoft's XBOX 360 is one of the most successful gaming consoles of all time.
+  color: green2
+  filters:
+    - product
+
+  credits:
+    links:
+      - http://www.getversus.com
+      - http://www.senselabs.com
+    deliverables:
+      - Deliverable 1
+      - Deliverable 2
+      - Deliverable 3
+    press:
+      - IDEA Award for Excellence
+      - Featured in Fast Company Design
+      - I.D. Magazine Annual Review

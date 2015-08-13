@@ -1,0 +1,22 @@
+---
+  folder: jinnitv
+  cover: banner.png
+  name: Jinni TV
+  description: Jinni TV created the first truly connected entertainment experience.  We brought it to life.
+  color: blue2
+  filters:
+    - digital
+
+  credits:
+    links:
+      - http://www.getversus.com
+      - http://www.senselabs.com
+    deliverables:
+      - Deliverable 1
+      - Deliverable 2
+      - Deliverable 3
+    press:
+      - IDEA Award for Excellence
+      - Featured in Fast Company Design
+      - I.D. Magazine Annual Review
+

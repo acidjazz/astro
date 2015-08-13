@@ -34,6 +34,10 @@
   background-color: #7582b1;
   border: 1px solid #fff;
 }
+.guide > .sections > .section > .color.color_blue5 {
+  background-color: #a9ded4;
+  border: 1px solid #fff;
+}
 .guide > .sections > .section > .color.color_black1 {
   background-color: #000;
   border: 1px solid #fff;
@@ -70,6 +74,10 @@
 }
 .guide > .sections > .section > .color.color_red1 {
   background-color: #ee5655;
+  border: 1px solid #fff;
+}
+.guide > .sections > .section > .color.color_red2 {
+  background-color: #ff2f2d;
   border: 1px solid #fff;
 }
 .guide > .sections > .section > .color.color_green1 {
@@ -1282,11 +1290,26 @@ body {
 .projects .summary > .thumbs > .thumb.thumb_goggle:hover > .inner {
   background-color: rgba(68,68,68,0.5);
 }
+.projects .summary > .thumbs > .thumb.thumb_jinnitv:hover > .inner {
+  background-color: rgba(44,190,230,0.5);
+}
 .projects .summary > .thumbs > .thumb.thumb_mineralist:hover > .inner {
   background-color: rgba(236,128,0,0.5);
 }
+.projects .summary > .thumbs > .thumb.thumb_minus8:hover > .inner {
+  background-color: rgba(169,222,212,0.5);
+}
 .projects .summary > .thumbs > .thumb.thumb_neff:hover > .inner {
   background-color: rgba(244,103,178,0.5);
+}
+.projects .summary > .thumbs > .thumb.thumb_owlet:hover > .inner {
+  background-color: rgba(169,222,212,0.5);
+}
+.projects .summary > .thumbs > .thumb.thumb_sol:hover > .inner {
+  background-color: rgba(117,130,177,0.5);
+}
+.projects .summary > .thumbs > .thumb.thumb_tamar:hover > .inner {
+  background-color: rgba(244,171,139,0.5);
 }
 .projects .summary > .thumbs > .thumb.thumb_threedr:hover > .inner {
   background-color: rgba(118,215,52,0.5);
@@ -1403,11 +1426,26 @@ body {
 .projects > .project > .filters > .inner > .filtermenu > .filter.active_goggle {
   background-color: #444;
 }
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_jinnitv {
+  background-color: #2cbee6;
+}
 .projects > .project > .filters > .inner > .filtermenu > .filter.active_mineralist {
   background-color: #ec8000;
 }
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_minus8 {
+  background-color: #a9ded4;
+}
 .projects > .project > .filters > .inner > .filtermenu > .filter.active_neff {
   background-color: #f467b2;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_owlet {
+  background-color: #a9ded4;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_sol {
+  background-color: #7582b1;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.active_tamar {
+  background-color: #f4ab8b;
 }
 .projects > .project > .filters > .inner > .filtermenu > .filter.active_threedr {
   background-color: #76d734;
@@ -1525,11 +1563,26 @@ body {
 .projects > .project > .credits.credits_goggle > .inner > .sections > .section > .title {
   color: #444;
 }
+.projects > .project > .credits.credits_jinnitv > .inner > .sections > .section > .title {
+  color: #2cbee6;
+}
 .projects > .project > .credits.credits_mineralist > .inner > .sections > .section > .title {
   color: #ec8000;
 }
+.projects > .project > .credits.credits_minus8 > .inner > .sections > .section > .title {
+  color: #a9ded4;
+}
 .projects > .project > .credits.credits_neff > .inner > .sections > .section > .title {
   color: #f467b2;
+}
+.projects > .project > .credits.credits_owlet > .inner > .sections > .section > .title {
+  color: #a9ded4;
+}
+.projects > .project > .credits.credits_sol > .inner > .sections > .section > .title {
+  color: #7582b1;
+}
+.projects > .project > .credits.credits_tamar > .inner > .sections > .section > .title {
+  color: #f4ab8b;
 }
 .projects > .project > .credits.credits_threedr > .inner > .sections > .section > .title {
   color: #76d734;
@@ -1600,6 +1653,10 @@ body {
   background-color: #7582b1;
   border: 1px solid #fff;
 }
+.guide > .sections > .section > .color.color_blue5 {
+  background-color: #a9ded4;
+  border: 1px solid #fff;
+}
 .guide > .sections > .section > .color.color_black1 {
   background-color: #000;
   border: 1px solid #fff;
@@ -1636,6 +1693,10 @@ body {
 }
 .guide > .sections > .section > .color.color_red1 {
   background-color: #ee5655;
+  border: 1px solid #fff;
+}
+.guide > .sections > .section > .color.color_red2 {
+  background-color: #ff2f2d;
   border: 1px solid #fff;
 }
 .guide > .sections > .section > .color.color_green1 {

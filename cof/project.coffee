@@ -21,7 +21,7 @@ Project =
 
   summaryHandler: ->
     console.log 'clicked the A'
-    location.hash = false
+    location.hash = ''
     document.body.scrollTop = document.documentElement.scrollTop = 0
     Project.summary()
 

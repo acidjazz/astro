@@ -1,0 +1,22 @@
+---
+  folder: owlet
+  cover: feet.jpg
+  name: Owlet
+  description: ASTRO designed the Owlet to take the baby monitor to the next level.  It tracks a range of vital signs such as hear trate and oxygen intake and sends the informatino to parents' smartphones, giving them piece of mind when they're away from their baby. 
+  color: blue5
+  filters:
+    - product
+
+  credits:
+    links:
+      - http://www.getversus.com
+      - http://www.senselabs.com
+    deliverables:
+      - Deliverable 1
+      - Deliverable 2
+      - Deliverable 3
+    press:
+      - IDEA Award for Excellence
+      - Featured in Fast Company Design
+      - I.D. Magazine Annual Review
+

@@ -13,6 +13,7 @@ Project = {
     } else {
       Project.summary();
     }
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     return Project.handlers();
   },
   handlers: function() {
@@ -22,7 +23,6 @@ Project = {
   summaryHandler: function() {
     console.log('clicked the A');
     location.hash = '';
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
     return Project.summary();
   },
   projectHandler: function() {

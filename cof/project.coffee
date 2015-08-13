@@ -12,6 +12,8 @@ Project =
     else
       Project.summary()
 
+    document.body.scrollTop = document.documentElement.scrollTop = 0
+
     Project.handlers()
 
   handlers: ->
@@ -22,7 +24,6 @@ Project =
   summaryHandler: ->
     console.log 'clicked the A'
     location.hash = ''
-    document.body.scrollTop = document.documentElement.scrollTop = 0
     Project.summary()
 
   projectHandler: ->

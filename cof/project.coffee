@@ -58,9 +58,9 @@ Project =
   load: (project) ->
     _.off '.project, .summary'
 
-    for project, key of projects
+    for oproject, key of projects
       $('.preloader').removeClass "preloader_#{key}"
-    $('.preloader').addClass "preloader_#{project}"
+    $('.preloader').addClass "preloader_#{oproject}"
 
     _.on '.preloader'
 

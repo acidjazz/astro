@@ -1,4 +1,60 @@
 
+.menu
+  &.on
+    display block
+  &.off
+    display none
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background-color: rgba(c.blue3, 0.9)
+  z-index 100
+  > .inner
+    position relative
+    width 100%
+    height 100%
+    > .options
+      position absolute
+      top 50%
+      left 0
+      margin-top -220px
+      width 100%
+      height 440px
+      > .option
+        position relative
+        cursor pointer
+        font f_h1
+        text-align center
+        &.active > .line
+          position absolute
+          top 50%
+          left 50%
+          height 6px
+          background-color: c.red2
+        &.active:nth-child(1) > .line
+          width 230px
+          margin -3px 0 0 -115px
+        &.active:nth-child(2) > .line
+          width 260px
+          margin -3px 0 0 -130px
+        &.active:nth-child(3) > .line
+          width 220px
+          margin -3px 0 0 -110px
+        &.active:nth-child(4) > .line
+          width 380px
+          margin -3px 0 0 -190px
+
+        color: c.white1
+        &:hover
+          color: c.red1
+        transition color 0.1s linear
+        animation cellInX 0.2s 0s ease-in both
+        for num in 0..5
+          &:nth-child({num})
+            animation-delay unit(num*0.1, 's')
+
 .top
   position fixed
   top 0
@@ -12,8 +68,8 @@
       position absolute
       top 30px
       left 30px
-      width 40px
-      height 40px
+      width 35px
+      height 35px
       > svg
         width inherit
         height inherit
@@ -21,36 +77,53 @@
           fill: c.white1
 
     > .burger
+      z-index 150
+      user-select none
       cursor pointer
       position absolute
       top 30px
       right 30px
-      width 40px
-      height 40px
+      width 35px
+      height 35px
       overflow hidden
+      &.off
+        > .inner > .lines
+          transform rotate(90deg)
+        > .inner > .lines > .line
+          background-color: c.red2
+        > .inner > .lines > .line1
+          transform translate(0px, 13px) rotate(45deg)
+        > .inner > .lines > .line3
+          transform translate(0px, -10px) rotate(-45deg)
+        > .inner > .lines > .line2
+          background-color transparent
+
       > .inner
         position relative
+        width 35px
+        height 35px
         > .lines
           position absolute
           top 0
           left 0
-          width 40px
-          height 40px
-          margin 10px 0 0 0
+          width 35px
+          height 35px
+          transition transform 0.2s linear 0.2s
           > .line
-            width 40px
+            width 35px
             height 5px
             background-color: c.white1
-            margin 0 0 7px 5px
+            margin 0 0 7px 0
+            transition transform 0.3s ease-out 0.2s, background-color 0.1s linear 0.2s
         > .lines.red
           > .line
             background-color: c.red2
             transform translate(40px, 0)
-            transition transform 0.3s ease-out
+            transition transform 0.3s ease-out 0.1s
             &:nth-child(2)
-              transition-delay 0.05s
+              transition-delay 0.15s
             &:nth-child(3)
-              transition-delay 0.1s
-      &:hover
+              transition-delay 0.2s
+      &.on:hover
         > .inner > .lines.red > .line
           transform translate(0, 0)

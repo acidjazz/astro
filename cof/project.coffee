@@ -60,7 +60,7 @@ Project =
 
     for oproject, key of projects
       $('.preloader').removeClass "preloader_#{key}"
-    $('.preloader').addClass "preloader_#{oproject}"
+    $('.preloader').addClass "preloader_#{project}"
 
     _.on '.preloader'
 

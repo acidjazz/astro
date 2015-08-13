@@ -16,3 +16,18 @@
           .item #{press}
       .clear
 
+if project.related
+  .related
+    .title(class='title_' + project.folder) Related Projects
+    .relateds
+      each related in project.related
+        - if (related in data.project) { var cover = data.project[related].cover; } else { var cover = 'WHAT'; }
+        .thumb(
+          class='thumb_' + related,
+          data-project=related,
+          style='background-image: url("../img/project/' + related + '/1440/' + cover + '");'
+        )
+          .inner
+            .copy
+              .name #{data.project[related].name}
+    .clear

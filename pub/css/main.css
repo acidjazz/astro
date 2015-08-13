@@ -1428,7 +1428,8 @@ body.fixed {
   max-width: 800px;
   margin: auto;
 }
-.projects .summary > .thumbs > .thumb {
+.projects > .summary > .thumbs > .thumb,
+.related > .relateds > .thumb {
   float: left;
   width: 33.333%;
   height: 300px;
@@ -1449,126 +1450,152 @@ body.fixed {
   -ms-transition: background-position 0.2s linear;
   transition: background-position 0.2s linear;
 }
-.projects .summary > .thumbs > .thumb:hover {
+.projects > .summary > .thumbs > .thumb:hover,
+.related > .relateds > .thumb:hover {
   background-position: 100% auto;
 }
-.projects .summary > .thumbs > .thumb:nth-child(0) {
+.projects > .summary > .thumbs > .thumb:nth-child(0),
+.related > .relateds > .thumb:nth-child(0) {
   -webkit-animation-delay: 0s;
   -moz-animation-delay: 0s;
   -o-animation-delay: 0s;
   -ms-animation-delay: 0s;
   animation-delay: 0s;
 }
-.projects .summary > .thumbs > .thumb:nth-child(1) {
+.projects > .summary > .thumbs > .thumb:nth-child(1),
+.related > .relateds > .thumb:nth-child(1) {
   -webkit-animation-delay: 0.05s;
   -moz-animation-delay: 0.05s;
   -o-animation-delay: 0.05s;
   -ms-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-.projects .summary > .thumbs > .thumb:nth-child(2) {
+.projects > .summary > .thumbs > .thumb:nth-child(2),
+.related > .relateds > .thumb:nth-child(2) {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   -o-animation-delay: 0.1s;
   -ms-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
-.projects .summary > .thumbs > .thumb:nth-child(3) {
+.projects > .summary > .thumbs > .thumb:nth-child(3),
+.related > .relateds > .thumb:nth-child(3) {
   -webkit-animation-delay: 0.15s;
   -moz-animation-delay: 0.15s;
   -o-animation-delay: 0.15s;
   -ms-animation-delay: 0.15s;
   animation-delay: 0.15s;
 }
-.projects .summary > .thumbs > .thumb:nth-child(4) {
+.projects > .summary > .thumbs > .thumb:nth-child(4),
+.related > .relateds > .thumb:nth-child(4) {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   -o-animation-delay: 0.2s;
   -ms-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
-.projects .summary > .thumbs > .thumb:nth-child(5) {
+.projects > .summary > .thumbs > .thumb:nth-child(5),
+.related > .relateds > .thumb:nth-child(5) {
   -webkit-animation-delay: 0.25s;
   -moz-animation-delay: 0.25s;
   -o-animation-delay: 0.25s;
   -ms-animation-delay: 0.25s;
   animation-delay: 0.25s;
 }
-.projects .summary > .thumbs > .thumb:nth-child(6) {
+.projects > .summary > .thumbs > .thumb:nth-child(6),
+.related > .relateds > .thumb:nth-child(6) {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   -o-animation-delay: 0.3s;
   -ms-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-.projects .summary > .thumbs > .thumb:nth-child(7) {
+.projects > .summary > .thumbs > .thumb:nth-child(7),
+.related > .relateds > .thumb:nth-child(7) {
   -webkit-animation-delay: 0.35s;
   -moz-animation-delay: 0.35s;
   -o-animation-delay: 0.35s;
   -ms-animation-delay: 0.35s;
   animation-delay: 0.35s;
 }
-.projects .summary > .thumbs > .thumb:nth-child(8) {
+.projects > .summary > .thumbs > .thumb:nth-child(8),
+.related > .relateds > .thumb:nth-child(8) {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   -o-animation-delay: 0.4s;
   -ms-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
-.projects .summary > .thumbs > .thumb:nth-child(9) {
+.projects > .summary > .thumbs > .thumb:nth-child(9),
+.related > .relateds > .thumb:nth-child(9) {
   -webkit-animation-delay: 0.45s;
   -moz-animation-delay: 0.45s;
   -o-animation-delay: 0.45s;
   -ms-animation-delay: 0.45s;
   animation-delay: 0.45s;
 }
-.projects .summary > .thumbs > .thumb:nth-child(10) {
+.projects > .summary > .thumbs > .thumb:nth-child(10),
+.related > .relateds > .thumb:nth-child(10) {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   -o-animation-delay: 0.5s;
   -ms-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
-.projects .summary > .thumbs > .thumb.thumb_aos:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_aos:hover > .inner,
+.related > .relateds > .thumb.thumb_aos:hover > .inner {
   background-color: rgba(67,73,101,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner,
+.related > .relateds > .thumb.thumb_fuelband:hover > .inner {
   background-color: rgba(59,182,46,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_goggle:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_goggle:hover > .inner,
+.related > .relateds > .thumb.thumb_goggle:hover > .inner {
   background-color: rgba(68,68,68,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_jinnitv:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_jinnitv:hover > .inner,
+.related > .relateds > .thumb.thumb_jinnitv:hover > .inner {
   background-color: rgba(44,190,230,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_mineralist:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_mineralist:hover > .inner,
+.related > .relateds > .thumb.thumb_mineralist:hover > .inner {
   background-color: rgba(236,128,0,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_minus8:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_minus8:hover > .inner,
+.related > .relateds > .thumb.thumb_minus8:hover > .inner {
   background-color: rgba(169,222,212,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_neff:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_neff:hover > .inner,
+.related > .relateds > .thumb.thumb_neff:hover > .inner {
   background-color: rgba(244,103,178,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_owlet:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_owlet:hover > .inner,
+.related > .relateds > .thumb.thumb_owlet:hover > .inner {
   background-color: rgba(169,222,212,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_sol:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_sol:hover > .inner,
+.related > .relateds > .thumb.thumb_sol:hover > .inner {
   background-color: rgba(117,130,177,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_tamar:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_tamar:hover > .inner,
+.related > .relateds > .thumb.thumb_tamar:hover > .inner {
   background-color: rgba(244,171,139,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_threedr:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_threedr:hover > .inner,
+.related > .relateds > .thumb.thumb_threedr:hover > .inner {
   background-color: rgba(118,215,52,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_versus:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_versus:hover > .inner,
+.related > .relateds > .thumb.thumb_versus:hover > .inner {
   background-color: rgba(1,149,255,0.75);
 }
-.projects .summary > .thumbs > .thumb.thumb_xbox:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_xbox:hover > .inner,
+.related > .relateds > .thumb.thumb_xbox:hover > .inner {
   background-color: rgba(116,189,68,0.75);
 }
-.projects .summary > .thumbs > .thumb > .inner {
+.projects > .summary > .thumbs > .thumb > .inner,
+.related > .relateds > .thumb > .inner {
   height: 100%;
   -webkit-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
@@ -1576,15 +1603,18 @@ body.fixed {
   -ms-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
 }
-.projects .summary > .thumbs > .thumb > .inner > .copy {
+.projects > .summary > .thumbs > .thumb > .inner > .copy,
+.related > .relateds > .thumb > .inner > .copy {
   color: #fff;
   text-align: center;
   padding: 110px 0 0 0;
 }
-.projects .summary > .thumbs > .thumb > .inner > .copy > .name {
+.projects > .summary > .thumbs > .thumb > .inner > .copy > .name,
+.related > .relateds > .thumb > .inner > .copy > .name {
   font: 46px blenderpro medium;
 }
-.projects .summary > .thumbs > .thumb > .inner > .copy > .filters {
+.projects > .summary > .thumbs > .thumb > .inner > .copy > .filters,
+.related > .relateds > .thumb > .inner > .copy > .filters {
   text-transform: uppercase;
 }
 .projects > .project {
@@ -1846,6 +1876,51 @@ body.fixed {
 }
 .projects > .project > .body > .imagecopy > .block.copy > .copy.white {
   color: #fff;
+}
+.projects > .project > .related > .title {
+  font: 40px blenderpro medium;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.projects > .project > .related > .title.title_aos {
+  background-color: #434965;
+}
+.projects > .project > .related > .title.title_fuelband {
+  background-color: #3bb62e;
+}
+.projects > .project > .related > .title.title_goggle {
+  background-color: #444;
+}
+.projects > .project > .related > .title.title_jinnitv {
+  background-color: #2cbee6;
+}
+.projects > .project > .related > .title.title_mineralist {
+  background-color: #ec8000;
+}
+.projects > .project > .related > .title.title_minus8 {
+  background-color: #a9ded4;
+}
+.projects > .project > .related > .title.title_neff {
+  background-color: #f467b2;
+}
+.projects > .project > .related > .title.title_owlet {
+  background-color: #a9ded4;
+}
+.projects > .project > .related > .title.title_sol {
+  background-color: #7582b1;
+}
+.projects > .project > .related > .title.title_tamar {
+  background-color: #f4ab8b;
+}
+.projects > .project > .related > .title.title_threedr {
+  background-color: #76d734;
+}
+.projects > .project > .related > .title.title_versus {
+  background-color: #0195ff;
+}
+.projects > .project > .related > .title.title_xbox {
+  background-color: #74bd44;
 }
 .projects > .project > .credits.credits_aos > .inner > .sections > .section > .title {
   color: #434965;

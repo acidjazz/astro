@@ -21,6 +21,7 @@ Project =
   handlers: ->
 
     $('.projects > .summary > .thumbs > .thumb').on 'click', Project.projectHandler
+    $('.projects > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on 'click', Project.projectHandler
     $('.top > .inner > .a').on 'click', Project.summaryHandler
     $('.project > .filters > .inner > .filtermenu > .filter').on 'click', Project.filterHandler
 

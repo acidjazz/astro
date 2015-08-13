@@ -96,6 +96,10 @@
       background-color: c.black2
       color white
       text-transform uppercase
+      &.float
+        bottom 0
+        width 100%
+        position fixed
       > .inner
         desktop()
         > .title
@@ -105,11 +109,14 @@
           float right
           padding 0 50px 0 0
           > .filter
+            cursor pointer
             float left
             padding 20px
             for key, project in data.project
-              &.active_{project.folder}
+              &.filter_{project.folder}.active
                 background-color: c[project.color]
+              &.filter_{project.folder}:hover
+                background-color: rgba(c[project.color], 0.25)
     > .body
       min-height 2000px
       > .youtube

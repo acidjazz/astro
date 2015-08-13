@@ -6,14 +6,14 @@
 .description(style='background-color: ' + data.colors[project.color] )
   .copy #{project.description}
 
-.filters
+.filters.float
   .inner
     .title CAPABILITIES
     .filtermenu
       each filter, key in project.filters
         if key == 0
-          .filter.active(class='active_' + project.folder) #{filter}
+          .filter.active(class='filter_' + project.folder) #{filter}
         else
-          .filter #{filter}
+          .filter(class='filter_' + project.folder) #{filter}
     .clear
 

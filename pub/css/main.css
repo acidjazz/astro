@@ -1649,6 +1649,11 @@ body.fixed {
   color: #fff;
   text-transform: uppercase;
 }
+.projects > .project > .filters.float {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
 .projects > .project > .filters > .inner {
   max-width: 1020px;
   margin: auto;
@@ -1662,47 +1667,87 @@ body.fixed {
   padding: 0 50px 0 0;
 }
 .projects > .project > .filters > .inner > .filtermenu > .filter {
+  cursor: pointer;
   float: left;
   padding: 20px;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_aos {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_aos.active {
   background-color: #434965;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_fuelband {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_aos:hover {
+  background-color: rgba(67,73,101,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_fuelband.active {
   background-color: #3bb62e;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_goggle {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover {
+  background-color: rgba(59,182,46,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_goggle.active {
   background-color: #444;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_jinnitv {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_goggle:hover {
+  background-color: rgba(68,68,68,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_jinnitv.active {
   background-color: #2cbee6;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_mineralist {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_jinnitv:hover {
+  background-color: rgba(44,190,230,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_mineralist.active {
   background-color: #ec8000;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_minus8 {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_mineralist:hover {
+  background-color: rgba(236,128,0,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_minus8.active {
   background-color: #a9ded4;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_neff {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_minus8:hover {
+  background-color: rgba(169,222,212,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_neff.active {
   background-color: #f467b2;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_owlet {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_neff:hover {
+  background-color: rgba(244,103,178,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_owlet.active {
   background-color: #a9ded4;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_sol {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_owlet:hover {
+  background-color: rgba(169,222,212,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_sol.active {
   background-color: #7582b1;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_tamar {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_sol:hover {
+  background-color: rgba(117,130,177,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_tamar.active {
   background-color: #f4ab8b;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_threedr {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_tamar:hover {
+  background-color: rgba(244,171,139,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_threedr.active {
   background-color: #76d734;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_versus {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_threedr:hover {
+  background-color: rgba(118,215,52,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_versus.active {
   background-color: #0195ff;
 }
-.projects > .project > .filters > .inner > .filtermenu > .filter.active_xbox {
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_versus:hover {
+  background-color: rgba(1,149,255,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_xbox.active {
   background-color: #74bd44;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_xbox:hover {
+  background-color: rgba(116,189,68,0.25);
 }
 .projects > .project > .body {
   min-height: 2000px;

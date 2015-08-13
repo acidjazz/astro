@@ -2,6 +2,7 @@ var Project;
 
 Project = {
   hash: false,
+  cproject: false,
   i: function() {
     var project;
     NProgress.configure({
@@ -9,6 +10,7 @@ Project = {
     });
     if (Object.keys(projects).indexOf(location.hash.replace('#', '')) !== -1) {
       project = location.hash.replace('#', '');
+      Project.cproject = project;
       Project.load(project);
     } else {
       Project.summary();
@@ -18,16 +20,23 @@ Project = {
   },
   handlers: function() {
     $('.projects > .summary > .thumbs > .thumb').on('click', Project.projectHandler);
-    return $('.top > .inner > .a').on('click', Project.summaryHandler);
+    $('.top > .inner > .a').on('click', Project.summaryHandler);
+    return $('.project > .filters > .inner > .filtermenu > .filter').on('click', Project.filterHandler);
+  },
+  filterHandler: function() {
+    var t;
+    t = $(this);
+    console.log(t.html());
+    return $('html, body').animate({
+      scrollTop: $(".filter_mark.filter_" + (t.html())).offset().top
+    }, 500);
   },
   summaryHandler: function() {
-    console.log('clicked the A');
     location.hash = '';
     return Project.summary();
   },
   projectHandler: function() {
     var project;
-    console.log('clicked a thumb');
     project = $(this).data('project');
     location.hash = project;
     document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -42,7 +51,6 @@ Project = {
     _.off('.project');
     _.on('.preloader');
     NProgress.start();
-    console.log("loading project summaries");
     srcs = [];
     $('.summary > .thumbs > .thumb').each(function(i, el) {
       return srcs.push(Project.srcFromStyle($(el)));
@@ -72,7 +80,6 @@ Project = {
       return NProgress.set(progress);
     }, function(complete) {
       NProgress.done();
-      console.log('DONE LOADING');
       _.off('.preloader');
       return _.on(".project_" + project);
     });
@@ -106,7 +113,6 @@ Project = {
     $(".project_" + project + " .img").each(function(i, v) {
       return srcs.push(Project.srcFromStyle($(v)));
     });
-    console.log('srcs', srcs);
     return srcs;
   },
   srcFromStyle: function(el) {

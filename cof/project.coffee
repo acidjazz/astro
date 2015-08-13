@@ -1,6 +1,7 @@
 
 Project =
   hash: false
+  cproject: false
 
   i: ->
     NProgress.configure
@@ -8,6 +9,7 @@ Project =
 
     if Object.keys(projects).indexOf(location.hash.replace('#','')) isnt -1
       project = location.hash.replace '#', ''
+      Project.cproject = project
       Project.load project
     else
       Project.summary()
@@ -20,15 +22,21 @@ Project =
 
     $('.projects > .summary > .thumbs > .thumb').on 'click', Project.projectHandler
     $('.top > .inner > .a').on 'click', Project.summaryHandler
+    $('.project > .filters > .inner > .filtermenu > .filter').on 'click', Project.filterHandler
+
+
+  filterHandler: ->
+    t = $ this
+    console.log t.html()
+    $('html, body').animate(
+      scrollTop: $(".filter_mark.filter_#{t.html()}").offset().top
+    , 500)
 
   summaryHandler: ->
-    console.log 'clicked the A'
     location.hash = ''
     Project.summary()
 
   projectHandler: ->
-
-    console.log 'clicked a thumb'
 
     project = $(this).data 'project'
     location.hash = project
@@ -42,7 +50,6 @@ Project =
     _.on '.preloader'
     NProgress.start()
 
-    console.log "loading project summaries"
     srcs = []
 
     $('.summary > .thumbs > .thumb').each (i, el) ->
@@ -63,7 +70,6 @@ Project =
     for oproject, key of projects
       $('.preloader').removeClass "preloader_#{key}"
     $('.preloader').addClass "preloader_#{project}"
-
     _.on '.preloader'
 
     console.log "loading project #{project}"
@@ -75,7 +81,6 @@ Project =
         NProgress.set progress
       , (complete) ->
         NProgress.done()
-        console.log 'DONE LOADING'
         _.off '.preloader'
         _.on ".project_#{project}"
 
@@ -98,7 +103,6 @@ Project =
     $(".project_#{project} .img").each (i, v) ->
       srcs.push Project.srcFromStyle($(v))
 
-    console.log 'srcs', srcs
     return srcs
 
   srcFromStyle: (el) ->

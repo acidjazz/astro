@@ -1259,19 +1259,24 @@
 .top > .inner {
   position: relative;
 }
-.top > .inner > .a {
+.top > .inner > .astro {
   position: absolute;
   top: 30px;
   left: 30px;
-  width: 35px;
+  width: 120px;
   height: 35px;
 }
-.top > .inner > .a > svg {
+.top > .inner > .astro > svg {
   width: inherit;
   height: inherit;
 }
-.top > .inner > .a > svg > g > path {
+.top > .inner > .astro.light > svg > g > path,
+.top > .inner > .astro.light > svg > g > g > path {
   fill: #fff;
+}
+.top > .inner > .astro.dark > svg > g > path,
+.top > .inner > .astro.dark > svg > g > g > path {
+  fill: #000;
 }
 .top > .inner > .burger {
   z-index: 150;

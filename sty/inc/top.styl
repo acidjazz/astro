@@ -64,17 +64,23 @@
   z-index 100
   > .inner
     position relative
-    > .a
+    > .astro
       position absolute
       top 30px
       left 30px
-      width 35px
+      width 120px
       height 35px
       > svg
         width inherit
         height inherit
-        > g > path
-          fill: c.white1
+      &.light
+        > svg
+          > g > path, > g > g > path
+            fill: c.white1
+      &.dark
+        > svg
+          > g > path, > g > g > path
+            fill: c.black1
 
     > .burger
       z-index 150

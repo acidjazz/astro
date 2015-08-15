@@ -7,7 +7,18 @@ block content
   include inc/top
 
   .index
-    .placeholder Temporary placeholder
+    .featureds
+      .inner
+        each featured, key in data.home.featured
+          .featured(style='background-image: url("./img/' + featured.image + '");',class=(key == 0) ? 'on' : 'off')
+            .inner
+              .copy #{featured.copy}
+
+    .triangles.off
+      each featured, key in data.home.featured
+        .triangle.on(data-key=key)
+          .shape(class=(key == 0) ? 'on' : '')
+          .title #{featured.title}
   
   include inc/bottom
 
@@ -15,4 +26,5 @@ block content
     function loadercomplete() {
       Loader.load('./jst/index.js', 'Index');
       Global.i()
+      featured = !{JSON.stringify(data.home.featured)}
     }

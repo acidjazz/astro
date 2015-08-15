@@ -40,24 +40,23 @@
     <div class="menu off">
       <div class="inner">
         <div class="options">
-          <div class="option">WORK
+          <div class="option">work
             <div class="line"></div>
           </div>
-          <div class="option">ABOUT
+          <div class="option">about
             <div class="line"></div>
           </div>
-          <div class="option">BLOG
+          <div class="option">blog
             <div class="line"></div>
           </div>
-          <div class="option">CONTACT 
+          <div class="option">contact 
             <div class="line"></div>
           </div>
         </div>
       </div>
     </div>
     <div class="top">
-      <div class="inner">
-        <div class="astro light"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <div class="inner"><a href="/" class="astro light"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 234.179 70.62" enable-background="new 0 0 234.179 70.62" xml:space="preserve">
 <g>
 	<path d="M208.984,0c-14.203,0-25.326,10.807-25.326,24.734c0,13.95,10.83,24.471,25.193,24.471
@@ -84,8 +83,7 @@
 		C52.017,48.414,52.452,47.76,52.111,46.951z"/>
 </g>
 </svg>
-
-        </div>
+</a>
         <div class="burger on">
           <div class="inner">
             <div class="lines">
@@ -103,7 +101,39 @@
       </div>
     </div>
     <div class="index">
-      <div class="placeholder">Temporary placeholder</div>
+      <div class="featureds">
+        <div class="inner">
+          <div style="background-image: url(&quot;./img/project/fuelband/1440/Fuelbands.png&quot;);" class="featured on">
+            <div class="inner">
+              <div class="copy">This is the first image</div>
+            </div>
+          </div>
+          <div style="background-image: url(&quot;./img/project/minus8/1440/banner.png&quot;);" class="featured off">
+            <div class="inner">
+              <div class="copy">This is the second image</div>
+            </div>
+          </div>
+          <div style="background-image: url(&quot;./img/project/goggle/1440/Galaxy.jpg&quot;);" class="featured off">
+            <div class="inner">
+              <div class="copy">This is the third image</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="triangles off">
+        <div data-key='0' class="triangle on">
+          <div class="shape on"></div>
+          <div class="title">First Image</div>
+        </div>
+        <div data-key='1' class="triangle on">
+          <div class="shape"></div>
+          <div class="title">Second Image</div>
+        </div>
+        <div data-key='2' class="triangle on">
+          <div class="shape"></div>
+          <div class="title">Third Image</div>
+        </div>
+      </div>
     </div>
     <div class="footer">
       <div class="inner">
@@ -252,6 +282,7 @@
       function loadercomplete() {
         Loader.load('./jst/index.js', 'Index');
         Global.i()
+        featured = [{"title":"First Image","copy":"This is the first image","image":"project/fuelband/1440/Fuelbands.png"},{"title":"Second Image","copy":"This is the second image","image":"project/minus8/1440/banner.png"},{"title":"Third Image","copy":"This is the third image","image":"project/goggle/1440/Galaxy.jpg"}]
       }
     </script>
     <script type="text/javascript">

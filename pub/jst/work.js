@@ -1,63 +1,55 @@
-var Project;
+var Work;
 
-Project = {
+Work = {
   hash: false,
   cproject: false,
   i: function() {
     var project;
-    NProgress.configure({
-      showSpinner: false
-    });
     if (Object.keys(projects).indexOf(location.hash.replace('#', '')) !== -1) {
       project = location.hash.replace('#', '');
-      Project.cproject = project;
-      Project.load(project);
+      Work.cproject = project;
+      Work.load(project);
     } else {
-      Project.summary();
+      Work.summary();
     }
     document.body.scrollTop = document.documentElement.scrollTop = 0;
-    return Project.handlers();
+    return Work.handlers();
   },
   handlers: function() {
-    $('.projects > .summary > .thumbs > .thumb').on('click', Project.projectHandler);
-    $('.projects > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on('click', Project.projectHandler);
-    $('.top > .inner > .astro').on('click', Project.summaryHandler);
-    return $('.project > .filters > .inner > .filtermenu > .filter').on('click', Project.filterHandler);
+    $('.projects > .summary > .thumbs > .thumb').on('click', Work.projectHandler);
+    $('.projects > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on('click', Work.projectHandler);
+    return $('.project > .filters > .inner > .filtermenu > .filter').on('click', Work.filterHandler);
   },
   filterHandler: function() {
     var t;
     t = $(this);
-    console.log(t.html());
     return $('html, body').animate({
       scrollTop: $(".filter_mark.filter_" + (t.html())).offset().top
     }, 500);
-  },
-  summaryHandler: function() {
-    location.hash = '';
-    return Project.summary();
   },
   projectHandler: function() {
     var project;
     project = $(this).data('project');
     location.hash = project;
     document.body.scrollTop = document.documentElement.scrollTop = 0;
-    return Project.load(project);
+    return Work.load(project);
   },
   summary: function() {
     var key, oproject, srcs;
+    location.hash = '';
     for (oproject in projects) {
       key = projects[oproject];
       $('.preloader').removeClass("preloader_" + key);
+      $('#nprogress .bar').removeClass("bar_" + key);
     }
     _.off('.project');
     _.on('.preloader');
     NProgress.start();
     srcs = [];
     $('.summary > .thumbs > .thumb').each(function(i, el) {
-      return srcs.push(Project.srcFromStyle($(el)));
+      return srcs.push(Global.srcFromStyle($(el)));
     });
-    console.log(srcs);
-    return Project.preload(srcs, function(progress) {
+    return Global.preload(srcs, function(progress) {
       return NProgress.set(progress);
     }, function(complete) {
       NProgress.done();
@@ -71,13 +63,16 @@ Project = {
     for (oproject in projects) {
       key = projects[oproject];
       $('.preloader').removeClass("preloader_" + key);
+      $('#nprogress .bar').removeClass("bar_" + key);
     }
     $('.preloader').addClass("preloader_" + project);
+    $('#nprogress .bar').addClass("bar_" + project);
     _.on('.preloader');
     console.log("loading project " + project);
     NProgress.start();
-    srcs = Project.srcs(project);
-    return Project.preload(srcs, function(progress) {
+    $('#nprogress .bar').addClass("bar_" + project);
+    srcs = Work.srcs(project);
+    return Global.preload(srcs, function(progress) {
       return NProgress.set(progress);
     }, function(complete) {
       NProgress.done();
@@ -85,41 +80,12 @@ Project = {
       return _.on(".project_" + project);
     });
   },
-  preload: function(srces, progress, complete) {
-    var i, images, j, len, loaded, results, src, total;
-    images = [];
-    loaded = 0;
-    total = srces.length;
-    results = [];
-    for (i = j = 0, len = srces.length; j < len; i = ++j) {
-      src = srces[i];
-      images[i] = new Image();
-      images[i].src = src;
-      results.push(images[i].onload = function() {
-        var perc;
-        loaded++;
-        perc = Math.round(loaded / total * 100) / 100;
-        if (loaded === total) {
-          return complete(true);
-        } else {
-          return progress(perc);
-        }
-      });
-    }
-    return results;
-  },
   srcs: function(project) {
     var srcs;
-    srcs = [Project.srcFromStyle($(".project_" + project + " > .cover"))];
+    srcs = [Global.srcFromStyle($(".project_" + project + " > .cover"))];
     $(".project_" + project + " .img").each(function(i, v) {
-      return srcs.push(Project.srcFromStyle($(v)));
+      return srcs.push(Global.srcFromStyle($(v)));
     });
     return srcs;
-  },
-  srcFromStyle: function(el) {
-    var style, url;
-    style = el.attr('style');
-    url = style.match(/url\("(.*)"\)/);
-    return url[1];
   }
 };

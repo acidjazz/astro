@@ -1,5 +1,14 @@
 ---
 featured:
  -
+  title: First Image
   copy: This is the first image
-  image: project/fuelband/Fuelbands.png
+  image: project/fuelband/1440/Fuelbands.png
+ -
+  title: Second Image
+  copy: This is the second image
+  image: project/minus8/1440/banner.png
+ -
+  title: Third Image
+  copy: This is the third image
+  image: project/goggle/1440/Galaxy.jpg

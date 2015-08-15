@@ -3,18 +3,20 @@
   pointer-events: none;
 }
 
-#nprogress .bar {
-  background: c.white2;
+#nprogress .bar 
+  background: c.white2
 
-  position: fixed;
+  position: fixed
   z-index 30
-  top: 0;
-  left: 0;
+  top: 0
+  left: 0
 
-  width: 100%;
-  height: 6px;
+  width: 100%
+  height: 6px
   border-radius 0 2px 2px 0
-}
+  for key, project in data.project
+    &.bar_{project.folder}
+      background: c[project.color]
 
 /* Fancy blur effect */
 #nprogress .peg {

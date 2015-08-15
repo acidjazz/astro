@@ -1,51 +1,45 @@
 
-Project =
+Work =
   hash: false
   cproject: false
 
   i: ->
-    NProgress.configure
-      showSpinner: false
 
     if Object.keys(projects).indexOf(location.hash.replace('#','')) isnt -1
       project = location.hash.replace '#', ''
-      Project.cproject = project
-      Project.load project
+      Work.cproject = project
+      Work.load project
     else
-      Project.summary()
+      Work.summary()
 
     document.body.scrollTop = document.documentElement.scrollTop = 0
 
-    Project.handlers()
+    Work.handlers()
 
   handlers: ->
 
-    $('.projects > .summary > .thumbs > .thumb').on 'click', Project.projectHandler
-    $('.projects > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on 'click', Project.projectHandler
-    $('.top > .inner > .astro').on 'click', Project.summaryHandler
-    $('.project > .filters > .inner > .filtermenu > .filter').on 'click', Project.filterHandler
+    $('.projects > .summary > .thumbs > .thumb').on 'click', Work.projectHandler
+    $('.projects > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on 'click', Work.projectHandler
+    $('.project > .filters > .inner > .filtermenu > .filter').on 'click', Work.filterHandler
 
   filterHandler: ->
     t = $ this
-    console.log t.html()
     $('html, body').animate(
       scrollTop: $(".filter_mark.filter_#{t.html()}").offset().top
     , 500)
-
-  summaryHandler: ->
-    location.hash = ''
-    Project.summary()
 
   projectHandler: ->
 
     project = $(this).data 'project'
     location.hash = project
     document.body.scrollTop = document.documentElement.scrollTop = 0
-    Project.load project
+    Work.load project
 
   summary: () ->
+    location.hash = ''
     for oproject, key of projects
       $('.preloader').removeClass "preloader_#{key}"
+      $('#nprogress .bar').removeClass "bar_#{key}"
     _.off '.project'
     _.on '.preloader'
     NProgress.start()
@@ -53,10 +47,9 @@ Project =
     srcs = []
 
     $('.summary > .thumbs > .thumb').each (i, el) ->
-      srcs.push(Project.srcFromStyle($(el)))
+      srcs.push(Global.srcFromStyle($(el)))
 
-    console.log srcs
-    Project.preload srcs,
+    Global.preload srcs,
       (progress) ->
         NProgress.set progress
       , (complete) ->
@@ -69,14 +62,17 @@ Project =
 
     for oproject, key of projects
       $('.preloader').removeClass "preloader_#{key}"
+      $('#nprogress .bar').removeClass "bar_#{key}"
     $('.preloader').addClass "preloader_#{project}"
+    $('#nprogress .bar').addClass "bar_#{project}"
     _.on '.preloader'
 
     console.log "loading project #{project}"
 
     NProgress.start()
-    srcs = Project.srcs project
-    Project.preload srcs,
+    $('#nprogress .bar').addClass "bar_#{project}"
+    srcs = Work.srcs project
+    Global.preload srcs,
       (progress) ->
         NProgress.set progress
       , (complete) ->
@@ -84,28 +80,11 @@ Project =
         _.off '.preloader'
         _.on ".project_#{project}"
 
-  preload: (srces, progress, complete) ->
-
-    images = []
-    loaded = 0
-    total = srces.length
-
-    for src, i in srces
-      images[i] = new Image()
-      images[i].src = src
-      images[i].onload = ->
-        loaded++
-        perc = Math.round(loaded/total*100)/100
-        if loaded is total then complete(true) else progress(perc)
-
   srcs: (project) ->
-    srcs = [Project.srcFromStyle($(".project_#{project} > .cover"))]
+    srcs = [Global.srcFromStyle($(".project_#{project} > .cover"))]
     $(".project_#{project} .img").each (i, v) ->
-      srcs.push Project.srcFromStyle($(v))
+      srcs.push Global.srcFromStyle($(v))
 
     return srcs
 
-  srcFromStyle: (el) ->
-    style = el.attr 'style'
-    url = style.match(/url\("(.*)"\)/)
-    return url[1]
+

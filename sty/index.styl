@@ -1,4 +1,82 @@
 
 .index
   background-color pink
-  min-height 800px
+  height 100%
+  > .featureds
+    height 100%
+    > .inner
+      height 100%
+      position relative
+      > .featured
+        &.on
+          display block
+        &.off
+          display none
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background-position 50% 50%
+        background-size cover
+        background-repeat no-repeat
+        > .inner
+          position relative
+          width 100%
+          height 100%
+          > .copy
+            position absolute
+            left 0
+            top 50%
+            width 100%
+            font f_h1
+            color: c.white1
+            text-align center
+            height 110px
+            margin-top -55px
+
+  > .triangles
+    position absolute
+    bottom 50px
+    left 0
+    width 100%
+    height 50px
+    text-align center
+    &.off
+      display none
+    &.on
+      display block
+    > .triangle
+      cursor pointer
+      width 150px
+      height 50px
+      display inline-block
+      margin 0 25px
+      animation cellInX 0.2s 0s ease-in both
+      &:hover
+        > .shape
+          border-color: transparent transparent c.red1 transparent
+          transform rotate(120deg)
+        > .title
+          opacity 1
+          transform translate(0, -60px)
+
+      for i in 2..10
+        &:nth-child({i})
+          animation-delay unit((0.1*i), 's')
+      > .shape
+        width 0
+        height 0
+        border-style solid
+        border-width 0 20px 34.6px 20px
+        border-color: transparent transparent c.white1 transparent
+        margin 0 0 0 50px
+        transition border-color 0.1s linear, transform 0.25s linear
+        transform-origin 54% 68%
+      > .title
+        color: c.white1
+        white-space nowrap
+        transform translate(0, -50px)
+        opacity 0
+        transition opacity 0.1s linear, transform 0.2s linear
+

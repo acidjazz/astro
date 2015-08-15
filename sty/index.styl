@@ -1,7 +1,6 @@
 
 .index
-  background-color pink
-  height 100%
+  background-color: c.black1
   > .featureds
     height 100%
     > .inner
@@ -20,6 +19,7 @@
         background-position 50% 50%
         background-size cover
         background-repeat no-repeat
+        animation fadeIn 0.5s 0s ease-in both
         > .inner
           position relative
           width 100%
@@ -34,6 +34,7 @@
             text-align center
             height 110px
             margin-top -55px
+            animation cellInY 0.75s 0s ease-in both
 
   > .triangles
     position absolute
@@ -46,6 +47,7 @@
       display none
     &.on
       display block
+
     > .triangle
       cursor pointer
       width 150px
@@ -79,4 +81,13 @@
         transform translate(0, -50px)
         opacity 0
         transition opacity 0.1s linear, transform 0.2s linear
+
+  > .welcome
+    background-color: c.black4
+    > .inner
+      padding 50px
+      desktop()
+      > .copy
+        font f_h2
+        color: c.white1
 

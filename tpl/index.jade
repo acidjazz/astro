@@ -19,7 +19,21 @@ block content
         .triangle.on(data-key=key)
           .shape(class=(key == 0) ? 'on' : '')
           .title #{featured.title}
-  
+
+    .clear
+    .welcome
+      .inner
+        .copy We are ASTRO Studios.  All missions possible.
+    .clear
+    .projects
+      each project in data.project
+        if (project.home != undefined && project.home === true)
+          .thumb(class='thumb_' + project.folder,data-project=project.folder,style='background-image: url("../img/project/' + project.folder + '/1440/' + project.cover + '");')
+            .inner
+              .copy
+                .name #{project.name}
+    .clear
+
   include inc/bottom
 
   script(type='text/javascript').

@@ -355,6 +355,54 @@
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
 @-moz-keyframes cellInY {
   from {
     -webkit-transform: translate(0, 10px);
@@ -1448,8 +1496,7 @@ body.fixed {
   background-color: ;
 }
 .index {
-  background-color: #ffc0cb;
-  height: 100%;
+  background-color: #000;
 }
 .index > .featureds {
   height: 100%;
@@ -1469,6 +1516,11 @@ body.fixed {
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-animation: fadeIn 0.5s 0s ease-in both;
+  -moz-animation: fadeIn 0.5s 0s ease-in both;
+  -o-animation: fadeIn 0.5s 0s ease-in both;
+  -ms-animation: fadeIn 0.5s 0s ease-in both;
+  animation: fadeIn 0.5s 0s ease-in both;
 }
 .index > .featureds > .inner > .featured.on {
   display: block;
@@ -1491,6 +1543,11 @@ body.fixed {
   text-align: center;
   height: 110px;
   margin-top: -55px;
+  -webkit-animation: cellInY 0.75s 0s ease-in both;
+  -moz-animation: cellInY 0.75s 0s ease-in both;
+  -o-animation: cellInY 0.75s 0s ease-in both;
+  -ms-animation: cellInY 0.75s 0s ease-in both;
+  animation: cellInY 0.75s 0s ease-in both;
 }
 .index > .triangles {
   position: absolute;
@@ -1634,6 +1691,18 @@ body.fixed {
   -ms-transition: opacity 0.1s linear, -ms-transform 0.2s linear;
   transition: opacity 0.1s linear, transform 0.2s linear;
 }
+.index > .welcome {
+  background-color: #363a42;
+}
+.index > .welcome > .inner {
+  padding: 50px;
+  max-width: 1020px;
+  margin: auto;
+}
+.index > .welcome > .inner > .copy {
+  font: 46px blenderpro medium;
+  color: #fff;
+}
 .projects .summary {
   background-color: #434965;
 }
@@ -1657,7 +1726,8 @@ body.fixed {
   margin: auto;
 }
 .projects > .summary > .thumbs > .thumb,
-.related > .relateds > .thumb {
+.related > .relateds > .thumb,
+.index > .projects > .thumb {
   float: left;
   width: 33.333%;
   height: 300px;
@@ -1679,11 +1749,13 @@ body.fixed {
   transition: background-position 0.2s linear;
 }
 .projects > .summary > .thumbs > .thumb:hover,
-.related > .relateds > .thumb:hover {
+.related > .relateds > .thumb:hover,
+.index > .projects > .thumb:hover {
   background-position: 100% auto;
 }
 .projects > .summary > .thumbs > .thumb:nth-child(0),
-.related > .relateds > .thumb:nth-child(0) {
+.related > .relateds > .thumb:nth-child(0),
+.index > .projects > .thumb:nth-child(0) {
   -webkit-animation-delay: 0s;
   -moz-animation-delay: 0s;
   -o-animation-delay: 0s;
@@ -1691,7 +1763,8 @@ body.fixed {
   animation-delay: 0s;
 }
 .projects > .summary > .thumbs > .thumb:nth-child(1),
-.related > .relateds > .thumb:nth-child(1) {
+.related > .relateds > .thumb:nth-child(1),
+.index > .projects > .thumb:nth-child(1) {
   -webkit-animation-delay: 0.05s;
   -moz-animation-delay: 0.05s;
   -o-animation-delay: 0.05s;
@@ -1699,7 +1772,8 @@ body.fixed {
   animation-delay: 0.05s;
 }
 .projects > .summary > .thumbs > .thumb:nth-child(2),
-.related > .relateds > .thumb:nth-child(2) {
+.related > .relateds > .thumb:nth-child(2),
+.index > .projects > .thumb:nth-child(2) {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   -o-animation-delay: 0.1s;
@@ -1707,7 +1781,8 @@ body.fixed {
   animation-delay: 0.1s;
 }
 .projects > .summary > .thumbs > .thumb:nth-child(3),
-.related > .relateds > .thumb:nth-child(3) {
+.related > .relateds > .thumb:nth-child(3),
+.index > .projects > .thumb:nth-child(3) {
   -webkit-animation-delay: 0.15s;
   -moz-animation-delay: 0.15s;
   -o-animation-delay: 0.15s;
@@ -1715,7 +1790,8 @@ body.fixed {
   animation-delay: 0.15s;
 }
 .projects > .summary > .thumbs > .thumb:nth-child(4),
-.related > .relateds > .thumb:nth-child(4) {
+.related > .relateds > .thumb:nth-child(4),
+.index > .projects > .thumb:nth-child(4) {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   -o-animation-delay: 0.2s;
@@ -1723,7 +1799,8 @@ body.fixed {
   animation-delay: 0.2s;
 }
 .projects > .summary > .thumbs > .thumb:nth-child(5),
-.related > .relateds > .thumb:nth-child(5) {
+.related > .relateds > .thumb:nth-child(5),
+.index > .projects > .thumb:nth-child(5) {
   -webkit-animation-delay: 0.25s;
   -moz-animation-delay: 0.25s;
   -o-animation-delay: 0.25s;
@@ -1731,7 +1808,8 @@ body.fixed {
   animation-delay: 0.25s;
 }
 .projects > .summary > .thumbs > .thumb:nth-child(6),
-.related > .relateds > .thumb:nth-child(6) {
+.related > .relateds > .thumb:nth-child(6),
+.index > .projects > .thumb:nth-child(6) {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   -o-animation-delay: 0.3s;
@@ -1739,7 +1817,8 @@ body.fixed {
   animation-delay: 0.3s;
 }
 .projects > .summary > .thumbs > .thumb:nth-child(7),
-.related > .relateds > .thumb:nth-child(7) {
+.related > .relateds > .thumb:nth-child(7),
+.index > .projects > .thumb:nth-child(7) {
   -webkit-animation-delay: 0.35s;
   -moz-animation-delay: 0.35s;
   -o-animation-delay: 0.35s;
@@ -1747,7 +1826,8 @@ body.fixed {
   animation-delay: 0.35s;
 }
 .projects > .summary > .thumbs > .thumb:nth-child(8),
-.related > .relateds > .thumb:nth-child(8) {
+.related > .relateds > .thumb:nth-child(8),
+.index > .projects > .thumb:nth-child(8) {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   -o-animation-delay: 0.4s;
@@ -1755,7 +1835,8 @@ body.fixed {
   animation-delay: 0.4s;
 }
 .projects > .summary > .thumbs > .thumb:nth-child(9),
-.related > .relateds > .thumb:nth-child(9) {
+.related > .relateds > .thumb:nth-child(9),
+.index > .projects > .thumb:nth-child(9) {
   -webkit-animation-delay: 0.45s;
   -moz-animation-delay: 0.45s;
   -o-animation-delay: 0.45s;
@@ -1763,7 +1844,8 @@ body.fixed {
   animation-delay: 0.45s;
 }
 .projects > .summary > .thumbs > .thumb:nth-child(10),
-.related > .relateds > .thumb:nth-child(10) {
+.related > .relateds > .thumb:nth-child(10),
+.index > .projects > .thumb:nth-child(10) {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   -o-animation-delay: 0.5s;
@@ -1771,59 +1853,73 @@ body.fixed {
   animation-delay: 0.5s;
 }
 .projects > .summary > .thumbs > .thumb.thumb_aos:hover > .inner,
-.related > .relateds > .thumb.thumb_aos:hover > .inner {
+.related > .relateds > .thumb.thumb_aos:hover > .inner,
+.index > .projects > .thumb.thumb_aos:hover > .inner {
   background-color: rgba(67,73,101,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner,
-.related > .relateds > .thumb.thumb_fuelband:hover > .inner {
+.related > .relateds > .thumb.thumb_fuelband:hover > .inner,
+.index > .projects > .thumb.thumb_fuelband:hover > .inner {
   background-color: rgba(59,182,46,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_goggle:hover > .inner,
-.related > .relateds > .thumb.thumb_goggle:hover > .inner {
+.related > .relateds > .thumb.thumb_goggle:hover > .inner,
+.index > .projects > .thumb.thumb_goggle:hover > .inner {
   background-color: rgba(68,68,68,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_jinnitv:hover > .inner,
-.related > .relateds > .thumb.thumb_jinnitv:hover > .inner {
+.related > .relateds > .thumb.thumb_jinnitv:hover > .inner,
+.index > .projects > .thumb.thumb_jinnitv:hover > .inner {
   background-color: rgba(44,190,230,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_mineralist:hover > .inner,
-.related > .relateds > .thumb.thumb_mineralist:hover > .inner {
+.related > .relateds > .thumb.thumb_mineralist:hover > .inner,
+.index > .projects > .thumb.thumb_mineralist:hover > .inner {
   background-color: rgba(236,128,0,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_minus8:hover > .inner,
-.related > .relateds > .thumb.thumb_minus8:hover > .inner {
+.related > .relateds > .thumb.thumb_minus8:hover > .inner,
+.index > .projects > .thumb.thumb_minus8:hover > .inner {
   background-color: rgba(169,222,212,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_neff:hover > .inner,
-.related > .relateds > .thumb.thumb_neff:hover > .inner {
+.related > .relateds > .thumb.thumb_neff:hover > .inner,
+.index > .projects > .thumb.thumb_neff:hover > .inner {
   background-color: rgba(244,103,178,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_owlet:hover > .inner,
-.related > .relateds > .thumb.thumb_owlet:hover > .inner {
+.related > .relateds > .thumb.thumb_owlet:hover > .inner,
+.index > .projects > .thumb.thumb_owlet:hover > .inner {
   background-color: rgba(169,222,212,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_sol:hover > .inner,
-.related > .relateds > .thumb.thumb_sol:hover > .inner {
+.related > .relateds > .thumb.thumb_sol:hover > .inner,
+.index > .projects > .thumb.thumb_sol:hover > .inner {
   background-color: rgba(117,130,177,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_tamar:hover > .inner,
-.related > .relateds > .thumb.thumb_tamar:hover > .inner {
+.related > .relateds > .thumb.thumb_tamar:hover > .inner,
+.index > .projects > .thumb.thumb_tamar:hover > .inner {
   background-color: rgba(244,171,139,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_threedr:hover > .inner,
-.related > .relateds > .thumb.thumb_threedr:hover > .inner {
+.related > .relateds > .thumb.thumb_threedr:hover > .inner,
+.index > .projects > .thumb.thumb_threedr:hover > .inner {
   background-color: rgba(118,215,52,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_versus:hover > .inner,
-.related > .relateds > .thumb.thumb_versus:hover > .inner {
+.related > .relateds > .thumb.thumb_versus:hover > .inner,
+.index > .projects > .thumb.thumb_versus:hover > .inner {
   background-color: rgba(1,149,255,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_xbox:hover > .inner,
-.related > .relateds > .thumb.thumb_xbox:hover > .inner {
+.related > .relateds > .thumb.thumb_xbox:hover > .inner,
+.index > .projects > .thumb.thumb_xbox:hover > .inner {
   background-color: rgba(116,189,68,0.75);
 }
 .projects > .summary > .thumbs > .thumb > .inner,
-.related > .relateds > .thumb > .inner {
+.related > .relateds > .thumb > .inner,
+.index > .projects > .thumb > .inner {
   height: 100%;
   -webkit-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
@@ -1832,17 +1928,20 @@ body.fixed {
   transition: background-color 0.1s linear;
 }
 .projects > .summary > .thumbs > .thumb > .inner > .copy,
-.related > .relateds > .thumb > .inner > .copy {
+.related > .relateds > .thumb > .inner > .copy,
+.index > .projects > .thumb > .inner > .copy {
   color: #fff;
   text-align: center;
   padding: 110px 0 0 0;
 }
 .projects > .summary > .thumbs > .thumb > .inner > .copy > .name,
-.related > .relateds > .thumb > .inner > .copy > .name {
+.related > .relateds > .thumb > .inner > .copy > .name,
+.index > .projects > .thumb > .inner > .copy > .name {
   font: 46px blenderpro medium;
 }
 .projects > .summary > .thumbs > .thumb > .inner > .copy > .filters,
-.related > .relateds > .thumb > .inner > .copy > .filters {
+.related > .relateds > .thumb > .inner > .copy > .filters,
+.index > .projects > .thumb > .inner > .copy > .filters {
   text-transform: uppercase;
 }
 .projects > .project {

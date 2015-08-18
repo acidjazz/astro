@@ -1577,11 +1577,6 @@ body.fixed {
 }
 .index > .triangles > .triangle:hover > .shape {
   border-color: transparent transparent #ee5655 transparent;
-  -webkit-transform: rotate(120deg);
-  -moz-transform: rotate(120deg);
-  -o-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  transform: rotate(120deg);
 }
 .index > .triangles > .triangle:hover > .title {
   opacity: 1;

@@ -1705,6 +1705,7 @@ body.fixed {
 }
 .projects .summary {
   background-color: #434965;
+  min-height: 600px;
 }
 .projects .summary.on {
   display: block;
@@ -1719,6 +1720,7 @@ body.fixed {
 .projects .summary > .hero > .copy1 {
   max-width: 800px;
   margin: auto;
+  text-transform: uppercase;
 }
 .projects .summary > .hero > .copy2 {
   font: 46px blenderpro medium;
@@ -1747,6 +1749,16 @@ body.fixed {
   -o-transition: background-position 0.2s linear;
   -ms-transition: background-position 0.2s linear;
   transition: background-position 0.2s linear;
+}
+.projects > .summary > .thumbs > .thumb.on,
+.related > .relateds > .thumb.on,
+.index > .projects > .thumb.on {
+  display: block;
+}
+.projects > .summary > .thumbs > .thumb.off,
+.related > .relateds > .thumb.off,
+.index > .projects > .thumb.off {
+  display: none;
 }
 .projects > .summary > .thumbs > .thumb:hover,
 .related > .relateds > .thumb:hover,
@@ -2001,139 +2013,34 @@ body.fixed {
   max-width: 1020px;
   margin: auto;
 }
-.projects > .project > .filters {
-  background-color: #22252b;
-  color: #fff;
-  text-transform: uppercase;
-}
-.projects > .project > .filters.float {
-  bottom: 0;
-  width: 100%;
-  position: fixed;
-}
-.projects > .project > .filters > .inner {
-  max-width: 1020px;
-  margin: auto;
-}
-.projects > .project > .filters > .inner > .title {
-  float: left;
-  padding: 20px 0 20px 0px;
-}
-.projects > .project > .filters > .inner > .filtermenu {
-  float: right;
-  padding: 0 50px 0 0;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter {
-  cursor: pointer;
-  float: left;
-  padding: 20px;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_aos.active {
-  background-color: #434965;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_aos:hover {
-  background-color: rgba(67,73,101,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_fuelband.active {
-  background-color: #3bb62e;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover {
-  background-color: rgba(59,182,46,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_goggle.active {
-  background-color: #444;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_goggle:hover {
-  background-color: rgba(68,68,68,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_jinnitv.active {
-  background-color: #2cbee6;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_jinnitv:hover {
-  background-color: rgba(44,190,230,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_mineralist.active {
-  background-color: #ec8000;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_mineralist:hover {
-  background-color: rgba(236,128,0,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_minus8.active {
-  background-color: #a9ded4;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_minus8:hover {
-  background-color: rgba(169,222,212,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_neff.active {
-  background-color: #f467b2;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_neff:hover {
-  background-color: rgba(244,103,178,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_owlet.active {
-  background-color: #a9ded4;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_owlet:hover {
-  background-color: rgba(169,222,212,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_sol.active {
-  background-color: #7582b1;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_sol:hover {
-  background-color: rgba(117,130,177,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_tamar.active {
-  background-color: #f4ab8b;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_tamar:hover {
-  background-color: rgba(244,171,139,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_threedr.active {
-  background-color: #76d734;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_threedr:hover {
-  background-color: rgba(118,215,52,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_versus.active {
-  background-color: #0195ff;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_versus:hover {
-  background-color: rgba(1,149,255,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_xbox.active {
-  background-color: #74bd44;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_xbox:hover {
-  background-color: rgba(116,189,68,0.25);
-}
-.projects > .project > .body {
+.projects > .body {
   min-height: 2000px;
 }
-.projects > .project > .body > .youtube {
+.projects > .body > .youtube {
   width: 800px;
   height: 450px;
   margin: auto;
 }
-.projects > .project > .body > .image {
+.projects > .body > .image {
   padding: 50px 0;
   width: 100%;
 }
-.projects > .project > .body > .image.pad_both {
+.projects > .body > .image.pad_both {
   padding: 50px 0;
 }
-.projects > .project > .body > .image.pad_top {
+.projects > .body > .image.pad_top {
   padding: 50px 0 0 0;
 }
-.projects > .project > .body > .image.pad_bottom {
+.projects > .body > .image.pad_bottom {
   padding: 0 0 50px 0;
 }
-.projects > .project > .body > .image.pad_none {
+.projects > .body > .image.pad_none {
   padding: 0 0 0 0;
 }
-.projects > .project > .body > .image > img {
+.projects > .body > .image > img {
   width: inherit;
 }
-.projects > .project > .body > .image > .img {
+.projects > .body > .image > .img {
   padding-top: 60%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2141,48 +2048,48 @@ body.fixed {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.projects > .project > .body > .copy {
+.projects > .body > .copy {
   padding: 50px;
   line-height: 30px;
   max-width: 600px;
   margin: auto;
 }
-.projects > .project > .body > .imagecopy {
+.projects > .body > .imagecopy {
   padding: 50px;
   max-width: 1020px;
   margin: auto;
 }
-.projects > .project > .body > .imagecopy.pad_bottom {
+.projects > .body > .imagecopy.pad_bottom {
   padding: 0 0 50px 0;
 }
-.projects > .project > .body > .imagecopy.black {
+.projects > .body > .imagecopy.black {
   background-color: #000;
 }
-.projects > .project > .body > .imagecopy.nopadding {
+.projects > .body > .imagecopy.nopadding {
   padding: 0px;
 }
-.projects > .project > .body > .imagecopy > .block.left {
+.projects > .body > .imagecopy > .block.left {
   float: left;
   width: 50%;
   height: 100%;
 }
-.projects > .project > .body > .imagecopy > .block.right {
+.projects > .body > .imagecopy > .block.right {
   float: right;
   width: 50%;
   height: 100%;
 }
-.projects > .project > .body > .imagecopy > .block {
+.projects > .body > .imagecopy > .block {
   height: inherit;
 }
-.projects > .project > .body > .imagecopy > .block > .image {
+.projects > .body > .imagecopy > .block > .image {
   width: 100%;
   height: inherit;
   text-align: center;
 }
-.projects > .project > .body > .imagecopy > .block > .image > img {
+.projects > .body > .imagecopy > .block > .image > img {
   height: inherit;
 }
-.projects > .project > .body > .imagecopy > .block > .image > .img {
+.projects > .body > .imagecopy > .block > .image > .img {
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2190,10 +2097,10 @@ body.fixed {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.projects > .project > .body > .imagecopy > .block.copy {
+.projects > .body > .imagecopy > .block.copy {
   display: table;
 }
-.projects > .project > .body > .imagecopy > .block.copy > .copy {
+.projects > .body > .imagecopy > .block.copy > .copy {
   line-height: 30px;
   max-width: 600px;
   padding: 0 50px;
@@ -2201,115 +2108,272 @@ body.fixed {
   vertical-align: middle;
   margin: auto;
 }
-.projects > .project > .body > .imagecopy > .block.copy > .copy.white {
+.projects > .body > .imagecopy > .block.copy > .copy.white {
   color: #fff;
 }
-.projects > .project > .related > .title {
+.projects > .related > .title {
   font: 40px blenderpro medium;
   text-align: center;
   padding: 20px;
   color: #fff;
 }
-.projects > .project > .related > .title.title_aos {
+.projects > .related > .title.title_aos {
   background-color: #434965;
 }
-.projects > .project > .related > .title.title_fuelband {
+.projects > .related > .title.title_fuelband {
   background-color: #3bb62e;
 }
-.projects > .project > .related > .title.title_goggle {
+.projects > .related > .title.title_goggle {
   background-color: #444;
 }
-.projects > .project > .related > .title.title_jinnitv {
+.projects > .related > .title.title_jinnitv {
   background-color: #2cbee6;
 }
-.projects > .project > .related > .title.title_mineralist {
+.projects > .related > .title.title_mineralist {
   background-color: #ec8000;
 }
-.projects > .project > .related > .title.title_minus8 {
+.projects > .related > .title.title_minus8 {
   background-color: #a9ded4;
 }
-.projects > .project > .related > .title.title_neff {
+.projects > .related > .title.title_neff {
   background-color: #f467b2;
 }
-.projects > .project > .related > .title.title_owlet {
+.projects > .related > .title.title_owlet {
   background-color: #a9ded4;
 }
-.projects > .project > .related > .title.title_sol {
+.projects > .related > .title.title_sol {
   background-color: #7582b1;
 }
-.projects > .project > .related > .title.title_tamar {
+.projects > .related > .title.title_tamar {
   background-color: #f4ab8b;
 }
-.projects > .project > .related > .title.title_threedr {
+.projects > .related > .title.title_threedr {
   background-color: #76d734;
 }
-.projects > .project > .related > .title.title_versus {
+.projects > .related > .title.title_versus {
   background-color: #0195ff;
 }
-.projects > .project > .related > .title.title_xbox {
+.projects > .related > .title.title_xbox {
   background-color: #74bd44;
 }
-.projects > .project > .credits.credits_aos > .inner > .sections > .section > .title {
+.projects > .credits.credits_aos > .inner > .sections > .section > .title {
   color: #434965;
 }
-.projects > .project > .credits.credits_fuelband > .inner > .sections > .section > .title {
+.projects > .credits.credits_fuelband > .inner > .sections > .section > .title {
   color: #3bb62e;
 }
-.projects > .project > .credits.credits_goggle > .inner > .sections > .section > .title {
+.projects > .credits.credits_goggle > .inner > .sections > .section > .title {
   color: #444;
 }
-.projects > .project > .credits.credits_jinnitv > .inner > .sections > .section > .title {
+.projects > .credits.credits_jinnitv > .inner > .sections > .section > .title {
   color: #2cbee6;
 }
-.projects > .project > .credits.credits_mineralist > .inner > .sections > .section > .title {
+.projects > .credits.credits_mineralist > .inner > .sections > .section > .title {
   color: #ec8000;
 }
-.projects > .project > .credits.credits_minus8 > .inner > .sections > .section > .title {
+.projects > .credits.credits_minus8 > .inner > .sections > .section > .title {
   color: #a9ded4;
 }
-.projects > .project > .credits.credits_neff > .inner > .sections > .section > .title {
+.projects > .credits.credits_neff > .inner > .sections > .section > .title {
   color: #f467b2;
 }
-.projects > .project > .credits.credits_owlet > .inner > .sections > .section > .title {
+.projects > .credits.credits_owlet > .inner > .sections > .section > .title {
   color: #a9ded4;
 }
-.projects > .project > .credits.credits_sol > .inner > .sections > .section > .title {
+.projects > .credits.credits_sol > .inner > .sections > .section > .title {
   color: #7582b1;
 }
-.projects > .project > .credits.credits_tamar > .inner > .sections > .section > .title {
+.projects > .credits.credits_tamar > .inner > .sections > .section > .title {
   color: #f4ab8b;
 }
-.projects > .project > .credits.credits_threedr > .inner > .sections > .section > .title {
+.projects > .credits.credits_threedr > .inner > .sections > .section > .title {
   color: #76d734;
 }
-.projects > .project > .credits.credits_versus > .inner > .sections > .section > .title {
+.projects > .credits.credits_versus > .inner > .sections > .section > .title {
   color: #0195ff;
 }
-.projects > .project > .credits.credits_xbox > .inner > .sections > .section > .title {
+.projects > .credits.credits_xbox > .inner > .sections > .section > .title {
   color: #74bd44;
 }
-.projects > .project > .credits > .inner {
+.projects > .credits > .inner {
   max-width: 1020px;
   margin: auto;
   padding: 50px;
 }
-.projects > .project > .credits > .inner > .title {
+.projects > .credits > .inner > .title {
   font: 46px blenderpro medium;
 }
-.projects > .project > .credits > .inner > .sections > .section {
+.projects > .credits > .inner > .sections > .section {
   float: left;
   width: 33.33%;
 }
-.projects > .project > .credits > .inner > .sections > .section > .title {
+.projects > .credits > .inner > .sections > .section > .title {
   font: 40px blenderpro medium;
   color: #ffa500;
   margin: 0 0 10px 0;
 }
-.projects > .project > .credits > .inner > .sections > .section > .item,
-.projects > .project > .credits > .inner > .sections > .section > a.item {
+.projects > .credits > .inner > .sections > .section > .item,
+.projects > .credits > .inner > .sections > .section > a.item {
   display: block;
   margin: 0 0 10px 0;
   text-decoration: none;
+  color: #000;
+}
+.projects > .project > .filters,
+.projects > .summary > .filters {
+  background-color: #22252b;
+  color: #fff;
+  text-transform: uppercase;
+}
+.projects > .project > .filters.float,
+.projects > .summary > .filters.float {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+.projects > .project > .filters > .inner,
+.projects > .summary > .filters > .inner {
+  max-width: 1020px;
+  margin: auto;
+}
+.projects > .project > .filters > .inner > .title,
+.projects > .summary > .filters > .inner > .title {
+  float: left;
+  padding: 20px 0 20px 0px;
+}
+.projects > .project > .filters > .inner > .filtermenu,
+.projects > .summary > .filters > .inner > .filtermenu {
+  float: right;
+  padding: 0 50px 0 0;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter,
+.projects > .summary > .filters > .inner > .filtermenu > .filter {
+  cursor: pointer;
+  float: left;
+  padding: 20px;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_aos.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_aos.active {
+  background-color: #434965;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_aos:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_aos:hover {
+  background-color: rgba(67,73,101,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_fuelband.active {
+  background-color: #3bb62e;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover {
+  background-color: rgba(59,182,46,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_goggle.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_goggle.active {
+  background-color: #444;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_goggle:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_goggle:hover {
+  background-color: rgba(68,68,68,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_jinnitv.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_jinnitv.active {
+  background-color: #2cbee6;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_jinnitv:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_jinnitv:hover {
+  background-color: rgba(44,190,230,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_mineralist.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_mineralist.active {
+  background-color: #ec8000;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_mineralist:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_mineralist:hover {
+  background-color: rgba(236,128,0,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_minus8.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_minus8.active {
+  background-color: #a9ded4;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_minus8:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_minus8:hover {
+  background-color: rgba(169,222,212,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_neff.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_neff.active {
+  background-color: #f467b2;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_neff:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_neff:hover {
+  background-color: rgba(244,103,178,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_owlet.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_owlet.active {
+  background-color: #a9ded4;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_owlet:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_owlet:hover {
+  background-color: rgba(169,222,212,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_sol.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_sol.active {
+  background-color: #7582b1;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_sol:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_sol:hover {
+  background-color: rgba(117,130,177,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_tamar.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_tamar.active {
+  background-color: #f4ab8b;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_tamar:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_tamar:hover {
+  background-color: rgba(244,171,139,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_threedr.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_threedr.active {
+  background-color: #76d734;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_threedr:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_threedr:hover {
+  background-color: rgba(118,215,52,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_versus.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_versus.active {
+  background-color: #0195ff;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_versus:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_versus:hover {
+  background-color: rgba(1,149,255,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_xbox.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_xbox.active {
+  background-color: #74bd44;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_xbox:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_xbox:hover {
+  background-color: rgba(116,189,68,0.25);
+}
+.projects > .summary > .filters > .inner {
+  max-width: none;
+}
+.projects > .summary > .filters > .inner > .title {
+  display: none;
+}
+.projects > .summary > .filters > .inner > .filtermenu > .filter {
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  -ms-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+.projects > .summary > .filters > .inner > .filtermenu > .filter:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+.projects > .summary > .filters > .inner > .filtermenu > .filter.on {
+  background-color: #fff;
   color: #000;
 }
 .guide {

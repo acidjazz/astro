@@ -39,10 +39,8 @@ Global = {
     if (option === 'work') {
       if (location.href.match('work') !== null) {
         Work.summary();
-        console.log('summary');
       } else {
         location.href = '/work/';
-        console.log('location.href');
       }
     }
     return setTimeout(function() {
@@ -58,7 +56,6 @@ Global = {
     results = [];
     for (i = j = 0, len = srces.length; j < len; i = ++j) {
       src = srces[i];
-      console.log('Global.preload()', src);
       images[i] = new Image();
       images[i].src = src;
       results.push(images[i].onload = function() {

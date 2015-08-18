@@ -42,10 +42,8 @@ Global =
     if option is 'work'
       if location.href.match('work') isnt null
         Work.summary()
-        console.log 'summary'
       else
         location.href = '/work/'
-        console.log 'location.href'
 
     setTimeout ->
       Global.menu.off()
@@ -59,7 +57,7 @@ Global =
     total = srces.length
 
     for src, i in srces
-      console.log 'Global.preload()', src
+      # console.log 'Global.preload()', src
       images[i] = new Image()
       images[i].src = src
       images[i].onload = ->

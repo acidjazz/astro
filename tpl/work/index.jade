@@ -12,11 +12,26 @@ block content
     // SUMMARY OF PROJECTS
     .summary.off
       .hero
-        .copy1 BRAND
-        .copy2 Aenean gravida tincidunt justo, quis varius justo. Nullam vitae ligula at dolor dictum tincidunt vitae quis justo. 
+        .copy1 change this
+        .copy2 We’ve been creating the future for a while now.
+      .filters
+        .inner
+          .title CAPABILITIES
+          .filtermenu
+            each filter in data.filters
+              if filter.name == 'all'
+                .filter.on(class='filter_' + filter.name,data-copy=filter.copy) #{filter.name}
+              else
+                .filter(class='filter_' + filter.name,data-copy=filter.copy) #{filter.name}
+          .clear
       .thumbs
         each project in data.project
-          .thumb(class='thumb_' + project.folder,data-project=project.folder,style='background-image: url("../img/project/' + project.folder + '/1440/' + project.cover + '");')
+          .thumb.on(
+            class='thumb_' + project.folder,
+            data-project=project.folder,
+            style='background-image: url("../img/project/' + project.folder + '/1440/' + project.cover + '");',
+            data-filters=project.filters
+          )
             .inner
               .copy
                 .name #{project.name}

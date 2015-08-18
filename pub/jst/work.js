@@ -18,7 +18,33 @@ Work = {
   handlers: function() {
     $('.projects > .summary > .thumbs > .thumb').on('click', Work.projectHandler);
     $('.projects > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on('click', Work.projectHandler);
-    return $('.project > .filters > .inner > .filtermenu > .filter').on('click', Work.filterHandler);
+    $('.project > .filters > .inner > .filtermenu > .filter').on('click', Work.filterHandler);
+    return $('.summary > .filters > .inner > .filtermenu > .filter').on('click', Work.summaryFilterHandler);
+  },
+  summaryFilterHandler: function() {
+    var copy, filter;
+    _.off('.summary > .filters > .inner > .filtermenu > .filter');
+    _.on(this);
+    filter = $(this).html().trim();
+    copy = $(this).data('copy');
+    $('.summary > .hero > .copy2').text(copy);
+    $('.summary > .hero > .copy1').text(filter);
+    if (filter === 'all') {
+      _.on('.summary > .thumbs > .thumb');
+      return true;
+    }
+    _.off('.summary > .thumbs > .thumb');
+    return setTimeout(function() {
+      return $('.summary > .thumbs > .thumb').each(function(i, el) {
+        var filters;
+        filters = $(el).data('filters');
+        if (filters.indexOf(filter) !== -1) {
+          return _.on($(el));
+        } else {
+          return _.off($(el));
+        }
+      });
+    }, 200);
   },
   filterHandler: function() {
     var t;

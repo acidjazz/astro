@@ -1,9 +1,21 @@
 Global =
 
+  interval: false
+  cache: {}
+
   i: ->
 
     NProgress.configure
       showSpinner: false
+
+    Global.cache.astro = $('.astro')
+    Global.cache.red1 = $('.red1')
+    Global.cache.burger = $('.top > .inner > .burger > .inner')
+
+    Global.interval = setInterval ->
+      Global.astro()
+    , 500
+
 
     Global.handlers()
 
@@ -19,6 +31,12 @@ Global =
     else
       Global.menu.off()
 
+  astro: ->
+
+    if document.body.scrollTop isnt 0 or document.documentElement.scrollTop isnt 0
+      _.on Global.cache.astro, Global.cache.red1, Global.cache.burger
+    else
+      _.off Global.cache.astro, Global.cache.red1, Global.cache.burger
   menu:
 
     on: ->
@@ -45,6 +63,8 @@ Global =
       else
         location.href = '/work/'
 
+    if option is 'contact'
+        location.href = '/contact/'
     setTimeout ->
       Global.menu.off()
       $('.menu > .inner > .options > .option').removeClass 'active'

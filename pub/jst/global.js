@@ -1,10 +1,18 @@
 var Global;
 
 Global = {
+  interval: false,
+  cache: {},
   i: function() {
     NProgress.configure({
       showSpinner: false
     });
+    Global.cache.astro = $('.astro');
+    Global.cache.red1 = $('.red1');
+    Global.cache.burger = $('.top > .inner > .burger > .inner');
+    Global.interval = setInterval(function() {
+      return Global.astro();
+    }, 500);
     return Global.handlers();
   },
   handlers: function() {
@@ -16,6 +24,13 @@ Global = {
       return Global.menu.on();
     } else {
       return Global.menu.off();
+    }
+  },
+  astro: function() {
+    if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0) {
+      return _.on(Global.cache.astro, Global.cache.red1, Global.cache.burger);
+    } else {
+      return _.off(Global.cache.astro, Global.cache.red1, Global.cache.burger);
     }
   },
   menu: {
@@ -42,6 +57,9 @@ Global = {
       } else {
         location.href = '/work/';
       }
+    }
+    if (option === 'contact') {
+      location.href = '/contact/';
     }
     return setTimeout(function() {
       Global.menu.off();

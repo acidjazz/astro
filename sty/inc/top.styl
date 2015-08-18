@@ -65,15 +65,34 @@
   z-index 100
   > .inner
     position relative
+    > .red1
+      position absolute
+      top 20px
+      left 0px
+      height 51px
+      background-color: c.red2
+      width 71px
+      &.on
+        transform translate(0, 0)
+        transition transform 0.2s ease-in-out 0.2s
+      &.off
+        transform translate(-71px, 0)
+        transition transform 0.2s linear 0s
+
     > .astro
+      overflow hidden
       position absolute
       top 30px
       left 30px
-      width 120px
       height 35px
+      transition width 0.2s linear
+      &.off
+        width 120px
+      &.on
+        width 29px
       > svg
-        width inherit
-        height inherit
+        width 120px
+        height 35px
       &.light
         > svg
           > g > path, > g > g > path
@@ -134,3 +153,5 @@
       &.on:hover
         > .inner > .lines.red > .line
           transform translate(0, 0)
+      &.on > .inner.on > .lines.red > .line
+        transform translate(0, 0)

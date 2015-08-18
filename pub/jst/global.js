@@ -45,6 +45,9 @@ Global = {
         console.log('location.href');
       }
     }
+    if (option === 'about') {
+      location.href = '/about/';
+    }
     return setTimeout(function() {
       Global.menu.off();
       return $('.menu > .inner > .options > .option').removeClass('active');

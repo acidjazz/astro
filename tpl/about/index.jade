@@ -1,0 +1,25 @@
+
+extends ../inc/layout
+
+block variables
+  - var rootdir = '../'
+
+block content
+
+  include ../inc/top
+
+  .about
+    .banner
+      .copy We create stuff people love.
+    .block
+      .inner
+        .copy DESIGN. TECHNOLOGY. LIFESTYLE. <br />We create brands, products, experiences and sometimes we wrap them all together to create new companies.
+
+  include ../inc/bottom
+
+  script(type='text/javascript').
+    function loadercomplete() {
+      Loader.load('../jst/about.js', 'About');
+      Global.i()
+    }
+

@@ -1,0 +1,30 @@
+.about
+  > .banner
+    position relative
+    height 100%
+    background-position 50% 50%
+    background-size cover
+    background-repeat no-repeat
+    animation fadeIn 0.5s ease-in both
+    background-image url('/img/about/banner.jpg')
+    > .copy
+      position absolute
+      left 0
+      top 50%
+      width 100%
+      font f_h1
+      color: c.white1
+      text-align center
+      height 110px
+      margin-top -55px
+      animation cellInY 0.75s 0s ease-in both
+
+  > .block
+    background-color: c.black4
+    > .inner
+      padding 50px
+      desktop()
+      > .copy
+        font f_h2
+        color: c.white1
+

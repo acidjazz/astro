@@ -1703,6 +1703,49 @@ body.fixed {
   font: 46px blenderpro medium;
   color: #fff;
 }
+.about > .banner {
+  position: relative;
+  height: 100%;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: fadeIn 0.5s ease-in both;
+  -moz-animation: fadeIn 0.5s ease-in both;
+  -o-animation: fadeIn 0.5s ease-in both;
+  -ms-animation: fadeIn 0.5s ease-in both;
+  animation: fadeIn 0.5s ease-in both;
+  background-image: url("/img/about/banner.jpg");
+}
+.about > .banner > .copy {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  font: 92px blenderpro medium;
+  color: #fff;
+  text-align: center;
+  height: 110px;
+  margin-top: -55px;
+  -webkit-animation: cellInY 0.75s 0s ease-in both;
+  -moz-animation: cellInY 0.75s 0s ease-in both;
+  -o-animation: cellInY 0.75s 0s ease-in both;
+  -ms-animation: cellInY 0.75s 0s ease-in both;
+  animation: cellInY 0.75s 0s ease-in both;
+}
+.about > .block {
+  background-color: #363a42;
+}
+.about > .block > .inner {
+  padding: 50px;
+  max-width: 1020px;
+  margin: auto;
+}
+.about > .block > .inner > .copy {
+  font: 46px blenderpro medium;
+  color: #fff;
+}
 .projects .summary {
   background-color: #434965;
 }

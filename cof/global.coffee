@@ -47,6 +47,9 @@ Global =
         location.href = '/work/'
         console.log 'location.href'
 
+    if option is 'about'
+        location.href = '/about/'
+
     setTimeout ->
       Global.menu.off()
       $('.menu > .inner > .options > .option').removeClass 'active'

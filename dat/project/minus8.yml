@@ -5,7 +5,6 @@
   name: Minus-8
   description: "Minus-8 is a watch brand created by ASTRO designed to express the things that make the West Coast so special: Free thought, pure form, and always living on the leading edge of America."
   color: blue5
-  home: true
   filters:
     - holistic
     - strategy

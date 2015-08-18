@@ -14,16 +14,6 @@ block content
       .hero
         .copy1 change this
         .copy2 We’ve been creating the future for a while now.
-      .filters
-        .inner
-          .title CAPABILITIES
-          .filtermenu
-            each filter in data.filters
-              if filter.name == 'all'
-                .filter.on(class='filter_' + filter.name,data-copy=filter.copy) #{filter.name}
-              else
-                .filter(class='filter_' + filter.name,data-copy=filter.copy) #{filter.name}
-          .clear
       .thumbs
         each project in data.project
           .thumb.on(
@@ -37,6 +27,17 @@ block content
                 .name #{project.name}
                 .filters !{project.filters.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
       .clear
+      .filters.float
+        .inner
+          .title CAPABILITIES
+          .filtermenu
+            each filter in data.filters
+              if filter.name == 'all'
+                .filter.on(class='filter_' + filter.name,data-copy=filter.copy) #{filter.name}
+              else
+                .filter(class='filter_' + filter.name,data-copy=filter.copy) #{filter.name}
+          .clear
+
 
     // PROJECT PAGES
     - var project = data.project.threedr

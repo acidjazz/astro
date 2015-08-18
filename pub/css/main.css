@@ -2013,34 +2013,34 @@ body.fixed {
   max-width: 1020px;
   margin: auto;
 }
-.projects > .body {
+.projects > .project > .body {
   min-height: 2000px;
 }
-.projects > .body > .youtube {
+.projects > .project > .body > .youtube {
   width: 800px;
   height: 450px;
   margin: auto;
 }
-.projects > .body > .image {
+.projects > .project > .body > .image {
   padding: 50px 0;
   width: 100%;
 }
-.projects > .body > .image.pad_both {
+.projects > .project > .body > .image.pad_both {
   padding: 50px 0;
 }
-.projects > .body > .image.pad_top {
+.projects > .project > .body > .image.pad_top {
   padding: 50px 0 0 0;
 }
-.projects > .body > .image.pad_bottom {
+.projects > .project > .body > .image.pad_bottom {
   padding: 0 0 50px 0;
 }
-.projects > .body > .image.pad_none {
+.projects > .project > .body > .image.pad_none {
   padding: 0 0 0 0;
 }
-.projects > .body > .image > img {
+.projects > .project > .body > .image > img {
   width: inherit;
 }
-.projects > .body > .image > .img {
+.projects > .project > .body > .image > .img {
   padding-top: 60%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2048,48 +2048,48 @@ body.fixed {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.projects > .body > .copy {
+.projects > .project > .body > .copy {
   padding: 50px;
   line-height: 30px;
   max-width: 600px;
   margin: auto;
 }
-.projects > .body > .imagecopy {
+.projects > .project > .body > .imagecopy {
   padding: 50px;
   max-width: 1020px;
   margin: auto;
 }
-.projects > .body > .imagecopy.pad_bottom {
+.projects > .project > .body > .imagecopy.pad_bottom {
   padding: 0 0 50px 0;
 }
-.projects > .body > .imagecopy.black {
+.projects > .project > .body > .imagecopy.black {
   background-color: #000;
 }
-.projects > .body > .imagecopy.nopadding {
+.projects > .project > .body > .imagecopy.nopadding {
   padding: 0px;
 }
-.projects > .body > .imagecopy > .block.left {
+.projects > .project > .body > .imagecopy > .block.left {
   float: left;
   width: 50%;
   height: 100%;
 }
-.projects > .body > .imagecopy > .block.right {
+.projects > .project > .body > .imagecopy > .block.right {
   float: right;
   width: 50%;
   height: 100%;
 }
-.projects > .body > .imagecopy > .block {
+.projects > .project > .body > .imagecopy > .block {
   height: inherit;
 }
-.projects > .body > .imagecopy > .block > .image {
+.projects > .project > .body > .imagecopy > .block > .image {
   width: 100%;
   height: inherit;
   text-align: center;
 }
-.projects > .body > .imagecopy > .block > .image > img {
+.projects > .project > .body > .imagecopy > .block > .image > img {
   height: inherit;
 }
-.projects > .body > .imagecopy > .block > .image > .img {
+.projects > .project > .body > .imagecopy > .block > .image > .img {
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2097,10 +2097,10 @@ body.fixed {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.projects > .body > .imagecopy > .block.copy {
+.projects > .project > .body > .imagecopy > .block.copy {
   display: table;
 }
-.projects > .body > .imagecopy > .block.copy > .copy {
+.projects > .project > .body > .imagecopy > .block.copy > .copy {
   line-height: 30px;
   max-width: 600px;
   padding: 0 50px;
@@ -2108,112 +2108,112 @@ body.fixed {
   vertical-align: middle;
   margin: auto;
 }
-.projects > .body > .imagecopy > .block.copy > .copy.white {
+.projects > .project > .body > .imagecopy > .block.copy > .copy.white {
   color: #fff;
 }
-.projects > .related > .title {
+.projects > .project > .related > .title {
   font: 40px blenderpro medium;
   text-align: center;
   padding: 20px;
   color: #fff;
 }
-.projects > .related > .title.title_aos {
+.projects > .project > .related > .title.title_aos {
   background-color: #434965;
 }
-.projects > .related > .title.title_fuelband {
+.projects > .project > .related > .title.title_fuelband {
   background-color: #3bb62e;
 }
-.projects > .related > .title.title_goggle {
+.projects > .project > .related > .title.title_goggle {
   background-color: #444;
 }
-.projects > .related > .title.title_jinnitv {
+.projects > .project > .related > .title.title_jinnitv {
   background-color: #2cbee6;
 }
-.projects > .related > .title.title_mineralist {
+.projects > .project > .related > .title.title_mineralist {
   background-color: #ec8000;
 }
-.projects > .related > .title.title_minus8 {
+.projects > .project > .related > .title.title_minus8 {
   background-color: #a9ded4;
 }
-.projects > .related > .title.title_neff {
+.projects > .project > .related > .title.title_neff {
   background-color: #f467b2;
 }
-.projects > .related > .title.title_owlet {
+.projects > .project > .related > .title.title_owlet {
   background-color: #a9ded4;
 }
-.projects > .related > .title.title_sol {
+.projects > .project > .related > .title.title_sol {
   background-color: #7582b1;
 }
-.projects > .related > .title.title_tamar {
+.projects > .project > .related > .title.title_tamar {
   background-color: #f4ab8b;
 }
-.projects > .related > .title.title_threedr {
+.projects > .project > .related > .title.title_threedr {
   background-color: #76d734;
 }
-.projects > .related > .title.title_versus {
+.projects > .project > .related > .title.title_versus {
   background-color: #0195ff;
 }
-.projects > .related > .title.title_xbox {
+.projects > .project > .related > .title.title_xbox {
   background-color: #74bd44;
 }
-.projects > .credits.credits_aos > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_aos > .inner > .sections > .section > .title {
   color: #434965;
 }
-.projects > .credits.credits_fuelband > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_fuelband > .inner > .sections > .section > .title {
   color: #3bb62e;
 }
-.projects > .credits.credits_goggle > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_goggle > .inner > .sections > .section > .title {
   color: #444;
 }
-.projects > .credits.credits_jinnitv > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_jinnitv > .inner > .sections > .section > .title {
   color: #2cbee6;
 }
-.projects > .credits.credits_mineralist > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_mineralist > .inner > .sections > .section > .title {
   color: #ec8000;
 }
-.projects > .credits.credits_minus8 > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_minus8 > .inner > .sections > .section > .title {
   color: #a9ded4;
 }
-.projects > .credits.credits_neff > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_neff > .inner > .sections > .section > .title {
   color: #f467b2;
 }
-.projects > .credits.credits_owlet > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_owlet > .inner > .sections > .section > .title {
   color: #a9ded4;
 }
-.projects > .credits.credits_sol > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_sol > .inner > .sections > .section > .title {
   color: #7582b1;
 }
-.projects > .credits.credits_tamar > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_tamar > .inner > .sections > .section > .title {
   color: #f4ab8b;
 }
-.projects > .credits.credits_threedr > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_threedr > .inner > .sections > .section > .title {
   color: #76d734;
 }
-.projects > .credits.credits_versus > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_versus > .inner > .sections > .section > .title {
   color: #0195ff;
 }
-.projects > .credits.credits_xbox > .inner > .sections > .section > .title {
+.projects > .project > .credits.credits_xbox > .inner > .sections > .section > .title {
   color: #74bd44;
 }
-.projects > .credits > .inner {
+.projects > .project > .credits > .inner {
   max-width: 1020px;
   margin: auto;
   padding: 50px;
 }
-.projects > .credits > .inner > .title {
+.projects > .project > .credits > .inner > .title {
   font: 46px blenderpro medium;
 }
-.projects > .credits > .inner > .sections > .section {
+.projects > .project > .credits > .inner > .sections > .section {
   float: left;
   width: 33.33%;
 }
-.projects > .credits > .inner > .sections > .section > .title {
+.projects > .project > .credits > .inner > .sections > .section > .title {
   font: 40px blenderpro medium;
   color: #ffa500;
   margin: 0 0 10px 0;
 }
-.projects > .credits > .inner > .sections > .section > .item,
-.projects > .credits > .inner > .sections > .section > a.item {
+.projects > .project > .credits > .inner > .sections > .section > .item,
+.projects > .project > .credits > .inner > .sections > .section > a.item {
   display: block;
   margin: 0 0 10px 0;
   text-decoration: none;
@@ -2522,6 +2522,47 @@ body.fixed {
 }
 .guide > .sections > .section > .font.font_f_h5 {
   font: 36px blenderpro medium;
+}
+.contact .banner {
+  height: 100%;
+}
+.contact .banner > .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/contact/banner.jpg");
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: fadeIn 0.5s 0s ease-in both;
+  -moz-animation: fadeIn 0.5s 0s ease-in both;
+  -o-animation: fadeIn 0.5s 0s ease-in both;
+  -ms-animation: fadeIn 0.5s 0s ease-in both;
+  animation: fadeIn 0.5s 0s ease-in both;
+}
+.contact .banner > .inner.on {
+  display: block;
+}
+.contact .banner > .inner.off {
+  display: none;
+}
+.contact .banner > .inner > .copy {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  font: 92px blenderpro medium;
+  color: #fff;
+  text-align: center;
+  height: 110px;
+  margin-top: -55px;
+  -webkit-animation: cellInY 0.75s 0s ease-in both;
+  -moz-animation: cellInY 0.75s 0s ease-in both;
+  -o-animation: cellInY 0.75s 0s ease-in both;
+  -ms-animation: cellInY 0.75s 0s ease-in both;
+  animation: cellInY 0.75s 0s ease-in both;
 }
 .placeholder {
   text-align: center;

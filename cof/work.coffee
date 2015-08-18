@@ -26,6 +26,8 @@ Work =
   
   summaryFilterHandler: ->
 
+    document.body.scrollTop = document.documentElement.scrollTop = 0
+
     _.off '.summary > .filters > .inner > .filtermenu > .filter'
     _.on this
 

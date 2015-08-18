@@ -1,9 +1,21 @@
 Global =
 
+  interval: false
+  cache: {}
+
   i: ->
 
     NProgress.configure
       showSpinner: false
+
+    Global.cache.astro = $('.astro')
+    Global.cache.red1 = $('.red1')
+    Global.cache.burger = $('.top > .inner > .burger > .inner')
+
+    Global.interval = setInterval ->
+      Global.astro()
+    , 500
+
 
     Global.handlers()
 
@@ -19,6 +31,12 @@ Global =
     else
       Global.menu.off()
 
+  astro: ->
+
+    if document.body.scrollTop isnt 0 or document.documentElement.scrollTop isnt 0
+      _.on Global.cache.astro, Global.cache.red1, Global.cache.burger
+    else
+      _.off Global.cache.astro, Global.cache.red1, Global.cache.burger
   menu:
 
     on: ->
@@ -42,13 +60,13 @@ Global =
     if option is 'work'
       if location.href.match('work') isnt null
         Work.summary()
-        console.log 'summary'
       else
         location.href = '/work/'
-        console.log 'location.href'
 
     if option is 'about'
         location.href = '/about/'
+    if option is 'contact'
+        location.href = '/contact/'
 
     setTimeout ->
       Global.menu.off()
@@ -62,7 +80,7 @@ Global =
     total = srces.length
 
     for src, i in srces
-      console.log 'Global.preload()', src
+      # console.log 'Global.preload()', src
       images[i] = new Image()
       images[i].src = src
       images[i].onload = ->

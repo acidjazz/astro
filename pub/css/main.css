@@ -1347,16 +1347,59 @@
 .top > .inner {
   position: relative;
 }
+.top > .inner > .red1 {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  height: 51px;
+  background-color: #ff2f2d;
+  width: 71px;
+}
+.top > .inner > .red1.on {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out 0.2s;
+  -moz-transition: -moz-transform 0.2s ease-in-out 0.2s;
+  -o-transition: -o-transform 0.2s ease-in-out 0.2s;
+  -ms-transition: -ms-transform 0.2s ease-in-out 0.2s;
+  transition: transform 0.2s ease-in-out 0.2s;
+}
+.top > .inner > .red1.off {
+  -webkit-transform: translate(-71px, 0);
+  -moz-transform: translate(-71px, 0);
+  -o-transform: translate(-71px, 0);
+  -ms-transform: translate(-71px, 0);
+  transform: translate(-71px, 0);
+  -webkit-transition: -webkit-transform 0.2s linear 0s;
+  -moz-transition: -moz-transform 0.2s linear 0s;
+  -o-transition: -o-transform 0.2s linear 0s;
+  -ms-transition: -ms-transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s;
+}
 .top > .inner > .astro {
+  overflow: hidden;
   position: absolute;
   top: 30px;
   left: 30px;
-  width: 120px;
   height: 35px;
+  -webkit-transition: width 0.2s linear;
+  -moz-transition: width 0.2s linear;
+  -o-transition: width 0.2s linear;
+  -ms-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+.top > .inner > .astro.off {
+  width: 120px;
+}
+.top > .inner > .astro.on {
+  width: 29px;
 }
 .top > .inner > .astro > svg {
-  width: inherit;
-  height: inherit;
+  width: 120px;
+  height: 35px;
 }
 .top > .inner > .astro.light > svg > g > path,
 .top > .inner > .astro.light > svg > g > g > path {
@@ -1463,6 +1506,13 @@
   transition-delay: 0.2s;
 }
 .top > .inner > .burger.on:hover > .inner > .lines.red > .line {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.top > .inner > .burger.on > .inner.on > .lines.red > .line {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -o-transform: translate(0, 0);
@@ -1577,11 +1627,6 @@ body.fixed {
 }
 .index > .triangles > .triangle:hover > .shape {
   border-color: transparent transparent #ee5655 transparent;
-  -webkit-transform: rotate(120deg);
-  -moz-transform: rotate(120deg);
-  -o-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  transform: rotate(120deg);
 }
 .index > .triangles > .triangle:hover > .title {
   opacity: 1;
@@ -1748,6 +1793,7 @@ body.fixed {
 }
 .projects .summary {
   background-color: #434965;
+  min-height: 600px;
 }
 .projects .summary.on {
   display: block;
@@ -1762,6 +1808,7 @@ body.fixed {
 .projects .summary > .hero > .copy1 {
   max-width: 800px;
   margin: auto;
+  text-transform: uppercase;
 }
 .projects .summary > .hero > .copy2 {
   font: 46px blenderpro medium;
@@ -1790,6 +1837,16 @@ body.fixed {
   -o-transition: background-position 0.2s linear;
   -ms-transition: background-position 0.2s linear;
   transition: background-position 0.2s linear;
+}
+.projects > .summary > .thumbs > .thumb.on,
+.related > .relateds > .thumb.on,
+.index > .projects > .thumb.on {
+  display: block;
+}
+.projects > .summary > .thumbs > .thumb.off,
+.related > .relateds > .thumb.off,
+.index > .projects > .thumb.off {
+  display: none;
 }
 .projects > .summary > .thumbs > .thumb:hover,
 .related > .relateds > .thumb:hover,
@@ -2044,111 +2101,6 @@ body.fixed {
   max-width: 1020px;
   margin: auto;
 }
-.projects > .project > .filters {
-  background-color: #22252b;
-  color: #fff;
-  text-transform: uppercase;
-}
-.projects > .project > .filters.float {
-  bottom: 0;
-  width: 100%;
-  position: fixed;
-}
-.projects > .project > .filters > .inner {
-  max-width: 1020px;
-  margin: auto;
-}
-.projects > .project > .filters > .inner > .title {
-  float: left;
-  padding: 20px 0 20px 0px;
-}
-.projects > .project > .filters > .inner > .filtermenu {
-  float: right;
-  padding: 0 50px 0 0;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter {
-  cursor: pointer;
-  float: left;
-  padding: 20px;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_aos.active {
-  background-color: #434965;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_aos:hover {
-  background-color: rgba(67,73,101,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_fuelband.active {
-  background-color: #3bb62e;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover {
-  background-color: rgba(59,182,46,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_goggle.active {
-  background-color: #444;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_goggle:hover {
-  background-color: rgba(68,68,68,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_jinnitv.active {
-  background-color: #2cbee6;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_jinnitv:hover {
-  background-color: rgba(44,190,230,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_mineralist.active {
-  background-color: #ec8000;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_mineralist:hover {
-  background-color: rgba(236,128,0,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_minus8.active {
-  background-color: #a9ded4;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_minus8:hover {
-  background-color: rgba(169,222,212,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_neff.active {
-  background-color: #f467b2;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_neff:hover {
-  background-color: rgba(244,103,178,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_owlet.active {
-  background-color: #a9ded4;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_owlet:hover {
-  background-color: rgba(169,222,212,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_sol.active {
-  background-color: #7582b1;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_sol:hover {
-  background-color: rgba(117,130,177,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_tamar.active {
-  background-color: #f4ab8b;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_tamar:hover {
-  background-color: rgba(244,171,139,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_threedr.active {
-  background-color: #76d734;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_threedr:hover {
-  background-color: rgba(118,215,52,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_versus.active {
-  background-color: #0195ff;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_versus:hover {
-  background-color: rgba(1,149,255,0.25);
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_xbox.active {
-  background-color: #74bd44;
-}
-.projects > .project > .filters > .inner > .filtermenu > .filter.filter_xbox:hover {
-  background-color: rgba(116,189,68,0.25);
-}
 .projects > .project > .body {
   min-height: 2000px;
 }
@@ -2355,6 +2307,163 @@ body.fixed {
   text-decoration: none;
   color: #000;
 }
+.projects > .project > .filters,
+.projects > .summary > .filters {
+  background-color: #22252b;
+  color: #fff;
+  text-transform: uppercase;
+}
+.projects > .project > .filters.float,
+.projects > .summary > .filters.float {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+.projects > .project > .filters > .inner,
+.projects > .summary > .filters > .inner {
+  max-width: 1020px;
+  margin: auto;
+}
+.projects > .project > .filters > .inner > .title,
+.projects > .summary > .filters > .inner > .title {
+  float: left;
+  padding: 20px 0 20px 0px;
+}
+.projects > .project > .filters > .inner > .filtermenu,
+.projects > .summary > .filters > .inner > .filtermenu {
+  float: right;
+  padding: 0 50px 0 0;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter,
+.projects > .summary > .filters > .inner > .filtermenu > .filter {
+  cursor: pointer;
+  float: left;
+  padding: 20px;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_aos.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_aos.active {
+  background-color: #434965;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_aos:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_aos:hover {
+  background-color: rgba(67,73,101,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_fuelband.active {
+  background-color: #3bb62e;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover {
+  background-color: rgba(59,182,46,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_goggle.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_goggle.active {
+  background-color: #444;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_goggle:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_goggle:hover {
+  background-color: rgba(68,68,68,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_jinnitv.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_jinnitv.active {
+  background-color: #2cbee6;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_jinnitv:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_jinnitv:hover {
+  background-color: rgba(44,190,230,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_mineralist.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_mineralist.active {
+  background-color: #ec8000;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_mineralist:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_mineralist:hover {
+  background-color: rgba(236,128,0,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_minus8.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_minus8.active {
+  background-color: #a9ded4;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_minus8:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_minus8:hover {
+  background-color: rgba(169,222,212,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_neff.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_neff.active {
+  background-color: #f467b2;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_neff:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_neff:hover {
+  background-color: rgba(244,103,178,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_owlet.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_owlet.active {
+  background-color: #a9ded4;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_owlet:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_owlet:hover {
+  background-color: rgba(169,222,212,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_sol.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_sol.active {
+  background-color: #7582b1;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_sol:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_sol:hover {
+  background-color: rgba(117,130,177,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_tamar.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_tamar.active {
+  background-color: #f4ab8b;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_tamar:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_tamar:hover {
+  background-color: rgba(244,171,139,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_threedr.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_threedr.active {
+  background-color: #76d734;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_threedr:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_threedr:hover {
+  background-color: rgba(118,215,52,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_versus.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_versus.active {
+  background-color: #0195ff;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_versus:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_versus:hover {
+  background-color: rgba(1,149,255,0.25);
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_xbox.active,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_xbox.active {
+  background-color: #74bd44;
+}
+.projects > .project > .filters > .inner > .filtermenu > .filter.filter_xbox:hover,
+.projects > .summary > .filters > .inner > .filtermenu > .filter.filter_xbox:hover {
+  background-color: rgba(116,189,68,0.25);
+}
+.projects > .summary > .filters > .inner {
+  max-width: none;
+}
+.projects > .summary > .filters > .inner > .title {
+  display: none;
+}
+.projects > .summary > .filters > .inner > .filtermenu > .filter {
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  -ms-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+.projects > .summary > .filters > .inner > .filtermenu > .filter:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+.projects > .summary > .filters > .inner > .filtermenu > .filter.on {
+  background-color: #fff;
+  color: #000;
+}
 .guide {
   max-width: 1200px;
   margin: 50px auto 0 auto;
@@ -2501,6 +2610,47 @@ body.fixed {
 }
 .guide > .sections > .section > .font.font_f_h5 {
   font: 36px blenderpro medium;
+}
+.contact .banner {
+  height: 100%;
+}
+.contact .banner > .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/contact/banner.jpg");
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: fadeIn 0.5s 0s ease-in both;
+  -moz-animation: fadeIn 0.5s 0s ease-in both;
+  -o-animation: fadeIn 0.5s 0s ease-in both;
+  -ms-animation: fadeIn 0.5s 0s ease-in both;
+  animation: fadeIn 0.5s 0s ease-in both;
+}
+.contact .banner > .inner.on {
+  display: block;
+}
+.contact .banner > .inner.off {
+  display: none;
+}
+.contact .banner > .inner > .copy {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  font: 92px blenderpro medium;
+  color: #fff;
+  text-align: center;
+  height: 110px;
+  margin-top: -55px;
+  -webkit-animation: cellInY 0.75s 0s ease-in both;
+  -moz-animation: cellInY 0.75s 0s ease-in both;
+  -o-animation: cellInY 0.75s 0s ease-in both;
+  -ms-animation: cellInY 0.75s 0s ease-in both;
+  animation: cellInY 0.75s 0s ease-in both;
 }
 .placeholder {
   text-align: center;

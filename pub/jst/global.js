@@ -1,10 +1,18 @@
 var Global;
 
 Global = {
+  interval: false,
+  cache: {},
   i: function() {
     NProgress.configure({
       showSpinner: false
     });
+    Global.cache.astro = $('.astro');
+    Global.cache.red1 = $('.red1');
+    Global.cache.burger = $('.top > .inner > .burger > .inner');
+    Global.interval = setInterval(function() {
+      return Global.astro();
+    }, 500);
     return Global.handlers();
   },
   handlers: function() {
@@ -16,6 +24,13 @@ Global = {
       return Global.menu.on();
     } else {
       return Global.menu.off();
+    }
+  },
+  astro: function() {
+    if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0) {
+      return _.on(Global.cache.astro, Global.cache.red1, Global.cache.burger);
+    } else {
+      return _.off(Global.cache.astro, Global.cache.red1, Global.cache.burger);
     }
   },
   menu: {
@@ -39,14 +54,15 @@ Global = {
     if (option === 'work') {
       if (location.href.match('work') !== null) {
         Work.summary();
-        console.log('summary');
       } else {
         location.href = '/work/';
-        console.log('location.href');
       }
     }
     if (option === 'about') {
       location.href = '/about/';
+    }
+    if (option === 'contact') {
+      location.href = '/contact/';
     }
     return setTimeout(function() {
       Global.menu.off();
@@ -61,7 +77,6 @@ Global = {
     results = [];
     for (i = j = 0, len = srces.length; j < len; i = ++j) {
       src = srces[i];
-      console.log('Global.preload()', src);
       images[i] = new Image();
       images[i].src = src;
       results.push(images[i].onload = function() {

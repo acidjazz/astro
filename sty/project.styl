@@ -2,6 +2,7 @@
 
   .summary
     background-color: c.blue3
+    min-height 600px
 
     &.on
       display block
@@ -13,12 +14,17 @@
       > .copy1
         max-width 800px
         margin auto
+        text-transform uppercase
       > .copy2
         font f_h2
         max-width 800px
         margin auto
 .projects > .summary > .thumbs, .related > .relateds, .index > .projects
   > .thumb
+    &.on
+      display block
+    &.off
+      display none
     float left
     width 33.333%
     height 300px
@@ -95,32 +101,8 @@
         max-width 1020px
         margin auto
 
-    > .filters
-      background-color: c.black2
-      color white
-      text-transform uppercase
-      &.float
-        bottom 0
-        width 100%
-        position fixed
-      > .inner
-        desktop()
-        > .title
-          float left
-          padding 20px 0 20px 0px
-        > .filtermenu
-          float right
-          padding 0 50px 0 0
-          > .filter
-            cursor pointer
-            float left
-            padding 20px
-            for key, project in data.project
-              &.filter_{project.folder}.active
-                background-color: c[project.color]
-              &.filter_{project.folder}:hover
-                background-color: rgba(c[project.color], 0.25)
-    > .body
+.projects > .project
+   > .body
       min-height 2000px
       > .youtube
         width 800px
@@ -224,4 +206,46 @@
               margin 0 0 10px 0
               text-decoration none
               color: c.black1
+
+.projects > .project, .projects > .summary
+    > .filters
+      background-color: c.black2
+      color white
+      text-transform uppercase
+      &.float
+        bottom 0
+        width 100%
+        position fixed
+      > .inner
+        desktop()
+        > .title
+          float left
+          padding 20px 0 20px 0px
+        > .filtermenu
+          float right
+          padding 0 50px 0 0
+          > .filter
+            cursor pointer
+            float left
+            padding 20px
+            for key, project in data.project
+              &.filter_{project.folder}.active
+                background-color: c[project.color]
+              &.filter_{project.folder}:hover
+                background-color: rgba(c[project.color], 0.25)
+ 
+.projects > .summary
+  > .filters
+    > .inner
+      max-width none
+      > .title
+        display none
+      > .filtermenu
+        > .filter
+          transition background-color 0.1s linear
+          &:hover
+            background-color: rgba(c.white1, 0.5)
+          &.on
+            background-color: c.white1
+            color: c.black1
 

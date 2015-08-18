@@ -1,14 +1,18 @@
 ---
 featured:
  -
-  title: First Image
-  copy: This is the first image
-  image: project/fuelband/1440/Fuelbands.png
+  title: "Nike+ Fuelband"
+  copy: "Nike+ Fuelband: Life is sport."
+  image: project/fuelband/1440/Nike-FuelBand-Astro.png
  -
-  title: Second Image
-  copy: This is the second image
-  image: project/minus8/1440/banner.png
+  title: Minus 8 Watches
+  copy: "Minus 8: We built a time machine."
+  image: project/minus8/1440/face.png
  -
-  title: Third Image
-  copy: This is the third image
-  image: project/goggle/1440/Galaxy.jpg
+  title: Electric Goggles
+  copy: "Electric Goggles: Design out of bounds."
+  image: project/goggle/1440/Lifestyle_Banner.jpg
+ -
+  title: Owlet
+  copy: "Owlet: Next-gen wearable for your next gen."
+  image: project/owlet/1440/feet.jpg

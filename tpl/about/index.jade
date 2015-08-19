@@ -14,7 +14,20 @@ block content
     .block
       .inner
         .copy DESIGN. TECHNOLOGY. LIFESTYLE. <br />We create brands, products, experiences and sometimes we wrap them all together to create new companies.
-
+    .filters.float
+      .inner
+        .filtermenu
+          .filter.on expertise
+          .filter clients
+          .filter studio
+          .filter careers
+      .clear
+    .sections
+      .section.section_expertise.on
+        include section_expertise
+      .section.section_clients.off
+        include section_clients
+    
   include ../inc/bottom
 
   script(type='text/javascript').

@@ -11,18 +11,26 @@ Global =
     Global.cache.astro = $('.astro')
     Global.cache.red1 = $('.red1')
     Global.cache.burger = $('.top > .inner > .burger > .inner')
+    Global.cache.phrase = $('.top > .inner > .phrase')
+
+    Global.astro(true)
 
     Global.interval = setInterval ->
       Global.astro()
     , 500
 
+    Global.phrase()
 
     Global.handlers()
+
 
   handlers: ->
 
     $('.top > .inner > .burger').on 'click', Global.burger
     $('.menu > .inner > .options > .option').on 'click', Global.option
+
+  phrase: ->
+    Global.cache.phrase.text phrases[Math.floor(Math.random()*phrases.length)]
 
   burger: ->
 
@@ -31,12 +39,17 @@ Global =
     else
       Global.menu.off()
 
-  astro: ->
+  astro: (clean) ->
 
-    if document.body.scrollTop isnt 0 or document.documentElement.scrollTop isnt 0
-      _.on Global.cache.astro, Global.cache.red1, Global.cache.burger
-    else
-      _.off Global.cache.astro, Global.cache.red1, Global.cache.burger
+    if document.body.scrollTop isnt 0 or document.documentElement.scrollTop isnt 0 and (Global.cache.astro.hasClass('off') or clean)
+      _.on Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase
+      return true
+
+    if (document.body.scrollTop is 0 or document.documentElement.scrollTop is 0) and (Global.cache.astro.hasClass('on') or clean)
+      Global.phrase()
+      _.off Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase
+      return true
+
   menu:
 
     on: ->

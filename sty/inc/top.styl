@@ -102,6 +102,22 @@
           > g > path, > g > g > path
             fill: c.black1
 
+    > .phrase
+      overflow hidden
+      position absolute
+      top 26px
+      left 155px
+      color: c.white1
+      font f_h5
+      text-transform uppercase
+      white-space nowrap
+      &.on
+        width 0px
+        transition width 0.2s linear 0s
+      &.off
+        width 710px
+        transition width 0.5s linear 0.2s
+
     > .burger
       z-index 150
       user-select none

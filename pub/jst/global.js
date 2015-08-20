@@ -10,14 +10,20 @@ Global = {
     Global.cache.astro = $('.astro');
     Global.cache.red1 = $('.red1');
     Global.cache.burger = $('.top > .inner > .burger > .inner');
+    Global.cache.phrase = $('.top > .inner > .phrase');
+    Global.astro(true);
     Global.interval = setInterval(function() {
       return Global.astro();
     }, 500);
+    Global.phrase();
     return Global.handlers();
   },
   handlers: function() {
     $('.top > .inner > .burger').on('click', Global.burger);
     return $('.menu > .inner > .options > .option').on('click', Global.option);
+  },
+  phrase: function() {
+    return Global.cache.phrase.text(phrases[Math.floor(Math.random() * phrases.length)]);
   },
   burger: function() {
     if ($(this).hasClass('on')) {
@@ -26,11 +32,15 @@ Global = {
       return Global.menu.off();
     }
   },
-  astro: function() {
-    if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0) {
-      return _.on(Global.cache.astro, Global.cache.red1, Global.cache.burger);
-    } else {
-      return _.off(Global.cache.astro, Global.cache.red1, Global.cache.burger);
+  astro: function(clean) {
+    if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0 && (Global.cache.astro.hasClass('off') || clean)) {
+      _.on(Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase);
+      return true;
+    }
+    if ((document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) && (Global.cache.astro.hasClass('on') || clean)) {
+      Global.phrase();
+      _.off(Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase);
+      return true;
     }
   },
   menu: {

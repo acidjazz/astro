@@ -20,6 +20,9 @@ About =
     _.off '.about > .filters > .inner > .filtermenu > .filter', '.sections > .section'
     _.on this, ".sections > .section.section_#{section}"
 
+    $('html, body').animate(
+      scrollTop: $(".sections").offset().top
+    , 200)
   capcenter: ->
 
     cap = $(this).html().trim()

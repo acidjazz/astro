@@ -14,7 +14,10 @@ About = {
     var section;
     section = $(this).html().trim();
     _.off('.about > .filters > .inner > .filtermenu > .filter', '.sections > .section');
-    return _.on(this, ".sections > .section.section_" + section);
+    _.on(this, ".sections > .section.section_" + section);
+    return $('html, body').animate({
+      scrollTop: $(".sections").offset().top
+    }, 200);
   },
   capcenter: function() {
     var cap;

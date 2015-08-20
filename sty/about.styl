@@ -36,6 +36,7 @@
             background-color: c.white1
             color: c.black2
   > .sections
+    background-color: c.white1
     > .section
       padding 50px 0
       &.on
@@ -54,9 +55,12 @@
           background-size cover
           background-repeat no-repeat
           float left
+          animation cellInX 0.2s 0s ease-in both
+          for num in 0..25
+            &:nth-child({num})
+              animation-delay unit(num*0.05, 's')
     > .section_expertise
       desktop()
-
       > .capcenter
         background-color orange
         > .capmenu

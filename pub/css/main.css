@@ -2328,6 +2328,7 @@ body.fixed {
 .projects .summary {
   background-color: #434965;
   min-height: 600px;
+  padding: 50px 0 0 0;
 }
 .projects .summary.on {
   display: block;

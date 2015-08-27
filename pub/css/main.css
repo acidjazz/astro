@@ -332,6 +332,11 @@
   -webkit-border-radius: 30px;
   border-radius: 30px;
 }
+.footer .inner > .follow > .icons > .icon:hover > svg > path,
+.footer .inner > .follow > .icons > .icon:hover > svg > g > path,
+.footer .inner > .follow > .icons > .icon:hover > svg > g > g > path {
+  fill: #ee5655;
+}
 .footer .inner > .follow > .icons > .icon > svg {
   width: inherit;
   height: inherit;
@@ -340,6 +345,11 @@
 .footer .inner > .follow > .icons > .icon > svg > g > path,
 .footer .inner > .follow > .icons > .icon > svg > g > g > path {
   fill: #fff;
+  -webkit-transition: fill 0.1s linear;
+  -moz-transition: fill 0.1s linear;
+  -o-transition: fill 0.1s linear;
+  -ms-transition: fill 0.1s linear;
+  transition: fill 0.1s linear;
 }
 .footer .inner > .gravity {
   width: 147px;
@@ -3226,6 +3236,13 @@ body.fixed {
   -o-animation: cellInY 0.75s 0s ease-in both;
   -ms-animation: cellInY 0.75s 0s ease-in both;
   animation: cellInY 0.75s 0s ease-in both;
+}
+.contact > .title {
+  padding: 50px 0 50px 20px;
+  font: 40px blenderpro medium;
+}
+.contact > #map {
+  height: 400px;
 }
 .placeholder {
   text-align: center;

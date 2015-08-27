@@ -66,11 +66,15 @@
           background-color: c.black2
           margin 0 5px
           border-radius 30px
+          &:hover > svg
+            > path, > g > path, > g > g > path
+              fill: c.red1
           > svg
             width inherit
             height inherit
             > path, > g > path, > g > g > path
               fill: c.white1
+              transition fill 0.1s linear
     > .gravity
       width 147px
       margin 20px auto 0 auto

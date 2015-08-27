@@ -108,6 +108,10 @@
           <div class="copy">Want to be our friend? OK cool.</div>
         </div>
       </div>
+      <div class="title">Come Chill.</div>
+      <div id="map">
+        <!--iframe(width='100%',height='400px',frameBorder='0',src='https://a.tiles.mapbox.com/v4/kso.n9e389ni/attribution.html?access_token=pk.eyJ1Ijoia3NvIiwiYSI6IlNTbUd2ZG8ifQ.W5l79A5C_jeSVqZ1BUiKWA')-->
+      </div>
     </div>
     <div class="footer">
       <div class="inner">
@@ -252,10 +256,14 @@
         </div>
       </div>
     </div>
+    <link href="https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.css" rel="stylesheet"/>
+    <script src="https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js"></script>
     <script type="text/javascript">
       function loadercomplete() {
         Loader.load('../jst/contact.js', 'Contact');
         Global.i()
+        accessToken = 'pk.eyJ1Ijoia3NvIiwiYSI6IlNTbUd2ZG8ifQ.W5l79A5C_jeSVqZ1BUiKWA';
+        mapId = 'kso.n9e389ni';
       }
     </script>
     <script type="text/javascript">

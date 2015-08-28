@@ -106,17 +106,19 @@
       overflow hidden
       position absolute
       top 26px
-      left 155px
+      left 175px
       color: c.white1
       font f_h5
       text-transform uppercase
       white-space nowrap
       &.on
         width 0px
-        transition width 0.2s linear 0s
+        transition width 0.2s linear 0s, opacity 0.5s linear 0s
+        opacity 0
       &.off
         width 710px
-        transition width 0.5s linear 0.2s
+        transition width 1s linear 0.2s, opacity 1s linear 0.2s
+        opacity 1
 
     > .burger
       z-index 150

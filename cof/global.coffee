@@ -1,6 +1,7 @@
 Global =
 
   interval: false
+  phraseTimeout: false
   cache: {}
 
   i: ->
@@ -13,7 +14,9 @@ Global =
     Global.cache.burger = $('.top > .inner > .burger > .inner')
     Global.cache.phrase = $('.top > .inner > .phrase')
 
-    Global.astro(true)
+    setTimeout ->
+      Global.astro(true)
+    , 400
 
     Global.interval = setInterval ->
       Global.astro()
@@ -31,6 +34,9 @@ Global =
 
   phrase: ->
     Global.cache.phrase.text phrases[Math.floor(Math.random()*phrases.length)]
+    Global.phraseTimeout = setTimeout ->
+      _.on Global.cache.phrase
+    , 5000
 
   burger: ->
 
@@ -48,6 +54,7 @@ Global =
     if (document.body.scrollTop is 0 or document.documentElement.scrollTop is 0) and (Global.cache.astro.hasClass('on') or clean)
       Global.phrase()
       _.off Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase
+      clearTimeout Global.phraseTimeout
       return true
 
   menu:

@@ -2,6 +2,7 @@ var Global;
 
 Global = {
   interval: false,
+  phraseTimeout: false,
   cache: {},
   i: function() {
     NProgress.configure({
@@ -11,7 +12,9 @@ Global = {
     Global.cache.red1 = $('.red1');
     Global.cache.burger = $('.top > .inner > .burger > .inner');
     Global.cache.phrase = $('.top > .inner > .phrase');
-    Global.astro(true);
+    setTimeout(function() {
+      return Global.astro(true);
+    }, 400);
     Global.interval = setInterval(function() {
       return Global.astro();
     }, 500);
@@ -23,7 +26,10 @@ Global = {
     return $('.menu > .inner > .options > .option').on('click', Global.option);
   },
   phrase: function() {
-    return Global.cache.phrase.text(phrases[Math.floor(Math.random() * phrases.length)]);
+    Global.cache.phrase.text(phrases[Math.floor(Math.random() * phrases.length)]);
+    return Global.phraseTimeout = setTimeout(function() {
+      return _.on(Global.cache.phrase);
+    }, 5000);
   },
   burger: function() {
     if ($(this).hasClass('on')) {
@@ -40,6 +46,7 @@ Global = {
     if ((document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) && (Global.cache.astro.hasClass('on') || clean)) {
       Global.phrase();
       _.off(Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase);
+      clearTimeout(Global.phraseTimeout);
       return true;
     }
   },

@@ -1431,7 +1431,7 @@
   overflow: hidden;
   position: absolute;
   top: 26px;
-  left: 155px;
+  left: 175px;
   color: #fff;
   font: 28px blenderpro medium;
   text-transform: uppercase;
@@ -1439,19 +1439,25 @@
 }
 .top > .inner > .phrase.on {
   width: 0px;
-  -webkit-transition: width 0.2s linear 0s;
-  -moz-transition: width 0.2s linear 0s;
-  -o-transition: width 0.2s linear 0s;
-  -ms-transition: width 0.2s linear 0s;
-  transition: width 0.2s linear 0s;
+  -webkit-transition: width 0.2s linear 0s, opacity 0.5s linear 0s;
+  -moz-transition: width 0.2s linear 0s, opacity 0.5s linear 0s;
+  -o-transition: width 0.2s linear 0s, opacity 0.5s linear 0s;
+  -ms-transition: width 0.2s linear 0s, opacity 0.5s linear 0s;
+  transition: width 0.2s linear 0s, opacity 0.5s linear 0s;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 .top > .inner > .phrase.off {
   width: 710px;
-  -webkit-transition: width 0.5s linear 0.2s;
-  -moz-transition: width 0.5s linear 0.2s;
-  -o-transition: width 0.5s linear 0.2s;
-  -ms-transition: width 0.5s linear 0.2s;
-  transition: width 0.5s linear 0.2s;
+  -webkit-transition: width 1s linear 0.2s, opacity 1s linear 0.2s;
+  -moz-transition: width 1s linear 0.2s, opacity 1s linear 0.2s;
+  -o-transition: width 1s linear 0.2s, opacity 1s linear 0.2s;
+  -ms-transition: width 1s linear 0.2s, opacity 1s linear 0.2s;
+  transition: width 1s linear 0.2s, opacity 1s linear 0.2s;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .top > .inner > .burger {
   z-index: 150;

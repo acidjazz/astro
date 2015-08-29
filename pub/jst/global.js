@@ -32,10 +32,7 @@ Global = {
     for (i = j = 0, ref = phrase.length - 1; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
       compiled = compiled + "<div>" + (phrase[i].replace(' ', '&nbsp;')) + "</div>";
     }
-    Global.cache.phrase.html(compiled);
-    return Global.phraseTimeout = setTimeout(function() {
-      return _.on(Global.cache.phrase);
-    }, 5000);
+    return Global.cache.phrase.html(compiled);
   },
   burger: function() {
     if ($(this).hasClass('on')) {

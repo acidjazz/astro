@@ -33,10 +33,16 @@ Global =
     $('.menu > .inner > .options > .option').on 'click', Global.option
 
   phrase: ->
-    Global.cache.phrase.text phrases[Math.floor(Math.random()*phrases.length)]
-    Global.phraseTimeout = setTimeout ->
-      _.on Global.cache.phrase
-    , 5000
+    phrase = phrases[Math.floor(Math.random()*phrases.length)]
+    compiled = ''
+    for i in [0..(phrase.length-1)]
+      compiled  = "#{compiled}<div>#{phrase[i].replace(' ', '&nbsp;')}</div>"
+
+    Global.cache.phrase.html compiled
+
+    #Global.phraseTimeout = setTimeout ->
+    #  _.on Global.cache.phrase
+    #, 5000
 
   burger: ->
 

@@ -26,10 +26,13 @@ Global = {
     return $('.menu > .inner > .options > .option').on('click', Global.option);
   },
   phrase: function() {
-    Global.cache.phrase.text(phrases[Math.floor(Math.random() * phrases.length)]);
-    return Global.phraseTimeout = setTimeout(function() {
-      return _.on(Global.cache.phrase);
-    }, 5000);
+    var compiled, i, j, phrase, ref;
+    phrase = phrases[Math.floor(Math.random() * phrases.length)];
+    compiled = '';
+    for (i = j = 0, ref = phrase.length - 1; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
+      compiled = compiled + "<div>" + (phrase[i].replace(' ', '&nbsp;')) + "</div>";
+    }
+    return Global.cache.phrase.html(compiled);
   },
   burger: function() {
     if ($(this).hasClass('on')) {

@@ -115,14 +115,19 @@
       font f_copyls
       text-transform uppercase
       white-space nowrap
+      > div
+        display inline-block
+        transform-origin left
+        padding 0 0 0 2px
+        animation charIn 0.2s 0s linear both
+        for num in 0..55
+          &:nth-child({num})
+            animation-delay unit(num*0.02, 's')
       &.on
-        width 0px
-        transition width 0.2s linear 0s, opacity 0.5s linear 0s
-        opacity 0
+        display none
       &.off
-        width 710px
-        transition width 1s linear 0.2s, opacity 1s linear 0.2s
-        opacity 1
+        display block
+
 
     > .burger
       z-index 150

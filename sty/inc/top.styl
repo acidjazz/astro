@@ -33,19 +33,23 @@
           top 50%
           left 50%
           height 6px
-          background-color: c.red2
+          background-color: c.red1
         &.active:nth-child(1) > .line
           width 230px
           margin -3px 0 0 -115px
+          animation line1 0.2s ease-in-out
         &.active:nth-child(2) > .line
           width 260px
           margin -3px 0 0 -130px
+          animation line2 0.2s ease-in-out
         &.active:nth-child(3) > .line
           width 220px
           margin -3px 0 0 -110px
+          animation line3 0.2s ease-in-out
         &.active:nth-child(4) > .line
           width 380px
           margin -3px 0 0 -190px
+          animation line4 0.2s ease-in-out
 
         color: c.white1
         &:hover
@@ -173,3 +177,27 @@
           //transform translate(0, 0)
       &.on > .inner.on > .lines.red > .line
         transform translate(0, 0)
+
+@keyframes line1
+  from
+    width 0px
+  to
+    width 230px
+
+@keyframes line2
+  from
+    width 0px
+  to
+    width 260px
+
+@keyframes line3
+  from
+    width 0px
+  to
+    width 220px
+
+@keyframes line4
+  from
+    width 0px
+  to
+    width 380px

@@ -76,22 +76,24 @@ Global =
     t.addClass 'active'
 
     option = t.text().trim()
-
-    if option is 'work'
-      if location.href.match('work') isnt null
-        Work.summary()
-      else
-        location.href = '/work/'
-
-    if option is 'about'
-        location.href = '/about/'
-    if option is 'contact'
-        location.href = '/contact/'
-
     setTimeout ->
+
       Global.menu.off()
       $('.menu > .inner > .options > .option').removeClass 'active'
-    , 200
+
+
+      if option is 'work'
+        if location.href.match('work') isnt null
+          Work.summary()
+        else
+          location.href = '/work/'
+
+      if option is 'about'
+          location.href = '/about/'
+      if option is 'contact'
+          location.href = '/contact/'
+
+    , 400
 
   preload: (srces, progress, complete) ->
 

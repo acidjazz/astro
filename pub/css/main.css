@@ -1294,23 +1294,43 @@
   top: 50%;
   left: 50%;
   height: 6px;
-  background-color: #ff2f2d;
+  background-color: #ee5655;
 }
 .menu > .inner > .options > .option.active:nth-child(1) > .line {
   width: 230px;
   margin: -3px 0 0 -115px;
+  -webkit-animation: line1 0.2s ease-in-out;
+  -moz-animation: line1 0.2s ease-in-out;
+  -o-animation: line1 0.2s ease-in-out;
+  -ms-animation: line1 0.2s ease-in-out;
+  animation: line1 0.2s ease-in-out;
 }
 .menu > .inner > .options > .option.active:nth-child(2) > .line {
   width: 260px;
   margin: -3px 0 0 -130px;
+  -webkit-animation: line2 0.2s ease-in-out;
+  -moz-animation: line2 0.2s ease-in-out;
+  -o-animation: line2 0.2s ease-in-out;
+  -ms-animation: line2 0.2s ease-in-out;
+  animation: line2 0.2s ease-in-out;
 }
 .menu > .inner > .options > .option.active:nth-child(3) > .line {
   width: 220px;
   margin: -3px 0 0 -110px;
+  -webkit-animation: line3 0.2s ease-in-out;
+  -moz-animation: line3 0.2s ease-in-out;
+  -o-animation: line3 0.2s ease-in-out;
+  -ms-animation: line3 0.2s ease-in-out;
+  animation: line3 0.2s ease-in-out;
 }
 .menu > .inner > .options > .option.active:nth-child(4) > .line {
   width: 380px;
   margin: -3px 0 0 -190px;
+  -webkit-animation: line4 0.2s ease-in-out;
+  -moz-animation: line4 0.2s ease-in-out;
+  -o-animation: line4 0.2s ease-in-out;
+  -ms-animation: line4 0.2s ease-in-out;
+  animation: line4 0.2s ease-in-out;
 }
 .menu > .inner > .options > .option:hover {
   color: #ee5655;
@@ -1564,6 +1584,134 @@
   -o-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
+}
+@-moz-keyframes line1 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 230px;
+  }
+}
+@-webkit-keyframes line1 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 230px;
+  }
+}
+@-o-keyframes line1 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 230px;
+  }
+}
+@keyframes line1 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 230px;
+  }
+}
+@-moz-keyframes line2 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 260px;
+  }
+}
+@-webkit-keyframes line2 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 260px;
+  }
+}
+@-o-keyframes line2 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 260px;
+  }
+}
+@keyframes line2 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 260px;
+  }
+}
+@-moz-keyframes line3 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 220px;
+  }
+}
+@-webkit-keyframes line3 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 220px;
+  }
+}
+@-o-keyframes line3 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 220px;
+  }
+}
+@keyframes line3 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 220px;
+  }
+}
+@-moz-keyframes line4 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 380px;
+  }
+}
+@-webkit-keyframes line4 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 380px;
+  }
+}
+@-o-keyframes line4 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 380px;
+  }
+}
+@keyframes line4 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 380px;
+  }
 }
 .clear {
   zoom: 1;

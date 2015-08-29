@@ -13,16 +13,16 @@ Index =
     , (complete) ->
       NProgress.done()
       _.off '.preloader'
-      _.on '.triangles'
+      _.on '.circles'
 
     Index.handlers()
 
   handlers: ->
 
-    $('.triangles > .triangle').on 'click', Index.triangle
+    $('.circles > .circle').on 'click', Index.circle
 
 
-  triangle: ->
+  circle: ->
 
     key = $(this).data 'key'
 

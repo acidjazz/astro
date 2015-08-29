@@ -11,14 +11,14 @@ Index = {
     }, function(complete) {
       NProgress.done();
       _.off('.preloader');
-      return _.on('.triangles');
+      return _.on('.circles');
     });
     return Index.handlers();
   },
   handlers: function() {
-    return $('.triangles > .triangle').on('click', Index.triangle);
+    return $('.circles > .circle').on('click', Index.circle);
   },
-  triangle: function() {
+  circle: function() {
     var key, src;
     key = $(this).data('key');
     src = Global.srcFromStyle($(".featureds > .inner > .featured:nth-child(" + (key + 1) + ")"));

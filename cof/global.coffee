@@ -40,9 +40,9 @@ Global =
 
     Global.cache.phrase.html compiled
 
-    #Global.phraseTimeout = setTimeout ->
-    #  _.on Global.cache.phrase
-    #, 5000
+    Global.phraseTimeout = setTimeout ->
+      _.on Global.cache.phrase
+    , 5000
 
   burger: ->
 
@@ -87,10 +87,12 @@ Global =
       Global.menu.off()
       $('.menu > .inner > .options > .option').removeClass 'active'
 
-
       if option is 'work'
         if location.href.match('work') isnt null
           Work.summary()
+          _.on '.summary > .thumbs > .thumb'
+          _.off '.summary > .filters > .inner > .filtermenu > .filter'
+          _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
         else
           location.href = '/work/'
 

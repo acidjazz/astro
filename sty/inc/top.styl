@@ -76,12 +76,15 @@
       height 51px
       background-color: c.red2
       width 71px
+      transform-origin left
       &.on
         transform translate(0, 0)
         transition transform 0.2s ease-in-out 0.2s
+        transform perspective(400px) rotateY(0deg)
       &.off
         transform translate(-71px, 0)
         transition transform 0.2s linear 0s
+        transform perspective(400px) rotateY(90deg)
 
     > .astro
       overflow hidden
@@ -115,15 +118,15 @@
       font f_copyls
       text-transform uppercase
       white-space nowrap
+      transform-origin left
       > div
         display inline-block
         transform-origin left
         margin 0 0 0 2px
-        background-color orange
-        animation charIn 2s 0s linear both
-        for num in 0..55
+        animation charIn 0.5s 0s linear both
+        for num in 0..60
           &:nth-child({num})
-            animation-delay unit(num*0.2, 's')
+            animation-delay unit(num*0.02, 's')
       &.on
         display none
       &.off

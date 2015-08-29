@@ -58,7 +58,9 @@
       &:hover
         > .shape
           background-color: c.red1
-          // transform rotate(120deg)
+          > .fill
+            height 25px
+            margin 0
         > .title
           opacity 1
           transform translate(0, -60px)
@@ -70,15 +72,26 @@
         width 25px
         height 25px
         background-color: c.white1
+        transition background-color 0.1s linear 0.1s
         margin 0 0 0 62px
         border-radius 25px
-        transition background-color 0.2s ease-in-out
+        position relative
+        overflow hidden
+        z-index 10
+        > .fill
+          position absolute
+          width 25px
+          height 0px
+          margin 25px 0 0 0
+          background-color: c.red1
+          transition height 0.2s ease-out, margin 0.2s ease-out
+          z-index 1
       > .title
         color: c.white1
         white-space nowrap
         transform translate(0, -50px)
         opacity 0
-        transition opacity 0.1s linear, transform 0.2s linear
+        transition opacity 0.1s linear 0.1s, transform 0.2s linear 0.1s
 
   > .welcome
     background-color: c.black4

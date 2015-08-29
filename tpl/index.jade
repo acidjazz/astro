@@ -18,6 +18,7 @@ block content
       each featured, key in data.home.featured
         .circle.on(data-key=key)
           .shape(class=(key == 0) ? 'on' : '')
+            .fill
           .title #{featured.title}
 
     .clear

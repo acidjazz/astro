@@ -1822,6 +1822,10 @@ body.fixed {
 .index > .circles > .circle:hover > .shape {
   background-color: #ee5655;
 }
+.index > .circles > .circle:hover > .shape > .fill {
+  height: 25px;
+  margin: 0;
+}
 .index > .circles > .circle:hover > .title {
   opacity: 1;
   -ms-filter: none;
@@ -1899,14 +1903,30 @@ body.fixed {
   width: 25px;
   height: 25px;
   background-color: #fff;
+  -webkit-transition: background-color 0.1s linear 0.1s;
+  -moz-transition: background-color 0.1s linear 0.1s;
+  -o-transition: background-color 0.1s linear 0.1s;
+  -ms-transition: background-color 0.1s linear 0.1s;
+  transition: background-color 0.1s linear 0.1s;
   margin: 0 0 0 62px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  -moz-transition: background-color 0.2s ease-in-out;
-  -o-transition: background-color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+.index > .circles > .circle > .shape > .fill {
+  position: absolute;
+  width: 25px;
+  height: 0px;
+  margin: 25px 0 0 0;
+  background-color: #ee5655;
+  -webkit-transition: height 0.2s ease-out, margin 0.2s ease-out;
+  -moz-transition: height 0.2s ease-out, margin 0.2s ease-out;
+  -o-transition: height 0.2s ease-out, margin 0.2s ease-out;
+  -ms-transition: height 0.2s ease-out, margin 0.2s ease-out;
+  transition: height 0.2s ease-out, margin 0.2s ease-out;
+  z-index: 1;
 }
 .index > .circles > .circle > .title {
   color: #fff;
@@ -1919,11 +1939,11 @@ body.fixed {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.1s linear, -webkit-transform 0.2s linear;
-  -moz-transition: opacity 0.1s linear, -moz-transform 0.2s linear;
-  -o-transition: opacity 0.1s linear, -o-transform 0.2s linear;
-  -ms-transition: opacity 0.1s linear, -ms-transform 0.2s linear;
-  transition: opacity 0.1s linear, transform 0.2s linear;
+  -webkit-transition: opacity 0.1s linear 0.1s, -webkit-transform 0.2s linear 0.1s;
+  -moz-transition: opacity 0.1s linear 0.1s, -moz-transform 0.2s linear 0.1s;
+  -o-transition: opacity 0.1s linear 0.1s, -o-transform 0.2s linear 0.1s;
+  -ms-transition: opacity 0.1s linear 0.1s, -ms-transform 0.2s linear 0.1s;
+  transition: opacity 0.1s linear 0.1s, transform 0.2s linear 0.1s;
 }
 .index > .welcome {
   background-color: #363a42;
@@ -2750,6 +2770,21 @@ body.fixed {
 .index > .projects > .thumb:hover {
   background-position: 100% auto;
 }
+.projects > .summary > .thumbs > .thumb:hover > .inner > .copy > .name,
+.related > .relateds > .thumb:hover > .inner > .copy > .name,
+.index > .projects > .thumb:hover > .inner > .copy > .name,
+.projects > .summary > .thumbs > .thumb:hover > .inner > .copy > .filters,
+.related > .relateds > .thumb:hover > .inner > .copy > .filters,
+.index > .projects > .thumb:hover > .inner > .copy > .filters {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
 .projects > .summary > .thumbs > .thumb:nth-child(0),
 .related > .relateds > .thumb:nth-child(0),
 .index > .projects > .thumb:nth-child(0) {
@@ -2935,11 +2970,37 @@ body.fixed {
 .related > .relateds > .thumb > .inner > .copy > .name,
 .index > .projects > .thumb > .inner > .copy > .name {
   font: 46px blenderpro medium;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(0, 10px);
+  -moz-transform: translate(0, 10px);
+  -o-transform: translate(0, 10px);
+  -ms-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+  -webkit-transition: -webkit-transform 0.1s linear, opacity 0.1s linear;
+  -moz-transition: -moz-transform 0.1s linear, opacity 0.1s linear;
+  -o-transition: -o-transform 0.1s linear, opacity 0.1s linear;
+  -ms-transition: -ms-transform 0.1s linear, opacity 0.1s linear;
+  transition: transform 0.1s linear, opacity 0.1s linear;
 }
 .projects > .summary > .thumbs > .thumb > .inner > .copy > .filters,
 .related > .relateds > .thumb > .inner > .copy > .filters,
 .index > .projects > .thumb > .inner > .copy > .filters {
   text-transform: uppercase;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(0, 10px);
+  -moz-transform: translate(0, 10px);
+  -o-transform: translate(0, 10px);
+  -ms-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+  -webkit-transition: -webkit-transform 0.1s linear 0.1s, opacity 0.1s linear 0.1s;
+  -moz-transition: -moz-transform 0.1s linear 0.1s, opacity 0.1s linear 0.1s;
+  -o-transition: -o-transform 0.1s linear 0.1s, opacity 0.1s linear 0.1s;
+  -ms-transition: -ms-transform 0.1s linear 0.1s, opacity 0.1s linear 0.1s;
+  transition: transform 0.1s linear 0.1s, opacity 0.1s linear 0.1s;
 }
 .projects > .project {
   min-height: 600px;

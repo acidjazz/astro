@@ -37,6 +37,10 @@
     transition background-position 0.2s linear
     &:hover
       background-position 100% auto
+      > .inner > .copy
+        > .name, > .filters
+          opacity 1
+          transform translate(0, 0)
     for num in 0..10
       &:nth-child({num})
         animation-delay unit(num*0.05, 's')
@@ -54,8 +58,14 @@
         padding 110px 0 0 0
         > .name
           font f_h2
+          opacity 0
+          transform translate(0, 10px)
+          transition transform 0.1s linear, opacity 0.1s linear
         > .filters
           text-transform uppercase
+          opacity 0
+          transform translate(0, 10px)
+          transition transform 0.1s linear 0.1s, opacity 0.1s linear 0.1s
         
 
 .projects

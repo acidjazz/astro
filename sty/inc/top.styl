@@ -119,10 +119,10 @@
         display inline-block
         transform-origin left
         padding 0 0 0 2px
-        animation charIn 0.2s 0s linear both
+        animation charIn 2s 0s linear both
         for num in 0..55
           &:nth-child({num})
-            animation-delay unit(num*0.02, 's')
+            animation-delay unit(num*0.2, 's')
       &.on
         display none
       &.off

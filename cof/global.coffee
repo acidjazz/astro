@@ -40,9 +40,9 @@ Global =
 
     Global.cache.phrase.html compiled
 
-    #Global.phraseTimeout = setTimeout ->
-    #  _.on Global.cache.phrase
-    #, 5000
+    Global.phraseTimeout = setTimeout ->
+      _.on Global.cache.phrase
+    , 5000
 
   burger: ->
 

@@ -52,9 +52,9 @@ Global =
       return true
 
     if (document.body.scrollTop is 0 or document.documentElement.scrollTop is 0) and (Global.cache.astro.hasClass('on') or clean)
-      Global.phrase()
       _.off Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase
       clearTimeout Global.phraseTimeout
+      Global.phrase()
       return true
 
   menu:

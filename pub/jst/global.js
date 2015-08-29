@@ -44,9 +44,9 @@ Global = {
       return true;
     }
     if ((document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) && (Global.cache.astro.hasClass('on') || clean)) {
-      Global.phrase();
       _.off(Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase);
       clearTimeout(Global.phraseTimeout);
+      Global.phrase();
       return true;
     }
   },

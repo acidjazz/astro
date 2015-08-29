@@ -138,6 +138,9 @@
 .guide > .sections > .section > .font.font_f_copyl {
   font: 20px blenderpro medium;
 }
+.guide > .sections > .section > .font.font_f_copyls {
+  font: 18px blenderpro medium;
+}
 .guide > .sections > .section > .font.font_f_h1 {
   font: 92px blenderpro medium;
 }
@@ -1430,10 +1433,10 @@
 .top > .inner > .phrase {
   overflow: hidden;
   position: absolute;
-  top: 26px;
-  left: 175px;
+  top: 38px;
+  left: 170px;
   color: #fff;
-  font: 28px blenderpro medium;
+  font: 18px blenderpro medium;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -3386,6 +3389,9 @@ body.fixed {
 }
 .guide > .sections > .section > .font.font_f_copyl {
   font: 20px blenderpro medium;
+}
+.guide > .sections > .section > .font.font_f_copyls {
+  font: 18px blenderpro medium;
 }
 .guide > .sections > .section > .font.font_f_h1 {
   font: 92px blenderpro medium;

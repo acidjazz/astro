@@ -2,7 +2,7 @@ About =
 
   i: ->
 
-    _.off '.preloader'
+    _.off '.orbit'
 
     About.handlers()
 

@@ -2,7 +2,7 @@ var About;
 
 About = {
   i: function() {
-    _.off('.preloader');
+    _.off('.orbit');
     return About.handlers();
   },
   handlers: function() {

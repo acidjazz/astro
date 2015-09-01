@@ -66,11 +66,11 @@ Work = {
     location.hash = '';
     for (oproject in projects) {
       key = projects[oproject];
-      $('.preloader').removeClass("preloader_" + key);
+      $('.orbit').removeClass("orbit_" + key);
       $('#nprogress .bar').removeClass("bar_" + key);
     }
     _.off('.project');
-    _.on('.preloader');
+    _.on('.orbit');
     NProgress.start();
     srcs = [];
     $('.summary > .thumbs > .thumb').each(function(i, el) {
@@ -80,7 +80,7 @@ Work = {
       return NProgress.set(progress);
     }, function(complete) {
       NProgress.done();
-      _.off('.preloader');
+      _.off('.orbit');
       return _.on('.summary');
     });
   },
@@ -89,12 +89,12 @@ Work = {
     _.off('.project, .summary');
     for (oproject in projects) {
       key = projects[oproject];
-      $('.preloader').removeClass("preloader_" + key);
+      $('.orbit').removeClass("orbit_" + key);
       $('#nprogress .bar').removeClass("bar_" + key);
     }
-    $('.preloader').addClass("preloader_" + project);
+    $('.orbit').addClass("orbit_" + project);
     $('#nprogress .bar').addClass("bar_" + project);
-    _.on('.preloader');
+    _.on('.orbit');
     console.log("loading project " + project);
     NProgress.start();
     $('#nprogress .bar').addClass("bar_" + project);
@@ -103,7 +103,7 @@ Work = {
       return NProgress.set(progress);
     }, function(complete) {
       NProgress.done();
-      _.off('.preloader');
+      _.off('.orbit');
       return _.on(".project_" + project);
     });
   },

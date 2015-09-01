@@ -69,10 +69,10 @@ Work =
   summary: () ->
     location.hash = ''
     for oproject, key of projects
-      $('.preloader').removeClass "preloader_#{key}"
+      $('.orbit').removeClass "orbit_#{key}"
       $('#nprogress .bar').removeClass "bar_#{key}"
     _.off '.project'
-    _.on '.preloader'
+    _.on '.orbit'
     NProgress.start()
 
     srcs = []
@@ -85,18 +85,18 @@ Work =
         NProgress.set progress
       , (complete) ->
         NProgress.done()
-        _.off '.preloader'
+        _.off '.orbit'
         _.on '.summary'
 
   load: (project) ->
     _.off '.project, .summary'
 
     for oproject, key of projects
-      $('.preloader').removeClass "preloader_#{key}"
+      $('.orbit').removeClass "orbit_#{key}"
       $('#nprogress .bar').removeClass "bar_#{key}"
-    $('.preloader').addClass "preloader_#{project}"
+    $('.orbit').addClass "orbit_#{project}"
     $('#nprogress .bar').addClass "bar_#{project}"
-    _.on '.preloader'
+    _.on '.orbit'
 
     console.log "loading project #{project}"
 
@@ -108,7 +108,7 @@ Work =
         NProgress.set progress
       , (complete) ->
         NProgress.done()
-        _.off '.preloader'
+        _.off '.orbit'
         _.on ".project_#{project}"
 
   srcs: (project) ->

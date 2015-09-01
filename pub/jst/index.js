@@ -10,7 +10,7 @@ Index = {
       return NProgress.set(progress);
     }, function(complete) {
       NProgress.done();
-      _.off('.preloader');
+      _.off('.orbit');
       return _.on('.triangles');
     });
     return Index.handlers();

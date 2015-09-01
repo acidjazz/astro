@@ -9,7 +9,7 @@ Contact = {
       return NProgress.set(progress);
     }, function(complete) {
       NProgress.done();
-      _.off('.preloader');
+      _.off('.orbit');
       return _.on('.contact > .banner > .inner');
     });
     return Contact.mapbox();

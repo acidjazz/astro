@@ -2,4 +2,4 @@ Guide =
 
   i: ->
 
-    _.off '.preloader'
+    _.off '.orbit'

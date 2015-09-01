@@ -2,6 +2,6 @@ var Guide;
 
 Guide = {
   i: function() {
-    return _.off('.preloader');
+    return _.off('.orbit');
   }
 };

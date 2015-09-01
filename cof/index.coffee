@@ -12,7 +12,7 @@ Index =
         NProgress.set progress
     , (complete) ->
       NProgress.done()
-      _.off '.preloader'
+      _.off '.orbit'
       _.on '.triangles'
 
     Index.handlers()

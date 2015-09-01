@@ -1,0 +1,62 @@
+.orbit
+  height 100%
+  background-color: c.black2
+  position relative
+  &.on
+    display block
+  &.off
+    display none
+  for key, project in data.project
+    &.orbit_{project.folder} > .sun
+      background-color: c[project.color]
+
+
+
+  > .sun
+    position absolute
+    top 50%
+    left 50%
+    width 75px
+    height 75px
+    margin -37.5px 0 0 -37.5px
+    background-color: c.white1
+    border-radius 50px
+
+
+  > .orbit-earth
+    position absolute
+    width 200px
+    height 200px
+    top 50%
+    left 50%
+    margin -100px 0 0 -100px
+    border: 1px solid rgba(c.white1, 0.1)
+    border-radius 100px
+    animation orbit 6s linear infinite
+  
+    > .earth
+      width 30px
+      height 30px
+      background-color: c.white1
+      border-radius 15px
+      margin 15px 0 0 15px
+    > .orbit-moon
+      width 75px
+      height 75px
+      border: 1px solid rgba(c.white1, 0.1)
+      border-radius: 50%
+      margin -54px 0 0 -9px
+      animation orbit 4s linear infinite
+      > .moon
+        width 10px
+        height 10px
+        background-color: c.white1
+        border-radius 10px
+        margin 0px 0 0 10px
+
+
+@keyframes orbit
+  from
+    transform rotate(0deg)
+  to
+    transform rotate(360deg)

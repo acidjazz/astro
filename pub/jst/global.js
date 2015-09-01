@@ -26,7 +26,13 @@ Global = {
     return $('.menu > .inner > .options > .option').on('click', Global.option);
   },
   phrase: function() {
-    Global.cache.phrase.text(phrases[Math.floor(Math.random() * phrases.length)]);
+    var compiled, i, j, phrase, ref;
+    phrase = phrases[Math.floor(Math.random() * phrases.length)];
+    compiled = '';
+    for (i = j = 0, ref = phrase.length - 1; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
+      compiled = compiled + "<div>" + (phrase[i].replace(' ', '&nbsp;')) + "</div>";
+    }
+    Global.cache.phrase.html(compiled);
     return Global.phraseTimeout = setTimeout(function() {
       return _.on(Global.cache.phrase);
     }, 5000);
@@ -44,9 +50,9 @@ Global = {
       return true;
     }
     if ((document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) && (Global.cache.astro.hasClass('on') || clean)) {
-      Global.phrase();
       _.off(Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase);
       clearTimeout(Global.phraseTimeout);
+      Global.phrase();
       return true;
     }
   },
@@ -68,23 +74,26 @@ Global = {
     $('.menu > .inner > .options > .option').removeClass('active');
     t.addClass('active');
     option = t.text().trim();
-    if (option === 'work') {
-      if (location.href.match('work') !== null) {
-        Work.summary();
-      } else {
-        location.href = '/work/';
-      }
-    }
-    if (option === 'about') {
-      location.href = '/about/';
-    }
-    if (option === 'contact') {
-      location.href = '/contact/';
-    }
     return setTimeout(function() {
       Global.menu.off();
-      return $('.menu > .inner > .options > .option').removeClass('active');
-    }, 200);
+      $('.menu > .inner > .options > .option').removeClass('active');
+      if (option === 'work') {
+        if (location.href.match('work') !== null) {
+          Work.summary();
+          _.on('.summary > .thumbs > .thumb');
+          _.off('.summary > .filters > .inner > .filtermenu > .filter');
+          _.on('.summary > .filters > .inner > .filtermenu > .filter_all');
+        } else {
+          location.href = '/work/';
+        }
+      }
+      if (option === 'about') {
+        location.href = '/about/';
+      }
+      if (option === 'contact') {
+        return location.href = '/contact/';
+      }
+    }, 400);
   },
   preload: function(srces, progress, complete) {
     var i, images, j, len, loaded, results, src, total;

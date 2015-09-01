@@ -33,19 +33,23 @@
           top 50%
           left 50%
           height 6px
-          background-color: c.red2
+          background-color: c.red1
         &.active:nth-child(1) > .line
           width 230px
           margin -3px 0 0 -115px
+          animation line1 0.2s ease-in-out
         &.active:nth-child(2) > .line
           width 260px
           margin -3px 0 0 -130px
+          animation line2 0.2s ease-in-out
         &.active:nth-child(3) > .line
           width 220px
           margin -3px 0 0 -110px
+          animation line3 0.2s ease-in-out
         &.active:nth-child(4) > .line
           width 380px
           margin -3px 0 0 -190px
+          animation line4 0.2s ease-in-out
 
         color: c.white1
         &:hover
@@ -72,12 +76,15 @@
       height 51px
       background-color: c.red2
       width 71px
+      transform-origin left
       &.on
         transform translate(0, 0)
         transition transform 0.2s ease-in-out 0.2s
+        transform perspective(400px) rotateY(0deg)
       &.off
         transform translate(-71px, 0)
         transition transform 0.2s linear 0s
+        transform perspective(400px) rotateY(90deg)
 
     > .astro
       overflow hidden
@@ -105,20 +112,26 @@
     > .phrase
       overflow hidden
       position absolute
-      top 26px
-      left 175px
+      top 38px
+      left 170px
       color: c.white1
-      font f_h5
+      font f_copyls
       text-transform uppercase
       white-space nowrap
+      transform-origin left
+      > div
+        display inline-block
+        transform-origin left
+        margin 0 0 0 2px
+        animation charIn 0.5s 0s linear both
+        for num in 0..60
+          &:nth-child({num})
+            animation-delay unit(num*0.02, 's')
       &.on
-        width 0px
-        transition width 0.2s linear 0s, opacity 0.5s linear 0s
-        opacity 0
+        display none
       &.off
-        width 710px
-        transition width 1s linear 0.2s, opacity 1s linear 0.2s
-        opacity 1
+        display block
+
 
     > .burger
       z-index 150
@@ -173,3 +186,27 @@
           //transform translate(0, 0)
       &.on > .inner.on > .lines.red > .line
         transform translate(0, 0)
+
+@keyframes line1
+  from
+    width 0px
+  to
+    width 230px
+
+@keyframes line2
+  from
+    width 0px
+  to
+    width 260px
+
+@keyframes line3
+  from
+    width 0px
+  to
+    width 220px
+
+@keyframes line4
+  from
+    width 0px
+  to
+    width 380px

@@ -36,7 +36,7 @@
             margin-top -55px
             animation cellInY 0.75s 0s ease-in both
 
-  > .triangles
+  > .circles
     position absolute
     bottom 50px
     left 0
@@ -48,7 +48,7 @@
     &.on
       display block
 
-    > .triangle
+    > .circle
       cursor pointer
       width 150px
       height 50px
@@ -57,8 +57,10 @@
       animation cellInX 0.2s 0s ease-in both
       &:hover
         > .shape
-          border-color: transparent transparent c.red1 transparent
-          // transform rotate(120deg)
+          background-color: c.red1
+          > .fill
+            height 25px
+            margin 0
         > .title
           opacity 1
           transform translate(0, -60px)
@@ -67,25 +69,34 @@
         &:nth-child({i})
           animation-delay unit((0.1*i), 's')
       > .shape
-        width 0
-        height 0
-        border-style solid
-        border-width 0 20px 34.6px 20px
-        border-color: transparent transparent c.white1 transparent
-        margin 0 0 0 50px
-        transition border-color 0.1s linear, transform 0.25s linear
-        transform-origin 54% 68%
+        width 25px
+        height 25px
+        background-color: c.white1
+        transition background-color 0.1s linear 0.1s
+        margin 0 0 0 62px
+        border-radius 25px
+        position relative
+        overflow hidden
+        z-index 10
+        > .fill
+          position absolute
+          width 25px
+          height 0px
+          margin 25px 0 0 0
+          background-color: c.red1
+          transition height 0.2s ease-out, margin 0.2s ease-out
+          z-index 1
       > .title
         color: c.white1
         white-space nowrap
         transform translate(0, -50px)
         opacity 0
-        transition opacity 0.1s linear, transform 0.2s linear
+        transition opacity 0.1s linear 0.1s, transform 0.2s linear 0.1s
 
   > .welcome
     background-color: c.black4
     > .inner
-      padding 50px
+      padding 100px
       desktop()
       > .copy
         font f_h2

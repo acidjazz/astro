@@ -33,7 +33,13 @@ Global =
     $('.menu > .inner > .options > .option').on 'click', Global.option
 
   phrase: ->
-    Global.cache.phrase.text phrases[Math.floor(Math.random()*phrases.length)]
+    phrase = phrases[Math.floor(Math.random()*phrases.length)]
+    compiled = ''
+    for i in [0..(phrase.length-1)]
+      compiled  = "#{compiled}<div>#{phrase[i].replace(' ', '&nbsp;')}</div>"
+
+    Global.cache.phrase.html compiled
+
     Global.phraseTimeout = setTimeout ->
       _.on Global.cache.phrase
     , 5000
@@ -52,9 +58,9 @@ Global =
       return true
 
     if (document.body.scrollTop is 0 or document.documentElement.scrollTop is 0) and (Global.cache.astro.hasClass('on') or clean)
-      Global.phrase()
       _.off Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase
       clearTimeout Global.phraseTimeout
+      Global.phrase()
       return true
 
   menu:
@@ -76,22 +82,26 @@ Global =
     t.addClass 'active'
 
     option = t.text().trim()
-
-    if option is 'work'
-      if location.href.match('work') isnt null
-        Work.summary()
-      else
-        location.href = '/work/'
-
-    if option is 'about'
-        location.href = '/about/'
-    if option is 'contact'
-        location.href = '/contact/'
-
     setTimeout ->
+
       Global.menu.off()
       $('.menu > .inner > .options > .option').removeClass 'active'
-    , 200
+
+      if option is 'work'
+        if location.href.match('work') isnt null
+          Work.summary()
+          _.on '.summary > .thumbs > .thumb'
+          _.off '.summary > .filters > .inner > .filtermenu > .filter'
+          _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
+        else
+          location.href = '/work/'
+
+      if option is 'about'
+          location.href = '/about/'
+      if option is 'contact'
+          location.href = '/contact/'
+
+    , 400
 
   preload: (srces, progress, complete) ->
 

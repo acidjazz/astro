@@ -1,9 +1,17 @@
+
 @keyframes fadeIn
   from
     opacity 0
   to
     opacity 1
 
+@keyframes charIn
+  from
+    opacity 0
+    transform perspective(200px) rotateY(90deg)
+  to
+    opacity 1
+    transform perspective(200px) rotateY(0deg)
 
 @keyframes cellInY
   from
@@ -12,7 +20,6 @@
   to
     transform translate(0, 0)
     opacity 1
-
 
 @keyframes cellInX
   from

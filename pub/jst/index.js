@@ -10,13 +10,8 @@ Index = {
       return NProgress.set(progress);
     }, function(complete) {
       NProgress.done();
-<<<<<<< HEAD
       _.off('.orbit');
-      return _.on('.triangles');
-=======
-      _.off('.preloader');
       return _.on('.circles');
->>>>>>> 9e30b06ea0ab16f34243fa4dc6748898fc81ea0f
     });
     return Index.handlers();
   },

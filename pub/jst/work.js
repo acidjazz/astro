@@ -85,26 +85,28 @@ Work = {
     });
   },
   load: function(project) {
-    var key, oproject, srcs;
+    var srcs;
     _.off('.project, .summary');
-    for (oproject in projects) {
-      key = projects[oproject];
-      $('.orbit').removeClass("orbit_" + key);
-      $('#nprogress .bar').removeClass("bar_" + key);
-    }
     $('.orbit').addClass("orbit_" + project);
     $('#nprogress .bar').addClass("bar_" + project);
     _.on('.orbit');
-    console.log("loading project " + project);
     NProgress.start();
     $('#nprogress .bar').addClass("bar_" + project);
     srcs = Work.srcs(project);
     return Global.preload(srcs, function(progress) {
       return NProgress.set(progress);
     }, function(complete) {
+      var key, oproject, results;
       NProgress.done();
       _.off('.orbit');
-      return _.on(".project_" + project);
+      _.on(".project_" + project);
+      results = [];
+      for (oproject in projects) {
+        key = projects[oproject];
+        $('.orbit').removeClass("orbit_" + key);
+        results.push($('#nprogress .bar').removeClass("bar_" + key));
+      }
+      return results;
     });
   },
   srcs: function(project) {

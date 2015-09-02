@@ -1,37 +1,53 @@
 .footer
   .inner
-    .infos
-      .a
-        include ../../pub/svg/a.svg
-      .info.address
-        p 348 6th St
-        p San Francisco, CA 94103
-      .info.number
-        p (415) 487 6787
-      .info.emails
-        a.p(href='mailto:info@astrostudios.com') info@astrostudios.com
-        a.p(href='mailto:jobs@astrostudios.com') jobs@astrostudios.com
-        a.p(href='mailto:newbusiness@astrostudios.com') newbusiness@astrostudios.com
 
-    .newsletter
-      .title Monthly Newsletter
-      .input
-        input(type='text',placeholder='Your email address')
-      .button.subscribe subscribe
+    .section.first
+      .inner
+        .a
+          include ../../pub/svg/a.svg
+        .title ASTRO STUDIOS
+        .info.address
+          p 348 6th St
+          p San Francisco, CA 94103
 
-    .follow
-      .title Follow Us
-      .icons
-        a.icon(href='http://www.facebook.com/astrostudios/',target='_new')
-          include ../../pub/svg/facebook.svg
-        a.icon(href='http://www.instagram.com/astrostudios/',target='_new')
-          include ../../pub/svg/instagram.svg
-        a.icon(href='http://www.twitter.com/astrostudios/',target='_new')
-          include ../../pub/svg/twitter.svg
-    .clear
+    .section
+      .inner
+        .a &nbsp;
+        .title CONTACT
+        .info.number
+          p (415) 487 6787
+          a.p(href='mailto:info@astrostudios.com') info@astrostudios.com
+          a.p(href='mailto:newbusiness@astrostudios.com') newbusiness@astrostudios.com
+
+    .section
+      .inner
+        .a &nbsp;
+        .title CAREERS
+        .info.emails
+          a.p(href='mailto:jobs@astrostudios.com') jobs@astrostudios.com
+   
+    .section.newsletter
+      .inner
+        .a &nbsp;
+        .title Monthly Newsletter
+        .input
+          input(type='text',placeholder='Your email address')
+        .button.subscribe subscribe
+        .clear
+        .icons
+          a.icon(href='http://www.facebook.com/astrostudios/',target='_new')
+            include ../../pub/svg/facebook.svg
+          a.icon(href='http://www.instagram.com/astrostudios/',target='_new')
+            include ../../pub/svg/instagram.svg
+          a.icon(href='http://www.twitter.com/astrostudios/',target='_new')
+            include ../../pub/svg/twitter.svg
+      .clear
 
     .gravity
       .bolt
         include ../../pub/svg/bolt.svg
-      .copy FIGHT GRAVITY
+      .copy
+        | FIGHT GRAVITY
+        div ™
       .clear
+    .clear

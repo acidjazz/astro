@@ -91,14 +91,10 @@ Work =
   load: (project) ->
     _.off '.project, .summary'
 
-    for oproject, key of projects
-      $('.orbit').removeClass "orbit_#{key}"
-      $('#nprogress .bar').removeClass "bar_#{key}"
     $('.orbit').addClass "orbit_#{project}"
     $('#nprogress .bar').addClass "bar_#{project}"
-    _.on '.orbit'
 
-    console.log "loading project #{project}"
+    _.on '.orbit'
 
     NProgress.start()
     $('#nprogress .bar').addClass "bar_#{project}"
@@ -110,6 +106,11 @@ Work =
         NProgress.done()
         _.off '.orbit'
         _.on ".project_#{project}"
+        for oproject, key of projects
+          $('.orbit').removeClass "orbit_#{key}"
+          $('#nprogress .bar').removeClass "bar_#{key}"
+
+ 
 
   srcs: (project) ->
     srcs = [Global.srcFromStyle($(".project_#{project} > .cover"))]

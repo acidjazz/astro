@@ -243,66 +243,76 @@
   font-weight: normal;
   font-style: normal;
 }
-.footer {
-  background-color: #f0f0f0;
+.footer > .inner {
+  background-color: #e9eaec;
+  position: relative;
 }
-.footer .inner {
-  padding: 50px;
-  max-width: 1020px;
-  margin: auto;
-}
-.footer .inner > .infos {
+.footer > .inner > .section {
   float: left;
-  width: 33;
   width: 25%;
   font: 14px aktivgrotesk light;
+  min-height: 300px;
+  min-width: 300px;
 }
-.footer .inner > .infos > .a {
+.footer > .inner > .section.first > .inner {
+  padding: 20px 20px 10px 50px;
+}
+.footer > .inner > .section.newsletter > .inner {
+  padding: 20px 50px 10px 20px;
+}
+.footer > .inner > .section > .inner {
+  padding: 20px 20px;
+}
+.footer > .inner > .section > .inner > .title {
+  padding: 50px 0 10px 0;
+  text-transform: uppercase;
+}
+.footer > .inner > .section > .inner > .a {
   width: 40px;
   height: 40px;
 }
-.footer .inner > .infos > .a > svg {
+.footer > .inner > .section > .inner > .a > svg {
   width: inherit;
   height: inherit;
   color: #000;
 }
-.footer .inner > .infos > .info {
+.footer > .inner > .section > .inner > .info {
   margin: 10px 0;
 }
-.footer .inner > .infos > .info > p,
-.footer .inner > .infos > .info > a.p {
+.footer > .inner > .section > .inner > .info > p,
+.footer > .inner > .section > .inner > .info > a.p {
   display: block;
   color: #000;
   text-decoration: none;
   margin: 0;
 }
-.footer .inner > .newsletter {
-  float: left;
-  width: 45%;
+.footer > .inner > .section.newsletter {
+  background-color: #f0f0f0;
 }
-.footer .inner > .newsletter > .title {
+.footer > .inner > .section.newsletter > .inner > .title {
   margin: 0 0 10px 0;
 }
-.footer .inner > .newsletter > .input {
+.footer > .inner > .section.newsletter > .inner > .input {
   float: left;
+  width: 50%;
 }
-.footer .inner > .newsletter > .input > input {
-  width: 260px;
+.footer > .inner > .section.newsletter > .inner > .input > input {
+  width: 100%;
   background-color: #fff;
   border: none;
   outline: none;
-  border-bottom: 3px solid #0195ff;
-  font: 18px aktivgrotesk light;
-  padding: 18px;
+  font: 14px aktivgrotesk light;
+  padding: 10px;
 }
-.footer .inner > .newsletter > .button {
-  font: 18px aktivgrotesk normal;
+.footer > .inner > .section.newsletter > .inner > .button {
+  float: right;
+  font: 14px aktivgrotesk light;
   color: #fff;
-  float: left;
-  background-color: rgba(238,86,85,0.5);
-  padding: 20px;
-  margin: 0 0 0 20px;
+  background-color: #ee5655;
+  text-align: center;
+  padding: 10px;
   text-transform: uppercase;
+  width: 30%;
   cursor: pointer;
   -webkit-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
@@ -310,21 +320,13 @@
   -ms-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
 }
-.footer .inner > .newsletter > .button:hover {
+.footer > .inner > .section.newsletter > .inner > .button:hover {
   background-color: #ee5655;
 }
-.footer .inner > .follow {
-  float: left;
-  width: 30%;
+.footer > .inner > .section.newsletter > .inner > .icons {
+  margin: 20px 0 0 0;
 }
-.footer .inner > .follow > .title {
-  margin: 0 0 0 40px;
-}
-.footer .inner > .follow > .icons {
-  margin: 20px 40px;
-}
-.footer .inner > .follow > .icons > .icon {
-  display: block;
+.footer > .inner > .section.newsletter > .inner > .icons > .icon {
   float: left;
   width: 20px;
   height: 20px;
@@ -334,18 +336,18 @@
   -webkit-border-radius: 30px;
   border-radius: 30px;
 }
-.footer .inner > .follow > .icons > .icon:hover > svg > path,
-.footer .inner > .follow > .icons > .icon:hover > svg > g > path,
-.footer .inner > .follow > .icons > .icon:hover > svg > g > g > path {
+.footer > .inner > .section.newsletter > .inner > .icons > .icon:hover > svg > path,
+.footer > .inner > .section.newsletter > .inner > .icons > .icon:hover > svg > g > path,
+.footer > .inner > .section.newsletter > .inner > .icons > .icon:hover > svg > g > g > path {
   fill: #ee5655;
 }
-.footer .inner > .follow > .icons > .icon > svg {
+.footer > .inner > .section.newsletter > .inner > .icons > .icon > svg {
   width: inherit;
   height: inherit;
 }
-.footer .inner > .follow > .icons > .icon > svg > path,
-.footer .inner > .follow > .icons > .icon > svg > g > path,
-.footer .inner > .follow > .icons > .icon > svg > g > g > path {
+.footer > .inner > .section.newsletter > .inner > .icons > .icon > svg > path,
+.footer > .inner > .section.newsletter > .inner > .icons > .icon > svg > g > path,
+.footer > .inner > .section.newsletter > .inner > .icons > .icon > svg > g > g > path {
   fill: #fff;
   -webkit-transition: fill 0.1s linear;
   -moz-transition: fill 0.1s linear;
@@ -353,27 +355,39 @@
   -ms-transition: fill 0.1s linear;
   transition: fill 0.1s linear;
 }
-.footer .inner > .gravity {
-  width: 147px;
-  margin: 20px auto 0 auto;
+.footer > .inner > .gravity {
+  width: 160px;
   font: 20px blenderpro medium;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -80px;
 }
-.footer .inner > .gravity > .bolt {
+.footer > .inner > .gravity > .bolt {
   float: right;
   width: 20px;
   height: 20px;
 }
-.footer .inner > .gravity > .bolt > svg {
+.footer > .inner > .gravity > .bolt > svg {
   width: inherit;
   height: inherit;
 }
-.footer .inner > .gravity > .copy {
+.footer > .inner > .gravity > .copy {
   float: left;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+.footer > .inner > .gravity > .copy > div {
+  display: inline-block;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin: 0 0 0 -5px;
 }
 @-moz-keyframes fadeIn {
   from {
@@ -1098,6 +1112,11 @@
   height: 75px;
   margin: -37.5px 0 0 -37.5px;
   background-color: #fff;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  -ms-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
   -webkit-border-radius: 50px;
   border-radius: 50px;
 }

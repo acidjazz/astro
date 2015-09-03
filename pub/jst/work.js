@@ -62,13 +62,14 @@ Work = {
     return Work.load(project);
   },
   summary: function() {
-    var key, oproject, srcs;
+    var srcs;
     location.hash = '';
-    for (oproject in projects) {
-      key = projects[oproject];
-      $('.orbit').removeClass("orbit_" + key);
-      $('#nprogress .bar').removeClass("bar_" + key);
-    }
+    $('.orbit').removeClass(function(index, css) {
+      return (css.match(/\borbit_\S+/g) || []).join(' ');
+    });
+    $('#nprogress .bar').removeClass(function(index, css) {
+      return (css.match(/\bbar__\S+/g) || []).join(' ');
+    });
     _.off('.project');
     _.on('.orbit');
     NProgress.start();
@@ -96,17 +97,15 @@ Work = {
     return Global.preload(srcs, function(progress) {
       return NProgress.set(progress);
     }, function(complete) {
-      var key, oproject, results;
       NProgress.done();
       _.off('.orbit');
       _.on(".project_" + project);
-      results = [];
-      for (oproject in projects) {
-        key = projects[oproject];
-        $('.orbit').removeClass("orbit_" + key);
-        results.push($('#nprogress .bar').removeClass("bar_" + key));
-      }
-      return results;
+      $('.orbit').removeClass(function(index, css) {
+        return (css.match(/\borbit_\S+/g) || []).join(' ');
+      });
+      return $('#nprogress .bar').removeClass(function(index, css) {
+        return (css.match(/\bbar__\S+/g) || []).join(' ');
+      });
     });
   },
   srcs: function(project) {

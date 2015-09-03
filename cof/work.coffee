@@ -68,9 +68,12 @@ Work =
 
   summary: () ->
     location.hash = ''
-    for oproject, key of projects
-      $('.orbit').removeClass "orbit_#{key}"
-      $('#nprogress .bar').removeClass "bar_#{key}"
+
+    $('.orbit').removeClass (index, css) ->
+      (css.match(/\borbit_\S+/g) or []).join ' '
+    $('#nprogress .bar').removeClass (index, css) ->
+      (css.match(/\bbar__\S+/g) or []).join ' '
+
     _.off '.project'
     _.on '.orbit'
     NProgress.start()
@@ -106,11 +109,11 @@ Work =
         NProgress.done()
         _.off '.orbit'
         _.on ".project_#{project}"
-        for oproject, key of projects
-          $('.orbit').removeClass "orbit_#{key}"
-          $('#nprogress .bar').removeClass "bar_#{key}"
 
- 
+        $('.orbit').removeClass (index, css) ->
+          (css.match(/\borbit_\S+/g) or []).join ' '
+        $('#nprogress .bar').removeClass (index, css) ->
+          (css.match(/\bbar__\S+/g) or []).join ' '
 
   srcs: (project) ->
     srcs = [Global.srcFromStyle($(".project_#{project} > .cover"))]

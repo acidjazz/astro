@@ -1,6 +1,7 @@
 Global =
 
-  interval: false
+  astroInterval: false
+  fbarInterval: false
   phraseTimeout: false
   cache: {}
 
@@ -18,15 +19,33 @@ Global =
       Global.astro(true)
     , 400
 
-    Global.interval = setInterval ->
+    Global.astroInterval = setInterval ->
       Global.astro()
+    , 500
+
+    Global.fbarInterval = setInterval ->
+      Global.fbar()
     , 500
 
     Global.phrase()
 
     Global.handlers()
 
+    Global.fbar()
 
+  fbar: ->
+
+    if $('.fcontainer:visible').length is 0
+      return true
+
+    if $(window).scrollTop() > ($('.fcontainer:visible').offset().top + 60)
+      $('.filters').addClass 'float'
+      $('.top').addClass 'fbar'
+    else
+      $('.filters').removeClass 'float'
+      $('.top').removeClass 'fbar'
+
+    
   handlers: ->
 
     $('.top > .inner > .burger').on 'click', Global.burger

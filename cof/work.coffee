@@ -20,18 +20,18 @@ Work =
 
     $('.projects > .summary > .thumbs > .thumb').on 'click', Work.projectHandler
     $('.projects > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on 'click', Work.projectHandler
-    $('.project > .filters > .inner > .filtermenu > .filter').on 'click', Work.filterHandler
+    $('.project .filters > .inner > .filtermenu > .filter').on 'click', Work.filterHandler
 
-    $('.summary > .filters > .inner > .filtermenu > .filter').on 'click', Work.summaryFilterHandler
+    $('.summary .filters > .inner > .filtermenu > .filter').on 'click', Work.summaryFilterHandler
   
   summaryFilterHandler: ->
 
     document.body.scrollTop = document.documentElement.scrollTop = 0
 
-    _.off '.summary > .filters > .inner > .filtermenu > .filter'
+    _.off '.summary .filters > .inner > .filtermenu > .filter'
     _.on this
 
-    filter = $(this).html().trim()
+    filter = $(this).text().trim()
     copy = $(this).data 'copy'
 
     $('.summary > .hero > .copy2').text copy

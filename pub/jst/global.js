@@ -1,7 +1,8 @@
 var Global;
 
 Global = {
-  interval: false,
+  astroInterval: false,
+  fbarInterval: false,
   phraseTimeout: false,
   cache: {},
   i: function() {
@@ -15,11 +16,27 @@ Global = {
     setTimeout(function() {
       return Global.astro(true);
     }, 400);
-    Global.interval = setInterval(function() {
+    Global.astroInterval = setInterval(function() {
       return Global.astro();
     }, 500);
+    Global.fbarInterval = setInterval(function() {
+      return Global.fbar();
+    }, 500);
     Global.phrase();
-    return Global.handlers();
+    Global.handlers();
+    return Global.fbar();
+  },
+  fbar: function() {
+    if ($('.fcontainer:visible').length === 0) {
+      return true;
+    }
+    if ($(window).scrollTop() > ($('.fcontainer:visible').offset().top + 60)) {
+      $('.filters').addClass('float');
+      return $('.top').addClass('fbar');
+    } else {
+      $('.filters').removeClass('float');
+      return $('.top').removeClass('fbar');
+    }
   },
   handlers: function() {
     $('.top > .inner > .burger').on('click', Global.burger);

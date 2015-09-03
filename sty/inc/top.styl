@@ -60,6 +60,18 @@
           &:nth-child({num})
             animation-delay unit(num*0.1, 's')
 
+
+.top.fbar
+  > .inner > .red1
+    top 0
+    height 60px
+  > .inner > .astro
+    top 15px
+    left 20px
+  > .inner > .burger
+    top 15px
+    right 15px
+
 .top
   position fixed
   top 0
@@ -76,6 +88,7 @@
       height 51px
       background-color: c.red2
       width 71px
+      transition all 0.1s linear
       transform-origin left
       &.on
         transform translate(0, 0)
@@ -92,7 +105,7 @@
       top 30px
       left 30px
       height 35px
-      transition width 0.2s linear
+      transition all 0.1s linear
       &.off
         width 120px
       &.on
@@ -143,6 +156,7 @@
       width 35px
       height 35px
       overflow hidden
+      transition all 0.1s linear
       &.off
         > .inner > .lines
           transform rotate(90deg)

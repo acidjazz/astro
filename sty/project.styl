@@ -219,14 +219,19 @@
               color: c.black1
 
 .projects > .project, .projects > .summary, .about 
-    > .filters
-      background-color: c.black2
-      color white
+  > .fcontainer
+    height 60px
+    background-color white
+    > .filters, > .fcontainer > .filters
+      background-color: c.white1
       text-transform uppercase
+      height 60px
       &.float
-        bottom 0
+        top 0
         width 100%
         position fixed
+        z-index 80
+        animation cellOutY 0.2s linear
       > .inner
         desktop()
         > .title
@@ -236,6 +241,7 @@
           float right
           padding 0 50px 0 0
           > .filter
+            position relative
             cursor pointer
             float left
             padding 20px
@@ -244,19 +250,32 @@
                 background-color: c[project.color]
               &.filter_{project.folder}:hover
                 background-color: rgba(c[project.color], 0.25)
+            > .bar
+              position absolute
+              width 100%
+              height 5px
+              background-color transparent
+              top 60px
+              left 0
+              
  
 .projects > .summary
-  > .filters
+  > .fcontainer
+    height 60px
+    background-color white
+  > .filters, > .fcontainer > .filters
     > .inner
       max-width none
       > .title
         display none
       > .filtermenu
         > .filter
-          transition background-color 0.1s linear
+          transition background-color 0.1s linear, padding 0.2s linear
           &:hover
-            background-color: rgba(c.white1, 0.5)
+            background-color: rgba(c.white2, 0.5)
           &.on
-            background-color: c.white1
+            background-color: c.white2
             color: c.black1
+            > .bar
+              background-color: c.white2
 

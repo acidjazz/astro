@@ -51,6 +51,24 @@ Global =
     $('.top > .inner > .burger').on 'click', Global.burger
     $('.menu > .inner > .options > .option').on 'click', Global.option
 
+    $('.thumbs > .thumb').on 'mousemove', Global.thumb
+
+    console.log 'Global.handlers()'
+
+
+  thumb: (event) ->
+    t = $ this
+    rect = t[0].getBoundingClientRect()
+    offset = t.offset()
+    #console.log event.pageX-rect.left, event.pageY-rect.top, rect
+    x = Math.floor(event.pageX - offset.left)
+    y = Math.floor(event.pageY - offset.top)
+    px = Math.floor(x * 100 / t.width())
+    py = Math.floor(y * 100 / t.height())
+    console.log x, y, px, py
+    t.css 'background-position', "#{px}% #{py}%"
+
+
   phrase: ->
     phrase = phrases[Math.floor(Math.random()*phrases.length)]
     compiled = ''

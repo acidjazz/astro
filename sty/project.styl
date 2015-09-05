@@ -30,13 +30,14 @@
     width 33.333%
     height 300px
     cursor pointer
-    background-size cover
+    background-size 175%
+    //background-size cover
     background-repeat no-repeat
     background-position 50% 50%
     animation cellInY 0.2s 0s ease-in both
-    transition background-position 0.2s linear
+    transition background-size 0.2s ease-out
     &:hover
-      background-position 100% auto
+      background-size 200%
       > .inner > .copy
         > .name, > .filters
           opacity 1
@@ -219,6 +220,8 @@
               color: c.black1
 
 .projects > .project, .projects > .summary, .about 
+  font f_copyls
+  color: c.black3
   > .fcontainer
     height 60px
     background-color white
@@ -231,7 +234,7 @@
         width 100%
         position fixed
         z-index 80
-        animation cellOutY 0.2s linear
+        animation filters 0.1s ease-out
       > .inner
         desktop()
         > .title

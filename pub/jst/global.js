@@ -40,7 +40,21 @@ Global = {
   },
   handlers: function() {
     $('.top > .inner > .burger').on('click', Global.burger);
-    return $('.menu > .inner > .options > .option').on('click', Global.option);
+    $('.menu > .inner > .options > .option').on('click', Global.option);
+    $('.thumbs > .thumb').on('mousemove', Global.thumb);
+    return console.log('Global.handlers()');
+  },
+  thumb: function(event) {
+    var offset, px, py, rect, t, x, y;
+    t = $(this);
+    rect = t[0].getBoundingClientRect();
+    offset = t.offset();
+    x = Math.floor(event.pageX - offset.left);
+    y = Math.floor(event.pageY - offset.top);
+    px = Math.floor(x * 100 / t.width());
+    py = Math.floor(y * 100 / t.height());
+    console.log(x, y, px, py);
+    return t.css('background-position', px + "% " + py + "%");
   },
   phrase: function() {
     var compiled, i, j, phrase, ref;

@@ -789,6 +789,94 @@
     filter: none;
   }
 }
+@-moz-keyframes filters {
+  from {
+    -webkit-transform: translate(0, -30px);
+    -moz-transform: translate(0, -30px);
+    -o-transform: translate(0, -30px);
+    -ms-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-webkit-keyframes filters {
+  from {
+    -webkit-transform: translate(0, -30px);
+    -moz-transform: translate(0, -30px);
+    -o-transform: translate(0, -30px);
+    -ms-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-o-keyframes filters {
+  from {
+    -webkit-transform: translate(0, -30px);
+    -moz-transform: translate(0, -30px);
+    -o-transform: translate(0, -30px);
+    -ms-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@keyframes filters {
+  from {
+    -webkit-transform: translate(0, -30px);
+    -moz-transform: translate(0, -30px);
+    -o-transform: translate(0, -30px);
+    -ms-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
 @-moz-keyframes cellOutX {
   from {
     -webkit-transform: translate(-10px, 0);
@@ -3482,9 +3570,9 @@ body.fixed {
   width: 33.333%;
   height: 300px;
   cursor: pointer;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 175%;
+  -moz-background-size: 175%;
+  background-size: 175%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   -webkit-animation: cellInY 0.2s 0s ease-in both;
@@ -3492,11 +3580,11 @@ body.fixed {
   -o-animation: cellInY 0.2s 0s ease-in both;
   -ms-animation: cellInY 0.2s 0s ease-in both;
   animation: cellInY 0.2s 0s ease-in both;
-  -webkit-transition: background-position 0.2s linear;
-  -moz-transition: background-position 0.2s linear;
-  -o-transition: background-position 0.2s linear;
-  -ms-transition: background-position 0.2s linear;
-  transition: background-position 0.2s linear;
+  -webkit-transition: background-size 0.2s ease-out;
+  -moz-transition: background-size 0.2s ease-out;
+  -o-transition: background-size 0.2s ease-out;
+  -ms-transition: background-size 0.2s ease-out;
+  transition: background-size 0.2s ease-out;
 }
 .projects > .summary > .thumbs > .thumb.on,
 .related > .relateds > .thumb.on,
@@ -3511,7 +3599,9 @@ body.fixed {
 .projects > .summary > .thumbs > .thumb:hover,
 .related > .relateds > .thumb:hover,
 .index > .projects > .thumb:hover {
-  background-position: 100% auto;
+  -webkit-background-size: 200%;
+  -moz-background-size: 200%;
+  background-size: 200%;
 }
 .projects > .summary > .thumbs > .thumb:hover > .inner > .copy > .name,
 .related > .relateds > .thumb:hover > .inner > .copy > .name,
@@ -4008,6 +4098,12 @@ body.fixed {
   text-decoration: none;
   color: #000;
 }
+.projects > .project,
+.projects > .summary,
+.about {
+  font: 18px blenderpro medium;
+  color: #444;
+}
 .projects > .project > .fcontainer,
 .projects > .summary > .fcontainer,
 .about > .fcontainer {
@@ -4034,11 +4130,11 @@ body.fixed {
   width: 100%;
   position: fixed;
   z-index: 80;
-  -webkit-animation: cellOutY 0.2s linear;
-  -moz-animation: cellOutY 0.2s linear;
-  -o-animation: cellOutY 0.2s linear;
-  -ms-animation: cellOutY 0.2s linear;
-  animation: cellOutY 0.2s linear;
+  -webkit-animation: filters 0.1s ease-out;
+  -moz-animation: filters 0.1s ease-out;
+  -o-animation: filters 0.1s ease-out;
+  -ms-animation: filters 0.1s ease-out;
+  animation: filters 0.1s ease-out;
 }
 .projects > .project > .fcontainer > .filters > .inner,
 .projects > .summary > .fcontainer > .filters > .inner,

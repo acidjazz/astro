@@ -61,8 +61,8 @@ Global = {
     opy6 = (py - 50) / 6;
     opx8 = (px - 50) / 8;
     opy8 = (py - 50) / 8;
-    name.css('transform', "translate(" + (opx6 * -1) + "px, " + (opy6 * -1) + "px)");
-    filters.css('transform', "translate(" + (opx8 * -1) + "px, " + (opy8 * -1) + "px)");
+    name.css('transform', "translate(" + (-opx6) + "px, " + (-opy6) + "px)");
+    filters.css('transform', "translate(" + (-opx8) + "px, " + (-opy8) + "px)");
     return t.css('background-position', (opx4 + 50) + "% " + (opy4 + 50) + "%");
   },
   phrase: function() {

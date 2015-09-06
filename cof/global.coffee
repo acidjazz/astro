@@ -3,6 +3,7 @@ Global =
   astroInterval: false
   fbarInterval: false
   phraseTimeout: false
+  thumbTimeout: false
   cache: {}
 
   i: ->
@@ -57,6 +58,18 @@ Global =
 
 
   thumb: (event) ->
+
+    if Global.thumbTimeout isnt false
+      return true
+
+    if Global.thumbTimeout is false
+      Global.thumbTimeout = setTimeout ->
+        clearTimeout Global.thumbTimeout
+        Global.thumbTimeout = false
+      , 250
+
+    console.log 'Global.thumb()'
+
     t = $ this
     name = t.find '.inner > .copy > .name'
     filters = t.find '.inner > .copy > .filters'
@@ -78,9 +91,7 @@ Global =
 
     name.css 'transform', "translate(#{-opx6}px, #{-opy6}px)"
     filters.css 'transform', "translate(#{-opx8}px, #{-opy8}px)"
-
     t.css 'background-position', "#{opx4+50}% #{opy4+50}%"
-
 
   phrase: ->
     phrase = phrases[Math.floor(Math.random()*phrases.length)]

@@ -4,6 +4,7 @@ Global = {
   astroInterval: false,
   fbarInterval: false,
   phraseTimeout: false,
+  thumbTimeout: false,
   cache: {},
   i: function() {
     NProgress.configure({
@@ -46,6 +47,16 @@ Global = {
   },
   thumb: function(event) {
     var filters, name, offset, opx4, opx6, opx8, opy4, opy6, opy8, px, py, rect, t, x, y;
+    if (Global.thumbTimeout !== false) {
+      return true;
+    }
+    if (Global.thumbTimeout === false) {
+      Global.thumbTimeout = setTimeout(function() {
+        clearTimeout(Global.thumbTimeout);
+        return Global.thumbTimeout = false;
+      }, 250);
+    }
+    console.log('Global.thumb()');
     t = $(this);
     name = t.find('.inner > .copy > .name');
     filters = t.find('.inner > .copy > .filters');

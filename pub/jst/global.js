@@ -54,7 +54,7 @@ Global = {
       Global.thumbTimeout = setTimeout(function() {
         clearTimeout(Global.thumbTimeout);
         return Global.thumbTimeout = false;
-      }, 250);
+      }, 100);
     }
     console.log('Global.thumb()');
     t = $(this);

@@ -56,7 +56,6 @@ Global =
 
     console.log 'Global.handlers()'
 
-
   thumb: (event) ->
 
     if Global.thumbTimeout isnt false
@@ -66,7 +65,7 @@ Global =
       Global.thumbTimeout = setTimeout ->
         clearTimeout Global.thumbTimeout
         Global.thumbTimeout = false
-      , 250
+      , 100
 
     console.log 'Global.thumb()'
 

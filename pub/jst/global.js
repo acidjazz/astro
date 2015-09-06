@@ -41,7 +41,7 @@ Global = {
   handlers: function() {
     $('.top > .inner > .burger').on('click', Global.burger);
     $('.menu > .inner > .options > .option').on('click', Global.option);
-    $('.thumbs > .thumb').on('mousemove', Global.thumb);
+    $('.thumbs > .thumb, .projects > .thumb').on('mousemove', Global.thumb);
     return console.log('Global.handlers()');
   },
   thumb: function(event) {

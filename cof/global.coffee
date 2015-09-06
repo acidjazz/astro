@@ -66,7 +66,7 @@ Global =
       Global.thumbTimeout = setTimeout ->
         clearTimeout Global.thumbTimeout
         Global.thumbTimeout = false
-      , 100
+      , 250
 
     console.log 'Global.thumb()'
 

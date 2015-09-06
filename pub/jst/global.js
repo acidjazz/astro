@@ -45,16 +45,25 @@ Global = {
     return console.log('Global.handlers()');
   },
   thumb: function(event) {
-    var offset, px, py, rect, t, x, y;
+    var filters, name, offset, opx4, opx6, opx8, opy4, opy6, opy8, px, py, rect, t, x, y;
     t = $(this);
+    name = t.find('.inner > .copy > .name');
+    filters = t.find('.inner > .copy > .filters');
     rect = t[0].getBoundingClientRect();
     offset = t.offset();
     x = Math.floor(event.pageX - offset.left);
     y = Math.floor(event.pageY - offset.top);
     px = Math.floor(x * 100 / t.width());
     py = Math.floor(y * 100 / t.height());
-    console.log(x, y, px, py);
-    return t.css('background-position', px + "% " + py + "%");
+    opx4 = (px - 50) / 4;
+    opy4 = (py - 50) / 4;
+    opx6 = (px - 50) / 6;
+    opy6 = (py - 50) / 6;
+    opx8 = (px - 50) / 8;
+    opy8 = (py - 50) / 8;
+    name.css('transform', "translate(" + (opx6 * -1) + "px, " + (opy6 * -1) + "px)");
+    filters.css('transform', "translate(" + (opx8 * -1) + "px, " + (opy8 * -1) + "px)");
+    return t.css('background-position', (opx4 + 50) + "% " + (opy4 + 50) + "%");
   },
   phrase: function() {
     var compiled, i, j, phrase, ref;

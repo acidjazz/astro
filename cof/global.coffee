@@ -58,15 +58,28 @@ Global =
 
   thumb: (event) ->
     t = $ this
+    name = t.find '.inner > .copy > .name'
+    filters = t.find '.inner > .copy > .filters'
     rect = t[0].getBoundingClientRect()
     offset = t.offset()
-    #console.log event.pageX-rect.left, event.pageY-rect.top, rect
     x = Math.floor(event.pageX - offset.left)
     y = Math.floor(event.pageY - offset.top)
     px = Math.floor(x * 100 / t.width())
     py = Math.floor(y * 100 / t.height())
-    console.log x, y, px, py
-    t.css 'background-position', "#{px}% #{py}%"
+
+    opx4 = (px-50)/4
+    opy4 = (py-50)/4
+
+    opx6 = (px-50)/6
+    opy6 = (py-50)/6
+
+    opx8 = (px-50)/8
+    opy8 = (py-50)/8
+
+    name.css 'transform', "translate(#{opx6*-1}px, #{opy6*-1}px)"
+    filters.css 'transform', "translate(#{opx8*-1}px, #{opy8*-1}px)"
+
+    t.css 'background-position', "#{opx4+50}% #{opy4+50}%"
 
 
   phrase: ->

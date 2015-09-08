@@ -3829,11 +3829,11 @@ body.fixed {
   -o-transform: translate(0, 10px);
   -ms-transform: translate(0, 10px);
   transform: translate(0, 10px);
-  -webkit-transition: -webkit-transform 0.1s linear, opacity 0.1s linear 0.1s;
-  -moz-transition: -moz-transform 0.1s linear, opacity 0.1s linear 0.1s;
-  -o-transition: -o-transform 0.1s linear, opacity 0.1s linear 0.1s;
-  -ms-transition: -ms-transform 0.1s linear, opacity 0.1s linear 0.1s;
-  transition: transform 0.1s linear, opacity 0.1s linear 0.1s;
+  -webkit-transition: -webkit-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
+  -moz-transition: -moz-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
+  -o-transition: -o-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
+  -ms-transition: -ms-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
+  transition: transform 0.1s ease-in, opacity 0.1s linear 0.1s;
 }
 .projects > .project {
   min-height: 600px;

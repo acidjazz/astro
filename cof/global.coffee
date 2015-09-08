@@ -58,6 +58,7 @@ Global =
 
   thumb: (event) ->
 
+    ###
     if Global.thumbTimeout isnt false
       return true
 
@@ -65,9 +66,8 @@ Global =
       Global.thumbTimeout = setTimeout ->
         clearTimeout Global.thumbTimeout
         Global.thumbTimeout = false
-      , 100
-
-    console.log 'Global.thumb()'
+      , 20
+    ###
 
     t = $ this
     name = t.find '.inner > .copy > .name'

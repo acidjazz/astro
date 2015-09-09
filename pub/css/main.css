@@ -3570,9 +3570,9 @@ body.fixed {
   width: 33.333%;
   height: 300px;
   cursor: pointer;
-  -webkit-background-size: 175%;
-  -moz-background-size: 175%;
-  background-size: 175%;
+  -webkit-background-size: 150%;
+  -moz-background-size: 150%;
+  background-size: 150%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   -webkit-animation: cellInY 0.2s 0s ease-in both;
@@ -3580,6 +3580,11 @@ body.fixed {
   -o-animation: cellInY 0.2s 0s ease-in both;
   -ms-animation: cellInY 0.2s 0s ease-in both;
   animation: cellInY 0.2s 0s ease-in both;
+  -webkit-transition: background-size 0.2s ease-out;
+  -moz-transition: background-size 0.2s ease-out;
+  -o-transition: background-size 0.2s ease-out;
+  -ms-transition: background-size 0.2s ease-out;
+  transition: background-size 0.2s ease-out;
 }
 .projects > .summary > .thumbs > .thumb.on,
 .related > .relateds > .thumb.on,
@@ -3594,9 +3599,9 @@ body.fixed {
 .projects > .summary > .thumbs > .thumb:hover,
 .related > .relateds > .thumb:hover,
 .index > .projects > .thumb:hover {
-  -webkit-background-size: 200%;
-  -moz-background-size: 200%;
-  background-size: 200%;
+  -webkit-background-size: 160%;
+  -moz-background-size: 160%;
+  background-size: 160%;
 }
 .projects > .summary > .thumbs > .thumb:hover > .inner > .copy > .name,
 .related > .relateds > .thumb:hover > .inner > .copy > .name,

@@ -67,10 +67,10 @@ Global = {
     y = Math.floor(event.pageY - offset.top);
     px = Math.floor(x * 100 / t.width());
     py = Math.floor(y * 100 / t.height());
-    opx4 = (px - 50) / 4;
-    opy4 = (py - 50) / 4;
-    opx6 = (px - 50) / 6;
-    opy6 = (py - 50) / 6;
+    opx4 = (px - 50) / 8;
+    opy4 = (py - 50) / 8;
+    opx6 = (px - 50) / 8;
+    opy6 = (py - 50) / 8;
     opx8 = (px - 50) / 8;
     opy8 = (py - 50) / 8;
     name.css('transform', "translate(" + (-opx6) + "px, " + (-opy6) + "px)");

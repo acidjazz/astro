@@ -30,15 +30,12 @@
     width 33.333%
     height 300px
     cursor pointer
-    background-size 150%
-    //background-size cover
+    background-size 155%
     background-repeat no-repeat
     background-position 50% 50%
     animation cellInY 0.2s 0s ease-in both
     transition background-size 0.2s ease-out
-    //transition background-size 0.2s ease-out, background-position 0.1s linear
     &:hover
-      background-size 155%
       > .inner > .copy
         > .name, > .filters
           opacity 1
@@ -256,14 +253,6 @@
                 background-color: c[project.color]
               &.filter_{project.folder}:hover
                 background-color: rgba(c[project.color], 0.25)
-            > .bar
-              position absolute
-              width 100%
-              height 5px
-              background-color transparent
-              top 60px
-              left 0
-              
  
 .projects > .summary
   > .fcontainer
@@ -282,6 +271,4 @@
           &.on
             background-color: c.white2
             color: c.black1
-            > .bar
-              background-color: c.white2
 

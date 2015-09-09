@@ -22,10 +22,8 @@ block content
               each filter in data.filters
                 if filter.name == 'all'
                   .filter.on(class='filter_' + filter.name,data-copy=filter.copy) #{filter.name}
-                    .bar
                 else
                   .filter(class='filter_' + filter.name,data-copy=filter.copy) #{filter.name}
-                    .bar
             .clear
       .thumbs
         each project in data.project

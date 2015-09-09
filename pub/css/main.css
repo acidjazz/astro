@@ -3570,9 +3570,9 @@ body.fixed {
   width: 33.333%;
   height: 300px;
   cursor: pointer;
-  -webkit-background-size: 150%;
-  -moz-background-size: 150%;
-  background-size: 150%;
+  -webkit-background-size: 155%;
+  -moz-background-size: 155%;
+  background-size: 155%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   -webkit-animation: cellInY 0.2s 0s ease-in both;
@@ -3595,13 +3595,6 @@ body.fixed {
 .related > .relateds > .thumb.off,
 .index > .projects > .thumb.off {
   display: none;
-}
-.projects > .summary > .thumbs > .thumb:hover,
-.related > .relateds > .thumb:hover,
-.index > .projects > .thumb:hover {
-  -webkit-background-size: 155%;
-  -moz-background-size: 155%;
-  background-size: 155%;
 }
 .projects > .summary > .thumbs > .thumb:hover > .inner > .copy > .name,
 .related > .relateds > .thumb:hover > .inner > .copy > .name,
@@ -4382,19 +4375,6 @@ body.fixed {
 .about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_xbox:hover {
   background-color: rgba(116,189,68,0.25);
 }
-.projects > .project > .fcontainer > .filters > .inner > .filtermenu > .filter > .bar,
-.projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter > .bar,
-.about > .fcontainer > .filters > .inner > .filtermenu > .filter > .bar,
-.projects > .project > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter > .bar,
-.projects > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter > .bar,
-.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter > .bar {
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  background-color: transparent;
-  top: 60px;
-  left: 0;
-}
 .projects > .summary > .fcontainer {
   height: 60px;
   background-color: #fff;
@@ -4423,10 +4403,6 @@ body.fixed {
 .projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.on {
   background-color: #e9eaec;
   color: #000;
-}
-.projects > .summary > .filters > .inner > .filtermenu > .filter.on > .bar,
-.projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.on > .bar {
-  background-color: #e9eaec;
 }
 .guide {
   padding: 50px 0 0 0;

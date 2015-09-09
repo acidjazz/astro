@@ -3811,11 +3811,11 @@ body.fixed {
   -o-transform: translate(0, 10px);
   -ms-transform: translate(0, 10px);
   transform: translate(0, 10px);
-  -webkit-transition: -webkit-transform 0.1s linear, opacity 0.1s linear;
-  -moz-transition: -moz-transform 0.1s linear, opacity 0.1s linear;
-  -o-transition: -o-transform 0.1s linear, opacity 0.1s linear;
-  -ms-transition: -ms-transform 0.1s linear, opacity 0.1s linear;
-  transition: transform 0.1s linear, opacity 0.1s linear;
+  -webkit-transition: opacity 0.1s linear;
+  -moz-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  -ms-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
 }
 .projects > .summary > .thumbs > .thumb > .inner > .copy > .filters,
 .related > .relateds > .thumb > .inner > .copy > .filters,
@@ -3829,11 +3829,11 @@ body.fixed {
   -o-transform: translate(0, 10px);
   -ms-transform: translate(0, 10px);
   transform: translate(0, 10px);
-  -webkit-transition: -webkit-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
-  -moz-transition: -moz-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
-  -o-transition: -o-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
-  -ms-transition: -ms-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
-  transition: transform 0.1s ease-in, opacity 0.1s linear 0.1s;
+  -webkit-transition: opacity 0.1s linear 0.1s;
+  -moz-transition: opacity 0.1s linear 0.1s;
+  -o-transition: opacity 0.1s linear 0.1s;
+  -ms-transition: opacity 0.1s linear 0.1s;
+  transition: opacity 0.1s linear 0.1s;
 }
 .projects > .project {
   min-height: 600px;

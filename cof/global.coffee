@@ -79,14 +79,14 @@ Global =
     px = Math.floor(x * 100 / t.width())
     py = Math.floor(y * 100 / t.height())
 
-    opx4 = (px-50)/8
-    opy4 = (py-50)/8
+    opx4 = (px-50)/10
+    opy4 = (py-50)/10
 
-    opx6 = (px-50)/8
-    opy6 = (py-50)/8
+    opx6 = (px-50)/10
+    opy6 = (py-50)/10
 
-    opx8 = (px-50)/8
-    opy8 = (py-50)/8
+    opx8 = (px-50)/10
+    opy8 = (py-50)/10
 
     name.css 'transform', "translate(#{-opx6}px, #{-opy6}px)"
     filters.css 'transform', "translate(#{-opx8}px, #{-opy8}px)"

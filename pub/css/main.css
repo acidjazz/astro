@@ -3580,11 +3580,6 @@ body.fixed {
   -o-animation: cellInY 0.2s 0s ease-in both;
   -ms-animation: cellInY 0.2s 0s ease-in both;
   animation: cellInY 0.2s 0s ease-in both;
-  -webkit-transition: background-size 0.2s ease-out, background-position 0.1s linear;
-  -moz-transition: background-size 0.2s ease-out, background-position 0.1s linear;
-  -o-transition: background-size 0.2s ease-out, background-position 0.1s linear;
-  -ms-transition: background-size 0.2s ease-out, background-position 0.1s linear;
-  transition: background-size 0.2s ease-out, background-position 0.1s linear;
 }
 .projects > .summary > .thumbs > .thumb.on,
 .related > .relateds > .thumb.on,

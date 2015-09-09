@@ -3599,9 +3599,9 @@ body.fixed {
 .projects > .summary > .thumbs > .thumb:hover,
 .related > .relateds > .thumb:hover,
 .index > .projects > .thumb:hover {
-  -webkit-background-size: 160%;
-  -moz-background-size: 160%;
-  background-size: 160%;
+  -webkit-background-size: 155%;
+  -moz-background-size: 155%;
+  background-size: 155%;
 }
 .projects > .summary > .thumbs > .thumb:hover > .inner > .copy > .name,
 .related > .relateds > .thumb:hover > .inner > .copy > .name,

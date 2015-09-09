@@ -69,10 +69,10 @@ Global = {
     py = Math.floor(y * 100 / t.height());
     opx4 = (px - 50) / 10;
     opy4 = (py - 50) / 10;
-    opx6 = (px - 50) / 10;
-    opy6 = (py - 50) / 10;
-    opx8 = (px - 50) / 10;
-    opy8 = (py - 50) / 10;
+    opx6 = (px - 50) / 12;
+    opy6 = (py - 50) / 12;
+    opx8 = (px - 50) / 12;
+    opy8 = (py - 50) / 12;
     name.css('transform', "translate(" + (-opx6) + "px, " + (-opy6) + "px)");
     filters.css('transform', "translate(" + (-opx8) + "px, " + (-opy8) + "px)");
     return t.css('background-position', (opx4 + 50) + "% " + (opy4 + 50) + "%");

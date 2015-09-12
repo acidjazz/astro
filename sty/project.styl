@@ -31,6 +31,7 @@
     height 300px
     cursor pointer
     animation cellInY 0.2s 0s ease-in both
+    overflow hidden
     &:hover
       > .inner > .bg > .copy
         > .name, > .filters
@@ -43,7 +44,9 @@
       &.thumb_{project.folder}:hover > .inner > .bg
         background-color: rgba(c[project.color], 0.75)
     > .inner
-      height 100%
+      height 110%
+      width 110%
+      margin -5% -5% 0 0
       background-size 155%
       background-repeat no-repeat
       background-position 50% 50%

@@ -3575,6 +3575,7 @@ body.fixed {
   -o-animation: cellInY 0.2s 0s ease-in both;
   -ms-animation: cellInY 0.2s 0s ease-in both;
   animation: cellInY 0.2s 0s ease-in both;
+  overflow: hidden;
 }
 .projects > .summary > .thumbs > .thumb.on,
 .related > .relateds > .thumb.on,
@@ -3768,7 +3769,9 @@ body.fixed {
 .projects > .summary > .thumbs > .thumb > .inner,
 .related > .relateds > .thumb > .inner,
 .index > .projects > .thumb > .inner {
-  height: 100%;
+  height: 110%;
+  width: 110%;
+  margin: -5% -5% 0 0;
   -webkit-background-size: 155%;
   -moz-background-size: 155%;
   background-size: 155%;

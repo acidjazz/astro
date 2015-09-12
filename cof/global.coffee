@@ -74,14 +74,19 @@ Global =
     name = t.find '.inner > .bg > .copy > .name'
     filters = t.find '.inner > .bg > .copy > .filters'
     rect = t[0].getBoundingClientRect()
+    nameRect = name[0].getBoundingClientRect()
 
     console.log rect
 
-    distort = new Distort
+    distortBg = new Distort
       width: rect.width
       height: rect.height
       $el: bg
 
+    distortName = new Distort
+      width: rect.width
+      height: rect.height
+      $el: nameRect
 
     offset = t.offset()
     x = Math.floor(event.pageX - offset.left)
@@ -89,23 +94,41 @@ Global =
     px = Math.floor(x * 100 / t.width())
     py = Math.floor(y * 100 / t.height())
 
-    opx = (px-50)/8
-    opy = (py-50)/8
+    opx8 = (px-50)/8
+    opy8 = (py-50)/8
 
-    distort.topRight.x += opy
-    distort.topRight.y += opx
+    opx6 = (px-50)/6
+    opy6 = (py-50)/6
 
-    distort.topLeft.x += -opy
-    distort.topLeft.y += -opx
+    distortBg.topRight.x += opy8
+    distortBg.topRight.y += opx8
 
-    distort.bottomRight.x += -opy
-    distort.bottomRight.y += -opx
+    distortBg.topLeft.x += -opy8
+    distortBg.topLeft.y += -opx8
 
-    distort.bottomLeft.x += opy
-    distort.bottomLeft.y += opx
+    distortBg.bottomRight.x += -opy8
+    distortBg.bottomRight.y += -opx8
 
-    console.log distort.toString()
-    bg.css 'transform', distort.toString()
+    distortBg.bottomLeft.x += opy8
+    distortBg.bottomLeft.y += opx8
+
+    bg.css 'transform', distortBg.toString()
+
+    distortName.topRight.x += opy6
+    distortName.topRight.y += opx6
+
+    distortName.topLeft.x += -opy6
+    distortName.topLeft.y += -opx6
+
+    distortName.bottomRight.x += -opy6
+    distortName.bottomRight.y += -opx6
+
+    distortName.bottomLeft.x += opy6
+    distortName.bottomLeft.y += opx6
+
+    name.css 'transform', distortName.toString()
+
+
 
 
     ###

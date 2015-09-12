@@ -54,23 +54,13 @@ Global =
 
   thumb: (event) ->
 
-    ###
-    if Global.thumbTimeout isnt false
-      return true
-
-    if Global.thumbTimeout is false
-      Global.thumbTimeout = setTimeout ->
-        clearTimeout Global.thumbTimeout
-        Global.thumbTimeout = false
-      , 20
-    ###
-
     t = $ this
     bg = t.find '.inner'
     name = t.find '.inner > .bg > .copy > .name'
     filters = t.find '.inner > .bg > .copy > .filters'
     rect = t[0].getBoundingClientRect()
     nameRect = name[0].getBoundingClientRect()
+    filtersRect = filters[0].getBoundingClientRect()
 
     distortBg = new Distort
       width: rect.width
@@ -81,6 +71,13 @@ Global =
       width: rect.width
       height: rect.height
       $el: nameRect
+
+    distortFilters = new Distort
+      width: rect.width
+      height: rect.height
+      $el: filtersRect
+
+
 
     offset = t.offset()
     x = Math.floor(event.pageX - offset.left)
@@ -93,6 +90,9 @@ Global =
 
     opx6 = (px-50)/6
     opy6 = (py-50)/6
+
+    opx4 = (px-50)/4
+    opy4 = (py-50)/4
 
     distortBg.topRight.x -= opy8
     distortBg.topRight.y -= opx8
@@ -108,35 +108,34 @@ Global =
 
     bg.css 'transform', distortBg.toString()
 
-    distortName.topRight.x -= opy6
-    distortName.topRight.y -= opx6
+    distortName.topRight.x -= opy4
+    distortName.topRight.y -= opx4
 
-    distortName.topLeft.x -= -opy6
-    distortName.topLeft.y -= -opx6
+    distortName.topLeft.x -= -opy4
+    distortName.topLeft.y -= -opx4
 
-    distortName.bottomRight.x -= -opy6
-    distortName.bottomRight.y -= -opx6
+    distortName.bottomRight.x -= -opy4
+    distortName.bottomRight.y -= -opx4
 
-    distortName.bottomLeft.x -= opy6
-    distortName.bottomLeft.y -= opx6
+    distortName.bottomLeft.x -= opy4
+    distortName.bottomLeft.y -= opx4
 
     name.css 'transform', distortName.toString()
-    #filters.css 'transform', distortName.toString()
 
 
-    ###
+    distortFilters.topRight.x -= opy6
+    distortFilters.topRight.y -= opx6
 
-    opx4 = (px-50)/10
-    opy4 = (py-50)/10
+    distortFilters.topLeft.x -= -opy6
+    distortFilters.topLeft.y -= -opx6
 
-    opx6 = (px-50)/6
-    opy6 = (py-50)/6
+    distortFilters.bottomRight.x -= -opy6
+    distortFilters.bottomRight.y -= -opx6
 
+    distortFilters.bottomLeft.x -= opy6
+    distortFilters.bottomLeft.y -= opx6
 
-    name.css 'transform', "translate(#{-opx6}px, #{-opy6}px)"
-    filters.css 'transform', "translate(#{-opx8}px, #{-opy8}px)"
-    bg.css 'background-position', "#{opx4+50}% #{opy4+50}%"
-    ###
+    filters.css 'transform', distortFilters.toString()
 
   phrase: ->
     phrase = phrases[Math.floor(Math.random()*phrases.length)]
@@ -225,5 +224,9 @@ Global =
 
   srcFromStyle: (el) ->
     style = el.attr 'style'
-    url = style.match(/url\("(.*)"\)/)
-    return url[1]
+    url = style.match(/url\((.*)\)/)
+    if url isnt null and url[1] isnt undefined
+      return url[1]
+    else
+      console.log 'ERROR cannot find style for element', style
+      console.log url

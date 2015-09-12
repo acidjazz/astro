@@ -43,24 +43,14 @@ Global = {
     return $('.thumbs > .thumb, .projects > .thumb').on('mousemove', Global.thumb);
   },
   thumb: function(event) {
-
-    /*
-    if Global.thumbTimeout isnt false
-      return true
-    
-    if Global.thumbTimeout is false
-      Global.thumbTimeout = setTimeout ->
-        clearTimeout Global.thumbTimeout
-        Global.thumbTimeout = false
-      , 20
-     */
-    var bg, distortBg, distortName, filters, name, nameRect, offset, opx6, opx8, opy6, opy8, px, py, rect, t, x, y;
+    var bg, distortBg, distortFilters, distortName, filters, filtersRect, name, nameRect, offset, opx4, opx6, opx8, opy4, opy6, opy8, px, py, rect, t, x, y;
     t = $(this);
     bg = t.find('.inner');
     name = t.find('.inner > .bg > .copy > .name');
     filters = t.find('.inner > .bg > .copy > .filters');
     rect = t[0].getBoundingClientRect();
     nameRect = name[0].getBoundingClientRect();
+    filtersRect = filters[0].getBoundingClientRect();
     distortBg = new Distort({
       width: rect.width,
       height: rect.height,
@@ -71,6 +61,11 @@ Global = {
       height: rect.height,
       $el: nameRect
     });
+    distortFilters = new Distort({
+      width: rect.width,
+      height: rect.height,
+      $el: filtersRect
+    });
     offset = t.offset();
     x = Math.floor(event.pageX - offset.left);
     y = Math.floor(event.pageY - offset.top);
@@ -80,6 +75,8 @@ Global = {
     opy8 = (py - 50) / 8;
     opx6 = (px - 50) / 6;
     opy6 = (py - 50) / 6;
+    opx4 = (px - 50) / 4;
+    opy4 = (py - 50) / 4;
     distortBg.topRight.x -= opy8;
     distortBg.topRight.y -= opx8;
     distortBg.topLeft.x -= -opy8;
@@ -89,29 +86,24 @@ Global = {
     distortBg.bottomLeft.x -= opy8;
     distortBg.bottomLeft.y -= opx8;
     bg.css('transform', distortBg.toString());
-    distortName.topRight.x -= opy6;
-    distortName.topRight.y -= opx6;
-    distortName.topLeft.x -= -opy6;
-    distortName.topLeft.y -= -opx6;
-    distortName.bottomRight.x -= -opy6;
-    distortName.bottomRight.y -= -opx6;
-    distortName.bottomLeft.x -= opy6;
-    distortName.bottomLeft.y -= opx6;
-    return name.css('transform', distortName.toString());
-
-    /*
-    
-    opx4 = (px-50)/10
-    opy4 = (py-50)/10
-    
-    opx6 = (px-50)/6
-    opy6 = (py-50)/6
-    
-    
-    name.css 'transform', "translate(#{-opx6}px, #{-opy6}px)"
-    filters.css 'transform', "translate(#{-opx8}px, #{-opy8}px)"
-    bg.css 'background-position', "#{opx4+50}% #{opy4+50}%"
-     */
+    distortName.topRight.x -= opy4;
+    distortName.topRight.y -= opx4;
+    distortName.topLeft.x -= -opy4;
+    distortName.topLeft.y -= -opx4;
+    distortName.bottomRight.x -= -opy4;
+    distortName.bottomRight.y -= -opx4;
+    distortName.bottomLeft.x -= opy4;
+    distortName.bottomLeft.y -= opx4;
+    name.css('transform', distortName.toString());
+    distortFilters.topRight.x -= opy6;
+    distortFilters.topRight.y -= opx6;
+    distortFilters.topLeft.x -= -opy6;
+    distortFilters.topLeft.y -= -opx6;
+    distortFilters.bottomRight.x -= -opy6;
+    distortFilters.bottomRight.y -= -opx6;
+    distortFilters.bottomLeft.x -= opy6;
+    distortFilters.bottomLeft.y -= opx6;
+    return filters.css('transform', distortFilters.toString());
   },
   phrase: function() {
     var compiled, i, j, phrase, ref;
@@ -209,7 +201,12 @@ Global = {
   srcFromStyle: function(el) {
     var style, url;
     style = el.attr('style');
-    url = style.match(/url\("(.*)"\)/);
-    return url[1];
+    url = style.match(/url\((.*)\)/);
+    if (url !== null && url[1] !== void 0) {
+      return url[1];
+    } else {
+      console.log('ERROR cannot find style for element', style);
+      return console.log(url);
+    }
   }
 };

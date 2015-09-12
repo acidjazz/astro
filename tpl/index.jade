@@ -10,7 +10,7 @@ block content
     .featureds
       .inner
         each featured, key in data.home.featured
-          .featured(style='background-image: url("./img/' + featured.image + '");',class=(key == 0) ? 'on' : 'off')
+          .featured(style='background-image: url(./img/' + featured.image + ');',class=(key == 0) ? 'on' : 'off')
             .inner
               .copy #{featured.copy}
 
@@ -34,7 +34,7 @@ block content
             data-project=project.folder,
           )
             .inner(
-              style='background-image: url("../img/project/' + project.folder + '/1440/' + project.cover + '");'
+              style='background-image: url(../img/project/' + project.folder + '/1440/' + project.cover + ');'
             )
               .bg
                 .copy

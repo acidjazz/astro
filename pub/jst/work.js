@@ -73,7 +73,7 @@ Work = {
     _.on('.orbit');
     NProgress.start();
     srcs = [];
-    $('.summary > .thumbs > .thumb').each(function(i, el) {
+    $('.summary > .thumbs > .thumb > .inner').each(function(i, el) {
       return srcs.push(Global.srcFromStyle($(el)));
     });
     return Global.preload(srcs, function(progress) {

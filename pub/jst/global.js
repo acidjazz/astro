@@ -57,25 +57,49 @@ Global = {
         Global.thumbTimeout = false
       , 20
      */
-    var filters, name, offset, opx4, opx6, opx8, opy4, opy6, opy8, px, py, rect, t, x, y;
+    var bg, distort, filters, name, offset, opx, opy, px, py, rect, t, x, y;
     t = $(this);
-    name = t.find('.inner > .copy > .name');
-    filters = t.find('.inner > .copy > .filters');
+    bg = t.find('.inner');
+    name = t.find('.inner > .bg > .copy > .name');
+    filters = t.find('.inner > .bg > .copy > .filters');
     rect = t[0].getBoundingClientRect();
+    console.log(rect);
+    distort = new Distort({
+      width: rect.width,
+      height: rect.height,
+      $el: bg
+    });
     offset = t.offset();
     x = Math.floor(event.pageX - offset.left);
     y = Math.floor(event.pageY - offset.top);
     px = Math.floor(x * 100 / t.width());
     py = Math.floor(y * 100 / t.height());
-    opx4 = (px - 50) / 10;
-    opy4 = (py - 50) / 10;
-    opx6 = (px - 50) / 6;
-    opy6 = (py - 50) / 6;
-    opx8 = (px - 50) / 8;
-    opy8 = (py - 50) / 8;
-    name.css('transform', "translate(" + (-opx6) + "px, " + (-opy6) + "px)");
-    filters.css('transform', "translate(" + (-opx8) + "px, " + (-opy8) + "px)");
-    return t.css('background-position', (opx4 + 50) + "% " + (opy4 + 50) + "%");
+    opx = (px - 50) / 8;
+    opy = (py - 50) / 8;
+    distort.topRight.x += opy;
+    distort.topRight.y += opx;
+    distort.topLeft.x += -opy;
+    distort.topLeft.y += -opx;
+    distort.bottomRight.x += -opy;
+    distort.bottomRight.y += -opx;
+    distort.bottomLeft.x += opy;
+    distort.bottomLeft.y += opx;
+    console.log(distort.toString());
+    return bg.css('transform', distort.toString());
+
+    /*
+    
+    opx4 = (px-50)/10
+    opy4 = (py-50)/10
+    
+    opx6 = (px-50)/6
+    opy6 = (py-50)/6
+    
+    
+    name.css 'transform', "translate(#{-opx6}px, #{-opy6}px)"
+    filters.css 'transform', "translate(#{-opx8}px, #{-opy8}px)"
+    bg.css 'background-position', "#{opx4+50}% #{opy4+50}%"
+     */
   },
   phrase: function() {
     var compiled, i, j, phrase, ref;

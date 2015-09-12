@@ -30,13 +30,15 @@ block content
           .thumb.on(
             class='thumb_' + project.folder,
             data-project=project.folder,
-            style='background-image: url("../img/project/' + project.folder + '/1440/' + project.cover + '");',
             data-filters=project.filters
           )
-            .inner
-              .copy
-                .name #{project.name}
-                .filters !{project.filters.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
+            .inner(
+              style='background-image: url("../img/project/' + project.folder + '/1440/' + project.cover + '");',
+            )
+              .bg
+                .copy
+                  .name #{project.name}
+                  .filters !{project.filters.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
       .clear
 
     // PROJECT PAGES

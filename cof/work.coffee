@@ -80,7 +80,7 @@ Work =
 
     srcs = []
 
-    $('.summary > .thumbs > .thumb').each (i, el) ->
+    $('.summary > .thumbs > .thumb > .inner').each (i, el) ->
       srcs.push(Global.srcFromStyle($(el)))
 
     Global.preload srcs,

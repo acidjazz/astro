@@ -3570,11 +3570,6 @@ body.fixed {
   width: 33.333%;
   height: 300px;
   cursor: pointer;
-  -webkit-background-size: 155%;
-  -moz-background-size: 155%;
-  background-size: 155%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   -webkit-animation: cellInY 0.2s 0s ease-in both;
   -moz-animation: cellInY 0.2s 0s ease-in both;
   -o-animation: cellInY 0.2s 0s ease-in both;
@@ -3591,12 +3586,12 @@ body.fixed {
 .index > .projects > .thumb.off {
   display: none;
 }
-.projects > .summary > .thumbs > .thumb:hover > .inner > .copy > .name,
-.related > .relateds > .thumb:hover > .inner > .copy > .name,
-.index > .projects > .thumb:hover > .inner > .copy > .name,
-.projects > .summary > .thumbs > .thumb:hover > .inner > .copy > .filters,
-.related > .relateds > .thumb:hover > .inner > .copy > .filters,
-.index > .projects > .thumb:hover > .inner > .copy > .filters {
+.projects > .summary > .thumbs > .thumb:hover > .inner > .bg > .copy > .name,
+.related > .relateds > .thumb:hover > .inner > .bg > .copy > .name,
+.index > .projects > .thumb:hover > .inner > .bg > .copy > .name,
+.projects > .summary > .thumbs > .thumb:hover > .inner > .bg > .copy > .filters,
+.related > .relateds > .thumb:hover > .inner > .bg > .copy > .filters,
+.index > .projects > .thumb:hover > .inner > .bg > .copy > .filters {
   opacity: 1;
   -ms-filter: none;
   filter: none;
@@ -3705,74 +3700,84 @@ body.fixed {
   -ms-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
-.projects > .summary > .thumbs > .thumb.thumb_aos:hover > .inner,
-.related > .relateds > .thumb.thumb_aos:hover > .inner,
-.index > .projects > .thumb.thumb_aos:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_aos:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_aos:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_aos:hover > .inner > .bg {
   background-color: rgba(67,73,101,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner,
-.related > .relateds > .thumb.thumb_fuelband:hover > .inner,
-.index > .projects > .thumb.thumb_fuelband:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_fuelband:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_fuelband:hover > .inner > .bg {
   background-color: rgba(59,182,46,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_goggle:hover > .inner,
-.related > .relateds > .thumb.thumb_goggle:hover > .inner,
-.index > .projects > .thumb.thumb_goggle:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_goggle:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_goggle:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_goggle:hover > .inner > .bg {
   background-color: rgba(68,68,68,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_jinnitv:hover > .inner,
-.related > .relateds > .thumb.thumb_jinnitv:hover > .inner,
-.index > .projects > .thumb.thumb_jinnitv:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_jinnitv:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_jinnitv:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_jinnitv:hover > .inner > .bg {
   background-color: rgba(44,190,230,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_mineralist:hover > .inner,
-.related > .relateds > .thumb.thumb_mineralist:hover > .inner,
-.index > .projects > .thumb.thumb_mineralist:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_mineralist:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_mineralist:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_mineralist:hover > .inner > .bg {
   background-color: rgba(236,128,0,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_minus8:hover > .inner,
-.related > .relateds > .thumb.thumb_minus8:hover > .inner,
-.index > .projects > .thumb.thumb_minus8:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_minus8:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_minus8:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_minus8:hover > .inner > .bg {
   background-color: rgba(169,222,212,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_neff:hover > .inner,
-.related > .relateds > .thumb.thumb_neff:hover > .inner,
-.index > .projects > .thumb.thumb_neff:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_neff:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_neff:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_neff:hover > .inner > .bg {
   background-color: rgba(244,103,178,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_owlet:hover > .inner,
-.related > .relateds > .thumb.thumb_owlet:hover > .inner,
-.index > .projects > .thumb.thumb_owlet:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_owlet:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_owlet:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_owlet:hover > .inner > .bg {
   background-color: rgba(169,222,212,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_sol:hover > .inner,
-.related > .relateds > .thumb.thumb_sol:hover > .inner,
-.index > .projects > .thumb.thumb_sol:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_sol:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_sol:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_sol:hover > .inner > .bg {
   background-color: rgba(117,130,177,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_tamar:hover > .inner,
-.related > .relateds > .thumb.thumb_tamar:hover > .inner,
-.index > .projects > .thumb.thumb_tamar:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_tamar:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_tamar:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_tamar:hover > .inner > .bg {
   background-color: rgba(244,171,139,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_threedr:hover > .inner,
-.related > .relateds > .thumb.thumb_threedr:hover > .inner,
-.index > .projects > .thumb.thumb_threedr:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_threedr:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_threedr:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_threedr:hover > .inner > .bg {
   background-color: rgba(118,215,52,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_versus:hover > .inner,
-.related > .relateds > .thumb.thumb_versus:hover > .inner,
-.index > .projects > .thumb.thumb_versus:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_versus:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_versus:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_versus:hover > .inner > .bg {
   background-color: rgba(1,149,255,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_xbox:hover > .inner,
-.related > .relateds > .thumb.thumb_xbox:hover > .inner,
-.index > .projects > .thumb.thumb_xbox:hover > .inner {
+.projects > .summary > .thumbs > .thumb.thumb_xbox:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_xbox:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_xbox:hover > .inner > .bg {
   background-color: rgba(116,189,68,0.75);
 }
 .projects > .summary > .thumbs > .thumb > .inner,
 .related > .relateds > .thumb > .inner,
 .index > .projects > .thumb > .inner {
+  height: 100%;
+  -webkit-background-size: 155%;
+  -moz-background-size: 155%;
+  background-size: 155%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.projects > .summary > .thumbs > .thumb > .inner > .bg,
+.related > .relateds > .thumb > .inner > .bg,
+.index > .projects > .thumb > .inner > .bg {
   height: 100%;
   -webkit-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
@@ -3780,16 +3785,16 @@ body.fixed {
   -ms-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
 }
-.projects > .summary > .thumbs > .thumb > .inner > .copy,
-.related > .relateds > .thumb > .inner > .copy,
-.index > .projects > .thumb > .inner > .copy {
+.projects > .summary > .thumbs > .thumb > .inner > .bg > .copy,
+.related > .relateds > .thumb > .inner > .bg > .copy,
+.index > .projects > .thumb > .inner > .bg > .copy {
   color: #fff;
   text-align: center;
   padding: 110px 0 0 0;
 }
-.projects > .summary > .thumbs > .thumb > .inner > .copy > .name,
-.related > .relateds > .thumb > .inner > .copy > .name,
-.index > .projects > .thumb > .inner > .copy > .name {
+.projects > .summary > .thumbs > .thumb > .inner > .bg > .copy > .name,
+.related > .relateds > .thumb > .inner > .bg > .copy > .name,
+.index > .projects > .thumb > .inner > .bg > .copy > .name {
   font: 46px blenderpro medium;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -3804,10 +3809,15 @@ body.fixed {
   -o-transition: opacity 0.1s linear;
   -ms-transition: opacity 0.1s linear;
   transition: opacity 0.1s linear;
+  -webkit-transition: -webkit-transform 0.1s linear, opacity 0.1s linear;
+  -moz-transition: -moz-transform 0.1s linear, opacity 0.1s linear;
+  -o-transition: -o-transform 0.1s linear, opacity 0.1s linear;
+  -ms-transition: -ms-transform 0.1s linear, opacity 0.1s linear;
+  transition: transform 0.1s linear, opacity 0.1s linear;
 }
-.projects > .summary > .thumbs > .thumb > .inner > .copy > .filters,
-.related > .relateds > .thumb > .inner > .copy > .filters,
-.index > .projects > .thumb > .inner > .copy > .filters {
+.projects > .summary > .thumbs > .thumb > .inner > .bg > .copy > .filters,
+.related > .relateds > .thumb > .inner > .bg > .copy > .filters,
+.index > .projects > .thumb > .inner > .bg > .copy > .filters {
   text-transform: uppercase;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -3822,6 +3832,11 @@ body.fixed {
   -o-transition: opacity 0.1s linear 0.1s;
   -ms-transition: opacity 0.1s linear 0.1s;
   transition: opacity 0.1s linear 0.1s;
+  -webkit-transition: -webkit-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
+  -moz-transition: -moz-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
+  -o-transition: -o-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
+  -ms-transition: -ms-transform 0.1s ease-in, opacity 0.1s linear 0.1s;
+  transition: transform 0.1s ease-in, opacity 0.1s linear 0.1s;
 }
 .projects > .project {
   min-height: 600px;
@@ -4106,7 +4121,6 @@ body.fixed {
 .about > .fcontainer > .fcontainer > .filters {
   background-color: #fff;
   text-transform: uppercase;
-  height: 60px;
 }
 .projects > .project > .fcontainer > .filters.float,
 .projects > .summary > .fcontainer > .filters.float,

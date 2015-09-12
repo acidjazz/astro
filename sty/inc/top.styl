@@ -60,18 +60,6 @@
           &:nth-child({num})
             animation-delay unit(num*0.1, 's')
 
-
-.top.fbar
-  > .inner > .red1
-    top 0
-    height 60px
-  > .inner > .astro
-    top 15px
-    left 20px
-  > .inner > .burger
-    top 15px
-    right 15px
-
 .top
   position fixed
   top 0
@@ -83,13 +71,23 @@
     position relative
     > .red1
       position absolute
-      top 20px
+      top 0
       left 0px
-      height 51px
+      height 60px
       background-color: c.red2
       width 71px
       transition all 0.1s linear
       transform-origin left
+      > .svg
+        width 29px
+        height 35px
+        overflow hidden
+        margin 15px 0 0 15px
+        > svg
+          width 120px
+          height 35px
+          > g > path, > g > g > path
+            fill: c.white1
       &.on
         transform translate(0, 0)
         transition transform 0.2s ease-in-out 0.2s
@@ -109,7 +107,7 @@
       &.off
         width 120px
       &.on
-        width 29px
+        width 0px
       > svg
         width 120px
         height 35px
@@ -151,7 +149,7 @@
       user-select none
       cursor pointer
       position absolute
-      top 30px
+      top 15px
       right 30px
       width 35px
       height 35px

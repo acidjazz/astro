@@ -1741,18 +1741,6 @@
   -ms-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
-.top.fbar > .inner > .red1 {
-  top: 0;
-  height: 60px;
-}
-.top.fbar > .inner > .astro {
-  top: 15px;
-  left: 20px;
-}
-.top.fbar > .inner > .burger {
-  top: 15px;
-  right: 15px;
-}
 .top {
   position: fixed;
   top: 0;
@@ -1766,9 +1754,9 @@
 }
 .top > .inner > .red1 {
   position: absolute;
-  top: 20px;
+  top: 0;
   left: 0px;
-  height: 51px;
+  height: 60px;
   background-color: #ff2f2d;
   width: 71px;
   -webkit-transition: all 0.1s linear;
@@ -1781,6 +1769,20 @@
   -o-transform-origin: left;
   -ms-transform-origin: left;
   transform-origin: left;
+}
+.top > .inner > .red1 > .svg {
+  width: 29px;
+  height: 35px;
+  overflow: hidden;
+  margin: 15px 0 0 15px;
+}
+.top > .inner > .red1 > .svg > svg {
+  width: 120px;
+  height: 35px;
+}
+.top > .inner > .red1 > .svg > svg > g > path,
+.top > .inner > .red1 > .svg > svg > g > g > path {
+  fill: #fff;
 }
 .top > .inner > .red1.on {
   -webkit-transform: translate(0, 0);
@@ -1832,7 +1834,7 @@
   width: 120px;
 }
 .top > .inner > .astro.on {
-  width: 29px;
+  width: 0px;
 }
 .top > .inner > .astro > svg {
   width: 120px;
@@ -2316,7 +2318,7 @@
   user-select: none;
   cursor: pointer;
   position: absolute;
-  top: 30px;
+  top: 15px;
   right: 30px;
   width: 35px;
   height: 35px;
@@ -4164,8 +4166,9 @@ body.fixed {
 .projects > .project > .fcontainer > .fcontainer > .filters > .inner > .filtermenu,
 .projects > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu,
 .about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu {
-  float: right;
   padding: 0 50px 0 0;
+  margin: auto;
+  text-align: center;
 }
 .projects > .project > .fcontainer > .filters > .inner > .filtermenu > .filter,
 .projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter,
@@ -4175,7 +4178,7 @@ body.fixed {
 .about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter {
   position: relative;
   cursor: pointer;
-  float: left;
+  display: inline-block;
   padding: 19px;
 }
 .projects > .project > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos.active,

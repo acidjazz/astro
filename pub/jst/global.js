@@ -32,11 +32,9 @@ Global = {
       return true;
     }
     if ($(window).scrollTop() > ($('.fcontainer:visible').offset().top + 60)) {
-      $('.filters').addClass('float');
-      return $('.top').addClass('fbar');
+      return $('.filters').addClass('float');
     } else {
-      $('.filters').removeClass('float');
-      return $('.top').removeClass('fbar');
+      return $('.filters').removeClass('float');
     }
   },
   handlers: function() {

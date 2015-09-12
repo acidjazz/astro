@@ -242,12 +242,13 @@
           float left
           padding 20px 0 20px 0px
         > .filtermenu
-          float right
           padding 0 50px 0 0
+          margin auto
+          text-align center
           > .filter
             position relative
             cursor pointer
-            float left
+            display inline-block
             padding 19px
             for key, project in data.project
               &.filter_{project.folder}.active

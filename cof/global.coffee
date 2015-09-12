@@ -41,10 +41,8 @@ Global =
 
     if $(window).scrollTop() > ($('.fcontainer:visible').offset().top + 60)
       $('.filters').addClass 'float'
-      $('.top').addClass 'fbar'
     else
       $('.filters').removeClass 'float'
-      $('.top').removeClass 'fbar'
 
     
   handlers: ->

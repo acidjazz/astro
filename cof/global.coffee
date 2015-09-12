@@ -54,8 +54,6 @@ Global =
 
     $('.thumbs > .thumb, .projects > .thumb').on 'mousemove', Global.thumb
 
-    console.log 'Global.handlers()'
-
   thumb: (event) ->
 
     ###
@@ -75,8 +73,6 @@ Global =
     filters = t.find '.inner > .bg > .copy > .filters'
     rect = t[0].getBoundingClientRect()
     nameRect = name[0].getBoundingClientRect()
-
-    console.log rect
 
     distortBg = new Distort
       width: rect.width
@@ -100,31 +96,31 @@ Global =
     opx6 = (px-50)/6
     opy6 = (py-50)/6
 
-    distortBg.topRight.x += opy8
-    distortBg.topRight.y += opx8
+    distortBg.topRight.x -= opy8
+    distortBg.topRight.y -= opx8
 
-    distortBg.topLeft.x += -opy8
-    distortBg.topLeft.y += -opx8
+    distortBg.topLeft.x -= -opy8
+    distortBg.topLeft.y -= -opx8
 
-    distortBg.bottomRight.x += -opy8
-    distortBg.bottomRight.y += -opx8
+    distortBg.bottomRight.x -= -opy8
+    distortBg.bottomRight.y -= -opx8
 
-    distortBg.bottomLeft.x += opy8
-    distortBg.bottomLeft.y += opx8
+    distortBg.bottomLeft.x -= opy8
+    distortBg.bottomLeft.y -= opx8
 
     bg.css 'transform', distortBg.toString()
 
-    distortName.topRight.x += opy6
-    distortName.topRight.y += opx6
+    distortName.topRight.x -= opy6
+    distortName.topRight.y -= opx6
 
-    distortName.topLeft.x += -opy6
-    distortName.topLeft.y += -opx6
+    distortName.topLeft.x -= -opy6
+    distortName.topLeft.y -= -opx6
 
-    distortName.bottomRight.x += -opy6
-    distortName.bottomRight.y += -opx6
+    distortName.bottomRight.x -= -opy6
+    distortName.bottomRight.y -= -opx6
 
-    distortName.bottomLeft.x += opy6
-    distortName.bottomLeft.y += opx6
+    distortName.bottomLeft.x -= opy6
+    distortName.bottomLeft.y -= opx6
 
     name.css 'transform', distortName.toString()
 
@@ -223,7 +219,6 @@ Global =
     total = srces.length
 
     for src, i in srces
-      # console.log 'Global.preload()', src
       images[i] = new Image()
       images[i].src = src
       images[i].onload = ->

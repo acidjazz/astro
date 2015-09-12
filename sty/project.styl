@@ -44,12 +44,12 @@
       &.thumb_{project.folder}:hover > .inner > .bg
         background-color: rgba(c[project.color], 0.75)
     > .inner
-      height 110%
-      width 110%
-      margin -5% -5% 0 0
-      background-size 155%
+      background-size 140%
       background-repeat no-repeat
       background-position 50% 50%
+      width 120%
+      height 120%
+      margin -5% 0 0 -10%
       //transform-style preserve-3d
       //backface-visibility hidden
       //transform matrix3d(0.98078, 0, 0.19507, 0, -0.01594, 0.99665, 0.08015, 0, -0.19442, -0.08172, 0.9775, 0, 0, 0, 100, 1)
@@ -252,7 +252,7 @@
             position relative
             cursor pointer
             float left
-            padding 20px
+            padding 19px
             for key, project in data.project
               &.filter_{project.folder}.active
                 background-color: c[project.color]

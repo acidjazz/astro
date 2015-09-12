@@ -42,8 +42,7 @@ Global = {
   handlers: function() {
     $('.top > .inner > .burger').on('click', Global.burger);
     $('.menu > .inner > .options > .option').on('click', Global.option);
-    $('.thumbs > .thumb, .projects > .thumb').on('mousemove', Global.thumb);
-    return console.log('Global.handlers()');
+    return $('.thumbs > .thumb, .projects > .thumb').on('mousemove', Global.thumb);
   },
   thumb: function(event) {
 
@@ -64,7 +63,6 @@ Global = {
     filters = t.find('.inner > .bg > .copy > .filters');
     rect = t[0].getBoundingClientRect();
     nameRect = name[0].getBoundingClientRect();
-    console.log(rect);
     distortBg = new Distort({
       width: rect.width,
       height: rect.height,
@@ -84,23 +82,23 @@ Global = {
     opy8 = (py - 50) / 8;
     opx6 = (px - 50) / 6;
     opy6 = (py - 50) / 6;
-    distortBg.topRight.x += opy8;
-    distortBg.topRight.y += opx8;
-    distortBg.topLeft.x += -opy8;
-    distortBg.topLeft.y += -opx8;
-    distortBg.bottomRight.x += -opy8;
-    distortBg.bottomRight.y += -opx8;
-    distortBg.bottomLeft.x += opy8;
-    distortBg.bottomLeft.y += opx8;
+    distortBg.topRight.x -= opy8;
+    distortBg.topRight.y -= opx8;
+    distortBg.topLeft.x -= -opy8;
+    distortBg.topLeft.y -= -opx8;
+    distortBg.bottomRight.x -= -opy8;
+    distortBg.bottomRight.y -= -opx8;
+    distortBg.bottomLeft.x -= opy8;
+    distortBg.bottomLeft.y -= opx8;
     bg.css('transform', distortBg.toString());
-    distortName.topRight.x += opy6;
-    distortName.topRight.y += opx6;
-    distortName.topLeft.x += -opy6;
-    distortName.topLeft.y += -opx6;
-    distortName.bottomRight.x += -opy6;
-    distortName.bottomRight.y += -opx6;
-    distortName.bottomLeft.x += opy6;
-    distortName.bottomLeft.y += opx6;
+    distortName.topRight.x -= opy6;
+    distortName.topRight.y -= opx6;
+    distortName.topLeft.x -= -opy6;
+    distortName.topLeft.y -= -opx6;
+    distortName.bottomRight.x -= -opy6;
+    distortName.bottomRight.y -= -opx6;
+    distortName.bottomLeft.x -= opy6;
+    distortName.bottomLeft.y -= opx6;
     return name.css('transform', distortName.toString());
 
     /*

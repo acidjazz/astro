@@ -3769,14 +3769,14 @@ body.fixed {
 .projects > .summary > .thumbs > .thumb > .inner,
 .related > .relateds > .thumb > .inner,
 .index > .projects > .thumb > .inner {
-  height: 110%;
-  width: 110%;
-  margin: -5% -5% 0 0;
-  -webkit-background-size: 155%;
-  -moz-background-size: 155%;
-  background-size: 155%;
+  -webkit-background-size: 140%;
+  -moz-background-size: 140%;
+  background-size: 140%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  width: 120%;
+  height: 120%;
+  margin: -5% 0 0 -10%;
 }
 .projects > .summary > .thumbs > .thumb > .inner > .bg,
 .related > .relateds > .thumb > .inner > .bg,
@@ -4177,7 +4177,7 @@ body.fixed {
   position: relative;
   cursor: pointer;
   float: left;
-  padding: 20px;
+  padding: 19px;
 }
 .projects > .project > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos.active,
 .projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos.active,

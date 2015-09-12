@@ -99,7 +99,8 @@ Global = {
     distortName.bottomRight.y -= -opx6;
     distortName.bottomLeft.x -= opy6;
     distortName.bottomLeft.y -= opx6;
-    return name.css('transform', distortName.toString());
+    name.css('transform', distortName.toString());
+    return filters.css('transform', distortName.toString());
 
     /*
     

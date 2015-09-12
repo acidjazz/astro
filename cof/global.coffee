@@ -121,7 +121,7 @@ Global =
     distortName.bottomLeft.y -= opx6
 
     name.css 'transform', distortName.toString()
-    filters.css 'transform', distortName.toString()
+    #filters.css 'transform', distortName.toString()
 
 
     ###

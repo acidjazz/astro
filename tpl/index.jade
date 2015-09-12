@@ -29,10 +29,16 @@ block content
     .projects
       each project in data.project
         if (project.home != undefined && project.home === true)
-          .thumb(class='thumb_' + project.folder,data-project=project.folder,style='background-image: url("../img/project/' + project.folder + '/1440/' + project.cover + '");')
-            .inner
-              .copy
-                .name #{project.name}
+          .thumb(
+            class='thumb_' + project.folder,
+            data-project=project.folder,
+          )
+            .inner(
+              style='background-image: url("../img/project/' + project.folder + '/1440/' + project.cover + '");'
+            )
+              .bg
+                .copy
+                  .name #{project.name}
     .clear
 
   include inc/bottom

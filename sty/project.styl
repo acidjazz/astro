@@ -225,11 +225,11 @@
   font f_copyls
   color: c.black3
   > .fcontainer
-    height 60px
     background-color white
     > .filters, > .fcontainer > .filters
       background-color: c.white1
       text-transform uppercase
+      border-bottom: 2px solid c.blue6
       &.float
         top 0
         width 100%
@@ -249,7 +249,7 @@
             position relative
             cursor pointer
             display inline-block
-            padding 19px
+            padding 20px
             for key, project in data.project
               &.filter_{project.folder}.active
                 background-color: c[project.color]

@@ -73,16 +73,15 @@
       position absolute
       top 0
       left 0px
-      height 60px
+      height 62px
       background-color: c.red2
       width 71px
       transition all 0.1s linear
-      transform-origin left
       > .svg
         width 29px
         height 35px
         overflow hidden
-        margin 15px 0 0 15px
+        margin 16px 0 0 16px
         > svg
           width 120px
           height 35px
@@ -90,12 +89,8 @@
             fill: c.white1
       &.on
         transform translate(0, 0)
-        transition transform 0.2s ease-in-out 0.2s
-        transform perspective(400px) rotateY(0deg)
       &.off
         transform translate(-71px, 0)
-        transition transform 0.2s linear 0s
-        transform perspective(400px) rotateY(90deg)
 
     > .astro
       overflow hidden
@@ -149,7 +144,7 @@
       user-select none
       cursor pointer
       position absolute
-      top 15px
+      top 16px
       right 30px
       width 35px
       height 35px

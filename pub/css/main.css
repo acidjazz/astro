@@ -3769,14 +3769,23 @@ body.fixed {
 .projects > .summary > .thumbs > .thumb > .inner,
 .related > .relateds > .thumb > .inner,
 .index > .projects > .thumb > .inner {
-  -webkit-background-size: 140%;
-  -moz-background-size: 140%;
-  background-size: 140%;
+  -webkit-background-size: 120%;
+  -moz-background-size: 120%;
+  background-size: 120%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 120%;
   height: 120%;
   margin: -5% 0 0 -10%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .projects > .summary > .thumbs > .thumb > .inner > .bg,
 .related > .relateds > .thumb > .inner > .bg,

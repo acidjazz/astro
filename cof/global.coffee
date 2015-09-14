@@ -135,6 +135,7 @@ Global =
     distortFilters.bottomLeft.x -= opy6
     distortFilters.bottomLeft.y -= opx6
 
+
     filters.css 'transform', distortFilters.toString()
 
   phrase: ->

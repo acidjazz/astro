@@ -77,8 +77,6 @@ Global =
       height: rect.height
       $el: filtersRect
 
-
-
     offset = t.offset()
     x = Math.floor(event.pageX - offset.left)
     y = Math.floor(event.pageY - offset.top)
@@ -88,8 +86,8 @@ Global =
     opx8 = (px-50)/8
     opy8 = (py-50)/8
 
-    opx6 = (px-50)/6
-    opy6 = (py-50)/6
+    opx6 = (px-50)/4
+    opy6 = (py-50)/4
 
     opx4 = (px-50)/4
     opy4 = (py-50)/4

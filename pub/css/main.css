@@ -1826,7 +1826,7 @@
 .top > .inner > .phrase {
   overflow: hidden;
   position: absolute;
-  top: 38px;
+  top: 37.5px;
   left: 170px;
   color: #fff;
   font: 18px blenderpro medium;
@@ -3516,7 +3516,7 @@ body.fixed {
   font: 28px blenderpro medium;
 }
 .projects .summary {
-  background-color: #434965;
+  background-color: #22252b;
   min-height: 600px;
   padding: 50px 0 0 0;
 }
@@ -3528,7 +3528,7 @@ body.fixed {
 }
 .projects .summary > .hero {
   color: #fff;
-  padding: 60px 20px;
+  padding: 80px 20px 120px 60px;
 }
 .projects .summary > .hero > .copy1 {
   max-width: 800px;
@@ -3536,8 +3536,10 @@ body.fixed {
   text-transform: uppercase;
 }
 .projects .summary > .hero > .copy2 {
-  font: 46px blenderpro medium;
-  max-width: 800px;
+  font: 40px blenderpro medium;
+  max-width: 900px;
+  text-align: center;
+  letter-spacing: 2px;
   margin: auto;
 }
 .projects > .summary > .thumbs > .thumb,
@@ -3751,9 +3753,9 @@ body.fixed {
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 120%;
-  height: 120%;
-  margin: -5% 0 0 -10%;
+  width: 110%;
+  height: 110%;
+  margin: -5% 0 0 -5%;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;

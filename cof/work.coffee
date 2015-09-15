@@ -35,7 +35,7 @@ Work =
     copy = $(this).data 'copy'
 
     $('.summary > .hero > .copy2').text copy
-    $('.summary > .hero > .copy1').text filter
+    #$('.summary > .hero > .copy1').text filter
 
     if filter is 'all'
       _.on '.summary > .thumbs > .thumb'

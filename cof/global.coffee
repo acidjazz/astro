@@ -26,7 +26,7 @@ Global =
 
     Global.fbarInterval = setInterval ->
       Global.fbar()
-    , 500
+    , 100
 
     Global.phrase()
 
@@ -39,7 +39,7 @@ Global =
     if $('.fcontainer:visible').length is 0
       return true
 
-    if $(window).scrollTop() > ($('.fcontainer:visible').offset().top + 60)
+    if $(window).scrollTop() > ($('.fcontainer:visible').offset().top)
       $('.filters').addClass 'float'
     else
       $('.filters').removeClass 'float'

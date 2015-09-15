@@ -22,7 +22,7 @@ Global = {
     }, 500);
     Global.fbarInterval = setInterval(function() {
       return Global.fbar();
-    }, 500);
+    }, 100);
     Global.phrase();
     Global.handlers();
     return Global.fbar();
@@ -31,7 +31,7 @@ Global = {
     if ($('.fcontainer:visible').length === 0) {
       return true;
     }
-    if ($(window).scrollTop() > ($('.fcontainer:visible').offset().top + 60)) {
+    if ($(window).scrollTop() > ($('.fcontainer:visible').offset().top)) {
       return $('.filters').addClass('float');
     } else {
       return $('.filters').removeClass('float');

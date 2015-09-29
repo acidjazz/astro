@@ -1,0 +1,20 @@
+.cover(style='background-image: url(../img/blog/' + entry.folder + '/' + entry.cover + ');')
+  .copy
+    .name #{entry.name}
+    .filters !{entry.date}
+
+.description(style='background-color: ' + data.colors[entry.color] )
+  .copy #{entry.description}
+
+.details
+  .date=entry.date
+  .author Posted by #{entry.author}
+  .shares
+    .copy SHARE
+    .share.share_instagram
+      include ../../pub/svg/instagram.svg
+    .share.share_twitter
+      include ../../pub/svg/twitter.svg
+    .share.share_facebook
+      include ../../pub/svg/facebook.svg
+.clear

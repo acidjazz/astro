@@ -1,0 +1,16 @@
+if entry.related
+  .related
+    .title(class='title_' + entry.folder) Related Posts
+    .relateds
+      each related in entry.related
+        - if (related in data.blog)
+          - var cover = data.blog[related].cover;
+          .thumb(
+            class='thumb_' + related,
+            data-entry=related,
+            style='background-image: url(../img/blog/' + related + '/1440/' + cover + ');'
+          )
+            .inner
+              .copy
+                .name #{data.blog[related].name}
+    .clear

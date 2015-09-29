@@ -1,0 +1,308 @@
+.blog
+
+  .summary
+    background-color: c.black2
+    min-height 600px
+    padding 50px 0 0 0
+
+    &.on
+      display block
+    &.off
+      display none
+    > .hero
+      color: c.white1
+      padding 80px 20px 120px 60px
+      > .copy1
+        max-width 800px
+        margin auto
+        text-transform uppercase
+      > .copy2
+        font f_h3
+        max-width 900px
+        text-align center
+        letter-spacing 2px
+        margin auto
+.blog > .summary > .thumbs, .related > .relateds, .index > .blog
+  > .thumb
+    &.on
+      display block
+    &.off
+      display none
+    float left
+    width 33.333%
+    height 300px
+    cursor pointer
+    animation cellInY 0.2s 0s ease-in both
+    overflow hidden
+    &:hover
+      > .inner > .bg > .copy
+        > .name, > .filters
+          opacity 1
+          transform translate(0, 0)
+    for num in 0..10
+      &:nth-child({num})
+        animation-delay unit(num*0.05, 's')
+    for key, entry in data.blog
+      &.thumb_{entry.folder}:hover > .inner > .bg
+        background-color: rgba(c[entry.color], 0.75)
+    > .inner
+      background-size 120%
+      background-repeat no-repeat
+      background-position 50% 50%
+      width 110%
+      height 110%
+      margin -5% 0 0 -5%
+      transform-style preserve-3d
+      backface-visibility hidden
+      > .bg
+        height 100%
+        transition background-color 0.1s linear
+        > .copy
+          color: c.white1
+          text-align center
+          padding 110px 0 0 0
+          > .name
+            font f_h2
+            opacity 0
+            transform translate(0, 10px)
+            transition opacity 0.1s linear
+          > .filters
+            text-transform uppercase
+            opacity 0
+            transform translate(0, 10px)
+            transition opacity 0.1s linear 0.1s
+        
+
+.blog
+
+  > .entry
+    min-height 600px
+    &.on
+      display block
+      > .cover, > .body > .image > img
+        display block
+    &.off
+      display none
+      > .cover, > .body > .image > img
+        display none
+
+    > .cover
+      height 600px
+      position relative
+      background-size cover
+      background-repeat no-repeat
+      background-position 50% 50%
+      > .copy
+        position absolute
+        left 0
+        top 50%
+        margin-top unit(-(120/2), px)
+        height 120px
+        width 100%
+        > .name, > .filters
+          color: c.white1
+          text-align center
+        > .name
+          font f_h1
+        > .filters
+          color: c.white1
+          text-transform uppercase
+          font f_copyn
+          letter-spacing 2px
+    > .description
+      padding 40px 20px 60px 20px
+      > .copy
+        font f_h2
+        color: c.white1
+        max-width 1020px
+        margin auto
+    > .details
+      padding 20px 0 60px 0
+      desktop()
+      > .date
+        float left
+        line-height 40px
+      > .author
+        float left
+        padding 0 0 0 20px
+        line-height 40px
+      > .shares
+        float right
+        > .copy
+          float left
+          line-height 40px
+        > .share
+          float left
+          width 35px
+          height 35px
+          background-color: c.black2
+          border-radius 50%
+          margin 0 0 0 10px
+          cursor pointer
+          > svg
+            width 20px
+            height 20px
+            margin 7.5px 0 0 7.5px
+            > g, > g path, > g > g > path
+              fill: c.white1
+
+.blog > .entry
+   > .body
+      min-height 2000px
+      > .youtube
+        width 800px
+        height 450px
+        margin auto
+      > .image
+        padding 50px 0
+        width 100%
+        &.pad_both
+          padding 50px 0
+        &.pad_top
+          padding 50px 0 0 0
+        &.pad_bottom
+          padding  0 0 50px 0
+        &.pad_none
+          padding  0 0 0 0
+        > img
+          width inherit
+        > .img
+          //height 600px
+          padding-top 60%
+          background-size cover
+          background-repeat no-repeat
+          background-position 50% 50%
+      > .copy
+        padding 50px
+        line-height 30px
+        max-width 600px
+        margin auto
+
+      > .imagecopy
+        padding 50px
+        &.pad_bottom
+          padding 0 0 50px 0
+        desktop()
+        &.black
+          background-color: c.black1
+        &.nopadding
+          padding 0px
+        > .block.left
+          float left
+          width 50%
+          height 100%
+        > .block.right
+          float right
+          width 50%
+          height 100%
+        > .block
+          height inherit
+          > .image
+            width 100%
+            height inherit
+            text-align center
+            > img
+              height inherit
+            > .img
+              height 100%
+              background-size cover
+              background-repeat no-repeat
+              background-position 50% 50%
+          &.copy
+            display table
+            > .copy
+              line-height 30px
+              max-width 600px
+              padding 0 50px
+              display table-cell
+              vertical-align middle
+              margin auto
+              &.white
+                color: c.white1
+     
+    > .related
+      > .title
+        font f_h3
+        text-align center
+        padding 20px
+        color: c.white1
+        for key, entry in data.blog
+          &.title_{entry.folder}
+            background-color: c[entry.color]
+    > .credits
+      for key, entry in data.blog
+        &.credits_{entry.folder} > .inner > .sections > .section > .title
+          color: c[entry.color]
+      > .inner
+        desktop()
+        padding 50px
+        > .title
+          font f_h2
+        > .sections
+          > .section
+            float left
+            width 33.33%
+            > .title
+              font f_h3
+              color: orange
+              margin 0 0 10px 0
+            > .item, > a.item
+              display block
+              margin 0 0 10px 0
+              text-decoration none
+              color: c.black1
+
+.blog > .entry, .blog > .summary, .about 
+  font f_copyls
+  color: c.black3
+  > .fcontainer
+    background-color white
+    > .filters, > .fcontainer > .filters
+      background-color: c.white1
+      text-transform uppercase
+      border-bottom: 2px solid c.white2
+      //border-bottom: 2px solid c.blue6
+      &.float
+        top 0
+        width 100%
+        position fixed
+        z-index 80
+        //animation filters 0.1s ease-out
+      > .inner
+        desktop()
+        > .title
+          float left
+          padding 20px 0 20px 0px
+        > .filtermenu
+          padding 0 50px 0 0
+          margin auto
+          text-align center
+          > .filter
+            position relative
+            cursor pointer
+            display inline-block
+            padding 20px
+            for key, entry in data.blog
+              &.filter_{entry.folder}.active
+                background-color: c[entry.color]
+              &.filter_{entry.folder}:hover
+                background-color: rgba(c[entry.color], 0.25)
+ 
+.blog > .summary
+  > .fcontainer
+    height 60px
+    background-color white
+  > .filters, > .fcontainer > .filters
+    > .inner
+      max-width none
+      > .title
+        display none
+      > .filtermenu
+        > .filter
+          transition background-color 0.1s linear, padding 0.2s linear
+          &:hover
+            background-color: rgba(c.white2, 0.5)
+          &.on
+            background-color: c.white2
+            color: c.black1
+

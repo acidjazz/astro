@@ -204,6 +204,8 @@ Global =
           location.href = '/about/'
       if option is 'contact'
           location.href = '/contact/'
+      if option is 'blog'
+          location.href = '/blog/'
 
     , 400
 

@@ -1,0 +1,49 @@
+
+extends ../inc/layout
+
+block variables
+  - var rootdir = '../'
+
+block content
+  include ../inc/top
+
+  .blog
+
+    // BLOG SUMMARY
+    .summary.off
+      .hero
+        .copy1 &nbsp;
+        .copy2  Lorem Ipsum sample for blog summary page
+      .thumbs
+        each entry in data.blog
+          .thumb.on(
+            class='thumb_' + entry.folder,
+            data-entry=entry.folder,
+            data-tags=entry.tags
+          )
+            .inner(
+              style='background-image: url(../img/blog/' + entry.folder + '/1440/' + entry.cover + ');',
+            )
+              .bg
+                .copy
+                  .name #{entry.name}
+                  .filters !{entry.date}
+      .clear
+
+    // BLOG ENTRIES 
+    - var entry = data.blog.fuelband
+
+    .entry.entry_fuelband.off
+      include _header
+      .body
+        include fuelband
+      include _footer
+
+  include ../inc/bottom
+
+  script(type='text/javascript').
+    function loadercomplete() {
+      Loader.load('../jst/blog.js', 'Blog');
+      Global.i()
+      entries = !{JSON.stringify(data.blog)};
+    }

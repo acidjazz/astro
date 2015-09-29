@@ -171,7 +171,10 @@ Global = {
         location.href = '/about/';
       }
       if (option === 'contact') {
-        return location.href = '/contact/';
+        location.href = '/contact/';
+      }
+      if (option === 'blog') {
+        return location.href = '/blog/';
       }
     }, 400);
   },

@@ -4390,6 +4390,598 @@ body.fixed {
   background-color: #e9eaec;
   color: #000;
 }
+.blog .summary {
+  background-color: #22252b;
+  min-height: 600px;
+  padding: 50px 0 0 0;
+}
+.blog .summary.on {
+  display: block;
+}
+.blog .summary.off {
+  display: none;
+}
+.blog .summary > .hero {
+  color: #fff;
+  padding: 80px 20px 120px 60px;
+}
+.blog .summary > .hero > .copy1 {
+  max-width: 800px;
+  margin: auto;
+  text-transform: uppercase;
+}
+.blog .summary > .hero > .copy2 {
+  font: 40px blenderpro medium;
+  max-width: 900px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: auto;
+}
+.blog > .summary > .thumbs > .thumb,
+.related > .relateds > .thumb,
+.index > .blog > .thumb {
+  float: left;
+  width: 33.333%;
+  height: 300px;
+  cursor: pointer;
+  -webkit-animation: cellInY 0.2s 0s ease-in both;
+  -moz-animation: cellInY 0.2s 0s ease-in both;
+  -o-animation: cellInY 0.2s 0s ease-in both;
+  -ms-animation: cellInY 0.2s 0s ease-in both;
+  animation: cellInY 0.2s 0s ease-in both;
+  overflow: hidden;
+}
+.blog > .summary > .thumbs > .thumb.on,
+.related > .relateds > .thumb.on,
+.index > .blog > .thumb.on {
+  display: block;
+}
+.blog > .summary > .thumbs > .thumb.off,
+.related > .relateds > .thumb.off,
+.index > .blog > .thumb.off {
+  display: none;
+}
+.blog > .summary > .thumbs > .thumb:hover > .inner > .bg > .copy > .name,
+.related > .relateds > .thumb:hover > .inner > .bg > .copy > .name,
+.index > .blog > .thumb:hover > .inner > .bg > .copy > .name,
+.blog > .summary > .thumbs > .thumb:hover > .inner > .bg > .copy > .filters,
+.related > .relateds > .thumb:hover > .inner > .bg > .copy > .filters,
+.index > .blog > .thumb:hover > .inner > .bg > .copy > .filters {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.blog > .summary > .thumbs > .thumb:nth-child(0),
+.related > .relateds > .thumb:nth-child(0),
+.index > .blog > .thumb:nth-child(0) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.blog > .summary > .thumbs > .thumb:nth-child(1),
+.related > .relateds > .thumb:nth-child(1),
+.index > .blog > .thumb:nth-child(1) {
+  -webkit-animation-delay: 0.05s;
+  -moz-animation-delay: 0.05s;
+  -o-animation-delay: 0.05s;
+  -ms-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+.blog > .summary > .thumbs > .thumb:nth-child(2),
+.related > .relateds > .thumb:nth-child(2),
+.index > .blog > .thumb:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.blog > .summary > .thumbs > .thumb:nth-child(3),
+.related > .relateds > .thumb:nth-child(3),
+.index > .blog > .thumb:nth-child(3) {
+  -webkit-animation-delay: 0.15s;
+  -moz-animation-delay: 0.15s;
+  -o-animation-delay: 0.15s;
+  -ms-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+.blog > .summary > .thumbs > .thumb:nth-child(4),
+.related > .relateds > .thumb:nth-child(4),
+.index > .blog > .thumb:nth-child(4) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.blog > .summary > .thumbs > .thumb:nth-child(5),
+.related > .relateds > .thumb:nth-child(5),
+.index > .blog > .thumb:nth-child(5) {
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  -o-animation-delay: 0.25s;
+  -ms-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+.blog > .summary > .thumbs > .thumb:nth-child(6),
+.related > .relateds > .thumb:nth-child(6),
+.index > .blog > .thumb:nth-child(6) {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.blog > .summary > .thumbs > .thumb:nth-child(7),
+.related > .relateds > .thumb:nth-child(7),
+.index > .blog > .thumb:nth-child(7) {
+  -webkit-animation-delay: 0.35s;
+  -moz-animation-delay: 0.35s;
+  -o-animation-delay: 0.35s;
+  -ms-animation-delay: 0.35s;
+  animation-delay: 0.35s;
+}
+.blog > .summary > .thumbs > .thumb:nth-child(8),
+.related > .relateds > .thumb:nth-child(8),
+.index > .blog > .thumb:nth-child(8) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.blog > .summary > .thumbs > .thumb:nth-child(9),
+.related > .relateds > .thumb:nth-child(9),
+.index > .blog > .thumb:nth-child(9) {
+  -webkit-animation-delay: 0.45s;
+  -moz-animation-delay: 0.45s;
+  -o-animation-delay: 0.45s;
+  -ms-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+.blog > .summary > .thumbs > .thumb:nth-child(10),
+.related > .relateds > .thumb:nth-child(10),
+.index > .blog > .thumb:nth-child(10) {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.blog > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_fuelband:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_fuelband:hover > .inner > .bg {
+  background-color: rgba(59,182,46,0.75);
+}
+.blog > .summary > .thumbs > .thumb > .inner,
+.related > .relateds > .thumb > .inner,
+.index > .blog > .thumb > .inner {
+  -webkit-background-size: 120%;
+  -moz-background-size: 120%;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 110%;
+  height: 110%;
+  margin: -5% 0 0 -5%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.blog > .summary > .thumbs > .thumb > .inner > .bg,
+.related > .relateds > .thumb > .inner > .bg,
+.index > .blog > .thumb > .inner > .bg {
+  height: 100%;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  -ms-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+.blog > .summary > .thumbs > .thumb > .inner > .bg > .copy,
+.related > .relateds > .thumb > .inner > .bg > .copy,
+.index > .blog > .thumb > .inner > .bg > .copy {
+  color: #fff;
+  text-align: center;
+  padding: 110px 0 0 0;
+}
+.blog > .summary > .thumbs > .thumb > .inner > .bg > .copy > .name,
+.related > .relateds > .thumb > .inner > .bg > .copy > .name,
+.index > .blog > .thumb > .inner > .bg > .copy > .name {
+  font: 46px blenderpro medium;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(0, 10px);
+  -moz-transform: translate(0, 10px);
+  -o-transform: translate(0, 10px);
+  -ms-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+  -webkit-transition: opacity 0.1s linear;
+  -moz-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  -ms-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+.blog > .summary > .thumbs > .thumb > .inner > .bg > .copy > .filters,
+.related > .relateds > .thumb > .inner > .bg > .copy > .filters,
+.index > .blog > .thumb > .inner > .bg > .copy > .filters {
+  text-transform: uppercase;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(0, 10px);
+  -moz-transform: translate(0, 10px);
+  -o-transform: translate(0, 10px);
+  -ms-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+  -webkit-transition: opacity 0.1s linear 0.1s;
+  -moz-transition: opacity 0.1s linear 0.1s;
+  -o-transition: opacity 0.1s linear 0.1s;
+  -ms-transition: opacity 0.1s linear 0.1s;
+  transition: opacity 0.1s linear 0.1s;
+}
+.blog > .entry {
+  min-height: 600px;
+}
+.blog > .entry.on {
+  display: block;
+}
+.blog > .entry.on > .cover,
+.blog > .entry.on > .body > .image > img {
+  display: block;
+}
+.blog > .entry.off {
+  display: none;
+}
+.blog > .entry.off > .cover,
+.blog > .entry.off > .body > .image > img {
+  display: none;
+}
+.blog > .entry > .cover {
+  height: 600px;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.blog > .entry > .cover > .copy {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -60px;
+  height: 120px;
+  width: 100%;
+}
+.blog > .entry > .cover > .copy > .name,
+.blog > .entry > .cover > .copy > .filters {
+  color: #fff;
+  text-align: center;
+}
+.blog > .entry > .cover > .copy > .name {
+  font: 92px blenderpro medium;
+}
+.blog > .entry > .cover > .copy > .filters {
+  color: #fff;
+  text-transform: uppercase;
+  font: 18px aktivgrotesk normal;
+  letter-spacing: 2px;
+}
+.blog > .entry > .description {
+  padding: 40px 20px 60px 20px;
+}
+.blog > .entry > .description > .copy {
+  font: 46px blenderpro medium;
+  color: #fff;
+  max-width: 1020px;
+  margin: auto;
+}
+.blog > .entry > .details {
+  padding: 20px 0 60px 0;
+  max-width: 1020px;
+  margin: auto;
+}
+.blog > .entry > .details > .date {
+  float: left;
+  line-height: 40px;
+}
+.blog > .entry > .details > .author {
+  float: left;
+  padding: 0 0 0 20px;
+  line-height: 40px;
+}
+.blog > .entry > .details > .shares {
+  float: right;
+}
+.blog > .entry > .details > .shares > .copy {
+  float: left;
+  line-height: 40px;
+}
+.blog > .entry > .details > .shares > .share {
+  float: left;
+  width: 35px;
+  height: 35px;
+  background-color: #22252b;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+}
+.blog > .entry > .details > .shares > .share > svg {
+  width: 20px;
+  height: 20px;
+  margin: 7.5px 0 0 7.5px;
+}
+.blog > .entry > .details > .shares > .share > svg > g,
+.blog > .entry > .details > .shares > .share > svg > g path,
+.blog > .entry > .details > .shares > .share > svg > g > g > path {
+  fill: #fff;
+}
+.blog > .entry > .body {
+  min-height: 2000px;
+}
+.blog > .entry > .body > .youtube {
+  width: 800px;
+  height: 450px;
+  margin: auto;
+}
+.blog > .entry > .body > .image {
+  padding: 50px 0;
+  width: 100%;
+}
+.blog > .entry > .body > .image.pad_both {
+  padding: 50px 0;
+}
+.blog > .entry > .body > .image.pad_top {
+  padding: 50px 0 0 0;
+}
+.blog > .entry > .body > .image.pad_bottom {
+  padding: 0 0 50px 0;
+}
+.blog > .entry > .body > .image.pad_none {
+  padding: 0 0 0 0;
+}
+.blog > .entry > .body > .image > img {
+  width: inherit;
+}
+.blog > .entry > .body > .image > .img {
+  padding-top: 60%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.blog > .entry > .body > .copy {
+  padding: 50px;
+  line-height: 30px;
+  max-width: 600px;
+  margin: auto;
+}
+.blog > .entry > .body > .imagecopy {
+  padding: 50px;
+  max-width: 1020px;
+  margin: auto;
+}
+.blog > .entry > .body > .imagecopy.pad_bottom {
+  padding: 0 0 50px 0;
+}
+.blog > .entry > .body > .imagecopy.black {
+  background-color: #000;
+}
+.blog > .entry > .body > .imagecopy.nopadding {
+  padding: 0px;
+}
+.blog > .entry > .body > .imagecopy > .block.left {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.blog > .entry > .body > .imagecopy > .block.right {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+.blog > .entry > .body > .imagecopy > .block {
+  height: inherit;
+}
+.blog > .entry > .body > .imagecopy > .block > .image {
+  width: 100%;
+  height: inherit;
+  text-align: center;
+}
+.blog > .entry > .body > .imagecopy > .block > .image > img {
+  height: inherit;
+}
+.blog > .entry > .body > .imagecopy > .block > .image > .img {
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.blog > .entry > .body > .imagecopy > .block.copy {
+  display: table;
+}
+.blog > .entry > .body > .imagecopy > .block.copy > .copy {
+  line-height: 30px;
+  max-width: 600px;
+  padding: 0 50px;
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+}
+.blog > .entry > .body > .imagecopy > .block.copy > .copy.white {
+  color: #fff;
+}
+.blog > .entry > .related > .title {
+  font: 40px blenderpro medium;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.blog > .entry > .related > .title.title_fuelband {
+  background-color: #3bb62e;
+}
+.blog > .entry > .credits.credits_fuelband > .inner > .sections > .section > .title {
+  color: #3bb62e;
+}
+.blog > .entry > .credits > .inner {
+  max-width: 1020px;
+  margin: auto;
+  padding: 50px;
+}
+.blog > .entry > .credits > .inner > .title {
+  font: 46px blenderpro medium;
+}
+.blog > .entry > .credits > .inner > .sections > .section {
+  float: left;
+  width: 33.33%;
+}
+.blog > .entry > .credits > .inner > .sections > .section > .title {
+  font: 40px blenderpro medium;
+  color: #ffa500;
+  margin: 0 0 10px 0;
+}
+.blog > .entry > .credits > .inner > .sections > .section > .item,
+.blog > .entry > .credits > .inner > .sections > .section > a.item {
+  display: block;
+  margin: 0 0 10px 0;
+  text-decoration: none;
+  color: #000;
+}
+.blog > .entry,
+.blog > .summary,
+.about {
+  font: 18px blenderpro medium;
+  color: #444;
+}
+.blog > .entry > .fcontainer,
+.blog > .summary > .fcontainer,
+.about > .fcontainer {
+  background-color: #fff;
+}
+.blog > .entry > .fcontainer > .filters,
+.blog > .summary > .fcontainer > .filters,
+.about > .fcontainer > .filters,
+.blog > .entry > .fcontainer > .fcontainer > .filters,
+.blog > .summary > .fcontainer > .fcontainer > .filters,
+.about > .fcontainer > .fcontainer > .filters {
+  background-color: #fff;
+  text-transform: uppercase;
+  border-bottom: 2px solid #e9eaec;
+}
+.blog > .entry > .fcontainer > .filters.float,
+.blog > .summary > .fcontainer > .filters.float,
+.about > .fcontainer > .filters.float,
+.blog > .entry > .fcontainer > .fcontainer > .filters.float,
+.blog > .summary > .fcontainer > .fcontainer > .filters.float,
+.about > .fcontainer > .fcontainer > .filters.float {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 80;
+}
+.blog > .entry > .fcontainer > .filters > .inner,
+.blog > .summary > .fcontainer > .filters > .inner,
+.about > .fcontainer > .filters > .inner,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner,
+.about > .fcontainer > .fcontainer > .filters > .inner {
+  max-width: 1020px;
+  margin: auto;
+}
+.blog > .entry > .fcontainer > .filters > .inner > .title,
+.blog > .summary > .fcontainer > .filters > .inner > .title,
+.about > .fcontainer > .filters > .inner > .title,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .title,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .title,
+.about > .fcontainer > .fcontainer > .filters > .inner > .title {
+  float: left;
+  padding: 20px 0 20px 0px;
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu,
+.about > .fcontainer > .filters > .inner > .filtermenu,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu {
+  padding: 0 50px 0 0;
+  margin: auto;
+  text-align: center;
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px;
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active {
+  background-color: #3bb62e;
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover {
+  background-color: rgba(59,182,46,0.25);
+}
+.blog > .summary > .fcontainer {
+  height: 60px;
+  background-color: #fff;
+}
+.blog > .summary > .filters > .inner,
+.blog > .summary > .fcontainer > .filters > .inner {
+  max-width: none;
+}
+.blog > .summary > .filters > .inner > .title,
+.blog > .summary > .fcontainer > .filters > .inner > .title {
+  display: none;
+}
+.blog > .summary > .filters > .inner > .filtermenu > .filter,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter {
+  -webkit-transition: background-color 0.1s linear, padding 0.2s linear;
+  -moz-transition: background-color 0.1s linear, padding 0.2s linear;
+  -o-transition: background-color 0.1s linear, padding 0.2s linear;
+  -ms-transition: background-color 0.1s linear, padding 0.2s linear;
+  transition: background-color 0.1s linear, padding 0.2s linear;
+}
+.blog > .summary > .filters > .inner > .filtermenu > .filter:hover,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter:hover {
+  background-color: rgba(233,234,236,0.5);
+}
+.blog > .summary > .filters > .inner > .filtermenu > .filter.on,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.on {
+  background-color: #e9eaec;
+  color: #000;
+}
 .guide {
   padding: 50px 0 0 0;
   background-color: #f0f0f0;

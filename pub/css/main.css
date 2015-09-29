@@ -2618,157 +2618,136 @@ body.fixed {
 .index > .featureds > .inner > .featured > .inner > .copy > .title {
   font: 40px blenderpro book;
 }
-.index > .circles {
+.index > .lines {
   position: absolute;
-  bottom: 50px;
+  bottom: 25px;
   left: 0;
   width: 100%;
   height: 50px;
   text-align: center;
 }
-.index > .circles.off {
+.index > .lines.off {
   display: none;
 }
-.index > .circles.on {
+.index > .lines.on {
   display: block;
 }
-.index > .circles > .circle {
+.index > .lines > .line {
   cursor: pointer;
   width: 150px;
   height: 50px;
   display: inline-block;
-  margin: 0 25px;
+  margin: 0 5px;
   -webkit-animation: cellInX 0.2s 0s ease-in both;
   -moz-animation: cellInX 0.2s 0s ease-in both;
   -o-animation: cellInX 0.2s 0s ease-in both;
   -ms-animation: cellInX 0.2s 0s ease-in both;
   animation: cellInX 0.2s 0s ease-in both;
 }
-.index > .circles > .circle:hover > .shape {
+.index > .lines > .line:hover > .shape {
   background-color: #ee5655;
 }
-.index > .circles > .circle:hover > .shape > .fill {
-  height: 25px;
-  margin: 0;
-}
-.index > .circles > .circle:hover > .title {
+.index > .lines > .line:hover > .title {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-transform: translate(0, -60px);
-  -moz-transform: translate(0, -60px);
-  -o-transform: translate(0, -60px);
-  -ms-transform: translate(0, -60px);
-  transform: translate(0, -60px);
+  -webkit-transform: translate(0, -35px);
+  -moz-transform: translate(0, -35px);
+  -o-transform: translate(0, -35px);
+  -ms-transform: translate(0, -35px);
+  transform: translate(0, -35px);
 }
-.index > .circles > .circle:nth-child(2) {
+.index > .lines > .line:nth-child(2) {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   -o-animation-delay: 0.2s;
   -ms-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
-.index > .circles > .circle:nth-child(3) {
+.index > .lines > .line:nth-child(3) {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   -o-animation-delay: 0.3s;
   -ms-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-.index > .circles > .circle:nth-child(4) {
+.index > .lines > .line:nth-child(4) {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   -o-animation-delay: 0.4s;
   -ms-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
-.index > .circles > .circle:nth-child(5) {
+.index > .lines > .line:nth-child(5) {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   -o-animation-delay: 0.5s;
   -ms-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
-.index > .circles > .circle:nth-child(6) {
+.index > .lines > .line:nth-child(6) {
   -webkit-animation-delay: 0.6s;
   -moz-animation-delay: 0.6s;
   -o-animation-delay: 0.6s;
   -ms-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
-.index > .circles > .circle:nth-child(7) {
+.index > .lines > .line:nth-child(7) {
   -webkit-animation-delay: 0.7s;
   -moz-animation-delay: 0.7s;
   -o-animation-delay: 0.7s;
   -ms-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
-.index > .circles > .circle:nth-child(8) {
+.index > .lines > .line:nth-child(8) {
   -webkit-animation-delay: 0.8s;
   -moz-animation-delay: 0.8s;
   -o-animation-delay: 0.8s;
   -ms-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
-.index > .circles > .circle:nth-child(9) {
+.index > .lines > .line:nth-child(9) {
   -webkit-animation-delay: 0.9s;
   -moz-animation-delay: 0.9s;
   -o-animation-delay: 0.9s;
   -ms-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
-.index > .circles > .circle:nth-child(10) {
+.index > .lines > .line:nth-child(10) {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -o-animation-delay: 1s;
   -ms-animation-delay: 1s;
   animation-delay: 1s;
 }
-.index > .circles > .circle > .shape {
-  width: 25px;
-  height: 25px;
+.index > .lines > .line > .shape {
+  width: 150px;
+  height: 5px;
   background-color: #fff;
-  -webkit-transition: background-color 0.1s linear 0.1s;
-  -moz-transition: background-color 0.1s linear 0.1s;
-  -o-transition: background-color 0.1s linear 0.1s;
-  -ms-transition: background-color 0.1s linear 0.1s;
-  transition: background-color 0.1s linear 0.1s;
-  margin: 0 0 0 62px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
-  position: relative;
-  overflow: hidden;
-  z-index: 10;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  -ms-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
 }
-.index > .circles > .circle > .shape > .fill {
-  position: absolute;
-  width: 25px;
-  height: 0px;
-  margin: 25px 0 0 0;
-  background-color: #ee5655;
-  -webkit-transition: height 0.2s ease-out, margin 0.2s ease-out;
-  -moz-transition: height 0.2s ease-out, margin 0.2s ease-out;
-  -o-transition: height 0.2s ease-out, margin 0.2s ease-out;
-  -ms-transition: height 0.2s ease-out, margin 0.2s ease-out;
-  transition: height 0.2s ease-out, margin 0.2s ease-out;
-  z-index: 1;
-}
-.index > .circles > .circle > .title {
+.index > .lines > .line > .title {
+  font: 20px blenderpro medium;
   color: #fff;
   white-space: nowrap;
-  -webkit-transform: translate(0, -50px);
-  -moz-transform: translate(0, -50px);
-  -o-transform: translate(0, -50px);
-  -ms-transform: translate(0, -50px);
-  transform: translate(0, -50px);
+  -webkit-transform: translate(-5px, -35px);
+  -moz-transform: translate(-5px, -35px);
+  -o-transform: translate(-5px, -35px);
+  -ms-transform: translate(-5px, -35px);
+  transform: translate(-5px, -35px);
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.1s linear 0.1s, -webkit-transform 0.2s linear 0.1s;
-  -moz-transition: opacity 0.1s linear 0.1s, -moz-transform 0.2s linear 0.1s;
-  -o-transition: opacity 0.1s linear 0.1s, -o-transform 0.2s linear 0.1s;
-  -ms-transition: opacity 0.1s linear 0.1s, -ms-transform 0.2s linear 0.1s;
-  transition: opacity 0.1s linear 0.1s, transform 0.2s linear 0.1s;
+  -webkit-transition: opacity 0.1s linear, -webkit-transform 0.1s linear;
+  -moz-transition: opacity 0.1s linear, -moz-transform 0.1s linear;
+  -o-transition: opacity 0.1s linear, -o-transform 0.1s linear;
+  -ms-transition: opacity 0.1s linear, -ms-transform 0.1s linear;
+  transition: opacity 0.1s linear, transform 0.1s linear;
+  text-align: left;
 }
 .index > .welcome {
   background-color: #363a42;

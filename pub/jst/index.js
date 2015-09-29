@@ -11,14 +11,14 @@ Index = {
     }, function(complete) {
       NProgress.done();
       _.off('.orbit');
-      return _.on('.circles');
+      return _.on('.lines');
     });
     return Index.handlers();
   },
   handlers: function() {
-    return $('.circles > .circle').on('click', Index.circle);
+    return $('.lines > .line').on('click', Index.line);
   },
-  circle: function() {
+  line: function() {
     var key, src;
     key = $(this).data('key');
     src = Global.srcFromStyle($(".featureds > .inner > .featured:nth-child(" + (key + 1) + ")"));

@@ -13,16 +13,15 @@ Index =
     , (complete) ->
       NProgress.done()
       _.off '.orbit'
-      _.on '.circles'
+      _.on '.lines'
 
     Index.handlers()
 
   handlers: ->
 
-    $('.circles > .circle').on 'click', Index.circle
+    $('.lines > .line').on 'click', Index.line
 
-
-  circle: ->
+  line: ->
 
     key = $(this).data 'key'
 

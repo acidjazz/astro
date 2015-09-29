@@ -16,7 +16,7 @@ block content
                 .label
                   span _
                   | PROJECT
-                .title=featured.copy
+                .title !{featured.copy}
 
     .circles.off
       each featured, key in data.home.featured

@@ -12,7 +12,11 @@ block content
         each featured, key in data.home.featured
           .featured(style='background-image: url(./img/' + featured.image + ');',class=(key == 0) ? 'on' : 'off')
             .inner
-              .copy #{featured.copy}
+              .copy
+                .label
+                  span _
+                  | PROJECT
+                .title=featured.copy
 
     .circles.off
       each featured, key in data.home.featured

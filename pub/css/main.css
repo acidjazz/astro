@@ -2587,19 +2587,28 @@ body.fixed {
 }
 .index > .featureds > .inner > .featured > .inner > .copy {
   position: absolute;
-  left: 0;
-  top: 50%;
+  left: 170px;
+  top: 70%;
   width: 100%;
-  font: 92px blenderpro medium;
-  color: #fff;
-  text-align: center;
+  text-align: left;
   height: 110px;
   margin-top: -55px;
+  color: #fff;
   -webkit-animation: cellInY 0.75s 0s ease-in both;
   -moz-animation: cellInY 0.75s 0s ease-in both;
   -o-animation: cellInY 0.75s 0s ease-in both;
   -ms-animation: cellInY 0.75s 0s ease-in both;
   animation: cellInY 0.75s 0s ease-in both;
+  background-color: rgba(255,192,203,0.5);
+}
+.index > .featureds > .inner > .featured > .inner > .copy > .label {
+  font: 14px aktivgrotesk light;
+}
+.index > .featureds > .inner > .featured > .inner > .copy > .label > span {
+  color: #ee5655;
+}
+.index > .featureds > .inner > .featured > .inner > .copy > .title {
+  font: 36px blenderpro medium;
 }
 .index > .circles {
   position: absolute;

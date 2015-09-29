@@ -84,7 +84,7 @@
   border: 1px solid #fff;
 }
 .guide > .sections > .section > .color.color_red2 {
-  background-color: #ff2f2d;
+  background-color: #db3737;
   border: 1px solid #fff;
 }
 .guide > .sections > .section > .color.color_red3 {
@@ -1764,7 +1764,7 @@
   top: 0;
   left: 0px;
   height: 64px;
-  background-color: #ff2f2d;
+  background-color: #db3737;
   width: 71px;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
@@ -2319,7 +2319,7 @@
   transform: rotate(90deg);
 }
 .top > .inner > .burger.off > .inner > .lines > .line {
-  background-color: #ff2f2d;
+  background-color: #db3737;
 }
 .top > .inner > .burger.off > .inner > .lines > .line1 {
   -webkit-transform: translate(0px, 13px) rotate(45deg);
@@ -2367,7 +2367,7 @@
   transition: transform 0.3s ease-out 0.2s, background-color 0.1s linear 0.2s;
 }
 .top > .inner > .burger > .inner > .lines.red > .line {
-  background-color: #ff2f2d;
+  background-color: #db3737;
   -webkit-transform: translate(40px, 0);
   -moz-transform: translate(40px, 0);
   -o-transform: translate(40px, 0);
@@ -2778,9 +2778,18 @@ body.fixed {
   max-width: 1020px;
   margin: auto;
 }
-.index > .welcome > .inner > .copy {
-  font: 46px blenderpro book;
+.index > .welcome > .inner span {
+  color: #db3737;
+}
+.index > .welcome > .inner > .copy1 {
+  font: 40px blenderpro book;
   color: #fff;
+  padding-bottom: 15px;
+}
+.index > .welcome > .inner > .copy2 {
+  font: 36px blenderpro book;
+  color: #fff;
+  padding-bottom: 15px;
 }
 .about > .banner {
   position: relative;
@@ -5085,7 +5094,7 @@ body.fixed {
   border: 1px solid #fff;
 }
 .guide > .sections > .section > .color.color_red2 {
-  background-color: #ff2f2d;
+  background-color: #db3737;
   border: 1px solid #fff;
 }
 .guide > .sections > .section > .color.color_red3 {

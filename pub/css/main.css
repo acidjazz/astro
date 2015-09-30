@@ -4568,6 +4568,16 @@ body.fixed {
 .index > .blog > .thumb.thumb_fuelband:hover > .inner > .bg {
   background-color: rgba(59,182,46,0.75);
 }
+.blog > .summary > .thumbs > .thumb.thumb_nasa:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_nasa:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_nasa:hover > .inner > .bg {
+  background-color: rgba(117,130,177,0.75);
+}
+.blog > .summary > .thumbs > .thumb.thumb_pins:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_pins:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_pins:hover > .inner > .bg {
+  background-color: rgba(117,130,177,0.75);
+}
 .blog > .summary > .thumbs > .thumb > .inner,
 .related > .relateds > .thumb > .inner,
 .index > .blog > .thumb > .inner {
@@ -4668,41 +4678,21 @@ body.fixed {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.blog > .entry > .cover > .copy {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -60px;
-  height: 120px;
-  width: 100%;
-}
-.blog > .entry > .cover > .copy > .name,
-.blog > .entry > .cover > .copy > .filters {
-  color: #fff;
-  text-align: center;
-}
-.blog > .entry > .cover > .copy > .name {
-  font: 92px blenderpro book;
-}
-.blog > .entry > .cover > .copy > .filters {
-  color: #fff;
-  text-transform: uppercase;
-  font: 18px aktivgrotesk normal;
-  letter-spacing: 2px;
-}
-.blog > .entry > .description {
-  padding: 40px 20px 60px 20px;
-}
-.blog > .entry > .description > .copy {
-  font: 46px blenderpro book;
-  color: #fff;
-  max-width: 1020px;
-  margin: auto;
-}
 .blog > .entry > .details {
   padding: 20px 0 60px 0;
   max-width: 1020px;
   margin: auto;
+}
+.blog > .entry > .details > .copy {
+  padding: 100px 0 0 0;
+}
+.blog > .entry > .details > .copy > .name {
+  font: 40px blenderpro book;
+  padding: 0 0 15px 0;
+}
+.blog > .entry > .details > .copy > .description {
+  font: 36px blenderpro book;
+  padding: 0 0 15px 0;
 }
 .blog > .entry > .details > .date {
   float: left;
@@ -4741,7 +4731,9 @@ body.fixed {
   fill: #fff;
 }
 .blog > .entry > .body {
-  min-height: 2000px;
+  min-height: 1000px;
+  max-width: 1020px;
+  margin: auto;
 }
 .blog > .entry > .body > .youtube {
   width: 800px;
@@ -4780,6 +4772,18 @@ body.fixed {
   line-height: 30px;
   max-width: 600px;
   margin: auto;
+}
+.blog > .entry > .body > .images > .image {
+  float: left;
+  width: 50%;
+}
+.blog > .entry > .body > .images > .image > .img {
+  padding-top: 60%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .blog > .entry > .body > .imagecopy {
   padding: 50px;
@@ -4847,8 +4851,20 @@ body.fixed {
 .blog > .entry > .related > .title.title_fuelband {
   background-color: #3bb62e;
 }
+.blog > .entry > .related > .title.title_nasa {
+  background-color: #7582b1;
+}
+.blog > .entry > .related > .title.title_pins {
+  background-color: #7582b1;
+}
 .blog > .entry > .credits.credits_fuelband > .inner > .sections > .section > .title {
   color: #3bb62e;
+}
+.blog > .entry > .credits.credits_nasa > .inner > .sections > .section > .title {
+  color: #7582b1;
+}
+.blog > .entry > .credits.credits_pins > .inner > .sections > .section > .title {
+  color: #7582b1;
 }
 .blog > .entry > .credits > .inner {
   max-width: 1020px;
@@ -4960,6 +4976,38 @@ body.fixed {
 .blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
 .about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover {
   background-color: rgba(59,182,46,0.25);
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa.active,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa.active,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa.active,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa.active,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa.active,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa.active {
+  background-color: #7582b1;
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa:hover,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa:hover,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa:hover,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa:hover,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa:hover,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa:hover {
+  background-color: rgba(117,130,177,0.25);
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins.active,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins.active,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins.active,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins.active,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins.active,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins.active {
+  background-color: #7582b1;
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins:hover,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins:hover,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins:hover,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins:hover,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins:hover,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins:hover {
+  background-color: rgba(117,130,177,0.25);
 }
 .blog > .summary > .fcontainer {
   height: 60px;

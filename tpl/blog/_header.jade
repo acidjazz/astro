@@ -1,10 +1,4 @@
 .cover(style='background-image: url(../img/blog/' + entry.folder + '/' + entry.cover + ');')
-  .copy
-    .name #{entry.name}
-    .filters !{entry.date}
-
-.description(style='background-color: ' + data.colors[entry.color] )
-  .copy #{entry.description}
 
 .details
   .date=entry.date
@@ -17,4 +11,10 @@
       include ../../pub/svg/twitter.svg
     .share.share_facebook
       include ../../pub/svg/facebook.svg
+  .clear
+  .copy
+    .name #{entry.name}
+    .description !{entry.description}
 .clear
+
+

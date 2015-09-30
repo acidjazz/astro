@@ -1,12 +1,12 @@
 <?
 
-$dir = '/Users/k/astro/pub/img/project/';
+$dir = '/Users/k/astro/pub/img/blog/';
 
 if ($handle = opendir($dir)) {
 
   while (false !== ($entry  = readdir($handle))) {
 
-    if ($entry != '.' && $entry != '..') {
+    if ($entry != '.' && $entry != '..' && $entry != '.DS_Store') {
       echo "mkdir $dir$entry/1440\n";
       exec("mkdir $dir$entry/1440");
       echo "cp $dir$entry/* $dir$entry/1440/.\n";

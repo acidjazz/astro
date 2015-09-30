@@ -20,8 +20,8 @@ block content
 
     .lines.off
       each featured, key in data.home.featured
-        .line.on(data-key=key)
-          .shape(class=(key == 0) ? 'on' : '')
+        .line(data-key=key,class=(key == 0) ? 'on' : '')
+          .shape
           .title #{featured.title}
 
     .clear
@@ -37,6 +37,7 @@ block content
       each project in data.project
         if (project.home != undefined && project.home === true)
           .thumb(
+            data-type='project',
             class='thumb_' + project.folder,
             data-project=project.folder,
           )
@@ -46,6 +47,24 @@ block content
               .bg
                 .copy
                   .name #{project.name}
+                  .filters
+
+      each entry in data.blog
+        if (entry.home != undefined && entry.home === true)
+          .thumb(
+            data-type='blog',
+            class='thumb_' + entry.folder,
+            data-entry=entry.folder,
+          )
+            .inner(
+              style='background-image: url(../img/blog/' + entry.folder + '/1440/' + entry.cover + ');'
+            )
+              .bg
+                .copy
+                  .name #{entry.name}
+                  .filters #{entry.date}
+ 
+
     .clear
 
   include inc/bottom

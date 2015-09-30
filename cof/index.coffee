@@ -23,7 +23,9 @@ Index =
 
   line: ->
 
-    key = $(this).data 'key'
+    t = $ this
+
+    key = t.data 'key'
 
     src = Global.srcFromStyle($(".featureds > .inner > .featured:nth-child(#{key+1})"))
 
@@ -35,5 +37,7 @@ Index =
       NProgress.done()
       _.off '.featureds > .inner > .featured'
       _.on ".featureds > .inner > .featured:nth-child(#{key+1})"
+      _.off '.lines > .line'
+      _.on t
 
 

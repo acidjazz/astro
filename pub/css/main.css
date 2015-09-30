@@ -3555,7 +3555,7 @@ body.fixed {
 .index > .projects > .thumb {
   float: left;
   width: 33.333%;
-  height: 300px;
+  height: 23vw;
   cursor: pointer;
   -webkit-animation: cellInY 0.2s 0s ease-in both;
   -moz-animation: cellInY 0.2s 0s ease-in both;
@@ -4397,6 +4397,18 @@ body.fixed {
 .projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.on {
   background-color: #e9eaec;
   color: #000;
+}
+@media all and (min-width: 481px) and (max-width: 1000px) {
+  .thumb {
+    width: 50% !important;
+    height: 38vw !important;
+  }
+}
+@media all and (min-width: 1px) and (max-width: 480px) {
+  .thumb {
+    width: 100% !important;
+    height: 70vw !important;
+  }
 }
 .blog .summary {
   background-color: #22252b;

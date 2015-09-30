@@ -30,7 +30,7 @@
       display none
     float left
     width 33.333%
-    height 300px
+    height 23vw
     cursor pointer
     animation cellInY 0.2s 0s ease-in both
     overflow hidden
@@ -276,4 +276,15 @@
           &.on
             background-color: c.white2
             color: c.black1
+
+ // responsive grid
+@media all and (min-width: 481px) and (max-width: 1000px)
+  .thumb
+    width 50% !important
+    height 38vw !important
+
+@media all and (min-width: 1px) and (max-width: 480px)
+  .thumb
+    width 100% !important
+    height 70vw !important
 

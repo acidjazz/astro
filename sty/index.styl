@@ -61,6 +61,9 @@
       display inline-block
       margin 0 5px
       animation cellInX 0.2s 0s ease-in both
+      &.on
+        > .shape
+          background-color: c.red1
       &:hover
         > .shape
           background-color: c.red1
@@ -76,6 +79,7 @@
         height 3px
         background-color: c.white1
         transition background-color 0.1s linear
+        margin 25px 0 0 0
       > .title
         font f_copyl
         color: c.white1

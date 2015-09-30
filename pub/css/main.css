@@ -2643,6 +2643,9 @@ body.fixed {
   -ms-animation: cellInX 0.2s 0s ease-in both;
   animation: cellInX 0.2s 0s ease-in both;
 }
+.index > .lines > .line.on > .shape {
+  background-color: #ee5655;
+}
 .index > .lines > .line:hover > .shape {
   background-color: #ee5655;
 }
@@ -2728,6 +2731,7 @@ body.fixed {
   -o-transition: background-color 0.1s linear;
   -ms-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
+  margin: 25px 0 0 0;
 }
 .index > .lines > .line > .title {
   font: 20px blenderpro medium;

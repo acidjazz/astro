@@ -19,8 +19,9 @@ Index = {
     return $('.lines > .line').on('click', Index.line);
   },
   line: function() {
-    var key, src;
-    key = $(this).data('key');
+    var key, src, t;
+    t = $(this);
+    key = t.data('key');
     src = Global.srcFromStyle($(".featureds > .inner > .featured:nth-child(" + (key + 1) + ")"));
     NProgress.start();
     return Global.preload([src], function(progress) {
@@ -28,7 +29,9 @@ Index = {
     }, function(complete) {
       NProgress.done();
       _.off('.featureds > .inner > .featured');
-      return _.on(".featureds > .inner > .featured:nth-child(" + (key + 1) + ")");
+      _.on(".featureds > .inner > .featured:nth-child(" + (key + 1) + ")");
+      _.off('.lines > .line');
+      return _.on(t);
     });
   }
 };

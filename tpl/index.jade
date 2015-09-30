@@ -20,8 +20,8 @@ block content
 
     .lines.off
       each featured, key in data.home.featured
-        .line.on(data-key=key)
-          .shape(class=(key == 0) ? 'on' : '')
+        .line(data-key=key,class=(key == 0) ? 'on' : '')
+          .shape
           .title #{featured.title}
 
     .clear

@@ -4398,7 +4398,13 @@ body.fixed {
   background-color: #e9eaec;
   color: #000;
 }
-@media all and (min-width: 1601px) and (max-width: 2200px) {
+@media all and (min-width: 2101) {
+  .thumb {
+    width: 25% !important;
+    height: 18vw !important;
+  }
+}
+@media all and (min-width: 1601px) and (max-width: 2100px) {
   .thumb {
     width: 25% !important;
     height: 18vw !important;

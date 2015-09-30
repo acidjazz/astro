@@ -4401,7 +4401,7 @@ body.fixed {
 @media all and (min-width: 481px) and (max-width: 1000px) {
   .thumb {
     width: 50% !important;
-    height: 38vw !important;
+    height: 35vw !important;
   }
 }
 @media all and (min-width: 1px) and (max-width: 480px) {

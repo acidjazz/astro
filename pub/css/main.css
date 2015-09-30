@@ -2756,9 +2756,7 @@ body.fixed {
   background-color: #22252b;
 }
 .index > .welcome > .inner {
-  padding: 100px;
-  max-width: 1020px;
-  margin: auto;
+  padding: 100px 0;
 }
 .index > .welcome > .inner span {
   color: #f03;
@@ -2767,11 +2765,13 @@ body.fixed {
   font: 40px blenderpro book;
   color: #fff;
   padding-bottom: 15px;
+  margin-left: 170px;
 }
 .index > .welcome > .inner > .copy2 {
   font: 36px blenderpro book;
   color: #fff;
   padding-bottom: 15px;
+  margin-left: 170px;
 }
 .about > .banner {
   position: relative;

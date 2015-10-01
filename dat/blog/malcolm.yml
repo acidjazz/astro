@@ -1,0 +1,17 @@
+---
+  folder: malcolm
+  cover: cover.jpg
+  author: Kevin Olson
+  date: 9.22.2015
+  name: Dodgeball Uniforms
+  description: Airbrush painting has long lived in mall kiosks, county fair booths and/or street fairs.  Malcolm Stuart is keeping this art form in thrive-mode working out his loft in Oakland painting his perfect mix of pop and beauty.  Malcolm got his MFA at the School of Visual Arts in Manhattan.
+  color: green1
+  tags:
+    - strategy
+    - digital
+    - product
+  related:
+    - goggle
+    - threedr
+    - fuelband
+  home: true

@@ -64,6 +64,23 @@ block content
         include eightarms
       include _footer
 
+    - var entry = data.blog.malcolm
+
+    .entry.entry_malcolm.off
+      include _header
+      .body
+        include malcolm
+      include _footer
+
+
+    - var entry = data.blog.pulse
+
+    .entry.entry_pulse.off
+      include _header
+      .body
+        include pulse
+      include _footer
+
 
 
   include ../inc/bottom

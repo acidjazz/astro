@@ -4603,6 +4603,11 @@ body.fixed {
 .index > .blog > .thumb.thumb_fuelband:hover > .inner > .bg {
   background-color: rgba(59,182,46,0.75);
 }
+.blog > .summary > .thumbs > .thumb.thumb_malcolm:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_malcolm:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_malcolm:hover > .inner > .bg {
+  background-color: rgba(118,215,52,0.75);
+}
 .blog > .summary > .thumbs > .thumb.thumb_nasa:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_nasa:hover > .inner > .bg,
 .index > .blog > .thumb.thumb_nasa:hover > .inner > .bg {
@@ -4612,6 +4617,11 @@ body.fixed {
 .related > .relateds > .thumb.thumb_pins:hover > .inner > .bg,
 .index > .blog > .thumb.thumb_pins:hover > .inner > .bg {
   background-color: rgba(117,130,177,0.75);
+}
+.blog > .summary > .thumbs > .thumb.thumb_pulse:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_pulse:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_pulse:hover > .inner > .bg {
+  background-color: rgba(238,86,85,0.75);
 }
 .blog > .summary > .thumbs > .thumb > .inner,
 .related > .relateds > .thumb > .inner,
@@ -4889,11 +4899,17 @@ body.fixed {
 .blog > .entry > .related > .title.title_fuelband {
   background-color: #3bb62e;
 }
+.blog > .entry > .related > .title.title_malcolm {
+  background-color: #76d734;
+}
 .blog > .entry > .related > .title.title_nasa {
   background-color: #7582b1;
 }
 .blog > .entry > .related > .title.title_pins {
   background-color: #7582b1;
+}
+.blog > .entry > .related > .title.title_pulse {
+  background-color: #ee5655;
 }
 .blog > .entry > .credits.credits_eightarms > .inner > .sections > .section > .title {
   color: #f4ab8b;
@@ -4901,11 +4917,17 @@ body.fixed {
 .blog > .entry > .credits.credits_fuelband > .inner > .sections > .section > .title {
   color: #3bb62e;
 }
+.blog > .entry > .credits.credits_malcolm > .inner > .sections > .section > .title {
+  color: #76d734;
+}
 .blog > .entry > .credits.credits_nasa > .inner > .sections > .section > .title {
   color: #7582b1;
 }
 .blog > .entry > .credits.credits_pins > .inner > .sections > .section > .title {
   color: #7582b1;
+}
+.blog > .entry > .credits.credits_pulse > .inner > .sections > .section > .title {
+  color: #ee5655;
 }
 .blog > .entry > .credits > .inner {
   max-width: 1020px;
@@ -5034,6 +5056,22 @@ body.fixed {
 .about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover {
   background-color: rgba(59,182,46,0.25);
 }
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm.active,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm.active,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm.active,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm.active,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm.active,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm.active {
+  background-color: #76d734;
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm:hover,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm:hover,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm:hover,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm:hover,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm:hover,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm:hover {
+  background-color: rgba(118,215,52,0.25);
+}
 .blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa.active,
 .blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa.active,
 .about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_nasa.active,
@@ -5065,6 +5103,22 @@ body.fixed {
 .blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins:hover,
 .about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pins:hover {
   background-color: rgba(117,130,177,0.25);
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse.active,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse.active,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse.active,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse.active,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse.active,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse.active {
+  background-color: #ee5655;
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse:hover,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse:hover,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse:hover,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse:hover,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse:hover,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse:hover {
+  background-color: rgba(238,86,85,0.25);
 }
 .blog > .summary > .fcontainer {
   height: 60px;

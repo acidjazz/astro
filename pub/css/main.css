@@ -4593,6 +4593,11 @@ body.fixed {
   -ms-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
+.blog > .summary > .thumbs > .thumb.thumb_eightarms:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_eightarms:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_eightarms:hover > .inner > .bg {
+  background-color: rgba(244,171,139,0.75);
+}
 .blog > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_fuelband:hover > .inner > .bg,
 .index > .blog > .thumb.thumb_fuelband:hover > .inner > .bg {
@@ -4878,6 +4883,9 @@ body.fixed {
   padding: 20px;
   color: #fff;
 }
+.blog > .entry > .related > .title.title_eightarms {
+  background-color: #f4ab8b;
+}
 .blog > .entry > .related > .title.title_fuelband {
   background-color: #3bb62e;
 }
@@ -4886,6 +4894,9 @@ body.fixed {
 }
 .blog > .entry > .related > .title.title_pins {
   background-color: #7582b1;
+}
+.blog > .entry > .credits.credits_eightarms > .inner > .sections > .section > .title {
+  color: #f4ab8b;
 }
 .blog > .entry > .credits.credits_fuelband > .inner > .sections > .section > .title {
   color: #3bb62e;
@@ -4990,6 +5001,22 @@ body.fixed {
   cursor: pointer;
   display: inline-block;
   padding: 20px;
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms.active,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms.active,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms.active,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms.active,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms.active,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms.active {
+  background-color: #f4ab8b;
+}
+.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms:hover,
+.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms:hover,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms:hover,
+.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms:hover,
+.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms:hover,
+.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms:hover {
+  background-color: rgba(244,171,139,0.25);
 }
 .blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
 .blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,

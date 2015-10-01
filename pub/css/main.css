@@ -4459,8 +4459,6 @@ body.fixed {
 .related > .relateds > .thumb,
 .index > .blog > .thumb {
   float: left;
-  width: 33.333%;
-  height: 300px;
   cursor: pointer;
   -webkit-animation: cellInY 0.2s 0s ease-in both;
   -moz-animation: cellInY 0.2s 0s ease-in both;

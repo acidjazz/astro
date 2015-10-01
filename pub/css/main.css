@@ -4695,9 +4695,6 @@ body.fixed {
   -ms-transition: opacity 0.1s linear 0.1s;
   transition: opacity 0.1s linear 0.1s;
 }
-.blog > .entry {
-  min-height: 600px;
-}
 .blog > .entry.on {
   display: block;
 }

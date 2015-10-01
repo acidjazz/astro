@@ -167,14 +167,21 @@ Global = {
           location.href = '/work/';
         }
       }
+      if (option === 'blog') {
+        if (location.href.match('blog') !== null) {
+          Blog.summary();
+          _.on('.summary > .thumbs > .thumb');
+          _.off('.summary > .filters > .inner > .filtermenu > .filter');
+          _.on('.summary > .filters > .inner > .filtermenu > .filter_all');
+        } else {
+          location.href = '/blog/';
+        }
+      }
       if (option === 'about') {
         location.href = '/about/';
       }
       if (option === 'contact') {
-        location.href = '/contact/';
-      }
-      if (option === 'blog') {
-        return location.href = '/blog/';
+        return location.href = '/contact/';
       }
     }, 400);
   },

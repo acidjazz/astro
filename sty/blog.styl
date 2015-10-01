@@ -104,10 +104,17 @@
       > .date
         float left
         line-height 40px
-      > .author
+      > .author, > .tags
         float left
         padding 0 0 0 20px
         line-height 40px
+        > a
+          display inline-block
+          color: c.red2
+          text-decoration none
+        > .comma
+          display inline-block
+          margin 0 4px 0 -4px
       > .shares
         float right
         > .copy
@@ -283,6 +290,7 @@
                 background-color: rgba(c[entry.color], 0.25)
  
 .blog > .summary
+  padding 0 0 0 0
   > .fcontainer
     height 60px
     background-color white

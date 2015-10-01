@@ -257,7 +257,7 @@
 .footer > .inner > .section {
   float: left;
   width: 25%;
-  font: 14px aktivgrotesk light;
+  font: 20px blenderpro medium;
   min-height: 300px;
   min-width: 300px;
 }
@@ -4738,10 +4738,22 @@ body.fixed {
   float: left;
   line-height: 40px;
 }
-.blog > .entry > .details > .author {
+.blog > .entry > .details > .author,
+.blog > .entry > .details > .tags {
   float: left;
   padding: 0 0 0 20px;
   line-height: 40px;
+}
+.blog > .entry > .details > .author > a,
+.blog > .entry > .details > .tags > a {
+  display: inline-block;
+  color: #f03;
+  text-decoration: none;
+}
+.blog > .entry > .details > .author > .comma,
+.blog > .entry > .details > .tags > .comma {
+  display: inline-block;
+  margin: 0 4px 0 -4px;
 }
 .blog > .entry > .details > .shares {
   float: right;
@@ -5114,6 +5126,9 @@ body.fixed {
 .blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse:hover,
 .about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_pulse:hover {
   background-color: rgba(238,86,85,0.25);
+}
+.blog > .summary {
+  padding: 0 0 0 0;
 }
 .blog > .summary > .fcontainer {
   height: 60px;

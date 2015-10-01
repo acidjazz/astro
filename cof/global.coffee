@@ -200,12 +200,19 @@ Global =
         else
           location.href = '/work/'
 
+      if option is 'blog'
+        if location.href.match('blog') isnt null
+          Blog.summary()
+          _.on '.summary > .thumbs > .thumb'
+          _.off '.summary > .filters > .inner > .filtermenu > .filter'
+          _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
+        else
+          location.href = '/blog/'
+
       if option is 'about'
           location.href = '/about/'
       if option is 'contact'
           location.href = '/contact/'
-      if option is 'blog'
-          location.href = '/blog/'
 
     , 400
 

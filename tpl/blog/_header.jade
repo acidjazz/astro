@@ -2,7 +2,12 @@
 
 .details
   .date=entry.date
-  .author Posted by #{entry.author}
+  .author Posted by 
+    a(href='/blog/#author=#{entry.author}') #{entry.author}
+  .tags Filed Under 
+    each tag in entry.tags
+      a(href='/blog/#tag=#{tag}')=tag.trim()
+      .comma=','
   .shares
     .copy SHARE
     .share.share_instagram

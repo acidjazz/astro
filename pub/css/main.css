@@ -4412,7 +4412,7 @@ body.fixed {
 }
 @media all and (min-width: 1001) and (max-width: 1600px) {
   .thumb {
-    width: 33.333% false;
+    width: 33.333% !important;
     height: 23vw !important;
   }
 }

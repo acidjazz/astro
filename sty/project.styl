@@ -22,7 +22,7 @@
         text-align center
         letter-spacing 2px
         margin auto
-.projects > .summary > .thumbs, .related > .relateds, .index > .projects
+.projects > .summary > .thumbs, .related > .relateds, .index > .projects, .blog > .summary > .thumbs, .related > .relateds, .index > .blog
   > .thumb
     &.on
       display block
@@ -45,6 +45,10 @@
     for key, project in data.project
       &.thumb_{project.folder}:hover > .inner > .bg
         background-color: rgba(c[project.color], 0.75)
+    for key, entry in data.blog
+      &.thumb_{entry.folder}:hover > .inner > .bg
+        background-color: rgba(c[entry.color], 0.75)
+
     > .inner
       background-size 120%
       background-repeat no-repeat
@@ -60,7 +64,8 @@
         > .copy
           color: c.white1
           text-align center
-          padding 110px 0 0 0
+          margin 0 50px
+          padding 20% 0 0 0
           > .name
             font f_h2
             opacity 0

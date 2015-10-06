@@ -19,6 +19,56 @@ Blog =
     $('.blog > .summary > .thumbs > .thumb').on 'click', Blog.entryHandler
     $('.blog > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on 'click', Blog.entryHandler
 
+    $('.entry > .details > .tags a').on 'click', Blog.tagHandler
+    $('.entry > .details > .author a').on 'click', Blog.authorHandler
+
+    $('.blog > .summary > .crumb > .close').on 'click', Blog.filterReset
+
+
+  filterReset: ->
+    _.off '.crumb'
+    _.on '.thumb'
+    entry = location.hash = ''
+    Blog.summary()
+
+  tagHandler: ->
+    tag = $(this).text()
+    Blog.tagFilter tag
+
+  authorHandler: ->
+    tag = $(this).text()
+    Blog.authorFilter tag
+
+  authorFilter: (author) ->
+
+    Blog.summary()
+
+    _.on '.crumb'
+    $('.crumb > .copy > span.desc').text 'Posts by '
+    $('.crumb > .copy > span.value').text author
+
+    $('.summary > .thumbs > .thumb').each (i, el) ->
+      if author is $(el).data 'author'
+        _.on $(el)
+      else
+        _.off $(el)
+
+  tagFilter: (tag) ->
+
+    Blog.summary()
+
+    _.on '.crumb'
+    $('.crumb > .copy > span.desc').text 'Filtering by '
+    $('.crumb > .copy > span.value').text tag
+
+    $('.summary > .thumbs > .thumb').each (i, el) ->
+      tags = $(el).data 'tags'
+      console.log tags
+      if tags.indexOf(tag) isnt -1
+        _.on $(el)
+      else
+        _.off $(el)
+
   entryHandler: ->
 
     entry = $(this).data 'entry'
@@ -34,7 +84,7 @@ Blog =
     $('#nprogress .bar').removeClass (index, css) ->
       (css.match(/\bbar__\S+/g) or []).join ' '
 
-    _.off '.project'
+    _.off '.entry'
     _.on '.orbit'
     NProgress.start()
 

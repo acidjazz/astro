@@ -14,12 +14,19 @@ block content
       .hero
         .copy1 &nbsp;
         .copy2  Lorem Ipsum sample for blog summary page
+      .crumb.off
+        .close &#10005;
+        .copy 
+          span.desc Filtering by 
+          span.value FILTER
+        .clear
       .thumbs
         each entry in data.blog
           .thumb.on(
             class='thumb_' + entry.folder,
             data-entry=entry.folder,
             data-tags=entry.tags
+            data-author=entry.author
           )
             .inner(
               style='background-image: url(../img/blog/' + entry.folder + '/1440/' + entry.cover + ');',

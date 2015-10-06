@@ -3552,7 +3552,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb,
 .related > .relateds > .thumb,
-.index > .projects > .thumb {
+.index > .projects > .thumb,
+.blog > .summary > .thumbs > .thumb,
+.index > .blog > .thumb {
   float: left;
   width: 33.333%;
   height: 23vw;
@@ -3566,20 +3568,28 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb.on,
 .related > .relateds > .thumb.on,
-.index > .projects > .thumb.on {
+.index > .projects > .thumb.on,
+.blog > .summary > .thumbs > .thumb.on,
+.index > .blog > .thumb.on {
   display: block;
 }
 .projects > .summary > .thumbs > .thumb.off,
 .related > .relateds > .thumb.off,
-.index > .projects > .thumb.off {
+.index > .projects > .thumb.off,
+.blog > .summary > .thumbs > .thumb.off,
+.index > .blog > .thumb.off {
   display: none;
 }
 .projects > .summary > .thumbs > .thumb:hover > .inner > .bg > .copy > .name,
 .related > .relateds > .thumb:hover > .inner > .bg > .copy > .name,
 .index > .projects > .thumb:hover > .inner > .bg > .copy > .name,
+.blog > .summary > .thumbs > .thumb:hover > .inner > .bg > .copy > .name,
+.index > .blog > .thumb:hover > .inner > .bg > .copy > .name,
 .projects > .summary > .thumbs > .thumb:hover > .inner > .bg > .copy > .filters,
 .related > .relateds > .thumb:hover > .inner > .bg > .copy > .filters,
-.index > .projects > .thumb:hover > .inner > .bg > .copy > .filters {
+.index > .projects > .thumb:hover > .inner > .bg > .copy > .filters,
+.blog > .summary > .thumbs > .thumb:hover > .inner > .bg > .copy > .filters,
+.index > .blog > .thumb:hover > .inner > .bg > .copy > .filters {
   opacity: 1;
   -ms-filter: none;
   filter: none;
@@ -3591,7 +3601,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb:nth-child(0),
 .related > .relateds > .thumb:nth-child(0),
-.index > .projects > .thumb:nth-child(0) {
+.index > .projects > .thumb:nth-child(0),
+.blog > .summary > .thumbs > .thumb:nth-child(0),
+.index > .blog > .thumb:nth-child(0) {
   -webkit-animation-delay: 0s;
   -moz-animation-delay: 0s;
   -o-animation-delay: 0s;
@@ -3600,7 +3612,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb:nth-child(1),
 .related > .relateds > .thumb:nth-child(1),
-.index > .projects > .thumb:nth-child(1) {
+.index > .projects > .thumb:nth-child(1),
+.blog > .summary > .thumbs > .thumb:nth-child(1),
+.index > .blog > .thumb:nth-child(1) {
   -webkit-animation-delay: 0.05s;
   -moz-animation-delay: 0.05s;
   -o-animation-delay: 0.05s;
@@ -3609,7 +3623,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb:nth-child(2),
 .related > .relateds > .thumb:nth-child(2),
-.index > .projects > .thumb:nth-child(2) {
+.index > .projects > .thumb:nth-child(2),
+.blog > .summary > .thumbs > .thumb:nth-child(2),
+.index > .blog > .thumb:nth-child(2) {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   -o-animation-delay: 0.1s;
@@ -3618,7 +3634,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb:nth-child(3),
 .related > .relateds > .thumb:nth-child(3),
-.index > .projects > .thumb:nth-child(3) {
+.index > .projects > .thumb:nth-child(3),
+.blog > .summary > .thumbs > .thumb:nth-child(3),
+.index > .blog > .thumb:nth-child(3) {
   -webkit-animation-delay: 0.15s;
   -moz-animation-delay: 0.15s;
   -o-animation-delay: 0.15s;
@@ -3627,7 +3645,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb:nth-child(4),
 .related > .relateds > .thumb:nth-child(4),
-.index > .projects > .thumb:nth-child(4) {
+.index > .projects > .thumb:nth-child(4),
+.blog > .summary > .thumbs > .thumb:nth-child(4),
+.index > .blog > .thumb:nth-child(4) {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   -o-animation-delay: 0.2s;
@@ -3636,7 +3656,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb:nth-child(5),
 .related > .relateds > .thumb:nth-child(5),
-.index > .projects > .thumb:nth-child(5) {
+.index > .projects > .thumb:nth-child(5),
+.blog > .summary > .thumbs > .thumb:nth-child(5),
+.index > .blog > .thumb:nth-child(5) {
   -webkit-animation-delay: 0.25s;
   -moz-animation-delay: 0.25s;
   -o-animation-delay: 0.25s;
@@ -3645,7 +3667,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb:nth-child(6),
 .related > .relateds > .thumb:nth-child(6),
-.index > .projects > .thumb:nth-child(6) {
+.index > .projects > .thumb:nth-child(6),
+.blog > .summary > .thumbs > .thumb:nth-child(6),
+.index > .blog > .thumb:nth-child(6) {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
   -o-animation-delay: 0.3s;
@@ -3654,7 +3678,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb:nth-child(7),
 .related > .relateds > .thumb:nth-child(7),
-.index > .projects > .thumb:nth-child(7) {
+.index > .projects > .thumb:nth-child(7),
+.blog > .summary > .thumbs > .thumb:nth-child(7),
+.index > .blog > .thumb:nth-child(7) {
   -webkit-animation-delay: 0.35s;
   -moz-animation-delay: 0.35s;
   -o-animation-delay: 0.35s;
@@ -3663,7 +3689,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb:nth-child(8),
 .related > .relateds > .thumb:nth-child(8),
-.index > .projects > .thumb:nth-child(8) {
+.index > .projects > .thumb:nth-child(8),
+.blog > .summary > .thumbs > .thumb:nth-child(8),
+.index > .blog > .thumb:nth-child(8) {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   -o-animation-delay: 0.4s;
@@ -3672,7 +3700,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb:nth-child(9),
 .related > .relateds > .thumb:nth-child(9),
-.index > .projects > .thumb:nth-child(9) {
+.index > .projects > .thumb:nth-child(9),
+.blog > .summary > .thumbs > .thumb:nth-child(9),
+.index > .blog > .thumb:nth-child(9) {
   -webkit-animation-delay: 0.45s;
   -moz-animation-delay: 0.45s;
   -o-animation-delay: 0.45s;
@@ -3681,7 +3711,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb:nth-child(10),
 .related > .relateds > .thumb:nth-child(10),
-.index > .projects > .thumb:nth-child(10) {
+.index > .projects > .thumb:nth-child(10),
+.blog > .summary > .thumbs > .thumb:nth-child(10),
+.index > .blog > .thumb:nth-child(10) {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   -o-animation-delay: 0.5s;
@@ -3690,72 +3722,142 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb.thumb_aos:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_aos:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_aos:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_aos:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_aos:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_aos:hover > .inner > .bg {
   background-color: rgba(67,73,101,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_fuelband:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_fuelband:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_fuelband:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_fuelband:hover > .inner > .bg {
   background-color: rgba(59,182,46,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_goggle:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_goggle:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_goggle:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_goggle:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_goggle:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_goggle:hover > .inner > .bg {
   background-color: rgba(68,68,68,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_jinnitv:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_jinnitv:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_jinnitv:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_jinnitv:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_jinnitv:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_jinnitv:hover > .inner > .bg {
   background-color: rgba(44,190,230,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_mineralist:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_mineralist:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_mineralist:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_mineralist:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_mineralist:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_mineralist:hover > .inner > .bg {
   background-color: rgba(236,128,0,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_minus8:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_minus8:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_minus8:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_minus8:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_minus8:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_minus8:hover > .inner > .bg {
   background-color: rgba(169,222,212,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_neff:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_neff:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_neff:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_neff:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_neff:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_neff:hover > .inner > .bg {
   background-color: rgba(244,103,178,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_owlet:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_owlet:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_owlet:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_owlet:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_owlet:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_owlet:hover > .inner > .bg {
   background-color: rgba(169,222,212,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_sol:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_sol:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_sol:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_sol:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_sol:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_sol:hover > .inner > .bg {
   background-color: rgba(117,130,177,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_tamar:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_tamar:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_tamar:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_tamar:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_tamar:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_tamar:hover > .inner > .bg {
   background-color: rgba(244,171,139,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_threedr:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_threedr:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_threedr:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_threedr:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_threedr:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_threedr:hover > .inner > .bg {
   background-color: rgba(118,215,52,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_versus:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_versus:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_versus:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_versus:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_versus:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_versus:hover > .inner > .bg {
   background-color: rgba(1,149,255,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_xbox:hover > .inner > .bg,
 .related > .relateds > .thumb.thumb_xbox:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_xbox:hover > .inner > .bg {
+.index > .projects > .thumb.thumb_xbox:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_xbox:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_xbox:hover > .inner > .bg {
   background-color: rgba(116,189,68,0.75);
+}
+.projects > .summary > .thumbs > .thumb.thumb_eightarms:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_eightarms:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_eightarms:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_eightarms:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_eightarms:hover > .inner > .bg {
+  background-color: rgba(244,171,139,0.75);
+}
+.projects > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_fuelband:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_fuelband:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_fuelband:hover > .inner > .bg {
+  background-color: rgba(59,182,46,0.75);
+}
+.projects > .summary > .thumbs > .thumb.thumb_malcolm:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_malcolm:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_malcolm:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_malcolm:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_malcolm:hover > .inner > .bg {
+  background-color: rgba(118,215,52,0.75);
+}
+.projects > .summary > .thumbs > .thumb.thumb_nasa:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_nasa:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_nasa:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_nasa:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_nasa:hover > .inner > .bg {
+  background-color: rgba(117,130,177,0.75);
+}
+.projects > .summary > .thumbs > .thumb.thumb_pins:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_pins:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_pins:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_pins:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_pins:hover > .inner > .bg {
+  background-color: rgba(117,130,177,0.75);
+}
+.projects > .summary > .thumbs > .thumb.thumb_pulse:hover > .inner > .bg,
+.related > .relateds > .thumb.thumb_pulse:hover > .inner > .bg,
+.index > .projects > .thumb.thumb_pulse:hover > .inner > .bg,
+.blog > .summary > .thumbs > .thumb.thumb_pulse:hover > .inner > .bg,
+.index > .blog > .thumb.thumb_pulse:hover > .inner > .bg {
+  background-color: rgba(238,86,85,0.75);
 }
 .projects > .summary > .thumbs > .thumb > .inner,
 .related > .relateds > .thumb > .inner,
-.index > .projects > .thumb > .inner {
+.index > .projects > .thumb > .inner,
+.blog > .summary > .thumbs > .thumb > .inner,
+.index > .blog > .thumb > .inner {
   -webkit-background-size: 120%;
   -moz-background-size: 120%;
   background-size: 120%;
@@ -3776,7 +3878,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb > .inner > .bg,
 .related > .relateds > .thumb > .inner > .bg,
-.index > .projects > .thumb > .inner > .bg {
+.index > .projects > .thumb > .inner > .bg,
+.blog > .summary > .thumbs > .thumb > .inner > .bg,
+.index > .blog > .thumb > .inner > .bg {
   height: 100%;
   -webkit-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
@@ -3786,14 +3890,19 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb > .inner > .bg > .copy,
 .related > .relateds > .thumb > .inner > .bg > .copy,
-.index > .projects > .thumb > .inner > .bg > .copy {
+.index > .projects > .thumb > .inner > .bg > .copy,
+.blog > .summary > .thumbs > .thumb > .inner > .bg > .copy,
+.index > .blog > .thumb > .inner > .bg > .copy {
   color: #fff;
   text-align: center;
-  padding: 110px 0 0 0;
+  margin: 0 50px;
+  padding: 20% 0 0 0;
 }
 .projects > .summary > .thumbs > .thumb > .inner > .bg > .copy > .name,
 .related > .relateds > .thumb > .inner > .bg > .copy > .name,
-.index > .projects > .thumb > .inner > .bg > .copy > .name {
+.index > .projects > .thumb > .inner > .bg > .copy > .name,
+.blog > .summary > .thumbs > .thumb > .inner > .bg > .copy > .name,
+.index > .blog > .thumb > .inner > .bg > .copy > .name {
   font: 46px blenderpro book;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -3811,7 +3920,9 @@ body.fixed {
 }
 .projects > .summary > .thumbs > .thumb > .inner > .bg > .copy > .filters,
 .related > .relateds > .thumb > .inner > .bg > .copy > .filters,
-.index > .projects > .thumb > .inner > .bg > .copy > .filters {
+.index > .projects > .thumb > .inner > .bg > .copy > .filters,
+.blog > .summary > .thumbs > .thumb > .inner > .bg > .copy > .filters,
+.index > .blog > .thumb > .inner > .bg > .copy > .filters {
   text-transform: uppercase;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -4455,260 +4566,69 @@ body.fixed {
   letter-spacing: 2px;
   margin: auto;
 }
-.blog > .summary > .thumbs > .thumb,
-.related > .relateds > .thumb,
-.index > .blog > .thumb {
-  float: left;
-  cursor: pointer;
-  -webkit-animation: cellInY 0.2s 0s ease-in both;
-  -moz-animation: cellInY 0.2s 0s ease-in both;
-  -o-animation: cellInY 0.2s 0s ease-in both;
-  -ms-animation: cellInY 0.2s 0s ease-in both;
-  animation: cellInY 0.2s 0s ease-in both;
-  overflow: hidden;
+.blog .summary > .crumb {
+  background-color: #fff;
+  padding: 50px 50px 50px 170px;
+  font: 40px blenderpro book;
 }
-.blog > .summary > .thumbs > .thumb.on,
-.related > .relateds > .thumb.on,
-.index > .blog > .thumb.on {
+.blog .summary > .crumb > .copy {
+  float: left;
+  -webkit-animation: cellInX 0.2s 0s ease-in both;
+  -moz-animation: cellInX 0.2s 0s ease-in both;
+  -o-animation: cellInX 0.2s 0s ease-in both;
+  -ms-animation: cellInX 0.2s 0s ease-in both;
+  animation: cellInX 0.2s 0s ease-in both;
+}
+.blog .summary > .crumb > .close {
+  cursor: pointer;
+  float: right;
+  width: 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 30px;
+  line-height: 34px;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -moz-transition: -moz-transform 0.1s linear;
+  -o-transition: -o-transform 0.1s linear;
+  -ms-transition: -ms-transform 0.1s linear;
+  transition: transform 0.1s linear;
+}
+.blog .summary > .crumb > .close:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.blog .summary > .crumb.on {
   display: block;
 }
-.blog > .summary > .thumbs > .thumb.off,
-.related > .relateds > .thumb.off,
-.index > .blog > .thumb.off {
+.blog .summary > .crumb.off {
   display: none;
 }
-.blog > .summary > .thumbs > .thumb:hover > .inner > .bg > .copy > .name,
-.related > .relateds > .thumb:hover > .inner > .bg > .copy > .name,
-.index > .blog > .thumb:hover > .inner > .bg > .copy > .name,
-.blog > .summary > .thumbs > .thumb:hover > .inner > .bg > .copy > .filters,
-.related > .relateds > .thumb:hover > .inner > .bg > .copy > .filters,
-.index > .blog > .thumb:hover > .inner > .bg > .copy > .filters {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.blog > .summary > .thumbs > .thumb:nth-child(0),
-.related > .relateds > .thumb:nth-child(0),
-.index > .blog > .thumb:nth-child(0) {
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  -o-animation-delay: 0s;
-  -ms-animation-delay: 0s;
-  animation-delay: 0s;
-}
-.blog > .summary > .thumbs > .thumb:nth-child(1),
-.related > .relateds > .thumb:nth-child(1),
-.index > .blog > .thumb:nth-child(1) {
-  -webkit-animation-delay: 0.05s;
-  -moz-animation-delay: 0.05s;
-  -o-animation-delay: 0.05s;
-  -ms-animation-delay: 0.05s;
-  animation-delay: 0.05s;
-}
-.blog > .summary > .thumbs > .thumb:nth-child(2),
-.related > .relateds > .thumb:nth-child(2),
-.index > .blog > .thumb:nth-child(2) {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  -o-animation-delay: 0.1s;
-  -ms-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-.blog > .summary > .thumbs > .thumb:nth-child(3),
-.related > .relateds > .thumb:nth-child(3),
-.index > .blog > .thumb:nth-child(3) {
-  -webkit-animation-delay: 0.15s;
-  -moz-animation-delay: 0.15s;
-  -o-animation-delay: 0.15s;
-  -ms-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-}
-.blog > .summary > .thumbs > .thumb:nth-child(4),
-.related > .relateds > .thumb:nth-child(4),
-.index > .blog > .thumb:nth-child(4) {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-.blog > .summary > .thumbs > .thumb:nth-child(5),
-.related > .relateds > .thumb:nth-child(5),
-.index > .blog > .thumb:nth-child(5) {
-  -webkit-animation-delay: 0.25s;
-  -moz-animation-delay: 0.25s;
-  -o-animation-delay: 0.25s;
-  -ms-animation-delay: 0.25s;
-  animation-delay: 0.25s;
-}
-.blog > .summary > .thumbs > .thumb:nth-child(6),
-.related > .relateds > .thumb:nth-child(6),
-.index > .blog > .thumb:nth-child(6) {
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-  -o-animation-delay: 0.3s;
-  -ms-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-.blog > .summary > .thumbs > .thumb:nth-child(7),
-.related > .relateds > .thumb:nth-child(7),
-.index > .blog > .thumb:nth-child(7) {
-  -webkit-animation-delay: 0.35s;
-  -moz-animation-delay: 0.35s;
-  -o-animation-delay: 0.35s;
-  -ms-animation-delay: 0.35s;
-  animation-delay: 0.35s;
-}
-.blog > .summary > .thumbs > .thumb:nth-child(8),
-.related > .relateds > .thumb:nth-child(8),
-.index > .blog > .thumb:nth-child(8) {
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-  -o-animation-delay: 0.4s;
-  -ms-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-.blog > .summary > .thumbs > .thumb:nth-child(9),
-.related > .relateds > .thumb:nth-child(9),
-.index > .blog > .thumb:nth-child(9) {
-  -webkit-animation-delay: 0.45s;
-  -moz-animation-delay: 0.45s;
-  -o-animation-delay: 0.45s;
-  -ms-animation-delay: 0.45s;
-  animation-delay: 0.45s;
-}
-.blog > .summary > .thumbs > .thumb:nth-child(10),
-.related > .relateds > .thumb:nth-child(10),
-.index > .blog > .thumb:nth-child(10) {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  -o-animation-delay: 0.5s;
-  -ms-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-.blog > .summary > .thumbs > .thumb.thumb_eightarms:hover > .inner > .bg,
-.related > .relateds > .thumb.thumb_eightarms:hover > .inner > .bg,
-.index > .blog > .thumb.thumb_eightarms:hover > .inner > .bg {
-  background-color: rgba(244,171,139,0.75);
-}
-.blog > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
-.related > .relateds > .thumb.thumb_fuelband:hover > .inner > .bg,
-.index > .blog > .thumb.thumb_fuelband:hover > .inner > .bg {
-  background-color: rgba(59,182,46,0.75);
-}
-.blog > .summary > .thumbs > .thumb.thumb_malcolm:hover > .inner > .bg,
-.related > .relateds > .thumb.thumb_malcolm:hover > .inner > .bg,
-.index > .blog > .thumb.thumb_malcolm:hover > .inner > .bg {
-  background-color: rgba(118,215,52,0.75);
-}
-.blog > .summary > .thumbs > .thumb.thumb_nasa:hover > .inner > .bg,
-.related > .relateds > .thumb.thumb_nasa:hover > .inner > .bg,
-.index > .blog > .thumb.thumb_nasa:hover > .inner > .bg {
-  background-color: rgba(117,130,177,0.75);
-}
-.blog > .summary > .thumbs > .thumb.thumb_pins:hover > .inner > .bg,
-.related > .relateds > .thumb.thumb_pins:hover > .inner > .bg,
-.index > .blog > .thumb.thumb_pins:hover > .inner > .bg {
-  background-color: rgba(117,130,177,0.75);
-}
-.blog > .summary > .thumbs > .thumb.thumb_pulse:hover > .inner > .bg,
-.related > .relateds > .thumb.thumb_pulse:hover > .inner > .bg,
-.index > .blog > .thumb.thumb_pulse:hover > .inner > .bg {
-  background-color: rgba(238,86,85,0.75);
-}
-.blog > .summary > .thumbs > .thumb > .inner,
-.related > .relateds > .thumb > .inner,
-.index > .blog > .thumb > .inner {
-  -webkit-background-size: 120%;
-  -moz-background-size: 120%;
-  background-size: 120%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 110%;
-  height: 110%;
-  margin: -5% 0 0 -5%;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.blog > .summary > .thumbs > .thumb > .inner > .bg,
-.related > .relateds > .thumb > .inner > .bg,
-.index > .blog > .thumb > .inner > .bg {
-  height: 100%;
-  -webkit-transition: background-color 0.1s linear;
-  -moz-transition: background-color 0.1s linear;
-  -o-transition: background-color 0.1s linear;
-  -ms-transition: background-color 0.1s linear;
-  transition: background-color 0.1s linear;
-}
-.blog > .summary > .thumbs > .thumb > .inner > .bg > .copy,
-.related > .relateds > .thumb > .inner > .bg > .copy,
-.index > .blog > .thumb > .inner > .bg > .copy {
-  color: #fff;
-  text-align: center;
-  padding: 110px 0 0 0;
-}
-.blog > .summary > .thumbs > .thumb > .inner > .bg > .copy > .name,
-.related > .relateds > .thumb > .inner > .bg > .copy > .name,
-.index > .blog > .thumb > .inner > .bg > .copy > .name {
-  font: 46px blenderpro book;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  -webkit-transform: translate(0, 10px);
-  -moz-transform: translate(0, 10px);
-  -o-transform: translate(0, 10px);
-  -ms-transform: translate(0, 10px);
-  transform: translate(0, 10px);
-  -webkit-transition: opacity 0.1s linear;
-  -moz-transition: opacity 0.1s linear;
-  -o-transition: opacity 0.1s linear;
-  -ms-transition: opacity 0.1s linear;
-  transition: opacity 0.1s linear;
-}
-.blog > .summary > .thumbs > .thumb > .inner > .bg > .copy > .filters,
-.related > .relateds > .thumb > .inner > .bg > .copy > .filters,
-.index > .blog > .thumb > .inner > .bg > .copy > .filters {
-  text-transform: uppercase;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  -webkit-transform: translate(0, 10px);
-  -moz-transform: translate(0, 10px);
-  -o-transform: translate(0, 10px);
-  -ms-transform: translate(0, 10px);
-  transform: translate(0, 10px);
-  -webkit-transition: opacity 0.1s linear 0.1s;
-  -moz-transition: opacity 0.1s linear 0.1s;
-  -o-transition: opacity 0.1s linear 0.1s;
-  -ms-transition: opacity 0.1s linear 0.1s;
-  transition: opacity 0.1s linear 0.1s;
-}
+.blog .thumb.on,
 .blog > .entry.on {
   display: block;
 }
+.blog .thumb.on > .cover,
 .blog > .entry.on > .cover,
+.blog .thumb.on > .body > .image > img,
 .blog > .entry.on > .body > .image > img {
   display: block;
 }
+.blog .thumb.off,
 .blog > .entry.off {
   display: none;
 }
+.blog .thumb.off > .cover,
 .blog > .entry.off > .cover,
+.blog .thumb.off > .body > .image > img,
 .blog > .entry.off > .body > .image > img {
   display: none;
 }
+.blog .thumb > .cover,
 .blog > .entry > .cover {
   height: 600px;
   position: relative;
@@ -4718,50 +4638,70 @@ body.fixed {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+.blog .thumb > .details,
 .blog > .entry > .details {
   padding: 20px 0 60px 0;
   max-width: 1020px;
   margin: auto;
 }
+.blog .thumb > .details > .copy,
 .blog > .entry > .details > .copy {
   padding: 100px 0 0 0;
 }
+.blog .thumb > .details > .copy > .name,
 .blog > .entry > .details > .copy > .name {
   font: 40px blenderpro book;
   padding: 0 0 15px 0;
 }
+.blog .thumb > .details > .copy > .description,
 .blog > .entry > .details > .copy > .description {
   font: 36px blenderpro book;
   padding: 0 0 15px 0;
 }
+.blog .thumb > .details > .date,
 .blog > .entry > .details > .date {
   float: left;
   line-height: 40px;
 }
+.blog .thumb > .details > .author,
 .blog > .entry > .details > .author,
+.blog .thumb > .details > .tags,
 .blog > .entry > .details > .tags {
   float: left;
   padding: 0 0 0 20px;
   line-height: 40px;
 }
+.blog .thumb > .details > .author > a,
 .blog > .entry > .details > .author > a,
+.blog .thumb > .details > .tags > a,
 .blog > .entry > .details > .tags > a {
   display: inline-block;
   color: #f03;
   text-decoration: none;
 }
+.blog .thumb > .details > .author > .comma,
 .blog > .entry > .details > .author > .comma,
+.blog .thumb > .details > .tags > .comma,
 .blog > .entry > .details > .tags > .comma {
   display: inline-block;
   margin: 0 4px 0 -4px;
 }
+.blog .thumb > .details > .author > .comma:last-child,
+.blog > .entry > .details > .author > .comma:last-child,
+.blog .thumb > .details > .tags > .comma:last-child,
+.blog > .entry > .details > .tags > .comma:last-child {
+  display: none;
+}
+.blog .thumb > .details > .shares,
 .blog > .entry > .details > .shares {
   float: right;
 }
+.blog .thumb > .details > .shares > .copy,
 .blog > .entry > .details > .shares > .copy {
   float: left;
   line-height: 40px;
 }
+.blog .thumb > .details > .shares > .share,
 .blog > .entry > .details > .shares > .share {
   float: left;
   width: 35px;
@@ -4772,13 +4712,17 @@ body.fixed {
   margin: 0 0 0 10px;
   cursor: pointer;
 }
+.blog .thumb > .details > .shares > .share > svg,
 .blog > .entry > .details > .shares > .share > svg {
   width: 20px;
   height: 20px;
   margin: 7.5px 0 0 7.5px;
 }
+.blog .thumb > .details > .shares > .share > svg > g,
 .blog > .entry > .details > .shares > .share > svg > g,
+.blog .thumb > .details > .shares > .share > svg > g path,
 .blog > .entry > .details > .shares > .share > svg > g path,
+.blog .thumb > .details > .shares > .share > svg > g > g > path,
 .blog > .entry > .details > .shares > .share > svg > g > g > path {
   fill: #fff;
 }

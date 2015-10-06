@@ -23,7 +23,7 @@ Work =
     $('.project .filters > .inner > .filtermenu > .filter').on 'click', Work.filterHandler
 
     $('.summary .filters > .inner > .filtermenu > .filter').on 'click', Work.summaryFilterHandler
-  
+
   summaryFilterHandler: ->
 
     #document.body.scrollTop = document.documentElement.scrollTop = 0

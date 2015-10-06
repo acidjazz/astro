@@ -17,7 +17,56 @@ Blog = {
   },
   handlers: function() {
     $('.blog > .summary > .thumbs > .thumb').on('click', Blog.entryHandler);
-    return $('.blog > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on('click', Blog.entryHandler);
+    $('.blog > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on('click', Blog.entryHandler);
+    $('.entry > .details > .tags a').on('click', Blog.tagHandler);
+    $('.entry > .details > .author a').on('click', Blog.authorHandler);
+    return $('.blog > .summary > .crumb > .close').on('click', Blog.filterReset);
+  },
+  filterReset: function() {
+    var entry;
+    _.off('.crumb');
+    _.on('.thumb');
+    entry = location.hash = '';
+    return Blog.summary();
+  },
+  tagHandler: function() {
+    var tag;
+    tag = $(this).text();
+    return Blog.tagFilter(tag);
+  },
+  authorHandler: function() {
+    var tag;
+    tag = $(this).text();
+    return Blog.authorFilter(tag);
+  },
+  authorFilter: function(author) {
+    Blog.summary();
+    _.on('.crumb');
+    $('.crumb > .copy > span.desc').text('Posts by ');
+    $('.crumb > .copy > span.value').text(author);
+    return $('.summary > .thumbs > .thumb').each(function(i, el) {
+      if (author === $(el).data('author')) {
+        return _.on($(el));
+      } else {
+        return _.off($(el));
+      }
+    });
+  },
+  tagFilter: function(tag) {
+    Blog.summary();
+    _.on('.crumb');
+    $('.crumb > .copy > span.desc').text('Filtering by ');
+    $('.crumb > .copy > span.value').text(tag);
+    return $('.summary > .thumbs > .thumb').each(function(i, el) {
+      var tags;
+      tags = $(el).data('tags');
+      console.log(tags);
+      if (tags.indexOf(tag) !== -1) {
+        return _.on($(el));
+      } else {
+        return _.off($(el));
+      }
+    });
   },
   entryHandler: function() {
     var entry;
@@ -35,7 +84,7 @@ Blog = {
     $('#nprogress .bar').removeClass(function(index, css) {
       return (css.match(/\bbar__\S+/g) || []).join(' ');
     });
-    _.off('.project');
+    _.off('.entry');
     _.on('.orbit');
     NProgress.start();
     srcs = [];

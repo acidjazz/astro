@@ -22,56 +22,29 @@
         text-align center
         letter-spacing 2px
         margin auto
-.blog > .summary > .thumbs, .related > .relateds, .index > .blog
-  > .thumb
-    &.on
-      display block
-    &.off
-      display none
-    float left
-    cursor pointer
-    animation cellInY 0.2s 0s ease-in both
-    overflow hidden
-    &:hover
-      > .inner > .bg > .copy
-        > .name, > .filters
-          opacity 1
-          transform translate(0, 0)
-    for num in 0..10
-      &:nth-child({num})
-        animation-delay unit(num*0.05, 's')
-    for key, entry in data.blog
-      &.thumb_{entry.folder}:hover > .inner > .bg
-        background-color: rgba(c[entry.color], 0.75)
-    > .inner
-      background-size 120%
-      background-repeat no-repeat
-      background-position 50% 50%
-      width 110%
-      height 110%
-      margin -5% 0 0 -5%
-      transform-style preserve-3d
-      backface-visibility hidden
-      > .bg
-        height 100%
-        transition background-color 0.1s linear
-        > .copy
-          color: c.white1
-          text-align center
-          padding 110px 0 0 0
-          > .name
-            font f_h2
-            opacity 0
-            transform translate(0, 10px)
-            transition opacity 0.1s linear
-          > .filters
-            text-transform uppercase
-            opacity 0
-            transform translate(0, 10px)
-            transition opacity 0.1s linear 0.1s
-        
-
+    > .crumb
+      background-color: c.white1
+      padding 50px 50px 50px 170px
+      font f_h3
+      > .copy
+        float left
+        animation cellInX 0.2s 0s ease-in both
+      > .close
+        cursor pointer
+        float right
+        width 30px
+        user-select none
+        height 30px
+        line-height 34px
+        transition transform 0.1s linear
+        &:hover
+          transform rotate(90deg)
+      &.on
+        display block
+      &.off
+        display none
 .blog
+  .thumb
 
   > .entry
     &.on
@@ -115,6 +88,8 @@
         > .comma
           display inline-block
           margin 0 4px 0 -4px
+          &:last-child
+            display none
       > .shares
         float right
         > .copy

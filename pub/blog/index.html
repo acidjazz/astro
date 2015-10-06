@@ -142,8 +142,13 @@
           <div class="copy1">&nbsp;</div>
           <div class="copy2"> Lorem Ipsum sample for blog summary page</div>
         </div>
+        <div class="crumb off">
+          <div class="close">&#10005;</div>
+          <div class="copy"> <span class="desc">Filtering by </span><span class="value">FILTER</span></div>
+          <div class="clear"></div>
+        </div>
         <div class="thumbs">
-          <div data-entry="eightarms" data-tags='["design","studio"]' class="thumb on thumb_eightarms">
+          <div data-entry="eightarms" data-tags='["design","studio"]' data-author="Kevin Olson" class="thumb on thumb_eightarms">
             <div style="background-image: url(../img/blog/eightarms/1440/cover.jpg);" class="inner">
               <div class="bg">
                 <div class="copy">
@@ -153,7 +158,7 @@
               </div>
             </div>
           </div>
-          <div data-entry="fuelband" data-tags='["strategy","digital","product"]' class="thumb on thumb_fuelband">
+          <div data-entry="fuelband" data-tags='["strategy","digital","product"]' data-author="Bob Dole" class="thumb on thumb_fuelband">
             <div style="background-image: url(../img/blog/fuelband/1440/Fuelband_banner.png);" class="inner">
               <div class="bg">
                 <div class="copy">
@@ -163,7 +168,7 @@
               </div>
             </div>
           </div>
-          <div data-entry="malcolm" data-tags='["culture","studio"]' class="thumb on thumb_malcolm">
+          <div data-entry="malcolm" data-tags='["culture","studio"]' data-author="Kevin Olson" class="thumb on thumb_malcolm">
             <div style="background-image: url(../img/blog/malcolm/1440/cover.jpg);" class="inner">
               <div class="bg">
                 <div class="copy">
@@ -173,7 +178,7 @@
               </div>
             </div>
           </div>
-          <div data-entry="nasa" data-tags='["culture"]' class="thumb on thumb_nasa">
+          <div data-entry="nasa" data-tags='["culture"]' data-author="Bob Dole" class="thumb on thumb_nasa">
             <div style="background-image: url(../img/blog/nasa/1440/cover.jpg);" class="inner">
               <div class="bg">
                 <div class="copy">
@@ -183,7 +188,7 @@
               </div>
             </div>
           </div>
-          <div data-entry="pins" data-tags='["news","studio"]' class="thumb on thumb_pins">
+          <div data-entry="pins" data-tags='["news","studio"]' data-author="Kevin Olson" class="thumb on thumb_pins">
             <div style="background-image: url(../img/blog/pins/1440/cover.jpg);" class="inner">
               <div class="bg">
                 <div class="copy">
@@ -193,7 +198,7 @@
               </div>
             </div>
           </div>
-          <div data-entry="pulse" data-tags='["design","news"]' class="thumb on thumb_pulse">
+          <div data-entry="pulse" data-tags='["design","news"]' data-author="Kevin Olson" class="thumb on thumb_pulse">
             <div style="background-image: url(../img/blog/pulse/1440/cover.jpg);" class="inner">
               <div class="bg">
                 <div class="copy">
@@ -211,7 +216,7 @@
         <div style="background-image: url(../img/blog/fuelband/Fuelband_banner.png);" class="cover"></div>
         <div class="details">
           <div class="date">9.20.2015</div>
-          <div class="author">Posted by <a href="/blog/#author=Kevin Olson">Kevin Olson</a></div>
+          <div class="author">Posted by <a href="/blog/#author=Bob Dole">Bob Dole</a></div>
           <div class="tags">Filed Under <a href="/blog/#tag=strategy">strategy</a>
             <div class="comma">,</div><a href="/blog/#tag=digital">digital</a>
             <div class="comma">,</div><a href="/blog/#tag=product">product</a>
@@ -364,7 +369,7 @@
         <div style="background-image: url(../img/blog/nasa/cover.jpg);" class="cover"></div>
         <div class="details">
           <div class="date">9.27.2015</div>
-          <div class="author">Posted by <a href="/blog/#author=Kevin Olson">Kevin Olson</a></div>
+          <div class="author">Posted by <a href="/blog/#author=Bob Dole">Bob Dole</a></div>
           <div class="tags">Filed Under <a href="/blog/#tag=culture">culture</a>
             <div class="comma">,</div>
           </div>
@@ -1243,7 +1248,7 @@
       function loadercomplete() {
         Loader.load('../jst/blog.js', 'Blog');
         Global.i()
-        entries = {"eightarms":{"folder":"eightarms","cover":"cover.jpg","author":"Kevin Olson","date":"7.6.2015","name":"So many watches I need 8 arms","description":"The updated color ways for Minus 8's Layer 24 collection have just dropped in.  In this follow up collection, we were inspired by bold color blocking, and userd the unique layer construction to create new, unexpected color and material finish separations in the case.  New details include various enamel and lume-filled branded etching which adds depth to smooth case geometry.  Look for new Minus 8 watch models soon.","color":"orange1","tags":["design","studio"],"home":true},"fuelband":{"folder":"fuelband","cover":"Fuelband_banner.png","author":"Kevin Olson","date":"9.20.2015","name":"Nike+ Fuelband","description":"Nike Digital Sport asked ASTRO to help develop a product that would change the way people think about fitness.  Thus was born the Nike+ Fuelband.  A revolutionary piece of wearable tech that does more than simply track activity, it lets wearers play the game of life against each other.","color":"green3","tags":["strategy","digital","product"],"related":["goggle","threedr","fuelband"]},"malcolm":{"folder":"malcolm","cover":"cover.jpg","author":"Kevin Olson","date":"9.22.2015","name":"Dodgeball Uniforms","description":"Airbrush painting has long lived in mall kiosks, county fair booths and/or street fairs.  Malcolm Stuart is keeping this art form in thrive-mode working out his loft in Oakland painting his perfect mix of pop and beauty.  Malcolm got his MFA at the School of Visual Arts in Manhattan.","color":"green1","tags":["culture","studio"],"home":true},"nasa":{"folder":"nasa","cover":"cover.jpg","author":"Kevin Olson","date":"9.27.2015","name":"NASA Brand Guide","description":"The original NASA brand guide has been making its roudns on the blogs; we saw it on HYPEBEAST then","color":"blue4","tags":["culture"],"home":true},"pins":{"folder":"pins","cover":"cover.jpg","author":"Kevin Olson","date":"8.31.2015","name":"Pins for the Win","description":"With enamel pins trending in streetwear, we were inspired and designed our first collection celebrating our #FIGHTGRAVITY campaign.  These little guys have proven to be popular, so save some space on your lapels for our next collection.","color":"blue4","tags":["news","studio"],"home":true},"pulse":{"folder":"pulse","cover":"cover.jpg","author":"Kevin Olson","date":"9.22.2015","name":"Baller sound that won't drain your wallet","description":"Motorola just released the Astro designed Moto Pulse on-ear headphones.  These cans boast 40mm speaker drivers and bluetooth connectivity up to 60 feet.  The battery also lasts up to 18 hours on a single charge.  Yes they look awesome, yes they sound killer, but the real lure just may be their affordability.  $59.99 out the door!  The Pulse comes in two colors to choose from, black and chalk.  Check out the positive reviews in TheVerge and Engadget, then go slap a pair on your earholes!","color":"red1","tags":["design","news"],"home":true}};
+        entries = {"eightarms":{"folder":"eightarms","cover":"cover.jpg","author":"Kevin Olson","date":"7.6.2015","name":"So many watches I need 8 arms","description":"The updated color ways for Minus 8's Layer 24 collection have just dropped in.  In this follow up collection, we were inspired by bold color blocking, and userd the unique layer construction to create new, unexpected color and material finish separations in the case.  New details include various enamel and lume-filled branded etching which adds depth to smooth case geometry.  Look for new Minus 8 watch models soon.","color":"orange1","tags":["design","studio"],"home":true},"fuelband":{"folder":"fuelband","cover":"Fuelband_banner.png","author":"Bob Dole","date":"9.20.2015","name":"Nike+ Fuelband","description":"Nike Digital Sport asked ASTRO to help develop a product that would change the way people think about fitness.  Thus was born the Nike+ Fuelband.  A revolutionary piece of wearable tech that does more than simply track activity, it lets wearers play the game of life against each other.","color":"green3","tags":["strategy","digital","product"],"related":["goggle","threedr","fuelband"]},"malcolm":{"folder":"malcolm","cover":"cover.jpg","author":"Kevin Olson","date":"9.22.2015","name":"Dodgeball Uniforms","description":"Airbrush painting has long lived in mall kiosks, county fair booths and/or street fairs.  Malcolm Stuart is keeping this art form in thrive-mode working out his loft in Oakland painting his perfect mix of pop and beauty.  Malcolm got his MFA at the School of Visual Arts in Manhattan.","color":"green1","tags":["culture","studio"],"home":true},"nasa":{"folder":"nasa","cover":"cover.jpg","author":"Bob Dole","date":"9.27.2015","name":"NASA Brand Guide","description":"The original NASA brand guide has been making its roudns on the blogs; we saw it on HYPEBEAST then","color":"blue4","tags":["culture"],"home":true},"pins":{"folder":"pins","cover":"cover.jpg","author":"Kevin Olson","date":"8.31.2015","name":"Pins for the Win","description":"With enamel pins trending in streetwear, we were inspired and designed our first collection celebrating our #FIGHTGRAVITY campaign.  These little guys have proven to be popular, so save some space on your lapels for our next collection.","color":"blue4","tags":["news","studio"],"home":true},"pulse":{"folder":"pulse","cover":"cover.jpg","author":"Kevin Olson","date":"9.22.2015","name":"Baller sound that won't drain your wallet","description":"Motorola just released the Astro designed Moto Pulse on-ear headphones.  These cans boast 40mm speaker drivers and bluetooth connectivity up to 60 feet.  The battery also lasts up to 18 hours on a single charge.  Yes they look awesome, yes they sound killer, but the real lure just may be their affordability.  $59.99 out the door!  The Pulse comes in two colors to choose from, black and chalk.  Check out the positive reviews in TheVerge and Engadget, then go slap a pair on your earholes!","color":"red1","tags":["design","news"],"home":true}};
       }
     </script>
     <script type="text/javascript">

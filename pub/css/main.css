@@ -2787,6 +2787,7 @@ body.fixed {
   -ms-animation: fadeIn 0.5s ease-in both;
   animation: fadeIn 0.5s ease-in both;
   background-image: url("/img/about/banner.jpg");
+  margin: -64px 0 0 0;
 }
 .about > .banner > .copy {
   position: absolute;
@@ -2804,10 +2805,18 @@ body.fixed {
   -ms-animation: cellInY 0.75s 0s ease-in both;
   animation: cellInY 0.75s 0s ease-in both;
 }
+.about > .fcontainer {
+  height: 64px;
+}
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter.on,
+.about > .fcontainer > .filters > .inner > .filtermenu > .filter:hover {
+  background-color: #f0f0f0;
+}
 .about > .block {
   background-color: #363a42;
 }
 .about > .block > .inner {
+  text-align: center;
   padding: 50px;
   max-width: 1020px;
   margin: auto;
@@ -3244,132 +3253,94 @@ body.fixed {
   -ms-animation-delay: 1.25s;
   animation-delay: 1.25s;
 }
-.about > .sections > .section_expertise {
+.about > .sections > .section_capabilities .hsbpd {
+  position: relative;
+}
+.about > .sections > .section_capabilities .hsbpd > .dots {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  margin-top: -110px;
+}
+.about > .sections > .section_capabilities .hsbpd > .dots > .dot {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.about > .sections > .section_capabilities .hsbpd > .dots > .dot.on {
+  background-color: #ee5655;
+}
+.about > .sections > .section_capabilities .hsbpd > .dots > .dot.off {
+  background-color: #fff;
+}
+.about > .sections > .section_capabilities .hsbpd > .slide {
+  padding: 100px 170px;
+  background-color: #000;
+  color: #fff;
+}
+.about > .sections > .section_capabilities .hsbpd > .slide > .char {
+  font: 46px blenderpro book;
+  border: 10px solid #fff;
+  float: left;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.about > .sections > .section_capabilities .hsbpd > .slide > .title {
+  float: left;
+  margin: 52px 0 0 20px;
+}
+.about > .sections > .section_capabilities .hsbpd > .slide > .copy {
+  font: 36px blenderpro book;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.about > .sections > .section_capabilities > .blocks {
   max-width: 1020px;
   margin: auto;
 }
-.about > .sections > .section_expertise > .capcenter {
-  background-color: #ffa500;
-}
-.about > .sections > .section_expertise > .capcenter > .capmenu {
-  float: left;
-  width: 200px;
-}
-.about > .sections > .section_expertise > .capcenter > .capmenu > .cap {
-  font: 28px blenderpro book;
-  cursor: pointer;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 20px;
-  -webkit-transition: background-color 0.1s linear;
-  -moz-transition: background-color 0.1s linear;
-  -o-transition: background-color 0.1s linear;
-  -ms-transition: background-color 0.1s linear;
-  transition: background-color 0.1s linear;
-}
-.about > .sections > .section_expertise > .capcenter > .capmenu > .cap:hover,
-.about > .sections > .section_expertise > .capcenter > .capmenu > .cap.on {
-  background-color: #22252b !important;
-}
-.about > .sections > .section_expertise > .capcenter > .descs {
-  margin: 0 0 0 200px;
-  color: #fff;
-  background-color: #22252b;
-}
-.about > .sections > .section_expertise > .capcenter > .descs > .desc {
-  padding: 40px;
-}
-.about > .sections > .section_expertise > .capcenter > .descs > .desc.on {
-  display: block;
-}
-.about > .sections > .section_expertise > .capcenter > .descs > .desc.off {
-  display: none;
-}
-.about > .sections > .section_expertise > .capcenter > .descs > .desc > .keywords {
-  font: 14px aktivgrotesk light;
-  text-transform: uppercase;
-  -webkit-animation: cellInX 0.2s 0s ease-in both;
-  -moz-animation: cellInX 0.2s 0s ease-in both;
-  -o-animation: cellInX 0.2s 0s ease-in both;
-  -ms-animation: cellInX 0.2s 0s ease-in both;
-  animation: cellInX 0.2s 0s ease-in both;
-}
-.about > .sections > .section_expertise > .capcenter > .descs > .desc > .title {
-  font: 46px blenderpro book;
-  margin: 0 0 20px 0;
-  -webkit-animation: cellInX 0.2s 0s ease-in both;
-  -moz-animation: cellInX 0.2s 0s ease-in both;
-  -o-animation: cellInX 0.2s 0s ease-in both;
-  -ms-animation: cellInX 0.2s 0s ease-in both;
-  animation: cellInX 0.2s 0s ease-in both;
-}
-.about > .sections > .section_expertise > .capcenter > .descs > .desc > .copy {
-  line-height: 40px;
-  -webkit-animation: cellInX 0.2s 0s ease-in both;
-  -moz-animation: cellInX 0.2s 0s ease-in both;
-  -o-animation: cellInX 0.2s 0s ease-in both;
-  -ms-animation: cellInX 0.2s 0s ease-in both;
-  animation: cellInX 0.2s 0s ease-in both;
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  -o-animation-delay: 0.1s;
-  -ms-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-.about > .sections > .section_expertise > .capcenter > .capmenu > .cap:nth-child(1) {
-  background-color: #363a42;
-}
-.about > .sections > .section_expertise > .capcenter > .capmenu > .cap:nth-child(2) {
-  background-color: #434965;
-}
-.about > .sections > .section_expertise > .capcenter > .capmenu > .cap:nth-child(3) {
-  background-color: #7582b1;
-}
-.about > .sections > .section_expertise > .capcenter > .capmenu > .cap:nth-child(4) {
-  background-color: #949dae;
-}
-.about > .sections > .section_expertise > .capcenter > .capmenu > .cap:nth-child(5) {
-  background-color: #acb2c1;
-}
-.about > .sections > .section_expertise > .blocks > .title {
+.about > .sections > .section_capabilities > .blocks > .title {
   font: 46px blenderpro book;
   padding: 25px 0;
 }
-.about > .sections > .section_expertise > .blocks > .blurb {
+.about > .sections > .section_capabilities > .blocks > .blurb {
   padding: 25px 0;
   -webkit-columns: 2;
   -moz-columns: 2;
   columns: 2;
 }
-.about > .sections > .section_expertise > .blocks > .blurb > p {
+.about > .sections > .section_capabilities > .blocks > .blurb > p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.about > .sections > .section_expertise > .blocks > .block {
+.about > .sections > .section_capabilities > .blocks > .block {
   width: 50%;
   height: 340px;
 }
-.about > .sections > .section_expertise > .blocks > .block.left {
+.about > .sections > .section_capabilities > .blocks > .block.left {
   float: left;
 }
-.about > .sections > .section_expertise > .blocks > .block.right {
+.about > .sections > .section_capabilities > .blocks > .block.right {
   float: right;
 }
-.about > .sections > .section_expertise > .blocks > .block.block_copy {
+.about > .sections > .section_capabilities > .blocks > .block.block_copy {
   background-color: #f0f0f0;
 }
-.about > .sections > .section_expertise > .blocks > .block.block_copy > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_copy > .inner {
   padding: 40px;
 }
-.about > .sections > .section_expertise > .blocks > .block.block_copy > .inner > .title {
+.about > .sections > .section_capabilities > .blocks > .block.block_copy > .inner > .title {
   font: 36px blenderpro book;
   margin: 0 0 10px 0;
 }
-.about > .sections > .section_expertise > .blocks > .block.block_copy > .inner > .copy {
+.about > .sections > .section_capabilities > .blocks > .block.block_copy > .inner > .copy {
   line-height: 30px;
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project {
+.about > .sections > .section_capabilities > .blocks > .block.block_project {
   background-position: 50% 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3377,46 +3348,46 @@ body.fixed {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_aos:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_aos:hover > .inner {
   background-color: rgba(67,73,101,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_fuelband:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_fuelband:hover > .inner {
   background-color: rgba(59,182,46,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_goggle:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_goggle:hover > .inner {
   background-color: rgba(68,68,68,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_jinnitv:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_jinnitv:hover > .inner {
   background-color: rgba(44,190,230,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_mineralist:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_mineralist:hover > .inner {
   background-color: rgba(236,128,0,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_minus8:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_minus8:hover > .inner {
   background-color: rgba(169,222,212,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_neff:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_neff:hover > .inner {
   background-color: rgba(244,103,178,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_owlet:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_owlet:hover > .inner {
   background-color: rgba(169,222,212,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_sol:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_sol:hover > .inner {
   background-color: rgba(117,130,177,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_tamar:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_tamar:hover > .inner {
   background-color: rgba(244,171,139,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_threedr:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_threedr:hover > .inner {
   background-color: rgba(118,215,52,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_versus:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_versus:hover > .inner {
   background-color: rgba(1,149,255,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project.project_xbox:hover > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project.project_xbox:hover > .inner {
   background-color: rgba(116,189,68,0.75);
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project > .inner {
+.about > .sections > .section_capabilities > .blocks > .block.block_project > .inner {
   height: 100%;
   -webkit-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
@@ -3424,70 +3395,70 @@ body.fixed {
   -ms-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project > .inner > .copy {
+.about > .sections > .section_capabilities > .blocks > .block.block_project > .inner > .copy {
   color: #fff;
   text-align: center;
   padding: 110px 0 0 0;
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project > .inner > .copy > .name {
+.about > .sections > .section_capabilities > .blocks > .block.block_project > .inner > .copy > .name {
   font: 46px blenderpro book;
 }
-.about > .sections > .section_expertise > .blocks > .block.block_project > .inner > .copy > .filters {
+.about > .sections > .section_capabilities > .blocks > .block.block_project > .inner > .copy > .filters {
   text-transform: uppercase;
 }
-.about > .sections > .section_expertise > .fived {
+.about > .sections > .section_capabilities > .fived {
   background-color: #ffc0cb;
 }
-.about > .sections > .section_expertise > .fived > .fivedmenu > .item:nth-child(1),
-.about > .sections > .section_expertise > .fived > .bodys > .body:nth-child(1) {
+.about > .sections > .section_capabilities > .fived > .fivedmenu > .item:nth-child(1),
+.about > .sections > .section_capabilities > .fived > .bodys > .body:nth-child(1) {
   background-color: #363a42;
 }
-.about > .sections > .section_expertise > .fived > .fivedmenu > .item:nth-child(2),
-.about > .sections > .section_expertise > .fived > .bodys > .body:nth-child(2) {
+.about > .sections > .section_capabilities > .fived > .fivedmenu > .item:nth-child(2),
+.about > .sections > .section_capabilities > .fived > .bodys > .body:nth-child(2) {
   background-color: #434965;
 }
-.about > .sections > .section_expertise > .fived > .fivedmenu > .item:nth-child(3),
-.about > .sections > .section_expertise > .fived > .bodys > .body:nth-child(3) {
+.about > .sections > .section_capabilities > .fived > .fivedmenu > .item:nth-child(3),
+.about > .sections > .section_capabilities > .fived > .bodys > .body:nth-child(3) {
   background-color: #7582b1;
 }
-.about > .sections > .section_expertise > .fived > .fivedmenu > .item:nth-child(4),
-.about > .sections > .section_expertise > .fived > .bodys > .body:nth-child(4) {
+.about > .sections > .section_capabilities > .fived > .fivedmenu > .item:nth-child(4),
+.about > .sections > .section_capabilities > .fived > .bodys > .body:nth-child(4) {
   background-color: #949dae;
 }
-.about > .sections > .section_expertise > .fived > .fivedmenu > .item:nth-child(5),
-.about > .sections > .section_expertise > .fived > .bodys > .body:nth-child(5) {
+.about > .sections > .section_capabilities > .fived > .fivedmenu > .item:nth-child(5),
+.about > .sections > .section_capabilities > .fived > .bodys > .body:nth-child(5) {
   background-color: #acb2c1;
 }
-.about > .sections > .section_expertise > .fived > .fivedmenu > .item {
+.about > .sections > .section_capabilities > .fived > .fivedmenu > .item {
   float: left;
   width: 20%;
   cursor: pointer;
 }
-.about > .sections > .section_expertise > .fived > .fivedmenu > .item:hover,
-.about > .sections > .section_expertise > .fived > .fivedmenu > .item.on {
+.about > .sections > .section_capabilities > .fived > .fivedmenu > .item:hover,
+.about > .sections > .section_capabilities > .fived > .fivedmenu > .item.on {
   background-color: #22252b !important;
 }
-.about > .sections > .section_expertise > .fived > .fivedmenu > .item > .copy {
+.about > .sections > .section_capabilities > .fived > .fivedmenu > .item > .copy {
   padding: 20px;
   color: #fff;
 }
-.about > .sections > .section_expertise > .fived > .fivedmenu > .item > .copy > .name {
+.about > .sections > .section_capabilities > .fived > .fivedmenu > .item > .copy > .name {
   font: 28px blenderpro book;
   text-transform: uppercase;
 }
-.about > .sections > .section_expertise > .fived > .bodys > .body {
+.about > .sections > .section_capabilities > .fived > .bodys > .body {
   color: #fff;
 }
-.about > .sections > .section_expertise > .fived > .bodys > .body.on {
+.about > .sections > .section_capabilities > .fived > .bodys > .body.on {
   display: block;
 }
-.about > .sections > .section_expertise > .fived > .bodys > .body.off {
+.about > .sections > .section_capabilities > .fived > .bodys > .body.off {
   display: none;
 }
-.about > .sections > .section_expertise > .fived > .bodys > .body > .inner {
+.about > .sections > .section_capabilities > .fived > .bodys > .body > .inner {
   padding: 40px;
 }
-.about > .sections > .section_expertise > .fived > .bodys > .body > .inner > .image {
+.about > .sections > .section_capabilities > .fived > .bodys > .body > .inner > .image {
   float: right;
   width: 50%;
   height: 320px;
@@ -3502,7 +3473,7 @@ body.fixed {
   -ms-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
-.about > .sections > .section_expertise > .fived > .bodys > .body > .inner > .image > .inner {
+.about > .sections > .section_capabilities > .fived > .bodys > .body > .inner > .image > .inner {
   margin: 0 50px 50px 50px;
   background-position: 50% 50%;
   -webkit-background-size: contain;
@@ -3511,7 +3482,7 @@ body.fixed {
   background-repeat: no-repeat;
   height: inherit;
 }
-.about > .sections > .section_expertise > .fived > .bodys > .body > .inner > .copy {
+.about > .sections > .section_capabilities > .fived > .bodys > .body > .inner > .copy {
   float: left;
   width: 50%;
   -webkit-animation: cellInX 0.2s 0s ease-in both;
@@ -3520,7 +3491,7 @@ body.fixed {
   -ms-animation: cellInX 0.2s 0s ease-in both;
   animation: cellInX 0.2s 0s ease-in both;
 }
-.about > .sections > .section_expertise > .fived > .bodys > .body > .inner > .copy > .title {
+.about > .sections > .section_capabilities > .fived > .bodys > .body > .inner > .copy > .title {
   font: 28px blenderpro book;
 }
 .projects .summary {

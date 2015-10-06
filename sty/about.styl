@@ -7,6 +7,7 @@
     background-repeat no-repeat
     animation fadeIn 0.5s ease-in both
     background-image url('/img/about/banner.jpg')
+    margin -64px 0 0 0
     > .copy
       position absolute
       left 0
@@ -19,9 +20,16 @@
       margin-top -55px
       animation cellInY 0.75s 0s ease-in both
 
+  > .fcontainer
+    height 64px
+    > .filters > .inner > .filtermenu
+      > .filter.on, > .filter:hover
+        background-color: c.white3
+
   > .block
     background-color: c.black4
     > .inner
+      text-align center
       padding 50px
       desktop()
       > .copy
@@ -75,56 +83,11 @@
           for num in 0..25
             &:nth-child({num})
               animation-delay unit(num*0.05, 's')
-    > .section_expertise
-      desktop()
-      > .capcenter
-        background-color orange
-        > .capmenu
-          float left
-          width 200px
-          > .cap
-            font f_h5
-            cursor pointer
-            text-transform uppercase
-            color: c.white1
-            padding 20px
-            transition background-color 0.1s linear
-            &:hover, &.on
-              background-color: c.black2 !important
-        > .descs
-          margin 0 0 0 200px
-          color: c.white1
-          background-color: c.black2
-          > .desc
-            padding 40px
-            &.on
-              display block
-            &.off
-              display none
-            > .keywords
-              font f_copys
-              text-transform uppercase
-              animation cellInX 0.2s 0s ease-in both
-            > .title
-              font f_h2
-              margin 0 0 20px 0
-              animation cellInX 0.2s 0s ease-in both
-            > .copy
-              line-height 40px
-              animation cellInX 0.2s 0s ease-in both
-              animation-delay 0.1s
-        > .capmenu > .cap:nth-child(1)
-          background-color: c.black4
-        > .capmenu > .cap:nth-child(2)
-          background-color: c.blue3
-        > .capmenu > .cap:nth-child(3)
-          background-color: c.blue4
-        > .capmenu > .cap:nth-child(4)
-          background-color: c.blue6
-        > .capmenu > .cap:nth-child(5)
-          background-color: c.blue7
+    > .section_capabilities
+      @import about_capabilities
 
       > .blocks
+        desktop()
         > .title
           font f_h2
           padding 25px 0

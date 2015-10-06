@@ -1,39 +1,3 @@
-.capcenter
-  .capmenu
-    .cap.on holistic
-    .cap.off strategy
-    .cap.off brand
-    .cap.off product
-    .cap.off digital
-  .descs
-
-    .desc.on.desc_holistic
-      .keywords 
-      .title HOLISTIC
-      .copy ASTRO defines, designs and deploys new brands, products and companies. Centered in design talent and surrounded by tech, tools, and experience, ASTRO approaches design as a holistic process that develops fully branded, retail ready products and experiences.
-
-    .desc.off.desc_strategy
-      .keywords Insights, Opportunities, Research, Roadmaps, Audits, Profiles
-      .title STRATEGY
-      .copy ASTRO’s strategy team collaborates with partners at a project’s inception–asking questions, collecting info, and defining goals, allowing us to develop a strong point of view upon which to build.
-
-    .desc.off.desc_brand
-      .keywords Graphic Design, Positioning, Naming, Identity, Packaging, Digital Presence, Web, Mobile
-      .title BRAND
-      .copy ASTRO’s brand communications team blends design expertise, digital savvy, and market insights to create soulful identities and systems that create desire and cultural disruption around the world.
-
-    .desc.off.desc_product
-      .keywords Industrial Design, User Experience, User Interface, Modeling, Prototyping, Commercialization
-      .title PRODUCT
-      .copy ASTRO’s product team combines industrial design, a keen sense of aesthetics, technological expertise, and real-world experience to create innovative products that function skillfully, exist beautifully, define markets, and inspire popular culture.
-
-    .desc.off.desc_digital
-      .keywords Experience Design, User Experience, User Interface, Storyboarding, Animation, Video
-      .title DIGITAL
-      .copy ASTRO’s digital team deploys digital design skills and visualization tools to create innovative experiences that span the gulf between the digital and physical worlds, information and interaction—through time and space.
-    .clear
-
-  .clear
 
 .blocks
   .title All Missions Possible
@@ -44,6 +8,21 @@
     p For over 20 years, our deeper, entrepreneurial approach has paid dividends beyond our wildest imagination and now informs us as we continuously design what’s next.
 
   .clear
+
+.hsbpd
+  .dots
+    each section in data.about.hsbpd
+      if section == 'holistic'
+        .dot.on
+      else
+        .dot.off
+  .slide.slide_h
+    .char H
+    .title _HOLISTIC
+    .clear
+    .copy ASTRO defines, designs and deploys new brands, products and companies.  Centered in design talent and surrounded by tech, tools, and experience, ASTRO approaches design as a holistic process that developers fully branded, retail ready products and experiences.
+
+.blocks
   .block.left.block_copy
     .inner
       .title Consulting

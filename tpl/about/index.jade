@@ -11,25 +11,28 @@ block content
   .about
     .banner
       .copy We create stuff people love.
+    .fcontainer
+      .filters
+        .inner
+          .filtermenu
+            each filter in data.about.sections
+              if filter == data.about.sections[0]
+                .filter.on(class='filter_' + filter) #{filter}
+              else
+                .filter(class='filter_' + filter) #{filter}
+          .clear
     .block
       .inner
         .copy DESIGN. TECHNOLOGY. LIFESTYLE. <br />We create brands, products, experiences and sometimes we wrap them all together to create new companies.
       .clear
     .sections
-      .section.section_expertise.on
-        include section_expertise
+      .section.section_capabilities.on
+        include section_capabilities
       .section.section_clients.off
         include section_clients
       .section.section_studio.off
         include section_studio
     
-    .filters.float
-      .inner
-        .filtermenu
-          .filter.on expertise
-          .filter clients
-          .filter studio
-          .filter careers
   include ../inc/bottom
 
   script(type='text/javascript').

@@ -26,7 +26,7 @@ Global =
 
     Global.fbarInterval = setInterval ->
       Global.fbar()
-    , 100
+    , 20
 
     Global.phrase()
 

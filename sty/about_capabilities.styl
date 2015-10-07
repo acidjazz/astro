@@ -1,25 +1,68 @@
 .hsbpd
   position relative
+  height 631px
+  background-color: c.black1
+  overflow hidden
   > .dots
     position absolute
-    top 50%
     right 50px
-    margin-top -110px
+    margin-top 160px
     > .dot
-      width 20px
-      height 20px
-      border-radius 50%
-      margin 20px 0
+      padding 20px 0
       cursor pointer
-      &.on
-        background-color: c.red1
-      &.off
+      &:hover
+        > .copy
+          transform translate(0, 0)
+          opacity 1
+      > .copy
+        float left
+        opacity 0
+        margin-right 5px
+        text-align right
+        text-transform uppercase
+        color: c.white1
+        transform translate(10px, 0)
+        transition transform 0.1s linear, opacity 0.1s linear
+        width 85px
+      > .dot
+        float right
+        width 20px
+        height 20px
+        border-radius 50%
+      &.on > .dot
+        background-color: c.red2
+      &.off > .dot
         background-color: c.white1
         
   > .slide
     padding 100px 170px
+    height 431px
     background-color: c.black1
     color: c.white1
+    background-position 50% 50%
+    background-size cover
+    background-repeat no-repeat
+    position absolute
+    top 0
+    left 0
+    &.on
+      opacity 1
+      transition opacity 0.2s linear 0.1s, transform 0.2s linear 0.1s
+      transform translate(0px, 0px)
+    &.off
+      opacity 0
+      transform translate(0px, 466px)
+      transition opacity 0.2s linear 0s
+    &.slide_h
+      background-image url('/img/about/capabilities/holistic.png')
+    &.slide_s
+      background-image url('/img/about/capabilities/strategy.png')
+    &.slide_b
+      background-image url('/img/about/capabilities/brand.png')
+    &.slide_p
+      background-image url('/img/about/capabilities/product.png')
+    &.slide_d
+      background-image url('/img/about/capabilities/digital.png')
     > .char
       font f_h2
       border: 10px solid c.white1

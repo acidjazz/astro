@@ -10,55 +10,44 @@
   .clear
 
 .hsbpd
-  .dots
-    each section in data.about.hsbpd
-      if section == 'holistic'
-        .dot.on
-      else
-        .dot.off
-  .slide.slide_h
+  .slide.slide_h.on
     .char H
     .title _HOLISTIC
     .clear
     .copy ASTRO defines, designs and deploys new brands, products and companies.  Centered in design talent and surrounded by tech, tools, and experience, ASTRO approaches design as a holistic process that developers fully branded, retail ready products and experiences.
+  .slide.slide_s.off
+    .char S
+    .title _STRATEGY
+    .clear
+    .copy ASTRO's strategy team collaborates with partners at a project's inception-asking questions, collecting info, and defining goals, allowing us to develop a strong point of view upon which to build.
+  .slide.slide_b.off
+    .char B
+    .title _BRAND
+    .clear
+    .copy ASTRO's brand communications team blends design expertise, digital savvy, and market insights to create soulful identities and systems that create desire and cultural disruption around the world.
+  .slide.slide_p.off
+    .char P
+    .title _PRODUCT
+    .clear
+    .copy ASTRO's product team combines industrial design, a keen sense of aesthetics, technological expertise, and real-world experience to create innovative products that function skillfully, exist beautifully, define markets, and inspire popular culture.
+  .slide.slide_d.off
+    .char D
+    .title _DIGITAL
+    .clear
+    .copy ASTRO's digital team deploys digital design skills and visualization tools to create innovative experiences that span the gulf between the digital and physical worlds, information and interaction - through time and space.
 
-.blocks
-  .block.left.block_copy
-    .inner
-      .title Consulting
-      .copy Based upon an agreed scope of work, ASTRO will work strategically toward an inspiring solution. Every project is unique, but our process will be grounded in our ASTRO 5D Process to create the best results. Check out our WORK section for examples of what we’ve consistently delivered for our global clientele.
-
-  .block.right.block_project.project_fuelband(style='background-image: url("/img/project/fuelband/1440/Fuelbands.png");')
-    .inner
-      .copy
-        .name Nike Fuelband
-        .filters product / digital
-  .clear
-  .block.left.block_project.project_sol(style='background-image: url("/img/project/sol/banner.jpg");')
-    .inner
-      .copy
-        .name SOL Republic
-        .filters holistic / strategy / brand / product
-  .block.left.block_copy
-    .inner
-      .title Co - Creation
-      .copy ASTRO loves co-creating with entrepreneurs across a wide spectrum of businesses. We’ve lived the company creation dream too, so we understand the drive to build something from scratch. We often work in alternative compensation paths to enable new ventures. Some of our top co-creations are: Sol Republic, Boxee TV, Nebula, Ooma, Senselabs, and, Zuli. 
-  .clear
-  .block.left.block_copy
-    .inner
-      .title Origination
-      .copy We love defining, designing and deploying our own big ideas. We’ve used our skills to define, design and develop companies including ASTRO Gaming (sold to Skullcandy) and MINUS-8 watches.
-  .block.right.block_project.project_goggle(style='background-image: url("/img/project/goggle/1440/Lifestyle_banner.jpg");')
-    .inner
-      .copy
-        .name Electric Goggle
-        .filters product 
-  .clear
-
-  .title ASTRO's 5D PROCESS
-  .clear
-  .blurb
-    p ASTRO’s proven 5-stage design process is powered by our special blend of insights, tools and talent. Through design, we attempt to unify the dimensional relationships of time and space around the brands, products, and experiences we create.
+  .dots
+    each section in data.about.hsbpd
+      if section == 'holistic'
+        .dot.on(data-section=section)
+          .dot
+          .copy=section
+          .clear
+      else
+        .dot.off(data-section=section)
+          .dot
+          .copy=section
+          .clear
 
 .fived
   .fivedmenu

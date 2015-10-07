@@ -9,6 +9,8 @@ About =
 
   handlers: ->
 
+    $('.hsbpd > .dots > .dot').on 'click', About.hsbpd
+
     $('.capcenter > .capmenu > .cap').on 'click', About.capcenter
     $('.fived > .fivedmenu > .item').on 'click', About.fived
 
@@ -23,6 +25,14 @@ About =
     $('html, body').animate(
       scrollTop: $(".sections").offset().top
     , 200)
+
+  hsbpd: ->
+    section = $(this).data 'section'
+    _.off '.hsbpd > .slide'
+    _.on ".hsbpd > .slide.slide_#{section[0]}"
+    _.off '.hsbpd > .dots > .dot'
+    _.on $(this)
+
   capcenter: ->
 
     cap = $(this).html().trim()

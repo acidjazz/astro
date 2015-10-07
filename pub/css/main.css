@@ -3255,31 +3255,121 @@ body.fixed {
 }
 .about > .sections > .section_capabilities .hsbpd {
   position: relative;
+  height: 631px;
+  background-color: #000;
+  overflow: hidden;
 }
 .about > .sections > .section_capabilities .hsbpd > .dots {
   position: absolute;
-  top: 50%;
   right: 50px;
-  margin-top: -110px;
+  margin-top: 160px;
 }
 .about > .sections > .section_capabilities .hsbpd > .dots > .dot {
+  padding: 20px 0;
+  cursor: pointer;
+}
+.about > .sections > .section_capabilities .hsbpd > .dots > .dot:hover > .copy {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.about > .sections > .section_capabilities .hsbpd > .dots > .dot > .copy {
+  float: left;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  margin-right: 5px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transform: translate(10px, 0);
+  -moz-transform: translate(10px, 0);
+  -o-transform: translate(10px, 0);
+  -ms-transform: translate(10px, 0);
+  transform: translate(10px, 0);
+  -webkit-transition: -webkit-transform 0.1s linear, opacity 0.1s linear;
+  -moz-transition: -moz-transform 0.1s linear, opacity 0.1s linear;
+  -o-transition: -o-transform 0.1s linear, opacity 0.1s linear;
+  -ms-transition: -ms-transform 0.1s linear, opacity 0.1s linear;
+  transition: transform 0.1s linear, opacity 0.1s linear;
+  width: 85px;
+}
+.about > .sections > .section_capabilities .hsbpd > .dots > .dot > .dot {
+  float: right;
   width: 20px;
   height: 20px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  margin: 20px 0;
-  cursor: pointer;
 }
-.about > .sections > .section_capabilities .hsbpd > .dots > .dot.on {
-  background-color: #ee5655;
+.about > .sections > .section_capabilities .hsbpd > .dots > .dot.on > .dot {
+  background-color: #f03;
 }
-.about > .sections > .section_capabilities .hsbpd > .dots > .dot.off {
+.about > .sections > .section_capabilities .hsbpd > .dots > .dot.off > .dot {
   background-color: #fff;
 }
 .about > .sections > .section_capabilities .hsbpd > .slide {
   padding: 100px 170px;
+  height: 431px;
   background-color: #000;
   color: #fff;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about > .sections > .section_capabilities .hsbpd > .slide.on {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transition: opacity 0.2s linear 0.1s, -webkit-transform 0.2s linear 0.1s;
+  -moz-transition: opacity 0.2s linear 0.1s, -moz-transform 0.2s linear 0.1s;
+  -o-transition: opacity 0.2s linear 0.1s, -o-transform 0.2s linear 0.1s;
+  -ms-transition: opacity 0.2s linear 0.1s, -ms-transform 0.2s linear 0.1s;
+  transition: opacity 0.2s linear 0.1s, transform 0.2s linear 0.1s;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+.about > .sections > .section_capabilities .hsbpd > .slide.off {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(0px, 466px);
+  -moz-transform: translate(0px, 466px);
+  -o-transform: translate(0px, 466px);
+  -ms-transform: translate(0px, 466px);
+  transform: translate(0px, 466px);
+  -webkit-transition: opacity 0.2s linear 0s;
+  -moz-transition: opacity 0.2s linear 0s;
+  -o-transition: opacity 0.2s linear 0s;
+  -ms-transition: opacity 0.2s linear 0s;
+  transition: opacity 0.2s linear 0s;
+}
+.about > .sections > .section_capabilities .hsbpd > .slide.slide_h {
+  background-image: url("/img/about/capabilities/holistic.png");
+}
+.about > .sections > .section_capabilities .hsbpd > .slide.slide_s {
+  background-image: url("/img/about/capabilities/strategy.png");
+}
+.about > .sections > .section_capabilities .hsbpd > .slide.slide_b {
+  background-image: url("/img/about/capabilities/brand.png");
+}
+.about > .sections > .section_capabilities .hsbpd > .slide.slide_p {
+  background-image: url("/img/about/capabilities/product.png");
+}
+.about > .sections > .section_capabilities .hsbpd > .slide.slide_d {
+  background-image: url("/img/about/capabilities/digital.png");
 }
 .about > .sections > .section_capabilities .hsbpd > .slide > .char {
   font: 46px blenderpro book;

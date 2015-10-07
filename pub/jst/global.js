@@ -22,7 +22,7 @@ Global = {
     }, 500);
     Global.fbarInterval = setInterval(function() {
       return Global.fbar();
-    }, 100);
+    }, 20);
     Global.phrase();
     Global.handlers();
     return Global.fbar();

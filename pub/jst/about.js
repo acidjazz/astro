@@ -23,8 +23,12 @@ About = {
   hsbpd: function() {
     var section;
     section = $(this).data('section');
-    _.off('.hsbpd > .slide');
+    $('.hsbpd > .slide.on').addClass('offing').removeClass('on');
     _.on(".hsbpd > .slide.slide_" + section[0]);
+    setTimeout(function() {
+      _.off('.hsbpd > .slide.offing');
+      return $('.hsbpd > .slide.offing').removeClass('offing');
+    }, 3000);
     _.off('.hsbpd > .dots > .dot');
     return _.on($(this));
   },

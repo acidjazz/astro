@@ -2866,6 +2866,39 @@ body.fixed {
   margin: 16px;
   display: inline-block;
   vertical-align: top;
+  -webkit-animation: cellInX 0.2s 0s ease-in both;
+  -moz-animation: cellInX 0.2s 0s ease-in both;
+  -o-animation: cellInX 0.2s 0s ease-in both;
+  -ms-animation: cellInX 0.2s 0s ease-in both;
+  animation: cellInX 0.2s 0s ease-in both;
+}
+.about > .sections > .section_process .process > .steps > .step:nth-child(0) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.about > .sections > .section_process .process > .steps > .step:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.about > .sections > .section_process .process > .steps > .step:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.about > .sections > .section_process .process > .steps > .step:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 .about > .sections > .section_process .process > .steps > .step.space {
   background-color: #7582b1;
@@ -2900,6 +2933,39 @@ body.fixed {
   width: 260px;
   padding: 20px;
   margin: 16px;
+  -webkit-animation: cellInX 0.2s 0s ease-in both;
+  -moz-animation: cellInX 0.2s 0s ease-in both;
+  -o-animation: cellInX 0.2s 0s ease-in both;
+  -ms-animation: cellInX 0.2s 0s ease-in both;
+  animation: cellInX 0.2s 0s ease-in both;
+}
+.about > .sections > .section_clients .engage > .ways > .way:nth-child(0) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.about > .sections > .section_clients .engage > .ways > .way:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.about > .sections > .section_clients .engage > .ways > .way:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.about > .sections > .section_clients .engage > .ways > .way:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 .about > .sections > .section_clients .engage > .ways > .way > .title {
   font: 40px blenderpro book;
@@ -3146,11 +3212,11 @@ body.fixed {
   -ms-animation: cellInX 0.2s 0s ease-in both;
   animation: cellInX 0.2s 0s ease-in both;
   cursor: pointer;
-  -webkit-transition: background-image 0.2s linear;
-  -moz-transition: background-image 0.2s linear;
-  -o-transition: background-image 0.2s linear;
-  -ms-transition: background-image 0.2s linear;
-  transition: background-image 0.2s linear;
+  -webkit-transition: background-image 0.1s ease-in-out;
+  -moz-transition: background-image 0.1s ease-in-out;
+  -o-transition: background-image 0.1s ease-in-out;
+  -ms-transition: background-image 0.1s ease-in-out;
+  transition: background-image 0.1s ease-in-out;
 }
 .about > .sections > .section_studio .profiles > .profile:nth-child(0) {
   -webkit-animation-delay: 0s;
@@ -3576,7 +3642,6 @@ body.fixed {
 .about > .sections > .section_capabilities .hsbpd > .slide {
   padding: 100px 170px;
   height: 431px;
-  background-color: #000;
   color: #fff;
   background-position: 50% 50%;
   -webkit-background-size: cover;
@@ -3586,38 +3651,41 @@ body.fixed {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .about > .sections > .section_clients .hsbpd > .slide.on,
 .about > .sections > .section_capabilities .hsbpd > .slide.on {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-transition: opacity 0.2s linear 0.1s, -webkit-transform 0.2s linear 0.1s;
-  -moz-transition: opacity 0.2s linear 0.1s, -moz-transform 0.2s linear 0.1s;
-  -o-transition: opacity 0.2s linear 0.1s, -o-transform 0.2s linear 0.1s;
-  -ms-transition: opacity 0.2s linear 0.1s, -ms-transform 0.2s linear 0.1s;
-  transition: opacity 0.2s linear 0.1s, transform 0.2s linear 0.1s;
-  -webkit-transform: translate(0px, 0px);
-  -moz-transform: translate(0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate(0px, 0px);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: -webkit-transform 1s linear, oapcity 1s linear;
+  -moz-transition: -moz-transform 1s linear, oapcity 1s linear;
+  -o-transition: -o-transform 1s linear, oapcity 1s linear;
+  -ms-transition: -ms-transform 1s linear, oapcity 1s linear;
+  transition: transform 1s linear, oapcity 1s linear;
 }
 .about > .sections > .section_clients .hsbpd > .slide.off,
 .about > .sections > .section_capabilities .hsbpd > .slide.off {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  -webkit-transform: translate(0px, 466px);
-  -moz-transform: translate(0px, 466px);
-  -o-transform: translate(0px, 466px);
-  -ms-transform: translate(0px, 466px);
-  transform: translate(0px, 466px);
-  -webkit-transition: opacity 0.2s linear 0s;
-  -moz-transition: opacity 0.2s linear 0s;
-  -o-transition: opacity 0.2s linear 0s;
-  -ms-transition: opacity 0.2s linear 0s;
-  transition: opacity 0.2s linear 0s;
+  -webkit-transform: translate(0, 631px);
+  -moz-transform: translate(0, 631px);
+  -o-transform: translate(0, 631px);
+  -ms-transform: translate(0, 631px);
+  transform: translate(0, 631px);
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 .about > .sections > .section_clients .hsbpd > .slide.slide_h,
 .about > .sections > .section_capabilities .hsbpd > .slide.slide_h {

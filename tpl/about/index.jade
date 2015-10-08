@@ -16,7 +16,7 @@ block content
         .inner
           .filtermenu
             each filter in data.about.sections
-              if filter == 'studio'
+              if filter == 'careers'
                 .filter.on(class='filter_' + filter) #{filter}
               else
                 .filter(class='filter_' + filter) #{filter}
@@ -28,8 +28,10 @@ block content
         include process
       .section.section_clients.off
         include clients
-      .section.section_studio.on
+      .section.section_studio.off
         include studio
+      .section.section_careers.on
+        include careers
     
   include ../inc/bottom
 

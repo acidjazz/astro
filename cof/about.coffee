@@ -6,7 +6,6 @@ About =
 
     About.handlers()
 
-
   handlers: ->
 
     $('.hsbpd > .dots > .dot').on 'click', About.hsbpd
@@ -28,8 +27,16 @@ About =
 
   hsbpd: ->
     section = $(this).data 'section'
-    _.off '.hsbpd > .slide'
+
+    $('.hsbpd > .slide.on').addClass('offing').removeClass('on')
+
     _.on ".hsbpd > .slide.slide_#{section[0]}"
+
+    setTimeout ->
+      _.off '.hsbpd > .slide.offing'
+      $('.hsbpd > .slide.offing').removeClass('offing')
+    , 3000
+
     _.off '.hsbpd > .dots > .dot'
     _.on $(this)
 

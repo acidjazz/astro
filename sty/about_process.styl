@@ -14,6 +14,10 @@
       margin 16px
       display inline-block
       vertical-align top
+      animation cellInX 0.2s 0s ease-in both
+      for num in 0..3
+        &:nth-child({num})
+          animation-delay unit(num*0.1, 's')
       &.space
         background-color: c.blue4
         > .image

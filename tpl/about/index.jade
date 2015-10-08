@@ -16,22 +16,20 @@ block content
         .inner
           .filtermenu
             each filter in data.about.sections
-              if filter == data.about.sections[0]
+              if filter == 'clients'
                 .filter.on(class='filter_' + filter) #{filter}
               else
                 .filter(class='filter_' + filter) #{filter}
           .clear
-    .block
-      .inner
-        .copy DESIGN. TECHNOLOGY. LIFESTYLE. <br />We create brands, products, experiences and sometimes we wrap them all together to create new companies.
-      .clear
     .sections
-      .section.section_capabilities.on
-        include section_capabilities
-      .section.section_clients.off
-        include section_clients
+      .section.section_capabilities.off
+        include capabilities
+      .section.section_process.off
+        include process
+      .section.section_clients.on
+        include clients
       .section.section_studio.off
-        include section_studio
+        include studio
     
   include ../inc/bottom
 

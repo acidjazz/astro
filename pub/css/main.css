@@ -2812,18 +2812,22 @@ body.fixed {
 .about > .fcontainer > .filters > .inner > .filtermenu > .filter:hover {
   background-color: #f0f0f0;
 }
-.about > .block {
+.about .block {
   background-color: #363a42;
 }
-.about > .block > .inner {
+.about .block > .inner {
   text-align: center;
   padding: 50px;
   max-width: 1020px;
   margin: auto;
 }
-.about > .block > .inner > .copy {
+.about .block > .inner > .copy,
+.about .block > .inner > .scopy {
   font: 46px blenderpro book;
   color: #fff;
+}
+.about .block > .inner > .scopy {
+  font: 40px blenderpro book;
 }
 .about > .filters > .inner > .filtermenu > .filter {
   -webkit-transition: background-color 0.1s linear;
@@ -2840,14 +2844,288 @@ body.fixed {
 .about > .sections {
   background-color: #fff;
 }
-.about > .sections > .section {
-  padding: 50px 0;
-}
 .about > .sections > .section.on {
   display: block;
 }
 .about > .sections > .section.off {
   display: none;
+}
+.about > .sections > .section_process .process {
+  background-color: #fff;
+}
+.about > .sections > .section_process .process > .steps {
+  padding: 16px;
+  text-align: center;
+}
+.about > .sections > .section_process .process > .steps > .step {
+  text-align: left;
+  background-color: #f0f0f0;
+  padding: 40px;
+  width: 260px;
+  height: 570px;
+  margin: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+.about > .sections > .section_process .process > .steps > .step.space {
+  background-color: #7582b1;
+}
+.about > .sections > .section_process .process > .steps > .step.space > .image {
+  margin: 325px 0 0 0;
+}
+.about > .sections > .section_process .process > .steps > .step > .image {
+  width: 233px;
+  height: 157px;
+}
+.about > .sections > .section_process .process > .steps > .step > .title {
+  font: 46px blenderpro book;
+  text-transform: uppercase;
+  color: #ee5655;
+}
+.about > .sections > .section_process .process > .steps > .step > .copy p {
+  font: 20px blenderpro medium;
+}
+.about > .sections > .section_clients .engage > .title {
+  font: 46px blenderpro book;
+  margin: 50px 0 0 170px;
+}
+.about > .sections > .section_clients .engage > .ways {
+  text-align: center;
+  padding: 16px;
+}
+.about > .sections > .section_clients .engage > .ways > .way {
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  width: 260px;
+  padding: 20px;
+  margin: 16px;
+}
+.about > .sections > .section_clients .engage > .ways > .way > .title {
+  font: 40px blenderpro book;
+  text-transform: uppercase;
+}
+.about > .sections > .section_clients .engage > .ways > .way > .title > span {
+  color: #ee5655;
+}
+.about > .sections > .section_clients .engage > .ways > .way > .copy {
+  font: 20px blenderpro medium;
+}
+.about > .sections > .section_clients .engage > .ways > .way > .example {
+  padding: 30px 0 10px 0;
+  border-bottom: 1px solid #000;
+}
+.about > .sections > .section_clients .engage > .ways > .way > .example > a {
+  text-decoration: none;
+  color: #0195ff;
+}
+.about > .sections > .section_clients .clients {
+  padding: 16px;
+  text-align: center;
+}
+.about > .sections > .section_clients .clients > .client {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  height: 130px;
+  background-color: #f0f0f0;
+  -webkit-animation: cellInX 0.2s 0s ease-in both;
+  -moz-animation: cellInX 0.2s 0s ease-in both;
+  -o-animation: cellInX 0.2s 0s ease-in both;
+  -ms-animation: cellInX 0.2s 0s ease-in both;
+  animation: cellInX 0.2s 0s ease-in both;
+  padding: 16px;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(0) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(1) {
+  -webkit-animation-delay: 0.05s;
+  -moz-animation-delay: 0.05s;
+  -o-animation-delay: 0.05s;
+  -ms-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(3) {
+  -webkit-animation-delay: 0.15s;
+  -moz-animation-delay: 0.15s;
+  -o-animation-delay: 0.15s;
+  -ms-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(4) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(5) {
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  -o-animation-delay: 0.25s;
+  -ms-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(6) {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(7) {
+  -webkit-animation-delay: 0.35s;
+  -moz-animation-delay: 0.35s;
+  -o-animation-delay: 0.35s;
+  -ms-animation-delay: 0.35s;
+  animation-delay: 0.35s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(8) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(9) {
+  -webkit-animation-delay: 0.45s;
+  -moz-animation-delay: 0.45s;
+  -o-animation-delay: 0.45s;
+  -ms-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(10) {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(11) {
+  -webkit-animation-delay: 0.55s;
+  -moz-animation-delay: 0.55s;
+  -o-animation-delay: 0.55s;
+  -ms-animation-delay: 0.55s;
+  animation-delay: 0.55s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(13) {
+  -webkit-animation-delay: 0.65s;
+  -moz-animation-delay: 0.65s;
+  -o-animation-delay: 0.65s;
+  -ms-animation-delay: 0.65s;
+  animation-delay: 0.65s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(14) {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  -o-animation-delay: 0.7s;
+  -ms-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(15) {
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  -o-animation-delay: 0.75s;
+  -ms-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(16) {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  -o-animation-delay: 0.8s;
+  -ms-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(17) {
+  -webkit-animation-delay: 0.85s;
+  -moz-animation-delay: 0.85s;
+  -o-animation-delay: 0.85s;
+  -ms-animation-delay: 0.85s;
+  animation-delay: 0.85s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(18) {
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  -o-animation-delay: 0.9s;
+  -ms-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(19) {
+  -webkit-animation-delay: 0.95s;
+  -moz-animation-delay: 0.95s;
+  -o-animation-delay: 0.95s;
+  -ms-animation-delay: 0.95s;
+  animation-delay: 0.95s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(20) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(21) {
+  -webkit-animation-delay: 1.05s;
+  -moz-animation-delay: 1.05s;
+  -o-animation-delay: 1.05s;
+  -ms-animation-delay: 1.05s;
+  animation-delay: 1.05s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(22) {
+  -webkit-animation-delay: 1.1s;
+  -moz-animation-delay: 1.1s;
+  -o-animation-delay: 1.1s;
+  -ms-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(23) {
+  -webkit-animation-delay: 1.15s;
+  -moz-animation-delay: 1.15s;
+  -o-animation-delay: 1.15s;
+  -ms-animation-delay: 1.15s;
+  animation-delay: 1.15s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(24) {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
+  -ms-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.about > .sections > .section_clients .clients > .client:nth-child(25) {
+  -webkit-animation-delay: 1.25s;
+  -moz-animation-delay: 1.25s;
+  -o-animation-delay: 1.25s;
+  -ms-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+}
+.about > .sections > .section_clients .clients > .client > .inner {
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .about > .sections > .section_studio > .title {
   font: 46px blenderpro book;
@@ -3049,225 +3327,25 @@ body.fixed {
   -ms-animation-delay: 1.25s;
   animation-delay: 1.25s;
 }
-.about > .sections > .section_clients {
-  max-width: 1020px;
-  margin: auto;
-}
-.about > .sections > .section_clients > .title {
-  font: 46px blenderpro book;
-}
-.about > .sections > .section_clients > .clients > .client {
-  width: 30%;
-  height: 300px;
-  background-position: 50% 50%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  float: left;
-  -webkit-animation: cellInX 0.2s 0s ease-in both;
-  -moz-animation: cellInX 0.2s 0s ease-in both;
-  -o-animation: cellInX 0.2s 0s ease-in both;
-  -ms-animation: cellInX 0.2s 0s ease-in both;
-  animation: cellInX 0.2s 0s ease-in both;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(0) {
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  -o-animation-delay: 0s;
-  -ms-animation-delay: 0s;
-  animation-delay: 0s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(1) {
-  -webkit-animation-delay: 0.05s;
-  -moz-animation-delay: 0.05s;
-  -o-animation-delay: 0.05s;
-  -ms-animation-delay: 0.05s;
-  animation-delay: 0.05s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(2) {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  -o-animation-delay: 0.1s;
-  -ms-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(3) {
-  -webkit-animation-delay: 0.15s;
-  -moz-animation-delay: 0.15s;
-  -o-animation-delay: 0.15s;
-  -ms-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(4) {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(5) {
-  -webkit-animation-delay: 0.25s;
-  -moz-animation-delay: 0.25s;
-  -o-animation-delay: 0.25s;
-  -ms-animation-delay: 0.25s;
-  animation-delay: 0.25s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(6) {
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-  -o-animation-delay: 0.3s;
-  -ms-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(7) {
-  -webkit-animation-delay: 0.35s;
-  -moz-animation-delay: 0.35s;
-  -o-animation-delay: 0.35s;
-  -ms-animation-delay: 0.35s;
-  animation-delay: 0.35s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(8) {
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-  -o-animation-delay: 0.4s;
-  -ms-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(9) {
-  -webkit-animation-delay: 0.45s;
-  -moz-animation-delay: 0.45s;
-  -o-animation-delay: 0.45s;
-  -ms-animation-delay: 0.45s;
-  animation-delay: 0.45s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(10) {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  -o-animation-delay: 0.5s;
-  -ms-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(11) {
-  -webkit-animation-delay: 0.55s;
-  -moz-animation-delay: 0.55s;
-  -o-animation-delay: 0.55s;
-  -ms-animation-delay: 0.55s;
-  animation-delay: 0.55s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(12) {
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s;
-  -o-animation-delay: 0.6s;
-  -ms-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(13) {
-  -webkit-animation-delay: 0.65s;
-  -moz-animation-delay: 0.65s;
-  -o-animation-delay: 0.65s;
-  -ms-animation-delay: 0.65s;
-  animation-delay: 0.65s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(14) {
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  -o-animation-delay: 0.7s;
-  -ms-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(15) {
-  -webkit-animation-delay: 0.75s;
-  -moz-animation-delay: 0.75s;
-  -o-animation-delay: 0.75s;
-  -ms-animation-delay: 0.75s;
-  animation-delay: 0.75s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(16) {
-  -webkit-animation-delay: 0.8s;
-  -moz-animation-delay: 0.8s;
-  -o-animation-delay: 0.8s;
-  -ms-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(17) {
-  -webkit-animation-delay: 0.85s;
-  -moz-animation-delay: 0.85s;
-  -o-animation-delay: 0.85s;
-  -ms-animation-delay: 0.85s;
-  animation-delay: 0.85s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(18) {
-  -webkit-animation-delay: 0.9s;
-  -moz-animation-delay: 0.9s;
-  -o-animation-delay: 0.9s;
-  -ms-animation-delay: 0.9s;
-  animation-delay: 0.9s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(19) {
-  -webkit-animation-delay: 0.95s;
-  -moz-animation-delay: 0.95s;
-  -o-animation-delay: 0.95s;
-  -ms-animation-delay: 0.95s;
-  animation-delay: 0.95s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(20) {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  -ms-animation-delay: 1s;
-  animation-delay: 1s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(21) {
-  -webkit-animation-delay: 1.05s;
-  -moz-animation-delay: 1.05s;
-  -o-animation-delay: 1.05s;
-  -ms-animation-delay: 1.05s;
-  animation-delay: 1.05s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(22) {
-  -webkit-animation-delay: 1.1s;
-  -moz-animation-delay: 1.1s;
-  -o-animation-delay: 1.1s;
-  -ms-animation-delay: 1.1s;
-  animation-delay: 1.1s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(23) {
-  -webkit-animation-delay: 1.15s;
-  -moz-animation-delay: 1.15s;
-  -o-animation-delay: 1.15s;
-  -ms-animation-delay: 1.15s;
-  animation-delay: 1.15s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(24) {
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 1.2s;
-  -o-animation-delay: 1.2s;
-  -ms-animation-delay: 1.2s;
-  animation-delay: 1.2s;
-}
-.about > .sections > .section_clients > .clients > .client:nth-child(25) {
-  -webkit-animation-delay: 1.25s;
-  -moz-animation-delay: 1.25s;
-  -o-animation-delay: 1.25s;
-  -ms-animation-delay: 1.25s;
-  animation-delay: 1.25s;
-}
+.about > .sections > .section_clients .hsbpd,
 .about > .sections > .section_capabilities .hsbpd {
   position: relative;
   height: 631px;
   background-color: #000;
   overflow: hidden;
 }
+.about > .sections > .section_clients .hsbpd > .dots,
 .about > .sections > .section_capabilities .hsbpd > .dots {
   position: absolute;
   right: 50px;
   margin-top: 160px;
 }
+.about > .sections > .section_clients .hsbpd > .dots > .dot,
 .about > .sections > .section_capabilities .hsbpd > .dots > .dot {
   padding: 20px 0;
   cursor: pointer;
 }
+.about > .sections > .section_clients .hsbpd > .dots > .dot:hover > .copy,
 .about > .sections > .section_capabilities .hsbpd > .dots > .dot:hover > .copy {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -3278,6 +3356,7 @@ body.fixed {
   -ms-filter: none;
   filter: none;
 }
+.about > .sections > .section_clients .hsbpd > .dots > .dot > .copy,
 .about > .sections > .section_capabilities .hsbpd > .dots > .dot > .copy {
   float: left;
   opacity: 0;
@@ -3299,6 +3378,7 @@ body.fixed {
   transition: transform 0.1s linear, opacity 0.1s linear;
   width: 85px;
 }
+.about > .sections > .section_clients .hsbpd > .dots > .dot > .dot,
 .about > .sections > .section_capabilities .hsbpd > .dots > .dot > .dot {
   float: right;
   width: 20px;
@@ -3306,12 +3386,15 @@ body.fixed {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+.about > .sections > .section_clients .hsbpd > .dots > .dot.on > .dot,
 .about > .sections > .section_capabilities .hsbpd > .dots > .dot.on > .dot {
   background-color: #f03;
 }
+.about > .sections > .section_clients .hsbpd > .dots > .dot.off > .dot,
 .about > .sections > .section_capabilities .hsbpd > .dots > .dot.off > .dot {
   background-color: #fff;
 }
+.about > .sections > .section_clients .hsbpd > .slide,
 .about > .sections > .section_capabilities .hsbpd > .slide {
   padding: 100px 170px;
   height: 431px;
@@ -3326,6 +3409,7 @@ body.fixed {
   top: 0;
   left: 0;
 }
+.about > .sections > .section_clients .hsbpd > .slide.on,
 .about > .sections > .section_capabilities .hsbpd > .slide.on {
   opacity: 1;
   -ms-filter: none;
@@ -3341,6 +3425,7 @@ body.fixed {
   -ms-transform: translate(0px, 0px);
   transform: translate(0px, 0px);
 }
+.about > .sections > .section_clients .hsbpd > .slide.off,
 .about > .sections > .section_capabilities .hsbpd > .slide.off {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -3356,21 +3441,27 @@ body.fixed {
   -ms-transition: opacity 0.2s linear 0s;
   transition: opacity 0.2s linear 0s;
 }
+.about > .sections > .section_clients .hsbpd > .slide.slide_h,
 .about > .sections > .section_capabilities .hsbpd > .slide.slide_h {
   background-image: url("/img/about/capabilities/holistic.png");
 }
+.about > .sections > .section_clients .hsbpd > .slide.slide_s,
 .about > .sections > .section_capabilities .hsbpd > .slide.slide_s {
   background-image: url("/img/about/capabilities/strategy.png");
 }
+.about > .sections > .section_clients .hsbpd > .slide.slide_b,
 .about > .sections > .section_capabilities .hsbpd > .slide.slide_b {
   background-image: url("/img/about/capabilities/brand.png");
 }
+.about > .sections > .section_clients .hsbpd > .slide.slide_p,
 .about > .sections > .section_capabilities .hsbpd > .slide.slide_p {
   background-image: url("/img/about/capabilities/product.png");
 }
+.about > .sections > .section_clients .hsbpd > .slide.slide_d,
 .about > .sections > .section_capabilities .hsbpd > .slide.slide_d {
   background-image: url("/img/about/capabilities/digital.png");
 }
+.about > .sections > .section_clients .hsbpd > .slide > .char,
 .about > .sections > .section_capabilities .hsbpd > .slide > .char {
   font: 46px blenderpro book;
   border: 10px solid #fff;
@@ -3379,57 +3470,71 @@ body.fixed {
   height: 50px;
   text-align: center;
 }
+.about > .sections > .section_clients .hsbpd > .slide > .title,
 .about > .sections > .section_capabilities .hsbpd > .slide > .title {
   float: left;
   margin: 52px 0 0 20px;
 }
+.about > .sections > .section_clients .hsbpd > .slide > .copy,
 .about > .sections > .section_capabilities .hsbpd > .slide > .copy {
   font: 36px blenderpro book;
   text-align: center;
   padding: 20px 0 0 0;
 }
+.about > .sections > .section_clients > .blocks,
 .about > .sections > .section_capabilities > .blocks {
   max-width: 1020px;
   margin: auto;
 }
+.about > .sections > .section_clients > .blocks > .title,
 .about > .sections > .section_capabilities > .blocks > .title {
   font: 46px blenderpro book;
   padding: 25px 0;
 }
+.about > .sections > .section_clients > .blocks > .blurb,
 .about > .sections > .section_capabilities > .blocks > .blurb {
   padding: 25px 0;
   -webkit-columns: 2;
   -moz-columns: 2;
   columns: 2;
 }
+.about > .sections > .section_clients > .blocks > .blurb > p,
 .about > .sections > .section_capabilities > .blocks > .blurb > p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.about > .sections > .section_clients > .blocks > .block,
 .about > .sections > .section_capabilities > .blocks > .block {
   width: 50%;
   height: 340px;
 }
+.about > .sections > .section_clients > .blocks > .block.left,
 .about > .sections > .section_capabilities > .blocks > .block.left {
   float: left;
 }
+.about > .sections > .section_clients > .blocks > .block.right,
 .about > .sections > .section_capabilities > .blocks > .block.right {
   float: right;
 }
+.about > .sections > .section_clients > .blocks > .block.block_copy,
 .about > .sections > .section_capabilities > .blocks > .block.block_copy {
   background-color: #f0f0f0;
 }
+.about > .sections > .section_clients > .blocks > .block.block_copy > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_copy > .inner {
   padding: 40px;
 }
+.about > .sections > .section_clients > .blocks > .block.block_copy > .inner > .title,
 .about > .sections > .section_capabilities > .blocks > .block.block_copy > .inner > .title {
   font: 36px blenderpro book;
   margin: 0 0 10px 0;
 }
+.about > .sections > .section_clients > .blocks > .block.block_copy > .inner > .copy,
 .about > .sections > .section_capabilities > .blocks > .block.block_copy > .inner > .copy {
   line-height: 30px;
 }
+.about > .sections > .section_clients > .blocks > .block.block_project,
 .about > .sections > .section_capabilities > .blocks > .block.block_project {
   background-position: 50% 50%;
   -webkit-background-size: cover;
@@ -3438,45 +3543,59 @@ body.fixed {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_aos:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_aos:hover > .inner {
   background-color: rgba(67,73,101,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_fuelband:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_fuelband:hover > .inner {
   background-color: rgba(59,182,46,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_goggle:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_goggle:hover > .inner {
   background-color: rgba(68,68,68,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_jinnitv:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_jinnitv:hover > .inner {
   background-color: rgba(44,190,230,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_mineralist:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_mineralist:hover > .inner {
   background-color: rgba(236,128,0,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_minus8:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_minus8:hover > .inner {
   background-color: rgba(169,222,212,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_neff:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_neff:hover > .inner {
   background-color: rgba(244,103,178,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_owlet:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_owlet:hover > .inner {
   background-color: rgba(169,222,212,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_sol:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_sol:hover > .inner {
   background-color: rgba(117,130,177,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_tamar:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_tamar:hover > .inner {
   background-color: rgba(244,171,139,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_threedr:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_threedr:hover > .inner {
   background-color: rgba(118,215,52,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_versus:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_versus:hover > .inner {
   background-color: rgba(1,149,255,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project.project_xbox:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project.project_xbox:hover > .inner {
   background-color: rgba(116,189,68,0.75);
 }
+.about > .sections > .section_clients > .blocks > .block.block_project > .inner,
 .about > .sections > .section_capabilities > .blocks > .block.block_project > .inner {
   height: 100%;
   -webkit-transition: background-color 0.1s linear;
@@ -3485,69 +3604,93 @@ body.fixed {
   -ms-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
 }
+.about > .sections > .section_clients > .blocks > .block.block_project > .inner > .copy,
 .about > .sections > .section_capabilities > .blocks > .block.block_project > .inner > .copy {
   color: #fff;
   text-align: center;
   padding: 110px 0 0 0;
 }
+.about > .sections > .section_clients > .blocks > .block.block_project > .inner > .copy > .name,
 .about > .sections > .section_capabilities > .blocks > .block.block_project > .inner > .copy > .name {
   font: 46px blenderpro book;
 }
+.about > .sections > .section_clients > .blocks > .block.block_project > .inner > .copy > .filters,
 .about > .sections > .section_capabilities > .blocks > .block.block_project > .inner > .copy > .filters {
   text-transform: uppercase;
 }
+.about > .sections > .section_clients > .fived,
 .about > .sections > .section_capabilities > .fived {
   background-color: #ffc0cb;
 }
+.about > .sections > .section_clients > .fived > .fivedmenu > .item:nth-child(1),
 .about > .sections > .section_capabilities > .fived > .fivedmenu > .item:nth-child(1),
+.about > .sections > .section_clients > .fived > .bodys > .body:nth-child(1),
 .about > .sections > .section_capabilities > .fived > .bodys > .body:nth-child(1) {
   background-color: #363a42;
 }
+.about > .sections > .section_clients > .fived > .fivedmenu > .item:nth-child(2),
 .about > .sections > .section_capabilities > .fived > .fivedmenu > .item:nth-child(2),
+.about > .sections > .section_clients > .fived > .bodys > .body:nth-child(2),
 .about > .sections > .section_capabilities > .fived > .bodys > .body:nth-child(2) {
   background-color: #434965;
 }
+.about > .sections > .section_clients > .fived > .fivedmenu > .item:nth-child(3),
 .about > .sections > .section_capabilities > .fived > .fivedmenu > .item:nth-child(3),
+.about > .sections > .section_clients > .fived > .bodys > .body:nth-child(3),
 .about > .sections > .section_capabilities > .fived > .bodys > .body:nth-child(3) {
   background-color: #7582b1;
 }
+.about > .sections > .section_clients > .fived > .fivedmenu > .item:nth-child(4),
 .about > .sections > .section_capabilities > .fived > .fivedmenu > .item:nth-child(4),
+.about > .sections > .section_clients > .fived > .bodys > .body:nth-child(4),
 .about > .sections > .section_capabilities > .fived > .bodys > .body:nth-child(4) {
   background-color: #949dae;
 }
+.about > .sections > .section_clients > .fived > .fivedmenu > .item:nth-child(5),
 .about > .sections > .section_capabilities > .fived > .fivedmenu > .item:nth-child(5),
+.about > .sections > .section_clients > .fived > .bodys > .body:nth-child(5),
 .about > .sections > .section_capabilities > .fived > .bodys > .body:nth-child(5) {
   background-color: #acb2c1;
 }
+.about > .sections > .section_clients > .fived > .fivedmenu > .item,
 .about > .sections > .section_capabilities > .fived > .fivedmenu > .item {
   float: left;
   width: 20%;
   cursor: pointer;
 }
+.about > .sections > .section_clients > .fived > .fivedmenu > .item:hover,
 .about > .sections > .section_capabilities > .fived > .fivedmenu > .item:hover,
+.about > .sections > .section_clients > .fived > .fivedmenu > .item.on,
 .about > .sections > .section_capabilities > .fived > .fivedmenu > .item.on {
   background-color: #22252b !important;
 }
+.about > .sections > .section_clients > .fived > .fivedmenu > .item > .copy,
 .about > .sections > .section_capabilities > .fived > .fivedmenu > .item > .copy {
   padding: 20px;
   color: #fff;
 }
+.about > .sections > .section_clients > .fived > .fivedmenu > .item > .copy > .name,
 .about > .sections > .section_capabilities > .fived > .fivedmenu > .item > .copy > .name {
   font: 28px blenderpro book;
   text-transform: uppercase;
 }
+.about > .sections > .section_clients > .fived > .bodys > .body,
 .about > .sections > .section_capabilities > .fived > .bodys > .body {
   color: #fff;
 }
+.about > .sections > .section_clients > .fived > .bodys > .body.on,
 .about > .sections > .section_capabilities > .fived > .bodys > .body.on {
   display: block;
 }
+.about > .sections > .section_clients > .fived > .bodys > .body.off,
 .about > .sections > .section_capabilities > .fived > .bodys > .body.off {
   display: none;
 }
+.about > .sections > .section_clients > .fived > .bodys > .body > .inner,
 .about > .sections > .section_capabilities > .fived > .bodys > .body > .inner {
   padding: 40px;
 }
+.about > .sections > .section_clients > .fived > .bodys > .body > .inner > .image,
 .about > .sections > .section_capabilities > .fived > .bodys > .body > .inner > .image {
   float: right;
   width: 50%;
@@ -3563,6 +3706,7 @@ body.fixed {
   -ms-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
+.about > .sections > .section_clients > .fived > .bodys > .body > .inner > .image > .inner,
 .about > .sections > .section_capabilities > .fived > .bodys > .body > .inner > .image > .inner {
   margin: 0 50px 50px 50px;
   background-position: 50% 50%;
@@ -3572,6 +3716,7 @@ body.fixed {
   background-repeat: no-repeat;
   height: inherit;
 }
+.about > .sections > .section_clients > .fived > .bodys > .body > .inner > .copy,
 .about > .sections > .section_capabilities > .fived > .bodys > .body > .inner > .copy {
   float: left;
   width: 50%;
@@ -3581,6 +3726,7 @@ body.fixed {
   -ms-animation: cellInX 0.2s 0s ease-in both;
   animation: cellInX 0.2s 0s ease-in both;
 }
+.about > .sections > .section_clients > .fived > .bodys > .body > .inner > .copy > .title,
 .about > .sections > .section_capabilities > .fived > .bodys > .body > .inner > .copy > .title {
   font: 28px blenderpro book;
 }

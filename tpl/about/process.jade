@@ -1,0 +1,18 @@
+.block
+  .inner
+    .copy ASTRO's 5D PROCESS
+    .scopy Astro's proven 5-stage design process is powered by our special blend of insights, tools and talent.  Through design, we attempt to unify the dimensional relationships of time and space around the brands, products, and experiences we create.
+ 
+  .process
+    .steps
+      each step, number in data.about.process
+        .step(class='step_' + number)
+          .image
+            img(src='/img/about/process/'+number+'.png')
+          .title=step.title
+          .copy
+            each line in step.copy
+              p=line
+      .step.space
+        .image
+          img(src='/img/about/process/astro-dog.png')

@@ -26,15 +26,18 @@
       > .filter.on, > .filter:hover
         background-color: c.white3
 
-  > .block
+  .block
     background-color: c.black4
     > .inner
       text-align center
       padding 50px
       desktop()
-      > .copy
+      > .copy, > .scopy
         font f_h2
         color: c.white1
+      > .scopy
+        font f_h3
+
   > .filters
     > .inner
       > .filtermenu
@@ -46,11 +49,14 @@
   > .sections
     background-color: c.white1
     > .section
-      padding 50px 0
       &.on
         display block
       &.off
         display none
+    > .section_process
+      @import about_process
+    > .section_clients
+      @import about_clients
     > .section_studio
       > .title
         font f_h2
@@ -68,21 +74,6 @@
               animation-delay unit(num*0.05, 's')
  
     > .section_clients
-      desktop()
-      > .title
-        font f_h2
-      > .clients
-        > .client
-          width 30%
-          height 300px
-          background-position 50% 50%
-          background-size cover
-          background-repeat no-repeat
-          float left
-          animation cellInX 0.2s 0s ease-in both
-          for num in 0..25
-            &:nth-child({num})
-              animation-delay unit(num*0.05, 's')
     > .section_capabilities
       @import about_capabilities
 

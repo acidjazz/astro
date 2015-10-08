@@ -58,20 +58,7 @@
     > .section_clients
       @import about_clients
     > .section_studio
-      > .title
-        font f_h2
-      > .bios
-        > .bio
-          width 30%
-          height 300px
-          background-position 50% 50%
-          background-size cover
-          background-repeat no-repeat
-          float left
-          animation cellInX 0.2s 0s ease-in both
-          for num in 0..25
-            &:nth-child({num})
-              animation-delay unit(num*0.05, 's')
+      @import about_studio
  
     > .section_clients
     > .section_capabilities

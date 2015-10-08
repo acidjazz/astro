@@ -1,0 +1,22 @@
+.title
+  font f_h2
+  padding 50px 170px
+.profiles
+  > .profile
+    width 25%
+    height 25vw
+    background-position 50% 50%
+    background-size cover
+    background-repeat no-repeat
+    float left
+    animation cellInX 0.2s 0s ease-in both
+    cursor pointer
+    transition background-image 0.2s linear
+    for num in 0..28
+      &:nth-child({num})
+        animation-delay unit(num*0.05, 's')
+    for name, profile in data.about.profiles
+      &.profile_{name}
+        background-image url('/img/about/profiles/' + name + '-default.jpg')
+        &:hover
+          background-image url('/img/about/profiles/' + name + '-rollover.jpg')

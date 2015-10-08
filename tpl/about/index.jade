@@ -16,7 +16,7 @@ block content
         .inner
           .filtermenu
             each filter in data.about.sections
-              if filter == 'clients'
+              if filter == 'studio'
                 .filter.on(class='filter_' + filter) #{filter}
               else
                 .filter(class='filter_' + filter) #{filter}
@@ -26,9 +26,9 @@ block content
         include capabilities
       .section.section_process.off
         include process
-      .section.section_clients.on
+      .section.section_clients.off
         include clients
-      .section.section_studio.off
+      .section.section_studio.on
         include studio
     
   include ../inc/bottom

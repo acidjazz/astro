@@ -7,6 +7,7 @@
     position absolute
     right 50px
     margin-top 160px
+    z-index 15
     > .dot
       padding 20px 0
       cursor pointer
@@ -44,15 +45,16 @@
     position absolute
     top 0
     left 0
-    opacity 1
     &.on
       opacity 1
       transform translate(0, 0)
-      transition transform 1s linear, oapcity 1s linear
+      transition transform 0.2s ease-in-out, oapcity 0.2s ease-in-out
+      z-index 10
     &.off
       opacity 0
       transform translate(0, 631px)
       transition opacity 0.2s linear 
+      z-index 5
     &.slide_h
       background-image url('/img/about/capabilities/holistic.png')
     &.slide_s

@@ -3586,6 +3586,7 @@ body.fixed {
   position: absolute;
   right: 50px;
   margin-top: 160px;
+  z-index: 15;
 }
 .about > .sections > .section_clients .hsbpd > .dots > .dot,
 .about > .sections > .section_capabilities .hsbpd > .dots > .dot {
@@ -3654,9 +3655,6 @@ body.fixed {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
 }
 .about > .sections > .section_clients .hsbpd > .slide.on,
 .about > .sections > .section_capabilities .hsbpd > .slide.on {
@@ -3668,11 +3666,12 @@ body.fixed {
   -o-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
-  -webkit-transition: -webkit-transform 1s linear, oapcity 1s linear;
-  -moz-transition: -moz-transform 1s linear, oapcity 1s linear;
-  -o-transition: -o-transform 1s linear, oapcity 1s linear;
-  -ms-transition: -ms-transform 1s linear, oapcity 1s linear;
-  transition: transform 1s linear, oapcity 1s linear;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out, oapcity 0.2s ease-in-out;
+  -moz-transition: -moz-transform 0.2s ease-in-out, oapcity 0.2s ease-in-out;
+  -o-transition: -o-transform 0.2s ease-in-out, oapcity 0.2s ease-in-out;
+  -ms-transition: -ms-transform 0.2s ease-in-out, oapcity 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, oapcity 0.2s ease-in-out;
+  z-index: 10;
 }
 .about > .sections > .section_clients .hsbpd > .slide.off,
 .about > .sections > .section_capabilities .hsbpd > .slide.off {
@@ -3689,6 +3688,7 @@ body.fixed {
   -o-transition: opacity 0.2s linear;
   -ms-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
+  z-index: 5;
 }
 .about > .sections > .section_clients .hsbpd > .slide.slide_h,
 .about > .sections > .section_capabilities .hsbpd > .slide.slide_h {

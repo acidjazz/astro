@@ -3,22 +3,29 @@ var About;
 About = {
   i: function() {
     _.off('.orbit');
-    return About.handlers();
+    About.handlers();
+    if (location.hash !== "") {
+      return About.menu(location.hash.replace('#', ''));
+    }
   },
   handlers: function() {
     $('.hsbpd > .dots > .dot').on('click', About.hsbpd);
     $('.capcenter > .capmenu > .cap').on('click', About.capcenter);
     $('.fived > .fivedmenu > .item').on('click', About.fived);
-    return $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on('click', About.menu);
+    return $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on('click', About.menuHandler);
   },
-  menu: function() {
+  menuHandler: function() {
     var section;
     section = $(this).html().trim();
+    return About.menu(section);
+  },
+  menu: function(section) {
     _.off('.about > .fcontainer > .filters > .inner > .filtermenu > .filter', '.sections > .section');
-    _.on(this, ".sections > .section.section_" + section);
-    return $('html, body').animate({
+    _.on(".fcontainer > .filters > .inner > .filtermenu > .filter.filter_" + section, ".sections > .section.section_" + section);
+    $('html, body').animate({
       scrollTop: $(".sections").offset().top - 64
-    }, 200);
+    }, 1000);
+    return location.hash = section;
   },
   hsbpd: function() {
     var section;

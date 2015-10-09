@@ -16,13 +16,13 @@ block content
         .inner
           .filtermenu
             each filter in data.about.sections
-              if filter == 'careers'
+              if filter == 'capabilities'
                 .filter.on(class='filter_' + filter) #{filter}
               else
                 .filter(class='filter_' + filter) #{filter}
           .clear
     .sections
-      .section.section_capabilities.off
+      .section.section_capabilities.on
         include capabilities
       .section.section_process.off
         include process
@@ -30,7 +30,7 @@ block content
         include clients
       .section.section_studio.off
         include studio
-      .section.section_careers.on
+      .section.section_careers.off
         include careers
     
   include ../inc/bottom

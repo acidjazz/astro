@@ -6,6 +6,9 @@ About =
 
     About.handlers()
 
+    if location.hash isnt ""
+      About.menu location.hash.replace('#','')
+
   handlers: ->
 
     $('.hsbpd > .dots > .dot').on 'click', About.hsbpd
@@ -13,17 +16,22 @@ About =
     $('.capcenter > .capmenu > .cap').on 'click', About.capcenter
     $('.fived > .fivedmenu > .item').on 'click', About.fived
 
-    $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on 'click', About.menu
+    $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on 'click', About.menuHandler
 
-  menu: ->
+  menuHandler: ->
     section = $(this).html().trim()
+    About.menu section
+
+  menu: (section) ->
 
     _.off '.about > .fcontainer > .filters > .inner > .filtermenu > .filter', '.sections > .section'
-    _.on this, ".sections > .section.section_#{section}"
+    _.on ".fcontainer > .filters > .inner > .filtermenu > .filter.filter_#{section}", ".sections > .section.section_#{section}"
 
     $('html, body').animate(
       scrollTop: $(".sections").offset().top - 64
-    , 200)
+    , 1000)
+
+    location.hash = section
 
   hsbpd: ->
     section = $(this).data 'section'

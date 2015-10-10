@@ -4,7 +4,7 @@ Contact =
 
   i: ->
 
-    src = '/img/contact/banner.jpg'
+    src = '/img/contact/space.jpg'
 
     Global.preload [src],
       (progress) ->

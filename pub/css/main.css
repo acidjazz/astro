@@ -972,6 +972,54 @@
     filter: none;
   }
 }
+@-moz-keyframes slowzoom {
+  from {
+    -webkit-background-size: 150%;
+    -moz-background-size: 150%;
+    background-size: 150%;
+  }
+  to {
+    -webkit-background-size: 250%;
+    -moz-background-size: 250%;
+    background-size: 250%;
+  }
+}
+@-webkit-keyframes slowzoom {
+  from {
+    -webkit-background-size: 150%;
+    -moz-background-size: 150%;
+    background-size: 150%;
+  }
+  to {
+    -webkit-background-size: 250%;
+    -moz-background-size: 250%;
+    background-size: 250%;
+  }
+}
+@-o-keyframes slowzoom {
+  from {
+    -webkit-background-size: 150%;
+    -moz-background-size: 150%;
+    background-size: 150%;
+  }
+  to {
+    -webkit-background-size: 250%;
+    -moz-background-size: 250%;
+    background-size: 250%;
+  }
+}
+@keyframes slowzoom {
+  from {
+    -webkit-background-size: 150%;
+    -moz-background-size: 150%;
+    background-size: 150%;
+  }
+  to {
+    -webkit-background-size: 250%;
+    -moz-background-size: 250%;
+    background-size: 250%;
+  }
+}
 #nprogress {
   pointer-events: none;
 }
@@ -5723,17 +5771,17 @@ body.fixed {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("/img/contact/banner.jpg");
+  background-image: url("/img/contact/space.jpg");
   background-position: 50% 50%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 150%;
+  -moz-background-size: 150%;
+  background-size: 150%;
   background-repeat: no-repeat;
-  -webkit-animation: fadeIn 0.5s 0s ease-in both;
-  -moz-animation: fadeIn 0.5s 0s ease-in both;
-  -o-animation: fadeIn 0.5s 0s ease-in both;
-  -ms-animation: fadeIn 0.5s 0s ease-in both;
-  animation: fadeIn 0.5s 0s ease-in both;
+  -webkit-animation: slowzoom 20s linear 0s infinite alternate;
+  -moz-animation: slowzoom 20s linear 0s infinite alternate;
+  -o-animation: slowzoom 20s linear 0s infinite alternate;
+  -ms-animation: slowzoom 20s linear 0s infinite alternate;
+  animation: slowzoom 20s linear 0s infinite alternate;
 }
 .contact .banner > .inner.on {
   display: block;
@@ -5746,7 +5794,6 @@ body.fixed {
   left: 0;
   top: 50%;
   width: 100%;
-  font: 92px blenderpro book;
   color: #fff;
   text-align: center;
   height: 110px;
@@ -5756,6 +5803,12 @@ body.fixed {
   -o-animation: cellInY 0.75s 0s ease-in both;
   -ms-animation: cellInY 0.75s 0s ease-in both;
   animation: cellInY 0.75s 0s ease-in both;
+}
+.contact .banner > .inner > .copy > .lcopy {
+  font: 46px blenderpro book;
+}
+.contact .banner > .inner > .copy > .scopy {
+  font: 40px blenderpro book;
 }
 .contact > .title {
   padding: 50px 0 50px 20px;

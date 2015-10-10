@@ -5810,8 +5810,21 @@ body.fixed {
 .contact .banner > .inner > .copy > .scopy {
   font: 40px blenderpro book;
 }
-.contact > .title {
-  padding: 50px 0 50px 20px;
+.contact > .block {
+  background-color: #363a42;
+}
+.contact > .block > .inner {
+  text-align: center;
+  padding: 50px;
+  max-width: 1020px;
+  margin: auto;
+}
+.contact > .block > .inner > .copy,
+.contact > .block > .inner > .scopy {
+  font: 46px blenderpro book;
+  color: #fff;
+}
+.contact > .block > .inner > .scopy {
   font: 40px blenderpro book;
 }
 .contact > #map {

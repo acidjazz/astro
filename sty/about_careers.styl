@@ -1,2 +1,31 @@
-.careers
-  background-color pink
+.jobs
+  > .job
+    &:nth-child(odd) > .title
+      background-color: c.blue3
+    &:nth-child(even) > .title
+      background-color: c.blue4
+    > .title  
+      cursor pointer
+      padding 50px 50px 50px 170px
+      font f_h3
+      color: c.white1
+      user-select none
+    > .content
+      overflow hidden
+      font f_copyl
+      transition max-height 0.2s ease-in-out
+      > .apply
+        display block
+        text-decoration none
+        background-color: c.red1
+        color: c.white1
+        padding 10px 40px
+        float right
+        clear both
+    &.on > .content
+      max-height 1000px
+      padding 50px 50px 50px 170px
+    &.off > .content
+      max-height 0px
+      padding 0px
+

@@ -3619,8 +3619,47 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_woo:hover {
   background-image: url("/img/about/profiles/woo-rollover.jpg");
 }
-.about > .sections > .section_careers .careers {
-  background-color: #ffc0cb;
+.about > .sections > .section_careers .jobs > .job:nth-child(odd) > .title {
+  background-color: #434965;
+}
+.about > .sections > .section_careers .jobs > .job:nth-child(even) > .title {
+  background-color: #7582b1;
+}
+.about > .sections > .section_careers .jobs > .job > .title {
+  cursor: pointer;
+  padding: 50px 50px 50px 170px;
+  font: 40px blenderpro book;
+  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.about > .sections > .section_careers .jobs > .job > .content {
+  overflow: hidden;
+  font: 20px blenderpro medium;
+  -webkit-transition: max-height 0.2s ease-in-out;
+  -moz-transition: max-height 0.2s ease-in-out;
+  -o-transition: max-height 0.2s ease-in-out;
+  -ms-transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.2s ease-in-out;
+}
+.about > .sections > .section_careers .jobs > .job > .content > .apply {
+  display: block;
+  text-decoration: none;
+  background-color: #ee5655;
+  color: #fff;
+  padding: 10px 40px;
+  float: right;
+  clear: both;
+}
+.about > .sections > .section_careers .jobs > .job.on > .content {
+  max-height: 1000px;
+  padding: 50px 50px 50px 170px;
+}
+.about > .sections > .section_careers .jobs > .job.off > .content {
+  max-height: 0px;
+  padding: 0px;
 }
 .about > .sections > .section_clients .hsbpd,
 .about > .sections > .section_capabilities .hsbpd {
@@ -5765,7 +5804,8 @@ body.fixed {
   font: 36px blenderpro book;
 }
 .contact .banner {
-  height: 100%;
+  height: 800px;
+  background-color: #000;
 }
 .contact .banner > .inner {
   position: relative;

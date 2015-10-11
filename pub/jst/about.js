@@ -1,6 +1,7 @@
 var About;
 
 About = {
+  jobs: false,
   i: function() {
     _.off('.orbit');
     About.handlers();
@@ -12,7 +13,8 @@ About = {
     $('.hsbpd > .dots > .dot').on('click', About.hsbpd);
     $('.capcenter > .capmenu > .cap').on('click', About.capcenter);
     $('.fived > .fivedmenu > .item').on('click', About.fived);
-    return $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on('click', About.menuHandler);
+    $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on('click', About.menuHandler);
+    return $('.about > .sections > .section_careers').on('click', '.jobs > .job', About.jobHandler);
   },
   menuHandler: function() {
     var section;
@@ -20,12 +22,15 @@ About = {
     return About.menu(section);
   },
   menu: function(section) {
+    location.hash = section;
+    if (section === 'careers' && About.jobs === false) {
+      Loader.load('https://api.greenhouse.io/v1/boards/astrostudios/embed/jobs?callback=About.joblist');
+    }
     _.off('.about > .fcontainer > .filters > .inner > .filtermenu > .filter', '.sections > .section');
     _.on(".fcontainer > .filters > .inner > .filtermenu > .filter.filter_" + section, ".sections > .section.section_" + section);
-    $('html, body').animate({
+    return $('html, body').animate({
       scrollTop: $(".sections").offset().top - 64
     }, 1000);
-    return location.hash = section;
   },
   hsbpd: function() {
     var section;
@@ -50,5 +55,58 @@ About = {
     item = $(this).find('.copy > .name').html().trim();
     _.off('.fived > .fivedmenu > .item', '.fived > .bodys > .body');
     return _.on(this, ".fived > .bodys > .body_" + item);
+  },
+  jobHandler: function() {
+    var t;
+    t = $(this);
+    if (t.hasClass('on')) {
+      return _.off(t);
+    }
+    _.off('.about > .sections > .section_careers > .jobs > .job');
+    return _.on(this);
+  },
+  joblist: function(data) {
+    var count, i, job, len, ref, results, total;
+    About.jobs = {};
+    total = Object.keys(data.jobs).length;
+    count = 0;
+    ref = data.jobs;
+    results = [];
+    for (i = 0, len = ref.length; i < len; i++) {
+      job = ref[i];
+      results.push($.ajax({
+        url: "https://api.greenhouse.io/v1/boards/astrostudios/embed/job?id=" + job.id + "?callback=About.job",
+        type: 'GET',
+        dataType: 'jsonp',
+        crossDomain: true,
+        jsonpCallback: 'About.job',
+        complete: function(response) {
+          count++;
+          if (count === total) {
+            return About.jobulate();
+          }
+        }
+      }));
+    }
+    return results;
+  },
+  job: function(job) {
+    return About.jobs[job.id] = job;
+  },
+  jobulate: function() {
+    var apply, content, el, id, job, jobsEl, ref, results;
+    jobsEl = $('.jobs');
+    ref = About.jobs;
+    results = [];
+    for (id in ref) {
+      job = ref[id];
+      el = $("<div class='job off'><div class='title'>" + job.title + "</div><div class='content'></div></div>");
+      content = el.find('.content');
+      content.html($('<div/>').html(job.content).text());
+      apply = $("<a href='" + job.absolute_url + "' target='_new' class='apply'>Apply Now</a>");
+      content.append(apply);
+      results.push(jobsEl.append(el));
+    }
+    return results;
   }
 };

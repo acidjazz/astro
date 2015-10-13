@@ -297,6 +297,14 @@
   color: #000;
   text-decoration: none;
   margin: 0;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  -ms-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+.footer > .inner > .section > .inner > .info > a.p:hover {
+  color: #0195ff;
 }
 .footer > .inner > .section.newsletter {
   background-color: #f0f0f0;
@@ -306,7 +314,7 @@
 }
 .footer > .inner > .section.newsletter > .inner > .input {
   float: left;
-  width: 50%;
+  width: 60%;
 }
 .footer > .inner > .section.newsletter > .inner > .input > input {
   width: 100%;

@@ -260,6 +260,7 @@
   font: 18px blenderpro medium;
   min-height: 300px;
   min-width: 275px;
+  padding: 60px 0 0 0;
 }
 .footer > .inner > .section.first > .inner {
   padding: 20px 40px 10px 170px;
@@ -275,7 +276,7 @@
   text-align: left;
 }
 .footer > .inner > .section > .inner > .title {
-  padding: 50px 0 0 0;
+  padding: 20px 0 0 0;
   text-transform: uppercase;
 }
 .footer > .inner > .section > .inner > .a {

@@ -257,7 +257,7 @@
 }
 .footer > .inner > .section {
   float: left;
-  font: 20px blenderpro medium;
+  font: 18px blenderpro medium;
   min-height: 300px;
   min-width: 275px;
 }
@@ -275,7 +275,7 @@
   text-align: left;
 }
 .footer > .inner > .section > .inner > .title {
-  padding: 50px 0 10px 0;
+  padding: 50px 0 0 0;
   text-transform: uppercase;
 }
 .footer > .inner > .section > .inner > .a {
@@ -288,7 +288,7 @@
   color: #000;
 }
 .footer > .inner > .section > .inner > .info {
-  margin: 10px 0;
+  margin: 0 0 10px 0;
 }
 .footer > .inner > .section > .inner > .info > p,
 .footer > .inner > .section > .inner > .info > a.p {

@@ -2654,6 +2654,8 @@ body.fixed {
   -ms-animation: cellInY 0.75s 0s ease-in both;
   animation: cellInY 0.75s 0s ease-in both;
   text-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+  padding: 40px 40px 60px 40px;
+  background-color: rgba(118,215,52,0.75);
 }
 .index > .featureds > .inner > .featured > .inner > .copy > .label {
   padding: 0 0 15px 0;

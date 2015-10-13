@@ -2806,6 +2806,8 @@ body.fixed {
 }
 .index > .welcome > .inner {
   padding: 100px 0;
+  max-width: 1020px;
+  margin: auto;
 }
 .index > .welcome > .inner span {
   color: #f03;

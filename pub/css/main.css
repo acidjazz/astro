@@ -263,7 +263,7 @@
   padding: 60px 0 60px 0;
 }
 .footer > .inner > .section.first > .inner {
-  padding: 20px 40px 10px 170px;
+  padding: 20px 20px 10px 170px;
 }
 .footer > .inner > .section.newsletter {
   float: right;
@@ -314,25 +314,24 @@
 }
 .footer > .inner > .section.newsletter > .inner > .input {
   float: left;
-  width: 60%;
+  width: 200px;
 }
 .footer > .inner > .section.newsletter > .inner > .input > input {
   width: 100%;
   background-color: #fff;
   border: none;
   outline: none;
-  font: 14px aktivgrotesk light;
+  font: 14px blenderpro book;
   padding: 10px;
 }
 .footer > .inner > .section.newsletter > .inner > .button {
   float: right;
-  font: 14px aktivgrotesk light;
   color: #fff;
   background-color: #ee5655;
   text-align: center;
-  padding: 10px;
+  padding: 7px 6px;
+  margin: 0 0 0 5px;
   text-transform: uppercase;
-  width: 30%;
   cursor: pointer;
   -webkit-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;

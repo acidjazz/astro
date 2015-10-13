@@ -253,12 +253,14 @@
 .footer > .inner {
   background-color: #e9eaec;
   position: relative;
+  text-align: center;
 }
 .footer > .inner > .section {
-  float: left;
+  display: inline-block;
   font: 20px blenderpro medium;
   min-height: 300px;
   min-width: 275px;
+  vertical-align: top;
 }
 .footer > .inner > .section.first > .inner {
   padding: 20px 20px 10px 170px;
@@ -268,6 +270,7 @@
 }
 .footer > .inner > .section > .inner {
   padding: 20px 20px;
+  text-align: left;
 }
 .footer > .inner > .section > .inner > .title {
   padding: 50px 0 10px 0;

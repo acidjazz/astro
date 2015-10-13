@@ -4,13 +4,14 @@
     position relative
     text-align center
     > .section
-      display inline-block
+      float left
       font f_copyl
       min-height 300px
       min-width 275px
-      vertical-align top
       &.first > .inner
         padding 20px 20px 10px 170px
+      &.newsletter
+        float right
       &.newsletter > .inner
         padding 20px 170px 10px 20px
       > .inner

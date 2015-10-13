@@ -256,14 +256,16 @@
   text-align: center;
 }
 .footer > .inner > .section {
-  display: inline-block;
+  float: left;
   font: 20px blenderpro medium;
   min-height: 300px;
   min-width: 275px;
-  vertical-align: top;
 }
 .footer > .inner > .section.first > .inner {
   padding: 20px 20px 10px 170px;
+}
+.footer > .inner > .section.newsletter {
+  float: right;
 }
 .footer > .inner > .section.newsletter > .inner {
   padding: 20px 170px 10px 20px;

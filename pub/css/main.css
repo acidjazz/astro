@@ -2653,7 +2653,7 @@ body.fixed {
   -o-animation: cellInY 0.75s 0s ease-in both;
   -ms-animation: cellInY 0.75s 0s ease-in both;
   animation: cellInY 0.75s 0s ease-in both;
-  padding: 40px 40px 40px 40px;
+  padding: 40px 40px 60px 40px;
   background-color: rgba(118,215,52,0.75);
 }
 .index > .featureds > .inner > .featured > .inner > .copy > .label {

@@ -3048,7 +3048,7 @@ body.fixed {
   -o-animation: cellInX 0.2s 0s ease-in both;
   -ms-animation: cellInX 0.2s 0s ease-in both;
   animation: cellInX 0.2s 0s ease-in both;
-  padding: 16px;
+  margin: 16px;
 }
 .about > .sections > .section_clients .clients > .client:nth-child(0) {
   -webkit-animation-delay: 0s;

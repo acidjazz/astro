@@ -272,7 +272,7 @@
   padding: 20px 170px 10px 40px;
 }
 .footer > .inner > .section > .inner {
-  padding: 20px 20px;
+  padding: 0 20px;
   text-align: left;
 }
 .footer > .inner > .section > .inner > .title {
@@ -367,11 +367,18 @@
   -ms-transition: fill 0.1s linear;
   transition: fill 0.1s linear;
 }
+.footer > .inner > .copyright {
+  position: absolute;
+  left: 170px;
+  bottom: 50px;
+  font: 14px aktivgrotesk light;
+  color: #acb2c1;
+}
 .footer > .inner > .gravity {
   width: 160px;
   font: 20px blenderpro medium;
   position: absolute;
-  bottom: 10%;
+  bottom: 50px;
   left: 50%;
   margin-left: -80px;
 }

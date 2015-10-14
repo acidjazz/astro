@@ -3009,7 +3009,7 @@ body.fixed {
 }
 .about > .sections > .section_clients .engage > .title {
   font: 46px blenderpro book;
-  margin: 50px 0 0 170px;
+  margin: 125px 0 0 0;
 }
 .about > .sections > .section_clients .engage > .ways {
   text-align: center;
@@ -3077,6 +3077,8 @@ body.fixed {
 .about > .sections > .section_clients .clients {
   padding: 16px;
   text-align: center;
+  max-width: 1125px;
+  margin: auto;
 }
 .about > .sections > .section_clients .clients > .client {
   display: inline-block;

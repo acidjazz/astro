@@ -354,6 +354,11 @@
   margin: 0 5px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  -ms-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
 }
 .footer > .inner > .section.newsletter > .inner > .icons > .icon:hover {
   background-color: #f03;
@@ -361,7 +366,7 @@
 .footer > .inner > .section.newsletter > .inner > .icons > .icon:hover > svg > path,
 .footer > .inner > .section.newsletter > .inner > .icons > .icon:hover > svg > g > path,
 .footer > .inner > .section.newsletter > .inner > .icons > .icon:hover > svg > g > g > path {
-  fill: #ee5655;
+  fill: #fff;
 }
 .footer > .inner > .section.newsletter > .inner > .icons > .icon > svg {
   width: inherit;

@@ -150,10 +150,10 @@
   font: 40px blenderpro book;
 }
 .guide > .sections > .section > .font.font_f_h4 {
-  font: 28px blenderpro book;
+  font: 36px blenderpro book;
 }
 .guide > .sections > .section > .font.font_f_h5 {
-  font: 36px blenderpro book;
+  font: 28px blenderpro book;
 }
 @font-face {
   font-family: aktivgrotesk bold;
@@ -5827,10 +5827,10 @@ body.fixed {
   font: 40px blenderpro book;
 }
 .guide > .sections > .section > .font.font_f_h4 {
-  font: 28px blenderpro book;
+  font: 36px blenderpro book;
 }
 .guide > .sections > .section > .font.font_f_h5 {
-  font: 36px blenderpro book;
+  font: 28px blenderpro book;
 }
 .contact .banner {
   height: 800px;

@@ -3870,6 +3870,8 @@ body.fixed {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 10px 20px 10px 0;
+  margin: 0px;
 }
 .about > .sections > .section_clients > .blocks > .block,
 .about > .sections > .section_capabilities > .blocks > .block {

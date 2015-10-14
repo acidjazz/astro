@@ -2997,6 +2997,9 @@ body.fixed {
   color: #ee5655;
   padding: 20px 0 0 0;
 }
+.about > .sections > .section_process .process > .steps > .step > .copy {
+  margin: -10px 0 0 0;
+}
 .about > .sections > .section_process .process > .steps > .step > .copy p {
   font: 20px blenderpro medium;
 }

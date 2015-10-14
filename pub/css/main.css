@@ -2899,11 +2899,11 @@ body.fixed {
 }
 .about .block > .inner > .copy,
 .about .block > .inner > .scopy {
-  font: 46px blenderpro book;
+  font: 40px blenderpro book;
   color: #fff;
 }
 .about .block > .inner > .scopy {
-  font: 40px blenderpro book;
+  font: 36px blenderpro book;
 }
 .about > .filters > .inner > .filtermenu > .filter {
   -webkit-transition: background-color 0.1s linear;

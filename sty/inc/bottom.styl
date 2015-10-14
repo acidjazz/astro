@@ -57,7 +57,7 @@
         > .button
           float right
           color: c.white1
-          background-color: c.red1
+          background-color: c.red2
           text-align center
           padding 7px 6px
           margin 0 0 0 5px
@@ -77,9 +77,11 @@
             background-color: c.black2
             margin 0 5px
             border-radius 30px
-            &:hover > svg
-              > path, > g > path, > g > g > path
-                fill: c.red1
+            &:hover
+              background-color: c.red2
+              > svg
+                > path, > g > path, > g > g > path
+                  fill: c.red1
             > svg
               width inherit
               height inherit

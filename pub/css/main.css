@@ -327,7 +327,7 @@
 .footer > .inner > .section.newsletter > .inner > .button {
   float: right;
   color: #fff;
-  background-color: #ee5655;
+  background-color: #f03;
   text-align: center;
   padding: 7px 6px;
   margin: 0 0 0 5px;
@@ -354,6 +354,9 @@
   margin: 0 5px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
+}
+.footer > .inner > .section.newsletter > .inner > .icons > .icon:hover {
+  background-color: #f03;
 }
 .footer > .inner > .section.newsletter > .inner > .icons > .icon:hover > svg > path,
 .footer > .inner > .section.newsletter > .inner > .icons > .icon:hover > svg > g > path,

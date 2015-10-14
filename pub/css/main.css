@@ -3003,6 +3003,10 @@ body.fixed {
 .about > .sections > .section_process .process > .steps > .step > .copy p {
   font: 20px blenderpro medium;
 }
+.about > .sections > .section_clients .engage {
+  max-width: 1020px;
+  margin: auto;
+}
 .about > .sections > .section_clients .engage > .title {
   font: 46px blenderpro book;
   margin: 50px 0 0 170px;

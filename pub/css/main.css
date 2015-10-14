@@ -1844,11 +1844,11 @@
   height: 64px;
   background-color: #f03;
   width: 71px;
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
-  -ms-transition: all 0.1s linear;
-  transition: all 0.1s linear;
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -o-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
 }
 .top > .inner > .red1 > .svg {
   width: 29px;
@@ -1870,6 +1870,16 @@
   -o-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out 0.2s;
+  -moz-transition: -moz-transform 0.2s ease-in-out 0.2s;
+  -o-transition: -o-transform 0.2s ease-in-out 0.2s;
+  -ms-transition: -ms-transform 0.2s ease-in-out 0.2s;
+  transition: transform 0.2s ease-in-out 0.2s;
+  -webkit-transform: perspective(400px) rotateY(0deg);
+  -moz-transform: perspective(400px) rotateY(0deg);
+  -o-transform: perspective(400px) rotateY(0deg);
+  -ms-transform: perspective(400px) rotateY(0deg);
+  transform: perspective(400px) rotateY(0deg);
 }
 .top > .inner > .red1.off {
   -webkit-transform: translate(-71px, 0);
@@ -1877,6 +1887,16 @@
   -o-transform: translate(-71px, 0);
   -ms-transform: translate(-71px, 0);
   transform: translate(-71px, 0);
+  -webkit-transition: -webkit-transform 0.2s linear 0s;
+  -moz-transition: -moz-transform 0.2s linear 0s;
+  -o-transition: -o-transform 0.2s linear 0s;
+  -ms-transition: -ms-transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s;
+  -webkit-transform: perspective(400px) rotateY(90deg);
+  -moz-transform: perspective(400px) rotateY(90deg);
+  -o-transform: perspective(400px) rotateY(90deg);
+  -ms-transform: perspective(400px) rotateY(90deg);
+  transform: perspective(400px) rotateY(90deg);
 }
 .top > .inner > .astro {
   overflow: hidden;
@@ -1884,17 +1904,22 @@
   top: 30px;
   left: 30px;
   height: 35px;
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
-  -ms-transition: all 0.1s linear;
-  transition: all 0.1s linear;
 }
 .top > .inner > .astro.off {
   width: 120px;
+  -webkit-transition: width 0.1s linear 0.2s;
+  -moz-transition: width 0.1s linear 0.2s;
+  -o-transition: width 0.1s linear 0.2s;
+  -ms-transition: width 0.1s linear 0.2s;
+  transition: width 0.1s linear 0.2s;
 }
 .top > .inner > .astro.on {
   width: 0px;
+  -webkit-transition: width 0.1s linear;
+  -moz-transition: width 0.1s linear;
+  -o-transition: width 0.1s linear;
+  -ms-transition: width 0.1s linear;
+  transition: width 0.1s linear;
 }
 .top > .inner > .astro > svg {
   width: 120px;

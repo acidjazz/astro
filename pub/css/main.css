@@ -3762,7 +3762,8 @@ body.fixed {
 }
 .about > .sections > .section_clients .hsbpd > .slide,
 .about > .sections > .section_capabilities .hsbpd > .slide {
-  padding: 100px 170px;
+  width: 100%;
+  padding: 100px 0;
   height: 431px;
   color: #fff;
   background-position: 50% 50%;
@@ -3836,6 +3837,7 @@ body.fixed {
   width: 50px;
   height: 50px;
   text-align: center;
+  margin: 0 0 0 170px;
 }
 .about > .sections > .section_clients .hsbpd > .slide > .title,
 .about > .sections > .section_capabilities .hsbpd > .slide > .title {
@@ -3846,7 +3848,9 @@ body.fixed {
 .about > .sections > .section_capabilities .hsbpd > .slide > .copy {
   font: 36px blenderpro book;
   text-align: center;
-  padding: 20px 0 0 0;
+  padding: 100px 0 0 0;
+  max-width: 1020px;
+  margin: auto;
 }
 .about > .sections > .section_clients > .blocks,
 .about > .sections > .section_capabilities > .blocks {

@@ -3843,6 +3843,10 @@ body.fixed {
   height: 50px;
   text-align: center;
 }
+.about > .sections > .section_clients .hsbpd > .slide > .inner > .char > .inner,
+.about > .sections > .section_capabilities .hsbpd > .slide > .inner > .char > .inner {
+  margin: -2px 0 0 2px;
+}
 .about > .sections > .section_clients .hsbpd > .slide > .inner > .title,
 .about > .sections > .section_capabilities .hsbpd > .slide > .inner > .title {
   float: left;

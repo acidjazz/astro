@@ -1906,20 +1906,24 @@
   height: 35px;
 }
 .top > .inner > .astro.off {
-  width: 120px;
-  -webkit-transition: width 0.1s linear 0.2s;
-  -moz-transition: width 0.1s linear 0.2s;
-  -o-transition: width 0.1s linear 0.2s;
-  -ms-transition: width 0.1s linear 0.2s;
-  transition: width 0.1s linear 0.2s;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transition: opacity 0.1s linear 0.2s;
+  -moz-transition: opacity 0.1s linear 0.2s;
+  -o-transition: opacity 0.1s linear 0.2s;
+  -ms-transition: opacity 0.1s linear 0.2s;
+  transition: opacity 0.1s linear 0.2s;
 }
 .top > .inner > .astro.on {
-  width: 0px;
-  -webkit-transition: width 0.1s linear;
-  -moz-transition: width 0.1s linear;
-  -o-transition: width 0.1s linear;
-  -ms-transition: width 0.1s linear;
-  transition: width 0.1s linear;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.1s linear;
+  -moz-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  -ms-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
 }
 .top > .inner > .astro > svg {
   width: 120px;

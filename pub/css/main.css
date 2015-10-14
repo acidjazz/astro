@@ -3008,11 +3008,12 @@ body.fixed {
   margin: auto;
 }
 .about > .sections > .section_clients .engage > .title {
-  font: 46px blenderpro book;
-  padding: 100px 0 0 0;
+  font: 40px blenderpro book;
+  padding: 100px 0 0 16px;
 }
 .about > .sections > .section_clients .engage > .ways {
   text-align: center;
+  padding: 16px;
 }
 .about > .sections > .section_clients .engage > .ways > .way {
   text-align: left;
@@ -3064,7 +3065,7 @@ body.fixed {
   animation-delay: 0.3s;
 }
 .about > .sections > .section_clients .engage > .ways > .way > .title {
-  font: 40px blenderpro book;
+  font: 36px blenderpro book;
   text-transform: uppercase;
 }
 .about > .sections > .section_clients .engage > .ways > .way > .title > span {

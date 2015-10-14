@@ -3763,8 +3763,8 @@ body.fixed {
 .about > .sections > .section_clients .hsbpd > .slide,
 .about > .sections > .section_capabilities .hsbpd > .slide {
   width: 100%;
-  padding: 100px 0;
-  height: 431px;
+  padding: 125px 0 75px 0;
+  height: 421px;
   color: #fff;
   background-position: 50% 50%;
   -webkit-background-size: cover;

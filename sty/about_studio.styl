@@ -21,3 +21,30 @@
         background-image url('/img/about/profiles/' + name + '-default.jpg')
         &:hover
           background-image url('/img/about/profiles/' + name + '-rollover.jpg')
+
+ // responsive grid
+@media all and (min-width: 2101px)
+  .profiles > .profile
+    width 25% !important
+    height 17vw !important
+
+@media all and (min-width: 1601px) and (max-width: 2100px)
+  .profiles > .profile
+    width 25% !important
+    height 18vw !important
+
+@media all and (min-width: 1001px) and (max-width: 1600px)
+  .profiles > .profile
+    width 33.333% !important
+    height 23vw !important
+
+@media all and (min-width: 481px) and (max-width: 1000px)
+  .profiles > .profile
+    width 50% !important
+    height 35vw !important
+
+@media all and (min-width: 1px) and (max-width: 480px)
+  .profiles > .profile
+    width 100% !important
+    height 70vw !important
+

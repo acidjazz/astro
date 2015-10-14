@@ -3677,6 +3677,36 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_woo:hover {
   background-image: url("/img/about/profiles/woo-rollover.jpg");
 }
+@media all and (min-width: 2101px) {
+  .about > .sections > .section_studio .profiles > .profile {
+    width: 25% !important;
+    height: 17vw !important;
+  }
+}
+@media all and (min-width: 1601px) and (max-width: 2100px) {
+  .about > .sections > .section_studio .profiles > .profile {
+    width: 25% !important;
+    height: 18vw !important;
+  }
+}
+@media all and (min-width: 1001px) and (max-width: 1600px) {
+  .about > .sections > .section_studio .profiles > .profile {
+    width: 33.333% !important;
+    height: 23vw !important;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 1000px) {
+  .about > .sections > .section_studio .profiles > .profile {
+    width: 50% !important;
+    height: 35vw !important;
+  }
+}
+@media all and (min-width: 1px) and (max-width: 480px) {
+  .about > .sections > .section_studio .profiles > .profile {
+    width: 100% !important;
+    height: 70vw !important;
+  }
+}
 .about > .sections > .section_careers .jobs > .job:nth-child(odd) > .title {
   background-color: #434965;
 }

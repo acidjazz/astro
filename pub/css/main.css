@@ -3018,7 +3018,7 @@ body.fixed {
   text-align: left;
   display: inline-block;
   vertical-align: top;
-  width: 24%;
+  width: 28.8%;
   padding: 20px;
   margin: 16px;
   -webkit-animation: cellInX 0.2s 0s ease-in both;
@@ -3026,6 +3026,14 @@ body.fixed {
   -o-animation: cellInX 0.2s 0s ease-in both;
   -ms-animation: cellInX 0.2s 0s ease-in both;
   animation: cellInX 0.2s 0s ease-in both;
+}
+.about > .sections > .section_clients .engage > .ways > .way:nth-child(1) {
+  padding: 20px 20px 20px 0;
+  margin: 16px 16px 16px 0;
+}
+.about > .sections > .section_clients .engage > .ways > .way:nth-child(3) {
+  padding: 20px 0 20px 20px;
+  margin: 16px 0 16px 16px;
 }
 .about > .sections > .section_clients .engage > .ways > .way:nth-child(0) {
   -webkit-animation-delay: 0s;

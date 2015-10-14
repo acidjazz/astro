@@ -11,10 +11,18 @@
       text-align left
       display inline-block
       vertical-align top
-      width 24%
+      width 28.8%
+
       padding 20px
       margin 16px
       animation cellInX 0.2s 0s ease-in both
+      &:nth-child(1)
+        padding 20px 20px 20px 0
+        margin 16px 16px 16px 0
+      &:nth-child(3)
+        padding 20px 0 20px 20px
+        margin 16px 0 16px 16px
+
       for num in 0..3
         &:nth-child({num})
           animation-delay unit(num*0.1, 's')

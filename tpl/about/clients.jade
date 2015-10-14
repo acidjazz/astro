@@ -10,6 +10,8 @@
           a(href='/work/#' + way.project.folder) + #{way.project.name}
 
 .clients
+  .title we love our clients
+  .copy Here are just a few of them
   each client in data.clients
     .client
       .inner(style='background-image: url("/img/about/clients/' + client + '");')

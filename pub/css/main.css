@@ -3067,6 +3067,7 @@ body.fixed {
 .about > .sections > .section_clients .engage > .ways > .way > .title {
   font: 28px blenderpro book;
   text-transform: uppercase;
+  padding: 0 0 25px 0;
 }
 .about > .sections > .section_clients .engage > .ways > .way > .title > span {
   color: #ee5655;

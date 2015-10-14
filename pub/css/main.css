@@ -5521,7 +5521,6 @@ body.fixed {
 .blog > .entry,
 .blog > .summary,
 .about {
-  font: 18px blenderpro medium;
   color: #444;
 }
 .blog > .entry > .fcontainer,

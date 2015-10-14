@@ -3009,7 +3009,7 @@ body.fixed {
 }
 .about > .sections > .section_clients .engage > .title {
   font: 46px blenderpro book;
-  margin: 187px 0 0 0;
+  padding: 100px 0 0 0;
 }
 .about > .sections > .section_clients .engage > .ways {
   text-align: center;

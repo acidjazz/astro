@@ -2933,7 +2933,7 @@ body.fixed {
   background-color: #fff;
 }
 .about > .sections > .section_process .process > .steps {
-  padding: 16px;
+  padding: 100px 16px;
   text-align: center;
   max-width: 1125px;
   margin: auto;

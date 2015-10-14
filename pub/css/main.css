@@ -3009,17 +3009,16 @@ body.fixed {
 }
 .about > .sections > .section_clients .engage > .title {
   font: 46px blenderpro book;
-  margin: 125px 0 0 0;
+  margin: 187px 0 0 0;
 }
 .about > .sections > .section_clients .engage > .ways {
   text-align: center;
-  padding: 16px;
 }
 .about > .sections > .section_clients .engage > .ways > .way {
   text-align: left;
   display: inline-block;
   vertical-align: top;
-  width: 260px;
+  width: 28%;
   padding: 20px;
   margin: 16px;
   -webkit-animation: cellInX 0.2s 0s ease-in both;

@@ -2935,6 +2935,8 @@ body.fixed {
 .about > .sections > .section_process .process > .steps {
   padding: 16px;
   text-align: center;
+  max-width: 1125px;
+  margin: auto;
 }
 .about > .sections > .section_process .process > .steps > .step {
   text-align: left;

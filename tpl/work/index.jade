@@ -21,9 +21,9 @@ block content
             .filtermenu
               each filter in data.filters
                 if filter.name == 'all'
-                  .filter.on(class='filter_' + filter.name,data-copy=filter.copy) #{filter.name}
+                  .filter.on(class='filter_' + filter.name,data-copy=filter.copy)=filter.name
                 else
-                  .filter(class='filter_' + filter.name,data-copy=filter.copy) #{filter.name}
+                  .filter(class='filter_' + filter.name,data-copy=filter.copy)=filter.name
             .clear
       .thumbs
         each project in data.project

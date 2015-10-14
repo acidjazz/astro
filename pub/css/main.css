@@ -4842,6 +4842,7 @@ body.fixed {
   cursor: pointer;
   display: inline-block;
   padding: 20px;
+  margin: 0 -5px;
 }
 .projects > .project > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos.active,
 .projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos.active,

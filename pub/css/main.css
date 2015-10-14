@@ -149,6 +149,9 @@
 .guide > .sections > .section > .font.font_f_h3 {
   font: 40px blenderpro book;
 }
+.guide > .sections > .section > .font.font_f_h3m {
+  font: 40px blenderpro medium;
+}
 .guide > .sections > .section > .font.font_f_h4 {
   font: 36px blenderpro book;
 }
@@ -3849,15 +3852,15 @@ body.fixed {
 .about > .sections > .section_capabilities > .blocks {
   max-width: 1020px;
   margin: auto;
+  padding: 100px 0;
 }
 .about > .sections > .section_clients > .blocks > .title,
 .about > .sections > .section_capabilities > .blocks > .title {
-  font: 46px blenderpro book;
-  padding: 25px 0;
+  font: 40px blenderpro medium;
+  text-transform: uppercase;
 }
 .about > .sections > .section_clients > .blocks > .blurb,
 .about > .sections > .section_capabilities > .blocks > .blurb {
-  padding: 25px 0;
   -webkit-columns: 2;
   -moz-columns: 2;
   columns: 2;
@@ -5825,6 +5828,9 @@ body.fixed {
 }
 .guide > .sections > .section > .font.font_f_h3 {
   font: 40px blenderpro book;
+}
+.guide > .sections > .section > .font.font_f_h3m {
+  font: 40px blenderpro medium;
 }
 .guide > .sections > .section > .font.font_f_h4 {
   font: 36px blenderpro book;

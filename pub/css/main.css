@@ -3829,28 +3829,30 @@ body.fixed {
 .about > .sections > .section_capabilities .hsbpd > .slide.slide_d {
   background-image: url("/img/about/capabilities/digital.png");
 }
-.about > .sections > .section_clients .hsbpd > .slide > .char,
-.about > .sections > .section_capabilities .hsbpd > .slide > .char {
+.about > .sections > .section_clients .hsbpd > .slide > .inner,
+.about > .sections > .section_capabilities .hsbpd > .slide > .inner {
+  max-width: 1020px;
+  margin: auto;
+}
+.about > .sections > .section_clients .hsbpd > .slide > .inner > .char,
+.about > .sections > .section_capabilities .hsbpd > .slide > .inner > .char {
   font: 46px blenderpro book;
   border: 10px solid #fff;
   float: left;
   width: 50px;
   height: 50px;
   text-align: center;
-  margin: 0 0 0 170px;
 }
-.about > .sections > .section_clients .hsbpd > .slide > .title,
-.about > .sections > .section_capabilities .hsbpd > .slide > .title {
+.about > .sections > .section_clients .hsbpd > .slide > .inner > .title,
+.about > .sections > .section_capabilities .hsbpd > .slide > .inner > .title {
   float: left;
   margin: 52px 0 0 20px;
 }
-.about > .sections > .section_clients .hsbpd > .slide > .copy,
-.about > .sections > .section_capabilities .hsbpd > .slide > .copy {
+.about > .sections > .section_clients .hsbpd > .slide > .inner > .copy,
+.about > .sections > .section_capabilities .hsbpd > .slide > .inner > .copy {
   font: 36px blenderpro book;
   text-align: center;
   padding: 100px 0 0 0;
-  max-width: 1020px;
-  margin: auto;
 }
 .about > .sections > .section_clients > .blocks,
 .about > .sections > .section_capabilities > .blocks {

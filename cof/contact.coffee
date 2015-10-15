@@ -37,11 +37,14 @@ Contact =
 
     map = new google.maps.Map(mapCanvas, mapOptions)
 
-    icon = '/img/contact/hitchhiker.png'
+    image =
+      url: '/img/contact/hitchhiker.png'
+      scaledSize: new google.maps.Size(45, 75)
+
     marker = new google.maps.Marker
       title: 'map title is here'
       position: loc
-      icon: icon
+      icon: image
       map: map
     
 

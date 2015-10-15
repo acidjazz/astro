@@ -15,7 +15,7 @@ Contact = {
     return google.maps.event.addDomListener(window, 'load', Contact.gmaps);
   },
   gmaps: function() {
-    var icon, loc, map, mapCanvas, mapOptions, marker;
+    var image, loc, map, mapCanvas, mapOptions, marker;
     loc = {
       lat: 37.7777875,
       lng: -122.4072472
@@ -33,11 +33,14 @@ Contact = {
       draggable: false
     };
     map = new google.maps.Map(mapCanvas, mapOptions);
-    icon = '/img/contact/hitchhiker.png';
+    image = {
+      url: '/img/contact/hitchhiker.png',
+      scaledSize: new google.maps.Size(45, 75)
+    };
     return marker = new google.maps.Marker({
       title: 'map title is here',
       position: loc,
-      icon: icon,
+      icon: image,
       map: map
     });
   },

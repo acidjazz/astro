@@ -1,6 +1,7 @@
 var Contact;
 
 Contact = {
+  placeId: 'ChIJYRO5t4GAhYARo4h4qnXunmc',
   map: false,
   i: function() {
     var src;
@@ -15,7 +16,7 @@ Contact = {
     return google.maps.event.addDomListener(window, 'load', Contact.gmaps);
   },
   gmaps: function() {
-    var image, loc, map, mapCanvas, mapOptions, marker;
+    var image, infoContent, infoWindow, loc, map, mapCanvas, mapOptions, marker;
     loc = {
       lat: 37.7777875,
       lng: -122.4072472
@@ -37,11 +38,18 @@ Contact = {
       url: '/img/contact/hitchhiker.png',
       scaledSize: new google.maps.Size(45, 75)
     };
-    return marker = new google.maps.Marker({
+    marker = new google.maps.Marker({
       title: 'map title is here',
       position: loc,
       icon: image,
       map: map
+    });
+    infoContent = '<a href="https://maps.google.com?daddr=348+6th+St+San Francisco,+CA+94103">Astro Studios</a><br /><br />348 6th St<br />San Francisco, CA<br />94103';
+    infoWindow = new google.maps.InfoWindow({
+      content: infoContent
+    });
+    return marker.addListener('click', function() {
+      return infoWindow.open(map, marker);
     });
   },
   style: function() {

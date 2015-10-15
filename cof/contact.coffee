@@ -1,5 +1,7 @@
 Contact =
 
+  placeId: 'ChIJYRO5t4GAhYARo4h4qnXunmc'
+
   map: false
 
   i: ->
@@ -46,7 +48,16 @@ Contact =
       position: loc
       icon: image
       map: map
+
+    infoContent = '<a href="https://maps.google.com?daddr=348+6th+St+San Francisco,+CA+94103">Astro Studios</a><br /><br />348 6th St<br />San Francisco, CA<br />94103'
+    infoWindow = new google.maps.InfoWindow
+      content: infoContent
+    marker.addListener 'click', ->
+      infoWindow.open map, marker
     
+    # iframe
+    # <iframe
+    #   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5227375303234!2d-122.40724718471583!3d37.777787519759265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858081b7b91361%3A0x679eee75aa7888a3!2sAstro+Studios+Inc!5e0!3m2!1sen!2sus!4v1444870517141" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
   style: ->
 

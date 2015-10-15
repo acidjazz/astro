@@ -27,16 +27,16 @@
         background-color: c.white3
 
   .block
-    background-color: c.black4
+    background-color: c.black2
     > .inner
       text-align center
-      padding 50px
+      padding 100px
       desktop()
       > .copy, > .scopy
-        font f_h2
+        font f_h3
         color: c.white1
       > .scopy
-        font f_h3
+        font f_h4
 
   > .filters
     > .inner
@@ -68,14 +68,16 @@
 
       > .blocks
         desktop()
+        padding 100px 0
         > .title
-          font f_h2
-          padding 25px 0
+          font f_h3m
+          text-transform uppercase
         > .blurb
-          padding 25px 0
           columns 2
           > p
             box-sizing border-box
+            padding 10px 20px 10px 0
+            margin 0px
         > .block
           width 50%
           height 340px

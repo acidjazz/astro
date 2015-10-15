@@ -2,20 +2,24 @@
   > .inner
     background-color: c.white2
     position relative
+    text-align center
     > .section
       float left
-      width 25%
-      font f_copyl
+      font f_copyls
       min-height 300px
-      min-width 300px
+      min-width 275px
+      padding 60px 0 60px 0
       &.first > .inner
-        padding 20px 20px 10px 50px
+        padding 20px 20px 10px 170px
+      &.newsletter
+        float right
       &.newsletter > .inner
-        padding 20px 50px 10px 20px
+        padding 20px 170px 10px 40px
       > .inner
-        padding 20px 20px
+        padding 20px
+        text-align left
         > .title
-          padding 50px 0 10px 0
+          padding 20px 0 0 0
           text-transform uppercase
         > .a
           width 40px
@@ -25,12 +29,15 @@
             height inherit
             color: c.black1
         > .info
-          margin 10px 0
+          margin 0 0 10px 0
           > p, > a.p
             display block
             color: c.black1
             text-decoration none
             margin 0
+            transition color 0.1s linear
+          > a.p:hover
+            color: c.blue1
     > .section.newsletter
       background-color: c.white3
       > .inner
@@ -38,24 +45,23 @@
           margin 0 0 10px 0
         > .input
           float left
-          width 50%
+          width 200px
           > input
             width 100%
             background-color: c.white1
             border none
             outline none
-            font f_copys
+            font f_copysb
             padding 10px
 
         > .button
           float right
-          font f_copys
           color: c.white1
-          background-color: c.red1
+          background-color: c.red2
           text-align center
-          padding 10px
+          padding 7px 6px
+          margin 0 0 0 5px
           text-transform uppercase
-          width 30%
           cursor pointer
           transition background-color 0.1s linear
           &:hover
@@ -71,20 +77,29 @@
             background-color: c.black2
             margin 0 5px
             border-radius 30px
-            &:hover > svg
-              > path, > g > path, > g > g > path
-                fill: c.red1
+            transition background-color 0.1s linear
+            &:hover
+              background-color: c.red2
+              > svg
+                > path, > g > path, > g > g > path
+                  fill: c.white1
             > svg
               width inherit
               height inherit
               > path, > g > path, > g > g > path
                 fill: c.white1
                 transition fill 0.1s linear
+    > .copyright
+      position absolute
+      left 170px
+      bottom 50px
+      font f_copys
+      color: c.blue7
     > .gravity
       width 160px
       font f_copyl
       position absolute
-      bottom 10%
+      bottom 50px
       left 50%
       margin-left -80px
       > .bolt

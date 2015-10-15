@@ -2,6 +2,7 @@
   font f_h2
   padding 50px 170px
 .profiles
+  background-color: c.white3
   > .profile
     width 25%
     height 25vw
@@ -20,3 +21,30 @@
         background-image url('/img/about/profiles/' + name + '-default.jpg')
         &:hover
           background-image url('/img/about/profiles/' + name + '-rollover.jpg')
+
+ // responsive grid
+@media all and (min-width: 2101px)
+  .profiles > .profile
+    width 25% !important
+    height 25vw !important
+
+@media all and (min-width: 1601px) and (max-width: 2100px)
+  .profiles > .profile
+    width 25% !important
+    height 25vw !important
+
+@media all and (min-width: 1001px) and (max-width: 1600px)
+  .profiles > .profile
+    width 33.333% !important
+    height 33.333vw !important
+
+@media all and (min-width: 481px) and (max-width: 1000px)
+  .profiles > .profile
+    width 50% !important
+    height 50vw !important
+
+@media all and (min-width: 1px) and (max-width: 480px)
+  .profiles > .profile
+    width 100% !important
+    height 100vw !important
+

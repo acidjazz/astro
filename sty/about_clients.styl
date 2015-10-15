@@ -1,8 +1,10 @@
 
 .engage
+  max-width 1125px
+  margin auto
   > .title 
-    font f_h2
-    margin 50px 0 0 170px
+    font f_h3m
+    padding 100px 0 0 16px
   > .ways
     text-align center
     padding 16px
@@ -10,20 +12,27 @@
       text-align left
       display inline-block
       vertical-align top
-      width 260px
+      width 28.5%
+
       padding 20px
       margin 16px
       animation cellInX 0.2s 0s ease-in both
+      &:nth-child(1)
+        padding 20px 20px 20px 0
+        margin 16px 16px 16px 0
+      &:nth-child(3)
+        padding 20px 0 20px 20px
+        margin 16px 0 16px 16px
+
       for num in 0..3
         &:nth-child({num})
           animation-delay unit(num*0.1, 's')
       > .title
-        font f_h3
+        font f_h5
         text-transform uppercase
+        padding 0 0 16px 0
         > span
           color: c.red1
-      > .copy
-        font f_copyl
       > .example
         padding 30px 0 10px 0
         border-bottom: 1px solid c.black1
@@ -32,8 +41,18 @@
           color: c.blue1
 
 .clients
-  padding 16px
+  padding 16px 16px 116px 16px
   text-align center
+  max-width 1142px
+  margin auto
+  > .title
+    font f_h3m
+    text-transform uppercase
+    text-align left
+    padding 0 0 16px 16px
+  > .copy
+    padding 0 0 16px 16px
+    text-align left
   > .client
     display inline-block
     vertical-align top
@@ -41,7 +60,7 @@
     height 130px
     background-color: c.white3
     animation cellInX 0.2s 0s ease-in both
-    padding 16px
+    margin 16px
     for num in 0..25
       &:nth-child({num})
               animation-delay unit(num*0.05, 's')

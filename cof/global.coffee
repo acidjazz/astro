@@ -157,11 +157,11 @@ Global =
 
   astro: (clean) ->
 
-    if document.body.scrollTop isnt 0 or document.documentElement.scrollTop isnt 0 and (Global.cache.astro.hasClass('off') or clean)
+    if document.body.scrollTop > 50 or document.documentElement.scrollTop > 50 and (Global.cache.astro.hasClass('off') or clean)
       _.on Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase
       return true
 
-    if (document.body.scrollTop is 0 or document.documentElement.scrollTop is 0) and (Global.cache.astro.hasClass('on') or clean)
+    if (document.body.scrollTop < 50 or document.documentElement.scrollTop < 50) and (Global.cache.astro.hasClass('on') or clean)
       _.off Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase
       clearTimeout Global.phraseTimeout
       Global.phrase()

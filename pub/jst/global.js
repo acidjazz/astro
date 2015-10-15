@@ -125,11 +125,11 @@ Global = {
     }
   },
   astro: function(clean) {
-    if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0 && (Global.cache.astro.hasClass('off') || clean)) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 && (Global.cache.astro.hasClass('off') || clean)) {
       _.on(Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase);
       return true;
     }
-    if ((document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) && (Global.cache.astro.hasClass('on') || clean)) {
+    if ((document.body.scrollTop < 50 || document.documentElement.scrollTop < 50) && (Global.cache.astro.hasClass('on') || clean)) {
       _.off(Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase);
       clearTimeout(Global.phraseTimeout);
       Global.phrase();

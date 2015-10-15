@@ -36,8 +36,9 @@
         background-color: c.white1
         
   > .slide
-    padding 100px 170px
-    height 431px
+    width 100%
+    padding 125px 0 75px 0
+    height 421px
     color: c.white1
     background-position 50% 50%
     background-size cover
@@ -65,17 +66,21 @@
       background-image url('/img/about/capabilities/product.png')
     &.slide_d
       background-image url('/img/about/capabilities/digital.png')
-    > .char
-      font f_h2
-      border: 10px solid c.white1
-      float left
-      width 50px
-      height 50px
-      text-align center
-    > .title
-      float left
-      margin 52px 0 0 20px
-    > .copy
-      font f_h4
-      text-align center
-      padding 20px 0 0 0
+    > .inner
+      desktop()
+      > .char
+        font f_h2
+        border: 6px solid c.white1
+        float left
+        width 50px
+        height 50px
+        text-align center
+        > .inner
+          margin -2px 0 0 2px
+      > .title
+        float left
+        margin 43px 0 0 20px
+      > .copy
+        font f_h4
+        text-align center
+        padding 50px 0 0 0

@@ -76,7 +76,7 @@
       height 64px
       background-color: c.red2
       width 71px
-      transition all 0.1s linear
+      transform-origin left
       > .svg
         width 29px
         height 35px
@@ -89,8 +89,12 @@
             fill: c.white1
       &.on
         transform translate(0, 0)
+        transition transform 0.2s ease-in-out 0.2s
+        transform perspective(400px) rotateY(0deg)
       &.off
         transform translate(-71px, 0)
+        transition transform 0.2s linear 0s
+        transform perspective(400px) rotateY(90deg)
 
     > .astro
       overflow hidden
@@ -98,11 +102,12 @@
       top 30px
       left 30px
       height 35px
-      transition all 0.1s linear
       &.off
-        width 120px
+        opacity 1
+        transition opacity 0.1s linear 0.2s
       &.on
-        width 0px
+        opacity 0
+        transition opacity 0.1s linear 
       > svg
         width 120px
         height 35px

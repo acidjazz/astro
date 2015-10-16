@@ -42,7 +42,7 @@
     for num in 0..10
       &:nth-child({num})
         animation-delay unit(num*0.05, 's')
-    for key, project in data.project
+    for key, project in data.work
       &.thumb_{project.folder}:hover > .inner > .bg
         background-color: rgba(c[project.color], 0.75)
     for key, entry in data.blog
@@ -205,11 +205,11 @@
         text-align center
         padding 20px
         color: c.white1
-        for key, project in data.project
+        for key, project in data.work
           &.title_{project.folder}
             background-color: c[project.color]
     > .credits
-      for key, project in data.project
+      for key, project in data.work
         &.credits_{project.folder} > .inner > .sections > .section > .title
           color: c[project.color]
       > .inner
@@ -262,7 +262,7 @@
             display inline-block
             padding 20px
             margin 0 -5px
-            for key, project in data.project
+            for key, project in data.work
               &.filter_{project.folder}.active
                 background-color: c[project.color]
               &.filter_{project.folder}:hover

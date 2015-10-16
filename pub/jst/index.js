@@ -16,7 +16,8 @@ Index = {
     return Index.handlers();
   },
   handlers: function() {
-    return $('.lines > .line').on('click', Index.line);
+    $('.lines > .line').on('click', Index.line);
+    return $('.projects > .thumb').on('click', Index.grid);
   },
   line: function() {
     var key, src, t;
@@ -33,5 +34,17 @@ Index = {
       _.off('.lines > .line');
       return _.on(t);
     });
+  },
+  grid: function() {
+    var folder, t, type;
+    t = $(this);
+    type = t.data('type');
+    folder = t.data('folder');
+    if (type === 'work') {
+      location.href = '/work/#' + folder;
+    }
+    if (type === 'blog') {
+      return location.href = '/blog/#' + folder;
+    }
   }
 };

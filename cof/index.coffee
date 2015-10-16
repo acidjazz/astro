@@ -21,6 +21,8 @@ Index =
 
     $('.lines > .line').on 'click', Index.line
 
+    $('.projects > .thumb').on 'click', Index.grid
+
   line: ->
 
     t = $ this
@@ -39,5 +41,16 @@ Index =
       _.on ".featureds > .inner > .featured:nth-child(#{key+1})"
       _.off '.lines > .line'
       _.on t
+
+  grid: ->
+
+    t = $ this
+    type = t.data 'type'
+    folder = t.data 'folder'
+    if type is 'work'
+      location.href = '/work/#' + folder
+    if type is 'blog'
+      location.href = '/blog/#' + folder
+
 
 

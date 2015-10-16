@@ -26,14 +26,14 @@ block content
                   .filter(class='filter_' + filter.name,data-copy=filter.copy)=filter.name
             .clear
       .thumbs
-        each project in data.project
+        each project in data.work
           .thumb.on(
             class='thumb_' + project.folder,
             data-project=project.folder,
             data-filters=project.filters
           )
             .inner(
-              style='background-image: url(../img/project/' + project.folder + '/1440/' + project.cover + ');',
+              style='background-image: url(../img/work/' + project.folder + '/1440/' + project.cover + ');',
             )
               .bg
                 .copy
@@ -42,7 +42,7 @@ block content
       .clear
 
     // PROJECT PAGES
-    - var project = data.project.threedr
+    - var project = data.work.threedr
 
     .project.project_threedr.off
       include _header
@@ -50,7 +50,7 @@ block content
         include threedr
       include _credits
 
-    - var project = data.project.versus
+    - var project = data.work.versus
 
     .project.project_versus.off
       include _header
@@ -58,7 +58,7 @@ block content
         include versus
       include _credits
 
-    - var project = data.project.aos
+    - var project = data.work.aos
 
     .project.project_aos.off
       include _header
@@ -66,7 +66,7 @@ block content
         include aos
       include _credits
 
-    - var project = data.project.goggle
+    - var project = data.work.goggle
 
     .project.project_goggle.off
       include _header
@@ -75,7 +75,7 @@ block content
       include _credits
 
 
-    - var project = data.project.fuelband
+    - var project = data.work.fuelband
 
     .project.project_fuelband.off
       include _header
@@ -83,7 +83,7 @@ block content
         include fuelband
       include _credits
 
-    - var project = data.project.neff
+    - var project = data.work.neff
 
     .project.project_neff.off
       include _header
@@ -91,7 +91,7 @@ block content
         include neff
       include _credits
 
-    - var project = data.project.mineralist
+    - var project = data.work.mineralist
 
     .project.project_mineralist.off
       include _header
@@ -100,7 +100,7 @@ block content
       include _credits
 
 
-    - var project = data.project.xbox
+    - var project = data.work.xbox
 
     .project.project_xbox.off
       include _header
@@ -109,7 +109,7 @@ block content
       include _credits
 
 
-    - var project = data.project.tamar
+    - var project = data.work.tamar
 
     .project.project_tamar.off
       include _header
@@ -117,7 +117,7 @@ block content
         include tamar
       include _credits
 
-    - var project = data.project.jinnitv
+    - var project = data.work.jinnitv
 
     .project.project_jinnitv.off
       include _header
@@ -125,7 +125,7 @@ block content
         include jinnitv
       include _credits
 
-    - var project = data.project.owlet
+    - var project = data.work.owlet
 
     .project.project_owlet.off
       include _header
@@ -134,7 +134,7 @@ block content
       include _credits
 
 
-    - var project = data.project.minus8
+    - var project = data.work.minus8
 
     .project.project_minus8.off
       include _header
@@ -142,7 +142,7 @@ block content
         include minus8
       include _credits
 
-    - var project = data.project.sol
+    - var project = data.work.sol
 
     .project.project_sol.off
       include _header
@@ -156,6 +156,6 @@ block content
     function loadercomplete() {
       Loader.load('../jst/work.js', 'Work');
       Global.i()
-      projects = !{JSON.stringify(data.project)};
+      projects = !{JSON.stringify(data.work)};
     }
 

@@ -35,36 +35,27 @@ block content
         .copy2 <span>_</span>We fight gravity.
     .clear
     .projects
-      each project in data.project
-        if (project.home != undefined && project.home === true)
-          .thumb(
-            data-type='project',
-            class='thumb_' + project.folder,
-            data-project=project.folder,
-          )
-            .inner(
-              style='background-image: url(../img/project/' + project.folder + '/1440/' + project.cover + ');'
-            )
-              .bg
-                .copy
-                  .name #{project.name}
-                  .filters
+      each grid in data.home.grid
+        .thumb(
+          data-type=grid.type,
+          class='thumb_' + grid.folder,
+          data-folder=grid.folder,
+        )
+          if grid.type == 'blog'
+            - var info = data.blog[grid.folder]
+          if grid.type == 'work'
+            - var info = data.work[grid.folder]
 
-      each entry in data.blog
-        if (entry.home != undefined && entry.home === true)
-          .thumb(
-            data-type='blog',
-            class='thumb_' + entry.folder,
-            data-entry=entry.folder,
+          .inner(
+            style='background-image: url(../img/' + grid.type + '/' + grid.folder + '/1440/' + info.cover + ');'
           )
-            .inner(
-              style='background-image: url(../img/blog/' + entry.folder + '/1440/' + entry.cover + ');'
-            )
-              .bg
-                .copy
-                  .name #{entry.name}
-                  .filters #{entry.date}
- 
+            .bg
+              .copy
+                .name #{info.name}
+                if info.filters
+                  .filters !{info.filters.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
+                if info.tags
+                  .filters !{info.tags.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
 
     .clear
 

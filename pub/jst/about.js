@@ -44,7 +44,6 @@ About = {
     st = $(window).scrollTop();
     top = 1383;
     threshold = 631;
-    console.log(st);
     if (st >= top && !About.cache.hsbpd.hasClass('fixed')) {
       About.cache.hsbpd.addClass('fixed').removeClass('bottom');
     }
@@ -64,8 +63,7 @@ About = {
       t = top + ((i + 0) * threshold);
       b = top + ((i + 1) * threshold);
       if (st > t && st < b && About.hsbpdSection !== section) {
-        About.hsbpd(section);
-        results.push(console.log(st, section, i, t, b, About.hsbpdSection));
+        results.push(About.hsbpd(section));
       } else {
         results.push(void 0);
       }

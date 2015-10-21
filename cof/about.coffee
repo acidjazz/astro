@@ -53,8 +53,6 @@ About =
     top = 1383
     threshold = 631
 
-    console.log st
-
     if st >= top and !About.cache.hsbpd.hasClass 'fixed'
       About.cache.hsbpd.addClass('fixed').removeClass 'bottom'
     if st < top and About.cache.hsbpd.hasClass 'fixed'
@@ -65,7 +63,6 @@ About =
     if st < top
       return true
 
-
     sections = ['holistic','strategy','brand','product','digital']
     for section, i in sections
       t = top + ( (i+0) * threshold )
@@ -73,10 +70,6 @@ About =
 
       if st > t and st < b and About.hsbpdSection isnt section
         About.hsbpd section
-        console.log st, section, i, t, b, About.hsbpdSection
-
-
-      #About.hsbpd section
 
   hsbpdHandler: ->
     section = $(this).data 'section'

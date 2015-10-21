@@ -10,6 +10,7 @@ About =
 
     About.cache.hsbpd = $('.hsbpd')
     About.cache.blocks = $('.blocks')
+    About.cache.blocksp = $('.blocksp')
 
     About.handlers()
 
@@ -51,15 +52,19 @@ About =
 
     st = $(window).scrollTop()
 
-    top = 1383
+    console.log st
+
+    top = 1386
     threshold = 631
 
     if st >= top and !About.cache.hsbpd.hasClass 'fixed'
       About.cache.hsbpd.addClass('fixed').removeClass 'bottom'
       About.cache.blocks.addClass('fixed')
+      About.cache.blocksp.removeClass('off').addClass('on')
     if st < top and About.cache.hsbpd.hasClass 'fixed'
       About.cache.hsbpd.removeClass('fixed').removeClass 'bottom'
       About.cache.blocks.removeClass('fixed')
+      About.cache.blocksp.removeClass('on').addClass('off')
     if st >= (top + (threshold*5))
       About.cache.hsbpd.removeClass('fixed').addClass 'bottom'
 

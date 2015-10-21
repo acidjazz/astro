@@ -3528,6 +3528,14 @@ body.fixed {
   text-align: center;
   padding: 50px 0 0 0;
 }
+.about > .sections > .section_clients > .blocksp.on,
+.about > .sections > .section_capabilities > .blocksp.on {
+  height: 420px;
+}
+.about > .sections > .section_clients > .blocksp.off,
+.about > .sections > .section_capabilities > .blocksp.off {
+  height: 0px;
+}
 .about > .sections > .section_clients > .blocks,
 .about > .sections > .section_capabilities > .blocks {
   padding: 100px 0;

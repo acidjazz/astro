@@ -4225,6 +4225,8 @@ body.fixed {
 }
 .projects > .project {
   min-height: 600px;
+  max-width: 1020px;
+  margin: auto;
 }
 .projects > .project.on {
   display: block;

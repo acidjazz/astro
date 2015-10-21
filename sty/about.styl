@@ -67,33 +67,39 @@
       @import about_capabilities
 
       > .blocks
-        desktop()
         padding 100px 0
-        > .title
-          font f_h3m
-          text-transform uppercase
-        > .blurb
-          columns 2
-          > p
-            box-sizing border-box
-            padding 10px 20px 10px 0
-            margin 0px
-        > .block
-          width 50%
-          height 340px
-          &.left
-            float left
-          &.right
-            float right
-          &.block_copy
-            background-color: c.white3
-            > .inner
-              padding 40px
-              > .title
-                font f_h4
-                margin 0 0 10px 0
-              > .copy
-                line-height 30px
+        &.fixed
+          position fixed
+          bottom 631px
+          width 100%
+          background-color: c.white1
+        > .inner
+          desktop()
+          > .title
+            font f_h3m
+            text-transform uppercase
+          > .blurb
+            columns 2
+            > p
+              box-sizing border-box
+              padding 10px 20px 10px 0
+              margin 0px
+          > .block
+            width 50%
+            height 340px
+            &.left
+              float left
+            &.right
+              float right
+            &.block_copy
+              background-color: c.white3
+              > .inner
+                padding 40px
+                > .title
+                  font f_h4
+                  margin 0 0 10px 0
+                > .copy
+                  line-height 30px
 
           &.block_project
             background-position 50% 50%

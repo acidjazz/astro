@@ -9,6 +9,7 @@ About =
     _.off '.orbit'
 
     About.cache.hsbpd = $('.hsbpd')
+    About.cache.blocks = $('.blocks')
 
     About.handlers()
 
@@ -27,7 +28,7 @@ About =
 
     About.hsbpdInterval = setInterval ->
       About.hsbpdCheck()
-    , 20
+    , 10
 
   menuHandler: ->
     section = $(this).html().trim()
@@ -55,8 +56,10 @@ About =
 
     if st >= top and !About.cache.hsbpd.hasClass 'fixed'
       About.cache.hsbpd.addClass('fixed').removeClass 'bottom'
+      About.cache.blocks.addClass('fixed')
     if st < top and About.cache.hsbpd.hasClass 'fixed'
       About.cache.hsbpd.removeClass('fixed').removeClass 'bottom'
+      About.cache.blocks.removeClass('fixed')
     if st >= (top + (threshold*5))
       About.cache.hsbpd.removeClass('fixed').addClass 'bottom'
 

@@ -8,6 +8,7 @@ About = {
   i: function() {
     _.off('.orbit');
     About.cache.hsbpd = $('.hsbpd');
+    About.cache.blocks = $('.blocks');
     About.handlers();
     if (location.hash !== "") {
       return About.menu(location.hash.replace('#', ''));
@@ -21,7 +22,7 @@ About = {
     $('.about > .sections > .section_careers').on('click', '.jobs > .job', About.jobHandler);
     return About.hsbpdInterval = setInterval(function() {
       return About.hsbpdCheck();
-    }, 20);
+    }, 10);
   },
   menuHandler: function() {
     var section;
@@ -46,9 +47,11 @@ About = {
     threshold = 631;
     if (st >= top && !About.cache.hsbpd.hasClass('fixed')) {
       About.cache.hsbpd.addClass('fixed').removeClass('bottom');
+      About.cache.blocks.addClass('fixed');
     }
     if (st < top && About.cache.hsbpd.hasClass('fixed')) {
       About.cache.hsbpd.removeClass('fixed').removeClass('bottom');
+      About.cache.blocks.removeClass('fixed');
     }
     if (st >= (top + (threshold * 5))) {
       About.cache.hsbpd.removeClass('fixed').addClass('bottom');

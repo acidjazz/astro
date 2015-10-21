@@ -3,6 +3,7 @@ Global =
   astroInterval: false
   fbarInterval: false
   phraseTimeout: false
+  phraseInterval: false
   thumbTimeout: false
   cache: {}
 
@@ -28,7 +29,7 @@ Global =
       Global.fbar()
     , 20
 
-    Global.phrase()
+    #Global.phrase()
 
     Global.handlers()
 
@@ -136,6 +137,7 @@ Global =
 
     filters.css 'transform', distortFilters.toString()
 
+  ###
   phrase: ->
     phrase = phrases[Math.floor(Math.random()*phrases.length)]
     compiled = ''
@@ -147,6 +149,44 @@ Global =
     Global.phraseTimeout = setTimeout ->
       _.on Global.cache.phrase
     , 5000
+  ###
+  
+  phrase: ->
+
+    phrase = phrases[Math.floor(Math.random()*phrases.length)]
+
+    duration = 2000
+    chars = phrase.length
+    charDuration = Math.round duration / chars
+    char = 0
+
+    counter = 0
+    nums = ['!','@','_','#','%','^','&','*','_','(',')','[',']','_']
+    numsMax = nums.length-1
+
+    Global.cache.phrase.text ''
+    text = ''
+    Global.phraseInterval = setInterval ->
+
+      counter++
+      if counter is 10
+        Global.cache.phrase.text "#{text}#{phrase[char++]}"
+        text = Global.cache.phrase.text()
+        counter = 0
+      else
+        Global.cache.phrase.text "#{text}#{nums[_.rand(0,numsMax)]}"
+
+
+      if char is chars
+        clearInterval Global.phraseInterval
+
+    , charDuration/10
+
+    console.log duration, phrase.length, charDuration, phrase
+
+    Global.phraseTimeout = setTimeout ->
+      _.on Global.cache.phrase
+    , 10000
 
   burger: ->
 
@@ -164,6 +204,7 @@ Global =
     if (document.body.scrollTop < 50 or document.documentElement.scrollTop < 50) and (Global.cache.astro.hasClass('on') or clean)
       _.off Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase
       clearTimeout Global.phraseTimeout
+      clearInterval Global.phraseInterval
       Global.phrase()
       return true
 

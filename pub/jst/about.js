@@ -2,19 +2,26 @@ var About;
 
 About = {
   jobs: false,
+  hsbpdInterval: false,
+  hsbpdSection: 'holistic',
+  cache: {},
   i: function() {
     _.off('.orbit');
+    About.cache.hsbpd = $('.hsbpd');
     About.handlers();
     if (location.hash !== "") {
       return About.menu(location.hash.replace('#', ''));
     }
   },
   handlers: function() {
-    $('.hsbpd > .dots > .dot').on('click', About.hsbpd);
+    $('.hsbpd > .dots > .dot').on('click', About.hsbpdHandler);
     $('.capcenter > .capmenu > .cap').on('click', About.capcenter);
     $('.fived > .fivedmenu > .item').on('click', About.fived);
     $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on('click', About.menuHandler);
-    return $('.about > .sections > .section_careers').on('click', '.jobs > .job', About.jobHandler);
+    $('.about > .sections > .section_careers').on('click', '.jobs > .job', About.jobHandler);
+    return About.hsbpdInterval = setInterval(function() {
+      return About.hsbpdCheck();
+    }, 20);
   },
   menuHandler: function() {
     var section;
@@ -32,9 +39,46 @@ About = {
       scrollTop: $(".sections").offset().top - 64
     }, 1000);
   },
-  hsbpd: function() {
+  hsbpdCheck: function() {
+    var b, i, j, len, results, section, sections, st, t, threshold, top;
+    st = $(window).scrollTop();
+    top = 1383;
+    threshold = 631;
+    console.log(st);
+    if (st >= top && !About.cache.hsbpd.hasClass('fixed')) {
+      About.cache.hsbpd.addClass('fixed').removeClass('bottom');
+    }
+    if (st < top && About.cache.hsbpd.hasClass('fixed')) {
+      About.cache.hsbpd.removeClass('fixed').removeClass('bottom');
+    }
+    if (st >= (top + (threshold * 5))) {
+      About.cache.hsbpd.removeClass('fixed').addClass('bottom');
+    }
+    if (st < top) {
+      return true;
+    }
+    sections = ['holistic', 'strategy', 'brand', 'product', 'digital'];
+    results = [];
+    for (i = j = 0, len = sections.length; j < len; i = ++j) {
+      section = sections[i];
+      t = top + ((i + 0) * threshold);
+      b = top + ((i + 1) * threshold);
+      if (st > t && st < b && About.hsbpdSection !== section) {
+        About.hsbpd(section);
+        results.push(console.log(st, section, i, t, b, About.hsbpdSection));
+      } else {
+        results.push(void 0);
+      }
+    }
+    return results;
+  },
+  hsbpdHandler: function() {
     var section;
     section = $(this).data('section');
+    return About.hsbpd(section);
+  },
+  hsbpd: function(section) {
+    About.hsbpdSection = section;
     $('.hsbpd > .slide.on').addClass('offing').removeClass('on');
     _.on(".hsbpd > .slide.slide_" + section[0]);
     setTimeout(function() {
@@ -42,7 +86,7 @@ About = {
       return $('.hsbpd > .slide.offing').removeClass('offing');
     }, 3000);
     _.off('.hsbpd > .dots > .dot');
-    return _.on($(this));
+    return _.on(".hsbpd > .dots > .dot_" + section);
   },
   capcenter: function() {
     var cap;
@@ -66,14 +110,14 @@ About = {
     return _.on(this);
   },
   joblist: function(data) {
-    var count, i, job, len, ref, results, total;
+    var count, j, job, len, ref, results, total;
     About.jobs = {};
     total = Object.keys(data.jobs).length;
     count = 0;
     ref = data.jobs;
     results = [];
-    for (i = 0, len = ref.length; i < len; i++) {
-      job = ref[i];
+    for (j = 0, len = ref.length; j < len; j++) {
+      job = ref[j];
       results.push($.ajax({
         url: "https://api.greenhouse.io/v1/boards/astrostudios/embed/job?id=" + job.id + "?callback=About.job",
         type: 'GET',

@@ -1,9 +1,14 @@
 About =
   jobs: false
+  hsbpdInterval: false
+  hsbpdSection: 'holistic'
+  cache: {}
 
   i: ->
 
     _.off '.orbit'
+
+    About.cache.hsbpd = $('.hsbpd')
 
     About.handlers()
 
@@ -12,13 +17,17 @@ About =
 
   handlers: ->
 
-    $('.hsbpd > .dots > .dot').on 'click', About.hsbpd
+    $('.hsbpd > .dots > .dot').on 'click', About.hsbpdHandler
 
     $('.capcenter > .capmenu > .cap').on 'click', About.capcenter
     $('.fived > .fivedmenu > .item').on 'click', About.fived
 
     $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on 'click', About.menuHandler
     $('.about > .sections > .section_careers').on 'click', '.jobs > .job', About.jobHandler
+
+    About.hsbpdInterval = setInterval ->
+      About.hsbpdCheck()
+    , 20
 
   menuHandler: ->
     section = $(this).html().trim()
@@ -37,9 +46,45 @@ About =
       scrollTop: $(".sections").offset().top - 64
     , 1000)
 
+  hsbpdCheck: ->
 
-  hsbpd: ->
+    st = $(window).scrollTop()
+
+    top = 1383
+    threshold = 631
+
+    console.log st
+
+    if st >= top and !About.cache.hsbpd.hasClass 'fixed'
+      About.cache.hsbpd.addClass('fixed').removeClass 'bottom'
+    if st < top and About.cache.hsbpd.hasClass 'fixed'
+      About.cache.hsbpd.removeClass('fixed').removeClass 'bottom'
+    if st >= (top + (threshold*5))
+      About.cache.hsbpd.removeClass('fixed').addClass 'bottom'
+
+    if st < top
+      return true
+
+
+    sections = ['holistic','strategy','brand','product','digital']
+    for section, i in sections
+      t = top + ( (i+0) * threshold )
+      b = top + ( (i+1) * threshold )
+
+      if st > t and st < b and About.hsbpdSection isnt section
+        About.hsbpd section
+        console.log st, section, i, t, b, About.hsbpdSection
+
+
+      #About.hsbpd section
+
+  hsbpdHandler: ->
     section = $(this).data 'section'
+    About.hsbpd section
+
+  hsbpd: (section) ->
+
+    About.hsbpdSection = section
 
     $('.hsbpd > .slide.on').addClass('offing').removeClass('on')
 
@@ -51,7 +96,7 @@ About =
     , 3000
 
     _.off '.hsbpd > .dots > .dot'
-    _.on $(this)
+    _.on ".hsbpd > .dots > .dot_#{section}"
 
   capcenter: ->
 

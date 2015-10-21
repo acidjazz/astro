@@ -4,6 +4,7 @@ Global = {
   astroInterval: false,
   fbarInterval: false,
   phraseTimeout: false,
+  phraseInterval: false,
   thumbTimeout: false,
   cache: {},
   i: function() {
@@ -23,7 +24,6 @@ Global = {
     Global.fbarInterval = setInterval(function() {
       return Global.fbar();
     }, 20);
-    Global.phrase();
     Global.handlers();
     return Global.fbar();
   },
@@ -105,17 +105,49 @@ Global = {
     distortFilters.bottomLeft.y -= opx6;
     return filters.css('transform', distortFilters.toString());
   },
+
+  /*
+  phrase: ->
+    phrase = phrases[Math.floor(Math.random()*phrases.length)]
+    compiled = ''
+    for i in [0..(phrase.length-1)]
+      compiled  = "#{compiled}<div>#{phrase[i].replace(' ', '&nbsp;')}</div>"
+  
+    Global.cache.phrase.html compiled
+  
+    Global.phraseTimeout = setTimeout ->
+      _.on Global.cache.phrase
+    , 5000
+   */
   phrase: function() {
-    var compiled, i, j, phrase, ref;
+    var char, charDuration, chars, counter, duration, nums, numsMax, phrase, text;
     phrase = phrases[Math.floor(Math.random() * phrases.length)];
-    compiled = '';
-    for (i = j = 0, ref = phrase.length - 1; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
-      compiled = compiled + "<div>" + (phrase[i].replace(' ', '&nbsp;')) + "</div>";
-    }
-    Global.cache.phrase.html(compiled);
+    duration = 2000;
+    chars = phrase.length;
+    charDuration = Math.round(duration / chars);
+    char = 0;
+    counter = 0;
+    nums = ['!', '@', '_', '#', '%', '^', '&', '*', '_', '(', ')', '[', ']', '_'];
+    numsMax = nums.length - 1;
+    Global.cache.phrase.text('');
+    text = '';
+    Global.phraseInterval = setInterval(function() {
+      counter++;
+      if (counter === 10) {
+        Global.cache.phrase.text("" + text + phrase[char++]);
+        text = Global.cache.phrase.text();
+        counter = 0;
+      } else {
+        Global.cache.phrase.text("" + text + nums[_.rand(0, numsMax)]);
+      }
+      if (char === chars) {
+        return clearInterval(Global.phraseInterval);
+      }
+    }, charDuration / 10);
+    console.log(duration, phrase.length, charDuration, phrase);
     return Global.phraseTimeout = setTimeout(function() {
       return _.on(Global.cache.phrase);
-    }, 5000);
+    }, 10000);
   },
   burger: function() {
     if ($(this).hasClass('on')) {
@@ -132,6 +164,7 @@ Global = {
     if ((document.body.scrollTop < 50 || document.documentElement.scrollTop < 50) && (Global.cache.astro.hasClass('on') || clean)) {
       _.off(Global.cache.astro, Global.cache.red1, Global.cache.burger, Global.cache.phrase);
       clearTimeout(Global.phraseTimeout);
+      clearInterval(Global.phraseInterval);
       Global.phrase();
       return true;
     }

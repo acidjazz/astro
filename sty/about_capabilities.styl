@@ -1,8 +1,24 @@
+
+.clearing
+  height 3786px
+  position relative
+  > .stop
+    height 1000px
+
 .hsbpd
   position relative
   height 631px
   background-color: c.black1
   overflow hidden
+  &.fixed
+    position fixed
+    bottom 0px
+    width 100%
+  &.bottom
+    position absolute
+    bottom 0px
+    width 100%
+
   > .dots
     position absolute
     right 50px
@@ -37,7 +53,7 @@
         
   > .slide
     width 100%
-    padding 125px 0 75px 0
+    padding 125px 0 85px 0
     height 421px
     color: c.white1
     background-position 50% 50%

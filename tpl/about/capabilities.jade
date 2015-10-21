@@ -13,55 +13,60 @@
     p For over 20 years, our deeper, entrepreneurial approach has paid dividends beyond our wildest imagination and now informs us as we continuously design what’s next.
 
   .clear
+.clearing
+  .hsbpd
+    .slide.slide_h.on
+      .inner
+        .char: .inner H
+        .title _HOLISTIC
+        .clear
+        .copy ASTRO defines, designs and deploys new brands, products and companies.  Centered in design talent and surrounded by tech, tools, and experience, ASTRO approaches design as a holistic process that developers fully branded, retail ready products and experiences.
+        .clear
+    .slide.slide_s.off
+      .inner
+        .char: .inner S
+        .title _STRATEGY
+        .clear
+        .copy ASTRO's strategy team collaborates with partners at a project's inception-asking questions, collecting info, and defining goals, allowing us to develop a strong point of view upon which to build.
+        .clear
+    .slide.slide_b.off
+      .inner
+        .char: .inner B
+        .title _BRAND
+        .clear
+        .copy ASTRO's brand communications team blends design expertise, digital savvy, and market insights to create soulful identities and systems that create desire and cultural disruption around the world.
+        .clear
+    .slide.slide_p.off
+      .inner
+        .char: .inner P
+        .title _PRODUCT
+        .clear
+        .copy ASTRO's product team combines industrial design, a keen sense of aesthetics, technological expertise, and real-world experience to create innovative products that function skillfully, exist beautifully, define markets, and inspire popular culture.
+        .clear
+    .slide.slide_d.off
+      .inner
+        .char: .inner D
+        .title _DIGITAL
+        .clear
+        .copy ASTRO's digital team deploys digital design skills and visualization tools to create innovative experiences that span the gulf between the digital and physical worlds, information and interaction - through time and space.
+        .clear
 
-.hsbpd
-  .slide.slide_h.on
-    .inner
-      .char: .inner H
-      .title _HOLISTIC
-      .clear
-      .copy ASTRO defines, designs and deploys new brands, products and companies.  Centered in design talent and surrounded by tech, tools, and experience, ASTRO approaches design as a holistic process that developers fully branded, retail ready products and experiences.
-      .clear
-  .slide.slide_s.off
-    .inner
-      .char: .inner S
-      .title _STRATEGY
-      .clear
-      .copy ASTRO's strategy team collaborates with partners at a project's inception-asking questions, collecting info, and defining goals, allowing us to develop a strong point of view upon which to build.
-      .clear
-  .slide.slide_b.off
-    .inner
-      .char: .inner B
-      .title _BRAND
-      .clear
-      .copy ASTRO's brand communications team blends design expertise, digital savvy, and market insights to create soulful identities and systems that create desire and cultural disruption around the world.
-      .clear
-  .slide.slide_p.off
-    .inner
-      .char: .inner P
-      .title _PRODUCT
-      .clear
-      .copy ASTRO's product team combines industrial design, a keen sense of aesthetics, technological expertise, and real-world experience to create innovative products that function skillfully, exist beautifully, define markets, and inspire popular culture.
-      .clear
-  .slide.slide_d.off
-    .inner
-      .char: .inner D
-      .title _DIGITAL
-      .clear
-      .copy ASTRO's digital team deploys digital design skills and visualization tools to create innovative experiences that span the gulf between the digital and physical worlds, information and interaction - through time and space.
-      .clear
+    .dots
 
-  .dots
-    each section in data.about.hsbpd
-      if section == 'holistic'
-        .dot.on(data-section=section)
-          .dot
-          .copy=section
-          .clear
-      else
-        .dot.off(data-section=section)
-          .dot
-          .copy=section
-          .clear
+      each section in data.about.hsbpd
+        if section == 'holistic'
+          .dot.on(class='dot_' + section,data-section=section)
+            .dot
+            .copy=section
+            .clear
+        else
+          .dot.off(class='dot_' + section,data-section=section)
+            .dot
+            .copy=section
+            .clear
 
-
+  .stop.stop_1
+  .stop.stop_2
+  .stop.stop_3
+  .stop.stop_4
+  .stop.stop_5

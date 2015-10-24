@@ -4225,8 +4225,6 @@ body.fixed {
 }
 .projects > .project {
   min-height: 600px;
-  max-width: 1020px;
-  margin: auto;
 }
 .projects > .project.on {
   display: block;
@@ -4243,13 +4241,13 @@ body.fixed {
   display: none;
 }
 .projects > .project > .cover {
-  height: 600px;
+  height: 300px;
   position: relative;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 25%;
 }
 .projects > .project > .cover > .copy {
   position: absolute;
@@ -4275,110 +4273,66 @@ body.fixed {
 }
 .projects > .project > .description {
   padding: 40px 20px 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+.projects > .project > .description > .name {
+  font: 46px blenderpro book;
+}
+.projects > .project > .description > .filters {
+  text-transform: uppercase;
+  padding: 0 0 50px 0;
 }
 .projects > .project > .description > .copy {
   font: 46px blenderpro book;
-  color: #fff;
   max-width: 1020px;
-  margin: auto;
-}
-.projects > .project > .body {
-  min-height: 2000px;
-}
-.projects > .project > .body > .youtube {
-  width: 800px;
-  height: 450px;
   margin: auto;
 }
 .projects > .project > .body > .image {
-  padding: 50px 0;
-  width: 100%;
-}
-.projects > .project > .body > .image.pad_both {
-  padding: 50px 0;
-}
-.projects > .project > .body > .image.pad_top {
-  padding: 50px 0 0 0;
-}
-.projects > .project > .body > .image.pad_bottom {
-  padding: 0 0 50px 0;
-}
-.projects > .project > .body > .image.pad_none {
-  padding: 0 0 0 0;
-}
-.projects > .project > .body > .image > img {
-  width: inherit;
-}
-.projects > .project > .body > .image > .img {
-  padding-top: 60%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-.projects > .project > .body > .copy {
-  padding: 50px;
-  line-height: 30px;
-  max-width: 600px;
-  margin: auto;
-}
-.projects > .project > .body > .imagecopy {
-  padding: 50px;
   max-width: 1020px;
   margin: auto;
 }
-.projects > .project > .body > .imagecopy.pad_bottom {
-  padding: 0 0 50px 0;
-}
-.projects > .project > .body > .imagecopy.black {
-  background-color: #000;
-}
-.projects > .project > .body > .imagecopy.nopadding {
-  padding: 0px;
-}
-.projects > .project > .body > .imagecopy > .block.left {
-  float: left;
-  width: 50%;
-  height: 100%;
-}
-.projects > .project > .body > .imagecopy > .block.right {
-  float: right;
-  width: 50%;
-  height: 100%;
-}
-.projects > .project > .body > .imagecopy > .block {
-  height: inherit;
-}
-.projects > .project > .body > .imagecopy > .block > .image {
+.projects > .project > .body > .image > img {
   width: 100%;
-  height: inherit;
-  text-align: center;
 }
-.projects > .project > .body > .imagecopy > .block > .image > img {
-  height: inherit;
-}
-.projects > .project > .body > .imagecopy > .block > .image > .img {
-  height: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-.projects > .project > .body > .imagecopy > .block.copy {
-  display: table;
-}
-.projects > .project > .body > .imagecopy > .block.copy > .copy {
-  line-height: 30px;
-  max-width: 600px;
-  padding: 0 50px;
-  display: table-cell;
-  vertical-align: middle;
+.projects > .project > .body > .images {
+  max-width: 1020px;
   margin: auto;
 }
-.projects > .project > .body > .imagecopy > .block.copy > .copy.white {
+.projects > .project > .body > .images > img {
+  width: 50%;
+}
+.projects > .project > .body > .copyblock {
+  padding: 100px 50px 90px 50px;
+  line-height: 30px;
+}
+.projects > .project > .body > .copyblock.black {
+  background-color: #000;
   color: #fff;
+}
+.projects > .project > .body > .copyblock > .inner {
+  margin: auto;
+  max-width: 1020px;
+  margin: auto;
+}
+.projects > .project > .body > .copyblock > .inner > .title {
+  font: 36px blenderpro book;
+  text-transform: uppercase;
+  padding: 0 0 10px 0;
+}
+.projects > .project > .body > .copyblock > .inner > .copy {
+  padding: 0 0 10px 0;
+}
+.projects > .project > .body > .copyblock > .inner > .blurb {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+}
+.projects > .project > .body > .copyblock > .inner > .blurb > p {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 20px 10px 0;
 }
 .projects > .project > .related > .title {
   font: 40px blenderpro book;

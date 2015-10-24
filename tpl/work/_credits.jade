@@ -25,9 +25,12 @@ if project.related
         .thumb(
           class='thumb_' + related,
           data-project=related,
-          style='background-image: url(../img/work/' + related + '/1440/' + cover + ');'
         )
-          .inner
-            .copy
-              .name #{data.work[related].name}
-    .clear
+          .inner(
+              style='background-image: url(../img/work/' + related + '/1440/' + cover + ');'
+          )
+            .bg
+              .copy
+                .name #{data.work[related].name}
+                .filters
+      .clear

@@ -51,7 +51,7 @@ Global =
     $('.top > .inner > .burger').on 'click', Global.burger
     $('.menu > .inner > .options > .option').on 'click', Global.option
 
-    $('.thumbs > .thumb, .projects > .thumb').on 'mousemove', Global.thumb
+    $('.thumbs > .thumb, .projects > .thumb, .related > .relateds > .thumb').on 'mousemove', Global.thumb
 
   thumb: (event) ->
 

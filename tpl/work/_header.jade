@@ -1,9 +1,9 @@
 .cover(style='background-image: url(../img/work/' + project.folder + '/' + project.cover + ');')
-  .copy
-    .name #{project.name}
-    .filters !{project.filters.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
 
 .description(style='background-color: ' + data.colors[project.color] )
+  .plabel <span>_</span>PROJECT
+  .name #{project.name}
+  .filters !{project.filters.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
   .copy #{project.description}
 
 //.fcontainer

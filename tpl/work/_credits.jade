@@ -19,18 +19,19 @@
 if project.related
   .related
     .title(class='title_' + project.folder) Related Projects
-    .relateds
-      each related in project.related
-        - if (related in data.work) { var cover = data.work[related].cover; } else { var cover = 'WHAT'; }
-        .thumb(
-          class='thumb_' + related,
-          data-project=related,
-        )
-          .inner(
-              style='background-image: url(../img/work/' + related + '/1440/' + cover + ');'
+    .inner
+      .relateds
+        each related in project.related
+          - if (related in data.work) { var cover = data.work[related].cover; } else { var cover = 'WHAT'; }
+          .thumb(
+            class='thumb_' + related,
+            data-project=related,
           )
-            .bg
-              .copy
-                .name #{data.work[related].name}
-                .filters
-      .clear
+            .inner(
+                style='background-image: url(../img/work/' + related + '/1440/' + cover + ');'
+            )
+              .bg
+                .copy
+                  .name #{data.work[related].name}
+                  .filters
+        .clear

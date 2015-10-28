@@ -138,12 +138,25 @@
 
      > .image
        desktop()
+       &.full
+         margin auto
+         max-width inherit
+         > img
+           width inherit
+       &.black
+         background-color: c.black1
        > img
+         margin auto
          width 100%
      > .images
        desktop()
        > img
          width 50%
+       > .iblurb
+         &.orange
+           background-color: c.orange1
+         width 50%
+         float left
 
       > .copyblock
         padding 100px 50px 90px 50px
@@ -151,6 +164,12 @@
         &.black
           background-color: c.black1
           color: c.white1
+        &.orange
+          background-color: c.orange1
+        &.blue5
+          background-color: c.blue5
+        &.white3
+          background-color: c.white3
         > .inner
           margin auto
           desktop()
@@ -160,6 +179,9 @@
             padding 0 0 10px 0
           > .copy
             padding 0 0 10px 0
+            &.big
+              font f_h3m
+              text-align center
           > .blurb
             columns 2
             > p

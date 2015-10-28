@@ -1,10 +1,9 @@
-
 ---
   folder: aos
   cover: cover.png
   name: Art of Shaving
   description: The Art of Shaving asked ASTRO to take a fresh approch to its Heritage line of shaving kits.  We gave them two sets inspired by the sharp style of New York.
-  color: blue3
+  color: black2
   filters:
     - product
 

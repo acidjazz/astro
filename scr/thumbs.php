@@ -8,18 +8,21 @@ if ($handle = opendir($dir)) {
 
 
     if ($entry != '.' && $entry != '..' && $entry != '.DS_Store') {
-      echo $entry;
 
       if (!is_dir($dir.$entry.'/1440')) {
+
         echo "mkdir $dir$entry/1440\n";
         exec("mkdir $dir$entry/1440");
+
+        // ONLY do this now if the dir wasnt there
+        echo "cp $dir$entry/* $dir$entry/1440/.\n";
+        exec("cp $dir$entry/* $dir$entry/1440/.");
+        echo "cd $dir$entry/1440\n";
+        chdir("$dir$entry/1440");
+        echo "mogrify -geometry 1440x *\n";
+        exec("mogrify -geometry 1440x *");
+
       }
-      echo "cp $dir$entry/* $dir$entry/1440/.\n";
-      exec("cp $dir$entry/* $dir$entry/1440/.");
-      echo "cd $dir$entry/1440\n";
-      chdir("$dir$entry/1440");
-      echo "mogrify -geometry 1440x *\n";
-      exec("mogrify -geometry 1440x *");
     }
 
   }

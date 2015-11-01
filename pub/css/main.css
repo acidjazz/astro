@@ -4241,7 +4241,7 @@ body.fixed {
   display: none;
 }
 .projects > .project > .cover {
-  height: 300px;
+  height: 500px;
   position: relative;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -4319,6 +4319,9 @@ body.fixed {
 }
 .projects > .project > .body > .images > .iblurb.orange {
   background-color: #f4ab8b;
+}
+.projects > .project > .body > .space {
+  height: 50px;
 }
 .projects > .project > .body > .copyblock {
   padding: 100px 50px 90px 50px;

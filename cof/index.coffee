@@ -18,7 +18,7 @@ Index =
       _.on '.lines'
 
     Index.handlers()
-    Index.lineIntrval = setInterval Index.lineRotate, 5000
+    Index.lineInterval = setInterval Index.lineRotate, 5000
 
   handlers: ->
 
@@ -39,6 +39,7 @@ Index =
 
     clearInterval Index.lineInterval
     Index.lineIntrval = setInterval Index.lineRotate, 5000
+    console.log 'interval reset'
 
   line: (key) ->
 

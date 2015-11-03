@@ -7,7 +7,7 @@
     background-size cover
     background-repeat no-repeat
     animation fadeIn 0.5s ease-in both
-    background-image url('/img/about/banner.jpg')
+    background-color pink
     margin -64px 0 0 0
     overflow hidden
     > video
@@ -17,6 +17,13 @@
       object-fit cover
       z-index -1
 
+    > .bg
+      position absolute
+      left 0
+      top 0
+      background-color rgba(0,0,0, 0.25)
+      width 100%
+      height 100%
     > .copy
       position absolute
       left 0
@@ -26,6 +33,7 @@
       color: c.white1
       text-align center
       height 110px
+      height 100%
       margin-top -55px
       animation cellInY 0.75s 0s ease-in both
 

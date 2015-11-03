@@ -22,7 +22,6 @@ Index = {
     return $('.projects > .thumb').on('click', Index.grid);
   },
   lineRotate: function() {
-    console.log('lineRotate');
     if (Index.lineKey === 3) {
       return Index.line(0);
     } else {
@@ -32,7 +31,9 @@ Index = {
   lineHandler: function() {
     var t;
     t = $(this);
-    return Index.line(t.data('key'));
+    Index.line(t.data('key'));
+    clearInterval(Index.lineInterval);
+    return Index.lineIntrval = setInterval(Index.lineRotate, 5000);
   },
   line: function(key) {
     var src;

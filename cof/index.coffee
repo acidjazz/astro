@@ -27,15 +27,18 @@ Index =
     $('.projects > .thumb').on 'click', Index.grid
 
   lineRotate: ->
-    console.log 'lineRotate'
     if Index.lineKey is 3
       Index.line 0
     else
       Index.line Index.lineKey+1
 
   lineHandler: ->
+
     t = $ this
     Index.line t.data 'key'
+
+    clearInterval Index.lineInterval
+    Index.lineIntrval = setInterval Index.lineRotate, 5000
 
   line: (key) ->
 

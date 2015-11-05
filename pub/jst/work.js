@@ -109,9 +109,10 @@ Work = {
   srcs: function(project) {
     var srcs;
     srcs = [Global.srcFromStyle($(".project_" + project + " > .cover"))];
-    $(".project_" + project + " .img").each(function(i, v) {
-      return srcs.push(Global.srcFromStyle($(v)));
+    $(".project_" + project + " img").each(function(i, v) {
+      return srcs.push("/img/work/" + project + "/1440/" + ($(v).data('src')));
     });
+    console.log(srcs);
     return srcs;
   }
 };

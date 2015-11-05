@@ -102,6 +102,7 @@ Work =
     NProgress.start()
     $('#nprogress .bar').addClass "bar_#{project}"
     srcs = Work.srcs project
+
     Global.preload srcs,
       (progress) ->
         NProgress.set progress
@@ -116,10 +117,13 @@ Work =
           (css.match(/\bbar__\S+/g) or []).join ' '
 
   srcs: (project) ->
-    srcs = [Global.srcFromStyle($(".project_#{project} > .cover"))]
-    $(".project_#{project} .img").each (i, v) ->
-      srcs.push Global.srcFromStyle($(v))
 
+    srcs = [Global.srcFromStyle($(".project_#{project} > .cover"))]
+
+    $(".project_#{project} img").each (i, v) ->
+      srcs.push "/img/work/#{project}/1440/#{$(v).data('src')}"
+
+    console.log srcs
     return srcs
 
 

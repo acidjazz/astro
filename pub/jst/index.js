@@ -2,6 +2,7 @@ var Index;
 
 Index = {
   lineKey: 0,
+  lineInterval: false,
   i: function() {
     var src;
     console.log('Index.i()');
@@ -15,6 +16,9 @@ Index = {
       return _.on('.lines');
     });
     Index.handlers();
+    if (Index.lineInterval !== false) {
+      clearInterval(Index.lineInterval);
+    }
     return Index.lineInterval = setInterval(Index.lineRotate, 5000);
   },
   handlers: function() {
@@ -33,7 +37,7 @@ Index = {
     t = $(this);
     Index.line(t.data('key'));
     clearInterval(Index.lineInterval);
-    Index.lineIntrval = setInterval(Index.lineRotate, 5000);
+    Index.lineInterval = setInterval(Index.lineRotate, 5000);
     return console.log('interval reset');
   },
   line: function(key) {

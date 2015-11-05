@@ -1,6 +1,7 @@
 Index =
 
   lineKey: 0
+  lineInterval: false
 
   i: ->
 
@@ -18,6 +19,7 @@ Index =
       _.on '.lines'
 
     Index.handlers()
+    clearInterval Index.lineInterval if Index.lineInterval isnt false
     Index.lineInterval = setInterval Index.lineRotate, 5000
 
   handlers: ->
@@ -38,7 +40,7 @@ Index =
     Index.line t.data 'key'
 
     clearInterval Index.lineInterval
-    Index.lineIntrval = setInterval Index.lineRotate, 5000
+    Index.lineInterval = setInterval Index.lineRotate, 5000
     console.log 'interval reset'
 
   line: (key) ->

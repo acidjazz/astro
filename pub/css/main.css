@@ -4288,37 +4288,25 @@ body.fixed {
   max-width: 1020px;
   margin: auto;
 }
-.projects > .project > .body > .image {
-  max-width: 1020px;
-  margin: auto;
-}
-.projects > .project > .body > .image.full {
-  margin: auto;
-  max-width: inherit;
-}
-.projects > .project > .body > .image.full > img {
-  width: inherit;
-}
 .projects > .project > .body > .image.black {
   background-color: #000;
 }
-.projects > .project > .body > .image > img {
-  margin: auto;
-  width: 100%;
+.projects > .project > .body > .image.blue5 {
+  background-color: #a9ded4;
 }
-.projects > .project > .body > .images {
+.projects > .project > .body > .image > .inner {
   max-width: 1020px;
   margin: auto;
 }
-.projects > .project > .body > .images > img {
-  width: 50%;
+.projects > .project > .body > .image > .inner > img {
+  width: 100%;
 }
-.projects > .project > .body > .images > .iblurb {
-  width: 50%;
-  float: left;
+.projects > .project > .body > .images > .inner {
+  max-width: 1020px;
+  margin: auto;
 }
-.projects > .project > .body > .images > .iblurb.orange {
-  background-color: #f4ab8b;
+.projects > .project > .body > .images > .inner > img {
+  width: 50%;
 }
 .projects > .project > .body > .space {
   height: 50px;
@@ -4337,6 +4325,9 @@ body.fixed {
 .projects > .project > .body > .copyblock.blue5 {
   background-color: #a9ded4;
 }
+.projects > .project > .body > .copyblock.blue3 {
+  background-color: #434965;
+}
 .projects > .project > .body > .copyblock.white3 {
   background-color: #f0f0f0;
 }
@@ -4350,11 +4341,23 @@ body.fixed {
   text-transform: uppercase;
   padding: 0 0 10px 0;
 }
+.projects > .project > .body > .copyblock > .inner > .title.white1 {
+  color: #fff;
+}
+.projects > .project > .body > .copyblock > .inner > .title.centered {
+  text-align: center;
+}
 .projects > .project > .body > .copyblock > .inner > .copy {
   padding: 0 0 10px 0;
 }
 .projects > .project > .body > .copyblock > .inner > .copy.big {
   font: 40px blenderpro medium;
+  text-align: center;
+}
+.projects > .project > .body > .copyblock > .inner > .copy.white1 {
+  color: #fff;
+}
+.projects > .project > .body > .copyblock > .inner > .copy.centered {
   text-align: center;
 }
 .projects > .project > .body > .copyblock > .inner > .blurb {
@@ -4413,68 +4416,8 @@ body.fixed {
 .projects > .project > .related > .title.title_xbox {
   background-color: #74bd44;
 }
-.projects > .project > .credits.credits_aos > .inner > .sections > .section > .title {
-  color: #22252b;
-}
-.projects > .project > .credits.credits_fuelband > .inner > .sections > .section > .title {
-  color: #3bb62e;
-}
-.projects > .project > .credits.credits_goggle > .inner > .sections > .section > .title {
-  color: #444;
-}
-.projects > .project > .credits.credits_jinnitv > .inner > .sections > .section > .title {
-  color: #2cbee6;
-}
-.projects > .project > .credits.credits_mineralist > .inner > .sections > .section > .title {
-  color: #ec8000;
-}
-.projects > .project > .credits.credits_minus8 > .inner > .sections > .section > .title {
-  color: #a9ded4;
-}
-.projects > .project > .credits.credits_neff > .inner > .sections > .section > .title {
-  color: #f467b2;
-}
-.projects > .project > .credits.credits_owlet > .inner > .sections > .section > .title {
-  color: #a9ded4;
-}
-.projects > .project > .credits.credits_sol > .inner > .sections > .section > .title {
-  color: #7582b1;
-}
-.projects > .project > .credits.credits_tamar > .inner > .sections > .section > .title {
-  color: #f4ab8b;
-}
-.projects > .project > .credits.credits_threedr > .inner > .sections > .section > .title {
-  color: #76d734;
-}
-.projects > .project > .credits.credits_versus > .inner > .sections > .section > .title {
-  color: #0195ff;
-}
-.projects > .project > .credits.credits_xbox > .inner > .sections > .section > .title {
-  color: #74bd44;
-}
-.projects > .project > .credits > .inner {
-  max-width: 1020px;
+.projects > .project > .related > .inner {
   margin: auto;
-  padding: 50px;
-}
-.projects > .project > .credits > .inner > .title {
-  font: 46px blenderpro book;
-}
-.projects > .project > .credits > .inner > .sections > .section {
-  float: left;
-  width: 33.33%;
-}
-.projects > .project > .credits > .inner > .sections > .section > .title {
-  font: 40px blenderpro book;
-  color: #ffa500;
-  margin: 0 0 10px 0;
-}
-.projects > .project > .credits > .inner > .sections > .section > .item,
-.projects > .project > .credits > .inner > .sections > .section > a.item {
-  display: block;
-  margin: 0 0 10px 0;
-  text-decoration: none;
-  color: #000;
 }
 .projects > .project,
 .projects > .summary,

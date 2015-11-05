@@ -29,7 +29,7 @@ Index =
     $('.projects > .thumb').on 'click', Index.grid
 
   lineRotate: ->
-    if Index.lineKey is 3
+    if Index.lineKey is ($('.featureds > .inner > .feathred').length-1)
       Index.line 0
     else
       Index.line Index.lineKey+1

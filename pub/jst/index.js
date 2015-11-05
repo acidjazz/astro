@@ -26,7 +26,7 @@ Index = {
     return $('.projects > .thumb').on('click', Index.grid);
   },
   lineRotate: function() {
-    if (Index.lineKey === 3) {
+    if (Index.lineKey === ($('.featureds > .inner > .feathred').length - 1)) {
       return Index.line(0);
     } else {
       return Index.line(Index.lineKey + 1);

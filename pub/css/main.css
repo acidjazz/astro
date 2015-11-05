@@ -4322,6 +4322,9 @@ body.fixed {
 .projects > .project > .body > .copyblock.orange {
   background-color: #f4ab8b;
 }
+.projects > .project > .body > .copyblock.pink1 {
+  background-color: #f467b2;
+}
 .projects > .project > .body > .copyblock.blue5 {
   background-color: #a9ded4;
 }

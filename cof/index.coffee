@@ -20,7 +20,7 @@ Index =
 
     Index.handlers()
     clearInterval Index.lineInterval if Index.lineInterval isnt false
-    Index.lineInterval = setInterval Index.lineRotate, 5000
+    Index.lineInterval = setInterval Index.lineRotate, 4000
 
   handlers: ->
 

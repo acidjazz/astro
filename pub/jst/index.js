@@ -19,7 +19,7 @@ Index = {
     if (Index.lineInterval !== false) {
       clearInterval(Index.lineInterval);
     }
-    return Index.lineInterval = setInterval(Index.lineRotate, 5000);
+    return Index.lineInterval = setInterval(Index.lineRotate, 4000);
   },
   handlers: function() {
     $('.lines > .line').on('click', Index.lineHandler);

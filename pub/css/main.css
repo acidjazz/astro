@@ -2246,17 +2246,21 @@ body.fixed {
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-animation: fadeIn 0.5s 0s ease-in both;
-  -moz-animation: fadeIn 0.5s 0s ease-in both;
-  -o-animation: fadeIn 0.5s 0s ease-in both;
-  -ms-animation: fadeIn 0.5s 0s ease-in both;
-  animation: fadeIn 0.5s 0s ease-in both;
+  -webkit-transition: opacity 0.5s linear;
+  -moz-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  -ms-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
 }
 .index > .featureds > .inner > .featured.on {
-  display: block;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .index > .featureds > .inner > .featured.off {
-  display: none;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 .index > .featureds > .inner > .featured > .inner {
   position: relative;

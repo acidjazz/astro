@@ -8,9 +8,9 @@
       position relative
       > .featured
         &.on
-          display block
+          opacity 1
         &.off
-          display none
+          opacity 0
         position absolute
         top 0
         left 0
@@ -19,7 +19,8 @@
         background-position 50% 50%
         background-size cover
         background-repeat no-repeat
-        animation fadeIn 0.5s 0s ease-in both
+        //animation fadeIn 0.5s 0s ease-in both
+        transition opacity 0.5s linear
         > .inner
           position relative
           width 100%

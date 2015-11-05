@@ -2457,7 +2457,7 @@ body.fixed {
   -o-animation: fadeIn 0.5s ease-in both;
   -ms-animation: fadeIn 0.5s ease-in both;
   animation: fadeIn 0.5s ease-in both;
-  background-image: url("/img/about/banner.jpg");
+  background-color: #ffc0cb;
   margin: -64px 0 0 0;
   overflow: hidden;
 }
@@ -2468,6 +2468,14 @@ body.fixed {
   object-fit: cover;
   z-index: -1;
 }
+.about > .banner > .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.25);
+  width: 100%;
+  height: 100%;
+}
 .about > .banner > .copy {
   position: absolute;
   left: 0;
@@ -2477,6 +2485,7 @@ body.fixed {
   color: #fff;
   text-align: center;
   height: 110px;
+  height: 100%;
   margin-top: -55px;
   -webkit-animation: cellInY 0.75s 0s ease-in both;
   -moz-animation: cellInY 0.75s 0s ease-in both;
@@ -3406,7 +3415,7 @@ body.fixed {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  margin-right: 5px;
+  margin-right: 15px;
   text-align: right;
   text-transform: uppercase;
   color: #fff;
@@ -3514,6 +3523,7 @@ body.fixed {
 }
 .about > .sections > .section_clients .hsbpd > .slide > .inner > .char,
 .about > .sections > .section_capabilities .hsbpd > .slide > .inner > .char {
+  display: none;
   font: 46px blenderpro book;
   border: 6px solid #fff;
   float: left;
@@ -3528,12 +3538,11 @@ body.fixed {
 .about > .sections > .section_clients .hsbpd > .slide > .inner > .title,
 .about > .sections > .section_capabilities .hsbpd > .slide > .inner > .title {
   float: left;
-  margin: 43px 0 0 20px;
+  margin: 43px 0 0 0;
 }
 .about > .sections > .section_clients .hsbpd > .slide > .inner > .copy,
 .about > .sections > .section_capabilities .hsbpd > .slide > .inner > .copy {
   font: 36px blenderpro book;
-  text-align: center;
   padding: 50px 0 0 0;
 }
 .about > .sections > .section_clients > .blocksp.on,

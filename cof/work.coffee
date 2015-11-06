@@ -110,6 +110,7 @@ Work =
         NProgress.done()
         _.off '.orbit'
         _.on ".project_#{project}"
+        $(".project img")....
 
         $('.orbit').removeClass (index, css) ->
           (css.match(/\borbit_\S+/g) or []).join ' '

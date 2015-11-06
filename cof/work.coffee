@@ -109,8 +109,12 @@ Work =
       , (complete) ->
         NProgress.done()
         _.off '.orbit'
+        $(".project img").attr 'src', ''
+
+        $(".project_#{project} img").each (i, v) ->
+          $(v).attr 'src', "/img/work/#{project}/1440/#{$(v).data('src')}"
+
         _.on ".project_#{project}"
-        $(".project img")....
 
         $('.orbit').removeClass (index, css) ->
           (css.match(/\borbit_\S+/g) or []).join ' '

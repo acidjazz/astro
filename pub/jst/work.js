@@ -97,6 +97,10 @@ Work = {
     }, function(complete) {
       NProgress.done();
       _.off('.orbit');
+      $(".project img").attr('src', '');
+      $(".project_" + project + " img").each(function(i, v) {
+        return $(v).attr('src', "/img/work/" + project + "/1440/" + ($(v).data('src')));
+      });
       _.on(".project_" + project);
       $('.orbit').removeClass(function(index, css) {
         return (css.match(/\borbit_\S+/g) || []).join(' ');

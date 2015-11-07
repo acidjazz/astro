@@ -2462,6 +2462,11 @@ body.fixed {
   .index > .lines > .line {
     width: 16.4%;
   }
+  .index > .lines > .line:hover > .title {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
   .index > .lines > .line > .shape {
     width: 100%;
   }

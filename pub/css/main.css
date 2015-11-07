@@ -1945,7 +1945,6 @@
   color: #fff;
   font: 18px blenderpro medium;
   text-transform: uppercase;
-  white-space: nowrap;
 /*
       > div
         display inline-block
@@ -2070,6 +2069,13 @@
   -o-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .top > .inner > .phrase {
+    top: 70px;
+    left: 30px;
+    right: 30px;
+  }
 }
 @-moz-keyframes line1 {
   from {
@@ -2447,6 +2453,21 @@ body.fixed {
   font: 36px blenderpro book;
   color: #fff;
   padding-bottom: 15px;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .index > .featureds > .inner > .featured > .inner > .copy {
+    left: 30px;
+  }
+  .index > .lines {
+    text-align: left;
+    bottom: 10px;
+  }
+  .index > .lines > .line {
+    width: 16.4%;
+  }
+  .index > .lines > .line > .shape {
+    width: 100%;
+  }
 }
 .about > .banner {
   position: relative;

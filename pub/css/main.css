@@ -427,9 +427,6 @@
   margin: 0 0 0 -5px;
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
-  .footer > .inner {
-    padding: 50px 0 0 0;
-  }
   .footer > .inner > .copyright {
     position: static;
     padding: 20px 0;
@@ -446,6 +443,17 @@
   }
   .footer > .inner > .section.first > .inner {
     padding: 0 20px;
+  }
+  .footer > .inner > .section.first {
+    padding: 50px 0 0 10px;
+  }
+  .footer > .inner > .section.second > .inner > .a,
+  .footer > .inner > .section.third > .inner > .a {
+    height: 0px;
+  }
+  .footer > .inner > .section.newsletter {
+    padding: 0px;
+    float: none;
   }
   .footer > .inner > .section.newsletter > .inner {
     padding: 0 20px;
@@ -2502,6 +2510,9 @@ body.fixed {
   }
   .index > .lines > .line > .shape {
     width: 100%;
+  }
+  .index > .welcome {
+    padding: 0 20px;
   }
 }
 .about > .banner {

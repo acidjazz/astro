@@ -21,6 +21,27 @@ block content
  
     #map
 
+    .engage
+      .ways
+        each way, number in data.contact
+          .way
+            .title #{way.title}
+            .copy=way.copy
+            if way.type == 'email'
+              .example
+                a(href='mailto:' + way.email)=way.email
+            if way.type == 'link'
+              .example
+                a(href=way.link)=way.linkcopy
+
+
+    .officeimage
+      img(src='/img/contact/office.jpg')
+
+
+
+
+
   include ../inc/bottom
 
   script(src="https://maps.googleapis.com/maps/api/js").

@@ -37,13 +37,47 @@
       padding 50px
       desktop()
       > .copy, > .scopy
-        font f_h2
         color: c.white1
-      > .scopy
-        font f_h3
-
-
-
+        max-width 440px
+        margin auto
   > #map
     height 400px
 
+  > .engage
+    max-width 1125px
+    margin auto
+    > .title 
+      font f_h3m
+      padding 100px 0 0 16px
+    > .ways
+      text-align center
+      padding 16px
+      > .way
+        text-align left
+        display inline-block
+        vertical-align top
+        width 28.5%
+
+        padding 20px
+        margin 16px
+        animation cellInX 0.2s 0s ease-in both
+        &:nth-child(1)
+          padding 20px 20px 20px 0
+          margin 16px 16px 16px 0
+        &:nth-child(3)
+          padding 20px 0 20px 20px
+          margin 16px 0 16px 16px
+
+        > .title
+          font f_h5
+          text-transform uppercase
+          padding 0 0 16px 0
+        > .example
+          padding 30px 0 10px 0
+          > a
+            text-decoration none
+            color: c.red1
+  > .officeimage
+    desktop()
+    > img
+      width 100%

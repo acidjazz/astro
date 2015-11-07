@@ -8,7 +8,7 @@
       font f_copyls
       min-height 300px
       min-width 275px
-      padding 60px 0 60px 0
+      padding 60px 0 
       &.first > .inner
         padding 20px 20px 10px 50px
       &.newsletter
@@ -116,4 +116,15 @@
           display inline-block
           transform rotate(180deg)
           margin 0 0 0 -5px
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+
+  .footer > .inner
+    padding 50px 0 0 0
+  .footer > .inner > .section
+    min-height 0px
+    min-width 90%
+    padding 0 10px
+    &.first > .inner
+      padding 0 20px
 

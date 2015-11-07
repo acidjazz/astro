@@ -2327,9 +2327,6 @@ body.fixed {
 .index > .lines > .line.on > .shape {
   background-color: #ee5655;
 }
-.index > .lines > .line:hover > .shape {
-  background-color: #ee5655;
-}
 .index > .lines > .line:hover > .title {
   opacity: 1;
   -ms-filter: none;

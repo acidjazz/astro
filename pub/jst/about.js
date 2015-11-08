@@ -41,9 +41,11 @@ About = {
     }
     _.off('.about > .fcontainer > .filters > .inner > .filtermenu > .filter', '.sections > .section');
     _.on(".fcontainer > .filters > .inner > .filtermenu > .filter.filter_" + section, ".sections > .section.section_" + section);
-    return $('html, body').animate({
-      scrollTop: $(".sections").offset().top - 64
-    }, 1000);
+    if ($(window).width() > 1000) {
+      return $('html, body').animate({
+        scrollTop: $(".sections").offset().top - 64
+      }, 1000);
+    }
   },
   hsbpdCheck: function() {
     var b, i, j, len, results, section, sections, st, t, threshold, top;

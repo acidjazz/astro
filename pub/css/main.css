@@ -5811,6 +5811,9 @@ body.fixed {
   width: 100%;
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
+  .contact > .banner {
+    height: 100%;
+  }
   .contact > .banner > .inner {
     height: 100%;
     -webkit-animation: none;
@@ -5823,7 +5826,7 @@ body.fixed {
     background-size: cover;
   }
   .contact > .banner > .inner > .copy {
-    margin-top: -150px;
+    margin-top: -50px;
   }
   .contact > .engage > .ways > .way {
     float: none;

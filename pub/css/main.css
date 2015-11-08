@@ -5533,6 +5533,11 @@ body.fixed {
   background-color: #e9eaec;
   color: #000;
 }
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .blog > .summary > .hero {
+    padding: 120px 20px 80px 20px;
+  }
+}
 .guide {
   padding: 50px 0 0 0;
   background-color: #f0f0f0;

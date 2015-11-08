@@ -2679,6 +2679,16 @@ body.fixed {
 .about > .sections > .section_process .process > .steps > .step > .copy {
   margin: -10px 0 0 0;
 }
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .about > .sections > .section_process .process > .steps {
+    padding: 20px 0;
+  }
+  .about > .sections > .section_process .process > .steps > .step {
+    padding: 20px;
+    margin: 10px auto;
+    display: block;
+  }
+}
 .about > .sections > .section_clients .engage {
   max-width: 1125px;
   margin: auto;
@@ -3615,6 +3625,51 @@ body.fixed {
   font: 36px blenderpro book;
   padding: 50px 0 0 0;
 }
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .about > .sections > .section_clients .clearing,
+  .about > .sections > .section_capabilities .clearing {
+    height: auto;
+  }
+  .about > .sections > .section_clients .clearing > .stop,
+  .about > .sections > .section_capabilities .clearing > .stop {
+    display: none;
+  }
+  .about > .sections > .section_clients .hsbpd,
+  .about > .sections > .section_capabilities .hsbpd {
+    height: auto;
+  }
+  .about > .sections > .section_clients .hsbpd > .slide,
+  .about > .sections > .section_capabilities .hsbpd > .slide {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    position: static;
+  }
+  .about > .sections > .section_clients .hsbpd > .slide.on,
+  .about > .sections > .section_capabilities .hsbpd > .slide.on {
+    display: block;
+  }
+  .about > .sections > .section_clients .hsbpd > .slide.off,
+  .about > .sections > .section_capabilities .hsbpd > .slide.off {
+    display: block;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .about > .sections > .section_clients .hsbpd > .slide > .inner > .copy,
+  .about > .sections > .section_capabilities .hsbpd > .slide > .inner > .copy {
+    font-size: 24px;
+  }
+  .about > .sections > .section_clients .hsbpd > .dots,
+  .about > .sections > .section_capabilities .hsbpd > .dots {
+    display: none;
+  }
+}
 .about > .sections > .section_clients > .blocksp.on,
 .about > .sections > .section_capabilities > .blocksp.on {
   height: 420px;
@@ -3883,6 +3938,43 @@ body.fixed {
 .about > .sections > .section_clients > .fived > .bodys > .body > .inner > .copy > .title,
 .about > .sections > .section_capabilities > .fived > .bodys > .body > .inner > .copy > .title {
   font: 28px blenderpro book;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .about > .banner > .copy {
+    font-size: 24px;
+  }
+  .about > .sections > .section > .blocks > .inner {
+    padding: 20px;
+  }
+  .about > .sections > .section > .blocks > .inner > .blurb {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+  }
+  .about > .sections > .section > .block > .inner {
+    padding: 20px;
+  }
+  .about > .sections > .section > .block > .inner > .copy {
+    font-size: 24px;
+    padding: 0 0 20px 0;
+  }
+  .about > .sections > .section > .block > .inner > .scopy {
+    font-size: 20px;
+  }
+  .about > .fcontainer {
+    height: auto;
+  }
+  .about > .fcontainer > .filters > .inner {
+    max-width: 1000px;
+  }
+  .about > .fcontainer > .filters > .inner > .filtermenu {
+    padding: 0 !important;
+  }
+  .about > .fcontainer > .filters > .inner > .filtermenu > .filter {
+    display: block !important;
+    padding: 20px 0 !important;
+    margin: 0 !important;
+  }
 }
 .projects .summary {
   background-color: #22252b;
@@ -4838,6 +4930,17 @@ body.fixed {
   .thumb {
     width: 100% !important;
     height: 70vw !important;
+  }
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .projects > .summary > .hero {
+    padding: 80px 20px 120px 20px;
+  }
+  .projects > .summary > .fcontainer {
+    display: none;
+  }
+  .projects > .summary > .fcontainer > .filters {
+    display: none;
   }
 }
 .blog .summary {

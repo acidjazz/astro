@@ -21,9 +21,11 @@ About = {
     $('.fived > .fivedmenu > .item').on('click', About.fived);
     $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on('click', About.menuHandler);
     $('.about > .sections > .section_careers').on('click', '.jobs > .job', About.jobHandler);
-    return About.hsbpdInterval = setInterval(function() {
-      return About.hsbpdCheck();
-    }, 10);
+    if ($(window).width() > 1000) {
+      return About.hsbpdInterval = setInterval(function() {
+        return About.hsbpdCheck();
+      }, 10);
+    }
   },
   menuHandler: function() {
     var section;

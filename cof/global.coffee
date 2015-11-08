@@ -25,15 +25,17 @@ Global =
       Global.astro()
     , 500
 
-    Global.fbarInterval = setInterval ->
-      Global.fbar()
-    , 20
+    if $(window).width() > 1000
+      Global.fbarInterval = setInterval ->
+        Global.fbar()
+      , 20
 
     #Global.phrase()
 
     Global.handlers()
 
-    Global.fbar()
+    if $(window).width() > 1000
+      Global.fbar()
 
   fbar: ->
 

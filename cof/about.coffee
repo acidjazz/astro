@@ -27,9 +27,10 @@ About =
     $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on 'click', About.menuHandler
     $('.about > .sections > .section_careers').on 'click', '.jobs > .job', About.jobHandler
 
-    About.hsbpdInterval = setInterval ->
-      About.hsbpdCheck()
-    , 10
+    if $(window).width() > 1000
+      About.hsbpdInterval = setInterval ->
+        About.hsbpdCheck()
+      , 10
 
   menuHandler: ->
     section = $(this).html().trim()

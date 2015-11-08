@@ -21,11 +21,15 @@ Global = {
     Global.astroInterval = setInterval(function() {
       return Global.astro();
     }, 500);
-    Global.fbarInterval = setInterval(function() {
-      return Global.fbar();
-    }, 20);
+    if ($(window).width() > 1000) {
+      Global.fbarInterval = setInterval(function() {
+        return Global.fbar();
+      }, 20);
+    }
     Global.handlers();
-    return Global.fbar();
+    if ($(window).width() > 1000) {
+      return Global.fbar();
+    }
   },
   fbar: function() {
     if ($('.fcontainer:visible').length === 0) {

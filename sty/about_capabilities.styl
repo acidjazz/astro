@@ -100,3 +100,28 @@
       > .copy
         font f_h4
         padding 50px 0 0 0
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .clearing
+    height auto
+    > .stop
+      display none
+  .hsbpd
+    height auto
+    > .slide
+      width auto
+      height auto;
+      padding 20px
+      position static
+      &.on
+        display block
+      &.off
+        display block
+        opacity 1
+        transform translate(0, 0)
+      > .inner
+        > .copy
+          font-size 24px
+
+    > .dots
+      display none

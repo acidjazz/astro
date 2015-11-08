@@ -2990,7 +2990,8 @@ body.fixed {
   .about > .sections > .section_clients .engage > .ways > .way {
     float: none;
     width: 90%;
-    margin: auto;
+    margin: auto !important;
+    padding: 10px !important;
   }
 }
 .about > .sections > .section_studio .title {

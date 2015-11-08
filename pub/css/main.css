@@ -5810,6 +5810,28 @@ body.fixed {
 .contact > .officeimage > img {
   width: 100%;
 }
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .contact > .banner > .inner {
+    height: 100%;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
+    animation: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .contact > .banner > .inner > .copy {
+    margin-top: -150px;
+  }
+  .contact > .engage > .ways > .way {
+    float: none;
+    width: 90%;
+    margin: auto !important;
+    padding: 10px !important;
+  }
+}
 .placeholder {
   text-align: center;
   padding: 200px 0 0 0;

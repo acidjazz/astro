@@ -18,11 +18,19 @@ Work =
 
   handlers: ->
 
-    $('.projects > .summary > .thumbs > .thumb').on 'click', Work.projectHandler
     $('.projects > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on 'click', Work.projectHandler
     $('.project .filters > .inner > .filtermenu > .filter').on 'click', Work.filterHandler
 
     $('.summary .filters > .inner > .filtermenu > .filter').on 'click', Work.summaryFilterHandler
+    $(window).on 'popstate', Work.pop
+
+
+  pop: (e) ->
+
+    Work.summary()
+    _.on '.summary > .thumbs > .thumb'
+    _.off '.summary > .filters > .inner > .filtermenu > .filter'
+    _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
 
   summaryFilterHandler: ->
 
@@ -62,7 +70,8 @@ Work =
   projectHandler: ->
 
     project = $(this).data 'project'
-    location.hash = project
+    history.pushState null, null, "/work/##{project}"
+
     document.body.scrollTop = document.documentElement.scrollTop = 0
     Work.load project
 

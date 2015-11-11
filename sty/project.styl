@@ -141,8 +141,11 @@
         background-color: c.black1
       &.blue5
         background-color: c.blue5
-      > .inner
+      > .inner 
         desktop()
+        > img
+          width 100%
+      > .inner_100
         > img
           width 100%
     > .images
@@ -150,15 +153,34 @@
         desktop()
         > img
           width 50%
+      > .inner_100
+        > img
+          width 50%
+      > .inner_50
+        width:50%
+        float left
+        > img
+          width 100%
+      &:after
+        content ''
+        display block
+        clear both
     > .space
        height 50px
-
-    > .copyblock
+    .copyblock
       padding 100px 50px 90px 50px
       line-height 30px
+      box-sizing: border-box
       &.black
         background-color: c.black1
         color: c.white1
+      &.black3
+        background-color: c.black3
+        color: c.white1
+      &.green
+          background-color: c.green3
+      &.brown
+        background-color: c.orange1
       &.orange
         background-color: c.orange1
       &.pink1
@@ -167,6 +189,12 @@
         background-color: c.blue5
       &.blue3
         background-color: c.blue3
+      &.blue
+        background-color: c.blue1
+        color: c.white1
+      &.red
+        background-color: c.red1
+        color: c.white1
       &.white3
         background-color: c.white3
       > .inner
@@ -194,7 +222,6 @@
           > p
             box-sizing border-box
             padding 10px 20px 10px 0
-
   > .related
     > .title
       font f_h3
@@ -261,6 +288,26 @@
             background-color: c.white2
             color: c.black1
 
+.table
+  display table
+  > .row
+    display table-row
+    > .copyblock, .imgblock
+      display table-cell
+      width 50%
+      vertical-align top
+    > .imgblock
+      background-repeat no-repeat 
+      background-position center center
+      background-size cover
+    > .imgblock_3
+      display table-cell
+      width 33%
+      vertical-align top
+      
+    img
+      width 100%
+        
  // responsive grid
 @media all and (min-width: 2101px)
   .thumb

@@ -2,7 +2,8 @@
   folder: threedr
   name: 3DR
   cover: Solo_Black_Low.jpg
-  description: 3D Robotics collaborated with ASTRO go getr the Solo, their first enthusiast drone, the Solo, off the ground.
+  hero: Solo_Black_Low_V2.png
+  description: 3D Robotics collaborated with ASTRO go get the Solo, their first enthusiast drone, the Solo, off the ground.
   color: green1
   home: true
   filters:

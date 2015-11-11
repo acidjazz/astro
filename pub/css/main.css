@@ -4313,6 +4313,9 @@ body.fixed {
 .projects > .project > .body > .image > .inner > img {
   width: 100%;
 }
+.projects > .project > .body > .image > .inner_100 > img {
+  width: 100%;
+}
 .projects > .project > .body > .images > .inner {
   max-width: 1020px;
   margin: auto;
@@ -4320,67 +4323,103 @@ body.fixed {
 .projects > .project > .body > .images > .inner > img {
   width: 50%;
 }
+.projects > .project > .body > .images > .inner_100 > img {
+  width: 50%;
+}
+.projects > .project > .body > .images > .inner_50 {
+  width: 50%;
+  float: left;
+}
+.projects > .project > .body > .images > .inner_50 > img {
+  width: 100%;
+}
+.projects > .project > .body > .images:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 .projects > .project > .body > .space {
   height: 50px;
 }
-.projects > .project > .body > .copyblock {
+.projects > .project > .body .copyblock {
   padding: 100px 50px 90px 50px;
   line-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.projects > .project > .body > .copyblock.black {
+.projects > .project > .body .copyblock.black {
   background-color: #000;
   color: #fff;
 }
-.projects > .project > .body > .copyblock.orange {
+.projects > .project > .body .copyblock.black3 {
+  background-color: #444;
+  color: #fff;
+}
+.projects > .project > .body .copyblock.green {
+  background-color: #3bb62e;
+}
+.projects > .project > .body .copyblock.brown {
   background-color: #f4ab8b;
 }
-.projects > .project > .body > .copyblock.pink1 {
+.projects > .project > .body .copyblock.orange {
+  background-color: #f4ab8b;
+}
+.projects > .project > .body .copyblock.pink1 {
   background-color: #f467b2;
 }
-.projects > .project > .body > .copyblock.blue5 {
+.projects > .project > .body .copyblock.blue5 {
   background-color: #a9ded4;
 }
-.projects > .project > .body > .copyblock.blue3 {
+.projects > .project > .body .copyblock.blue3 {
   background-color: #434965;
 }
-.projects > .project > .body > .copyblock.white3 {
+.projects > .project > .body .copyblock.blue {
+  background-color: #0195ff;
+  color: #fff;
+}
+.projects > .project > .body .copyblock.red {
+  background-color: #ee5655;
+  color: #fff;
+}
+.projects > .project > .body .copyblock.white3 {
   background-color: #f0f0f0;
 }
-.projects > .project > .body > .copyblock > .inner {
+.projects > .project > .body .copyblock > .inner {
   margin: auto;
   max-width: 1020px;
   margin: auto;
 }
-.projects > .project > .body > .copyblock > .inner > .title {
+.projects > .project > .body .copyblock > .inner > .title {
   font: 36px blenderpro book;
   text-transform: uppercase;
   padding: 0 0 10px 0;
 }
-.projects > .project > .body > .copyblock > .inner > .title.white1 {
+.projects > .project > .body .copyblock > .inner > .title.white1 {
   color: #fff;
 }
-.projects > .project > .body > .copyblock > .inner > .title.centered {
+.projects > .project > .body .copyblock > .inner > .title.centered {
   text-align: center;
 }
-.projects > .project > .body > .copyblock > .inner > .copy {
+.projects > .project > .body .copyblock > .inner > .copy {
   padding: 0 0 10px 0;
 }
-.projects > .project > .body > .copyblock > .inner > .copy.big {
+.projects > .project > .body .copyblock > .inner > .copy.big {
   font: 40px blenderpro medium;
   text-align: center;
 }
-.projects > .project > .body > .copyblock > .inner > .copy.white1 {
+.projects > .project > .body .copyblock > .inner > .copy.white1 {
   color: #fff;
 }
-.projects > .project > .body > .copyblock > .inner > .copy.centered {
+.projects > .project > .body .copyblock > .inner > .copy.centered {
   text-align: center;
 }
-.projects > .project > .body > .copyblock > .inner > .blurb {
+.projects > .project > .body .copyblock > .inner > .blurb {
   -webkit-columns: 2;
   -moz-columns: 2;
   columns: 2;
 }
-.projects > .project > .body > .copyblock > .inner > .blurb > p {
+.projects > .project > .body .copyblock > .inner > .blurb > p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -4742,6 +4781,33 @@ body.fixed {
 .projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.on {
   background-color: #e9eaec;
   color: #000;
+}
+.table {
+  display: table;
+}
+.table > .row {
+  display: table-row;
+}
+.table > .row > .copyblock,
+.table > .row .imgblock {
+  display: table-cell;
+  width: 50%;
+  vertical-align: top;
+}
+.table > .row > .imgblock {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.table > .row > .imgblock_3 {
+  display: table-cell;
+  width: 33%;
+  vertical-align: top;
+}
+.table > .row img {
+  width: 100%;
 }
 @media all and (min-width: 2101px) {
   .thumb {

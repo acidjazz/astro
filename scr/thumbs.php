@@ -1,6 +1,6 @@
 <?php
 
-$dir = '/Users/k/astro/pub/img/work/';
+$dir = './pub/img/work/';
 
 if ($handle = opendir($dir)) {
 

@@ -1,6 +1,7 @@
 ---
   folder: xbox
-  cover: xbox.png
+  cover: 2xbox360.jpg
+  hero: 2xbox360_2.png
   name: XBox
   description: A worldwide phenomenon and American pop culture classic.  Microsoft's XBOX 360 is one of the most successful gaming consoles of all time.
   color: green2

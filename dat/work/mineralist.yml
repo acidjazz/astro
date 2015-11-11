@@ -1,7 +1,8 @@
 ---
   folder: mineralist
   name: Mineralist
-  cover: banner.jpg
+  cover: Mineralist-Book-ill.jpg
+  hero: Mineralist-Book-ill_2.png
   description: ASTRO revamped the Mineralist brand to bring it up to speed with their progressive model.
   color: orange2
   filters:

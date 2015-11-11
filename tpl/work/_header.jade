@@ -1,4 +1,4 @@
-.cover(style='background-image: url(/img/work/' + project.folder + '/' + project.cover + ');')
+.cover(style='background-image: url(/img/work/' + project.folder + '/' + project.hero + ');')
 
 .description(style='background-color: ' + data.colors[project.color] )
   .plabel <span>_</span>PROJECT
@@ -8,7 +8,7 @@
 
 //.fcontainer
   .filters
-    .inner
+    .inner_100
       .title CAPABILITIES
       .filtermenu
         each filter, key in project.filters

@@ -24,10 +24,57 @@ About = {
     $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on('click', About.menuHandler);
     $('.about > .sections > .section_careers').on('click', '.jobs > .job', About.jobHandler);
     if ($(window).width() > 1000) {
-      return About.hsbpdInterval = setInterval(function() {
+      About.hsbpdInterval = setInterval(function() {
         return About.hsbpdCheck();
       }, 10);
     }
+    $('.profiles > .profile').on('click', About.profile);
+    return $('.bios > .bio > .close, .bios > .bio').on('click', About.profileClose);
+  },
+  profile: function() {
+    var bio, pos, profile, rect, t, width;
+    t = $(this);
+    profile = t.data('profile');
+    rect = t[0].getBoundingClientRect();
+    pos = t.position();
+    width = $(window).innerWidth();
+    console.log(profile, rect, t.position(), width);
+    _.off($('.bios'));
+    _.off($('.bios > .bio'));
+    _.off($('.profiles > .profile'));
+    _.on($('.bios'));
+    _.on(t);
+    bio = $(".bios > .bio.bio_" + profile);
+    bio.css('height', rect.height + "px");
+    bio.css('top', (pos.top + rect.height) + "px");
+    bio.css('left', 0);
+    bio.css('right', 0);
+    bio.css('width', '100%');
+    if (width > (rect.width * 2)) {
+      if (width === Math.round(rect.right)) {
+        console.log('right siiiide');
+        bio.css('width', (rect.width * 2) + "px");
+        bio.css('right', "0px");
+        bio.css('left', "auto");
+      } else if (rect.left === 0) {
+        console.log('left siiiide');
+        bio.css('width', (rect.width * 2) + "px");
+        bio.css('left', "0px");
+        bio.css('right', "auto");
+      } else {
+        bio.css('width', (rect.width * 2) + "px");
+        bio.css('left', pos.left + "px");
+        bio.css('right', "auto");
+      }
+    }
+    _.on(bio);
+    return $('html, body').animate({
+      scrollTop: t.offset().top - 64
+    }, 200);
+  },
+  profileClose: function() {
+    _.off($('.bios'));
+    return _.off($('.bios > .bio'));
   },
   menuHandler: function() {
     var section;

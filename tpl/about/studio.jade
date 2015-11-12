@@ -1,7 +1,14 @@
 
 .title Our glorious, glorious team.
 .profiles
-  each profile, name in data.about.profiles
-    .profile(class='profile_' + name)
+  each bio, name in data.about.bios
+    .profile(class='profile_' + name,data-profile=name)
+      .inner
   .clear
+  .bios.off
+    each bio, name in data.about.bios
+      .bio.off(class='bio_' + name)
+        .close &#10005;
+        .copy=bio.summary
+
 .clear

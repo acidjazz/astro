@@ -33,6 +33,62 @@ About =
         About.hsbpdCheck()
       , 10
 
+    $('.profiles > .profile').on 'click', About.profile
+    $('.bios > .bio > .close, .bios > .bio').on 'click', About.profileClose
+
+  profile: ->
+
+    t = $ this
+    profile = t.data 'profile'
+    rect = t[0].getBoundingClientRect()
+    pos = t.position()
+    width = $(window).innerWidth()
+
+    console.log profile, rect, t.position(), width
+
+    _.off $('.bios')
+    _.off $('.bios > .bio')
+    _.off $('.profiles > .profile')
+    _.on $('.bios')
+    _.on t
+    bio = $(".bios > .bio.bio_#{profile}")
+
+    bio.css('height', "#{rect.height}px")
+    bio.css('top', "#{pos.top + rect.height}px")
+
+    bio.css('left', 0)
+    bio.css('right', 0)
+    bio.css('width', '100%')
+
+    if width > (rect.width*2)
+
+      if width is Math.round(rect.right)
+        console.log 'right siiiide'
+        bio.css('width', "#{rect.width*2}px")
+        bio.css('right', "0px")
+        bio.css('left', "auto")
+      else if rect.left is 0
+        console.log 'left siiiide'
+        bio.css('width', "#{rect.width*2}px")
+        bio.css('left', "0px")
+        bio.css('right', "auto")
+      else
+        bio.css('width', "#{rect.width*2}px")
+        bio.css('left', "#{pos.left}px")
+        bio.css('right', "auto")
+
+
+    _.on bio
+
+    $('html, body').animate(
+      scrollTop: t.offset().top - 64
+    , 200)
+
+
+  profileClose: ->
+    _.off $('.bios')
+    _.off $('.bios > .bio')
+
   menuHandler: ->
     section = $(this).html().trim()
     About.menu section

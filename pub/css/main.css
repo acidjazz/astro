@@ -263,7 +263,7 @@
   font: 18px blenderpro medium;
   min-height: 300px;
   min-width: 275px;
-  padding: 60px 0 60px 0;
+  padding: 60px 0;
 }
 .footer > .inner > .section.first > .inner {
   padding: 20px 20px 10px 50px;
@@ -425,6 +425,47 @@
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   margin: 0 0 0 -5px;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .footer > .inner > .copyright {
+    position: static;
+    padding: 20px 0;
+  }
+  .footer > .inner > .gravity {
+    position: static;
+    margin: auto;
+    padding: 20px 0 60px 0;
+  }
+  .footer > .inner > .section {
+    min-height: 0px;
+    min-width: 90%;
+    padding: 0 10px;
+  }
+  .footer > .inner > .section.first > .inner {
+    padding: 0 20px;
+  }
+  .footer > .inner > .section.first {
+    padding: 50px 0 0 10px;
+  }
+  .footer > .inner > .section.second > .inner > .a,
+  .footer > .inner > .section.third > .inner > .a {
+    height: 0px;
+  }
+  .footer > .inner > .section.newsletter {
+    padding: 0px;
+    float: none;
+  }
+  .footer > .inner > .section.newsletter > .inner {
+    padding: 0 20px;
+  }
+  .footer > .inner > .section.newsletter > .inner > .icons {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .footer > .inner > .section.newsletter > .inner > .icons > .icon {
+    display: inline-block;
+    float: none;
+  }
 }
 @-moz-keyframes fadeIn {
   from {
@@ -1945,7 +1986,6 @@
   color: #fff;
   font: 18px blenderpro medium;
   text-transform: uppercase;
-  white-space: nowrap;
 /*
       > div
         display inline-block
@@ -2070,6 +2110,13 @@
   -o-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .top > .inner > .phrase {
+    top: 70px;
+    left: 30px;
+    right: 30px;
+  }
 }
 @-moz-keyframes line1 {
   from {
@@ -2321,9 +2368,6 @@ body.fixed {
 .index > .lines > .line.on > .shape {
   background-color: #ee5655;
 }
-.index > .lines > .line:hover > .shape {
-  background-color: #ee5655;
-}
 .index > .lines > .line:hover > .title {
   opacity: 1;
   -ms-filter: none;
@@ -2447,6 +2491,29 @@ body.fixed {
   font: 36px blenderpro book;
   color: #fff;
   padding-bottom: 15px;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .index > .featureds > .inner > .featured > .inner > .copy {
+    left: 30px;
+  }
+  .index > .lines {
+    text-align: left;
+    bottom: 10px;
+  }
+  .index > .lines > .line {
+    width: 16.4%;
+  }
+  .index > .lines > .line:hover > .title {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  .index > .lines > .line > .shape {
+    width: 100%;
+  }
+  .index > .welcome {
+    padding: 0 20px;
+  }
 }
 .about > .banner {
   position: relative;
@@ -2611,6 +2678,16 @@ body.fixed {
 }
 .about > .sections > .section_process .process > .steps > .step > .copy {
   margin: -10px 0 0 0;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .about > .sections > .section_process .process > .steps {
+    padding: 20px 0;
+  }
+  .about > .sections > .section_process .process > .steps > .step {
+    padding: 20px;
+    margin: 10px auto;
+    display: block;
+  }
 }
 .about > .sections > .section_clients .engage {
   max-width: 1125px;
@@ -2908,6 +2985,14 @@ body.fixed {
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .about > .sections > .section_clients .engage > .ways > .way {
+    float: none;
+    width: 90%;
+    margin: auto !important;
+    padding: 10px !important;
+  }
 }
 .about > .sections > .section_studio .title {
   font: 46px blenderpro book;
@@ -3320,6 +3405,11 @@ body.fixed {
     height: 100vw !important;
   }
 }
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .about > .sections > .section_studio .title {
+    padding: 50px 20px;
+  }
+}
 .about > .sections > .section_careers .jobs > .job:nth-child(odd) > .title {
   background-color: #434965;
 }
@@ -3360,6 +3450,19 @@ body.fixed {
 .about > .sections > .section_careers .jobs > .job.off > .content {
   max-height: 0px;
   padding: 0 50px 0 170px;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .about > .sections > .section_careers .jobs > .job > .title {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .about > .sections > .section_careers .jobs > .job.on > .content {
+    padding: 20px !important;
+    max-height: 2000px;
+  }
+  .about > .sections > .section_careers .jobs > .job.off > .content {
+    padding: 0 20px !important;
+  }
 }
 .about > .sections > .section_clients .clearing,
 .about > .sections > .section_capabilities .clearing {
@@ -3547,6 +3650,51 @@ body.fixed {
 .about > .sections > .section_capabilities .hsbpd > .slide > .inner > .copy {
   font: 36px blenderpro book;
   padding: 50px 0 0 0;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .about > .sections > .section_clients .clearing,
+  .about > .sections > .section_capabilities .clearing {
+    height: auto;
+  }
+  .about > .sections > .section_clients .clearing > .stop,
+  .about > .sections > .section_capabilities .clearing > .stop {
+    display: none;
+  }
+  .about > .sections > .section_clients .hsbpd,
+  .about > .sections > .section_capabilities .hsbpd {
+    height: auto;
+  }
+  .about > .sections > .section_clients .hsbpd > .slide,
+  .about > .sections > .section_capabilities .hsbpd > .slide {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    position: static;
+  }
+  .about > .sections > .section_clients .hsbpd > .slide.on,
+  .about > .sections > .section_capabilities .hsbpd > .slide.on {
+    display: block;
+  }
+  .about > .sections > .section_clients .hsbpd > .slide.off,
+  .about > .sections > .section_capabilities .hsbpd > .slide.off {
+    display: block;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .about > .sections > .section_clients .hsbpd > .slide > .inner > .copy,
+  .about > .sections > .section_capabilities .hsbpd > .slide > .inner > .copy {
+    font-size: 24px;
+  }
+  .about > .sections > .section_clients .hsbpd > .dots,
+  .about > .sections > .section_capabilities .hsbpd > .dots {
+    display: none;
+  }
 }
 .about > .sections > .section_clients > .blocksp.on,
 .about > .sections > .section_capabilities > .blocksp.on {
@@ -3816,6 +3964,43 @@ body.fixed {
 .about > .sections > .section_clients > .fived > .bodys > .body > .inner > .copy > .title,
 .about > .sections > .section_capabilities > .fived > .bodys > .body > .inner > .copy > .title {
   font: 28px blenderpro book;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .about > .banner > .copy {
+    font-size: 24px;
+  }
+  .about > .sections > .section > .blocks > .inner {
+    padding: 20px;
+  }
+  .about > .sections > .section > .blocks > .inner > .blurb {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+  }
+  .about > .sections > .section > .block > .inner {
+    padding: 20px;
+  }
+  .about > .sections > .section > .block > .inner > .copy {
+    font-size: 24px;
+    padding: 0 0 20px 0;
+  }
+  .about > .sections > .section > .block > .inner > .scopy {
+    font-size: 20px;
+  }
+  .about > .fcontainer {
+    height: auto;
+  }
+  .about > .fcontainer > .filters > .inner {
+    max-width: 1000px;
+  }
+  .about > .fcontainer > .filters > .inner > .filtermenu {
+    padding: 0 !important;
+  }
+  .about > .fcontainer > .filters > .inner > .filtermenu > .filter {
+    display: block !important;
+    padding: 20px 0 !important;
+    margin: 0 !important;
+  }
 }
 .projects .summary {
   background-color: #22252b;
@@ -4839,6 +5024,17 @@ body.fixed {
     height: 70vw !important;
   }
 }
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .projects > .summary > .hero {
+    padding: 80px 20px 120px 20px;
+  }
+  .projects > .summary > .fcontainer {
+    display: none;
+  }
+  .projects > .summary > .fcontainer > .filters {
+    display: none;
+  }
+}
 .blog .summary {
   background-color: #22252b;
   min-height: 600px;
@@ -5403,6 +5599,11 @@ body.fixed {
   background-color: #e9eaec;
   color: #000;
 }
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .blog > .summary > .hero {
+    padding: 120px 20px 80px 20px;
+  }
+}
 .guide {
   padding: 50px 0 0 0;
   background-color: #f0f0f0;
@@ -5621,14 +5822,89 @@ body.fixed {
 }
 .contact > .block > .inner > .copy,
 .contact > .block > .inner > .scopy {
-  font: 46px blenderpro book;
   color: #fff;
-}
-.contact > .block > .inner > .scopy {
-  font: 40px blenderpro book;
+  max-width: 440px;
+  margin: auto;
 }
 .contact > #map {
   height: 400px;
+}
+.contact > .engage {
+  max-width: 1125px;
+  margin: auto;
+}
+.contact > .engage > .title {
+  font: 40px blenderpro medium;
+  padding: 100px 0 0 16px;
+}
+.contact > .engage > .ways {
+  text-align: center;
+  padding: 16px;
+}
+.contact > .engage > .ways > .way {
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  width: 28.5%;
+  padding: 20px;
+  margin: 16px;
+  -webkit-animation: cellInX 0.2s 0s ease-in both;
+  -moz-animation: cellInX 0.2s 0s ease-in both;
+  -o-animation: cellInX 0.2s 0s ease-in both;
+  -ms-animation: cellInX 0.2s 0s ease-in both;
+  animation: cellInX 0.2s 0s ease-in both;
+}
+.contact > .engage > .ways > .way:nth-child(1) {
+  padding: 20px 20px 20px 0;
+  margin: 16px 16px 16px 0;
+}
+.contact > .engage > .ways > .way:nth-child(3) {
+  padding: 20px 0 20px 20px;
+  margin: 16px 0 16px 16px;
+}
+.contact > .engage > .ways > .way > .title {
+  font: 28px blenderpro book;
+  text-transform: uppercase;
+  padding: 0 0 16px 0;
+}
+.contact > .engage > .ways > .way > .example {
+  padding: 30px 0 10px 0;
+}
+.contact > .engage > .ways > .way > .example > a {
+  text-decoration: none;
+  color: #ee5655;
+}
+.contact > .officeimage {
+  max-width: 1020px;
+  margin: auto;
+}
+.contact > .officeimage > img {
+  width: 100%;
+}
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .contact > .banner {
+    height: 100%;
+  }
+  .contact > .banner > .inner {
+    height: 100%;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
+    animation: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .contact > .banner > .inner > .copy {
+    margin-top: -50px;
+  }
+  .contact > .engage > .ways > .way {
+    float: none;
+    width: 90%;
+    margin: auto !important;
+    padding: 10px !important;
+  }
 }
 .placeholder {
   text-align: center;

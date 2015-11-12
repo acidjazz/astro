@@ -28,3 +28,14 @@
       max-height 0px
       padding 0 50px 0 170px
 
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .jobs
+    > .job
+      > .title
+        padding 20px
+        font-size 20px
+      &.on > .content
+        padding 20px !important
+        max-height 2000px
+      &.off > .content
+        padding 0 20px !important

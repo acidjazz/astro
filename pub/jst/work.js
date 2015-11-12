@@ -16,10 +16,16 @@ Work = {
     return Work.handlers();
   },
   handlers: function() {
-    $('.projects > .summary > .thumbs > .thumb').on('click', Work.projectHandler);
     $('.projects > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on('click', Work.projectHandler);
     $('.project .filters > .inner > .filtermenu > .filter').on('click', Work.filterHandler);
-    return $('.summary .filters > .inner > .filtermenu > .filter').on('click', Work.summaryFilterHandler);
+    $('.summary .filters > .inner > .filtermenu > .filter').on('click', Work.summaryFilterHandler);
+    return $(window).on('popstate', Work.pop);
+  },
+  pop: function(e) {
+    Work.summary();
+    _.on('.summary > .thumbs > .thumb');
+    _.off('.summary > .filters > .inner > .filtermenu > .filter');
+    return _.on('.summary > .filters > .inner > .filtermenu > .filter_all');
   },
   summaryFilterHandler: function() {
     var copy, filter;
@@ -55,7 +61,7 @@ Work = {
   projectHandler: function() {
     var project;
     project = $(this).data('project');
-    location.hash = project;
+    history.pushState(null, null, "/work/#" + project);
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     return Work.load(project);
   },

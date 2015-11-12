@@ -68,8 +68,6 @@
         > .shape
           background-color: c.red1
       &:hover
-        > .shape
-          background-color: c.red1
         > .title
           opacity 1
           transform translate(0, -35px)
@@ -108,3 +106,18 @@
         color: c.white1
         padding-bottom 15px
 
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .index > .featureds > .inner > .featured > .inner > .copy
+    left 30px
+  .index > .lines
+    text-align left
+    bottom 10px
+    > .line
+      width 16.4%
+      &:hover
+        > .title
+          opacity 0
+      > .shape
+        width 100%
+  .index > .welcome
+    padding 0 20px

@@ -26,7 +26,7 @@ Index = {
     return $('.projects > .thumb').on('click', Index.grid);
   },
   lineRotate: function() {
-    if (Index.lineKey === ($('.featureds > .inner > .feathred').length - 1)) {
+    if (Index.lineKey === ($('.featureds > .inner > .featured').length - 1)) {
       return Index.line(0);
     } else {
       return Index.line(Index.lineKey + 1);
@@ -42,6 +42,7 @@ Index = {
   },
   line: function(key) {
     var src;
+    console.log(key);
     Index.lineKey = key;
     src = Global.srcFromStyle($(".featureds > .inner > .featured:nth-child(" + (key + 1) + ")"));
     NProgress.start();

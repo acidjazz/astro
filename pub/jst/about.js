@@ -50,7 +50,6 @@ About = {
   hsbpdCheck: function() {
     var b, i, j, len, results, section, sections, st, t, threshold, top;
     st = $(window).scrollTop();
-    console.log(st);
     top = 1386;
     threshold = 631;
     if (st >= top && !About.cache.hsbpd.hasClass('fixed')) {

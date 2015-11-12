@@ -42,7 +42,6 @@ Index = {
   },
   line: function(key) {
     var src;
-    console.log(key);
     Index.lineKey = key;
     src = Global.srcFromStyle($(".featureds > .inner > .featured:nth-child(" + (key + 1) + ")"));
     NProgress.start();

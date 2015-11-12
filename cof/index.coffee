@@ -45,8 +45,6 @@ Index =
 
   line: (key) ->
 
-    console.log key
-
     Index.lineKey = key
 
     src = Global.srcFromStyle($(".featureds > .inner > .featured:nth-child(#{key+1})"))

@@ -55,8 +55,6 @@ About =
 
     st = $(window).scrollTop()
 
-    console.log st
-
     top = 1386
     threshold = 631
 

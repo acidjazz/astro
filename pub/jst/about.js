@@ -38,10 +38,7 @@ About = {
     rect = t[0].getBoundingClientRect();
     pos = t.position();
     width = $(window).innerWidth();
-    console.log(profile, rect, t.position(), width);
-    _.off($('.bios'));
-    _.off($('.bios > .bio'));
-    _.off($('.profiles > .profile'));
+    About.profileClose();
     _.on($('.bios'));
     _.on(t);
     bio = $(".bios > .bio.bio_" + profile);
@@ -74,7 +71,8 @@ About = {
   },
   profileClose: function() {
     _.off($('.bios'));
-    return _.off($('.bios > .bio'));
+    _.off($('.bios > .bio'));
+    return _.off($('.profiles > .profile'));
   },
   menuHandler: function() {
     var section;

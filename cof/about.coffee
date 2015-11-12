@@ -44,11 +44,7 @@ About =
     pos = t.position()
     width = $(window).innerWidth()
 
-    console.log profile, rect, t.position(), width
-
-    _.off $('.bios')
-    _.off $('.bios > .bio')
-    _.off $('.profiles > .profile')
+    About.profileClose()
     _.on $('.bios')
     _.on t
     bio = $(".bios > .bio.bio_#{profile}")
@@ -77,17 +73,17 @@ About =
         bio.css('left', "#{pos.left}px")
         bio.css('right', "auto")
 
-
     _.on bio
 
     $('html, body').animate(
       scrollTop: t.offset().top - 64
     , 200)
 
-
   profileClose: ->
+
     _.off $('.bios')
     _.off $('.bios > .bio')
+    _.off $('.profiles > .profile')
 
   menuHandler: ->
     section = $(this).html().trim()

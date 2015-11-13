@@ -3,24 +3,67 @@
   padding 50px 170px
 .profiles
   background-color: c.white3
+  padding 0 0 33.333% 0
   > .profile
     width 25%
     height 25vw
-    background-position 50% 50%
-    background-size cover
-    background-repeat no-repeat
     float left
     animation cellInX 0.2s 0s ease-in both
     cursor pointer
-    transition background-image 0.1s ease-in-out
+    > .inner
+      width 100%
+      height 100%
+      background-position 50% 50%
+      background-size cover
+      background-repeat no-repeat
+      transition background-image 0.1s ease-in-out
     for num in 0..28
       &:nth-child({num})
         animation-delay unit(num*0.05, 's')
-    for name, profile in data.about.profiles
+    for name, profile in data.about.bios
       &.profile_{name}
-        background-image url('/img/about/profiles/' + name + '-default.jpg')
+        > .inner
+          background-image url('/img/about/profiles/' + name + '-default.jpg')
         &:hover
-          background-image url('/img/about/profiles/' + name + '-rollover.jpg')
+          > .inner
+            background-image url('/img/about/profiles/' + name + '-rollover.jpg')
+        &.on > .inner
+          background-image url('/img/about/profiles/' + name + '-selected.png')
+
+  > .bios
+    &.on
+      display block
+    &.off
+      display none
+    > .bio
+      position absolute
+      height 100%
+      top 0
+      left 0
+      background-color: c.yellow1
+      &.on
+        display block
+      &.off
+        display none
+      > .close
+        float right
+        font f_h3m
+        padding 10px 15px
+        cursor pointer
+        transition transform 0.2s ease-in-out
+        &:hover
+          transform rotate(90deg)
+      > .copy
+        padding 40px
+        > .name, > .position
+          padding 0 0 15px 0
+        > .name
+          font f_copyb
+        > .position
+          font f_copyn
+        > .summary
+          font f_copy
+          line-height 24px
 
  // responsive grid
 @media all and (min-width: 2101px)
@@ -39,14 +82,18 @@
     height 33.333vw !important
 
 @media all and (min-width: 481px) and (max-width: 1000px)
-  .profiles > .profile
-    width 50% !important
-    height 50vw !important
+  .profiles
+    padding 0 0 50% 0
+    > .profile
+      width 50% !important
+      height 50vw !important
 
 @media all and (min-width: 1px) and (max-width: 480px)
-  .profiles > .profile
-    width 100% !important
-    height 100vw !important
+  .profiles
+    padding 0 0 100% 0
+    > .profile
+      width 100% !important
+      height 100vw !important
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .title

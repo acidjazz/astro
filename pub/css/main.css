@@ -1106,7 +1106,7 @@
   border-radius: 0 2px 2px 0;
 }
 #nprogress .bar.bar_aos {
-  background: #22252b;
+  background: #363a42;
 }
 #nprogress .bar.bar_fuelband {
   background: #3bb62e;
@@ -1280,7 +1280,7 @@
   display: none;
 }
 .orbit.orbit_aos > .sun {
-  background-color: #22252b;
+  background-color: #363a42;
 }
 .orbit.orbit_fuelband > .sun {
   background-color: #3bb62e;
@@ -1479,7 +1479,7 @@
   animation: preloader-inner 2s infinite ease-in;
 }
 .preloader.preloader_aos > .box > .inner {
-  background-color: #22252b;
+  background-color: #363a42;
 }
 .preloader.preloader_fuelband > .box > .inner {
   background-color: #3bb62e;
@@ -3780,7 +3780,7 @@ body.fixed {
 }
 .about > .sections > .section_clients > .blocks > .inner.block_project.project_aos:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .inner.block_project.project_aos:hover > .inner {
-  background-color: rgba(34,37,43,0.75);
+  background-color: rgba(54,58,66,0.75);
 }
 .about > .sections > .section_clients > .blocks > .inner.block_project.project_fuelband:hover > .inner,
 .about > .sections > .section_capabilities > .blocks > .inner.block_project.project_fuelband:hover > .inner {
@@ -4204,7 +4204,7 @@ body.fixed {
 .index > .projects > .thumb.thumb_aos:hover > .inner > .bg,
 .blog > .summary > .thumbs > .thumb.thumb_aos:hover > .inner > .bg,
 .index > .blog > .thumb.thumb_aos:hover > .inner > .bg {
-  background-color: rgba(34,37,43,0.75);
+  background-color: rgba(54,58,66,0.75);
 }
 .projects > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
 .related > .inner > .relateds > .thumb.thumb_fuelband:hover > .inner > .bg,
@@ -4438,7 +4438,7 @@ body.fixed {
   display: none;
 }
 .projects > .project > .cover {
-  height: 500px;
+  height: 764px;
   position: relative;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -4481,7 +4481,7 @@ body.fixed {
   padding: 0 0 50px 0;
 }
 .projects > .project > .description > .copy {
-  font: 46px blenderpro book;
+  font: 36px blenderpro book;
   max-width: 1020px;
   margin: auto;
 }
@@ -4490,6 +4490,9 @@ body.fixed {
 }
 .projects > .project > .body > .image.blue5 {
   background-color: #a9ded4;
+}
+.projects > .project > .body > .image.white2 {
+  background-color: #e9eaec;
 }
 .projects > .project > .body > .image > .inner {
   max-width: 1020px;
@@ -4537,12 +4540,17 @@ body.fixed {
   background-color: #000;
   color: #fff;
 }
+.projects > .project > .body .copyblock.black2 {
+  background-color: #22252b;
+  color: #fff;
+}
 .projects > .project > .body .copyblock.black3 {
   background-color: #444;
   color: #fff;
 }
 .projects > .project > .body .copyblock.green {
   background-color: #3bb62e;
+  color: #000;
 }
 .projects > .project > .body .copyblock.brown {
   background-color: #f4ab8b;
@@ -4552,6 +4560,7 @@ body.fixed {
 }
 .projects > .project > .body .copyblock.pink1 {
   background-color: #f467b2;
+  color: #000;
 }
 .projects > .project > .body .copyblock.blue5 {
   background-color: #a9ded4;
@@ -4571,12 +4580,11 @@ body.fixed {
   background-color: #f0f0f0;
 }
 .projects > .project > .body .copyblock > .inner {
-  margin: auto;
   max-width: 1020px;
   margin: auto;
 }
 .projects > .project > .body .copyblock > .inner > .title {
-  font: 36px blenderpro book;
+  font: 40px blenderpro medium;
   text-transform: uppercase;
   padding: 0 0 10px 0;
 }
@@ -4587,9 +4595,12 @@ body.fixed {
   text-align: center;
 }
 .projects > .project > .body .copyblock > .inner > .copy {
+  font: 18px aktivgrotesk normal;
+  line-height: 30px;
   padding: 0 0 10px 0;
 }
 .projects > .project > .body .copyblock > .inner > .copy.big {
+  letter-spacing: 2px;
   font: 40px blenderpro medium;
   text-align: center;
 }
@@ -4599,16 +4610,21 @@ body.fixed {
 .projects > .project > .body .copyblock > .inner > .copy.centered {
   text-align: center;
 }
-.projects > .project > .body .copyblock > .inner > .blurb {
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  columns: 2;
+.projects > .project > .body .copyblock > .inner > .blurb:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 .projects > .project > .body .copyblock > .inner > .blurb > p {
+  float: left;
+  font: 18px aktivgrotesk normal;
+  line-height: 30px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
   padding: 10px 20px 10px 0;
+  width: 50%;
 }
 .projects > .project > .related > .title {
   font: 40px blenderpro book;
@@ -4617,7 +4633,7 @@ body.fixed {
   color: #fff;
 }
 .projects > .project > .related > .title.title_aos {
-  background-color: #22252b;
+  background-color: #363a42;
 }
 .projects > .project > .related > .title.title_fuelband {
   background-color: #3bb62e;
@@ -4736,7 +4752,7 @@ body.fixed {
 .projects > .project > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos.active,
 .projects > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos.active,
 .about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos.active {
-  background-color: #22252b;
+  background-color: #363a42;
 }
 .projects > .project > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos:hover,
 .projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos:hover,
@@ -4744,7 +4760,7 @@ body.fixed {
 .projects > .project > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos:hover,
 .projects > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos:hover,
 .about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_aos:hover {
-  background-color: rgba(34,37,43,0.25);
+  background-color: rgba(54,58,66,0.25);
 }
 .projects > .project > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
 .projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
@@ -4977,7 +4993,12 @@ body.fixed {
 .table > .row .imgblock {
   display: table-cell;
   width: 50%;
-  vertical-align: top;
+  vertical-align: middle;
+  height: 100%;
+}
+.table > .row > .copyblock.middle,
+.table > .row .imgblock.middle {
+  vertical-align: middle;
 }
 .table > .row > .imgblock {
   background-repeat: no-repeat;
@@ -4993,6 +5014,9 @@ body.fixed {
 }
 .table > .row img {
   width: 100%;
+}
+.minheight_500 {
+  min-height: 500px;
 }
 @media all and (min-width: 2101px) {
   .thumb {

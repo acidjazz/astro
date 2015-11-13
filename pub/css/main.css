@@ -4673,6 +4673,9 @@ body.fixed {
 .projects > .project > .body > .space {
   height: 50px;
 }
+.projects > .project > .body > .space.black {
+  background-color: #000;
+}
 .projects > .project > .body .copyblock {
   padding: 100px 50px 90px 50px;
   line-height: 30px;

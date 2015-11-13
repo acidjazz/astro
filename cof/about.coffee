@@ -59,12 +59,10 @@ About =
     if width > (rect.width*2)
 
       if width is Math.round(rect.right)
-        console.log 'right siiiide'
         bio.css('width', "#{rect.width*2}px")
         bio.css('right', "0px")
         bio.css('left', "auto")
       else if rect.left is 0
-        console.log 'left siiiide'
         bio.css('width', "#{rect.width*2}px")
         bio.css('left', "0px")
         bio.css('right', "auto")

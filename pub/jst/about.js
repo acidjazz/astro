@@ -49,12 +49,10 @@ About = {
     bio.css('width', '100%');
     if (width > (rect.width * 2)) {
       if (width === Math.round(rect.right)) {
-        console.log('right siiiide');
         bio.css('width', (rect.width * 2) + "px");
         bio.css('right', "0px");
         bio.css('left', "auto");
       } else if (rect.left === 0) {
-        console.log('left siiiide');
         bio.css('width', (rect.width * 2) + "px");
         bio.css('left', "0px");
         bio.css('right', "auto");

@@ -3004,6 +3004,7 @@ body.fixed {
 }
 .about > .sections > .section_studio .profiles {
   background-color: #f0f0f0;
+  padding: 0 0 33.333% 0;
 }
 .about > .sections > .section_studio .profiles > .profile {
   width: 25%;
@@ -3015,11 +3016,6 @@ body.fixed {
   -ms-animation: cellInX 0.2s 0s ease-in both;
   animation: cellInX 0.2s 0s ease-in both;
   cursor: pointer;
-  -webkit-transition: background-image 0.1s ease-in-out;
-  -moz-transition: background-image 0.1s ease-in-out;
-  -o-transition: background-image 0.1s ease-in-out;
-  -ms-transition: background-image 0.1s ease-in-out;
-  transition: background-image 0.1s ease-in-out;
 }
 .about > .sections > .section_studio .profiles > .profile > .inner {
   width: 100%;
@@ -3029,6 +3025,11 @@ body.fixed {
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transition: background-image 0.1s ease-in-out;
+  -moz-transition: background-image 0.1s ease-in-out;
+  -o-transition: background-image 0.1s ease-in-out;
+  -ms-transition: background-image 0.1s ease-in-out;
+  transition: background-image 0.1s ease-in-out;
 }
 .about > .sections > .section_studio .profiles > .profile:nth-child(0) {
   -webkit-animation-delay: 0s;
@@ -3239,11 +3240,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_sarah:hover > .inner {
   background-image: url("/img/about/profiles/sarah-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_sarah.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_sarah.on > .inner {
-  background-image: url("/img/about/profiles/sarah-selected.jpg");
+  background-image: url("/img/about/profiles/sarah-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_david > .inner {
   background-image: url("/img/about/profiles/david-default.jpg");
@@ -3251,11 +3249,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_david:hover > .inner {
   background-image: url("/img/about/profiles/david-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_david.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_david.on > .inner {
-  background-image: url("/img/about/profiles/david-selected.jpg");
+  background-image: url("/img/about/profiles/david-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_will > .inner {
   background-image: url("/img/about/profiles/will-default.jpg");
@@ -3263,11 +3258,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_will:hover > .inner {
   background-image: url("/img/about/profiles/will-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_will.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_will.on > .inner {
-  background-image: url("/img/about/profiles/will-selected.jpg");
+  background-image: url("/img/about/profiles/will-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_kyle > .inner {
   background-image: url("/img/about/profiles/kyle-default.jpg");
@@ -3275,11 +3267,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_kyle:hover > .inner {
   background-image: url("/img/about/profiles/kyle-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_kyle.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_kyle.on > .inner {
-  background-image: url("/img/about/profiles/kyle-selected.jpg");
+  background-image: url("/img/about/profiles/kyle-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_devon > .inner {
   background-image: url("/img/about/profiles/devon-default.jpg");
@@ -3287,11 +3276,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_devon:hover > .inner {
   background-image: url("/img/about/profiles/devon-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_devon.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_devon.on > .inner {
-  background-image: url("/img/about/profiles/devon-selected.jpg");
+  background-image: url("/img/about/profiles/devon-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_clare > .inner {
   background-image: url("/img/about/profiles/clare-default.jpg");
@@ -3299,11 +3285,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_clare:hover > .inner {
   background-image: url("/img/about/profiles/clare-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_clare.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_clare.on > .inner {
-  background-image: url("/img/about/profiles/clare-selected.jpg");
+  background-image: url("/img/about/profiles/clare-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_rachael > .inner {
   background-image: url("/img/about/profiles/rachael-default.jpg");
@@ -3311,11 +3294,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_rachael:hover > .inner {
   background-image: url("/img/about/profiles/rachael-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_rachael.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_rachael.on > .inner {
-  background-image: url("/img/about/profiles/rachael-selected.jpg");
+  background-image: url("/img/about/profiles/rachael-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_karson > .inner {
   background-image: url("/img/about/profiles/karson-default.jpg");
@@ -3323,11 +3303,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_karson:hover > .inner {
   background-image: url("/img/about/profiles/karson-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_karson.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_karson.on > .inner {
-  background-image: url("/img/about/profiles/karson-selected.jpg");
+  background-image: url("/img/about/profiles/karson-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_melody > .inner {
   background-image: url("/img/about/profiles/melody-default.jpg");
@@ -3335,11 +3312,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_melody:hover > .inner {
   background-image: url("/img/about/profiles/melody-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_melody.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_melody.on > .inner {
-  background-image: url("/img/about/profiles/melody-selected.jpg");
+  background-image: url("/img/about/profiles/melody-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_francois > .inner {
   background-image: url("/img/about/profiles/francois-default.jpg");
@@ -3347,11 +3321,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_francois:hover > .inner {
   background-image: url("/img/about/profiles/francois-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_francois.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_francois.on > .inner {
-  background-image: url("/img/about/profiles/francois-selected.jpg");
+  background-image: url("/img/about/profiles/francois-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_andres > .inner {
   background-image: url("/img/about/profiles/andres-default.jpg");
@@ -3359,11 +3330,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_andres:hover > .inner {
   background-image: url("/img/about/profiles/andres-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_andres.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_andres.on > .inner {
-  background-image: url("/img/about/profiles/andres-selected.jpg");
+  background-image: url("/img/about/profiles/andres-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_astro > .inner {
   background-image: url("/img/about/profiles/astro-default.jpg");
@@ -3371,11 +3339,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_astro:hover > .inner {
   background-image: url("/img/about/profiles/astro-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_astro.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_astro.on > .inner {
-  background-image: url("/img/about/profiles/astro-selected.jpg");
+  background-image: url("/img/about/profiles/astro-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_mauricio > .inner {
   background-image: url("/img/about/profiles/mauricio-default.jpg");
@@ -3383,11 +3348,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_mauricio:hover > .inner {
   background-image: url("/img/about/profiles/mauricio-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_mauricio.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_mauricio.on > .inner {
-  background-image: url("/img/about/profiles/mauricio-selected.jpg");
+  background-image: url("/img/about/profiles/mauricio-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_tom > .inner {
   background-image: url("/img/about/profiles/tom-default.jpg");
@@ -3395,11 +3357,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_tom:hover > .inner {
   background-image: url("/img/about/profiles/tom-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_tom.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_tom.on > .inner {
-  background-image: url("/img/about/profiles/tom-selected.jpg");
+  background-image: url("/img/about/profiles/tom-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_woo > .inner {
   background-image: url("/img/about/profiles/woo-default.jpg");
@@ -3407,11 +3366,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_woo:hover > .inner {
   background-image: url("/img/about/profiles/woo-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_woo.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_woo.on > .inner {
-  background-image: url("/img/about/profiles/woo-selected.jpg");
+  background-image: url("/img/about/profiles/woo-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_norio > .inner {
   background-image: url("/img/about/profiles/norio-default.jpg");
@@ -3419,11 +3375,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_norio:hover > .inner {
   background-image: url("/img/about/profiles/norio-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_norio.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_norio.on > .inner {
-  background-image: url("/img/about/profiles/norio-selected.jpg");
+  background-image: url("/img/about/profiles/norio-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_brettn > .inner {
   background-image: url("/img/about/profiles/brettn-default.jpg");
@@ -3431,11 +3384,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_brettn:hover > .inner {
   background-image: url("/img/about/profiles/brettn-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_brettn.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_brettn.on > .inner {
-  background-image: url("/img/about/profiles/brettn-selected.jpg");
+  background-image: url("/img/about/profiles/brettn-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_jim > .inner {
   background-image: url("/img/about/profiles/jim-default.jpg");
@@ -3443,11 +3393,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_jim:hover > .inner {
   background-image: url("/img/about/profiles/jim-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_jim.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_jim.on > .inner {
-  background-image: url("/img/about/profiles/jim-selected.jpg");
+  background-image: url("/img/about/profiles/jim-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_brett > .inner {
   background-image: url("/img/about/profiles/brett-default.jpg");
@@ -3455,11 +3402,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_brett:hover > .inner {
   background-image: url("/img/about/profiles/brett-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_brett.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_brett.on > .inner {
-  background-image: url("/img/about/profiles/brett-selected.jpg");
+  background-image: url("/img/about/profiles/brett-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_celeste > .inner {
   background-image: url("/img/about/profiles/celeste-default.jpg");
@@ -3467,11 +3411,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_celeste:hover > .inner {
   background-image: url("/img/about/profiles/celeste-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_celeste.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_celeste.on > .inner {
-  background-image: url("/img/about/profiles/celeste-selected.jpg");
+  background-image: url("/img/about/profiles/celeste-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_carolyn > .inner {
   background-image: url("/img/about/profiles/carolyn-default.jpg");
@@ -3479,11 +3420,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_carolyn:hover > .inner {
   background-image: url("/img/about/profiles/carolyn-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_carolyn.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_carolyn.on > .inner {
-  background-image: url("/img/about/profiles/carolyn-selected.jpg");
+  background-image: url("/img/about/profiles/carolyn-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_robin > .inner {
   background-image: url("/img/about/profiles/robin-default.jpg");
@@ -3491,11 +3429,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_robin:hover > .inner {
   background-image: url("/img/about/profiles/robin-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_robin.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_robin.on > .inner {
-  background-image: url("/img/about/profiles/robin-selected.jpg");
+  background-image: url("/img/about/profiles/robin-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_sean > .inner {
   background-image: url("/img/about/profiles/sean-default.jpg");
@@ -3503,11 +3438,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_sean:hover > .inner {
   background-image: url("/img/about/profiles/sean-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_sean.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_sean.on > .inner {
-  background-image: url("/img/about/profiles/sean-selected.jpg");
+  background-image: url("/img/about/profiles/sean-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_chris > .inner {
   background-image: url("/img/about/profiles/chris-default.jpg");
@@ -3515,11 +3447,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_chris:hover > .inner {
   background-image: url("/img/about/profiles/chris-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_chris.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_chris.on > .inner {
-  background-image: url("/img/about/profiles/chris-selected.jpg");
+  background-image: url("/img/about/profiles/chris-selected.png");
 }
 .about > .sections > .section_studio .profiles > .profile.profile_kristy > .inner {
   background-image: url("/img/about/profiles/kristy-default.jpg");
@@ -3527,11 +3456,8 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_kristy:hover > .inner {
   background-image: url("/img/about/profiles/kristy-rollover.jpg");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_kristy.on {
-  background-color: rgba(248,231,29,0.5);
-}
 .about > .sections > .section_studio .profiles > .profile.profile_kristy.on > .inner {
-  background-image: url("/img/about/profiles/kristy-selected.jpg");
+  background-image: url("/img/about/profiles/kristy-selected.png");
 }
 .about > .sections > .section_studio .profiles > .bios.on {
   display: block;
@@ -3573,6 +3499,20 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .bios > .bio > .copy {
   padding: 40px;
 }
+.about > .sections > .section_studio .profiles > .bios > .bio > .copy > .name,
+.about > .sections > .section_studio .profiles > .bios > .bio > .copy > .position {
+  padding: 0 0 15px 0;
+}
+.about > .sections > .section_studio .profiles > .bios > .bio > .copy > .name {
+  font: 18px aktivgrotesk bold;
+}
+.about > .sections > .section_studio .profiles > .bios > .bio > .copy > .position {
+  font: 18px aktivgrotesk normal;
+}
+.about > .sections > .section_studio .profiles > .bios > .bio > .copy > .summary {
+  font: 18px aktivgrotesk light;
+  line-height: 24px;
+}
 @media all and (min-width: 2101px) {
   .about > .sections > .section_studio .profiles > .profile {
     width: 25% !important;
@@ -3592,12 +3532,18 @@ body.fixed {
   }
 }
 @media all and (min-width: 481px) and (max-width: 1000px) {
+  .about > .sections > .section_studio .profiles {
+    padding: 0 0 50% 0;
+  }
   .about > .sections > .section_studio .profiles > .profile {
     width: 50% !important;
     height: 50vw !important;
   }
 }
 @media all and (min-width: 1px) and (max-width: 480px) {
+  .about > .sections > .section_studio .profiles {
+    padding: 0 0 100% 0;
+  }
   .about > .sections > .section_studio .profiles > .profile {
     width: 100% !important;
     height: 100vw !important;

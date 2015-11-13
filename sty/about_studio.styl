@@ -3,19 +3,20 @@
   padding 50px 170px
 .profiles
   background-color: c.white3
+  padding 0 0 33.333% 0
   > .profile
     width 25%
     height 25vw
     float left
     animation cellInX 0.2s 0s ease-in both
     cursor pointer
-    transition background-image 0.1s ease-in-out
     > .inner
       width 100%
       height 100%
       background-position 50% 50%
       background-size cover
       background-repeat no-repeat
+      transition background-image 0.1s ease-in-out
     for num in 0..28
       &:nth-child({num})
         animation-delay unit(num*0.05, 's')
@@ -26,10 +27,8 @@
         &:hover
           > .inner
             background-image url('/img/about/profiles/' + name + '-rollover.jpg')
-        &.on
-          background-color: rgba(c.yellow1, 0.5)
-          > .inner
-            background-image url('/img/about/profiles/' + name + '-selected.jpg')
+        &.on > .inner
+          background-image url('/img/about/profiles/' + name + '-selected.png')
 
   > .bios
     &.on
@@ -56,6 +55,15 @@
           transform rotate(90deg)
       > .copy
         padding 40px
+        > .name, > .position
+          padding 0 0 15px 0
+        > .name
+          font f_copyb
+        > .position
+          font f_copyn
+        > .summary
+          font f_copy
+          line-height 24px
 
  // responsive grid
 @media all and (min-width: 2101px)
@@ -74,14 +82,18 @@
     height 33.333vw !important
 
 @media all and (min-width: 481px) and (max-width: 1000px)
-  .profiles > .profile
-    width 50% !important
-    height 50vw !important
+  .profiles
+    padding 0 0 50% 0
+    > .profile
+      width 50% !important
+      height 50vw !important
 
 @media all and (min-width: 1px) and (max-width: 480px)
-  .profiles > .profile
-    width 100% !important
-    height 100vw !important
+  .profiles
+    padding 0 0 100% 0
+    > .profile
+      width 100% !important
+      height 100vw !important
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .title

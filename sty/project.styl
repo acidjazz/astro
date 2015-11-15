@@ -120,7 +120,7 @@
           font f_copyn
           letter-spacing 2px
     > .description
-      padding 40px 20px 60px 20px
+      padding 100px 20px 100px 20px
       text-align center
       color: c.white1
       > .name
@@ -136,6 +136,15 @@
 .projects > .project
 
   > .body
+    > .embed
+      > .inner
+      	padding-bottom 56.25%
+      	position relative
+      	height 0
+      	max-width 1020px
+      	margin auto
+      .iframe
+        position absolute
     > .image
       &.black
         background-color: c.black1
@@ -188,7 +197,7 @@
           background-color: c.green3
           color: c.black1
       &.brown
-        background-color: c.orange1
+        background-color: c.brown1
       &.orange
         background-color: c.orange1
       &.pink1
@@ -308,7 +317,8 @@
             background-color: c.white2
             color: c.black1
 
-.table
+.projects > .project > .body > .table
+  width 100%
   display table
   > .row
     display table-row
@@ -317,23 +327,27 @@
       width 50%
       vertical-align middle
       height 100%
+      max-width none
+    > .copyblock > .inner
+      max-width 460px
+      float right
+    &:after
+      content ''
+      display block
+      clear both
       &.middle
         vertical-align middle
     > .imgblock
       background-repeat no-repeat 
       background-position center center
       background-size cover
-    > .imgblock_3
-      display table-cell
-      width 33%
-      vertical-align top
       
     img
       width 100%
       
 .minheight_500
     min-height 500px
-  
+  	
  // responsive grid
 @media all and (min-width: 2101px)
   .thumb

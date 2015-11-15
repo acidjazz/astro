@@ -3,7 +3,7 @@
   cover: hero.png
   hero: hero2.png
   name: Versus Headset
-  description: ASTRO and Sense Labs created a tool for athletes to train their brain.  Smart move.
+  description: Astro and Sense Labs created a tool for athletes to train their brain.  Smart move.
   color: blue1
   home: true 
   filters:
@@ -24,7 +24,28 @@
       - IDEA Award for Excellence
       - Featured in Fast Company Design
       - I.D. Magazine Annual Review
+  body1:
+    title: GETTING AHEAD OF THE COMPETITION
+    copy: As training techniques at all levels become more sophisticated and the stakes continue to increase, athletes are looking in new places for a competitive edge. For many, the mind is the final frontier and elite athletes must train their mind as rigorously as they train their bodies.
+    color: black1
+
+  body2:
+    copy: "After we named the parent company: Sense Labs, we named and designed the Versus brand and headset to appeal to athletes' sense of competition-with themselves and others-all while doing justice to the serious science behind the experience. Striking a harmonious balance between science and sport resulted in purpose-driven, precise engineering with a performance aesthetic, which sits at the crossroads of the lab and the arena."
+
+  body3: 
+    copy: We were challenged to create the Versus headset to be attractive enough to pass the mirror test while also being high-performance enough to work effectively on an extreme range of head sizes.
+
+  body4:
+    copy: We did this by combining heat-welded 3D mesh fabric used in athletic footwear with an ultra-lightweight headphone structure. The soft X-frame flexes to fit on the wearer's head while the sensors make contact independently allowing for micro fit adjustments.
+    color: black1
+
+  body5:
+    title: TEAM SPIRIT
+    left: For an added degree of customization, the headsets are built with replaceable tags that can be customized with a sponsor, team logo or player number.
+    right: The result? All sorts of athletes have responded to Versus. From Olympic gold medalists to NBA sharpshooters, users have embraced the technology and used it to gain an edge at the highest levels of sport.
+    color: green1  
+
   related:
-    - goggle
     - threedr
-    - fuelband
+    - sol
+    - owlet

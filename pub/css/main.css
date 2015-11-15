@@ -119,6 +119,10 @@
   background-color: #f8e71d;
   border: 1px solid #fff;
 }
+.guide > .sections > .section > .color.color_brown1 {
+  background-color: #9b908a;
+  border: 1px solid #fff;
+}
 .guide > .sections > .section > .font {
   padding: 10px 20px;
   margin: 5px;
@@ -4613,7 +4617,7 @@ body.fixed {
   letter-spacing: 2px;
 }
 .projects > .project > .description {
-  padding: 40px 20px 60px 20px;
+  padding: 100px 20px 100px 20px;
   text-align: center;
   color: #fff;
 }
@@ -4628,6 +4632,16 @@ body.fixed {
   font: 36px blenderpro book;
   max-width: 1020px;
   margin: auto;
+}
+.projects > .project > .body > .embed > .inner {
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  max-width: 1020px;
+  margin: auto;
+}
+.projects > .project > .body > .embed .iframe {
+  position: absolute;
 }
 .projects > .project > .body > .image.black {
   background-color: #000;
@@ -4700,7 +4714,7 @@ body.fixed {
   color: #000;
 }
 .projects > .project > .body .copyblock.brown {
-  background-color: #f4ab8b;
+  background-color: #9b908a;
 }
 .projects > .project > .body .copyblock.orange {
   background-color: #f4ab8b;
@@ -5130,36 +5144,41 @@ body.fixed {
   background-color: #e9eaec;
   color: #000;
 }
-.table {
+.projects > .project > .body > .table {
+  width: 100%;
   display: table;
 }
-.table > .row {
+.projects > .project > .body > .table > .row {
   display: table-row;
 }
-.table > .row > .copyblock,
-.table > .row .imgblock {
+.projects > .project > .body > .table > .row > .copyblock,
+.projects > .project > .body > .table > .row .imgblock {
   display: table-cell;
   width: 50%;
   vertical-align: middle;
   height: 100%;
+  max-width: none;
 }
-.table > .row > .copyblock.middle,
-.table > .row .imgblock.middle {
+.projects > .project > .body > .table > .row > .copyblock > .inner {
+  max-width: 460px;
+  float: right;
+}
+.projects > .project > .body > .table > .row:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.projects > .project > .body > .table > .row:after.middle {
   vertical-align: middle;
 }
-.table > .row > .imgblock {
+.projects > .project > .body > .table > .row > .imgblock {
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
-.table > .row > .imgblock_3 {
-  display: table-cell;
-  width: 33%;
-  vertical-align: top;
-}
-.table > .row img {
+.projects > .project > .body > .table > .row img {
   width: 100%;
 }
 .minheight_500 {
@@ -5894,6 +5913,10 @@ body.fixed {
 }
 .guide > .sections > .section > .color.color_yellow1 {
   background-color: #f8e71d;
+  border: 1px solid #fff;
+}
+.guide > .sections > .section > .color.color_brown1 {
+  background-color: #9b908a;
   border: 1px solid #fff;
 }
 .guide > .sections > .section > .font {

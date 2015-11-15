@@ -20,7 +20,19 @@
       - IDEA Award for Excellence
       - Featured in Fast Company Design
       - I.D. Magazine Annual Review
+
+  body1: 
+    title: CALIFORNIA INSPIRED
+    copy: Electric is a California action-sports brand to the core. We were tasked with creating a goggle with a radical new look that would inspire their loyal base. The result was the EG3 -- a totally unique-looking snow goggle with some serious functionality improvements.
+
+  callout: 
+    copy: We designed the EG3 to be an evolution of Electric's classic EG2 goggle. 
+    color: blue5
+
+  body2:
+    copy: The design preserves the EG2's iconic, sharp shape, but removes the lens frame, allowing the lens to run to the edge for maximum visibility and a futuristic look. The EG3’s design also integrates their signature quick-change lens feature while including details like fading perforations for a totally original result.
+
   related:
-    - goggle
-    - threedr
-    - fuelband
+    - neff
+    - xbox
+    - sol

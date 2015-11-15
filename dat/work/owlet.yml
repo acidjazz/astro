@@ -20,8 +20,20 @@
       - IDEA Award for Excellence
       - Featured in Fast Company Design
       - I.D. Magazine Annual Review
+  body1:
+    title: CONNECTED TO YOUR KID
+    copy: Parents have always wanted help keeping an eye on their sleeping baby. As the smartphone set begins to have kids, they're looking to see how technology can improve traditional parenting tools. 
+    color: orange1
+
+  body2: 
+    copy: Armed with that insight, we studied market trends from clothing to housewares to baby products and used that research to inform our product and brand design process.
+    color: blue5
+
+  body3: 
+    left: The Owlet Smartsock uses the same pulse-oximetry technology long used in hospitals to monitor vital signs.&nbsp;&nbsp;The sock is wirelessly connected to a base station and the user's Apple device and immediately sends out an alert when vital signs fluctuate.
+    right: The Owlet was designed to be an intuitive piece of technology that compliments the aesthetic of a baby's room, attire, and accessories. It's easy to use, comfortable to a baby's touch, and the recharging base station even doubles as a comforting nightlight.
 
   related:
-    - goggle
-    - threedr
     - fuelband
+    - versus
+    - threedr

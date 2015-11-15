@@ -3,14 +3,14 @@
 
 .images.table.minheight_500: .inner_100.row
   .copyblock.black3: .inner
-    .title more than just a game
-    .copy Microsoft challenged ASTRO to design the 2nd generation XBOX to reflect what its technology would make it: a high-octane digital portal to the converging world of live video gaming and online services.
+    .title #{project.body1.title}
+    .copy #{project.body1.copy}
   .imgblock(style="background-image: url('../img/work/xbox/1440/150414_XBox_3Product_alt.png')")
     
 .copyblock: .inner
   .blurb
-    p Working with XBOX design and development partners in the US, Asia, and Europe, ASTRO developed the 360 to be just that: attractive from any vantage point.  The 360-design strategy was designed to drive confidence in its new wireless controller connectivity and XBOX Live, its online gaming marketplace.
-    p The result: a comprehensive design language applied to everything XBOX 360, including wireless controllers, custom faceplates, a removable hard drive, accessories galore and, of course, the iconic console itself.
+    p #{project.body2.left}
+    p #{project.body2.right}
     
 .images: .inner_100
   img(data-src='controller.png')
@@ -19,4 +19,4 @@
   img(data-src='products.png')
 
 .copyblock.black3: .inner
-  .copy.big With over 80 million units sold since the beginning of its production run, the XBOX 360 has been a gaming mainstay for nearly a decade and pop-culture touchstone forever.
+  .copy.big #{project.callout.copy}

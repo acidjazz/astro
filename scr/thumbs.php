@@ -18,9 +18,11 @@ if ($handle = opendir($dir)) {
         echo "cp $dir$entry/* $dir$entry/1440/.\n";
         exec("cp $dir$entry/* $dir$entry/1440/.");
         echo "cd $dir$entry/1440\n";
+        echo "chdir($dir$entry/1440);";
         chdir("$dir$entry/1440");
         echo "mogrify -geometry 1440x *\n";
         exec("mogrify -geometry 1440x *");
+        chdir('../../../../../');
 
       }
     }

@@ -5145,41 +5145,41 @@ body.fixed {
   background-color: #e9eaec;
   color: #000;
 }
-.projects > .project > .body > .table {
+.projects > .project > .body .table {
   width: 100%;
   display: table;
 }
-.projects > .project > .body > .table > .row {
+.projects > .project > .body .table > .row {
   display: table-row;
 }
-.projects > .project > .body > .table > .row > .copyblock,
-.projects > .project > .body > .table > .row .imgblock {
+.projects > .project > .body .table > .row > .copyblock,
+.projects > .project > .body .table > .row .imgblock {
   display: table-cell;
   width: 50%;
   vertical-align: middle;
   height: 100%;
   max-width: none;
 }
-.projects > .project > .body > .table > .row > .copyblock > .inner {
+.projects > .project > .body .table > .row > .copyblock > .inner {
   max-width: 460px;
   float: right;
 }
-.projects > .project > .body > .table > .row:after {
+.projects > .project > .body .table > .row:after {
   content: '';
   display: block;
   clear: both;
 }
-.projects > .project > .body > .table > .row:after.middle {
+.projects > .project > .body .table > .row:after.middle {
   vertical-align: middle;
 }
-.projects > .project > .body > .table > .row > .imgblock {
+.projects > .project > .body .table > .row > .imgblock {
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
-.projects > .project > .body > .table > .row img {
+.projects > .project > .body .table img {
   width: 100%;
 }
 .minheight_500 {
@@ -5213,6 +5213,59 @@ body.fixed {
   .thumb {
     width: 100% !important;
     height: 70vw !important;
+  }
+  .projects > .project > .body .copyblock > .inner > .blurb > p {
+    float: none;
+    width: 100%;
+  }
+  .projects > .project > .body > .table > .row > .copyblock {
+    width: 100%;
+  }
+  .projects > .project > .body > .table > .row > .copyblock > .inner {
+    float: none;
+  }
+  .projects > .project > .body > .images > .inner_100 > img {
+    width: 100%;
+  }
+  .projects > .project > .body > .images > .inner_50 {
+    width: 100%;
+  }
+  .projects > .project > .body > .images > .inner > img {
+    width: 100%;
+  }
+  .projects > .project > .body > .images > .nosplit_mobile > img {
+    width: 50% !important;
+  }
+  .projects > .project > .body .table {
+    display: block;
+  }
+  .projects > .project > .body .table > .row {
+    display: block;
+  }
+  .projects > .project > .body .table > .row > .copyblock,
+  .projects > .project > .body .table > .row .imgblock {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .projects > .project > .body .table > .row > .imgblock {
+    padding-top: 70%;
+  }
+  .projects > .project > .body .table > .row > .ratio_110_mobile {
+    padding-top: 110%;
+  }
+  .projects > .project > .body .table > .row > .ratio_100_mobile {
+    padding-top: 100%;
+  }
+  .projects > .project > .body .table > .row > .copyblock > .inner {
+    max-width: 460px;
+    float: none;
+  }
+  .space_mobile {
+    height: 50px;
+  }
+  .rm_space_mobile {
+    height: 0px !important;
   }
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {

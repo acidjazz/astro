@@ -317,30 +317,31 @@
             background-color: c.white2
             color: c.black1
 
-.projects > .project > .body > .table
-  width 100%
-  display table
-  > .row
-    display table-row
-    > .copyblock, .imgblock
-      display table-cell
-      width 50%
-      vertical-align middle
-      height 100%
-      max-width none
-    > .copyblock > .inner
-      max-width 460px
-      float right
-    &:after
-      content ''
-      display block
-      clear both
-      &.middle
+.projects > .project > .body 
+  .table
+    width 100%
+    display table
+    > .row
+      display table-row
+      > .copyblock, .imgblock
+        display table-cell
+        width 50%
         vertical-align middle
-    > .imgblock
-      background-repeat no-repeat 
-      background-position center center
-      background-size cover
+        height 100%
+        max-width none
+      > .copyblock > .inner
+        max-width 460px
+        float right
+      &:after
+        content ''
+        display block
+        clear both
+        &.middle
+          vertical-align middle
+      > .imgblock
+        background-repeat no-repeat 
+        background-position center center
+        background-size cover
       
     img
       width 100%
@@ -373,7 +374,44 @@
   .thumb
     width 100% !important
     height 70vw !important
-
+  .projects > .project > .body .copyblock > .inner > .blurb > p
+    float none
+    width 100%
+  .projects > .project > .body > .table > .row > .copyblock
+    width 100%
+    > .inner
+      float none
+  .projects > .project > .body > .images 
+    > .inner_100 > img
+      width 100%
+    > .inner_50
+      width 100%
+    > .inner > img
+      width 100%
+    > .nosplit_mobile > img
+      width 50% !important
+  .projects > .project > .body
+    .table
+      display block
+      > .row
+        display block
+        > .copyblock, .imgblock
+          display block
+          width 100%
+          height auto
+        > .imgblock 
+          padding-top: 70%
+        > .ratio_110_mobile
+          padding-top: 110%
+        > .ratio_100_mobile
+          padding-top: 100%
+        > .copyblock > .inner
+          max-width 460px
+          float none
+  .space_mobile
+    height 50px
+  .rm_space_mobile
+    height 0px !important
 @media all and (min-width: 1px) and (max-width: 1000px)
   .projects
     > .summary

@@ -4593,7 +4593,7 @@ body.fixed {
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: center center;
 }
 .projects > .project > .cover > .copy {
   position: absolute;
@@ -4634,6 +4634,10 @@ body.fixed {
   max-width: 1020px;
   margin: auto;
 }
+.projects > .project > .body > .embed {
+  max-width: 1020px;
+  margin: auto;
+}
 .projects > .project > .body > .embed > .inner {
   padding-bottom: 56.25%;
   position: relative;
@@ -4654,6 +4658,9 @@ body.fixed {
   background-color: #e9eaec;
 }
 .projects > .project > .body > .image > .inner {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   max-width: 1020px;
   margin: auto;
 }
@@ -4676,6 +4683,7 @@ body.fixed {
 .projects > .project > .body > .images > .inner_50 {
   width: 50%;
   float: left;
+  margin-bottom: -1px;
 }
 .projects > .project > .body > .images > .inner_50 > img {
   width: 100%;
@@ -4744,6 +4752,9 @@ body.fixed {
 .projects > .project > .body .copyblock > .inner {
   max-width: 1020px;
   margin: auto;
+}
+.projects > .project > .body .copyblock > .inner.white3 {
+  background-color: #f0f0f0;
 }
 .projects > .project > .body .copyblock > .inner > .title {
   font: 40px blenderpro medium;
@@ -5184,6 +5195,22 @@ body.fixed {
 }
 .minheight_500 {
   min-height: 500px;
+}
+.minheight_600 {
+  min-height: 600px;
+}
+.no_padding {
+  padding: 0 !important;
+}
+.with_padding {
+  padding: 100px 50px 90px 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.padding_lr_10_mobile {
+  padding-left: 10;
+  padding-right: 10;
 }
 @media all and (min-width: 2101px) {
   .thumb {

@@ -101,7 +101,7 @@
       position relative
       background-size cover
       background-repeat no-repeat
-      background-position 50% 25%
+      background-position center center
       > .copy
         position absolute
         left 0
@@ -137,6 +137,7 @@
 
   > .body
     > .embed
+      desktop()
       > .inner
       	padding-bottom 56.25%
       	position relative
@@ -153,6 +154,7 @@
       &.white2
         background-color: c.white2 
       > .inner 
+        box-sizing: border-box
         desktop()
         > img
           width 100%
@@ -170,6 +172,7 @@
       > .inner_50
         width:50%
         float left
+        margin-bottom -1px
         > img
           width 100%
       &:after
@@ -217,6 +220,8 @@
         background-color: c.white3
       > .inner
         desktop()
+        &.white3
+          background-color: c.white3
         > .title
           font f_h3m
           text-transform uppercase
@@ -345,10 +350,22 @@
       
     img
       width 100%
-      
+
 .minheight_500
-    min-height 500px
-  	
+  min-height 500px     
+.minheight_600
+  min-height 600px
+
+.no_padding
+  padding: 0 !important
+  
+.with_padding
+  padding 100px 50px 90px 50px
+  box-sizing: border-box
+.padding_lr_10_mobile
+	padding-left 10
+	padding-right 10
+	
  // responsive grid
 @media all and (min-width: 2101px)
   .thumb

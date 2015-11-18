@@ -25,6 +25,7 @@ Index =
   handlers: ->
 
     $('.lines > .line').on 'click', Index.lineHandler
+    $('.featureds').on 'click', Index.featuredHandler
 
     $('.projects > .thumb').on 'click', Index.grid
 
@@ -42,6 +43,12 @@ Index =
     clearInterval Index.lineInterval
     Index.lineInterval = setInterval Index.lineRotate, 5000
     console.log 'interval reset'
+
+
+  featuredHandler: ->
+
+    link = $(".line_#{Index.lineKey}").data 'link'
+    location.href = link
 
   line: (key) ->
 

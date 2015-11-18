@@ -2285,6 +2285,7 @@ body.fixed {
   background-color: #000;
 }
 .index > .featureds {
+  cursor: pointer;
   height: 100%;
 }
 .index > .featureds > .inner {
@@ -2485,21 +2486,21 @@ body.fixed {
 }
 .index > .welcome > .inner {
   padding: 100px 0;
-  max-width: 1020px;
+  max-width: 525px;
   margin: auto;
-}
-.index > .welcome > .inner span {
-  color: #f03;
 }
 .index > .welcome > .inner > .copy1 {
   font: 40px blenderpro book;
   color: #fff;
   padding-bottom: 15px;
 }
-.index > .welcome > .inner > .copy2 {
-  font: 36px blenderpro book;
+.index > .welcome > .inner > .copy2,
+.index > .welcome > .inner > .copy3 {
+  font: f_copy1;
   color: #fff;
-  padding-bottom: 15px;
+}
+.index > .welcome > .inner > .copy2 {
+  padding-bottom: 25px;
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .index > .featureds > .inner > .featured > .inner > .copy {

@@ -22,7 +22,7 @@ block content
 
     .lines.off
       each featured, key in data.home.featured
-        .line(data-key=key,class='line_' + key + ' ' + ((key == 0) ? 'on' : ''))
+        .line(data-key=key,data-link=featured.link,class='line_' + key + ' ' + ((key == 0) ? 'on' : ''))
           .shape
           .title #{featured.title}
 
@@ -30,10 +30,8 @@ block content
     .welcome
       .inner
         .copy1 Welcome to ASTRO Studios.
-        .copy2 <span>_</span>We define culture.
-        .copy2 <span>_</span>We create brands.
-        .copy2 <span>_</span>We design products.
-        .copy2 <span>_</span>We fight gravity.
+        .copy2 We inspire, define, and influence pop culture.  We create brands and design products.  We break free o the expected.
+        .copy3 We fight gravity.
     .clear
     .projects
       each grid in data.home.grid

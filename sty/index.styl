@@ -2,6 +2,7 @@
 .index
   background-color: c.black1
   > .featureds
+    cursor pointer
     height 100%
     > .inner
       height 100%
@@ -94,17 +95,17 @@
     background-color: c.black2
     > .inner
       padding 100px 0
-      desktop()
-      span
-        color: c.red2
+      max-width 525px
+      margin auto
       > .copy1
         font f_h3
         color: c.white1
         padding-bottom 15px
-      > .copy2
-        font f_h4
+      > .copy2, > .copy3
+        font f_copy1
         color: c.white1
-        padding-bottom 15px
+      > .copy2
+        padding-bottom 25px
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .index > .featureds > .inner > .featured > .inner > .copy

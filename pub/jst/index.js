@@ -23,6 +23,7 @@ Index = {
   },
   handlers: function() {
     $('.lines > .line').on('click', Index.lineHandler);
+    $('.featureds').on('click', Index.featuredHandler);
     return $('.projects > .thumb').on('click', Index.grid);
   },
   lineRotate: function() {
@@ -39,6 +40,11 @@ Index = {
     clearInterval(Index.lineInterval);
     Index.lineInterval = setInterval(Index.lineRotate, 5000);
     return console.log('interval reset');
+  },
+  featuredHandler: function() {
+    var link;
+    link = $(".line_" + Index.lineKey).data('link');
+    return location.href = link;
   },
   line: function(key) {
     var src;

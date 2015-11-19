@@ -4587,6 +4587,9 @@ body.fixed {
 .projects > .project.off > .body > .image > img {
   display: none;
 }
+.projects > .project > .cover_mobile {
+  display: none;
+}
 .projects > .project > .cover {
   height: 764px;
   position: relative;
@@ -5243,11 +5246,16 @@ body.fixed {
     height: 70vw !important;
   }
   .projects > .project > .cover {
-    height: 300px;
-    -webkit-background-size: 1000px 300px;
-    -moz-background-size: 1000px 300px;
-    background-size: 1000px 300px;
-    background-position: 60% center;
+    display: none !important;
+  }
+  .projects > .project > .cover_mobile {
+    display: block;
+    width: 100%;
+    height: 70vw;
+    -webkit-background-size: 130%;
+    -moz-background-size: 130%;
+    background-size: 130%;
+    background-position: 50% 50%;
   }
   .projects > .project > .body .copyblock > .inner > .blurb > p {
     float: none;
@@ -5274,6 +5282,12 @@ body.fixed {
   .projects > .project > .body .table {
     display: block;
   }
+  .projects > .project > .body .table > .row.reverse_mobile {
+    display: -webkit-flex;
+    -webkit-flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .projects > .project > .body .table > .row {
     display: block;
   }
@@ -5285,6 +5299,9 @@ body.fixed {
   }
   .projects > .project > .body .table > .row > .imgblock {
     padding-top: 70%;
+  }
+  .projects > .project > .body .table > .row > .imgblock.jinnigif {
+    padding-top: 95%;
   }
   .projects > .project > .body .table > .row > .ratio_110_mobile {
     padding-top: 110%;

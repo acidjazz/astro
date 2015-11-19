@@ -5491,6 +5491,18 @@ body.fixed {
   border-radius: 50%;
   margin: 0 0 0 10px;
   cursor: pointer;
+  position: relative;
+}
+.blog .thumb > .details > .shares > .share > .share_url,
+.blog > .entry > .details > .shares > .share > .share_url {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+.blog .thumb > .details > .shares > .share > .share_url > input,
+.blog > .entry > .details > .shares > .share > .share_url > input {
+  font: 18px aktivgrotesk light;
+  padding: 5px 10px;
 }
 .blog .thumb > .details > .shares > .share:hover,
 .blog > .entry > .details > .shares > .share:hover {

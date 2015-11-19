@@ -1,6 +1,7 @@
 Blog =
   hash: false
   centry: false
+  title: false
 
   i: ->
 
@@ -22,8 +23,32 @@ Blog =
     $('.entry > .details > .tags a').on 'click', Blog.tagHandler
     $('.entry > .details > .author a').on 'click', Blog.authorHandler
 
+    $('.entry > .details > .shares > .share').on 'click', Blog.share
+
     $('.blog > .summary > .crumb > .close').on 'click', Blog.filterReset
 
+
+  share: ->
+
+    t = $ this
+    type = t.data 'type'
+
+    if type == 'link'
+      _.swap '.share_url'
+      i = $('.share_url input')
+      i.val(location.href)
+      i[0].setSelectionRange(0, i[0].value.length)
+      #Item.addShare()
+      return true
+
+    if type == 'facebook'
+      window.open 'https://www.facebook.com/sharer/sharer.php?u=' + location.href, 'Share on Facebook', 'width=626,height=438'
+      #Item.addShare()
+      return true
+    if type == 'twitter'
+      window.open 'https://twitter.com/intent/tweet?url='+encodeURIComponent(location.href)+'&text='+encodeURIComponent(item.title + ' - via @BystanderRev'), 'Share on Twitter', 'width=626,height=438'
+      #Item.addShare()
+      return true
 
   filterReset: ->
     _.off '.crumb'
@@ -119,6 +144,8 @@ Blog =
         NProgress.done()
         _.off '.orbit'
         _.on ".entry_#{entry}"
+
+        Blog.title = $(".entry_#{entry} > .details > .copy > .name").text()
 
         $('.orbit').removeClass (index, css) ->
           (css.match(/\borbit_\S+/g) or []).join ' '

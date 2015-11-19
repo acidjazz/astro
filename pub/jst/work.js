@@ -98,6 +98,7 @@ Work = {
     NProgress.start();
     $('#nprogress .bar').addClass("bar_" + project);
     srcs = Work.srcs(project);
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     return Global.preload(srcs, function(progress) {
       return NProgress.set(progress);
     }, function(complete) {

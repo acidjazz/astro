@@ -112,6 +112,8 @@ Work =
     $('#nprogress .bar').addClass "bar_#{project}"
     srcs = Work.srcs project
 
+    document.body.scrollTop = document.documentElement.scrollTop = 0
+
     Global.preload srcs,
       (progress) ->
         NProgress.set progress

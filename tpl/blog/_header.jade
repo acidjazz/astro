@@ -10,16 +10,18 @@
       .comma=','
   .shares
     .copy SHARE
-    .share.share_instagram
-      include ../../pub/svg/instagram.svg
     .share.share_twitter
       include ../../pub/svg/twitter.svg
     .share.share_facebook
       include ../../pub/svg/facebook.svg
+    .share.share_link
+      include ../../pub/svg/link.svg
+      .share_url
+        input(type='text',value='http://www.wjerlkwejrelw.com/')
+
   .clear
   .copy
     .name #{entry.name}
     .description !{entry.description}
 .clear
-
 

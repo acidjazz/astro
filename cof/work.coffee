@@ -27,13 +27,13 @@ Work =
 
   pop: (e) ->
 
+    document.body.scrollTop = document.documentElement.scrollTop = 0
+
     if Object.keys(projects).indexOf(location.hash.replace('#','')) isnt -1
       project = location.hash.replace '#', ''
       Work.cproject = project
       Work.load project
-      document.body.scrollTop = document.documentElement.scrollTop = 0
     else
-      Work.summary()
       Work.summary()
       _.on '.summary > .thumbs > .thumb'
       _.off '.summary > .filters > .inner > .filtermenu > .filter'

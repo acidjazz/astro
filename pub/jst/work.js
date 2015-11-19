@@ -23,13 +23,12 @@ Work = {
   },
   pop: function(e) {
     var project;
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     if (Object.keys(projects).indexOf(location.hash.replace('#', '')) !== -1) {
       project = location.hash.replace('#', '');
       Work.cproject = project;
-      Work.load(project);
-      return document.body.scrollTop = document.documentElement.scrollTop = 0;
+      return Work.load(project);
     } else {
-      Work.summary();
       Work.summary();
       _.on('.summary > .thumbs > .thumb');
       _.off('.summary > .filters > .inner > .filtermenu > .filter');

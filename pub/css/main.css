@@ -5216,18 +5216,6 @@ body.fixed {
   padding-left: 10;
   padding-right: 10;
 }
-@media all and (min-width: 2101px) {
-  .thumb {
-    width: 25% !important;
-    height: 17vw !important;
-  }
-}
-@media all and (min-width: 1601px) and (max-width: 2100px) {
-  .thumb {
-    width: 25% !important;
-    height: 18vw !important;
-  }
-}
 @media all and (min-width: 1001px) and (max-width: 1600px) {
   .thumb {
     width: 33.333% !important;

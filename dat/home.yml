@@ -2,7 +2,7 @@
 featured:
  -
   title: 3DR
-  copy: "3DR: Gets you off the ground"
+  copy: "3DR: Gets you<br /> off the ground"
   image: work/threedr/1440/Solo_Black_Low.jpg
   link: /work/#threedr
  -
@@ -44,7 +44,7 @@ grid:
   folder: versus
  -
   type: blog
-  folder: nasa
+  folder: malcolm
  -
   type: work
   folder: fuelband

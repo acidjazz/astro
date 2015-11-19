@@ -5,7 +5,7 @@ if project.related
       .relateds
         each related in project.related
           - if (related in data.work) { var cover = data.work[related].cover; } else { var cover = 'WHAT'; }
-          .thumb(
+          .thumb.on(
             class='thumb_' + related,
             data-project=related,
           )

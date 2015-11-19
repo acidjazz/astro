@@ -16,7 +16,7 @@ Work = {
     return Work.handlers();
   },
   handlers: function() {
-    $('.projects > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on('click', Work.projectHandler);
+    $('.projects > .summary > .thumbs > .thumb, .related > .inner > .relateds > .thumb').on('click', Work.projectHandler);
     $('.project .filters > .inner > .filtermenu > .filter').on('click', Work.filterHandler);
     $('.summary .filters > .inner > .filtermenu > .filter').on('click', Work.summaryFilterHandler);
     return $(window).on('popstate', Work.pop);

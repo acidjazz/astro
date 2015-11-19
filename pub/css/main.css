@@ -304,8 +304,8 @@
 }
 .footer > .inner > .section > .inner > .info > p,
 .footer > .inner > .section > .inner > .info > a.p {
+  color: #22252b;
   display: block;
-  color: #000;
   text-decoration: none;
   margin: 0;
   -webkit-transition: color 0.1s linear;
@@ -2490,7 +2490,7 @@ body.fixed {
   margin: auto;
 }
 .index > .welcome > .inner > .copy1 {
-  font: 40px blenderpro book;
+  font: 46px blenderpro book;
   color: #fff;
   padding-bottom: 15px;
 }
@@ -2498,6 +2498,7 @@ body.fixed {
 .index > .welcome > .inner > .copy3 {
   font: f_copy1;
   color: #fff;
+  line-height: 26px;
 }
 .index > .welcome > .inner > .copy2 {
   padding-bottom: 25px;

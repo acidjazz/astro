@@ -10,14 +10,14 @@
       .comma=','
   .shares
     .copy SHARE
-    .share.share_twitter
+    .share.share_twitter(data-type='twitter')
       include ../../pub/svg/twitter.svg
-    .share.share_facebook
+    .share.share_facebook(data-type='facebook')
       include ../../pub/svg/facebook.svg
-    .share.share_link
+    .share.share_link(data-type='link').off
       include ../../pub/svg/link.svg
-      .share_url
-        input(type='text',value='http://www.wjerlkwejrelw.com/')
+    .share_url.off
+      input(type='text',value='http://www.wjerlkwejrelw.com/')
 
   .clear
   .copy

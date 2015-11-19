@@ -30,7 +30,8 @@ Blog = {
     type = t.data('type');
     if (type === 'link') {
       _.swap('.share_url');
-      i = $('.share_url input');
+      _.swap(t);
+      i = t.parent().find('.share_url input').first();
       i.val(location.href);
       i[0].setSelectionRange(0, i[0].value.length);
       return true;
@@ -40,7 +41,7 @@ Blog = {
       return true;
     }
     if (type === 'twitter') {
-      window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(location.href) + '&text=' + encodeURIComponent(item.title + ' - via @BystanderRev'), 'Share on Twitter', 'width=626,height=438');
+      window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(location.href) + '&text=' + encodeURIComponent(Blog.title), 'Share on Twitter', 'width=626,height=438');
       return true;
     }
   },

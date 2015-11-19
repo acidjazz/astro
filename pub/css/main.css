@@ -5475,6 +5475,7 @@ body.fixed {
 .blog .thumb > .details > .shares,
 .blog > .entry > .details > .shares {
   float: right;
+  position: relative;
 }
 .blog .thumb > .details > .shares > .copy,
 .blog > .entry > .details > .shares > .copy {
@@ -5491,18 +5492,14 @@ body.fixed {
   border-radius: 50%;
   margin: 0 0 0 10px;
   cursor: pointer;
-  position: relative;
 }
-.blog .thumb > .details > .shares > .share > .share_url,
-.blog > .entry > .details > .shares > .share > .share_url {
-  position: absolute;
-  top: 40px;
-  right: 0px;
+.blog .thumb > .details > .shares > .share.on,
+.blog > .entry > .details > .shares > .share.on {
+  background-color: #f03;
 }
-.blog .thumb > .details > .shares > .share > .share_url > input,
-.blog > .entry > .details > .shares > .share > .share_url > input {
-  font: 18px aktivgrotesk light;
-  padding: 5px 10px;
+.blog .thumb > .details > .shares > .share.off,
+.blog > .entry > .details > .shares > .share.off {
+  background-color: #22252b;
 }
 .blog .thumb > .details > .shares > .share:hover,
 .blog > .entry > .details > .shares > .share:hover {
@@ -5521,6 +5518,26 @@ body.fixed {
 .blog .thumb > .details > .shares > .share > svg > g > g > path,
 .blog > .entry > .details > .shares > .share > svg > g > g > path {
   fill: #fff;
+}
+.blog .thumb > .details > .shares > .share_url,
+.blog > .entry > .details > .shares > .share_url {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+.blog .thumb > .details > .shares > .share_url.on,
+.blog > .entry > .details > .shares > .share_url.on {
+  display: block;
+}
+.blog .thumb > .details > .shares > .share_url.off,
+.blog > .entry > .details > .shares > .share_url.off {
+  display: none;
+}
+.blog .thumb > .details > .shares > .share_url > input,
+.blog > .entry > .details > .shares > .share_url > input {
+  font: 18px aktivgrotesk light;
+  padding: 5px 10px;
+  width: 250px;
 }
 .blog > .entry > .body {
   min-height: 1000px;

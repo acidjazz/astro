@@ -22,10 +22,19 @@ Work = {
     return $(window).on('popstate', Work.pop);
   },
   pop: function(e) {
-    Work.summary();
-    _.on('.summary > .thumbs > .thumb');
-    _.off('.summary > .filters > .inner > .filtermenu > .filter');
-    return _.on('.summary > .filters > .inner > .filtermenu > .filter_all');
+    var project;
+    if (Object.keys(projects).indexOf(location.hash.replace('#', '')) !== -1) {
+      project = location.hash.replace('#', '');
+      Work.cproject = project;
+      Work.load(project);
+      return document.body.scrollTop = document.documentElement.scrollTop = 0;
+    } else {
+      Work.summary();
+      Work.summary();
+      _.on('.summary > .thumbs > .thumb');
+      _.off('.summary > .filters > .inner > .filtermenu > .filter');
+      return _.on('.summary > .filters > .inner > .filtermenu > .filter_all');
+    }
   },
   summaryFilterHandler: function() {
     var copy, filter;
@@ -62,6 +71,7 @@ Work = {
     var project;
     project = $(this).data('project');
     history.pushState(null, null, "/work/#" + project);
+    console.log(history);
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     return Work.load(project);
   },

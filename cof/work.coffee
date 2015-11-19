@@ -27,10 +27,17 @@ Work =
 
   pop: (e) ->
 
-    Work.summary()
-    _.on '.summary > .thumbs > .thumb'
-    _.off '.summary > .filters > .inner > .filtermenu > .filter'
-    _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
+    if Object.keys(projects).indexOf(location.hash.replace('#','')) isnt -1
+      project = location.hash.replace '#', ''
+      Work.cproject = project
+      Work.load project
+      document.body.scrollTop = document.documentElement.scrollTop = 0
+    else
+      Work.summary()
+      Work.summary()
+      _.on '.summary > .thumbs > .thumb'
+      _.off '.summary > .filters > .inner > .filtermenu > .filter'
+      _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
 
   summaryFilterHandler: ->
 
@@ -71,6 +78,7 @@ Work =
 
     project = $(this).data 'project'
     history.pushState null, null, "/work/##{project}"
+    console.log history
 
     document.body.scrollTop = document.documentElement.scrollTop = 0
     Work.load project

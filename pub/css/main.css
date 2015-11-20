@@ -151,6 +151,9 @@
 .guide > .sections > .section > .font.font_f_h1 {
   font: 92px blenderpro book;
 }
+.guide > .sections > .section > .font.font_f_hm {
+  font: 76px blenderpro book;
+}
 .guide > .sections > .section > .font.font_f_h2 {
   font: 46px blenderpro book;
 }
@@ -2486,19 +2489,18 @@ body.fixed {
 }
 .index > .welcome > .inner {
   padding: 100px 0;
-  max-width: 525px;
+  max-width: 800px;
   margin: auto;
 }
 .index > .welcome > .inner > .copy1 {
-  font: 46px blenderpro book;
+  font: 76px blenderpro book;
   color: #fff;
   padding-bottom: 15px;
 }
 .index > .welcome > .inner > .copy2,
 .index > .welcome > .inner > .copy3 {
-  font: f_copy1;
+  font: 36px blenderpro book;
   color: #fff;
-  line-height: 26px;
 }
 .index > .welcome > .inner > .copy2 {
   padding-bottom: 25px;
@@ -6096,6 +6098,9 @@ body.fixed {
 }
 .guide > .sections > .section > .font.font_f_h1 {
   font: 92px blenderpro book;
+}
+.guide > .sections > .section > .font.font_f_hm {
+  font: 76px blenderpro book;
 }
 .guide > .sections > .section > .font.font_f_h2 {
   font: 46px blenderpro book;

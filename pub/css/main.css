@@ -6255,6 +6255,33 @@ body.fixed {
     padding: 10px !important;
   }
 }
+.error {
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/error.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  position: realtive;
+}
+.error > .copy {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  width: 800px;
+  left: 50%;
+  margin-left: -400px;
+  line-height: 24px;
+}
+.error > .copy a {
+  color: #0195ff;
+  text-decoration: none;
+}
+.error > .copy > .copy1 {
+  font: 40px blenderpro book;
+}
 .placeholder {
   text-align: center;
   padding: 200px 0 0 0;

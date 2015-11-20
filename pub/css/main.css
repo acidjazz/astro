@@ -6224,6 +6224,7 @@ body.fixed {
 .contact > .officeimage {
   max-width: 1020px;
   margin: auto;
+  padding: 0 0 100px 0;
 }
 .contact > .officeimage > img {
   width: 100%;

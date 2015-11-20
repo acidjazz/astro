@@ -6138,11 +6138,11 @@ body.fixed {
   -moz-background-size: 150%;
   background-size: 150%;
   background-repeat: no-repeat;
-  -webkit-animation: slowzoom 30s linear 5s infinite alternate;
-  -moz-animation: slowzoom 30s linear 5s infinite alternate;
-  -o-animation: slowzoom 30s linear 5s infinite alternate;
-  -ms-animation: slowzoom 30s linear 5s infinite alternate;
-  animation: slowzoom 30s linear 5s infinite alternate;
+  -webkit-animation: slowzoom 30s linear 1s infinite alternate;
+  -moz-animation: slowzoom 30s linear 1s infinite alternate;
+  -o-animation: slowzoom 30s linear 1s infinite alternate;
+  -ms-animation: slowzoom 30s linear 1s infinite alternate;
+  animation: slowzoom 30s linear 1s infinite alternate;
 }
 .contact .banner > .inner.on {
   display: block;
@@ -6259,6 +6259,8 @@ body.fixed {
   }
   .contact > .banner > .inner > .copy {
     margin-top: -50px;
+    padding: 0 10px;
+    width: auto;
   }
   .contact > .engage > .ways > .way {
     float: none;

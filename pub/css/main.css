@@ -1772,7 +1772,8 @@
 .menu > .inner > .options > .option {
   position: relative;
   cursor: pointer;
-  font: 46px blenderpro book;
+  font: 92px blenderpro book;
+  font-size: 76px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;

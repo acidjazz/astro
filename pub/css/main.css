@@ -6163,15 +6163,15 @@ body.fixed {
 }
 .contact > .block > .inner {
   text-align: center;
-  padding: 50px;
+  padding: 100px;
   max-width: 1020px;
   margin: auto;
 }
 .contact > .block > .inner > .copy,
 .contact > .block > .inner > .scopy {
   color: #fff;
-  max-width: 440px;
   margin: auto;
+  line-height: 24px;
 }
 .contact > #map {
   height: 400px;

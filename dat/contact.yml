@@ -6,12 +6,12 @@
     email: info@astrostudios.com
   -
     title: new biz
-    copy: We're always looking for partners to explore the final frontier with.  Feel free to send us an email with new business inquiries
+    copy: We're always looking for partners to explore the final frontier with.  Feel free to send us an email with new business inquiries.
     type: email
     email: newbusiness@astrostudios.com
   -
     title: career
-    copy: Think you got The Right Stuff to join Astro? Click the link below to see available openings.
+    copy: Think you got have the right stuff to join Astro? Click the link below to see available openings.
     type: link
     link: /about/#careers
     linkcopy: Apply Here

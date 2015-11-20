@@ -91,6 +91,10 @@
   background-color: #f1455b;
   border: 1px solid #fff;
 }
+.guide > .sections > .section > .color.color_red4 {
+  background-color: #ff2e2e;
+  border: 1px solid #fff;
+}
 .guide > .sections > .section > .color.color_green1 {
   background-color: #76d734;
   border: 1px solid #fff;
@@ -4689,6 +4693,15 @@ body.fixed {
 .projects > .project > .body > .image > .inner > img {
   width: 100%;
 }
+.projects > .project > .body > .image > .inner_100 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.projects > .project > .body > .image > .inner_100.red4 {
+  background-color: #ff2e2e;
+  padding: 5% 20% 5% 20%;
+}
 .projects > .project > .body > .image > .inner_100 > img {
   width: 100%;
 }
@@ -5272,6 +5285,10 @@ body.fixed {
   }
   .projects > .project > .body > .table > .row > .copyblock > .inner {
     float: none;
+  }
+  .projects > .project > .body > .image > .inner_100.red4 {
+    background-color: #ff2e2e;
+    padding: 50px 20px 50px 20px;
   }
   .projects > .project > .body > .images > .inner_100 > img {
     width: 100%;
@@ -6044,6 +6061,10 @@ body.fixed {
 }
 .guide > .sections > .section > .color.color_red3 {
   background-color: #f1455b;
+  border: 1px solid #fff;
+}
+.guide > .sections > .section > .color.color_red4 {
+  background-color: #ff2e2e;
   border: 1px solid #fff;
 }
 .guide > .sections > .section > .color.color_green1 {

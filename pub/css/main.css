@@ -2612,6 +2612,10 @@ body.fixed {
 .about > .sections {
   background-color: #fff;
 }
+.about > .sections > .section {
+  font: 18px aktivgrotesk light;
+  line-height: 22px;
+}
 .about > .sections > .section.on {
   display: block;
 }
@@ -4854,7 +4858,6 @@ body.fixed {
 .projects > .project,
 .projects > .summary,
 .about {
-  font: 18px blenderpro medium;
   color: #444;
 }
 .projects > .project > .fcontainer,

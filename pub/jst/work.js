@@ -22,10 +22,18 @@ Work = {
     return $(window).on('popstate', Work.pop);
   },
   pop: function(e) {
-    Work.summary();
-    _.on('.summary > .thumbs > .thumb');
-    _.off('.summary > .filters > .inner > .filtermenu > .filter');
-    return _.on('.summary > .filters > .inner > .filtermenu > .filter_all');
+    var project;
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+    if (Object.keys(projects).indexOf(location.hash.replace('#', '')) !== -1) {
+      project = location.hash.replace('#', '');
+      Work.cproject = project;
+      return Work.load(project);
+    } else {
+      Work.summary();
+      _.on('.summary > .thumbs > .thumb');
+      _.off('.summary > .filters > .inner > .filtermenu > .filter');
+      return _.on('.summary > .filters > .inner > .filtermenu > .filter_all');
+    }
   },
   summaryFilterHandler: function() {
     var copy, filter;
@@ -62,6 +70,7 @@ Work = {
     var project;
     project = $(this).data('project');
     history.pushState(null, null, "/work/#" + project);
+    console.log(history);
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     return Work.load(project);
   },
@@ -98,6 +107,7 @@ Work = {
     NProgress.start();
     $('#nprogress .bar').addClass("bar_" + project);
     srcs = Work.srcs(project);
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     return Global.preload(srcs, function(progress) {
       return NProgress.set(progress);
     }, function(complete) {

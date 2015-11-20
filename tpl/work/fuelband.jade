@@ -4,7 +4,9 @@
 
 .copyblock: .inner
   .title #{project.body1.title}
-  .copy #{project.body1.copy}
+  .blurb
+    p #{project.body1.copy}
+    p #{project.body2.left}
 
 .image: .inner
   img(data-src='Fuel-Display.png')
@@ -12,9 +14,7 @@
   img(data-src='Fule-flow.png')
 
 .copyblock: .inner
-  .blurb
-    p #{project.body2.left}
-    p #{project.body2.right}
+  .copy #{project.body2.right}
 
 .images: .inner_100
   img(data-src='Fuelbands.png')

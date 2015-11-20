@@ -1,9 +1,9 @@
 .jobs
   > .job
     &:nth-child(odd) > .title
-      background-color: c.blue3
+      background-color: c.black4
     &:nth-child(even) > .title
-      background-color: c.blue4
+      background-color: c.blue6
     > .title  
       cursor pointer
       padding 50px 50px 50px 170px
@@ -28,6 +28,13 @@
       max-height 0px
       padding 0 50px 0 170px
 
+.apply
+  padding 50px 50px 50px 170px
+  > .copy
+    > a
+      color: c.blue1
+      text-decoration none
+    
 @media all and (min-width: 1px) and (max-width: 1000px)
   .jobs
     > .job

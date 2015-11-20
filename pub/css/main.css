@@ -270,7 +270,6 @@
   float: left;
   font: 18px blenderpro medium;
   min-height: 300px;
-  min-width: 275px;
   padding: 60px 0;
 }
 .footer > .inner > .section.first > .inner {
@@ -304,8 +303,8 @@
 }
 .footer > .inner > .section > .inner > .info > p,
 .footer > .inner > .section > .inner > .info > a.p {
+  color: #22252b;
   display: block;
-  color: #000;
   text-decoration: none;
   margin: 0;
   -webkit-transition: color 0.1s linear;
@@ -2490,7 +2489,7 @@ body.fixed {
   margin: auto;
 }
 .index > .welcome > .inner > .copy1 {
-  font: 40px blenderpro book;
+  font: 46px blenderpro book;
   color: #fff;
   padding-bottom: 15px;
 }
@@ -2498,6 +2497,7 @@ body.fixed {
 .index > .welcome > .inner > .copy3 {
   font: f_copy1;
   color: #fff;
+  line-height: 26px;
 }
 .index > .welcome > .inner > .copy2 {
   padding-bottom: 25px;
@@ -2612,6 +2612,10 @@ body.fixed {
 .about > .sections {
   background-color: #fff;
 }
+.about > .sections > .section {
+  font: 18px aktivgrotesk light;
+  line-height: 24px;
+}
 .about > .sections > .section.on {
   display: block;
 }
@@ -2632,7 +2636,7 @@ body.fixed {
   background-color: #f0f0f0;
   padding: 40px;
   width: 260px;
-  height: 570px;
+  height: 600px;
   margin: 16px;
   display: inline-block;
   vertical-align: top;
@@ -2709,28 +2713,32 @@ body.fixed {
 }
 .about > .sections > .section_clients .engage > .ways {
   text-align: center;
-  padding: 16px;
+  padding: 16px 0;
 }
 .about > .sections > .section_clients .engage > .ways > .way {
   text-align: left;
   display: inline-block;
   vertical-align: top;
-  width: 28.5%;
-  padding: 20px;
-  margin: 16px;
+  width: 30%;
+  padding: 10px 10px;
+  margin: 4px;
   -webkit-animation: cellInX 0.2s 0s ease-in both;
   -moz-animation: cellInX 0.2s 0s ease-in both;
   -o-animation: cellInX 0.2s 0s ease-in both;
   -ms-animation: cellInX 0.2s 0s ease-in both;
   animation: cellInX 0.2s 0s ease-in both;
 }
+.about > .sections > .section_clients .engage > .ways > .way a {
+  text-decoration: none;
+  color: #0195ff;
+}
 .about > .sections > .section_clients .engage > .ways > .way:nth-child(1) {
-  padding: 20px 20px 20px 0;
-  margin: 16px 16px 16px 0;
+  padding: 10px 10px 10px 0;
+  margin: 4px 8px 16px 0;
 }
 .about > .sections > .section_clients .engage > .ways > .way:nth-child(3) {
-  padding: 20px 0 20px 20px;
-  margin: 16px 0 16px 16px;
+  padding: 10px 0 10px 10px;
+  margin: 4px 0 16px 16px;
 }
 .about > .sections > .section_clients .engage > .ways > .way:nth-child(0) {
   -webkit-animation-delay: 0s;
@@ -3561,10 +3569,10 @@ body.fixed {
   }
 }
 .about > .sections > .section_careers .jobs > .job:nth-child(odd) > .title {
-  background-color: #434965;
+  background-color: #363a42;
 }
 .about > .sections > .section_careers .jobs > .job:nth-child(even) > .title {
-  background-color: #7582b1;
+  background-color: #949dae;
 }
 .about > .sections > .section_careers .jobs > .job > .title {
   cursor: pointer;
@@ -3600,6 +3608,13 @@ body.fixed {
 .about > .sections > .section_careers .jobs > .job.off > .content {
   max-height: 0px;
   padding: 0 50px 0 170px;
+}
+.about > .sections > .section_careers .apply {
+  padding: 50px 50px 50px 170px;
+}
+.about > .sections > .section_careers .apply > .copy > a {
+  color: #0195ff;
+  text-decoration: none;
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .about > .sections > .section_careers .jobs > .job > .title {
@@ -4855,7 +4870,6 @@ body.fixed {
 .projects > .project,
 .projects > .summary,
 .about {
-  font: 18px blenderpro medium;
   color: #444;
 }
 .projects > .project > .fcontainer,
@@ -5475,6 +5489,7 @@ body.fixed {
 .blog .thumb > .details > .shares,
 .blog > .entry > .details > .shares {
   float: right;
+  position: relative;
 }
 .blog .thumb > .details > .shares > .copy,
 .blog > .entry > .details > .shares > .copy {
@@ -5491,6 +5506,14 @@ body.fixed {
   border-radius: 50%;
   margin: 0 0 0 10px;
   cursor: pointer;
+}
+.blog .thumb > .details > .shares > .share.on,
+.blog > .entry > .details > .shares > .share.on {
+  background-color: #f03;
+}
+.blog .thumb > .details > .shares > .share.off,
+.blog > .entry > .details > .shares > .share.off {
+  background-color: #22252b;
 }
 .blog .thumb > .details > .shares > .share:hover,
 .blog > .entry > .details > .shares > .share:hover {
@@ -5509,6 +5532,26 @@ body.fixed {
 .blog .thumb > .details > .shares > .share > svg > g > g > path,
 .blog > .entry > .details > .shares > .share > svg > g > g > path {
   fill: #fff;
+}
+.blog .thumb > .details > .shares > .share_url,
+.blog > .entry > .details > .shares > .share_url {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+.blog .thumb > .details > .shares > .share_url.on,
+.blog > .entry > .details > .shares > .share_url.on {
+  display: block;
+}
+.blog .thumb > .details > .shares > .share_url.off,
+.blog > .entry > .details > .shares > .share_url.off {
+  display: none;
+}
+.blog .thumb > .details > .shares > .share_url > input,
+.blog > .entry > .details > .shares > .share_url > input {
+  font: 18px aktivgrotesk light;
+  padding: 5px 10px;
+  width: 250px;
 }
 .blog > .entry > .body {
   min-height: 1000px;

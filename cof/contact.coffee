@@ -48,7 +48,7 @@ Contact =
       icon: image
       map: map
 
-    infoContent = '<a href="https://goo.gl/maps/aXfACwrzpGT2">Astro Studios</a><br /><br />348 6th St<br />San Francisco, CA<br />94103'
+    infoContent = '<a href="https://goo.gl/maps/aXfACwrzpGT2" target="_new">Astro Studios</a><br /><br />348 6th St<br />San Francisco, CA<br />94103'
     infoWindow = new google.maps.InfoWindow
       content: infoContent
     marker.addListener 'click', ->

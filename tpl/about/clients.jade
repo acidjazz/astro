@@ -4,10 +4,8 @@
   .ways
     each way, number in data.about.engage
       .way
-        .title <span>_</span>#{way.title}
-        .copy=way.copy
-        .example
-          a(href='/work/#' + way.project.folder) + #{way.project.name}
+        .title #{way.title}
+        .copy !{way.copy}
 
 .clients
   .title we love our clients

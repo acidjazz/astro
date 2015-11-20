@@ -2636,7 +2636,7 @@ body.fixed {
   background-color: #f0f0f0;
   padding: 40px;
   width: 260px;
-  height: 570px;
+  height: 600px;
   margin: 16px;
   display: inline-block;
   vertical-align: top;
@@ -2727,6 +2727,10 @@ body.fixed {
   -o-animation: cellInX 0.2s 0s ease-in both;
   -ms-animation: cellInX 0.2s 0s ease-in both;
   animation: cellInX 0.2s 0s ease-in both;
+}
+.about > .sections > .section_clients .engage > .ways > .way a {
+  text-decoration: none;
+  color: #0195ff;
 }
 .about > .sections > .section_clients .engage > .ways > .way:nth-child(1) {
   padding: 20px 20px 20px 0;

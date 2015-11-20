@@ -4709,6 +4709,7 @@ body.fixed {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #000;
 }
 .projects > .project > .body .copyblock.black {
   background-color: #000;
@@ -5177,7 +5178,6 @@ body.fixed {
 }
 .projects > .project > .body .table > .row > .copyblock > .inner {
   max-width: 460px;
-  float: right;
 }
 .projects > .project > .body .table > .row:after {
   content: '';
@@ -5212,9 +5212,9 @@ body.fixed {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.padding_lr_10_mobile {
-  padding-left: 10;
-  padding-right: 10;
+.padding_lr_20_mobile {
+  padding-left: 20;
+  padding-right: 20;
 }
 @media all and (min-width: 1001px) and (max-width: 1600px) {
   .thumb {

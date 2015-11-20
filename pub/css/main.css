@@ -4462,13 +4462,6 @@ body.fixed {
 .index > .blog > .thumb.thumb_eightarms:hover > .inner > .bg {
   background-color: rgba(244,171,139,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
-.related > .inner > .relateds > .thumb.thumb_fuelband:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_fuelband:hover > .inner > .bg,
-.blog > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
-.index > .blog > .thumb.thumb_fuelband:hover > .inner > .bg {
-  background-color: rgba(59,182,46,0.75);
-}
 .projects > .summary > .thumbs > .thumb.thumb_malcolm:hover > .inner > .bg,
 .related > .inner > .relateds > .thumb.thumb_malcolm:hover > .inner > .bg,
 .index > .projects > .thumb.thumb_malcolm:hover > .inner > .bg,
@@ -5444,12 +5437,13 @@ body.fixed {
 }
 .blog .thumb > .details > .copy > .name,
 .blog > .entry > .details > .copy > .name {
-  font: 40px blenderpro book;
+  font: 40px blenderpro medium;
   padding: 0 0 15px 0;
 }
 .blog .thumb > .details > .copy > .description,
 .blog > .entry > .details > .copy > .description {
-  font: 36px blenderpro book;
+  font: 18px aktivgrotesk normal;
+  line-height: 24px;
   padding: 0 0 15px 0;
 }
 .blog .thumb > .details > .date,
@@ -5674,9 +5668,6 @@ body.fixed {
 .blog > .entry > .related > .title.title_eightarms {
   background-color: #f4ab8b;
 }
-.blog > .entry > .related > .title.title_fuelband {
-  background-color: #3bb62e;
-}
 .blog > .entry > .related > .title.title_malcolm {
   background-color: #76d734;
 }
@@ -5691,9 +5682,6 @@ body.fixed {
 }
 .blog > .entry > .credits.credits_eightarms > .inner > .sections > .section > .title {
   color: #f4ab8b;
-}
-.blog > .entry > .credits.credits_fuelband > .inner > .sections > .section > .title {
-  color: #3bb62e;
 }
 .blog > .entry > .credits.credits_malcolm > .inner > .sections > .section > .title {
   color: #76d734;
@@ -5817,22 +5805,6 @@ body.fixed {
 .blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms:hover,
 .about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms:hover {
   background-color: rgba(244,171,139,0.25);
-}
-.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
-.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
-.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
-.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
-.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
-.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active {
-  background-color: #3bb62e;
-}
-.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
-.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
-.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
-.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
-.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
-.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover {
-  background-color: rgba(59,182,46,0.25);
 }
 .blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm.active,
 .blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm.active,

@@ -5554,7 +5554,6 @@ body.fixed {
   width: 250px;
 }
 .blog > .entry > .body {
-  min-height: 1000px;
   max-width: 1020px;
   margin: auto;
   padding: 0 0 100px 0;
@@ -5572,16 +5571,16 @@ body.fixed {
   width: 100%;
 }
 .blog > .entry > .body > .image.pad_both {
-  padding: 50px 0 !important;
+  padding: 50px 0;
 }
 .blog > .entry > .body > .image.pad_top {
-  padding: 50px 0 0 0 !important;
+  padding: 50px 0 0 0;
 }
 .blog > .entry > .body > .image.pad_bottom {
-  padding: 0 0 50px 0 !important;
+  padding: 0 0 50px 0;
 }
 .blog > .entry > .body > .image.pad_none {
-  padding: 0 0 0 0 !important;
+  padding: 0 0 0 0;
 }
 .blog > .entry > .body > .image > img {
   width: inherit;
@@ -5604,6 +5603,18 @@ body.fixed {
 .blog > .entry > .body > .images > .image {
   float: left;
   width: 50%;
+}
+.blog > .entry > .body > .images > .image.pad_both {
+  padding: 50px 0;
+}
+.blog > .entry > .body > .images > .image.pad_top {
+  padding: 50px 0 0 0;
+}
+.blog > .entry > .body > .images > .image.pad_bottom {
+  padding: 0 0 50px 0;
+}
+.blog > .entry > .body > .images > .image.pad_none {
+  padding: 0 0 0 0;
 }
 .blog > .entry > .body > .images > .image > .img {
   padding-top: 60%;

@@ -63,7 +63,7 @@
       background-repeat no-repeat
       background-position 50% 50%
     > .details
-      padding 20px 0 60px 0
+      padding 20px 0 0 0
       desktop()
       > .copy
         padding 100px 0 0 0 
@@ -74,6 +74,9 @@
           font f_copyn
           line-height 24px
           padding 0 0 15px 0
+          > a
+            color: c.blue1
+            text-decoration none
 
       > .date
         float left
@@ -135,6 +138,9 @@
    > .body
       min-height 1000px
       desktop()
+      padding 0 0 100px 0
+      .space
+        height 50px
       > .youtube
         width 800px
         height 450px
@@ -143,13 +149,13 @@
         padding 50px 0
         width 100%
         &.pad_both
-          padding 50px 0
+          padding 50px 0 !important
         &.pad_top
-          padding 50px 0 0 0
+          padding 50px 0 0 0 !important
         &.pad_bottom
-          padding  0 0 50px 0
+          padding  0 0 50px 0 !important
         &.pad_none
-          padding  0 0 0 0
+          padding  0 0 0 0 !important
         > img
           width inherit
         > .img
@@ -159,10 +165,11 @@
           background-repeat no-repeat
           background-position 50% 50%
       > .copy
-        padding 50px
+        padding 50px 0
         line-height 30px
-        max-width 600px
         margin auto
+        font f_copyn
+        line-height 24px
 
       > .images
         > .image

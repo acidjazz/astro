@@ -4917,6 +4917,7 @@ body.fixed {
   padding: 0 50px 0 0;
   margin: auto;
   text-align: center;
+  font: 20px blenderpro medium;
 }
 .projects > .project > .fcontainer > .filters > .inner > .filtermenu > .filter,
 .projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter,
@@ -5427,7 +5428,7 @@ body.fixed {
 }
 .blog .thumb > .details,
 .blog > .entry > .details {
-  padding: 20px 0 60px 0;
+  padding: 20px 0 0 0;
   max-width: 1020px;
   margin: auto;
 }
@@ -5445,6 +5446,11 @@ body.fixed {
   font: 18px aktivgrotesk normal;
   line-height: 24px;
   padding: 0 0 15px 0;
+}
+.blog .thumb > .details > .copy > .description > a,
+.blog > .entry > .details > .copy > .description > a {
+  color: #0195ff;
+  text-decoration: none;
 }
 .blog .thumb > .details > .date,
 .blog > .entry > .details > .date {
@@ -5551,6 +5557,10 @@ body.fixed {
   min-height: 1000px;
   max-width: 1020px;
   margin: auto;
+  padding: 0 0 100px 0;
+}
+.blog > .entry > .body .space {
+  height: 50px;
 }
 .blog > .entry > .body > .youtube {
   width: 800px;
@@ -5562,16 +5572,16 @@ body.fixed {
   width: 100%;
 }
 .blog > .entry > .body > .image.pad_both {
-  padding: 50px 0;
+  padding: 50px 0 !important;
 }
 .blog > .entry > .body > .image.pad_top {
-  padding: 50px 0 0 0;
+  padding: 50px 0 0 0 !important;
 }
 .blog > .entry > .body > .image.pad_bottom {
-  padding: 0 0 50px 0;
+  padding: 0 0 50px 0 !important;
 }
 .blog > .entry > .body > .image.pad_none {
-  padding: 0 0 0 0;
+  padding: 0 0 0 0 !important;
 }
 .blog > .entry > .body > .image > img {
   width: inherit;
@@ -5585,10 +5595,11 @@ body.fixed {
   background-position: 50% 50%;
 }
 .blog > .entry > .body > .copy {
-  padding: 50px;
+  padding: 50px 0;
   line-height: 30px;
-  max-width: 600px;
   margin: auto;
+  font: 18px aktivgrotesk normal;
+  line-height: 24px;
 }
 .blog > .entry > .body > .images > .image {
   float: left;

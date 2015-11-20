@@ -2527,6 +2527,13 @@ body.fixed {
   .index > .welcome {
     padding: 0 20px;
   }
+  .index > .welcome > .inner > .copy1 {
+    font: 76px blenderpro book;
+  }
+  .index > .welcome > .inner > .copy2,
+  .index > .welcome > .inner > .copy3 {
+    font: f_copy1;
+  }
 }
 .about > .banner {
   position: relative;

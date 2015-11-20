@@ -3569,10 +3569,10 @@ body.fixed {
   }
 }
 .about > .sections > .section_careers .jobs > .job:nth-child(odd) > .title {
-  background-color: #434965;
+  background-color: #363a42;
 }
 .about > .sections > .section_careers .jobs > .job:nth-child(even) > .title {
-  background-color: #7582b1;
+  background-color: #949dae;
 }
 .about > .sections > .section_careers .jobs > .job > .title {
   cursor: pointer;
@@ -3608,6 +3608,13 @@ body.fixed {
 .about > .sections > .section_careers .jobs > .job.off > .content {
   max-height: 0px;
   padding: 0 50px 0 170px;
+}
+.about > .sections > .section_careers .apply {
+  padding: 50px 50px 50px 170px;
+}
+.about > .sections > .section_careers .apply > .copy > a {
+  color: #0195ff;
+  text-decoration: none;
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .about > .sections > .section_careers .jobs > .job > .title {

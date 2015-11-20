@@ -2614,7 +2614,7 @@ body.fixed {
 }
 .about > .sections > .section {
   font: 18px aktivgrotesk light;
-  line-height: 22px;
+  line-height: 24px;
 }
 .about > .sections > .section.on {
   display: block;

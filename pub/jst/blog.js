@@ -22,7 +22,19 @@ Blog = {
     $('.entry > .details > .tags a').on('click', Blog.tagHandler);
     $('.entry > .details > .author a').on('click', Blog.authorHandler);
     $('.entry > .details > .shares > .share').on('click', Blog.share);
-    return $('.blog > .summary > .crumb > .close').on('click', Blog.filterReset);
+    $('.blog > .summary > .crumb > .close').on('click', Blog.filterReset);
+    return $(window).on('popstate', Blog.pop);
+  },
+  pop: function(e) {
+    var entry;
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+    if (Object.keys(entries).indexOf(location.hash.replace('#', '')) !== -1) {
+      entry = location.hash.replace('#', '');
+      Blog.centry = entry;
+      return Blog.load(entry);
+    } else {
+      return Blog.summary();
+    }
   },
   share: function() {
     var i, t, type;

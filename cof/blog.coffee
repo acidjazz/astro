@@ -27,6 +27,18 @@ Blog =
 
     $('.blog > .summary > .crumb > .close').on 'click', Blog.filterReset
 
+    $(window).on 'popstate', Blog.pop
+
+  pop: (e) ->
+
+    document.body.scrollTop = document.documentElement.scrollTop = 0
+
+    if Object.keys(entries).indexOf(location.hash.replace('#','')) isnt -1
+      entry = location.hash.replace '#', ''
+      Blog.centry = entry
+      Blog.load entry
+    else
+      Blog.summary()
 
   share: ->
 
@@ -98,6 +110,7 @@ Blog =
   entryHandler: ->
 
     entry = $(this).data 'entry'
+    #history.pushState null, null, "/blog/##{entry}"
     location.hash = entry
     document.body.scrollTop = document.documentElement.scrollTop = 0
     Blog.load entry

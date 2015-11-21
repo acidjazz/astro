@@ -62,6 +62,9 @@ About = {
         bio.css('right', "auto");
       }
     }
+    if ($(window).width() > 1000) {
+      bio.css('height', "auto");
+    }
     _.on(bio);
     return $('html, body').animate({
       scrollTop: t.offset().top - 64

@@ -407,6 +407,7 @@
   color: #acb2c1;
 }
 .footer > .inner > .gravity {
+  cursor: pointer;
   width: 160px;
   font: 20px blenderpro medium;
   position: absolute;
@@ -480,6 +481,157 @@
   .footer > .inner > .section.newsletter > .inner > .icons > .icon {
     display: inline-block;
     float: none;
+  }
+}
+.manifesto {
+  position: fixed;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  font: 40px blenderpro medium;
+  text-align: left;
+}
+.manifesto.on {
+  display: block;
+}
+.manifesto.off {
+  display: none;
+}
+.manifesto > .inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(36deg, #0195ff, #f1455b, #434965, #7582b1);
+  background: -moz-linear-gradient(36deg, #0195ff, #f1455b, #434965, #7582b1);
+  background: -o-linear-gradient(36deg, #0195ff, #f1455b, #434965, #7582b1);
+  background: -ms-linear-gradient(36deg, #0195ff, #f1455b, #434965, #7582b1);
+  background: linear-gradient(54deg, #0195ff, #f1455b, #434965, #7582b1);
+  -webkit-background-size: 400% 400%;
+  -moz-background-size: 400% 400%;
+  background-size: 400% 400%;
+  -webkit-animation: gradients 41s ease infinite;
+  -moz-animation: gradients 41s ease infinite;
+  -o-animation: gradients 41s ease infinite;
+  -ms-animation: gradients 41s ease infinite;
+  animation: gradients 41s ease infinite;
+}
+.manifesto > .inner > .close {
+  float: right;
+  padding: 20px 20px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -moz-transition: -moz-transform 0.1s linear;
+  -o-transition: -o-transform 0.1s linear;
+  -ms-transition: -ms-transform 0.1s linear;
+  transition: transform 0.1s linear;
+}
+.manifesto > .inner > .close:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.manifesto > .inner > .content {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 1020px;
+  margin: auto;
+  z-index: 250;
+  -webkit-animation: scrolling 100s ease-out;
+  -moz-animation: scrolling 100s ease-out;
+  -o-animation: scrolling 100s ease-out;
+  -ms-animation: scrolling 100s ease-out;
+  animation: scrolling 100s ease-out;
+}
+.manifesto > .inner > .content > .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 250;
+}
+@-moz-keyframes gradients {
+  0% {
+    background-position: 0% 14%;
+  }
+  50% {
+    background-position: 100% 87%;
+  }
+  100% {
+    background-position: 0% 14%;
+  }
+}
+@-webkit-keyframes gradients {
+  0% {
+    background-position: 0% 14%;
+  }
+  50% {
+    background-position: 100% 87%;
+  }
+  100% {
+    background-position: 0% 14%;
+  }
+}
+@-o-keyframes gradients {
+  0% {
+    background-position: 0% 14%;
+  }
+  50% {
+    background-position: 100% 87%;
+  }
+  100% {
+    background-position: 0% 14%;
+  }
+}
+@keyframes gradients {
+  0% {
+    background-position: 0% 14%;
+  }
+  50% {
+    background-position: 100% 87%;
+  }
+  100% {
+    background-position: 0% 14%;
+  }
+}
+@-moz-keyframes scrolling {
+  0% {
+    top: 95%;
+  }
+  100% {
+    top: -170%;
+  }
+}
+@-webkit-keyframes scrolling {
+  0% {
+    top: 95%;
+  }
+  100% {
+    top: -170%;
+  }
+}
+@-o-keyframes scrolling {
+  0% {
+    top: 95%;
+  }
+  100% {
+    top: -170%;
+  }
+}
+@keyframes scrolling {
+  0% {
+    top: 95%;
+  }
+  100% {
+    top: -170%;
   }
 }
 @-moz-keyframes fadeIn {

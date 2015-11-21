@@ -44,7 +44,19 @@ Global = {
   handlers: function() {
     $('.top > .inner > .burger').on('click', Global.burger);
     $('.menu > .inner > .options > .option').on('click', Global.option);
-    return $('.thumbs > .thumb, .projects > .thumb, .related > .inner > .relateds > .thumb').on('mousemove', Global.thumb);
+    $('.thumbs > .thumb, .projects > .thumb, .related > .inner > .relateds > .thumb').on('mousemove', Global.thumb);
+    return $('.footer > .inner > .gravity, .footer > .inner > .manifesto > .inner > .close').on('click', Global.manifesto);
+  },
+  manifesto: function() {
+    var mf;
+    mf = $('.manifesto');
+    if (mf.hasClass('on')) {
+      _.off(mf);
+      return $('body').removeClass('fixed');
+    } else {
+      $('body').addClass('fixed');
+      return _.on(mf);
+    }
   },
   thumb: function(event) {
     var bg, distortBg, distortFilters, distortName, filters, filtersRect, name, nameRect, offset, opx4, opx6, opx8, opy4, opy6, opy8, px, py, rect, t, x, y;

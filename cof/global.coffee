@@ -55,6 +55,20 @@ Global =
 
     $('.thumbs > .thumb, .projects > .thumb, .related > .inner > .relateds > .thumb').on 'mousemove', Global.thumb
 
+    $('.footer > .inner > .gravity, .footer > .inner > .manifesto > .inner > .close').on 'click', Global.manifesto
+
+
+  manifesto: ->
+
+    mf = $('.manifesto')
+
+    if mf.hasClass 'on'
+      _.off mf
+      $('body').removeClass 'fixed'
+    else
+      $('body').addClass 'fixed'
+      _.on mf
+
   thumb: (event) ->
 
     t = $ this

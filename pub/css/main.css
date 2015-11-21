@@ -3487,6 +3487,15 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_travis.on > .inner {
   background-image: url("/img/about/profiles/travis-selected.png");
 }
+.about > .sections > .section_studio .profiles > .profile.profile_alejandro > .inner {
+  background-image: url("/img/about/profiles/alejandro-default.jpg");
+}
+.about > .sections > .section_studio .profiles > .profile.profile_alejandro:hover > .inner {
+  background-image: url("/img/about/profiles/alejandro-rollover.jpg");
+}
+.about > .sections > .section_studio .profiles > .profile.profile_alejandro.on > .inner {
+  background-image: url("/img/about/profiles/alejandro-selected.png");
+}
 .about > .sections > .section_studio .profiles > .bios.on {
   display: block;
 }

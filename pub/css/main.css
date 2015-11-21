@@ -6262,6 +6262,9 @@ body.fixed {
     padding: 0 10px;
     width: auto;
   }
+  .contact > .block > .inner {
+    padding: 50px 20px;
+  }
   .contact > .engage > .ways > .way {
     float: none;
     width: 90%;

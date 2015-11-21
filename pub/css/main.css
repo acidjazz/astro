@@ -451,6 +451,9 @@
     margin: auto;
     padding: 20px 0 60px 0;
   }
+  .footer > .inner > .manifesto > .inner > .content > .inner {
+    padding: 20px;
+  }
   .footer > .inner > .section {
     min-height: 0px;
     min-width: 90%;

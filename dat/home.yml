@@ -3,27 +3,27 @@ featured:
  -
   title: 3DR
   copy: "3DR: Gets you<br /> off the ground."
-  image: work/index.htmlthreedr/1440/Solo_Black_Low.jpg
+  image: work/threedr/1440/Solo_Black_Low.jpg
   link: /work/index.html#threedr
  -
   title: "Nike+ Fuelband"
   copy: "Nike+ Fuelband:<br /> Life is sport."
-  image: work/index.htmlfuelband/1440/Nike-FuelBand-Astro.png
+  image: work/fuelband/1440/Nike-FuelBand-Astro.png
   link: /work/index.html#fuelband
  -
   title: Minus-8
   copy: "Minus-8: We built<br /> a time machine."
-  image: work/index.htmlminus8/1440/watch-detail.png
+  image: work/minus8/1440/watch-detail.png
   link: /work/index.html#minus8
  -
   title: Electric Goggles
   copy: "Electric<br /> Goggles: Design<br /> out of bounds."
-  image: work/index.htmlgoggle/1440/Lifestyle_Banner.jpg
+  image: work/goggle/1440/Lifestyle_Banner.jpg
   link: /work/index.html#goggle
  -
   title: Owlet
   copy: "Owlet: Next-gen<br /> wearable for your<br /> next gen."
-  image: work/index.htmlowlet/1440/IMG_7290.jpg
+  image: work/owlet/1440/IMG_7290.jpg
   link: /work/index.html#owlet
 
 grid:

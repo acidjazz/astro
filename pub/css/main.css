@@ -3294,15 +3294,6 @@ body.fixed {
 .about > .sections > .section_studio .profiles > .profile.profile_clare.on > .inner {
   background-image: url("/img/about/profiles/clare-selected.png");
 }
-.about > .sections > .section_studio .profiles > .profile.profile_rachael > .inner {
-  background-image: url("/img/about/profiles/rachael-default.jpg");
-}
-.about > .sections > .section_studio .profiles > .profile.profile_rachael:hover > .inner {
-  background-image: url("/img/about/profiles/rachael-rollover.jpg");
-}
-.about > .sections > .section_studio .profiles > .profile.profile_rachael.on > .inner {
-  background-image: url("/img/about/profiles/rachael-selected.png");
-}
 .about > .sections > .section_studio .profiles > .profile.profile_karson > .inner {
   background-image: url("/img/about/profiles/karson-default.jpg");
 }
@@ -3464,6 +3455,15 @@ body.fixed {
 }
 .about > .sections > .section_studio .profiles > .profile.profile_kristy.on > .inner {
   background-image: url("/img/about/profiles/kristy-selected.png");
+}
+.about > .sections > .section_studio .profiles > .profile.profile_travis > .inner {
+  background-image: url("/img/about/profiles/travis-default.jpg");
+}
+.about > .sections > .section_studio .profiles > .profile.profile_travis:hover > .inner {
+  background-image: url("/img/about/profiles/travis-rollover.jpg");
+}
+.about > .sections > .section_studio .profiles > .profile.profile_travis.on > .inner {
+  background-image: url("/img/about/profiles/travis-selected.png");
 }
 .about > .sections > .section_studio .profiles > .bios.on {
   display: block;

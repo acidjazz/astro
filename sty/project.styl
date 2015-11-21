@@ -95,13 +95,14 @@
       display none
       > .cover, > .body > .image > img
         display none
-
+    > .cover_mobile
+      display none
     > .cover
       height 764px
       position relative
       background-size cover
       background-repeat no-repeat
-      background-position 50% 25%
+      background-position center center
       > .copy
         position absolute
         left 0
@@ -137,6 +138,7 @@
 
   > .body
     > .embed
+      desktop()
       > .inner
       	padding-bottom 56.25%
       	position relative
@@ -153,10 +155,15 @@
       &.white2
         background-color: c.white2 
       > .inner 
+        box-sizing: border-box
         desktop()
         > img
           width 100%
       > .inner_100
+        box-sizing: border-box
+        &.red4
+          background-color: c.red4
+          padding 5% 20% 5% 20%
         > img
           width 100%
     > .images
@@ -170,6 +177,7 @@
       > .inner_50
         width:50%
         float left
+        margin-bottom -1px
         > img
           width 100%
       &:after
@@ -184,6 +192,7 @@
       padding 100px 50px 90px 50px
       line-height 30px
       box-sizing: border-box
+      color: c.black1
       &.black
         background-color: c.black1
         color: c.white1
@@ -202,7 +211,7 @@
         background-color: c.orange1
       &.pink1
         background-color: c.pink1
-        color: c.black1
+        color: c.black1 
       &.blue5
         background-color: c.blue5
       &.blue3
@@ -217,6 +226,8 @@
         background-color: c.white3
       > .inner
         desktop()
+        &.white3
+          background-color: c.white3
         > .title
           font f_h3m
           text-transform uppercase
@@ -263,7 +274,6 @@
     > .inner
       margin auto
 .projects > .project, .projects > .summary, .about 
-  font f_copyls
   color: c.black3
   > .fcontainer
     background-color white
@@ -287,6 +297,7 @@
           padding 0 50px 0 0
           margin auto
           text-align center
+          font f_copyl
           > .filter
             position relative
             cursor pointer
@@ -331,7 +342,6 @@
         max-width none
       > .copyblock > .inner
         max-width 460px
-        float right
       &:after
         content ''
         display block
@@ -345,20 +355,23 @@
       
     img
       width 100%
-      
-.minheight_500
-    min-height 500px
-  	
- // responsive grid
-@media all and (min-width: 2101px)
-  .thumb
-    width 25% !important
-    height 17vw !important
 
-@media all and (min-width: 1601px) and (max-width: 2100px)
-  .thumb
-    width 25% !important
-    height 18vw !important
+.minheight_500
+  min-height 500px     
+.minheight_600
+  min-height 600px
+
+.no_padding
+  padding: 0 !important
+  
+.with_padding
+  padding 100px 50px 90px 50px
+  box-sizing: border-box
+.padding_lr_20_mobile
+	padding-left 20
+	padding-right 20
+	
+ // responsive grid
 
 @media all and (min-width: 1001px) and (max-width: 1600px)
   .thumb
@@ -374,6 +387,15 @@
   .thumb
     width 100% !important
     height 70vw !important
+  .projects > .project  
+    > .cover
+      display none !important
+    > .cover_mobile
+      display block
+      width 100%
+      height 70vw
+      background-size 130%
+      background-position 50% 50%
   .projects > .project > .body .copyblock > .inner > .blurb > p
     float none
     width 100%
@@ -381,6 +403,10 @@
     width 100%
     > .inner
       float none
+  .projects > .project > .body > .image > .inner_100
+    &.red4
+      background-color: c.red4
+      padding 50px 20px 50px 20px
   .projects > .project > .body > .images 
     > .inner_100 > img
       width 100%
@@ -393,6 +419,11 @@
   .projects > .project > .body
     .table
       display block
+      > .row.reverse_mobile
+        display -webkit-flex
+        -webkit-flex-direction column-reverse
+        display flex
+        flex-direction column-reverse
       > .row
         display block
         > .copyblock, .imgblock
@@ -401,6 +432,8 @@
           height auto
         > .imgblock 
           padding-top: 70%
+        > .imgblock.jinnigif
+          padding-top: 95%
         > .ratio_110_mobile
           padding-top: 110%
         > .ratio_100_mobile

@@ -91,6 +91,10 @@
   background-color: #f1455b;
   border: 1px solid #fff;
 }
+.guide > .sections > .section > .color.color_red4 {
+  background-color: #ff2e2e;
+  border: 1px solid #fff;
+}
 .guide > .sections > .section > .color.color_green1 {
   background-color: #76d734;
   border: 1px solid #fff;
@@ -150,6 +154,9 @@
 }
 .guide > .sections > .section > .font.font_f_h1 {
   font: 92px blenderpro book;
+}
+.guide > .sections > .section > .font.font_f_hm {
+  font: 76px blenderpro book;
 }
 .guide > .sections > .section > .font.font_f_h2 {
   font: 46px blenderpro book;
@@ -270,7 +277,6 @@
   float: left;
   font: 18px blenderpro medium;
   min-height: 300px;
-  min-width: 275px;
   padding: 60px 0;
 }
 .footer > .inner > .section.first > .inner {
@@ -304,8 +310,8 @@
 }
 .footer > .inner > .section > .inner > .info > p,
 .footer > .inner > .section > .inner > .info > a.p {
+  color: #22252b;
   display: block;
-  color: #000;
   text-decoration: none;
   margin: 0;
   -webkit-transition: color 0.1s linear;
@@ -1748,7 +1754,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(67,73,101,0.9);
+  background-color: rgba(54,58,66,0.9);
   z-index: 100;
 }
 .menu.on {
@@ -1774,6 +1780,7 @@
   position: relative;
   cursor: pointer;
   font: 92px blenderpro book;
+  font-size: 76px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -2486,17 +2493,17 @@ body.fixed {
 }
 .index > .welcome > .inner {
   padding: 100px 0;
-  max-width: 525px;
+  max-width: 800px;
   margin: auto;
 }
 .index > .welcome > .inner > .copy1 {
-  font: 40px blenderpro book;
+  font: 76px blenderpro book;
   color: #fff;
   padding-bottom: 15px;
 }
 .index > .welcome > .inner > .copy2,
 .index > .welcome > .inner > .copy3 {
-  font: f_copy1;
+  font: 36px blenderpro book;
   color: #fff;
 }
 .index > .welcome > .inner > .copy2 {
@@ -2523,6 +2530,13 @@ body.fixed {
   }
   .index > .welcome {
     padding: 0 20px;
+  }
+  .index > .welcome > .inner > .copy1 {
+    font: 76px blenderpro book;
+  }
+  .index > .welcome > .inner > .copy2,
+  .index > .welcome > .inner > .copy3 {
+    font: f_copy1;
   }
 }
 .about > .banner {
@@ -2612,6 +2626,10 @@ body.fixed {
 .about > .sections {
   background-color: #fff;
 }
+.about > .sections > .section {
+  font: 18px aktivgrotesk light;
+  line-height: 24px;
+}
 .about > .sections > .section.on {
   display: block;
 }
@@ -2632,7 +2650,7 @@ body.fixed {
   background-color: #f0f0f0;
   padding: 40px;
   width: 260px;
-  height: 570px;
+  height: 600px;
   margin: 16px;
   display: inline-block;
   vertical-align: top;
@@ -2709,28 +2727,32 @@ body.fixed {
 }
 .about > .sections > .section_clients .engage > .ways {
   text-align: center;
-  padding: 16px;
+  padding: 16px 0;
 }
 .about > .sections > .section_clients .engage > .ways > .way {
   text-align: left;
   display: inline-block;
   vertical-align: top;
-  width: 28.5%;
-  padding: 20px;
-  margin: 16px;
+  width: 30%;
+  padding: 10px 10px;
+  margin: 4px;
   -webkit-animation: cellInX 0.2s 0s ease-in both;
   -moz-animation: cellInX 0.2s 0s ease-in both;
   -o-animation: cellInX 0.2s 0s ease-in both;
   -ms-animation: cellInX 0.2s 0s ease-in both;
   animation: cellInX 0.2s 0s ease-in both;
 }
+.about > .sections > .section_clients .engage > .ways > .way a {
+  text-decoration: none;
+  color: #0195ff;
+}
 .about > .sections > .section_clients .engage > .ways > .way:nth-child(1) {
-  padding: 20px 20px 20px 0;
-  margin: 16px 16px 16px 0;
+  padding: 10px 10px 10px 0;
+  margin: 4px 8px 16px 0;
 }
 .about > .sections > .section_clients .engage > .ways > .way:nth-child(3) {
-  padding: 20px 0 20px 20px;
-  margin: 16px 0 16px 16px;
+  padding: 10px 0 10px 10px;
+  margin: 4px 0 16px 16px;
 }
 .about > .sections > .section_clients .engage > .ways > .way:nth-child(0) {
   -webkit-animation-delay: 0s;
@@ -3561,10 +3583,10 @@ body.fixed {
   }
 }
 .about > .sections > .section_careers .jobs > .job:nth-child(odd) > .title {
-  background-color: #434965;
+  background-color: #363a42;
 }
 .about > .sections > .section_careers .jobs > .job:nth-child(even) > .title {
-  background-color: #7582b1;
+  background-color: #949dae;
 }
 .about > .sections > .section_careers .jobs > .job > .title {
   cursor: pointer;
@@ -3600,6 +3622,13 @@ body.fixed {
 .about > .sections > .section_careers .jobs > .job.off > .content {
   max-height: 0px;
   padding: 0 50px 0 170px;
+}
+.about > .sections > .section_careers .apply {
+  padding: 50px 50px 50px 170px;
+}
+.about > .sections > .section_careers .apply > .copy > a {
+  color: #0195ff;
+  text-decoration: none;
 }
 @media all and (min-width: 1px) and (max-width: 1000px) {
   .about > .sections > .section_careers .jobs > .job > .title {
@@ -4447,13 +4476,6 @@ body.fixed {
 .index > .blog > .thumb.thumb_eightarms:hover > .inner > .bg {
   background-color: rgba(244,171,139,0.75);
 }
-.projects > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
-.related > .inner > .relateds > .thumb.thumb_fuelband:hover > .inner > .bg,
-.index > .projects > .thumb.thumb_fuelband:hover > .inner > .bg,
-.blog > .summary > .thumbs > .thumb.thumb_fuelband:hover > .inner > .bg,
-.index > .blog > .thumb.thumb_fuelband:hover > .inner > .bg {
-  background-color: rgba(59,182,46,0.75);
-}
 .projects > .summary > .thumbs > .thumb.thumb_malcolm:hover > .inner > .bg,
 .related > .inner > .relateds > .thumb.thumb_malcolm:hover > .inner > .bg,
 .index > .projects > .thumb.thumb_malcolm:hover > .inner > .bg,
@@ -4587,6 +4609,9 @@ body.fixed {
 .projects > .project.off > .body > .image > img {
   display: none;
 }
+.projects > .project > .cover_mobile {
+  display: none;
+}
 .projects > .project > .cover {
   height: 764px;
   position: relative;
@@ -4594,7 +4619,7 @@ body.fixed {
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: center center;
 }
 .projects > .project > .cover > .copy {
   position: absolute;
@@ -4635,6 +4660,10 @@ body.fixed {
   max-width: 1020px;
   margin: auto;
 }
+.projects > .project > .body > .embed {
+  max-width: 1020px;
+  margin: auto;
+}
 .projects > .project > .body > .embed > .inner {
   padding-bottom: 56.25%;
   position: relative;
@@ -4655,11 +4684,23 @@ body.fixed {
   background-color: #e9eaec;
 }
 .projects > .project > .body > .image > .inner {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   max-width: 1020px;
   margin: auto;
 }
 .projects > .project > .body > .image > .inner > img {
   width: 100%;
+}
+.projects > .project > .body > .image > .inner_100 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.projects > .project > .body > .image > .inner_100.red4 {
+  background-color: #ff2e2e;
+  padding: 5% 20% 5% 20%;
 }
 .projects > .project > .body > .image > .inner_100 > img {
   width: 100%;
@@ -4677,6 +4718,7 @@ body.fixed {
 .projects > .project > .body > .images > .inner_50 {
   width: 50%;
   float: left;
+  margin-bottom: -1px;
 }
 .projects > .project > .body > .images > .inner_50 > img {
   width: 100%;
@@ -4698,6 +4740,7 @@ body.fixed {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #000;
 }
 .projects > .project > .body .copyblock.black {
   background-color: #000;
@@ -4745,6 +4788,9 @@ body.fixed {
 .projects > .project > .body .copyblock > .inner {
   max-width: 1020px;
   margin: auto;
+}
+.projects > .project > .body .copyblock > .inner.white3 {
+  background-color: #f0f0f0;
 }
 .projects > .project > .body .copyblock > .inner > .title {
   font: 40px blenderpro medium;
@@ -4840,7 +4886,6 @@ body.fixed {
 .projects > .project,
 .projects > .summary,
 .about {
-  font: 18px blenderpro medium;
   color: #444;
 }
 .projects > .project > .fcontainer,
@@ -4896,6 +4941,7 @@ body.fixed {
   padding: 0 50px 0 0;
   margin: auto;
   text-align: center;
+  font: 20px blenderpro medium;
 }
 .projects > .project > .fcontainer > .filters > .inner > .filtermenu > .filter,
 .projects > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter,
@@ -5163,7 +5209,6 @@ body.fixed {
 }
 .projects > .project > .body .table > .row > .copyblock > .inner {
   max-width: 460px;
-  float: right;
 }
 .projects > .project > .body .table > .row:after {
   content: '';
@@ -5186,17 +5231,21 @@ body.fixed {
 .minheight_500 {
   min-height: 500px;
 }
-@media all and (min-width: 2101px) {
-  .thumb {
-    width: 25% !important;
-    height: 17vw !important;
-  }
+.minheight_600 {
+  min-height: 600px;
 }
-@media all and (min-width: 1601px) and (max-width: 2100px) {
-  .thumb {
-    width: 25% !important;
-    height: 18vw !important;
-  }
+.no_padding {
+  padding: 0 !important;
+}
+.with_padding {
+  padding: 100px 50px 90px 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.padding_lr_20_mobile {
+  padding-left: 20;
+  padding-right: 20;
 }
 @media all and (min-width: 1001px) and (max-width: 1600px) {
   .thumb {
@@ -5215,6 +5264,18 @@ body.fixed {
     width: 100% !important;
     height: 70vw !important;
   }
+  .projects > .project > .cover {
+    display: none !important;
+  }
+  .projects > .project > .cover_mobile {
+    display: block;
+    width: 100%;
+    height: 70vw;
+    -webkit-background-size: 130%;
+    -moz-background-size: 130%;
+    background-size: 130%;
+    background-position: 50% 50%;
+  }
   .projects > .project > .body .copyblock > .inner > .blurb > p {
     float: none;
     width: 100%;
@@ -5224,6 +5285,10 @@ body.fixed {
   }
   .projects > .project > .body > .table > .row > .copyblock > .inner {
     float: none;
+  }
+  .projects > .project > .body > .image > .inner_100.red4 {
+    background-color: #ff2e2e;
+    padding: 50px 20px 50px 20px;
   }
   .projects > .project > .body > .images > .inner_100 > img {
     width: 100%;
@@ -5240,6 +5305,12 @@ body.fixed {
   .projects > .project > .body .table {
     display: block;
   }
+  .projects > .project > .body .table > .row.reverse_mobile {
+    display: -webkit-flex;
+    -webkit-flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .projects > .project > .body .table > .row {
     display: block;
   }
@@ -5251,6 +5322,9 @@ body.fixed {
   }
   .projects > .project > .body .table > .row > .imgblock {
     padding-top: 70%;
+  }
+  .projects > .project > .body .table > .row > .imgblock.jinnigif {
+    padding-top: 95%;
   }
   .projects > .project > .body .table > .row > .ratio_110_mobile {
     padding-top: 110%;
@@ -5381,7 +5455,7 @@ body.fixed {
 }
 .blog .thumb > .details,
 .blog > .entry > .details {
-  padding: 20px 0 60px 0;
+  padding: 20px 0 0 0;
   max-width: 1020px;
   margin: auto;
 }
@@ -5391,13 +5465,19 @@ body.fixed {
 }
 .blog .thumb > .details > .copy > .name,
 .blog > .entry > .details > .copy > .name {
-  font: 40px blenderpro book;
+  font: 40px blenderpro medium;
   padding: 0 0 15px 0;
 }
 .blog .thumb > .details > .copy > .description,
 .blog > .entry > .details > .copy > .description {
-  font: 36px blenderpro book;
+  font: 18px aktivgrotesk normal;
+  line-height: 24px;
   padding: 0 0 15px 0;
+}
+.blog .thumb > .details > .copy > .description > a,
+.blog > .entry > .details > .copy > .description > a {
+  color: #0195ff;
+  text-decoration: none;
 }
 .blog .thumb > .details > .date,
 .blog > .entry > .details > .date {
@@ -5436,6 +5516,7 @@ body.fixed {
 .blog .thumb > .details > .shares,
 .blog > .entry > .details > .shares {
   float: right;
+  position: relative;
 }
 .blog .thumb > .details > .shares > .copy,
 .blog > .entry > .details > .shares > .copy {
@@ -5452,6 +5533,14 @@ body.fixed {
   border-radius: 50%;
   margin: 0 0 0 10px;
   cursor: pointer;
+}
+.blog .thumb > .details > .shares > .share.on,
+.blog > .entry > .details > .shares > .share.on {
+  background-color: #f03;
+}
+.blog .thumb > .details > .shares > .share.off,
+.blog > .entry > .details > .shares > .share.off {
+  background-color: #22252b;
 }
 .blog .thumb > .details > .shares > .share:hover,
 .blog > .entry > .details > .shares > .share:hover {
@@ -5471,10 +5560,33 @@ body.fixed {
 .blog > .entry > .details > .shares > .share > svg > g > g > path {
   fill: #fff;
 }
+.blog .thumb > .details > .shares > .share_url,
+.blog > .entry > .details > .shares > .share_url {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+.blog .thumb > .details > .shares > .share_url.on,
+.blog > .entry > .details > .shares > .share_url.on {
+  display: block;
+}
+.blog .thumb > .details > .shares > .share_url.off,
+.blog > .entry > .details > .shares > .share_url.off {
+  display: none;
+}
+.blog .thumb > .details > .shares > .share_url > input,
+.blog > .entry > .details > .shares > .share_url > input {
+  font: 18px aktivgrotesk light;
+  padding: 5px 10px;
+  width: 250px;
+}
 .blog > .entry > .body {
-  min-height: 1000px;
   max-width: 1020px;
   margin: auto;
+  padding: 0 0 100px 0;
+}
+.blog > .entry > .body .space {
+  height: 50px;
 }
 .blog > .entry > .body > .youtube {
   width: 800px;
@@ -5509,14 +5621,27 @@ body.fixed {
   background-position: 50% 50%;
 }
 .blog > .entry > .body > .copy {
-  padding: 50px;
+  padding: 50px 0;
   line-height: 30px;
-  max-width: 600px;
   margin: auto;
+  font: 18px aktivgrotesk normal;
+  line-height: 24px;
 }
 .blog > .entry > .body > .images > .image {
   float: left;
   width: 50%;
+}
+.blog > .entry > .body > .images > .image.pad_both {
+  padding: 50px 0;
+}
+.blog > .entry > .body > .images > .image.pad_top {
+  padding: 50px 0 0 0;
+}
+.blog > .entry > .body > .images > .image.pad_bottom {
+  padding: 0 0 50px 0;
+}
+.blog > .entry > .body > .images > .image.pad_none {
+  padding: 0 0 0 0;
 }
 .blog > .entry > .body > .images > .image > .img {
   padding-top: 60%;
@@ -5592,9 +5717,6 @@ body.fixed {
 .blog > .entry > .related > .title.title_eightarms {
   background-color: #f4ab8b;
 }
-.blog > .entry > .related > .title.title_fuelband {
-  background-color: #3bb62e;
-}
 .blog > .entry > .related > .title.title_malcolm {
   background-color: #76d734;
 }
@@ -5609,9 +5731,6 @@ body.fixed {
 }
 .blog > .entry > .credits.credits_eightarms > .inner > .sections > .section > .title {
   color: #f4ab8b;
-}
-.blog > .entry > .credits.credits_fuelband > .inner > .sections > .section > .title {
-  color: #3bb62e;
 }
 .blog > .entry > .credits.credits_malcolm > .inner > .sections > .section > .title {
   color: #76d734;
@@ -5735,22 +5854,6 @@ body.fixed {
 .blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms:hover,
 .about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_eightarms:hover {
   background-color: rgba(244,171,139,0.25);
-}
-.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
-.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
-.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
-.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
-.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active,
-.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband.active {
-  background-color: #3bb62e;
-}
-.blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
-.blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
-.about > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
-.blog > .entry > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
-.blog > .summary > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover,
-.about > .fcontainer > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_fuelband:hover {
-  background-color: rgba(59,182,46,0.25);
 }
 .blog > .entry > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm.active,
 .blog > .summary > .fcontainer > .filters > .inner > .filtermenu > .filter.filter_malcolm.active,
@@ -5960,6 +6063,10 @@ body.fixed {
   background-color: #f1455b;
   border: 1px solid #fff;
 }
+.guide > .sections > .section > .color.color_red4 {
+  background-color: #ff2e2e;
+  border: 1px solid #fff;
+}
 .guide > .sections > .section > .color.color_green1 {
   background-color: #76d734;
   border: 1px solid #fff;
@@ -6020,6 +6127,9 @@ body.fixed {
 .guide > .sections > .section > .font.font_f_h1 {
   font: 92px blenderpro book;
 }
+.guide > .sections > .section > .font.font_f_hm {
+  font: 76px blenderpro book;
+}
 .guide > .sections > .section > .font.font_f_h2 {
   font: 46px blenderpro book;
 }
@@ -6049,11 +6159,11 @@ body.fixed {
   -moz-background-size: 150%;
   background-size: 150%;
   background-repeat: no-repeat;
-  -webkit-animation: slowzoom 30s linear 5s infinite alternate;
-  -moz-animation: slowzoom 30s linear 5s infinite alternate;
-  -o-animation: slowzoom 30s linear 5s infinite alternate;
-  -ms-animation: slowzoom 30s linear 5s infinite alternate;
-  animation: slowzoom 30s linear 5s infinite alternate;
+  -webkit-animation: slowzoom 30s linear 1s infinite alternate;
+  -moz-animation: slowzoom 30s linear 1s infinite alternate;
+  -o-animation: slowzoom 30s linear 1s infinite alternate;
+  -ms-animation: slowzoom 30s linear 1s infinite alternate;
+  animation: slowzoom 30s linear 1s infinite alternate;
 }
 .contact .banner > .inner.on {
   display: block;
@@ -6077,7 +6187,7 @@ body.fixed {
   animation: cellInY 0.75s 0s ease-in both;
 }
 .contact .banner > .inner > .copy > .lcopy {
-  font: 46px blenderpro book;
+  font: 40px blenderpro book;
 }
 .contact .banner > .inner > .copy > .scopy {
   font: 40px blenderpro book;
@@ -6087,15 +6197,15 @@ body.fixed {
 }
 .contact > .block > .inner {
   text-align: center;
-  padding: 50px;
+  padding: 100px;
   max-width: 1020px;
   margin: auto;
 }
 .contact > .block > .inner > .copy,
 .contact > .block > .inner > .scopy {
   color: #fff;
-  max-width: 440px;
   margin: auto;
+  line-height: 24px;
 }
 .contact > #map {
   height: 400px;
@@ -6148,6 +6258,7 @@ body.fixed {
 .contact > .officeimage {
   max-width: 1020px;
   margin: auto;
+  padding: 0 0 100px 0;
 }
 .contact > .officeimage > img {
   width: 100%;
@@ -6169,6 +6280,8 @@ body.fixed {
   }
   .contact > .banner > .inner > .copy {
     margin-top: -50px;
+    padding: 0 10px;
+    width: auto;
   }
   .contact > .engage > .ways > .way {
     float: none;
@@ -6176,6 +6289,33 @@ body.fixed {
     margin: auto !important;
     padding: 10px !important;
   }
+}
+.error {
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/error.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  position: realtive;
+}
+.error > .copy {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  width: 800px;
+  left: 50%;
+  margin-left: -400px;
+  line-height: 24px;
+}
+.error > .copy a {
+  color: #0195ff;
+  text-decoration: none;
+}
+.error > .copy > .copy1 {
+  font: 40px blenderpro book;
 }
 .placeholder {
   text-align: center;

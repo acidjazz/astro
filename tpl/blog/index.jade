@@ -13,7 +13,7 @@ block content
     .summary.off
       .hero
         .copy1 &nbsp;
-        .copy2  Lorem Ipsum sample for blog summary page
+        .copy2  Astro Blog
       .crumb.off
         .close &#10005;
         .copy 
@@ -36,15 +36,6 @@ block content
                   .name #{entry.name}
                   .filters !{entry.tags.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
       .clear
-
-    // BLOG ENTRIES 
-    - var entry = data.blog.fuelband
-
-    .entry.entry_fuelband.off
-      include _header
-      .body
-        include fuelband
-      include _footer
 
     // BLOG ENTRIES 
     - var entry = data.blog.nasa

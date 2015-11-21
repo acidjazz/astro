@@ -3,12 +3,12 @@
     .inner
       .title #{project.body1.title}
       .copy #{project.body1.copy}
-  .imgblock.ratio_100_mobile(style="background-image: url('../img/work/mineralist/1440/logo.png')")
+  .imgblock.ratio_100_mobile(style="background-image: url('../img/work/mineralist/1440/logo.png'); background-size: 75%")
   
-.space
-.space
+.space.rm_space_mobile
+.space.rm_space_mobile
 
-.image: .inner
+.image: .inner.padding_lr_20_mobile
   img(data-src='logo-wordmark.png')
 
 .copyblock
@@ -37,7 +37,7 @@
   img(data-src='trees-1.png')
   img(data-src='trees-2.png')
 
-.images: .inner.table: .row
+.images: .inner.table.minheight_600: .row
   .copyblock.brown
     .inner
       .copy #{project.container1.copy}

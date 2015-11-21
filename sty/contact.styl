@@ -10,7 +10,7 @@
       background-position 50% 50%
       background-size 150%
       background-repeat no-repeat
-      animation slowzoom 30s linear 5s infinite alternate
+      animation slowzoom 30s linear 1s infinite alternate
       &.on
         display block
       &.off
@@ -26,7 +26,7 @@
         margin-top -55px
         animation cellInY 0.75s 0s ease-in both
         > .lcopy
-          font f_h2
+          font f_h3
         > .scopy
           font f_h3
 
@@ -34,12 +34,12 @@
     background-color: c.black4
     > .inner
       text-align center
-      padding 50px
+      padding 100px
       desktop()
       > .copy, > .scopy
         color: c.white1
-        max-width 440px
         margin auto
+        line-height 24px
   > #map
     height 400px
 
@@ -79,6 +79,7 @@
             color: c.red1
   > .officeimage
     desktop()
+    padding 0 0 100px 0
     > img
       width 100%
 
@@ -92,6 +93,8 @@
         background-size cover
         > .copy
           margin-top -50px
+          padding 0 10px
+          width auto
     > .engage
       > .ways
         > .way

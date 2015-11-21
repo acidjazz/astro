@@ -18,7 +18,7 @@ Work =
 
   handlers: ->
 
-    $('.projects > .summary > .thumbs > .thumb, .related > .relateds > .thumb').on 'click', Work.projectHandler
+    $('.projects > .summary > .thumbs > .thumb, .related > .inner > .relateds > .thumb').on 'click', Work.projectHandler
     $('.project .filters > .inner > .filtermenu > .filter').on 'click', Work.filterHandler
 
     $('.summary .filters > .inner > .filtermenu > .filter').on 'click', Work.summaryFilterHandler
@@ -27,10 +27,17 @@ Work =
 
   pop: (e) ->
 
-    Work.summary()
-    _.on '.summary > .thumbs > .thumb'
-    _.off '.summary > .filters > .inner > .filtermenu > .filter'
-    _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
+    document.body.scrollTop = document.documentElement.scrollTop = 0
+
+    if Object.keys(projects).indexOf(location.hash.replace('#','')) isnt -1
+      project = location.hash.replace '#', ''
+      Work.cproject = project
+      Work.load project
+    else
+      Work.summary()
+      _.on '.summary > .thumbs > .thumb'
+      _.off '.summary > .filters > .inner > .filtermenu > .filter'
+      _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
 
   summaryFilterHandler: ->
 
@@ -71,6 +78,7 @@ Work =
 
     project = $(this).data 'project'
     history.pushState null, null, "/work/##{project}"
+    console.log history
 
     document.body.scrollTop = document.documentElement.scrollTop = 0
     Work.load project
@@ -111,6 +119,8 @@ Work =
     NProgress.start()
     $('#nprogress .bar').addClass "bar_#{project}"
     srcs = Work.srcs project
+
+    document.body.scrollTop = document.documentElement.scrollTop = 0
 
     Global.preload srcs,
       (progress) ->

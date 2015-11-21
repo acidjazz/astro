@@ -1,7 +1,7 @@
 ---
   -
     title: consulting
-    copy: Based upon an agreed scope of work, Astro will work strategically toward an inspiring solution. Every project is unique, but our process will be grounded in our Astro 5D Process to create the best results. Check out our <a href='/work'>work</a> section for examples of what we've consistently delivered for our global clientele.
+    copy: Based upon an agreed scope of work, Astro will work strategically toward an inspiring solution. Every project is unique, but our process will be grounded in our Astro 5D Process to create the best results. Check out our <a href='/work/index.html'>work</a> section for examples of what we've consistently delivered for our global clientele.
     project:
       name: project example
       folder: folder

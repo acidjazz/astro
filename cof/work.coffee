@@ -77,7 +77,7 @@ Work =
   projectHandler: ->
 
     project = $(this).data 'project'
-    history.pushState null, null, "/work/##{project}"
+    history.pushState null, null, "/work/index.html##{project}"
     console.log history
 
     document.body.scrollTop = document.documentElement.scrollTop = 0

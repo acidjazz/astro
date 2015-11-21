@@ -255,7 +255,7 @@ Global =
           _.off '.summary > .filters > .inner > .filtermenu > .filter'
           _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
         else
-          location.href = '/work/'
+          location.href = '/work/index.html'
 
       if option is 'blog'
         if location.href.match('blog') isnt null
@@ -264,12 +264,12 @@ Global =
           _.off '.summary > .filters > .inner > .filtermenu > .filter'
           _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
         else
-          location.href = '/blog/'
+          location.href = '/blog/index.html'
 
       if option is 'about'
-          location.href = '/about/'
+          location.href = '/about/index.html'
       if option is 'contact'
-          location.href = '/contact/'
+          location.href = '/contact/index.html'
 
     , 400
 

@@ -6,6 +6,24 @@ html(lang='en')
     meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
     meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height')
 
+    //- google
+    meta(name='description',content=data.config.meta.description)
+    meta(name='keywords',content=data.config.meta.keywords)
+    meta(name='theme-color', content='#25D241')
+
+    //- facebook
+    meta(property='og:url',content=data.config.url)
+    meta(property='og:title',content=data.config.meta.title)
+    meta(property='og:type',content='website')
+    meta(property='og:image',content=data.config.url + 'img/logo/square.png')
+    meta(property='og:description',content=data.config.meta.description)
+
+    //- twitter
+    meta(name='twitter:card',content='summary')
+    meta(name='twitter:title',content=data.config.meta.title)
+    meta(name='twitter:description',content=data.config.meta.description)
+    meta(name='twitter:image',content=data.config.url + 'img/logo/square.png') 
+
     block variables
 
     link(rel="apple-touch-icon",sizes="57x57",href=rootdir+"ico/apple-touch-icon-57x57.png")

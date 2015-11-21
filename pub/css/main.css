@@ -1176,11 +1176,11 @@
   max-width: 1020px;
   margin: auto;
   z-index: 250;
-  -webkit-animation: scrolling 10s ease-out 0.5s both;
-  -moz-animation: scrolling 10s ease-out 0.5s both;
-  -o-animation: scrolling 10s ease-out 0.5s both;
-  -ms-animation: scrolling 10s ease-out 0.5s both;
-  animation: scrolling 10s ease-out 0.5s both;
+  -webkit-animation: scrolling 50s ease-out 0.5s both;
+  -moz-animation: scrolling 50s ease-out 0.5s both;
+  -o-animation: scrolling 50s ease-out 0.5s both;
+  -ms-animation: scrolling 50s ease-out 0.5s both;
+  animation: scrolling 50s ease-out 0.5s both;
 }
 .manifesto > .inner > .content > .inner {
   position: absolute;

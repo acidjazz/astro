@@ -95,6 +95,7 @@
       font f_copys
       color: c.blue7
     > .gravity
+      cursor pointer
       width 160px
       font f_copyl
       position absolute
@@ -117,7 +118,7 @@
           margin 0 0 0 -5px
 
 @media all and (min-width: 1px) and (max-width: 1000px)
-
+  
   .footer > .inner
     > .copyright
       position static
@@ -126,6 +127,9 @@
       position static
       margin auto
       padding 20px 0 60px 0
+    > .manifesto > .inner > .content > .inner
+      padding 20px
+
 
   .footer > .inner > .section
     min-height 0px
@@ -151,5 +155,68 @@
         display inline-block
         float none
 
+.manifesto
+  position fixed
+  left 0
+  z-index 200
+  width 100%
+  height 100%
+  background-color: c.black1
+  color: c.white1
+  font f_h3m
+  text-align left
+  animation appear 0.5s linear both
+  &.on
+    display block
+  &.off
+    display none
+  > .inner
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background linear-gradient(54deg, #0195ff, #f1455b, #434965, #7582b1);
+    background-size 400% 400%
+    animation gradients 41s ease infinite;
+    > .close
+      float right
+      padding 20px 20px
+      cursor pointer
+      transition transform 0.1s linear
+      &:hover
+        transform rotate(90deg)
+    > .content
+      position relative
+      overflow hidden
+      height 5000px
+      desktop()
+      z-index 250
+      > .inner
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 5000px
+        z-index 250
+	      animation scrolling 50s ease-out 0.5s both
 
+@keyframes appear
+  0%
+    opacity 0
+  100%
+    opacity 1 
 
+@keyframes gradients
+  0%
+    background-position 0% 14%
+  50%
+    background-position 100% 87%
+  100%
+    background-position 0% 14%
+
+@keyframes scrolling
+  0%
+    top 95%
+  100%
+    top -170%

@@ -55,6 +55,20 @@ Global =
 
     $('.thumbs > .thumb, .projects > .thumb, .related > .inner > .relateds > .thumb').on 'mousemove', Global.thumb
 
+    $('.footer > .inner > .gravity, .footer > .inner > .manifesto > .inner > .close').on 'click', Global.manifesto
+
+
+  manifesto: ->
+
+    mf = $('.manifesto')
+
+    if mf.hasClass 'on'
+      #$('body').removeClass 'fixed'
+      _.off mf
+    else
+      #$('body').addClass 'fixed'
+      _.on mf
+
   thumb: (event) ->
 
     t = $ this
@@ -241,7 +255,7 @@ Global =
           _.off '.summary > .filters > .inner > .filtermenu > .filter'
           _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
         else
-          location.href = '/work/'
+          location.href = '/work/index.html'
 
       if option is 'blog'
         if location.href.match('blog') isnt null
@@ -250,12 +264,12 @@ Global =
           _.off '.summary > .filters > .inner > .filtermenu > .filter'
           _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
         else
-          location.href = '/blog/'
+          location.href = '/blog/index.html'
 
       if option is 'about'
-          location.href = '/about/'
+          location.href = '/about/index.html'
       if option is 'contact'
-          location.href = '/contact/'
+          location.href = '/contact/index.html'
 
     , 400
 

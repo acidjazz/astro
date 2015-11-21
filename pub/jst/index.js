@@ -67,10 +67,10 @@ Index = {
     type = t.data('type');
     folder = t.data('folder');
     if (type === 'work') {
-      location.href = '/work/#' + folder;
+      location.href = '/work/index.html#' + folder;
     }
     if (type === 'blog') {
-      return location.href = '/blog/#' + folder;
+      return location.href = '/blog/index.html#' + folder;
     }
   }
 };

@@ -44,7 +44,17 @@ Global = {
   handlers: function() {
     $('.top > .inner > .burger').on('click', Global.burger);
     $('.menu > .inner > .options > .option').on('click', Global.option);
-    return $('.thumbs > .thumb, .projects > .thumb, .related > .inner > .relateds > .thumb').on('mousemove', Global.thumb);
+    $('.thumbs > .thumb, .projects > .thumb, .related > .inner > .relateds > .thumb').on('mousemove', Global.thumb);
+    return $('.footer > .inner > .gravity, .footer > .inner > .manifesto > .inner > .close').on('click', Global.manifesto);
+  },
+  manifesto: function() {
+    var mf;
+    mf = $('.manifesto');
+    if (mf.hasClass('on')) {
+      return _.off(mf);
+    } else {
+      return _.on(mf);
+    }
   },
   thumb: function(event) {
     var bg, distortBg, distortFilters, distortName, filters, filtersRect, name, nameRect, offset, opx4, opx6, opx8, opy4, opy6, opy8, px, py, rect, t, x, y;
@@ -201,7 +211,7 @@ Global = {
           _.off('.summary > .filters > .inner > .filtermenu > .filter');
           _.on('.summary > .filters > .inner > .filtermenu > .filter_all');
         } else {
-          location.href = '/work/';
+          location.href = '/work/index.html';
         }
       }
       if (option === 'blog') {
@@ -211,14 +221,14 @@ Global = {
           _.off('.summary > .filters > .inner > .filtermenu > .filter');
           _.on('.summary > .filters > .inner > .filtermenu > .filter_all');
         } else {
-          location.href = '/blog/';
+          location.href = '/blog/index.html';
         }
       }
       if (option === 'about') {
-        location.href = '/about/';
+        location.href = '/about/index.html';
       }
       if (option === 'contact') {
-        return location.href = '/contact/';
+        return location.href = '/contact/index.html';
       }
     }, 400);
   },

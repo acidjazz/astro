@@ -7158,6 +7158,13 @@ body.fixed {
 .error > .copy > .copy1 {
   font: 40px blenderpro book;
 }
+@media all and (min-width: 1px) and (max-width: 1000px) {
+  .error > .copy {
+    width: 90%;
+    left: 5%;
+    margin-left: 0px;
+  }
+}
 .placeholder {
   text-align: center;
   padding: 200px 0 0 0;

@@ -1172,22 +1172,22 @@
 .manifesto > .inner > .content {
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: 5000px;
   max-width: 1020px;
   margin: auto;
   z-index: 250;
-  -webkit-animation: scrolling 100s ease-out 0.5s both;
-  -moz-animation: scrolling 100s ease-out 0.5s both;
-  -o-animation: scrolling 100s ease-out 0.5s both;
-  -ms-animation: scrolling 100s ease-out 0.5s both;
-  animation: scrolling 100s ease-out 0.5s both;
+  -webkit-animation: scrolling 10s ease-out 0.5s both;
+  -moz-animation: scrolling 10s ease-out 0.5s both;
+  -o-animation: scrolling 10s ease-out 0.5s both;
+  -ms-animation: scrolling 10s ease-out 0.5s both;
+  animation: scrolling 10s ease-out 0.5s both;
 }
 .manifesto > .inner > .content > .inner {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 5000px;
   z-index: 250;
 }
 @-moz-keyframes appear {

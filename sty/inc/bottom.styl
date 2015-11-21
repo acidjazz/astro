@@ -118,7 +118,6 @@
           margin 0 0 0 -5px
 
 @media all and (min-width: 1px) and (max-width: 1000px)
-
   
   .footer > .inner
     > .copyright
@@ -166,6 +165,7 @@
   color: c.white1
   font f_h3m
   text-align left
+  animation appear 0.5s linear both
   &.on
     display block
   &.off
@@ -199,7 +199,13 @@
         width 100%
         height 100%
         z-index 250
-	      animation scrolling 100s ease-out
+	      animation scrolling 100s ease-out 0.5s both
+
+@keyframes appear
+  0%
+    opacity 0
+  100%
+    opacity 1 
 
 @keyframes gradients
   0%

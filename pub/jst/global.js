@@ -51,10 +51,8 @@ Global = {
     var mf;
     mf = $('.manifesto');
     if (mf.hasClass('on')) {
-      _.off(mf);
-      return $('body').removeClass('fixed');
+      return _.off(mf);
     } else {
-      $('body').addClass('fixed');
       return _.on(mf);
     }
   },

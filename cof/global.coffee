@@ -63,10 +63,10 @@ Global =
     mf = $('.manifesto')
 
     if mf.hasClass 'on'
+      #$('body').removeClass 'fixed'
       _.off mf
-      $('body').removeClass 'fixed'
     else
-      $('body').addClass 'fixed'
+      #$('body').addClass 'fixed'
       _.on mf
 
   thumb: (event) ->

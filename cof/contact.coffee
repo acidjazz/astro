@@ -21,8 +21,8 @@ Contact =
   gmaps: ->
 
     loc =
-      lat: 37.7777875
-      lng: -122.4072472
+      lat: 37.777824
+      lng: -122.405037
 
     mapCanvas = document.getElementById 'map'
     mapOptions =
@@ -41,12 +41,15 @@ Contact =
     image =
       url: '/img/contact/hitchhiker.png'
       scaledSize: new google.maps.Size(45, 75)
+      origin: new google.maps.Point 0, 0
+      anchor: new google.maps.Point 45, 75
 
     marker = new google.maps.Marker
       title: 'map title is here'
-      position: loc
       icon: image
       map: map
+      animation: google.maps.Animation.DROP
+      position: loc
 
     infoContent = '<a href="https://goo.gl/maps/aXfACwrzpGT2" target="_new">Astro Studios</a><br /><br />348 6th St<br />San Francisco, CA<br />94103'
     infoWindow = new google.maps.InfoWindow

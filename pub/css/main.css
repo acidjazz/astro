@@ -7046,7 +7046,7 @@ body.fixed {
 .contact > .block > .inner > .scopy {
   color: #fff;
   margin: auto;
-  line-height: 24px;
+  font: 40px blenderpro book;
 }
 .contact > #map {
   height: 400px;

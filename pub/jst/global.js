@@ -211,7 +211,7 @@ Global = {
           _.off('.summary > .filters > .inner > .filtermenu > .filter');
           _.on('.summary > .filters > .inner > .filtermenu > .filter_all');
         } else {
-          location.href = '/work/index.html';
+          location.href = '/work/';
         }
       }
       if (option === 'blog') {
@@ -221,14 +221,14 @@ Global = {
           _.off('.summary > .filters > .inner > .filtermenu > .filter');
           _.on('.summary > .filters > .inner > .filtermenu > .filter_all');
         } else {
-          location.href = '/blog/index.html';
+          location.href = '/blog/';
         }
       }
       if (option === 'about') {
-        location.href = '/about/index.html';
+        location.href = '/about/';
       }
       if (option === 'contact') {
-        return location.href = '/contact/index.html';
+        return location.href = '/contact/';
       }
     }, 400);
   },

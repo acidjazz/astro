@@ -73,9 +73,9 @@ Index =
     type = t.data 'type'
     folder = t.data 'folder'
     if type is 'work'
-      location.href = '/work/index.html#' + folder
+      location.href = '/work/#' + folder
     if type is 'blog'
-      location.href = '/blog/index.html#' + folder
+      location.href = '/blog/#' + folder
 
 
 

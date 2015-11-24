@@ -71,7 +71,7 @@ About =
         bio.css('left', "#{pos.left}px")
         bio.css('right', "auto")
 
-    if $(window).width() > 1000
+    if $(window).width() < 1000
       bio.css('height', "auto")
 
     _.on bio

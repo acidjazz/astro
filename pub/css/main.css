@@ -2965,10 +2965,11 @@
     right: 30px;
   }
   .menu > .inner > .options {
-    margin-top: -110px;
+    margin-top: -134px;
   }
   .menu > .inner > .options > .option {
     font: 46px blenderpro book;
+    padding: 6px 0;
   }
 }
 @-moz-keyframes line1 {

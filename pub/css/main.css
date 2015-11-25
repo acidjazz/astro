@@ -953,11 +953,11 @@
 .footer > .inner > .section.newsletter > .inner > .title {
   margin: 0 0 10px 0;
 }
-.footer > .inner > .section.newsletter > .inner > .input {
+.footer > .inner > .section.newsletter > .inner > form > .input {
   float: left;
   width: 200px;
 }
-.footer > .inner > .section.newsletter > .inner > .input > input {
+.footer > .inner > .section.newsletter > .inner > form > .input > input {
   width: 100%;
   background-color: #fff;
   border: none;
@@ -965,14 +965,16 @@
   font: 14px blenderpro book;
   padding: 10px;
 }
-.footer > .inner > .section.newsletter > .inner > .button {
+.footer > .inner > .section.newsletter > .inner > form > .subscribe {
   float: right;
   color: #fff;
   background-color: #f03;
   text-align: center;
-  padding: 7px 6px;
+  padding: 9px 6px;
   margin: 0 0 0 5px;
   text-transform: uppercase;
+  border: none;
+  font: 14px blenderpro book;
   cursor: pointer;
   -webkit-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
@@ -980,7 +982,7 @@
   -ms-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
 }
-.footer > .inner > .section.newsletter > .inner > .button:hover {
+.footer > .inner > .section.newsletter > .inner > form > .subscribe:hover {
   background-color: #ee5655;
 }
 .footer > .inner > .section.newsletter > .inner > .icons {

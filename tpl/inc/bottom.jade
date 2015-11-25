@@ -30,10 +30,19 @@
     .section.newsletter
       .inner
         .a &nbsp;
-        .title follow us
-        //.input
-          input(type='text',placeholder='Your email address')
-        //.button.subscribe subscribe
+        .title monthly newsletter
+        form#mc-embedded-subscribe-form(
+          action="//astrostudios.us1.list-manage.com/subscribe/post?u=2815bc35b8e989f2b5a0d22e6&amp;id=9a775ec656",
+          method="post",
+          name="mc-embedded-subscribe-form",
+          class="validate",
+          target="_blank",
+          novalidate
+        )
+          .input
+            input(type='text',name='EMAIL',placeholder='Your email address')
+
+          input(class='subscribe',type='submit',value='subscribe')
         .clear
         .icons
           a.icon(href='http://www.facebook.com/astrostudios/',target='_new')

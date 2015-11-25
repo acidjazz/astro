@@ -42,7 +42,7 @@
       > .inner
         > .title
           margin 0 0 10px 0
-        > .input
+        > form > .input
           float left
           width 200px
           > input
@@ -53,14 +53,16 @@
             font f_copysb
             padding 10px
 
-        > .button
+        > form > .subscribe
           float right
           color: c.white1
           background-color: c.red2
           text-align center
-          padding 7px 6px
+          padding 9px 6px
           margin 0 0 0 5px
           text-transform uppercase
+          border none
+          font f_copysb
           cursor pointer
           transition background-color 0.1s linear
           &:hover

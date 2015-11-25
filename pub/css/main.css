@@ -4489,6 +4489,9 @@ body.fixed {
   .about > .sections > .section_careers .jobs > .job.off > .content {
     padding: 0 20px !important;
   }
+  .about > .sections > .section_careers .apply {
+    padding: 50px 20px;
+  }
 }
 .about > .sections > .section_clients .clearing,
 .about > .sections > .section_capabilities .clearing {

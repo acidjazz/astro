@@ -2964,7 +2964,10 @@
     left: 30px;
     right: 30px;
   }
-  .top > .inner > .options > .option {
+  .menu > .inner > .options {
+    margin-top: -110px;
+  }
+  .menu > .inner > .options > .option {
     font: 46px blenderpro book;
   }
 }

@@ -2611,8 +2611,7 @@
 .menu > .inner > .options > .option {
   position: relative;
   cursor: pointer;
-  font: 92px blenderpro book;
-  font-size: 76px;
+  font: 76px blenderpro book;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -2964,6 +2963,9 @@
     top: 70px;
     left: 30px;
     right: 30px;
+  }
+  .top > .inner > .options > .option {
+    font: 46px blenderpro book;
   }
 }
 @-moz-keyframes line1 {

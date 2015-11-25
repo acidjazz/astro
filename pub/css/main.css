@@ -1182,6 +1182,9 @@
   -ms-animation: scrolling 50s ease-out 0.5s both;
   animation: scrolling 50s ease-out 0.5s both;
 }
+.manifesto > .inner > .content > .inner > p.f_hm {
+  font: 76px blenderpro book;
+}
 .manifesto > .inner > .content > .inner {
   position: absolute;
   top: 0;

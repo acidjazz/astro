@@ -89,8 +89,12 @@ About = {
     _.on(".fcontainer > .filters > .inner > .filtermenu > .filter.filter_" + section, ".sections > .section.section_" + section);
     if ($(window).width() > 1000) {
       return $('html, body').animate({
-        scrollTop: $(".sections").offset().top - 64
+        scrollTop: $(".sections").offset().top - 60
       }, 1000);
+    } else {
+      return $('html, body').animate({
+        scrollTop: $(".sections").offset().top - 322
+      }, 300);
     }
   },
   hsbpdCheck: function() {

@@ -48,10 +48,7 @@ block content
             .bg
               .copy
                 .name #{info.name}
-                if info.filters
-                  .filters !{info.filters.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
-                if info.tags
-                  .filters !{info.tags.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
+                .filters=grid.type
 
     .clear
 

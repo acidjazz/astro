@@ -36,6 +36,18 @@ About =
     $('.profiles > .profile').on 'click', About.profile
     $('.bios > .bio > .close, .bios > .bio').on 'click', About.profileClose
 
+  instagram:
+
+    endpoint: 'https://api.instagram.com/v1/users/self/media/recent/'
+    token: '264367793.55cd6c3.ae227ede2f5c48eaab95ca57ffc4c0f6'
+    loaded: false
+    load: ->
+      Loader.load "#{About.instagram.endpoint}?access_token=#{About.instagram.token}&callback=About.instagram.callback"
+      About.instagram.loaded = true
+
+    callback: (json) ->
+      console.log json
+
   profile: ->
 
     t = $ this
@@ -96,6 +108,11 @@ About =
 
     if section is 'careers' and About.jobs is false
       Loader.load 'https://api.greenhouse.io/v1/boards/astrostudios/embed/jobs?callback=About.joblist'
+
+    # make htmls before running this
+    #if section is 'studio' and About.instagram.loaded is false
+    #About.instagram.load()
+
     _.off '.about > .fcontainer > .filters > .inner > .filtermenu > .filter', '.sections > .section'
     _.on ".fcontainer > .filters > .inner > .filtermenu > .filter.filter_#{section}", ".sections > .section.section_#{section}"
 

@@ -31,6 +31,18 @@ About = {
     $('.profiles > .profile').on('click', About.profile);
     return $('.bios > .bio > .close, .bios > .bio').on('click', About.profileClose);
   },
+  instagram: {
+    endpoint: 'https://api.instagram.com/v1/users/self/media/recent/',
+    token: '264367793.55cd6c3.ae227ede2f5c48eaab95ca57ffc4c0f6',
+    loaded: false,
+    load: function() {
+      Loader.load(About.instagram.endpoint + "?access_token=" + About.instagram.token + "&callback=About.instagram.callback");
+      return About.instagram.loaded = true;
+    },
+    callback: function(json) {
+      return console.log(json);
+    }
+  },
   profile: function() {
     var bio, pos, profile, rect, t, width;
     t = $(this);

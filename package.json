@@ -17,6 +17,17 @@
   },
   "homepage": "https://github.com/acidjazz/astro",
   "dependencies": {
-    "luja": "git://github.com/acidjazz/luja.git"
+    "luja": "git://github.com/acidjazz/luja.git",
+    "objectus": "^1.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp-coffee": "^2.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.1.0",
+    "gulp-uglify": "^1.5.1"
   }
 }

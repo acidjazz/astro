@@ -5,6 +5,10 @@ Blog =
 
   i: ->
 
+    $('.thumbs > .thumb').sort (a, b) ->
+      return +b.dataset.cdate - +a.dataset.cdate
+    .appendTo $('.thumbs')
+
     if Object.keys(entries).indexOf(location.hash.replace('#','')) isnt -1
       entry = location.hash.replace '#', ''
       Blog.centry = entry
@@ -116,6 +120,9 @@ Blog =
     Blog.load entry
 
   summary: () ->
+
+
+
     location.hash = ''
 
     $('.orbit').removeClass (index, css) ->
@@ -132,6 +139,7 @@ Blog =
     $('.summary > .thumbs > .thumb > .inner').each (i, el) ->
       srcs.push(Global.srcFromStyle($(el)))
 
+
     Global.preload srcs,
       (progress) ->
         NProgress.set progress
@@ -139,7 +147,6 @@ Blog =
         NProgress.done()
         _.off '.orbit'
         _.on '.summary'
-
   load: (entry) ->
     _.off '.entry, .summary'
 

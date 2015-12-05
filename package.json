@@ -18,7 +18,7 @@
   "homepage": "https://github.com/acidjazz/astro",
   "dependencies": {
     "luja": "git://github.com/acidjazz/luja.git",
-    "objectus": "^1.0.0"
+    "objectus": "latest"
   },
   "devDependencies": {
     "browser-sync": "^2.10.0",

@@ -291,7 +291,7 @@ Global =
     style = el.attr 'style'
     url = style.match(/url\((.*)\)/)
     if url isnt null and url[1] isnt undefined
-      return url[1]
+      return url[1].trim()
     else
       console.log 'ERROR cannot find style for element', style
       console.log url

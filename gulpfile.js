@@ -20,7 +20,6 @@ objectus('dat/', function(error, result) {
   if (error) {
     notify(error);
   }
-
   data = result
 });
 

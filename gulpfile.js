@@ -30,7 +30,7 @@ gulp.task('objectus', function() {
       notify(error);
     }
     
-    data = result
+    data = result;
 
   });
   return true;
@@ -64,51 +64,31 @@ gulp.task('coffee', function() {
 
 gulp.task('stylus', function() {
 
-  objectus('dat/', function(error, result) {
+  gulp.src('sty/main.styl')
 
-    if (error) {
-      notify(error);
-    }
-
-    data = result
-
-    gulp.src('sty/main.styl')
-
-      .pipe(sourcemaps.init())
-      .pipe(stylus({ rawDefine: { data: data } })
-      .on('error', notify.onError(function(error) {
-        return {title: "Stylus error: " + error.name, message: error.message, sound: 'Pop' };
-      })))
-      .pipe(sourcemaps.write())
-      .pipe(gulp.dest('pub/css'))
-      .pipe(sync.stream());
-  });
-
+    .pipe(sourcemaps.init())
+    .pipe(stylus({ rawDefine: { data: data } })
+    .on('error', notify.onError(function(error) {
+      return {title: "Stylus error: " + error.name, message: error.message, sound: 'Pop' };
+    })))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('pub/css'))
+    .pipe(sync.stream());
 });
 
 gulp.task('jade', function() {
 
-  objectus('dat/', function(error, result) {
-
-    if (error) {
-      notify(error);
-    }
-
-    data = result
-
-    gulp.src('tpl/**/index.jade')
-      .pipe(jade({pretty: true, locals: {data: data}})
-        .on('error', notify.onError(function(error) {
-          return {title: "Jade error: " + error.name, message: error.message, sound: 'Pop' };
-        }))
-        .on('error', function(error) {
-          console.log(error);
-        })
-      )
-      .pipe(gulp.dest('pub'))
-      .pipe(sync.stream());
-
-  });
+  gulp.src('tpl/**/index.jade')
+    .pipe(jade({pretty: true, locals: {data: data}})
+      .on('error', notify.onError(function(error) {
+        return {title: "Jade error: " + error.name, message: error.message, sound: 'Pop' };
+      }))
+      .on('error', function(error) {
+        console.log(error);
+      })
+    )
+    .pipe(gulp.dest('pub'))
+    .pipe(sync.stream());
 
 });
 

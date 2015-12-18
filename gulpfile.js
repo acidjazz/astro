@@ -77,6 +77,7 @@ gulp.task('stylus', function() {
 });
 
 gulp.task('jade', function() {
+
   gulp.src('tpl/**/index.jade')
     .pipe(jade({pretty: true, locals: {data: data}})
       .on('error', notify.onError(function(error) {

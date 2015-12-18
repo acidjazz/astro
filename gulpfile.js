@@ -64,30 +64,52 @@ gulp.task('coffee', function() {
 
 gulp.task('stylus', function() {
 
-  gulp.src('sty/main.styl')
+  objectus('dat/', function(error, result) {
 
-    .pipe(sourcemaps.init())
-    .pipe(stylus({ rawDefine: { data: data } })
-    .on('error', notify.onError(function(error) {
-      return {title: "Stylus error: " + error.name, message: error.message, sound: 'Pop' };
-    })))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('pub/css'))
-    .pipe(sync.stream());
+    if (error) {
+      notify(error);
+    }
+
+    data = result
+
+    gulp.src('sty/main.styl')
+
+      .pipe(sourcemaps.init())
+      .pipe(stylus({ rawDefine: { data: data } })
+      .on('error', notify.onError(function(error) {
+        return {title: "Stylus error: " + error.name, message: error.message, sound: 'Pop' };
+      })))
+      .pipe(sourcemaps.write())
+      .pipe(gulp.dest('pub/css'))
+      .pipe(sync.stream());
+  });
+
 });
 
 gulp.task('jade', function() {
-  gulp.src('tpl/**/index.jade')
-    .pipe(jade({pretty: true, locals: {data: data}})
-      .on('error', notify.onError(function(error) {
-        return {title: "Jade error: " + error.name, message: error.message, sound: 'Pop' };
-      }))
-      .on('error', function(error) {
-        console.log(error);
-      })
-    )
-    .pipe(gulp.dest('pub'))
-    .pipe(sync.stream());
+
+  objectus('dat/', function(error, result) {
+
+    if (error) {
+      notify(error);
+    }
+
+    data = result
+
+    gulp.src('tpl/**/index.jade')
+      .pipe(jade({pretty: true, locals: {data: data}})
+        .on('error', notify.onError(function(error) {
+          return {title: "Jade error: " + error.name, message: error.message, sound: 'Pop' };
+        }))
+        .on('error', function(error) {
+          console.log(error);
+        })
+      )
+      .pipe(gulp.dest('pub'))
+      .pipe(sync.stream());
+
+  });
+
 });
 
 gulp.task('sync', function() {

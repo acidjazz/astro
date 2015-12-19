@@ -11,15 +11,15 @@ mixin pimg(folder, image, padding)
 
 mixin bimg(folder, image, padding)
   if padding == undefined || padding == ''
-    - padding = 'both'
+    - padding = 'none'
   .image(class='pad_' + padding)
     .img(style='background-image: url(/img/blog/'+folder+'/1440/'+image+');')
     //img(src='../img/work/'+folder+'/'+image)
 
-mixin bimages(folder, image1, image2)
+mixin bimages(folder, image1, image2, padding)
   .images
-    +bimg(folder, image1)
-    +bimg(folder, image2)
+    +bimg(folder, image1, padding)
+    +bimg(folder, image2, padding)
     .clear
 
 mixin youtube(id)

@@ -8,9 +8,12 @@ Creators of Supercharged Brand and Product Experiences. Astro is a registered tr
 
 
 ### Requirements
+
 * [Node.js v5.* with NPM v3.*](https://nodejs.org/en/)
 * [Git 2.*](https://git-scm.com/) (should be included with OSX)
+
 ### Installation
+
 * Clone and/or Sync the latest source using either 
     * The [GitHub Desktop App](https://desktop.github.com/)
     * Via the command line tool

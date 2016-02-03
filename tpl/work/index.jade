@@ -133,7 +133,6 @@ block content
         include owlet
       include _credits
 
-
     - var project = data.work.masterpix
 
     .project.project_masterpix.off
@@ -158,6 +157,15 @@ block content
       .body
         include sol
       include _credits
+
+    - var project = data.work.vive
+
+    .project.project_vive.off
+      include _header
+      .body
+        include vive
+      include _credits   
+
 
   include ../inc/bottom
 

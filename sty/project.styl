@@ -139,12 +139,18 @@
   > .body
     > .embed
       desktop()
+      &.full
+        max-width none
       > .inner
-      	padding-bottom 56.25%
-      	position relative
-      	height 0
-      	max-width 1020px
-      	margin auto
+        padding-bottom 56.25%
+        position relative
+        height 0
+        max-width 1020px
+        margin: auto
+
+        &.full
+          max-width none
+
       .iframe
         position absolute
     > .image
@@ -157,6 +163,8 @@
       > .inner 
         box-sizing: border-box
         desktop()
+        &.full
+          max-width none
         > img
           width 100%
       > .inner_100
@@ -357,7 +365,8 @@
       
     img
       width 100%
-
+.minheight_400
+  min-height 400px  
 .minheight_500
   min-height 500px     
 .minheight_600

@@ -158,7 +158,14 @@ block content
         include sol
       include _credits
 
-    
+    - var project = data.work.vive
+
+    .project.project_vive.off
+      include _header
+      .body
+        include vive
+      include _credits   
+
     - var project = data.work.astorandblack
 
     .project.project_astorandblack.off

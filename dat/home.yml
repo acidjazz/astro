@@ -26,8 +26,6 @@ featured:
   image: work/owlet/1440/IMG_7290.jpg
   link: /work/#owlet
 
-  
-
 grid:
  -
   type: work
@@ -37,7 +35,7 @@ grid:
   folder: pins
  -
   type: work
-  folder: threedr
+  folder: vive
  -
   type: blog
   folder: iceland

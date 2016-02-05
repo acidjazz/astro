@@ -42,6 +42,15 @@ block content
       .clear
 
     // PROJECT PAGES
+
+    - var project = data.work.reyes
+
+    .project.project_reyes.off
+      include _header
+      .body
+        include reyes
+      include _credits   
+
     - var project = data.work.threedr
 
     .project.project_threedr.off

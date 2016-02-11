@@ -1,0 +1,19 @@
+---
+  folder: nebula
+  cover: cover.jpg
+  hero: cover.jpg
+  name: The Nebula One
+  description: Nebula, a company that takes an original approach to cloud computing, asked Astro to take a fresh approach to server design.
+  color: blue3
+  filters:
+    - Holistic
+    - Strategy
+    - Brand
+    - Digital
+    - Product
+
+
+  related:
+    - Vive
+    - threedr
+    - XBOX

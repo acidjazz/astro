@@ -78,7 +78,6 @@ Work =
 
     project = $(this).data 'project'
     history.pushState null, null, "/work/##{project}"
-    console.log history
 
     document.body.scrollTop = document.documentElement.scrollTop = 0
     Work.load project
@@ -147,7 +146,6 @@ Work =
     $(".project_#{project} img").each (i, v) ->
       srcs.push "/img/work/#{project}/1440/#{$(v).data('src')}"
 
-    console.log srcs
     return srcs
 
 

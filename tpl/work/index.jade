@@ -42,6 +42,15 @@ block content
       .clear
 
     // PROJECT PAGES
+
+    - var project = data.work.reyes
+
+    .project.project_reyes.off
+      include _header
+      .body
+        include reyes
+      include _credits   
+
     - var project = data.work.threedr
 
     .project.project_threedr.off
@@ -133,6 +142,14 @@ block content
         include owlet
       include _credits
 
+    - var project = data.work.masterpix
+
+    .project.project_masterpix.off
+      include _header
+      .body
+        include masterpix
+      include _credits
+
 
     - var project = data.work.minus8
 
@@ -149,6 +166,23 @@ block content
       .body
         include sol
       include _credits
+
+    - var project = data.work.vive
+
+    .project.project_vive.off
+      include _header
+      .body
+        include vive
+      include _credits   
+
+    - var project = data.work.astorandblack
+
+    .project.project_astorandblack.off
+      include _header
+      .body
+        include astorandblack
+      include _credits   
+
 
   include ../inc/bottom
 

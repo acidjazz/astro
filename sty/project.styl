@@ -139,12 +139,18 @@
   > .body
     > .embed
       desktop()
+      &.full
+        max-width none
       > .inner
-      	padding-bottom 56.25%
-      	position relative
-      	height 0
-      	max-width 1020px
-      	margin auto
+        padding-bottom 56.25%
+        position relative
+        height 0
+        max-width 1020px
+        margin: auto
+
+        &.full
+          max-width none
+
       .iframe
         position absolute
     > .image
@@ -157,6 +163,8 @@
       > .inner 
         box-sizing: border-box
         desktop()
+        &.full
+          max-width none
         > img
           width 100%
       > .inner_100
@@ -214,11 +222,17 @@
         color: c.black1 
       &.blue5
         background-color: c.blue5
+      &.blue6
+        background-color: c.blue6
       &.blue3
         background-color: c.blue3
+      &.blue1
+        background-color: c.blue1
       &.blue
         background-color: c.blue1
         color: c.white1
+      &.blue2
+        background-color: c.blue2
       &.red
         background-color: c.red1
         color: c.white1
@@ -355,7 +369,8 @@
       
     img
       width 100%
-
+.minheight_400
+  min-height 400px  
 .minheight_500
   min-height 500px     
 .minheight_600

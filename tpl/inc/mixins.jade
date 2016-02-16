@@ -9,11 +9,11 @@ mixin pimg(folder, image, padding)
     .img(style='background-image: url(/img/work/'+folder+'/1440/'+image+');')
     //img(src='../img/work/'+folder+'/'+image)
 
-mixin bimg(folder, image, padding)
+mixin bimg(folder, image, padding, cls)
   if padding == undefined || padding == ''
     - padding = 'none'
   .image(class='pad_' + padding)
-    .img(style='background-image: url(/img/blog/'+folder+'/1440/'+image+');')
+    .img(style='background-image: url(/img/blog/'+folder+'/1440/'+image+');',class=cls)
     //img(src='../img/work/'+folder+'/'+image)
 
 mixin bimages(folder, image1, image2, padding)

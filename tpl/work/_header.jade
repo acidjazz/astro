@@ -3,7 +3,9 @@
 
 .description(style='background-color: ' + data.colors[project.color] )
   .name #{project.name}
-  .filters !{project.filters.join('&nbsp;&nbsp;/&nbsp;&nbsp;')}
+  .filters
+    each filter in project.filters
+      .filter=filter
   .copy #{project.description}
 
 //.fcontainer

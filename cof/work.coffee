@@ -20,10 +20,9 @@ Work =
 
     $('.projects > .summary > .thumbs > .thumb, .related > .inner > .relateds > .thumb').on 'click', Work.projectHandler
     $('.project .filters > .inner > .filtermenu > .filter').on 'click', Work.filterHandler
-
     $('.summary .filters > .inner > .filtermenu > .filter').on 'click', Work.summaryFilterHandler
+    $('.project > .description > .filters > .filter').on 'click', Work.projectFilterHandler
     $(window).on 'popstate', Work.pop
-
 
   pop: (e) ->
 
@@ -39,23 +38,28 @@ Work =
       _.off '.summary > .filters > .inner > .filtermenu > .filter'
       _.on '.summary > .filters > .inner > .filtermenu > .filter_all'
 
+  projectFilterHandler: ->
+
+    filter = $(this).text()
+    Work.summary(filter)
+
   summaryFilterHandler: ->
+    filter = $(this).text().trim()
+    copy = $(this).data 'copy'
+    Work.summaryFilter filter, copy
+
+  summaryFilter: (filter, copy) ->
 
     #document.body.scrollTop = document.documentElement.scrollTop = 0
 
     _.off '.summary .filters > .inner > .filtermenu > .filter'
-    _.on this
+    _.on ".summary .filters > .inner > .filtermenu > .filter.filter_#{filter}"
 
-    filter = $(this).text().trim()
-    copy = $(this).data 'copy'
-
-    $('.summary > .hero > .copy2').text copy
-    #$('.summary > .hero > .copy1').text filter
+    $('.summary > .hero > .copy2').text copy if copy
 
     if filter is 'all'
       _.on '.summary > .thumbs > .thumb'
       return true
-
 
     _.off '.summary > .thumbs > .thumb'
     setTimeout ->
@@ -66,7 +70,6 @@ Work =
         else
           _.off $(el)
     , 200
-
 
   filterHandler: ->
     t = $ this
@@ -82,7 +85,7 @@ Work =
     document.body.scrollTop = document.documentElement.scrollTop = 0
     Work.load project
 
-  summary: () ->
+  summary: (filter) ->
     location.hash = ''
 
     $('.orbit').removeClass (index, css) ->
@@ -106,6 +109,7 @@ Work =
         NProgress.done()
         _.off '.orbit'
         _.on '.summary'
+        Work.summaryFilter(filter) if filter
 
   load: (project) ->
     _.off '.project, .summary'

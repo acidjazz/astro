@@ -26,7 +26,8 @@ block content
                   .filter(class='filter_' + filter.name,data-copy=filter.copy)=filter.name
             .clear
       .thumbs
-        each project in data.work
+        each order in data.projects
+          - var project = data.work[order];
           .thumb.on(
             class='thumb_' + project.folder,
             data-project=project.folder,

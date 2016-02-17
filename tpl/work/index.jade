@@ -44,6 +44,15 @@ block content
 
     // PROJECT PAGES
 
+
+    - var project = data.work.vive
+
+    .project.project_vive.off
+      include _header
+      .body
+        include vive
+      include _credits 
+
     - var project = data.work.reyes
 
     .project.project_reyes.off
@@ -163,15 +172,7 @@ block content
       include _header
       .body
         include sol
-      include _credits
-
-    - var project = data.work.vive
-
-    .project.project_vive.off
-      include _header
-      .body
-        include vive
-      include _credits   
+      include _credits  
 
     - var project = data.work.astorandblack
 

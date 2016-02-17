@@ -1,0 +1,25 @@
+{
+  "name": "astro",
+  "description": "astrostudios.com",
+  "main": "index.js",
+  "authors": [
+    "Kevin Olson <acidjazz@gmail.com> (http://ke.vin.so/)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/acidjazz/astro",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "dbar": "*"
+  }
+
+}

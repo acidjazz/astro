@@ -9,9 +9,6 @@ Global =
 
   i: ->
 
-    NProgress.configure
-      showSpinner: false
-
     Global.cache.astro = $('.astro')
     Global.cache.red1 = $('.red1')
     Global.cache.burger = $('.top > .inner > .burger > .inner')

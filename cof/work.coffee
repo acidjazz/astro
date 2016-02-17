@@ -88,14 +88,16 @@ Work =
   summary: (filter) ->
     location.hash = ''
 
-    $('.orbit').removeClass (index, css) ->
-      (css.match(/\borbit_\S+/g) or []).join ' '
-    $('#nprogress .bar').removeClass (index, css) ->
-      (css.match(/\bbar__\S+/g) or []).join ' '
+    setTimeout ->
+      $('.orbit').removeClass (index, css) ->
+        (css.match(/\borbit_\S+/g) or []).join ' '
+      $('.dbar').removeClass (index, css) ->
+        (css.match(/\bbar_\S+/g) or []).join ' '
+    , 500
 
     _.off '.project'
     _.on '.orbit'
-    NProgress.start()
+    dbar.i()
 
     srcs = []
 
@@ -104,9 +106,9 @@ Work =
 
     Global.preload srcs,
       (progress) ->
-        NProgress.set progress
+        dbar.perc progress
       , (complete) ->
-        NProgress.done()
+        dbar.d()
         _.off '.orbit'
         _.on '.summary'
         Work.summaryFilter(filter) if filter
@@ -115,21 +117,21 @@ Work =
     _.off '.project, .summary'
 
     $('.orbit').addClass "orbit_#{project}"
-    $('#nprogress .bar').addClass "bar_#{project}"
+    $('.dbar').addClass "bar_#{project}"
 
     _.on '.orbit'
 
-    NProgress.start()
-    $('#nprogress .bar').addClass "bar_#{project}"
+    dbar.i()
+    $('.dbar').addClass "bar_#{project}"
     srcs = Work.srcs project
 
     document.body.scrollTop = document.documentElement.scrollTop = 0
 
     Global.preload srcs,
       (progress) ->
-        NProgress.set progress
+        dbar.perc progress
       , (complete) ->
-        NProgress.done()
+        dbar.d()
         _.off '.orbit'
         $(".project img").attr 'src', ''
 
@@ -137,11 +139,13 @@ Work =
           $(v).attr 'src', "/img/work/#{project}/1440/#{$(v).data('src')}"
 
         _.on ".project_#{project}"
-
-        $('.orbit').removeClass (index, css) ->
-          (css.match(/\borbit_\S+/g) or []).join ' '
-        $('#nprogress .bar').removeClass (index, css) ->
-          (css.match(/\bbar__\S+/g) or []).join ' '
+        
+        setTimeout ->
+          $('.orbit').removeClass (index, css) ->
+            (css.match(/\borbit_\S+/g) or []).join ' '
+          $('.dbar').removeClass (index, css) ->
+            (css.match(/\bbar_\S+/g) or []).join ' '
+        , 500
 
   srcs: (project) ->
 

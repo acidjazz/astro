@@ -55,13 +55,15 @@ html(lang='en')
     //include preloader
     block content
 
+    include ../../bower_components/dbar/src/dbar.jade
     block script
    
       script(type='text/javascript').
 
         phrases = !{JSON.stringify(data.phrases)};
 
-        Loader.scripts.jst_lib.push('jquery-2.1.4.min');
+        //Loader.scripts.jst_lib.push('jquery-2.1.4.min');
+        Loader.scripts.jst_lib.push('vendor.min');
         Loader.scripts.jst_lib.push('nprogress');
         Loader.scripts.jst_lib.push('distort.min');
         Loader.scripts.jst.push('global');

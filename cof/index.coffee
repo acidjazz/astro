@@ -9,12 +9,13 @@ Index =
 
     src = Global.srcFromStyle($('.featureds > .inner > .featured:first-child'))
 
-    NProgress.start()
+    dbar.i()
+    console.log src
     Global.preload [src],
       (progress) ->
-        NProgress.set progress
+        dbar.perc progress
     , (complete) ->
-      NProgress.done()
+      dbar.d()
       _.off '.orbit'
       _.on '.lines'
 
@@ -56,12 +57,12 @@ Index =
 
     src = Global.srcFromStyle($(".featureds > .inner > .featured:nth-child(#{key+1})"))
 
-    NProgress.start()
+    dbar.i()
     Global.preload [src],
       (progress) ->
-        NProgress.set progress
+        dbar.perc progress
     , (complete) ->
-      NProgress.done()
+      dbar.d()
       _.off '.featureds > .inner > .featured'
       _.on ".featureds > .inner > .featured:nth-child(#{key+1})"
       _.off '.lines > .line'

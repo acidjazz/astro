@@ -8,11 +8,13 @@ Contact =
 
     src = '/img/contact/space.jpg'
 
+
+    dbar.i()
     Global.preload [src],
       (progress) ->
-        NProgress.set progress
+        dbar.perc progress
       , (complete) ->
-        NProgress.done()
+        dbar.d()
         _.off '.orbit'
         _.on '.contact > .banner > .inner'
 

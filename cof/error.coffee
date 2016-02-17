@@ -1,5 +1,5 @@
 Error =
   i: ->
-    NProgress.done()
+    dbar.d()
     _.off '.orbit'
 

@@ -9,6 +9,9 @@
   for key, project in data.work
     &.orbit_{project.folder} > .sun
       background-color: c[project.color]
+  for key, blog in data.blog
+    &.orbit_{blog.folder} > .sun
+      background-color: c[blog.color]
 
   > .sun
     position absolute

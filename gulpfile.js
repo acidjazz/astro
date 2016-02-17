@@ -39,7 +39,8 @@ gulp.task('objectus', function() {
 gulp.task('vendors', function() {
 
   gulp.src([
-      'bower_components/jquery/dist/jquery.js'
+      'bower_components/jquery/dist/jquery.js',
+      'bower_components/dbar/src/pub/dbar.js'
   ])
   .pipe(sourcemaps.init())
   .pipe(uglify())

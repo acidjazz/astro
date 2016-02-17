@@ -12,6 +12,16 @@ vendor-prefixes ?= webkit moz o ms official
 
 @import '/inc/*'
 
+@import '../bower_components/dbar/src/dbar.styl'
+
+.dbar
+  for key, project in data.work
+    &.bar_{project.folder} > .inner > .full
+      background-color: c[project.color]
+  for key, blog in data.blog
+    &.bar_{blog.folder} > .inner > .full
+      background-color: c[blog.color]
+
 .clear
   clearfix()
 

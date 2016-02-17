@@ -125,14 +125,16 @@ Blog =
 
     location.hash = ''
 
-    $('.orbit').removeClass (index, css) ->
-      (css.match(/\borbit_\S+/g) or []).join ' '
-    $('#nprogress .bar').removeClass (index, css) ->
-      (css.match(/\bbar__\S+/g) or []).join ' '
+    setTimeout ->
+      $('.orbit').removeClass (index, css) ->
+        (css.match(/\borbit_\S+/g) or []).join ' '
+      $('.dbar').removeClass (index, css) ->
+        (css.match(/\bbar_\S+/g) or []).join ' '
+    , 1000
 
     _.off '.entry'
     _.on '.orbit'
-    NProgress.start()
+    dbar.i()
 
     srcs = []
 
@@ -142,36 +144,38 @@ Blog =
 
     Global.preload srcs,
       (progress) ->
-        NProgress.set progress
+        dbar.perc progress
       , (complete) ->
-        NProgress.done()
+        dbar.d()
         _.off '.orbit'
         _.on '.summary'
   load: (entry) ->
     _.off '.entry, .summary'
 
     $('.orbit').addClass "orbit_#{entry}"
-    $('#nprogress .bar').addClass "bar_#{entry}"
+    $('.dbar').addClass "bar_#{entry}"
 
     _.on '.orbit'
 
-    NProgress.start()
-    $('#nprogress .bar').addClass "bar_#{entry}"
+    dbar.i()
+    $('.dbar').addClass "bar_#{entry}"
     srcs = Blog.srcs entry
     Global.preload srcs,
       (progress) ->
-        NProgress.set progress
+        dbar.perc progress
       , (complete) ->
-        NProgress.done()
+        dbar.d()
         _.off '.orbit'
         _.on ".entry_#{entry}"
 
         Blog.title = $(".entry_#{entry} > .details > .copy > .name").text()
 
-        $('.orbit').removeClass (index, css) ->
-          (css.match(/\borbit_\S+/g) or []).join ' '
-        $('#nprogress .bar').removeClass (index, css) ->
-          (css.match(/\bbar__\S+/g) or []).join ' '
+        setTimeout ->
+          $('.orbit').removeClass (index, css) ->
+            (css.match(/\borbit_\S+/g) or []).join ' '
+          $('.dbar').removeClass (index, css) ->
+            (css.match(/\bbar_\S+/g) or []).join ' '
+        , 1000
 
   srcs: (entry) ->
     srcs = [Global.srcFromStyle($(".entry_#{entry} > .cover"))]

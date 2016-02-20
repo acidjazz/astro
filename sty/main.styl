@@ -15,6 +15,7 @@ vendor-prefixes ?= webkit moz o ms official
 @import '../bower_components/dbar/src/dbar.styl'
 
 .dbar
+  height 15px
   for key, project in data.work
     &.bar_{project.folder} > .inner > .full
       background-color: c[project.color]

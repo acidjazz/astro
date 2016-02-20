@@ -4,7 +4,6 @@ Work =
   cproject: false
 
   i: ->
-
     if Object.keys(projects).indexOf(location.hash.replace('#','')) isnt -1
       project = location.hash.replace '#', ''
       Work.cproject = project
@@ -86,14 +85,13 @@ Work =
     Work.load project
 
   summary: (filter) ->
+
     location.hash = ''
 
-    setTimeout ->
-      $('.orbit').removeClass (index, css) ->
-        (css.match(/\borbit_\S+/g) or []).join ' '
-      $('.dbar').removeClass (index, css) ->
-        (css.match(/\bbar_\S+/g) or []).join ' '
-    , 500
+    $('.orbit').removeClass (index, css) ->
+      (css.match(/\borbit_\S+/g) or []).join ' '
+    $('.dbar').removeClass (index, css) ->
+      (css.match(/\bbar_\S+/g) or []).join ' '
 
     _.off '.project'
     _.on '.orbit'
@@ -114,13 +112,13 @@ Work =
         Work.summaryFilter(filter) if filter
 
   load: (project) ->
+
     _.off '.project, .summary'
 
     $('.orbit').addClass "orbit_#{project}"
     $('.dbar').addClass "bar_#{project}"
 
     _.on '.orbit'
-
     dbar.i()
     $('.dbar').addClass "bar_#{project}"
     srcs = Work.srcs project

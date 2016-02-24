@@ -1,0 +1,109 @@
+<manifest alg="2" build="2015.1.0.342" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="astrostudios.com/log2" resolutions="1x" timestamp="1456279643051">
+  <folder name="css">
+    <file name="site_global.css" crc="3889750230"/>
+    <file name="master_a-master.css" crc="4291039631" ref="index"/>
+    <file name="nomq_preview_master_a-master.css" crc="321525473" ref="index"/>
+    <file name="index.css" crc="510535965" ref="index"/>
+    <file name="nomq_index.css" crc="505070447" ref="index"/>
+  </folder>
+  <folder name="fonts">
+    <file name="blenderpro-bold.woff" crc="316973539"/>
+    <file name="blenderpro-bold.eot" crc="3957891925"/>
+    <file name="blenderpro-bold.svg" crc="194772252"/>
+    <file name="blenderpro-book.woff" crc="23527262"/>
+    <file name="blenderpro-book.eot" crc="168154323"/>
+    <file name="blenderpro-book.svg" crc="3889139666"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="409338010" ref="index"/>
+    <file name="museutils.js" crc="4190794036" ref="index"/>
+    <file name="whatinput.js" crc="84559013" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3792042506" ref="index"/>
+    <file name="jquery.watch.js" crc="349565855" ref="index"/>
+    <file name="webpro.js" crc="488283310" ref="index"/>
+    <file name="musewpslideshow.js" crc="248860441" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="3898476799" ref="index"/>
+    <file name="touchswipe.js" crc="4191887251" ref="index"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="408737887" ref="index"/>
+    <file name="form_check.php" crc="430210585" ref="index"/>
+    <file name="form_throttle.php" crc="282343929" ref="index"/>
+    <file name="form_process.php" crc="339897355" ref="index"/>
+    <file name="form-u27438.php" crc="87548023" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="a-angle2.jpg" crc="34815027" ref="index"/>
+    <file name="pasted-svg-41592x41.svg" crc="349988611" ref="index"/>
+    <file name="pasted svg 41592x41_poster_.png" crc="3845764006" ref="index"/>
+    <file name="160223_vivegif_0000_sketch.jpg" crc="3878398360" seo="true" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="160223_vivegif_0001_logo.jpg" crc="3803497055" seo="true" ref="index"/>
+    <file name="160223_vivegif_0002_pool-low.jpg" crc="4077262439" seo="true" ref="index"/>
+    <file name="160223_vivegif_0003_aztec-low.jpg" crc="405892774" seo="true" ref="index"/>
+    <file name="160223_vivegif_0004_space-low.jpg" crc="415541841" seo="true" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="img_1081-edit-edit-2.jpg" crc="4202701646" ref="index"/>
+    <file name="_dsf1319-2-u6464-fr.jpg" crc="4243722776" ref="index"/>
+    <file name="150529_electricgoggle_lifestyle_banner.jpg" crc="333031732" ref="index"/>
+    <file name="allartisans.jpg" crc="4227361313" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16498-fr.jpg" crc="4264853968" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16498-r-fr.png" crc="3956615122" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16529-fr.png" crc="397874279" ref="index"/>
+    <file name="f89fd4_35e429839e974c5db2bf35907bbd0576-buttonu16529-fr.jpg" crc="508571892" ref="index"/>
+    <file name="f89fd4_35e429839e974c5db2bf35907bbd0576-buttonu16529-r-fr.png" crc="433053290" ref="index"/>
+    <file name="https_proxy-buttonu16555-fr.jpg" crc="4069991743" ref="index"/>
+    <file name="https_proxy-buttonu16555-r-fr.png" crc="4057656752" ref="index"/>
+    <file name="light-show-1-buttonu16682-fr.jpg" crc="3957799479" ref="index"/>
+    <file name="light-show-1-buttonu16682-r-fr.png" crc="125878796" ref="index"/>
+    <file name="160201_rachael_cafe2-3000x1688.jpg" crc="3847914161" ref="index"/>
+    <file name="aboltheadon-800px.gif" crc="35887748" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16498-fr2.jpg" crc="496152854" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16498-r-fr2.png" crc="3803447993" ref="index"/>
+    <file name="img_1081-edit-edit-2-u7833-fr.jpg" crc="155964412" ref="index"/>
+    <file name="_dsf1319-2-u6464-fr2.jpg" crc="217733023" ref="index"/>
+    <file name="allartisans-u8639-fr.jpg" crc="446860378" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16498-fr3.jpg" crc="253375391" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16498-r-fr3.png" crc="3800764483" ref="index"/>
+    <file name="f89fd4_35e429839e974c5db2bf35907bbd0576-buttonu16529-fr2.jpg" crc="3801462203" ref="index"/>
+    <file name="f89fd4_35e429839e974c5db2bf35907bbd0576-buttonu16529-r-fr2.png" crc="375929432" ref="index"/>
+    <file name="https_proxy-buttonu16555-fr2.jpg" crc="529111178" ref="index"/>
+    <file name="https_proxy-buttonu16555-r-fr2.png" crc="69514466" ref="index"/>
+    <file name="light-show-1-buttonu16682-fr2.jpg" crc="217554744" ref="index"/>
+    <file name="light-show-1-buttonu16682-r-fr2.png" crc="3844775701" ref="index"/>
+    <file name="_dsf1319-2.jpg" crc="4193232206" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16498-fr4.jpg" crc="366146530" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16498-r-fr4.png" crc="363569647" ref="index"/>
+    <file name="img_1081-edit-edit-2-u7833-fr2.jpg" crc="109545099" ref="index"/>
+    <file name="_dsf1319-2-u6464-fr3.jpg" crc="487901134" ref="index"/>
+    <file name="allartisans-u8639-fr2.jpg" crc="4203470063" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16498-fr5.jpg" crc="3807345976" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16498-r-fr5.png" crc="471524871" ref="index"/>
+    <file name="https_proxy-buttonu16555-fr3.jpg" crc="18960389" ref="index"/>
+    <file name="https_proxy-buttonu16555-r-fr3.png" crc="446721175" ref="index"/>
+    <file name="f89fd4_35e429839e974c5db2bf35907bbd0576-buttonu16529-fr3.jpg" crc="193797664" ref="index"/>
+    <file name="f89fd4_35e429839e974c5db2bf35907bbd0576-buttonu16529-r-fr3.png" crc="3895179690" ref="index"/>
+    <file name="light-show-1-buttonu16682-fr3.jpg" crc="279051985" ref="index"/>
+    <file name="light-show-1-buttonu16682-r-fr3.png" crc="3827990846" ref="index"/>
+    <file name="u27450-17.png" crc="174409429" ref="index"/>
+    <file name="u27450-17-r.png" crc="4086115669" ref="index"/>
+    <file name="u27450-17-m.png" crc="4086115669" ref="index"/>
+    <file name="u27450-17-fs.png" crc="174409429" ref="index"/>
+    <file name="u27450-172.png" crc="174409429" ref="index"/>
+    <file name="u27450-17-r2.png" crc="4086115669" ref="index"/>
+    <file name="u27450-17-m2.png" crc="4086115669" ref="index"/>
+    <file name="u27450-17-fs2.png" crc="174409429" ref="index"/>
+    <file name="u27450-173.png" crc="174409429" ref="index"/>
+    <file name="u27450-17-r3.png" crc="4086115669" ref="index"/>
+    <file name="u27450-17-m3.png" crc="4086115669" ref="index"/>
+    <file name="u27450-17-fs3.png" crc="174409429" ref="index"/>
+    <file name="u27450-174.png" crc="305882438" ref="index"/>
+    <file name="u27450-17-r4.png" crc="69341570" ref="index"/>
+    <file name="u27450-17-m4.png" crc="69341570" ref="index"/>
+    <file name="u27450-17-fs4.png" crc="305882438" ref="index"/>
+    <file name="u27450-175.png" crc="305882438" ref="index"/>
+    <file name="u27450-17-r5.png" crc="69341570" ref="index"/>
+    <file name="u27450-17-m5.png" crc="69341570" ref="index"/>
+    <file name="u27450-17-fs5.png" crc="305882438" ref="index"/>
+  </folder>
+  <file name="index.html" crc="3999828938" seo="true" mt="1456279641003" redirect="true"/>
+</manifest>

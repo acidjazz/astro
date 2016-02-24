@@ -23,12 +23,36 @@ Index =
     clearInterval Index.lineInterval if Index.lineInterval isnt false
     Index.lineInterval = setInterval Index.lineRotate, 4000
 
+    Index.instagram.load()
+
   handlers: ->
 
     $('.lines > .line').on 'click', Index.lineHandler
     $('.featureds').on 'click', Index.featuredHandler
 
     $('.projects > .thumb').on 'click', Index.grid
+
+  instagram:
+
+    endpoint: 'https://api.instagram.com/v1/users/self/media/recent/'
+    token: '264367793.55cd6c3.ae227ede2f5c48eaab95ca57ffc4c0f6'
+    loaded: false
+    posts: 6
+    load: ->
+      Loader.load "#{Index.instagram.endpoint}?access_token=#{Index.instagram.token}&callback=Index.instagram.callback"
+      Index.instagram.loaded = true
+
+    callback: (json) ->
+      console.log json
+      for post, index in json.data
+        $('.instagram').append '<div class="clear"></div>' if index is Index.instagram.posts
+        return true if index is Index.instagram.posts
+        $('.instagram').append """
+
+          <a href="#{post.link}" target="_new" class="post">
+            <img src="#{post.images.standard_resolution.url}" />
+          </a>
+        """
 
   lineRotate: ->
     if Index.lineKey is ($('.featureds > .inner > .featured').length-1)

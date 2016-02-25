@@ -240,18 +240,44 @@
                 color: c.white1
      
     > .nav
-      font f_h3
+      font f_h5
       desktop()
-      padding 0 0 50px 0
+      padding 0 0 100px 0
       clear both
       > .prev, > .next
         display block
         text-decoration none
         color: c.black1
+      > .prev:hover, > .next:hover > .copy
+        color: c.red2
+      > .prev:hover > .arrow.left
+        border-right: 10px solid c.red2
+      > .next:hover > .arrow.right
+        border-left: 10px solid c.red2
       > .prev
         float left
+        > .copy
+          display inline-block
+        > .arrow.left
+          margin 10px 10px 0
+          display inline-block
+          width 0
+          height 0 
+          border-top 10px solid transparent
+          border-bottom 10px solid transparent
+          border-right: 10px solid c.black1
       > .next
         float right
+        > .copy
+          display inline-block
+        > .arrow.right
+          margin 10px 0 0 10px
+          display inline-block
+          width 0
+          height 0 
+          border-top 10px solid transparent
+          border-bottom 10px solid transparent
+          border-left: 10px solid c.black1
     > .related
       > .title
         font f_h3

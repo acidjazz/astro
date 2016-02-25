@@ -3,15 +3,36 @@
   background-color: c.black1
   > .instagram
     text-align center
-    padding 200px 0
-    > a.post
+    background-color white
+    padding 200px 170px
+    > .title
+      font f_h3
+      text-align left
+    > .follow
       display block
-      float left
-      width 33.333vw
-      height 33.333vw
-      > img
-        width inherit
-        height inherit
+      text-decoration none
+      font: f_copyls
+      border: 2px solid c.red2
+      width 200px
+      padding 10px 0
+      color: c.red2
+      text-transform uppercase
+      margin 50px auto 0 auto
+    > .inner
+      m = 5%
+      > .post
+        width 25%
+        height auto
+        display block
+        float left
+        > a
+          display block
+          padding m
+          > img
+            width 100%
+            height auto
+
+          
 
   > .featureds
     cursor pointer
@@ -139,3 +160,8 @@
         font f_hm
       > .copy2, > .copy3
         font f_copy1
+  .index > .instagram
+    padding 100px 20px
+    > .inner > .post
+      width 50%
+

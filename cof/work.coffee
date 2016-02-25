@@ -86,6 +86,10 @@ Work =
 
   summary: (filter) ->
 
+    $('iframe').each (i, el) ->
+      src = $(el).attr 'src'
+      $(el).attr 'src', src
+
     location.hash = ''
 
     $('.orbit').removeClass (index, css) ->
@@ -112,6 +116,7 @@ Work =
         Work.summaryFilter(filter) if filter
 
   load: (project) ->
+
 
     _.off '.project, .summary'
 

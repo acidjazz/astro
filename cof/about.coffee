@@ -25,7 +25,7 @@ About =
     $('.capcenter > .capmenu > .cap').on 'click', About.capcenter
     $('.fived > .fivedmenu > .item').on 'click', About.fived
 
-    $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter').on 'click', About.menuHandler
+    $('.about > .fcontainer > .filters > .inner > .filtermenu > .filter, .info.emails > a.p').on 'click', About.menuHandler
     $('.about > .sections > .section_careers').on 'click', '.jobs > .job', About.jobHandler
 
     if $(window).width() > 1000
@@ -87,7 +87,7 @@ About =
     _.off $('.profiles > .profile')
 
   menuHandler: ->
-    section = $(this).html().trim()
+    section = $(this).data 'filter'
     About.menu section
 
   menu: (section) ->

@@ -20,9 +20,9 @@ block content
           .filtermenu
             each filter in data.about.sections
               if filter == 'capabilities'
-                .filter.on(class='filter_' + filter) #{filter}
+                .filter.on(class='filter_' + filter,data-filter=filter) #{filter}
               else
-                .filter(class='filter_' + filter) #{filter}
+                .filter(class='filter_' + filter,data-filter=filter) #{filter}
           .clear
     .sections
       .section.section_capabilities.on

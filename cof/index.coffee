@@ -37,7 +37,7 @@ Index =
     endpoint: 'https://api.instagram.com/v1/users/self/media/recent/'
     token: '264367793.55cd6c3.ae227ede2f5c48eaab95ca57ffc4c0f6'
     loaded: false
-    posts: 6
+    posts: 8
     load: ->
       Loader.load "#{Index.instagram.endpoint}?access_token=#{Index.instagram.token}&callback=Index.instagram.callback"
       Index.instagram.loaded = true
@@ -45,13 +45,15 @@ Index =
     callback: (json) ->
       console.log json
       for post, index in json.data
-        $('.instagram').append '<div class="clear"></div>' if index is Index.instagram.posts
+        $('.instagram > .inner').append '<div class="clear"></div>' if index is Index.instagram.posts
         return true if index is Index.instagram.posts
-        $('.instagram').append """
+        $('.instagram > .inner').append """
 
-          <a href="#{post.link}" target="_new" class="post">
-            <img src="#{post.images.standard_resolution.url}" />
-          </a>
+          <div class="post">
+            <a href="#{post.link}" target="_new" class="post">
+              <img src="#{post.images.standard_resolution.url}" />
+            </a>
+          </div>
         """
 
   lineRotate: ->

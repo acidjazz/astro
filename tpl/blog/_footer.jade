@@ -45,7 +45,12 @@ if entry.related && false
 
 .nav
   if prev != false
-    a.prev(href='/blog/#' + prev) <
+    a.prev(href='/blog/#' + prev)
+      .arrow.left
+      .copy Previous
   if next != false
-    a.next(href='/blog/#' + next) >
+    a.next(href='/blog/#' + next) 
+      .copy Next
+      .arrow.right
   .clear
+    

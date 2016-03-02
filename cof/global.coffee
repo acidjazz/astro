@@ -49,6 +49,7 @@ Global =
 
     $('.top > .inner > .burger').on 'click', Global.burger
     $('.menu > .inner > .options > .option').on 'click', Global.option
+    $('.menu > .inner > .options > .suboptions > .option').on 'click', Global.suboption
 
     $('.thumbs > .thumb, .projects > .thumb, .related > .inner > .relateds > .thumb').on 'mousemove', Global.thumb
 
@@ -233,13 +234,38 @@ Global =
       _.on '.burger'
       $('body').removeClass 'fixed'
 
+  suboption: ->
+    $(this).addClass 'active'
+    url = $(this).data 'url'
+    setTimeout ->
+      location.href = url
+      setTimeout ->
+        location.reload()
+      , 400
+    , 400
+    return true
   option: ->
 
     t = $ this
+    option = t.text().trim()
+
+    if option is 'about'
+
+      if t.hasClass 'active'
+        t.removeClass 'active'
+        _.off '.suboptions'
+        $('.menu > .inner > .options').removeClass 'subopts'
+      else
+        $('.menu > .inner > .options > .option').removeClass 'active'
+        t.addClass 'active'
+        _.on '.suboptions'
+        $('.menu > .inner > .options').addClass 'subopts'
+
+      return true
+
     $('.menu > .inner > .options > .option').removeClass 'active'
     t.addClass 'active'
 
-    option = t.text().trim()
     setTimeout ->
 
       Global.menu.off()

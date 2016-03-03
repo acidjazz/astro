@@ -33,7 +33,7 @@
         &.off
           display none
       > .suboptions > .option
-        font f_h4
+        font f_h5
         text-align center
         text-transform uppercase
         color: c.white1
@@ -67,10 +67,10 @@
         &:hover
           color: c.red1
         transition color 0.1s linear
-        animation cellInX 0.2s 0s ease-in both
+        //animation cellOutY 0.2s 0s ease-in both
         for num in 0..10
           &:nth-child({num})
-            animation-delay unit(num*0.1, 's')
+            animation-delay unit(num*0.05, 's')
       > .option
         position relative
         cursor pointer

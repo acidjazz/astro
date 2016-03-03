@@ -59,6 +59,8 @@ video::-webkit-media-controls {
 
   > .filters
     > .inner
+      > .arrows
+        display none
       > .filtermenu
         > .filter
           transition background-color 0.1s linear
@@ -230,6 +232,34 @@ video::-webkit-media-controls {
           > .filtermenu
             padding 0 !important
             > .filter
-              display block !important
+              display none !important
               padding 20px 0 !important
               margin 0 !important
+              &.on
+                display block !important
+          > .arrows
+            display block
+            position relative
+            > .left
+              left 0px
+              top -65px
+              width 60px
+              height 66px
+              position absolute
+              > .triangle
+                border-top 15px solid transparent
+                border-bottom 15px solid transparent
+                border-right: 15px solid c.red2
+                margin 20px 10px 0 0
+            > .right
+              right 0px
+              top -65px
+              width 60px
+              height 66px
+              position absolute
+              > .triangle
+                border-top 15px solid transparent
+                border-bottom 15px solid transparent
+                border-left: 15px solid c.red2
+                margin 20px 0 0 10px
+

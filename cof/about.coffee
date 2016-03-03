@@ -22,6 +22,8 @@ About =
 
     if $(window).width() > 1000
       $('.hsbpd > .dots > .dot').on 'click', About.hsbpdHandler
+    else
+      $('.about > .fcontainer > .filters > .inner > .arrows > .arrow').on 'click', About.arrowsHandler
 
     $('.capcenter > .capmenu > .cap').on 'click', About.capcenter
     $('.fived > .fivedmenu > .item').on 'click', About.fived
@@ -91,6 +93,23 @@ About =
   menuHandler: ->
     section = $(this).data 'filter'
     About.menu section
+
+  arrowsHandler: ->
+
+    sections = ['capabilities', 'process','clients','studio','careers']
+
+    current = $('.fcontainer > .filters > .inner > .filtermenu > .filter.on').data 'filter'
+
+    for section, index in sections
+      if section is current
+        if $(this).hasClass 'right'
+          About.menu(sections[index+1]) if index isnt 4
+          About.menu(sections[0]) if index is 4
+        if $(this).hasClass 'left'
+          About.menu(sections[index-1]) if index isnt 0
+          About.menu(sections[4]) if index is 0
+      
+    return true
 
   menu: (section) ->
 

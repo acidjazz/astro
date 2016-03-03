@@ -38,6 +38,7 @@
         text-transform uppercase
         color: c.white1
         cursor pointer
+        position relative
         &.active > .line
           position absolute
           top 50%
@@ -45,25 +46,25 @@
           height 6px
           background-color: c.red1
         &.active:nth-child(1) > .line
-          width 230px
-          margin -3px 0 0 -115px
-          animation line1 0.2s ease-in-out
+          width 160px
+          margin -3px 0 0 -80px
+          animation line5 0.2s ease-in-out
         &.active:nth-child(2) > .line
           width 160px
           margin -3px 0 0 -80px
-          animation line1 0.2s ease-in-out
+          animation line5 0.2s ease-in-out
         &.active:nth-child(3) > .line
           width 140px
           margin -3px 0 0 -75px
-          animation line1 0.2s ease-in-out
+          animation line5 0.2s ease-in-out
         &.active:nth-child(4) > .line
           width 120px
           margin -3px 0 0 -65px
-          animation line1 0.2s ease-in-out
+          animation line5 0.2s ease-in-out
         &.active:nth-child(5) > .line
           width 160px
           margin -3px 0 0 -80px
-          animation line1 0.2s ease-in-out
+          animation line5 0.2s ease-in-out
         &:hover
           color: c.red1
         transition color 0.1s linear
@@ -97,8 +98,12 @@
           margin -3px 0 0 -110px
           animation line3 0.2s ease-in-out
         &.active:nth-child(4) > .line
-          width 380px
-          margin -3px 0 0 -190px
+          width 190px
+          margin -3px 0 0 -100px
+          animation line5 0.2s ease-in-out
+        &.active:nth-child(5) > .line
+          width 290px
+          margin -3px 0 0 -150px
           animation line4 0.2s ease-in-out
         &:hover
           color: c.red1
@@ -270,6 +275,13 @@
     width 0px
   to
     width 380px
+
+@keyframes line5
+  from
+    width 0px
+  to
+    width 160px
+
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .top > .inner > .phrase

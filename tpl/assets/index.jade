@@ -1,0 +1,71 @@
+
+extends ../inc/layout
+
+block variables
+  - var rootdir = '../'
+
+block content
+
+  include ../inc/top
+
+
+  .assets
+    .summary
+      .hero
+        .copy1 &nbsp;
+        .copy2 Astro Assets
+
+    .body
+      a.link.press(href='/press/') Press Release
+      .title Logo Assets
+      .assets
+        .asset
+          .thumbnail
+            .img(style='background-image: url(/img/assets/Astro-Blk.png)')
+          .title Astro Logo
+          a.zip(href='/') Download zip file 244KB
+        .asset
+          .thumbnail
+            .img(style='background-image: url(/img/assets/Astro_Studios-Blk.png)')
+          .title Astro Studios
+          a.zip(href='/') Download zip file 244KB
+        .asset
+          .thumbnail
+            .img(style='background-image: url(/img/assets/Astro-bolt-Black.png)')
+          .title A Bolt Black 
+          a.zip(href='/') Download zip file 244KB
+        .asset
+          .thumbnail
+            .img(style='background-image: url(/img/assets/Astro-bolt-Red.png)')
+          .title A Bolt Red 
+          a.zip(href='/') Download zip file 244KB
+        .asset
+          .thumbnail
+            .img(style='background-image: url(/img/assets/A_Bolt-Blk.png)')
+          .title A Bolt Black Square 
+          a.zip(href='/') Download zip file 244KB
+        .asset
+          .thumbnail
+            .img(style='background-image: url(/img/assets/A_Bolt-Red.png)')
+          .title A Bolt Red Square 
+          a.zip(href='/') Download zip file 244KB
+        .asset
+          .thumbnail
+            .img(style='background-image: url(/img/assets/About_Astro_thumbnail.jpg)')
+          .title 
+          a.zip(href='/img/assets/About_Astro.rtf') Download zip file 244KB
+
+
+
+        .clear
+
+
+
+  include ../inc/bottom
+
+  script(type='text/javascript').
+    function loadercomplete() {
+      Loader.load('../jst/assets.js', 'Assets');
+      Global.i()
+    }
+

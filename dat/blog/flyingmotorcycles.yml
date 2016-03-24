@@ -1,0 +1,13 @@
+---
+  folder: flyingmotorcycles
+  cover: jetbike_highres3.jpg
+  author: Tom Galbraith
+  date: 3.24.2016
+  cdate: 20160324
+  name: Flying Motorcycles!
+  description: Astro’s Norio Fujikawa has been very active lately.  Currently, Norio’s design concept that mixes motorcycles, space flight and Japanese animation is featured in Forbes’ Lifestyle section. <a target='_new' href='http://www.forbes.com/sites/jimdobson/2016/03/08/meet-george-jetson-the-future-of-flying-motorcycles-is-here/#6b4c467b582c'>Check it OUT!</a>.
+  color: red4
+  tags:
+    - design
+    - culture
+  home: true

@@ -196,8 +196,6 @@ Global =
 
     , charDuration/10
 
-    console.log duration, phrase.length, charDuration, phrase
-
     Global.phraseTimeout = setTimeout ->
       _.on Global.cache.phrase
     , 10000
@@ -290,9 +288,9 @@ Global =
           location.href = '/blog/'
 
       if option is 'about'
-          location.href = '/about/'
+        location.href = '/about/'
       if option is 'contact'
-          location.href = '/contact/'
+        location.href = '/contact/'
 
     , 400
 

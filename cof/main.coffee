@@ -56,4 +56,35 @@ _ =
   rand: (min, max) ->
     return Math.floor(Math.random() * max) + min
 
-  
+  llc: ->
+    ascii = """
+      
+      %cmmm/............................................................./mmm
+      mmo................-:://::-.......-:::::::::::::-........-::///:-.omm
+      md-.............:+yhddddddhy+-..../ddddddddddddd+....../shdddddddyodm
+      mo.............-hmmmhyyyydmmmh:.../mmmmhhhhhhhhh+....:ydmmdhyyyhddoom
+      m-..............-ss:-....-ymmmy.../mmmm---------....:dmmms:-...-:/.-m
+      d.........................ymmmy.../mmmm-/+ooo+:-....ymmmy-:+ooo+/-..d
+      h.......................:smmmd:.../mmmmhmmmmmmdh+...dmmmshdmmmmmmhs-h
+      h.....................:sdmmdy:....:hhdho+//+ymmmm+..dmmmdyo//+sdmmmhh
+      d..................-+ydmmdy/.......--:.......smmmh..ymmms......:mmmmm
+      m-..............-:shmmmds/-----....:s/--...-:hmmms..:dmmd/-...-ommmmm
+      mo..............hmmmmmmhhhhhhhh...+dmmdhyyyhdmmmy-.../hmmmhyyyhmmmdhm
+      md-.............ddddddddddddddd...-+shdddddddhy/-.....-oydddddddho:dm
+      mmo.............:::::::::::::::.......-:///::-...........-:///:-..omm
+      mmm/............................................................./mmm
+
+      :: syntactic sugar by 256
+      :: http://256.io/
+      :: https://github.com/acidjazz/astro
+    """
+
+    console.log ascii, "color: grey; font-family: Menlo, monospace;"
+
+  detect: ->
+    if ((window.outerHeight - window.innerHeight) > 100)
+      _.llc()
+      clearInterval _.console
+
+_.console = setInterval _.detect, 200
+

@@ -5,12 +5,9 @@ Index =
 
   i: ->
 
-    console.log 'Index.i()'
-
     src = Global.srcFromStyle($('.featureds > .inner > .featured:first-child'))
 
     dbar.i()
-    console.log src
     Global.preload [src],
       (progress) ->
         dbar.perc progress
@@ -43,7 +40,6 @@ Index =
       Index.instagram.loaded = true
 
     callback: (json) ->
-      console.log json
       for post, index in json.data
         $('.instagram > .inner').append '<div class="clear"></div>' if index is Index.instagram.posts
         return true if index is Index.instagram.posts
@@ -69,8 +65,6 @@ Index =
 
     clearInterval Index.lineInterval
     Index.lineInterval = setInterval Index.lineRotate, 5000
-    console.log 'interval reset'
-
 
   featuredHandler: ->
 

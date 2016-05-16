@@ -186,6 +186,24 @@ block content
       include _footer
 
 
+    - var entry = data.blog.camo
+
+    .entry.entry_camo.off
+      include _header
+      .body
+       include camo
+      include _footer    
+
+
+    - var entry = data.blog.astroswag
+
+    .entry.entry_astroswag.off
+      include _header
+      .body
+       include astroswag
+      include _footer 
+
+
 
   include ../inc/bottom
 

@@ -1,0 +1,13 @@
+---
+  folder: astroswag
+  cover: 01_astrostudios_cover.jpg
+  author: Zac Maricondia
+  date: 5.13.2016
+  cdate: 20160513
+  name: Astroswag
+  description: One of the perks of working at a design studio is that we occasionally get to design some gear to up our swag factor. This time we did a collection of three fresh t-shirts featuring our mascot, Armstrong the Spaceman. And, because pins are in, we also designed a set of three very spacey pins.
+  color: orange2
+  tags:
+    - studio
+    - culture
+  home: true

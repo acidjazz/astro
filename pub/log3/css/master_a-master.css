@@ -1,0 +1,39 @@
+#u750
+{
+	border-width: 0px;
+	background-color: transparent;
+}
+
+#u751
+{
+	display: block;
+}
+
+#u12469
+{
+	background-color: #434865;
+}
+
+#u12474-4,#u12479-4,#u12488-4
+{
+	font-family: '__Blender Pro_5';
+	background-color: transparent;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	line-height: 22px;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: 700;
+}
+
+#u12474-4:hover p,#u12479-4:hover p,#u12488-4:hover p
+{
+	visibility: inherit;
+	color: #A8DED3;
+}
+
+
+
+
+

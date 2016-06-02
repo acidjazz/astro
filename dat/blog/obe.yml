@@ -1,0 +1,13 @@
+---
+  folder: obe
+  cover: cover.jpg
+  author: Clare Nauman
+  date: 6.01.2016
+  cdate: 20160601
+  name: Advice for the Up and Coming
+  description: Fast Company asked us to give our best advice to startups looking to create the next greatest product. We looked to our recent work with OBE, a new company creating wearable VR controllers for gaming, and highlighted what we think every startup should know. Our fearless leader, Brett Lovelady, and stalwart creative director, Norio Fujikawa, advised. Read the article <a target='_new' href='http://www.fastcodesign.com/3060300/ideo-astro-and-whipsaw-what-every-startup-should-know-about-design/1'>here</a>.
+  color: yellow1
+  tags:
+    - studio
+    - work
+  home: true

@@ -23,30 +23,38 @@ clare:
   name: Clare Nauman
   position: Marcom Manager
   summary: 'Growing up bi-coastal has provided Clare with the vast people skills needed to be the administrative baroness she has become. After bouncing between Oakland and Boston, Clare received her BA in Studio Art from Santa Clara University. Since the 2nd grade Clare has played her violin in various orchestras and the obscure cult-folk band “Green Apple Two Step.” One last violin related factoid: Clare can play “The Devil Went Down To Georgia” blindfolded.'
+alejandro: 
+  name: Alejandro Chavetta 
+  position: Creative Director 
+  summary: After Alejandro Chavetta earned his degree in Visual Communications and Graphic design from San Francisco State University, he spent many years in the artistic trenches of publishing. Alejandro brings this experience to Astro to fortify our brand communications team and articulate are client’s stories. He thrives in lacing together our disparate fortes, tying product into brand and UIUX back to product. Alejandro is also an accomplished collage artist whose pieces end up on album covers, gallery walls, and in client decks.
 karson:
   name: Karson Shadley
-  position: Lead Designer
+  position: Creative Director
   summary: "It's said that those who can, do, and those who can't teach. Karson proves that those who excel meld the two into a meaningful life of design and mentorship. With over 10 years as a design consultant and concurrently 5 years as an adjunct professor at CCA, Karson is comfortable bringing his collaborative startup ideations to clients large and small, and to the design world and beyond. Fun fact: Karson can whoop you in Ping Pong. Straight up."
 melody:
   name: Melody Yung
   position: Lead Designer
   summary: Born in Hong Kong, Melody Yung comes to us by way of the University of the Arts in Philadelphia where she earned her degree in graphic design. After working for several years in NY, Melody decided snowstorms were for suckers and high-tailed it West to sunny California. Fashionable and faster than a rabbit, Melody can whip up fresh new designs while eating, walking, talking, and brushing her teeth.
+astro:
+  name: Astronaut Mascot
+  position: Mascot
+  summary: We found Astro on ebay, where he had penned a beautiful pitch requesting aid in his escape from a dank closet in the middle of Wisconsin. He had been hanging in the darkness for over five years and that got depressing for this astral traveler. After making his way via FedEx to the west coast, Astro instantly warmed up. He now floats above the lobby at Astro Studios, where he greets tourists and aliens alike. 
 shea:
   name: Shea Sjoberg
   position: Designer
-  summary: Born at home, Shea Sjoberg is that rarest of breed, the native Californian. Knowing he has a good thing going, Shea is staying close to home after earning his degree in Visual Communication from San Francisco State University. Shea projects his youthful glow into every project he collaborates on in the studio. Other than design, Shea loves surfing and taking photos the design overload that keeps the heart of San Francisco beating. 
+  summary: Born at home, Shea Sjoberg is that rarest of breed, the native Californian. Knowing he has a good thing going, Shea is staying close to home after earning his degree in Visual Communication from San Francisco State University. Shea projects his youthful glow into every project he collaborates on in the studio. Other than design, Shea loves surfing and taking photos the design overload that keeps the heart of San Francisco beating.
 francois:
   name: Francois Dransart
   position: Designer
-  summary: While sitting beneath a tree between lectures at France’s Institut Supérieur de Design, Francois was struck on his head by an apple. While rubbing his head, he knew fighting gravity was his true calling and that Astro would be a perfect fit for him, his master’s degree, and his snowboard. If you can pry Francois away from his designing tools you’ll find him hiking, biking or shredding large hills in San Francisco or the nearby Sierras. 
+  summary: While sitting beneath a tree between lectures at France’s Institut Supérieur de Design, Francois was struck on his head by an apple. While rubbing his head, he knew fighting gravity was his true calling and that Astro would be a perfect fit for him, his master’s degree, and his snowboard. If you can pry Francois away from his designing tools you’ll find him hiking, biking or shredding large hills in San Francisco or the nearby Sierras.
+oliver:
+  name: Oliver Henderson
+  position: Designer
+  summary: Born and raised in sunny Portland OR, Oliver Henderson comes to us from RISD, where he earned his BFA in Industrial Design. After receiving his degree, Oliver high tailed it back west to Santa Cruz, where the climate suited his clothes and the people matched his vibe, and the start of a successful design career. When you can’t find Oliver in the studio, he is most likely in a shop making furniture. Still looking for him? You’re a stalker, but he’s probably on a bike, hanging from a rock or knee deep in a river fly-fishing. 
 andres:
   name: Andrés Quiroz
   position: Lead Designer
   summary: Where to start with a heavy cat like Andrés? He snatched his BFA in graphic design from Cal Poly. He worked his way up from lead onion dicer to Executive Chef in the span of one summer at Taqueria De La Muerte in Stockton CA, and he never once shed a tear. Andrés relies on hustle and pure vision, and sees life through his analog cameras. If he isn’t taking snaps or developing pictures in his dark room, you can find him at Astro leading one of the many graphic or packaging programs.
-astro:
-  name: Astronaut Mascot
-  position: Mascot
-  summary: We found Astro on ebay, where he had penned a beautiful pitch requesting aid in his escape from a dank closet in the middle of Wisconsin. He had been hanging in the darkness for over five years and that got depressing for this astral traveler. After making his way via FedEx to the west coast, Astro instantly warmed up. He now floats above the lobby at Astro Studios, where he greets tourists and aliens alike.
 tom:
   name: Tom Galbraith
   position: Studio Manager/Writer
@@ -61,11 +69,11 @@ norio:
   summary: After working his way through design school as a fish monger, Norio put down his fileting knife and studied at the Institute of Design in Chicago. Directing numerous successful projects, Norio has earned his scars and stripes as a big picture thinker and solver. He’s a perpetual artist who just can’t turn it off. Norio’s meeting notes have a tendency to end up on gallery walls and store shelves alike. Some say Norio is an art-robot from the future; others say he’s just Norio.
 brettn:
   name: Brett Newman
-  position: Designer
+  position: Lead Designer
   summary: Brett received his BA in Industrial Design from the Rhode Island School of Design and spent a few years working at a small product consultancy before making his way to San Francisco. After six winters on the East Coast he's enjoying the California weather, exploring the city his forebears called home, and hunting for the perfect burrito. Making furniture, camping his way throughout the west, and returning to the soccer field keeps him busy outside of the studio. He's a hands-on designer and is loving the diversity of disciplines he gets to tackle at Astro. 
 jim:
   name: Jim Goodell
-  position:
+  position: COO & Partner
   summary: "With over twenty years of executive branding and design agency experience, Jim keeps a full-nelson on all things strategic at Astro. Hailing from the East Coast, Jim graduated from Purchase College, School of Art and Design. After receiving his MFA in Design and Photography from the University of Illinois, Jim landed in San Francisco, where he served for 15 years as the Managing Partner of Primo Angeli Inc. He soon stepped up to CEO of Primo Angeli: Fitch, where he was responsible throughout their global network for Packaging and Brand Communications. Away from the studio, you may find him searching for the perfect jetstream for his kites, or perfecting his photography. But don’t let the kite flying fool you, he can still flatten most wrestlers, even when he is wrestling above his weight class: welterweight."
 brett:
   name: Brett Lovelady
@@ -102,7 +110,4 @@ travis:
   name: Travis Wettroth
   position: Designer
   summary: University of Cincinnati Bearcat Travis Wettroth earned his BFA in Industrial Design. Travis is one of those designers that has a hard time turning it off, so his downtime isn’t much different than his worktime. When left alone he enjoys improving on his figure drawing and 3D animation. The California DMV is really what drew Travis to settle in the Golden State. Travis loves the departments’s efficiency, and the care given to each motorist. Always learning and honing his skills, Travis’ bag of tricks is growing to Santa Claus proportions. 
-alejandro: 
-  name: Alejandro Chavetta 
-  position: Creative Director 
-  summary: After Alejandro Chavetta earned his degree in Visual Communications and Graphic design from San Francisco State University, he spent many years in the artistic trenches of publishing. Alejandro brings this experience to Astro to fortify our brand communications team and articulate are client’s stories. He thrives in lacing together our disparate fortes, tying product into brand and UIUX back to product. Alejandro is also an accomplished collage artist whose pieces end up on album covers, gallery walls, and in client decks.
+

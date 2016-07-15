@@ -3,8 +3,8 @@ featured:
  -
   title: 3DR
   copy: "3DR: Gets you<br /> off the ground."
-  image: work/carousel/1440/carousel-01.jpg
-  link: /work
+  image: work/threedr/1440/Solo_Black_Low.jpg
+  link: /work/#threedr
  -
   title: "Nike+ Fuelband"
   copy: "Nike+ Fuelband:<br /> Life is sport."
@@ -36,7 +36,8 @@ grid:
   type: blog
   folder: pins
  -
-  type: work 
+  type: work
+  folder: vive 
  -
   type: blog
   folder: iceland

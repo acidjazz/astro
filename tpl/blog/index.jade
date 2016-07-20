@@ -262,6 +262,15 @@ block content
       .body
        include swine
       include _footer  
+      
+    - var entry = data.blog.processing
+
+    .entry.entry_processing.off
+      include _header
+      .body
+       include processing
+      include _footer        
+      
 
   include ../inc/bottom
 

@@ -1,0 +1,14 @@
+---
+  folder: processing
+  cover: cover.jpg
+  author: Yu Rong
+  date: 7.20.2016
+  cdate: 20160720
+  name: Processing for visual possibilities
+  description: Processing is an open source programming language that is built for the electronic arts, new media art, and visual design communities. Processing was initiated by <a href="http://reas.com/" target="_new">Casey Reas</a> and <a href="http://benfry.com/" target="_new">Benjamin Fry</a> in Spring 2001. Fry is a PhD candidate at the MIT Media Laboratory and Reas is an Associate Professor at the Interaction Design Institute Ivrea. In 2012, they started the Processing Foundation along with <a href="http://shiffman.net/" target="_new">Daniel Shiffman</a>, who joined as a third project lead. Through Processing, users are allowed to create 2D arts and interacted projects. Here are four projects that show Processing’s features — data visualizing and real-time interacting. Programming languages became an initial skill for designers and Processing is just one kind of language that empowers designers to convey ideas in a more engaging way.
+  color: blue2
+  tags:
+    - digital
+    - art
+    - interactive
+  home: true

@@ -269,7 +269,17 @@ block content
       include _header
       .body
        include processing
-      include _footer        
+      include _footer
+    
+    - var entry = data.blog.letterform
+
+    .entry.entry_letterform.off
+      include _header
+      .body
+       include letterform
+      include _footer         
+      
+              
       
 
   include ../inc/bottom

@@ -1,0 +1,14 @@
+---
+  folder: threedrwins
+  cover: cover.jpg
+  author: Clare Nauman
+  date: 08.19.2016
+  cdate: 20160819
+  name: Astro Wins Silver in IDEA Awards
+  description: We’re excited to announce that Astro has been named a Silver winner for the 3DRobotics Solo drone in the <a target='_new' href='http://www.idsa.org/awards/idea/preview'>36th annual International Design Excellence Awards® (IDEA®)</a> announced by the <a target='_new' href='http://www.idsa.org/'>Industrial Designers Society of America (IDSA)</a>. <p><a target='_new' href='http://www.astrostudios.com/work/#threedr'>3DR Solo</a> is among more than 1,700 projects from 30-plus countries that competed in IDEA 2016.<p>The 3DR Solo is a drone designed to combine the power and capabilities of enthusiast/professional models with the simplicity and usability of entry-level drones.<p>Ease of use and smartphone controls make the Solo accessible to new drone users, while high-performance hardware and programmable flight software gives advanced users the performance they want in a smarter, simpler package.<p>The Solo’s price point, ease of use, programmability and durability significantly means that drone flight and expert aerial photography are now available to a much wider audience, broadening creative possibilities and facilitating exploration in ways never previously imaginable.<p>Congratulations to all of the IDEA winners!
+
+  color: green3
+  tags:
+    - studio
+    - work
+    - awards

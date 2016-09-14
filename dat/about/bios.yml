@@ -110,13 +110,7 @@ chris:
   name: Chris Fairchild
   position: Lead Designer
   summary: Chris is a graphic designer wrapped in a Renaissance man’s body. He plays guitar, bass, has two extra bones in his right foot and can sell life insurance. After receiving his degree in Advertising/Communications from the University of Georgia, Chris went to the Creative Circus in Atlanta. His love of exorbitant rents make him a perfect fit for SF, and his neurotic attention to detail, and hungry appetite to make/produce cool work make him a perfect fit for Astro. 
-
-clem:
-  name: Clement Dauchy
-  position: Designer
-  summary: Clement Dauchy, self-proclaimed French Californian, was born and raised in North of France. After earning his master’s degree in Industrial Design at the ISD, Clem was looking for the perfect spot to enjoy wild nature activities, surfing & good burgers. So Astro and he found each other, and it’s been love ever since. We love Clem’s prolific mock-ups and soft goods skills, and Clem loves the diverse flow of projects at Astro and always being part of the innovation.
  
-
 david:
   name: David Whetstone
   position: Art Director
@@ -126,6 +120,11 @@ andy:
   name: Andy Uhm
   position: Senior Designer
   summary: Andy was born in Seoul, South Korea. After just one day of waiting tables at Ribs-R-Us Andy knew schlepping baby backs wasn’t for him, and luckily Ribs-R-Us needed their apron back. Andy took to earning his B.S. in Transportation design from the Art Center in Pasadena, but he wasn’t feeling the car vibe so he started designing products for a handful of startups, as well as some bigger fish. Andy’s creative and curious nature requires a diverse range of projects, so he searched, found, and landed at Astro in SF. Here the design is varied, the surf is cold but doable, and people generally agree that the ribs at Ribs-R-Us are fairly lackluster.
+
+clem:
+  name: Clement Dauchy
+  position: Designer
+  summary: Clement Dauchy, self-proclaimed French Californian, was born and raised in North of France. After earning his master’s degree in Industrial Design at the ISD, Clem was looking for the perfect spot to enjoy wild nature activities, surfing & good burgers. So Astro and he found each other, and it’s been love ever since. We love Clem’s prolific mock-ups and soft goods skills, and Clem loves the diverse flow of projects at Astro and always being part of the innovation.
 
 alejandro: 
   name: Alejandro Chavetta 

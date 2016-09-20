@@ -3,7 +3,7 @@
   cover: cover.jpg
   hero: cover.jpg
   name: Verifone
-  description: 
+  description: something something
   color: blue6
   filters:
     - strategy

@@ -1,0 +1,16 @@
+---
+  folder: verifone
+  cover: astro_vive-main.jpg
+  hero: astro_vive-main.jpg
+  name: VIVE
+  description: We helped HTC create a breakthrough brand for their game-changing VR system, Vive.
+  color: black4
+  filters:
+    - strategy
+    - brand
+    - digital
+
+  related:
+    - xbox 
+    - threedr
+    - versus

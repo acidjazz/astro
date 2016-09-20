@@ -45,6 +45,15 @@ block content
     // PROJECT PAGES
 
 
+    - var project = data.work.verifone
+
+    .project.project_verifone.off
+      include _header
+      .body
+        include verifone
+      include _credits 
+      
+
     - var project = data.work.vive
 
     .project.project_vive.off
@@ -206,4 +215,3 @@ block content
       Global.i()
       projects = !{JSON.stringify(data.work)};
     }
-

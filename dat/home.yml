@@ -31,28 +31,28 @@ featured:
 grid:
  -
   type: work
-  folder: sol
+  folder: vive
  -
   type: blog
-  folder: pins
+  folder: letterform
  -
   type: work
-  folder: vive 
+  folder: reyes
  -
   type: blog
-  folder: iceland
+  folder: processing
  -
   type: work
-  folder: versus
+  folder: minus8
  -
   type: blog
-  folder: broad
+  folder: swine
  -
   type: work
   folder: fuelband
  -
   type: work
-  folder: owlet
+  folder: mineralist
  -
   type: work
-  folder: minus8
+  folder: neff

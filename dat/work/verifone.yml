@@ -7,8 +7,7 @@
   color: blue6
   filters:
     - strategy
-    - brand
-    - digital
+    - design
 
   related:
     - logitech

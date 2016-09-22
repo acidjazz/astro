@@ -1,0 +1,94 @@
+<manifest alg="2" build="2015.2.1.352" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="astrostudios.com/log5" resolutions="1x" timestamp="1474583377272">
+  <folder name="css">
+    <file name="site_global.css" crc="4090356013"/>
+    <file name="master_a-master.css" crc="232450553" ref="index"/>
+    <file name="nomq_preview_master_a-master.css" crc="3900782559" ref="index"/>
+    <file name="index.css" crc="350307857" ref="index"/>
+    <file name="nomq_index.css" crc="3881586120" ref="index"/>
+  </folder>
+  <folder name="fonts">
+    <file name="nbinternationalpro-light.woff" crc="303872275"/>
+    <file name="nbinternationalpro-light.eot" crc="14592478"/>
+    <file name="nbinternationalpro-light.svg" crc="4182889076"/>
+    <file name="nbinternationalpro-bold.woff" crc="425774772"/>
+    <file name="nbinternationalpro-bold.eot" crc="363909459"/>
+    <file name="nbinternationalpro-bold.svg" crc="469087293"/>
+    <file name="blenderpro-book.woff" crc="23527262"/>
+    <file name="blenderpro-book.eot" crc="168154323"/>
+    <file name="blenderpro-book.svg" crc="3889139666"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="index"/>
+    <file name="museutils.js" crc="3851988764" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="169177150" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="index"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="index"/>
+    <file name="pie.js" crc="3831537696" ref="index"/>
+    <file name="webpro.js" crc="4067903014" ref="index"/>
+    <file name="musewpslideshow.js" crc="4265225696" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="4075157096" ref="index"/>
+    <file name="touchswipe.js" crc="474750357" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="516761069" ref="index"/>
+    <file name="require.js" crc="4108833657" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="1130335" ref="index"/>
+    <file name="pasted-svg-41592x41.svg" crc="349988611" seo="true" ref="index"/>
+    <file name="pasted svg 41592x41_poster_.png" crc="4073317484" ref="index"/>
+    <file name="2016-astro-book-216-web.jpg" crc="3937285555" seo="true" ref="index"/>
+    <file name="astro_verifone-678-rev-web.jpg" crc="386521868" ref="index"/>
+    <file name="1012913_10152915809173714_1332662812715379795_n-u6464-fr.jpg" crc="295703718" ref="index"/>
+    <file name="afg_animation.gif" crc="4007554624" ref="index"/>
+    <file name="1_kubrick_2001_540x360-buttonu16498-fr.jpg" crc="3842583960" ref="index"/>
+    <file name="1_kubrick_2001_540x360-buttonu16498-r-fr.png" crc="4190707291" ref="index"/>
+    <file name="cefaf9d2-e751-c2e8-8ded13cc5b51ea68-buttonu16529-fr.png" crc="177677108" ref="index"/>
+    <file name="0bd4dd6d1528cf5a671711b760542183-buttonu16529-fr.jpg" crc="4271742132" ref="index"/>
+    <file name="0bd4dd6d1528cf5a671711b760542183-buttonu16529-r-fr.png" crc="4012686113" ref="index"/>
+    <file name="treasure-island-buttonu16555-fr.jpg" crc="67657739" ref="index"/>
+    <file name="treasure-island-buttonu16555-r-fr.png" crc="4149701000" ref="index"/>
+    <file name="avatars-000063377255-zl9k1g-t500x500-buttonu16682-fr.jpg" crc="3784710635" ref="index"/>
+    <file name="avatars-000063377255-zl9k1g-t500x500-buttonu16682-r-fr.png" crc="4068707062" ref="index"/>
+    <file name="fighting-fun-crop-u57561.jpg" crc="512062397" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="dots-2.gif" crc="84625538" seo="true" ref="index"/>
+    <file name="blackhole astronut-crop-u57752.jpg" crc="4022739626" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="astro_drone_8_6_1512686-rev-motion.gif" crc="499202349" ref="index"/>
+    <file name="2016-astro-book-1-260-web.jpg" crc="6372844" seo="true" ref="index"/>
+    <file name="2016-astro-book-150-web.jpg" crc="4036971031" seo="true" ref="index"/>
+    <file name="2016-astro-book-148-web.jpg" crc="3911152048" seo="true" ref="index"/>
+    <file name="astro-log5-animated.gif" crc="3943976492" ref="index"/>
+    <file name="pasted-svg-50x50.svg" crc="452009457" seo="true" ref="index"/>
+    <file name="pasted svg 50x50_poster_.png" crc="3956489080" ref="index"/>
+    <file name="pasted-svg-50x49.svg" crc="69684745" seo="true" ref="index"/>
+    <file name="pasted svg 50x49_poster_.png" crc="1612628" ref="index"/>
+    <file name="pasted-svg-50x492.svg" crc="231545628" seo="true" ref="index"/>
+    <file name="pasted svg 50x49_poster_2.png" crc="4062491647" ref="index"/>
+    <file name="pasted-svg-50x502.svg" crc="338532824" seo="true" ref="index"/>
+    <file name="pasted svg 50x50_poster_2.png" crc="116678834" ref="index"/>
+    <file name="1012913_10152915809173714_1332662812715379795_n-u6464-fr2.jpg" crc="4292453149" ref="index"/>
+    <file name="1_kubrick_2001_540x360-buttonu16498-fr2.jpg" crc="449435953" ref="index"/>
+    <file name="1_kubrick_2001_540x360-buttonu16498-r-fr2.png" crc="241009792" ref="index"/>
+    <file name="0bd4dd6d1528cf5a671711b760542183-buttonu16529-fr2.jpg" crc="284581119" ref="index"/>
+    <file name="0bd4dd6d1528cf5a671711b760542183-buttonu16529-r-fr2.png" crc="3811982286" ref="index"/>
+    <file name="treasure-island-buttonu16555-fr2.jpg" crc="4004242408" ref="index"/>
+    <file name="treasure-island-buttonu16555-r-fr2.png" crc="221703664" ref="index"/>
+    <file name="avatars-000063377255-zl9k1g-t500x500-buttonu16682-fr2.jpg" crc="41195496" ref="index"/>
+    <file name="avatars-000063377255-zl9k1g-t500x500-buttonu16682-r-fr2.png" crc="327790894" ref="index"/>
+    <file name="fighting-fun-crop-u575612.jpg" crc="483715766" ref="index"/>
+    <file name="blackhole astronut-crop-u577522.jpg" crc="4100308401" ref="index"/>
+    <file name="1012913_10152915809173714_1332662812715379795_n-u6464-fr3.jpg" crc="4003467349" ref="index"/>
+    <file name="1_kubrick_2001_540x360-buttonu16498-fr3.jpg" crc="3819209134" ref="index"/>
+    <file name="1_kubrick_2001_540x360-buttonu16498-r-fr3.png" crc="4131372532" ref="index"/>
+    <file name="0bd4dd6d1528cf5a671711b760542183-buttonu16529-fr3.jpg" crc="4077702418" ref="index"/>
+    <file name="0bd4dd6d1528cf5a671711b760542183-buttonu16529-r-fr3.png" crc="4171294490" ref="index"/>
+    <file name="treasure-island-buttonu16555-fr3.jpg" crc="3983357924" ref="index"/>
+    <file name="treasure-island-buttonu16555-r-fr3.png" crc="142991350" ref="index"/>
+    <file name="avatars-000063377255-zl9k1g-t500x500-buttonu16682-fr3.jpg" crc="3898711449" ref="index"/>
+    <file name="avatars-000063377255-zl9k1g-t500x500-buttonu16682-r-fr3.png" crc="291734788" ref="index"/>
+    <file name="fighting-fun.jpg" crc="320120190" seo="true" ref="index"/>
+    <file name="blackhole astronut.jpg" crc="4086136629" seo="true" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4059806150" seo="true" mt="1474583356908" redirect="true"/>
+</manifest>

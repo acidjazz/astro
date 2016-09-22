@@ -3,7 +3,7 @@
   cover: cover.jpg
   hero: cover.jpg
   name: VERIFONE CARBON
-  description: Astro helped the world leader in point-of-sale systems create an all-in-one payment system for retail 2.0
+  description: Astro helped the world leader in point-of-sale systems create an all-in-one payment system for retail 2.0.
   color: blue6
   filters:
     - strategy

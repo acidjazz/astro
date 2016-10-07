@@ -1,8 +1,8 @@
 ---
   folder: threedr
   name: 3DR
-  cover: Solo_Black_Low.jpg
-  hero: Solo_Black_Low_V2.png
+  cover: astro_drone.gif
+  hero: overhead_hero.jpg
   description: 3D Robotics partnered with Astro to get the Solo, their first consumer-oriented drone, off the ground.
   color: green1
   home: true
@@ -12,29 +12,11 @@
     - brand
     - product
 
-  credits:
-    links:
-      - http://www.theroyalstudio.com/
-    deliverables:
-      - Deliverable 1
-      - Deliverable 2
-      - Deliverable 3
-    press:
-      - IDEA Award for Excellence
-      - Featured in Fast Company Design
-      - I.D. Magazine Annual Review
   body1:
-    title: BRANDING A LEADER
-    copy: Our holistic approach made the 3D Robotic brand come to life by touching on logo development, design language, product and packaging design.
-    color: black1
+    title: Future of flight
+    left: We positioned 3DR to be a leader in the growing consumer video drone market by making the drone’s intelligance accessible to users of all level. Intersection of lifestyle and technology, we create a bold yet refined look to project the product’s advanced technology and reflect the simplity of no-fuss user experience.
+    right: Integrated gimbal system for a wide range of accessories with programmable flight modes enable cinematic aerial imagery. All the features are designed to get the perfect shots.
 
-  body2: 
-    title: A DRONE FOR EVERYONE
-    copy1: Our biggest challenge was designing the drone to appeal to and inspire hard-core enthusiasts and casual users alike.  Positioning the Solo on the cutting-edge of the lifestyle-technology intersection demanded we create a bold yet user-friendly look. The hazards of flight also insisted we use durable materials that would protect the Solo’s advanced technology.
-
-  body3:
-    left: We worked to make the Solo's intelligence accessible to users of all levels. To that end, we created a controller with intuitive user interactions that also featured a revolutionary heads-up video display.
-    right: The result is a fully integrated consumer experience that has positioned 3D Robotics to be a leader in the growing consumer video drone market.
 
   related:
     - versus

@@ -47,14 +47,12 @@ jess:
 brettn:
   name: Brett Newman
   position: Lead Designer
-  summary: Brett received his BA in Industrial Design from the Rhode Island School of Design and spent a few years working at a small product consultancy before making his way to San Francisco. After six winters on the East Coast he's enjoying the California weather, exploring the city his forebears called home, and hunting for the perfect burrito. Making furniture, camping his way throughout the west, and returning to the soccer field keeps him busy outside of the studio. He's a hands-on designer and is loving the diversity of disciplines he gets to tackle at Astro. 
+  summary: Brett received his BA in Industrial Design from the Rhode Island School of Design and spent a few years working at a small product consultancy before making his way to San Francisco. After six winters on the East Coast he's enjoying the California weather, exploring the city his forebears called home, and hunting for the perfect burrito. Making furniture, camping his way throughout the west, and returning to the soccer field keeps him busy outside of the studio. He's a hands-on designer and is loving the diversity of disciplines he gets to tackle at Astro.
 
 brett:
   name: Brett Lovelady
   position: Founder & CEO
-  summary: "Brett is a designer, communicator and angst-ridden creative capitalist. After receiving his BFA in Design at BYU, he escaped to Silicon Valley to design the future. After his successful run as Vice President of Design at Lunar and Frog respectively, he sought absolute power (aka responsibility) and unbridled creative license. This led him to the founding of Astro Studios in 1994, and it’s been a giant fun-filled waterslide of bringing innovative products to market, turning venturous sparks into fireballs, and becoming a global design voice. 
-
-Brett’s favorite pastime is family time with a dash of sports and music to take the edge off. And if he gets the chance, a lap in his classic Mustang ragtop recharges him to pursue the next big thing."
+  summary: "Brett is a designer, communicator and angst-ridden creative capitalist. After receiving his BFA in Design at BYU, he escaped to Silicon Valley to design the future. After his successful run as Vice President of Design at Lunar and Frog respectively, he sought absolute power (aka responsibility) and unbridled creative license. This led him to the founding of Astro Studios in 1994, and it’s been a giant fun-filled waterslide of bringing innovative products to market, turning venturous sparks into fireballs, and becoming a global design voice. Brett’s favorite pastime is family time with a dash of sports and music to take the edge off. And if he gets the chance, a lap in his classic Mustang ragtop recharges him to pursue the next big thing."
 
 carolyn:
   name: Carolyn Galbraith
@@ -109,8 +107,8 @@ travis:
 chris:
   name: Chris Fairchild
   position: Lead Designer
-  summary: Chris is a graphic designer wrapped in a Renaissance man’s body. He plays guitar, bass, has two extra bones in his right foot and can sell life insurance. After receiving his degree in Advertising/Communications from the University of Georgia, Chris went to the Creative Circus in Atlanta. His love of exorbitant rents make him a perfect fit for SF, and his neurotic attention to detail, and hungry appetite to make/produce cool work make him a perfect fit for Astro. 
- 
+  summary: Chris is a graphic designer wrapped in a Renaissance man’s body. He plays guitar, bass, has two extra bones in his right foot and can sell life insurance. After receiving his degree in Advertising/Communications from the University of Georgia, Chris went to the Creative Circus in Atlanta. His love of exorbitant rents make him a perfect fit for SF, and his neurotic attention to detail, and hungry appetite to make/produce cool work make him a perfect fit for Astro.
+
 david:
   name: David Whetstone
   position: Art Director
@@ -126,9 +124,9 @@ clem:
   position: Designer
   summary: Clement Dauchy, self-proclaimed French Californian, was born and raised in North of France. After earning his master’s degree in Industrial Design at the ISD, Clem was looking for the perfect spot to enjoy wild nature activities, surfing & good burgers. So Astro and he found each other, and it’s been love ever since. We love Clem’s prolific mock-ups and soft goods skills, and Clem loves the diverse flow of projects at Astro and always being part of the innovation.
 
-alejandro: 
-  name: Alejandro Chavetta 
-  position: Creative Director 
+alejandro:
+  name: Alejandro Chavetta
+  position: Creative Director
   summary: After Alejandro Chavetta earned his degree in Visual Communications and Graphic design from San Francisco State University, he spent many years in the artistic trenches of publishing. Alejandro brings this experience to Astro to fortify our brand communications team and articulate are client’s stories. He thrives in lacing together our disparate fortes, tying product into brand and UIUX back to product. Alejandro is also an accomplished collage artist whose pieces end up on album covers, gallery walls, and in client decks.
 
 francois:
@@ -154,30 +152,4 @@ melody:
 astro:
   name: Astronaut Mascot
   position: Mascot
-  summary: We found Astro on ebay, where he had penned a beautiful pitch requesting aid in his escape from a dank closet in the middle of Wisconsin. He had been hanging in the darkness for over five years and that got depressing for this astral traveler. After making his way via FedEx to the west coast, Astro instantly warmed up. He now floats above the lobby at Astro Studios, where he greets tourists and aliens alike.  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
+  summary: We found Astro on ebay, where he had penned a beautiful pitch requesting aid in his escape from a dank closet in the middle of Wisconsin. He had been hanging in the darkness for over five years and that got depressing for this astral traveler. After making his way via FedEx to the west coast, Astro instantly warmed up. He now floats above the lobby at Astro Studios, where he greets tourists and aliens alike.

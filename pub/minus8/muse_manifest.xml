@@ -1,0 +1,27 @@
+<manifest alg="2" build="2015.2.0.352" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="astrostudios.com" resolutions="1x" timestamp="1477333912409">
+  <folder name="css">
+    <file name="site_global.css" crc="3916556066"/>
+    <file name="index.css" crc="4040128610" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <file name="fall_2.mp4" crc="4242976938" seo="true" mt="1477281365000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="312386352" ref="index"/>
+    <file name="museutils.js" crc="4155826306" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="328327953" ref="index"/>
+    <file name="jquery.watch.js" crc="117772946" ref="index"/>
+    <file name="require.js" crc="228336483" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="160930_diver_front_black.gif" crc="77490821" seo="true" ref="index"/>
+    <file name="fall_2a.gif" crc="4184321010" seo="true" ref="index"/>
+    <file name="flip_m8_4.gif" crc="165843135" seo="true" ref="index"/>
+    <file name="gmt4a.gif" crc="404228393" seo="true" ref="index"/>
+    <file name="intro-all.gif" crc="97543874" seo="true" ref="index"/>
+    <file name="manifesto-1c.gif" crc="516354291" seo="true" ref="index"/>
+    <file name="watch_drop.gif" crc="194918324" seo="true" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4069470731" seo="true" mt="1477333849946" redirect="true"/>
+</manifest>

@@ -313,7 +313,25 @@ block content
       .body
        include kubrik
       include _footer                   
-              
+  
+    - var entry = data.blog.diverwatch
+
+    .entry.entry_diverwatch.off
+      include _header
+      .body
+       include diverwatch
+      include _footer                   
+                            
+    - var entry = data.blog.shinolaturntable
+
+    .entry.entry_shinolaturntable.off
+      include _header
+      .body
+       include shinolaturntable
+      include _footer                   
+                              
+                
+                      
       
 
   include ../inc/bottom
